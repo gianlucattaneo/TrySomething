@@ -1,4 +1,5 @@
 import json
+import os
 
 from bs4 import BeautifulSoup
 import requests
@@ -9,14 +10,7 @@ def get_url_html(url):
     result = requests.get(url)
     doc = BeautifulSoup(result.text, 'html.parser')
 
-    tags = doc.find_all(class_='price')
-    for tag in tags:
-        print(tag)
-
-    print()
-    print('-----------------------')
-    print()
-
+    return str(doc)
 
 def get_url_array(json_):
     if 'sites' in json_:
@@ -29,11 +23,19 @@ def get_url_array(json_):
 
 if __name__ == '__main__':
     with open('fake_ecommerce.json', 'r') as f:
-        str = f.read()
-        sites = get_url_array(json.loads(str))
+        content = f.read()
+        sites = get_url_array(json.loads(content))
 
-    for url in sites['authorized']:
-        try:
-            get_url_html(url)
-        except Exception:
-            print(f'Error on {url}')
+    folder = 'Html/'
+    classes = ['authorized', 'unauthorized']
+    for class_ in classes:
+        class_folder = f'{folder}{class_}/'
+        os.makedirs(class_folder, exist_ok=True)
+        for url in sites[class_]:
+            try:
+                with open(f'{class_folder}'
+                          f'{url.replace("http://", "").replace("https://", "")}.html',
+                          'w') as class_file:
+                    class_file.write(get_url_html(url))
+            except Exception:
+                print(f'Error on {url}')
