@@ -73,14 +73,22 @@ if __name__ == '__main__':
         for row in reader:
             tmp = []
             for feat in feature_names:
-                tmp.append(row[feat])
+                tmp.append(int(row[feat]))
             features.append(tmp)
-            targets.append(row['class'])
+            targets.append(0 if row['class'] == 'authorized' else 1)
 
     n_features = len(np.unique(feature_names))
     n_classes = len(np.unique(target_names))
+    features = np.array(features)
+    targets = np.array(targets)
     plot_colors = 'ryb'
     plot_step = 0.02
+
+    clf = tree.DecisionTreeClassifier().fit(features, targets)
+
+    plot_tree(clf, feature_names=feature_names, class_names=target_names, filled=True, rounded=True)
+    plt.show()
+    plt.clf()
 
     for pairidx, pair in enumerate([[0, 1], [0, 2], [0, 3], [1, 2], [1, 3], [2, 3]]):
         X = features[:, pair]
@@ -97,7 +105,7 @@ if __name__ == '__main__':
             response_method="predict",
             ax=ax,
             xlabel=feature_names[pair[0]],
-            ylabel=feature_names[pair[1]],
+            ylabel=feature_names[pair[1]]
         )
 
         for i, color in zip(range(n_classes), plot_colors):
@@ -106,15 +114,17 @@ if __name__ == '__main__':
                 X[idx, 0],
                 X[idx, 1],
                 c=color,
-                # label=iris.target_names[i],
+                label=target_names[i],
                 cmap=plt.cm.RdYlBu,
                 edgecolor="black",
-                s=15,
+                s=15
             )
 
     plt.suptitle("Decision surface of decision trees trained on pairs of features")
     plt.legend(loc="lower right", borderpad=0, handletextpad=0)
     _ = plt.axis("tight")
     plt.show()
+
+
 
 
