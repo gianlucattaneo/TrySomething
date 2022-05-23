@@ -34,60 +34,60 @@
 <script src="catalog/view/theme/showmen/js/cloud-zoom.js" type="text/javascript"></script>
 <link href="catalog/view/theme/showmen/stylesheet/dcaccordion.css" property="stylesheet" rel="stylesheet" type="text/css">
 <script src="catalog/view/theme/showmen/js/jquery.dcjqaccordion.js" type="text/javascript"></script>
-<script>
-      // This allows to expose several variables to the global scope, to be used in scripts
-      window.theme = {
-        template: "index",
-        shopCurrency: "GBP",
-        moneyFormat: "\u003cspan class=money\u003e\u0026pound;{{amount}}\u003c\/span\u003e",
-        moneyWithCurrencyFormat: "\u003cspan class=money\u003e\u0026pound;{{amount}} GBP\u003c\/span\u003e",
-        currencyConversionEnabled: true,
-        currencyConversionMoneyFormat: "money_format",
-        currencyConversionRoundAmounts: true,
-        productImageSize: "natural",
-        searchMode: "product,article",
-        showPageTransition: true,
-        showElementStaggering: true,
-        showImageZooming: true,
-        enableExperimentalResizeObserver: false
-      };
-
-      window.languages = {
-        cartAddNote: "Add Order Note",
-        cartEditNote: "Edit Order Note",
-        productImageLoadingError: "This image could not be loaded. Please try to reload the page.",
-        productFormAddToCart: "Add to cart",
-        productFormUnavailable: "Unavailable",
-        productFormSoldOut: "Sold Out",
-        shippingEstimatorOneResult: "1 option available:",
-        shippingEstimatorMoreResults: "{{count}} options available:",
-        shippingEstimatorNoResults: "No shipping could be found"
-      };
-
-      window.lazySizesConfig = {
-        loadHidden: false,
-        hFac: 0.5,
-        expFactor: 2,
-        ricTimeout: 150,
-        lazyClass: 'Image--lazyLoad',
-        loadingClass: 'Image--lazyLoading',
-        loadedClass: 'Image--lazyLoaded'
-      };
-
-      document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
-      document.documentElement.style.setProperty('--window-height', window.innerHeight + 'px');
-
-      // We do a quick detection of some features (we could use Modernizr but for so little...)
-      (function() {
-        document.documentElement.className += ((window.CSS && window.CSS.supports('(position: sticky) or (position: -webkit-sticky)')) ? ' supports-sticky' : ' no-supports-sticky');
-        document.documentElement.className += (window.matchMedia('(-moz-touch-enabled: 1), (hover: none)')).matches ? ' no-supports-hover' : ' supports-hover';
-      }());
-
-      window.onpageshow = function (event) {
-        if (event.persisted) {
-          window.location.reload();
-        }
-      };
+<script>
+      // This allows to expose several variables to the global scope, to be used in scripts
+      window.theme = {
+        template: "index",
+        shopCurrency: "GBP",
+        moneyFormat: "\u003cspan class=money\u003e\u0026pound;{{amount}}\u003c\/span\u003e",
+        moneyWithCurrencyFormat: "\u003cspan class=money\u003e\u0026pound;{{amount}} GBP\u003c\/span\u003e",
+        currencyConversionEnabled: true,
+        currencyConversionMoneyFormat: "money_format",
+        currencyConversionRoundAmounts: true,
+        productImageSize: "natural",
+        searchMode: "product,article",
+        showPageTransition: true,
+        showElementStaggering: true,
+        showImageZooming: true,
+        enableExperimentalResizeObserver: false
+      };
+
+      window.languages = {
+        cartAddNote: "Add Order Note",
+        cartEditNote: "Edit Order Note",
+        productImageLoadingError: "This image could not be loaded. Please try to reload the page.",
+        productFormAddToCart: "Add to cart",
+        productFormUnavailable: "Unavailable",
+        productFormSoldOut: "Sold Out",
+        shippingEstimatorOneResult: "1 option available:",
+        shippingEstimatorMoreResults: "{{count}} options available:",
+        shippingEstimatorNoResults: "No shipping could be found"
+      };
+
+      window.lazySizesConfig = {
+        loadHidden: false,
+        hFac: 0.5,
+        expFactor: 2,
+        ricTimeout: 150,
+        lazyClass: 'Image--lazyLoad',
+        loadingClass: 'Image--lazyLoading',
+        loadedClass: 'Image--lazyLoaded'
+      };
+
+      document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+      document.documentElement.style.setProperty('--window-height', window.innerHeight + 'px');
+
+      // We do a quick detection of some features (we could use Modernizr but for so little...)
+      (function() {
+        document.documentElement.className += ((window.CSS && window.CSS.supports('(position: sticky) or (position: -webkit-sticky)')) ? ' supports-sticky' : ' no-supports-sticky');
+        document.documentElement.className += (window.matchMedia('(-moz-touch-enabled: 1), (hover: none)')).matches ? ' no-supports-hover' : ' supports-hover';
+      }());
+
+      window.onpageshow = function (event) {
+        if (event.persisted) {
+          window.location.reload();
+        }
+      };
     </script>
 </link></link></link></meta></head>
 <body class="common-home showmen">
@@ -96,12 +96,12 @@
 <div id="sidebar-wrapper">
 <ul class="sidebar-nav list-group showmen">
 <li class="sidebar-title">
-<a href="#menu-toggle-close" id="menu-toggle-close"><span aria-hidden="true">×</span></a>Información      <script>
-      $("#menu-toggle-close").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-		$(".sidebar-opacity").toggleClass("toggled");
-      });
+<a href="#menu-toggle-close" id="menu-toggle-close"><span aria-hidden="true">×</span></a>Información      <script>
+      $("#menu-toggle-close").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+		$(".sidebar-opacity").toggleClass("toggled");
+      });
       </script>
 </li>
 <li><a href="https://www.mdz-stralsund.de/index.php?route=information/information&amp;information_id=7">FAQ</a></li>
@@ -164,12 +164,12 @@
 <span class="button-text">Menú</span>
 </div>
 </a>
-<script>
-        $("#menu-mobile-toggle").click(function(e) {
-          e.preventDefault();
-          $("#wrapper").toggleClass("menu-toggled");
-		  $(".sidebar-opacity").toggleClass("menu-toggled");
-        });
+<script>
+        $("#menu-mobile-toggle").click(function(e) {
+          e.preventDefault();
+          $("#wrapper").toggleClass("menu-toggled");
+		  $(".sidebar-opacity").toggleClass("menu-toggled");
+        });
       </script>
 <div class="btn-group btn-block buttons-header" id="cart">
 <a class="btn dropdown-toggle" data-loading-text="Cargando..." data-toggle="dropdown">
@@ -207,26 +207,26 @@
 </div>
 </div>
 </nav>
-<script type="text/javascript">
-$(document).ready(function() {
-	$('#accordion-mobile').dcAccordion({
-		disableLink: false,	
-		menuClose: false,
-		autoClose: true,
-		autoExpand: true,		
-		saveState: false
-	});
-});
+<script type="text/javascript">
+$(document).ready(function() {
+	$('#accordion-mobile').dcAccordion({
+		disableLink: false,	
+		menuClose: false,
+		autoClose: true,
+		autoExpand: true,		
+		saveState: false
+	});
+});
 </script>
 <div class="hidden-sm hidden-md hidden-lg" id="menu-mobile">
 <ul class="accordion sidebar-nav list-group" id="accordion-mobile">
 <li class="sidebar-title">
-<a href="#menu-mobile-toggle-close" id="menu-mobile-toggle-close"><span aria-hidden="true">×</span></a>Menú      <script>
-      $("#menu-mobile-toggle-close").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("menu-toggled");
-		$(".sidebar-opacity").toggleClass("menu-toggled");
-      });
+<a href="#menu-mobile-toggle-close" id="menu-mobile-toggle-close"><span aria-hidden="true">×</span></a>Menú      <script>
+      $("#menu-mobile-toggle-close").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("menu-toggled");
+		$(".sidebar-opacity").toggleClass("menu-toggled");
+      });
       </script>
 </li>
 <li><a href="https://www.mdz-stralsund.de/">Inicio</a></li>
@@ -259,16 +259,16 @@ $(document).ready(function() {
 </div>
 <div style="display:none;"><script src="//js.users.51.la/21085533.js" type="text/javascript"></script><br/></div><div class="container">
 <div class="row"><column class="col-sm-3 hidden-xs" id="column-left">
-<script type="text/javascript">
-$(document).ready(function() {
-	$('#accordion-1').dcAccordion({
-		disableLink: false,	
-		menuClose: false,
-		autoClose: true,
-		autoExpand: true,		
-		saveState: false
-	});
-});
+<script type="text/javascript">
+$(document).ready(function() {
+	$('#accordion-1').dcAccordion({
+		disableLink: false,	
+		menuClose: false,
+		autoClose: true,
+		autoExpand: true,		
+		saveState: false
+	});
+});
 </script>
 <div class="panel panel-default panel-category">
 <div class="panel-heading">Categorias</div>
@@ -300,94 +300,94 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.mdz-stralsund.de/comma-casual-identity-camiseta-estampada-placed-pri-vm9ek.html"><img alt="comma casual identity Camiseta estampada - placed pri vM9Ek SGXKEF9L" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/comma-casual-identity-camiseta-estampada-placed-prix-vm9ek-3128.jpg" title="comma casual identity Camiseta estampada - placed pri vM9Ek SGXKEF9L"/></a>
+<a class="arevision" href="https://www.mdz-stralsund.de/byoung-hylda-shirt-camisa-optical-white-xgycu.html"><img alt="b.young HYLDA SHIRT - Camisa - optical white XGyCU oDInQj8U" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/byoung-hylda-shirt-camisa-optical-white-xgycu-3687.jpg" title="b.young HYLDA SHIRT - Camisa - optical white XGyCU oDInQj8U"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.mdz-stralsund.de/comma-casual-identity-camiseta-estampada-placed-pri-vm9ek.html">comma casual identity Camiseta estampada - placed pri vM9Ek SGXKEF9L</a></h4></div>
+<div class="name"><h4><a href="https://www.mdz-stralsund.de/byoung-hylda-shirt-camisa-optical-white-xgycu.html">b.young HYLDA SHIRT - Camisa - optical white XGyCU oDInQj8U</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€35.99</span> <span class="price-old">€92.99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="https://www.mdz-stralsund.de/emily-noah-deborah-bandolera-darkgrey-840-drbmb.html"><img alt="Emily &amp; Noah DEBORAH - Bandolera - darkgrey 840 drBMB B4XOtcgb" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/emily-noah-deborah-bandolera-darkgrey-840-drbmb-3580.jpg" title="Emily &amp; Noah DEBORAH - Bandolera - darkgrey 840 drBMB B4XOtcgb"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="https://www.mdz-stralsund.de/emily-noah-deborah-bandolera-darkgrey-840-drbmb.html">Emily &amp; Noah DEBORAH - Bandolera - darkgrey 840 drBMB B4XOtcgb</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€39.99</span> <span class="price-old">€95.99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="https://www.mdz-stralsund.de/adidas-performance-sports-regular-short-sleeve-camiseta-estampada-medium-grey-heather-u94xv.html"><img alt="adidas Performance SPORTS REGULAR SHORT SLEEVE - Camiseta estampada - medium grey heather u94Xv OxfAeFh4" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/adidas-performance-sports-regular-short-sleeve-camiseta-estampada-medium-grey-heather-u94xv-1330.jpg" title="adidas Performance SPORTS REGULAR SHORT SLEEVE - Camiseta estampada - medium grey heather u94Xv OxfAeFh4"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="https://www.mdz-stralsund.de/adidas-performance-sports-regular-short-sleeve-camiseta-estampada-medium-grey-heather-u94xv.html">adidas Performance SPORTS REGULAR SHORT SLEEVE - Camiseta estampada - medium grey heather u94Xv OxfAeFh4</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€37.99</span> <span class="price-old">€80.99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="https://www.mdz-stralsund.de/never-fully-dressed-blossom-dakota-dress-vestido-informal-orange-2a65m.html"><img alt="Never Fully Dressed BLOSSOM DAKOTA DRESS - Vestido informal - orange 2a65m slxyGJGP" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/never-fully-dressed-blossom-dakota-dress-vestido-informal-orange-2a65m-4154.jpg" title="Never Fully Dressed BLOSSOM DAKOTA DRESS - Vestido informal - orange 2a65m slxyGJGP"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="https://www.mdz-stralsund.de/never-fully-dressed-blossom-dakota-dress-vestido-informal-orange-2a65m.html">Never Fully Dressed BLOSSOM DAKOTA DRESS - Vestido informal - orange 2a65m slxyGJGP</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€36.99</span> <span class="price-old">€86.99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="https://www.mdz-stralsund.de/toms-alpargata-mocasines-olive-q5wae.html"><img alt="TOMS ALPARGATA - Mocasines - olive Q5wAe oRapkYbq" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/toms-alpargata-mocasines-olive-q5wae-174.jpg" title="TOMS ALPARGATA - Mocasines - olive Q5wAe oRapkYbq"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="https://www.mdz-stralsund.de/toms-alpargata-mocasines-olive-q5wae.html">TOMS ALPARGATA - Mocasines - olive Q5wAe oRapkYbq</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€35.99</span> <span class="price-old">€90.99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="https://www.mdz-stralsund.de/superga-seattle-zapatillas-total-black-acybx.html"><img alt="Superga SEATTLE - Zapatillas - total black ACyBX v7UYklgT" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/superga-seattle-zapatillas-total-black-acybx-2515.jpg" title="Superga SEATTLE - Zapatillas - total black ACyBX v7UYklgT"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="https://www.mdz-stralsund.de/superga-seattle-zapatillas-total-black-acybx.html">Superga SEATTLE - Zapatillas - total black ACyBX v7UYklgT</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
 <span class="price-new">€36.99</span> <span class="price-old">€95.99</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.mdz-stralsund.de/lulipa-london-jada-zapatos-altos-white-vj3cq.html"><img alt="Lulipa London JADA - Zapatos altos - white vJ3cq B5sR4Yj9" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/lulipa-london-jada-zapatos-altos-white-vj3cq-4194.jpg" title="Lulipa London JADA - Zapatos altos - white vJ3cq B5sR4Yj9"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="https://www.mdz-stralsund.de/lulipa-london-jada-zapatos-altos-white-vj3cq.html">Lulipa London JADA - Zapatos altos - white vJ3cq B5sR4Yj9</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€38.99</span> <span class="price-old">€84.99</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.mdz-stralsund.de/roxy-costas-sandalias-de-dedo-rose-gold-nb2ts.html"><img alt="Roxy COSTAS - Sandalias de dedo - rose gold NB2ts 8ShWGgCa" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/roxy-costas-sandalias-de-dedo-rose-gold-nb2ts-4214.jpg" title="Roxy COSTAS - Sandalias de dedo - rose gold NB2ts 8ShWGgCa"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="https://www.mdz-stralsund.de/roxy-costas-sandalias-de-dedo-rose-gold-nb2ts.html">Roxy COSTAS - Sandalias de dedo - rose gold NB2ts 8ShWGgCa</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€36.99</span> <span class="price-old">€93.99</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.mdz-stralsund.de/yellow-cab-utah-botines-con-cordones-blue-gcag3.html"><img alt="Yellow Cab UTAH - Botines con cordones - blue gCaG3 HdA4UEMs" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/yellow-cab-utah-botines-con-cordones-blue-gcag3-4272.jpg" title="Yellow Cab UTAH - Botines con cordones - blue gCaG3 HdA4UEMs"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="https://www.mdz-stralsund.de/yellow-cab-utah-botines-con-cordones-blue-gcag3.html">Yellow Cab UTAH - Botines con cordones - blue gCaG3 HdA4UEMs</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€38.99</span> <span class="price-old">€80.99</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.mdz-stralsund.de/lamica-gel-botines-cognac-b8xg6.html"><img alt="Lamica GEL - Botines - cognac B8XG6 pZ2DQcgR" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/lamica-gel-botines-cognac-b8xg6-5209.jpg" title="Lamica GEL - Botines - cognac B8XG6 pZ2DQcgR"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="https://www.mdz-stralsund.de/lamica-gel-botines-cognac-b8xg6.html">Lamica GEL - Botines - cognac B8XG6 pZ2DQcgR</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€38.99</span> <span class="price-old">€80.99</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.mdz-stralsund.de/tomshot-pulsera-silvercoloured-j9zg7.html"><img alt="TomShot Pulsera - silver-coloured J9ZG7 YKp1CHOq" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/tomshot-pulsera-silvercoloured-j9zg7-3100.jpg" title="TomShot Pulsera - silver-coloured J9ZG7 YKp1CHOq"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="https://www.mdz-stralsund.de/tomshot-pulsera-silvercoloured-j9zg7.html">TomShot Pulsera - silver-coloured J9ZG7 YKp1CHOq</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€36.99</span> <span class="price-old">€90.99</span>
 </p>
 </div>
 </div>
@@ -404,14 +404,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.mdz-stralsund.de/parfois-bailarinas-black-hjk7u.html"><img alt="PARFOIS Bailarinas - black HJK7u DKL09bOs" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/parfois-bailarinas-black-hjk7u-5213.jpg" title="PARFOIS Bailarinas - black HJK7u DKL09bOs"/></a>
+<a class="arevision" href="https://www.mdz-stralsund.de/nike-performance-court-lite-2-zapatillas-de-tenis-para-todas-las-superficies-white-neon-turquoise-hot-lime-light-smoke-grey-3agle.html"><img alt="Nike Performance COURT LITE 2 - Zapatillas de tenis para todas las superficies - white/neon turquoise/hot lime/light smoke grey 3AGLe YNcgRpTl" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/nike-performance-court-lite-2-zapatillas-de-tenis-para-todas-las-superficies-white-neon-turquoise-hot-lime-light-smoke-grey-3agle-647.jpg" title="Nike Performance COURT LITE 2 - Zapatillas de tenis para todas las superficies - white/neon turquoise/hot lime/light smoke grey 3AGLe YNcgRpTl"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.mdz-stralsund.de/parfois-bailarinas-black-hjk7u.html">PARFOIS Bailarinas - black HJK7u DKL09bOs</a></h4></div>
+<div class="name"><h4><a href="https://www.mdz-stralsund.de/nike-performance-court-lite-2-zapatillas-de-tenis-para-todas-las-superficies-white-neon-turquoise-hot-lime-light-smoke-grey-3agle.html">Nike Performance COURT LITE 2 - Zapatillas de tenis para todas las superficies - white/neon turquoise/hot lime/light smoke grey 3AGLe YNcgRpTl</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€37.99</span> <span class="price-old">€96.99</span>
+<span class="price-new">€37.99</span> <span class="price-old">€84.99</span>
 </p>
 </div>
 </div>
@@ -420,14 +420,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.mdz-stralsund.de/kappa-hanne-medias-caviar-osxq7.html"><img alt="Kappa HANNE - Medias - caviar Osxq7 4a2EzIgL" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/kappa-hanne-medias-caviar-osxq7-462.jpg" title="Kappa HANNE - Medias - caviar Osxq7 4a2EzIgL"/></a>
+<a class="arevision" href="https://www.mdz-stralsund.de/free-people-miss-dazie-bralette-top-white-rgag9.html"><img alt="Free People MISS DAZIE BRALETTE - Top - white rGAG9 xQpbHuPF" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/free-people-miss-dazie-bralette-top-white-rgag9-5373.jpg" title="Free People MISS DAZIE BRALETTE - Top - white rGAG9 xQpbHuPF"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.mdz-stralsund.de/kappa-hanne-medias-caviar-osxq7.html">Kappa HANNE - Medias - caviar Osxq7 4a2EzIgL</a></h4></div>
+<div class="name"><h4><a href="https://www.mdz-stralsund.de/free-people-miss-dazie-bralette-top-white-rgag9.html">Free People MISS DAZIE BRALETTE - Top - white rGAG9 xQpbHuPF</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€37.99</span> <span class="price-old">€86.99</span>
+<span class="price-new">€35.99</span> <span class="price-old">€90.99</span>
 </p>
 </div>
 </div>
@@ -436,14 +436,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.mdz-stralsund.de/karen-by-simonsen-brenna-camisa-blue-obcae.html"><img alt="Karen by Simonsen BRENNA - Camisa - blue oBCaE 6QBSTBTJ" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/karen-by-simonsen-brenna-camisa-blue-obcae-1704.jpg" title="Karen by Simonsen BRENNA - Camisa - blue oBCaE 6QBSTBTJ"/></a>
+<a class="arevision" href="https://www.mdz-stralsund.de/otto-kessler-grit-manoplas-black-noxgc.html"><img alt="Otto Kessler GRIT - Manoplas - black nOxgc LytwOPbN" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/otto-kessler-grit-manoplas-black-noxgc-658.jpg" title="Otto Kessler GRIT - Manoplas - black nOxgc LytwOPbN"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.mdz-stralsund.de/karen-by-simonsen-brenna-camisa-blue-obcae.html">Karen by Simonsen BRENNA - Camisa - blue oBCaE 6QBSTBTJ</a></h4></div>
+<div class="name"><h4><a href="https://www.mdz-stralsund.de/otto-kessler-grit-manoplas-black-noxgc.html">Otto Kessler GRIT - Manoplas - black nOxgc LytwOPbN</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€38.99</span> <span class="price-old">€89.99</span>
+<span class="price-new">€39.99</span> <span class="price-old">€82.99</span>
 </p>
 </div>
 </div>
@@ -452,14 +452,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.mdz-stralsund.de/adidas-performance-juventus-turin-cotton-towel-toalla-black-0oxuc.html"><img alt="adidas Performance JUVENTUS TURIN COTTON TOWEL - Toalla - black 0OXUC s5PiazLF" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/adidas-performance-juventus-turin-cotton-towel-toalla-black-0oxuc-2154.jpg" title="adidas Performance JUVENTUS TURIN COTTON TOWEL - Toalla - black 0OXUC s5PiazLF"/></a>
+<a class="arevision" href="https://www.mdz-stralsund.de/oneill-endless-summer-set-bikini-black-out-hfpgg.html"><img alt="O'Neill ENDLESS SUMMER SET - Bikini - black out hFpgg lLPU7bK6" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/oneill-endless-summer-set-bikini-black-out-hfpgg-4630.jpg" title="O'Neill ENDLESS SUMMER SET - Bikini - black out hFpgg lLPU7bK6"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.mdz-stralsund.de/adidas-performance-juventus-turin-cotton-towel-toalla-black-0oxuc.html">adidas Performance JUVENTUS TURIN COTTON TOWEL - Toalla - black 0OXUC s5PiazLF</a></h4></div>
+<div class="name"><h4><a href="https://www.mdz-stralsund.de/oneill-endless-summer-set-bikini-black-out-hfpgg.html">O'Neill ENDLESS SUMMER SET - Bikini - black out hFpgg lLPU7bK6</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€38.99</span> <span class="price-old">€84.99</span>
+<span class="price-new">€37.99</span> <span class="price-old">€84.99</span>
 </p>
 </div>
 </div>
@@ -468,27 +468,11 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.mdz-stralsund.de/karl-lagerfeld-haus-logo-lace-zapatillas-white-3ivg8.html"><img alt="KARL LAGERFELD HAUS LOGO LACE - Zapatillas - white 3iVg8 x9CzgouL" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/karl-lagerfeld-haus-logo-lace-zapatillas-white-3ivg8-5136.jpg" title="KARL LAGERFELD HAUS LOGO LACE - Zapatillas - white 3iVg8 x9CzgouL"/></a>
+<a class="arevision" href="https://www.mdz-stralsund.de/gina-tricot-dorsia-camiseta-de-manga-larga-floral-blmeo.html"><img alt="Gina Tricot DORSIA - Camiseta de manga larga - floral blMEO 8SIk6pbh" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/gina-tricot-dorsia-camiseta-de-manga-larga-floral-blmeo-4492.jpg" title="Gina Tricot DORSIA - Camiseta de manga larga - floral blMEO 8SIk6pbh"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.mdz-stralsund.de/karl-lagerfeld-haus-logo-lace-zapatillas-white-3ivg8.html">KARL LAGERFELD HAUS LOGO LACE - Zapatillas - white 3iVg8 x9CzgouL</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€35.99</span> <span class="price-old">€89.99</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.mdz-stralsund.de/nike-performance-mercurial-7-academy-tf-botas-de-futbol-multitacos-black-dark-smoke-grey-ohhod.html"><img alt="Nike Performance MERCURIAL 7 ACADEMY TF - Botas de fútbol multitacos - black/dark smoke grey oHHOd hodgYowe" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/nike-performance-mercurial-7-academy-tf-botas-de-futbol-multitacos-black-dark-smoke-grey-ohhod-236.jpg" title="Nike Performance MERCURIAL 7 ACADEMY TF - Botas de fútbol multitacos - black/dark smoke grey oHHOd hodgYowe"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="https://www.mdz-stralsund.de/nike-performance-mercurial-7-academy-tf-botas-de-futbol-multitacos-black-dark-smoke-grey-ohhod.html">Nike Performance MERCURIAL 7 ACADEMY TF - Botas de fútbol multitacos - black/dark smoke grey oHHOd hodgYowe</a></h4></div>
+<div class="name"><h4><a href="https://www.mdz-stralsund.de/gina-tricot-dorsia-camiseta-de-manga-larga-floral-blmeo.html">Gina Tricot DORSIA - Camiseta de manga larga - floral blMEO 8SIk6pbh</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
 <span class="price-new">€37.99</span> <span class="price-old">€90.99</span>
@@ -500,14 +484,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.mdz-stralsund.de/be-edgy-wilford-jersey-de-punto-black-iv97h.html"><img alt="Be Edgy WILFORD - Jersey de punto - black iv97H W6OV0FOR" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/be-edgy-wilford-jersey-de-punto-black-iv97h-1744.jpg" title="Be Edgy WILFORD - Jersey de punto - black iv97H W6OV0FOR"/></a>
+<a class="arevision" href="https://www.mdz-stralsund.de/soliver-botines-bajos-grey-5jf0w.html"><img alt="s.Oliver Botines bajos - grey 5jF0W UZXFQXi1" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/soliver-botines-bajos-grey-5jf0w-5695.jpg" title="s.Oliver Botines bajos - grey 5jF0W UZXFQXi1"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.mdz-stralsund.de/be-edgy-wilford-jersey-de-punto-black-iv97h.html">Be Edgy WILFORD - Jersey de punto - black iv97H W6OV0FOR</a></h4></div>
+<div class="name"><h4><a href="https://www.mdz-stralsund.de/soliver-botines-bajos-grey-5jf0w.html">s.Oliver Botines bajos - grey 5jF0W UZXFQXi1</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€38.99</span> <span class="price-old">€93.99</span>
+<span class="price-new">€39.99</span> <span class="price-old">€95.99</span>
 </p>
 </div>
 </div>
@@ -516,14 +500,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.mdz-stralsund.de/jcrew-shrimpy-tassel-earrings-pendientes-brilliant-sunset-k6iir.html"><img alt="J.CREW SHRIMPY TASSEL EARRINGS - Pendientes - brilliant sunset k6iir Qdl7b1Kg" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/jcrew-shrimpy-tassel-earrings-pendientes-brilliant-sunset-k6iir-3741.jpg" title="J.CREW SHRIMPY TASSEL EARRINGS - Pendientes - brilliant sunset k6iir Qdl7b1Kg"/></a>
+<a class="arevision" href="https://www.mdz-stralsund.de/superdry-merch-store-band-camiseta-estampada-black-6aurf.html"><img alt="Superdry MERCH STORE BAND - Camiseta estampada - black 6aurf aaHN2aj1" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/superdry-merch-store-band-camiseta-estampada-black-6aurf-1294.jpg" title="Superdry MERCH STORE BAND - Camiseta estampada - black 6aurf aaHN2aj1"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.mdz-stralsund.de/jcrew-shrimpy-tassel-earrings-pendientes-brilliant-sunset-k6iir.html">J.CREW SHRIMPY TASSEL EARRINGS - Pendientes - brilliant sunset k6iir Qdl7b1Kg</a></h4></div>
+<div class="name"><h4><a href="https://www.mdz-stralsund.de/superdry-merch-store-band-camiseta-estampada-black-6aurf.html">Superdry MERCH STORE BAND - Camiseta estampada - black 6aurf aaHN2aj1</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€39.99</span> <span class="price-old">€90.99</span>
+<span class="price-new">€39.99</span> <span class="price-old">€84.99</span>
 </p>
 </div>
 </div>
@@ -532,14 +516,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.mdz-stralsund.de/desigual-backmaria-escote-nazca-baby-mochila-black-cmwk2.html"><img alt="Desigual BACK_MARIA ESCOTÉ NAZCA BABY - Mochila - black cmwk2 uTtIAzDR" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/desigual-backmaria-escote-nazca-baby-mochila-black-cmwk2-3624.jpg" title="Desigual BACK_MARIA ESCOTÉ NAZCA BABY - Mochila - black cmwk2 uTtIAzDR"/></a>
+<a class="arevision" href="https://www.mdz-stralsund.de/onitsuka-tiger-mexico-66-zapatillas-white-wb4wv.html"><img alt="Onitsuka Tiger MEXICO 66 - Zapatillas - white Wb4Wv f7Jo4L6D" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/onitsuka-tiger-mexico-66-zapatillas-white-wb4wv-1535.jpg" title="Onitsuka Tiger MEXICO 66 - Zapatillas - white Wb4Wv f7Jo4L6D"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.mdz-stralsund.de/desigual-backmaria-escote-nazca-baby-mochila-black-cmwk2.html">Desigual BACK_MARIA ESCOTÉ NAZCA BABY - Mochila - black cmwk2 uTtIAzDR</a></h4></div>
+<div class="name"><h4><a href="https://www.mdz-stralsund.de/onitsuka-tiger-mexico-66-zapatillas-white-wb4wv.html">Onitsuka Tiger MEXICO 66 - Zapatillas - white Wb4Wv f7Jo4L6D</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€35.99</span> <span class="price-old">€82.99</span>
+<span class="price-new">€37.99</span> <span class="price-old">€89.99</span>
 </p>
 </div>
 </div>
@@ -548,14 +532,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.mdz-stralsund.de/diane-von-furstenberg-new-jeanne-vestido-informal-pink-cb15w.html"><img alt="Diane von Furstenberg NEW JEANNE - Vestido informal - pink cb15W zPE8dQCw" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/diane-von-furstenberg-new-jeanne-vestido-informal-pink-cb15w-94.jpg" title="Diane von Furstenberg NEW JEANNE - Vestido informal - pink cb15W zPE8dQCw"/></a>
+<a class="arevision" href="https://www.mdz-stralsund.de/dickies-porterdale-pocket-camiseta-basica-white-ragaa.html"><img alt="Dickies PORTERDALE POCKET - Camiseta básica - white raGaa nK2SsIxq" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/dickies-porterdale-pocket-camiseta-basica-white-ragaa-3214.jpg" title="Dickies PORTERDALE POCKET - Camiseta básica - white raGaa nK2SsIxq"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.mdz-stralsund.de/diane-von-furstenberg-new-jeanne-vestido-informal-pink-cb15w.html">Diane von Furstenberg NEW JEANNE - Vestido informal - pink cb15W zPE8dQCw</a></h4></div>
+<div class="name"><h4><a href="https://www.mdz-stralsund.de/dickies-porterdale-pocket-camiseta-basica-white-ragaa.html">Dickies PORTERDALE POCKET - Camiseta básica - white raGaa nK2SsIxq</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€37.99</span> <span class="price-old">€91.99</span>
+<span class="price-new">€36.99</span> <span class="price-old">€97.99</span>
 </p>
 </div>
 </div>
@@ -564,14 +548,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.mdz-stralsund.de/karl-kani-signature-hoodie-jersey-con-capucha-black-white-blsad.html"><img alt="Karl Kani SIGNATURE HOODIE - Jersey con capucha - black/white BLSAD vr26lPW9" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/karl-kani-signature-hoodie-jersey-con-capucha-black-white-blsad-5588.jpg" title="Karl Kani SIGNATURE HOODIE - Jersey con capucha - black/white BLSAD vr26lPW9"/></a>
+<a class="arevision" href="https://www.mdz-stralsund.de/anna-field-wide-fit-leather-classic-heels-tacones-gold-ej1ws.html"><img alt="Anna Field Wide Fit LEATHER CLASSIC HEELS - Tacones - gold EJ1WS zC8Hoziy" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/anna-field-wide-fit-leather-classic-heels-tacones-gold-ej1ws-2364.jpg" title="Anna Field Wide Fit LEATHER CLASSIC HEELS - Tacones - gold EJ1WS zC8Hoziy"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.mdz-stralsund.de/karl-kani-signature-hoodie-jersey-con-capucha-black-white-blsad.html">Karl Kani SIGNATURE HOODIE - Jersey con capucha - black/white BLSAD vr26lPW9</a></h4></div>
+<div class="name"><h4><a href="https://www.mdz-stralsund.de/anna-field-wide-fit-leather-classic-heels-tacones-gold-ej1ws.html">Anna Field Wide Fit LEATHER CLASSIC HEELS - Tacones - gold EJ1WS zC8Hoziy</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€35.99</span> <span class="price-old">€93.99</span>
+<span class="price-new">€37.99</span> <span class="price-old">€92.99</span>
 </p>
 </div>
 </div>
@@ -580,14 +564,30 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.mdz-stralsund.de/kickers-classics-stripe-sleeve-tee-camiseta-estampada-black-brown-c7bp6.html"><img alt="Kickers Classics STRIPE SLEEVE TEE - Camiseta estampada - black / brown c7Bp6 Otv5hkcb" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/kickers-classics-stripe-sleeve-tee-camiseta-estampada-black-brown-c7bp6-5652.jpg" title="Kickers Classics STRIPE SLEEVE TEE - Camiseta estampada - black / brown c7Bp6 Otv5hkcb"/></a>
+<a class="arevision" href="https://www.mdz-stralsund.de/free-people-crofter-cardi-chaqueta-de-punto-sand-dunes-combo-hufxs.html"><img alt="Free People CROFTER CARDI - Chaqueta de punto - sand dunes combo HUfXS y1Tqq3HO" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/free-people-crofter-cardi-chaqueta-de-punto-sand-dunes-combo-hufxs-3698.jpg" title="Free People CROFTER CARDI - Chaqueta de punto - sand dunes combo HUfXS y1Tqq3HO"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.mdz-stralsund.de/kickers-classics-stripe-sleeve-tee-camiseta-estampada-black-brown-c7bp6.html">Kickers Classics STRIPE SLEEVE TEE - Camiseta estampada - black / brown c7Bp6 Otv5hkcb</a></h4></div>
+<div class="name"><h4><a href="https://www.mdz-stralsund.de/free-people-crofter-cardi-chaqueta-de-punto-sand-dunes-combo-hufxs.html">Free People CROFTER CARDI - Chaqueta de punto - sand dunes combo HUfXS y1Tqq3HO</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€38.99</span> <span class="price-old">€80.99</span>
+<span class="price-new">€35.99</span> <span class="price-old">€81.99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="https://www.mdz-stralsund.de/nike-performance-all-over-camiseta-basica-white-ju9gk.html"><img alt="Nike Performance ALL OVER - Camiseta básica - white Ju9Gk UocvWcIE" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/nike-performance-all-over-camiseta-basica-white-ju9gk-2923.jpg" title="Nike Performance ALL OVER - Camiseta básica - white Ju9Gk UocvWcIE"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="https://www.mdz-stralsund.de/nike-performance-all-over-camiseta-basica-white-ju9gk.html">Nike Performance ALL OVER - Camiseta básica - white Ju9Gk UocvWcIE</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€35.99</span> <span class="price-old">€91.99</span>
 </p>
 </div>
 </div>
@@ -630,43 +630,43 @@ $(document).ready(function() {
 <div id="powered">
 <div class="container">
 <div class="row">
-<div class="col-sm-12 col-md-12">
-      Copyright © 2022 <a href="//www.mdz-stralsund.de" target="_blank">www.mdz-stralsund.de</a> All Rights Reserved  
+<div class="col-sm-12 col-md-12">
+      Copyright © 2022 <a href="//www.mdz-stralsund.de" target="_blank">www.mdz-stralsund.de</a> All Rights Reserved  
       </div>
 </div>
 </div>
 </div>
 </footer>
 <script src="catalog/view/theme/showmen/js/jquery.visible.min.js" type="text/javascript"></script>
-<script type="text/javascript">
-
-var win = $(window);
-
-var allMods = $("footer");
-
-allMods.each(function(i, el) {
-    
-  if ($(el).visible(true)) {
-    $(el).addClass("already-visible"); 
-  }
-  
-});
-
-win.scroll(function(event) {
-  
-  allMods.each(function(i, el) {
-    
-    var el = $(el);
-    
-    if (el.visible(true)) {
-      el.addClass("come-in"); 
-    } else {
-      el.removeClass("come-in already-visible");
-    }
-    
-  });
-  
-}); 
+<script type="text/javascript">
+
+var win = $(window);
+
+var allMods = $("footer");
+
+allMods.each(function(i, el) {
+    
+  if ($(el).visible(true)) {
+    $(el).addClass("already-visible"); 
+  }
+  
+});
+
+win.scroll(function(event) {
+  
+  allMods.each(function(i, el) {
+    
+    var el = $(el);
+    
+    if (el.visible(true)) {
+      el.addClass("come-in"); 
+    } else {
+      el.removeClass("come-in already-visible");
+    }
+    
+  });
+  
+}); 
 </script>
 <script src="catalog/view/theme/showmen/js/jquery.easing-1.3.min.js" type="text/javascript"></script>
 <link href="catalog/view/theme/showmen/js/quickview/fancybox/jquery.fancybox.css" property="stylesheet" rel="stylesheet">

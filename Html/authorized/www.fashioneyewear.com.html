@@ -452,7 +452,7 @@ window.ShopifyPay.apiHost = "shop.app\/pay";</script>
     window.addEventListener('load', asyncLoad, false);
   }
 })();</script>
-<script id="__st">var __st={"a":60190458085,"offset":3600,"reqid":"06fe6e84-bd13-46fd-b98f-9281cee77a3f","pageurl":"www.fashioneyewear.com\/","u":"0dcba75c2f41","p":"home"};</script>
+<script id="__st">var __st={"a":60190458085,"offset":3600,"reqid":"1c482e40-d648-4528-b908-6f6ae3a3b22e","pageurl":"www.fashioneyewear.com\/","u":"844e4d8cc4be","p":"home"};</script>
 <script>window.ShopifyPaypalV4VisibilityTracking = true;</script>
 <script>!function(o){o.addEventListener("DOMContentLoaded",function(){window.Shopify=window.Shopify||{},window.Shopify.recaptchaV3=window.Shopify.recaptchaV3||{siteKey:"6LcCR2cUAAAAANS1Gpq_mDIJ2pQuJphsSQaUEuc9"};var t=['form[action*="/contact"] input[name="form_type"][value="contact"]','form[action*="/comments"] input[name="form_type"][value="new_comment"]','form[action*="/account"] input[name="form_type"][value="customer_login"]','form[action*="/account"] input[name="form_type"][value="recover_customer_password"]','form[action*="/account"] input[name="form_type"][value="create_customer"]','form[action*="/contact"] input[name="form_type"][value="customer"]'].join(",");function n(e){e=e.target;null==e||null!=(e=function e(t,n){if(null==t.parentElement)return null;if("FORM"!=t.parentElement.tagName)return e(t.parentElement,n);for(var o=t.parentElement.action,r=0;r<n.length;r++)if(-1!==o.indexOf(n[r]))return t.parentElement;return null}(e,["/contact","/comments","/account"]))&&null!=e.querySelector(t)&&((e=o.createElement("script")).setAttribute("src","https://cdn.shopify.com/shopifycloud/storefront-recaptcha-v3/v0.6/index.js"),o.body.appendChild(e),o.removeEventListener("focus",n,!0),o.removeEventListener("change",n,!0),o.removeEventListener("click",n,!0))}o.addEventListener("click",n,!0),o.addEventListener("change",n,!0),o.addEventListener("focus",n,!0)})}(document);</script>
 <script crossorigin="anonymous" data-source-attribution="shopify.loadfeatures" defer="defer" integrity="sha256-N6F6ZjvOAMPhcD0kfZWNQQgx6eXaxFfh6aqfN0geLrU=" src="//cdn.shopify.com/shopifycloud/shopify/assets/storefront/load_feature-37a17a663bce00c3e1703d247d958d410831e9e5dac457e1e9aa9f37481e2eb5.js"></script>
@@ -649,7 +649,7 @@ for (var attr in meta) {
     first.parentNode.insertBefore(script, first);
   };
   trekkie.load(
-    {"Trekkie":{"appName":"storefront","development":false,"defaultAttributes":{"shopId":60190458085,"isMerchantRequest":null,"themeId":128826999013,"themeCityHash":"9846712957460775923","contentLanguage":"en","currency":"GBP"},"isServerSideCookieWritingEnabled":true},"Google Analytics":{"trackingId":"UA-9327910-7","domain":"auto","siteSpeedSampleRate":"10","enhancedEcommerce":true,"doubleClick":true,"includeSearch":true},"Session Attribution":{},"S2S":{"emitV4CheckoutEvent":true,"facebookCapiEnabled":false,"source":"trekkie-storefront-renderer"}}
+    {"Trekkie":{"appName":"storefront","development":false,"defaultAttributes":{"shopId":60190458085,"isMerchantRequest":null,"themeId":128826999013,"themeCityHash":"9022377801738051958","contentLanguage":"en","currency":"GBP"},"isServerSideCookieWritingEnabled":true},"Google Analytics":{"trackingId":"UA-9327910-7","domain":"auto","siteSpeedSampleRate":"10","enhancedEcommerce":true,"doubleClick":true,"includeSearch":true},"Session Attribution":{},"S2S":{"emitV4CheckoutEvent":true,"facebookCapiEnabled":false,"source":"trekkie-storefront-renderer"}}
   );
 
   var loaded = false;
@@ -1636,6 +1636,42 @@ for (var attr in meta) {
 </button>
 <div class="announcement-slider" data-block-count="1" data-compact="true" id="AnnouncementSlider">
 <div class="announcement-slider__slide" data-index="0" id="AnnouncementSlide-74500468-9c63-4dab-9cb5-3756b40e0d9f"><a class="announcement-link" href="/collections/designer-glasses"><span class="announcement-text">CODE: LENSES30 FOR 30% OFF PRESCRIPTION LENSES</span>
+<span class="announcement-text hw__countdown_announcement" id="hw__countdown_announcement_74500468-9c63-4dab-9cb5-3756b40e0d9f">
+    Final Chance
+    <span id="hw__countdown_timer_74500468-9c63-4dab-9cb5-3756b40e0d9f"></span>
+</span>
+<script>
+    (function () {
+
+        // @todo: Use timezone string for Europe/London to define date
+        let countDownDate = new Date('05/24/2022 GMT+01:00').getTime();
+
+        const countdownTimer = setInterval(function() {
+
+          const timeleft = (countDownDate - new Date().getTime());
+          const days = Math.floor(timeleft / (1000 * 60 * 60 * 24));
+          const hours = Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          const minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
+          const seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
+
+          document.getElementById("hw__countdown_timer_74500468-9c63-4dab-9cb5-3756b40e0d9f").textContent = `${(days === 0)?'':days+"D"} ${(hours === 0)?'':hours+"H"} ${(minutes === 0)?'':minutes+"M"} ${(seconds === 0)?'':seconds+"S"}`;
+
+          if (timeleft < 0) {
+              clearInterval(countdownTimer);
+              document.getElementById("hw__countdown_timer_74500468-9c63-4dab-9cb5-3756b40e0d9f").textContent = "Final Chance";
+          }
+
+        }, 1000);
+
+    })();
+</script>
+<style data-shopify="">
+    #hw__countdown_timer_74500468-9c63-4dab-9cb5-3756b40e0d9f {
+        background: #f7bc5e;
+        color: #1c1d1d;
+        padding: 1px 3px;
+    }
+</style>
 </a></div></div>
 </div>
 </div>
@@ -2284,7 +2320,7 @@ for (var attr in meta) {
               padding-bottom: 66.4819944598338%;
             }
           }</style><div class="hero-natural--template--15379844202725__slideshow hero-natural-mobile--template--15379844202725__slideshow">
-<div class="hero hero--natural hero--template--15379844202725__slideshow hero--mobile--auto loading loading--delayed" data-autoplay="true" data-dots="true" data-mobile-natural="true" data-natural="true" data-slide-count="2" data-speed="7000" id="Slideshow-template--15379844202725__slideshow"><div class="slideshow__slide slideshow__slide--11f4d038-75f4-48a0-a1a1-6f0f266afd03" data-id="11f4d038-75f4-48a0-a1a1-6f0f266afd03" data-index="0"><style data-shopify="">.slideshow__slide--11f4d038-75f4-48a0-a1a1-6f0f266afd03 .hero__title {
+<div class="hero hero--natural hero--template--15379844202725__slideshow hero--mobile--auto loading loading--delayed" data-autoplay="true" data-dots="true" data-mobile-natural="true" data-natural="true" data-slide-count="1" data-speed="7000" id="Slideshow-template--15379844202725__slideshow"><div class="slideshow__slide slideshow__slide--11f4d038-75f4-48a0-a1a1-6f0f266afd03" data-id="11f4d038-75f4-48a0-a1a1-6f0f266afd03" data-index="0"><style data-shopify="">.slideshow__slide--11f4d038-75f4-48a0-a1a1-6f0f266afd03 .hero__title {
                   font-size: 37.0px;
                 }
                 @media only screen and (min-width: 769px) {
@@ -2303,26 +2339,7 @@ for (var attr in meta) {
                 
 </style><div class="hero__image-wrapper hero__image-wrapper--no-overlay"><img alt="" class="hero__image hero__image--11f4d038-75f4-48a0-a1a1-6f0f266afd03 lazyload small--hide" data-aspectratio="4.5588235294117645" data-sizes="auto" data-src="//cdn.shopify.com/s/files/1/0601/9045/8085/files/GU_SM_SW2_2015x422px2_{width}x.jpg?v=1652453341" src="//cdn.shopify.com/s/files/1/0601/9045/8085/files/GU_SM_SW2_2015x422px2_300x.jpg?v=1652453341" style="object-position: center center"/><img alt="" class="hero__image hero__image--11f4d038-75f4-48a0-a1a1-6f0f266afd03 lazyload medium-up--hide" data-aspectratio="1.5041666666666667" data-sizes="auto" data-src="//cdn.shopify.com/s/files/1/0601/9045/8085/files/GU_SW2_1805x1200px_{width}x.jpg?v=1652453348" src="//cdn.shopify.com/s/files/1/0601/9045/8085/files/GU_SW2_1805x1200px_300x.jpg?v=1652453348" style="object-position: center center"/><noscript>
 <img alt="" class="hero__image hero__image--11f4d038-75f4-48a0-a1a1-6f0f266afd03" src="//cdn.shopify.com/s/files/1/0601/9045/8085/files/GU_SM_SW2_2015x422px2_1400x.jpg?v=1652453341"/>
-</noscript></div><a aria-hidden="true" class="hero__slide-link" href="/collections/guess"></a></div><div class="slideshow__slide slideshow__slide--f331296b-e130-48ff-b83f-ad1678c40910" data-id="f331296b-e130-48ff-b83f-ad1678c40910" data-index="1"><style data-shopify="">.slideshow__slide--f331296b-e130-48ff-b83f-ad1678c40910 .hero__title {
-                  font-size: 41.5px;
-                }
-                @media only screen and (min-width: 769px) {
-                  .slideshow__slide--f331296b-e130-48ff-b83f-ad1678c40910 .hero__title {
-                    font-size: 83px;
-                  }
-                }
-                  .slideshow__slide--f331296b-e130-48ff-b83f-ad1678c40910 .btn {
-                    background: #02045b !important;
-                    border: none;
-                  }
-
-                  
-                
-
-                
-</style><div class="hero__image-wrapper hero__image-wrapper--no-overlay"><img alt="" class="hero__image hero__image--f331296b-e130-48ff-b83f-ad1678c40910 lazyload small--hide" data-aspectratio="4.774881516587678" data-sizes="auto" data-src="//cdn.shopify.com/s/files/1/0601/9045/8085/files/Lenses30_NEW_{width}x.jpg?v=1653060511" src="//cdn.shopify.com/s/files/1/0601/9045/8085/files/Lenses30_NEW_300x.jpg?v=1653060511" style="object-position: center center"/><img alt="" class="hero__image hero__image--f331296b-e130-48ff-b83f-ad1678c40910 lazyload medium-up--hide" data-aspectratio="1.5041666666666667" data-sizes="auto" data-src="//cdn.shopify.com/s/files/1/0601/9045/8085/files/Lenses30_NEW_MOBILE_{width}x.jpg?v=1653060511" src="//cdn.shopify.com/s/files/1/0601/9045/8085/files/Lenses30_NEW_MOBILE_300x.jpg?v=1653060511" style="object-position: center center"/><noscript>
-<img alt="" class="hero__image hero__image--f331296b-e130-48ff-b83f-ad1678c40910" src="//cdn.shopify.com/s/files/1/0601/9045/8085/files/Lenses30_NEW_1400x.jpg?v=1653060511"/>
-</noscript></div><a aria-hidden="true" class="hero__slide-link" href="/collections/designer-glasses"></a></div></div>
+</noscript></div><a aria-hidden="true" class="hero__slide-link" href="/collections/guess"></a></div></div>
 </div>
 </div></div>
 </div><div class="shopify-section index-section" id="shopify-section-template--15379844202725__rich-text"><div class="text-center page-width page-width--narrow"><div class="theme-block"><div class="rte"><div class="enlarge-text"><p>Working with luxury fashion brands and trusted eyewear suppliers from across the world, we stock a wide range of glasses and sunglasses styles, from timeless classics to the latest trends – so whatever you are looking for, we have it.</p>
@@ -2416,11 +2433,11 @@ for (var attr in meta) {
             }
           }
         
-</style><div class="flex-grid__item flex-grid__item--50 flex-grid__item--1647510130537abe1c-0 type-advanced"><div class="promo-grid__container vertical-bottom horizontal-right"><a aria-hidden="true" aria-label="" class="promo-grid__slide-link" href="/collections/oliver-peoples-glasses"></a><div class="promo-grid__bg"><style data-shopify="">.promo-grid__bg-image--1647510130537abe1c-0 {
+</style><div class="flex-grid__item flex-grid__item--50 flex-grid__item--1647510130537abe1c-0 type-advanced"><div class="promo-grid__container vertical-bottom horizontal-right"><a aria-hidden="true" aria-label="" class="promo-grid__slide-link" href="/collections/tom-ford-glasses"></a><div class="promo-grid__bg"><style data-shopify="">.promo-grid__bg-image--1647510130537abe1c-0 {
                         object-position: center;
-                      }</style><img alt="" class="image-fit promo-grid__bg-image promo-grid__bg-image--1647510130537abe1c-0 lazyload" data-aspectratio="1.278772378516624" data-sizes="auto" data-src="//cdn.shopify.com/s/files/1/0601/9045/8085/files/OV1308_OV5475U_B__500x391_536f86f8-b762-42ef-8621-d603a901d009_{width}x.jpg?v=1652698410" src="//cdn.shopify.com/s/files/1/0601/9045/8085/files/OV1308_OV5475U_B__500x391_536f86f8-b762-42ef-8621-d603a901d009_300x.jpg?v=1652698410"/>
+                      }</style><img alt="" class="image-fit promo-grid__bg-image promo-grid__bg-image--1647510130537abe1c-0 lazyload" data-aspectratio="1.4124137931034482" data-sizes="auto" data-src="//cdn.shopify.com/s/files/1/0601/9045/8085/files/FT_1_{width}x.jpg?v=1653316105" src="//cdn.shopify.com/s/files/1/0601/9045/8085/files/FT_1_300x.jpg?v=1653316105"/>
 <noscript>
-<img alt="" class="image-fit promo-grid__bg-image promo-grid__bg-image--1647510130537abe1c-0 lazyloaded" src="//cdn.shopify.com/s/files/1/0601/9045/8085/files/OV1308_OV5475U_B__500x391_536f86f8-b762-42ef-8621-d603a901d009_1800x.jpg?v=1652698410"/>
+<img alt="" class="image-fit promo-grid__bg-image promo-grid__bg-image--1647510130537abe1c-0 lazyloaded" src="//cdn.shopify.com/s/files/1/0601/9045/8085/files/FT_1_1800x.jpg?v=1653316105"/>
 </noscript></div></div></div><style data-shopify="">
           
             .flex-grid__item--1647510130537abe1c-1 {
@@ -2468,11 +2485,11 @@ for (var attr in meta) {
             }
           }
         
-</style><div class="flex-grid__item flex-grid__item--50 flex-grid__item--1647510130537abe1c-1 type-advanced"><div class="promo-grid__container vertical-bottom horizontal-right"><a aria-hidden="true" aria-label="" class="promo-grid__slide-link" href="/collections/tom-ford-sunglasses"></a><div class="promo-grid__bg"><style data-shopify="">.promo-grid__bg-image--1647510130537abe1c-1 {
+</style><div class="flex-grid__item flex-grid__item--50 flex-grid__item--1647510130537abe1c-1 type-advanced"><div class="promo-grid__container vertical-bottom horizontal-right"><a aria-hidden="true" aria-label="" class="promo-grid__slide-link" href="/collections/oliver-peoples-sunglasses"></a><div class="promo-grid__bg"><style data-shopify="">.promo-grid__bg-image--1647510130537abe1c-1 {
                         object-position: center;
-                      }</style><img alt="" class="image-fit promo-grid__bg-image promo-grid__bg-image--1647510130537abe1c-1 lazyload" data-aspectratio="1.4124137931034482" data-sizes="auto" data-src="//cdn.shopify.com/s/files/1/0601/9045/8085/files/tom_ford_moblie_{width}x.jpg?v=1651853551" src="//cdn.shopify.com/s/files/1/0601/9045/8085/files/tom_ford_moblie_300x.jpg?v=1651853551"/>
+                      }</style><img alt="" class="image-fit promo-grid__bg-image promo-grid__bg-image--1647510130537abe1c-1 lazyload" data-aspectratio="1.4049295774647887" data-sizes="auto" data-src="//cdn.shopify.com/s/files/1/0601/9045/8085/files/OV5454SU_OV5478SU__798x568_4f8d9aaa-a0d9-4fc4-98cc-c21612104fb5_{width}x.jpg?v=1653316064" src="//cdn.shopify.com/s/files/1/0601/9045/8085/files/OV5454SU_OV5478SU__798x568_4f8d9aaa-a0d9-4fc4-98cc-c21612104fb5_300x.jpg?v=1653316064"/>
 <noscript>
-<img alt="" class="image-fit promo-grid__bg-image promo-grid__bg-image--1647510130537abe1c-1 lazyloaded" src="//cdn.shopify.com/s/files/1/0601/9045/8085/files/tom_ford_moblie_1800x.jpg?v=1651853551"/>
+<img alt="" class="image-fit promo-grid__bg-image promo-grid__bg-image--1647510130537abe1c-1 lazyloaded" src="//cdn.shopify.com/s/files/1/0601/9045/8085/files/OV5454SU_OV5478SU__798x568_4f8d9aaa-a0d9-4fc4-98cc-c21612104fb5_1800x.jpg?v=1653316064"/>
 </noscript></div></div></div><style data-shopify="">
           
             .flex-grid__item--02a81326-fd3a-40bd-ab67-abf01de63079 {
@@ -2845,6 +2862,16 @@ for (var attr in meta) {
 <svg aria-labelledby="pi-shopify_pay" height="24" role="img" viewbox="0 0 38 24" width="38" xmlns="http://www.w3.org/2000/svg"><title id="pi-shopify_pay">Shop Pay</title><path d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z" fill="#000" opacity=".07"></path><path d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32z" fill="#5A31F4"></path><path d="M21.382 9.713c0 1.668-1.177 2.858-2.821 2.858h-1.549a.133.133 0 00-.12.08.127.127 0 00-.01.049v2.192a.129.129 0 01-.13.129h-1.084a.13.13 0 01-.13-.13V6.986a.127.127 0 01.08-.12.129.129 0 01.05-.01h2.9c1.637 0 2.814 1.19 2.814 2.858v-.001zm-1.352 0c0-.958-.658-1.658-1.55-1.658h-1.468a.13.13 0 00-.13.13v3.05a.127.127 0 00.038.092.129.129 0 00.092.038h1.468c.892.005 1.55-.695 1.55-1.652zm1.674 3.791a1.527 1.527 0 01.647-1.317c.423-.316 1.084-.48 2.055-.514l1.033-.036v-.303c0-.607-.41-.863-1.068-.863-.658 0-1.075.231-1.17.61a.127.127 0 01-.125.09h-1.022a.13.13 0 01-.126-.092.125.125 0 01-.004-.055c.152-.898.904-1.58 2.494-1.58 1.692 0 2.303.783 2.303 2.276v3.172a.13.13 0 01-.132.129h-1.03a.13.13 0 01-.13-.13v-.236a.096.096 0 00-.061-.091.1.1 0 00-.107.022c-.31.334-.808.575-1.607.575-1.175 0-1.95-.607-1.95-1.657zm3.735-.687v-.246l-1.339.07c-.705.036-1.115.326-1.115.816 0 .444.376.69 1.034.69.893 0 1.42-.48 1.42-1.33zm2.316 4.6v-.919a.13.13 0 01.049-.1.132.132 0 01.108-.027c.158.029.318.044.479.044a1.229 1.229 0 001.245-.876l.067-.211a.133.133 0 000-.088l-2.145-5.471a.13.13 0 01.06-.165.13.13 0 01.062-.015h1.04a.132.132 0 01.123.085l1.456 3.859a.131.131 0 00.125.088.133.133 0 00.125-.088l1.265-3.848a.13.13 0 01.126-.09h1.076a.134.134 0 01.132.116.134.134 0 01-.008.063l-2.295 6.076c-.528 1.413-1.433 1.773-2.43 1.773a1.959 1.959 0 01-.561-.066.132.132 0 01-.1-.14h.001zM8.57 6.4a5.363 5.363 0 00-3.683 1.427.231.231 0 00-.029.31l.618.839a.236.236 0 00.362.028 3.823 3.823 0 012.738-1.11c2.12 0 3.227 1.584 3.227 3.15 0 1.7-1.163 2.898-2.835 2.921-1.292 0-2.266-.85-2.266-1.974a1.908 1.908 0 01.713-1.48.231.231 0 00.033-.324l-.65-.815a.236.236 0 00-.339-.034 3.43 3.43 0 00-.942 1.183 3.39 3.39 0 00-.337 1.47c0 1.935 1.655 3.452 3.775 3.464h.03c2.517-.032 4.337-1.884 4.337-4.415 0-2.247-1.667-4.64-4.752-4.64z" fill="#fff"></path></svg>
 </li><li class="icon--payment">
 <svg aria-labelledby="pi-visa" height="24" role="img" viewbox="0 0 38 24" width="38" xmlns="http://www.w3.org/2000/svg"><title id="pi-visa">Visa</title><path d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z" opacity=".07"></path><path d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32" fill="#fff"></path><path d="M28.3 10.1H28c-.4 1-.7 1.5-1 3h1.9c-.3-1.5-.3-2.2-.6-3zm2.9 5.9h-1.7c-.1 0-.1 0-.2-.1l-.2-.9-.1-.2h-2.4c-.1 0-.2 0-.2.2l-.3.9c0 .1-.1.1-.1.1h-2.1l.2-.5L27 8.7c0-.5.3-.7.8-.7h1.5c.1 0 .2 0 .2.2l1.4 6.5c.1.4.2.7.2 1.1.1.1.1.1.1.2zm-13.4-.3l.4-1.8c.1 0 .2.1.2.1.7.3 1.4.5 2.1.4.2 0 .5-.1.7-.2.5-.2.5-.7.1-1.1-.2-.2-.5-.3-.8-.5-.4-.2-.8-.4-1.1-.7-1.2-1-.8-2.4-.1-3.1.6-.4.9-.8 1.7-.8 1.2 0 2.5 0 3.1.2h.1c-.1.6-.2 1.1-.4 1.7-.5-.2-1-.4-1.5-.4-.3 0-.6 0-.9.1-.2 0-.3.1-.4.2-.2.2-.2.5 0 .7l.5.4c.4.2.8.4 1.1.6.5.3 1 .8 1.1 1.4.2.9-.1 1.7-.9 2.3-.5.4-.7.6-1.4.6-1.4 0-2.5.1-3.4-.2-.1.2-.1.2-.2.1zm-3.5.3c.1-.7.1-.7.2-1 .5-2.2 1-4.5 1.4-6.7.1-.2.1-.3.3-.3H18c-.2 1.2-.4 2.1-.7 3.2-.3 1.5-.6 3-1 4.5 0 .2-.1.2-.3.2M5 8.2c0-.1.2-.2.3-.2h3.4c.5 0 .9.3 1 .8l.9 4.4c0 .1 0 .1.1.2 0-.1.1-.1.1-.1l2.1-5.1c-.1-.1 0-.2.1-.2h2.1c0 .1 0 .1-.1.2l-3.1 7.3c-.1.2-.1.3-.2.4-.1.1-.3 0-.5 0H9.7c-.1 0-.2 0-.2-.2L7.9 9.5c-.2-.2-.5-.5-.9-.6-.6-.3-1.7-.5-1.9-.5L5 8.2z" fill="#142688"></path></svg>
+</li><li class="icon--payment">
+<svg height="22px" version="1.1" viewbox="0 0 800 444.75" xmlns="http://www.w3.org/2000/svg">
+<title>Klarna Payment Badge</title>
+<g fill-rule="evenodd" transform="matrix(17.769 0 0 17.769 .23581 .30022)">
+<rect fill="#ffb3c7" height="25" rx="4.321" width="45" x="5.6843e-14"></rect>
+<g fill="#0a0b09">
+<path d="m40.787 14.674c-.58875 0-1.066.48158-1.066 1.0757 0 .594.47725 1.0757 1.066 1.0757.58874 0 1.0661-.48167 1.0661-1.0757 0-.59416-.47734-1.0757-1.0661-1.0757zm-3.5073-.83166c0-.81338-.68897-1.4726-1.5389-1.4726s-1.539.65925-1.539 1.4726c0 .81339.68898 1.4728 1.539 1.4728s1.5389-.65941 1.5389-1.4728zm.0057-2.8622h1.6984v5.7242h-1.6984v-.36584c-.47982.3302-1.059.52431-1.6837.52431-1.6531 0-2.9933-1.3523-2.9933-3.0205s1.3402-3.0204 2.9933-3.0204c.6247 0 1.2039.1941 1.6837.5244v-.36619zm-13.592.74562v-.74554h-1.7389v5.7241h1.7428v-2.6725c0-.90167.96849-1.3863 1.6405-1.3863.0069 0 .01331.000667.02019.000752v-1.6656c-.68973 0-1.3241.298-1.6646.7452zm-4.3316 2.1166c0-.81338-.68905-1.4726-1.539-1.4726-.84991 0-1.539.65925-1.539 1.4726 0 .81339.68905 1.4728 1.539 1.4728.84998 0 1.539-.65941 1.539-1.4728zm.0056-2.8622h1.6985v5.7242h-1.6985v-.36584c-.47982.3302-1.059.52431-1.6836.52431-1.6532 0-2.9934-1.3523-2.9934-3.0205s1.3402-3.0204 2.9934-3.0204c.62464 0 1.2038.1941 1.6836.5244v-.36619zm10.223-.15396c-.67846 0-1.3206.21255-1.7499.79895v-.64465h-1.6911v5.7239h1.7119v-3.0081c0-.87046.57847-1.2967 1.275-1.2967.74646 0 1.1756.44996 1.1756 1.2849v3.0199h1.6964v-3.6401c0-1.3321-1.0496-2.238-2.4179-2.238zm-17.374 5.8782h1.7777v-8.2751h-1.7777zm-7.8091.0023h1.8824v-8.2789h-1.8824zm6.584-8.2789c0 1.7923-.69219 3.4596-1.9256 4.6989l2.602 3.5803h-2.325l-2.8278-3.891.72981-.55152c1.2103-.91484 1.9045-2.3132 1.9045-3.8367h1.8421z"></path>
+</g>
+</g>
+</svg>
 </li></ul><p class="footer__small-text">
         © 2022 Fashion Eyewear
 </p>

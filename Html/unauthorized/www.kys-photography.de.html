@@ -34,83 +34,83 @@
 <script src="catalog/view/theme/titan/js/cloud-zoom.js" type="text/javascript"></script>
 <link href="catalog/view/theme/titan/stylesheet/dcaccordion.css" property="stylesheet" rel="stylesheet" type="text/css">
 <script src="catalog/view/theme/titan/js/jquery.dcjqaccordion.js" type="text/javascript"></script>
-<script type="text/javascript">
-      // Set default flag for the header bag feature and make sure they are booleans
-      var bagPeekFeature = "true" === 'true';
-      var courtesyNavFeature = "true" === 'true';
-      var expressInsider = "true" === 'true';
-      var mentionMe = "true" === 'true';
-      var captcha = "true" === 'true';
-      var alwaysCaptcha = "true" === 'true';
-      var profileComplete = "false" === 'true';
-      var freeShippingAndReturns = "true" === 'true';
-      var memberWallet = "true" === 'true';
-      var newTiers = "false" === 'true';
-      var EccHolderFlag = "false" === 'true';
-
-      window['FLAGS'] = { "BagPeek": bagPeekFeature, "CourtesyNav": courtesyNavFeature, "ExpressInsider": expressInsider, "MentionMe": mentionMe, "Captcha": captcha, "AlwaysCaptcha": alwaysCaptcha, "ProfileComplete": profileComplete,
-      "FreeShippingAndReturns": freeShippingAndReturns, "MemberWallet": memberWallet,
-      "NewTiers": newTiers, "EccHolderFlag": EccHolderFlag };
-
-      // Eva Script
-      !function(n,t){"object"==typeof exports&&"undefined"!=typeof module?module.exports=t():"function"==typeof define&&define.amd?define(t):n.Eva=t()}(this,function(){"use strict";var n=function(){var n=[];return this.get=function(t){for(var i=n.length;i--;)if(n[i].key===t)return n[i].value;return null}.bind(this),this.find=function(t){for(var i=n.length;i--;)if(n[i].key===t)return n[i];return null},this.set=function(t,i){var e=this.find(t);return e?e.value=i:n.push({key:t,value:i}),e?e.value:n[n.length-1].value}.bind(this),function(){return this}.call(this)},t=function(n){return function(n){if(window.Eva){var t=n.campaign,i=n.experience;(function(n){return n?"string"==typeof n||(console.error("Target `campaign` property should be a valid String."),!1):(console.error("Missing `campaign` property from Target campaign."),!1)})(t)&&function(n){return n?n instanceof Object&&n.constructor===Object||(console.error("Target `experience` property should be a valid JavaScript Object."),!1):(console.error("Missing `experience` property and date from Target campaign."),!1)}(i)&&window.Eva.campaign(t,i)}}.call(this,n)},i=function(n,t,i){var e={active:!1,data:null,listeners:[],name:null,scope:window},r=function(){this.active=!0,this.data=arguments,window.isDebugMode&&console.log("EVA.trigger",this);for(var n=this.listeners.pop();n;)"function"==typeof n&&n.apply(this.scope,arguments),n=this.listeners.pop()};return this.add=function(n){return"function"==typeof n&&e.listeners.push(n),this},this.data=function(){return e.data},this.isActive=function(){return e.active},function(n,t,i){return e.name=n,t&&(e.scope=t),this.add(i),e.scope.addEventListener&&e.scope.addEventListener(n,r.bind(e)),this}.call(this,n,t,i)};return new function(){window.Hash=n,window.Audience=t;var e=new Hash,r={},s={},o=function(n){var t=e.get(n);return t||e.set(n,{})},a=i;return this.listen=function(n,t,i){i=i||window;var e=o(i);if(e[n]){var r=e[n];r.isActive()?"function"==typeof t&&t.apply(i,r.data()):r.add(t)}else e[n]=new a(n,i,t)}.bind(this),this.signal=function(n,t,i){this.trigger.call(this,n,t,i)}.bind(this),this.trigger=function(n,t,i){t=t||window;o(t)[n]||this.capture(n,t),t.dispatchEvent(new CustomEvent(n,{detail:i})),window.isDebugMode&&console.log("EVA.signal",i)}.bind(this),this.capture=function(n,t){t=t||window;var i=o(t);i[n]||(i[n]=new a(n,t))}.bind(this),this.subscribe=function(n,t){r[n]||(r[n]=[]),t&&r[n].push(t)},this.unsubscribe=function(n,t){if(r[n])for(var i=r[n],e=i.length;e--;)i[e]===t&&array.splice(e,1)},this.publish=function(n,t){var i=r[n];if(i)for(var e=i.length;e--;)i[e](t)},this.campaign=function(n,t){s[n]=t,this.publish("audience",{name:n,experience:t})},this.campaigns=function(){return s},function(){return this}.call(this)}});
+<script type="text/javascript">
+      // Set default flag for the header bag feature and make sure they are booleans
+      var bagPeekFeature = "true" === 'true';
+      var courtesyNavFeature = "true" === 'true';
+      var expressInsider = "true" === 'true';
+      var mentionMe = "true" === 'true';
+      var captcha = "true" === 'true';
+      var alwaysCaptcha = "true" === 'true';
+      var profileComplete = "false" === 'true';
+      var freeShippingAndReturns = "true" === 'true';
+      var memberWallet = "true" === 'true';
+      var newTiers = "false" === 'true';
+      var EccHolderFlag = "false" === 'true';
+
+      window['FLAGS'] = { "BagPeek": bagPeekFeature, "CourtesyNav": courtesyNavFeature, "ExpressInsider": expressInsider, "MentionMe": mentionMe, "Captcha": captcha, "AlwaysCaptcha": alwaysCaptcha, "ProfileComplete": profileComplete,
+      "FreeShippingAndReturns": freeShippingAndReturns, "MemberWallet": memberWallet,
+      "NewTiers": newTiers, "EccHolderFlag": EccHolderFlag };
+
+      // Eva Script
+      !function(n,t){"object"==typeof exports&&"undefined"!=typeof module?module.exports=t():"function"==typeof define&&define.amd?define(t):n.Eva=t()}(this,function(){"use strict";var n=function(){var n=[];return this.get=function(t){for(var i=n.length;i--;)if(n[i].key===t)return n[i].value;return null}.bind(this),this.find=function(t){for(var i=n.length;i--;)if(n[i].key===t)return n[i];return null},this.set=function(t,i){var e=this.find(t);return e?e.value=i:n.push({key:t,value:i}),e?e.value:n[n.length-1].value}.bind(this),function(){return this}.call(this)},t=function(n){return function(n){if(window.Eva){var t=n.campaign,i=n.experience;(function(n){return n?"string"==typeof n||(console.error("Target `campaign` property should be a valid String."),!1):(console.error("Missing `campaign` property from Target campaign."),!1)})(t)&&function(n){return n?n instanceof Object&&n.constructor===Object||(console.error("Target `experience` property should be a valid JavaScript Object."),!1):(console.error("Missing `experience` property and date from Target campaign."),!1)}(i)&&window.Eva.campaign(t,i)}}.call(this,n)},i=function(n,t,i){var e={active:!1,data:null,listeners:[],name:null,scope:window},r=function(){this.active=!0,this.data=arguments,window.isDebugMode&&console.log("EVA.trigger",this);for(var n=this.listeners.pop();n;)"function"==typeof n&&n.apply(this.scope,arguments),n=this.listeners.pop()};return this.add=function(n){return"function"==typeof n&&e.listeners.push(n),this},this.data=function(){return e.data},this.isActive=function(){return e.active},function(n,t,i){return e.name=n,t&&(e.scope=t),this.add(i),e.scope.addEventListener&&e.scope.addEventListener(n,r.bind(e)),this}.call(this,n,t,i)};return new function(){window.Hash=n,window.Audience=t;var e=new Hash,r={},s={},o=function(n){var t=e.get(n);return t||e.set(n,{})},a=i;return this.listen=function(n,t,i){i=i||window;var e=o(i);if(e[n]){var r=e[n];r.isActive()?"function"==typeof t&&t.apply(i,r.data()):r.add(t)}else e[n]=new a(n,i,t)}.bind(this),this.signal=function(n,t,i){this.trigger.call(this,n,t,i)}.bind(this),this.trigger=function(n,t,i){t=t||window;o(t)[n]||this.capture(n,t),t.dispatchEvent(new CustomEvent(n,{detail:i})),window.isDebugMode&&console.log("EVA.signal",i)}.bind(this),this.capture=function(n,t){t=t||window;var i=o(t);i[n]||(i[n]=new a(n,t))}.bind(this),this.subscribe=function(n,t){r[n]||(r[n]=[]),t&&r[n].push(t)},this.unsubscribe=function(n,t){if(r[n])for(var i=r[n],e=i.length;e--;)i[e]===t&&array.splice(e,1)},this.publish=function(n,t){var i=r[n];if(i)for(var e=i.length;e--;)i[e](t)},this.campaign=function(n,t){s[n]=t,this.publish("audience",{name:n,experience:t})},this.campaigns=function(){return s},function(){return this}.call(this)}});
 	  </script>
-<style>
-        .calltoaction .btn-plaintext.btn-white:hover {
-    text-decoration: underline !important;
-    color: #fff !important;
-}
-
-.calltoaction .btn-plaintext.btn-white:hover:after {
-    border-left-color: #fff !important;
-}
-
-.calltoaction .btn-plaintext.btn-black:hover {
-	text-decoration: underline !important;
-	color: #000 !important;
-}
-
-.calltoaction .btn-plaintext.btn-black:hover:after {
-    border-left-color: #000 !important;
-} .twocolumncomponentlayout .twocolumn-right {
-    float: left;
-    width: 45.83333%;
-    padding-left: 1rem !important;
-} .product-category-wrapper-desktop 
-.product-messaging {
-display: none;
-visibility: hidden;
-}
-
-.product-category-mobile .product .online-exclusive-message, .product-category-mobile .product .petite-message {
-display: none;
-visibility: hidden;
-} .raven-new-product-tag {
-    position: absolute;
-    bottom: 0;
-    background: white;
-    left: 0;
-    font-weight: 600;
-    font-size: 1.1rem;
-    padding: 6px 10px;
-    letter-spacing: 1px;
-}
-
-a.express-view.mask {
-    display: inline-block !important;
-    background-color: transparent !important;
-    bottom: -1px !important;
-}
-
-.product-category-wrapper-desktop .product-category-desktop .products .product .image-container {
-   margin-bottom: 10px;
-   font-size: 0;
-} .grid__col-8 {
-    width: 66.34% !important;
-}
- .tilecomponent picture, .tilecomponent video {
-display: block !important;
-} 
+<style>
+        .calltoaction .btn-plaintext.btn-white:hover {
+    text-decoration: underline !important;
+    color: #fff !important;
+}
+
+.calltoaction .btn-plaintext.btn-white:hover:after {
+    border-left-color: #fff !important;
+}
+
+.calltoaction .btn-plaintext.btn-black:hover {
+	text-decoration: underline !important;
+	color: #000 !important;
+}
+
+.calltoaction .btn-plaintext.btn-black:hover:after {
+    border-left-color: #000 !important;
+} .twocolumncomponentlayout .twocolumn-right {
+    float: left;
+    width: 45.83333%;
+    padding-left: 1rem !important;
+} .product-category-wrapper-desktop 
+.product-messaging {
+display: none;
+visibility: hidden;
+}
+
+.product-category-mobile .product .online-exclusive-message, .product-category-mobile .product .petite-message {
+display: none;
+visibility: hidden;
+} .raven-new-product-tag {
+    position: absolute;
+    bottom: 0;
+    background: white;
+    left: 0;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 6px 10px;
+    letter-spacing: 1px;
+}
+
+a.express-view.mask {
+    display: inline-block !important;
+    background-color: transparent !important;
+    bottom: -1px !important;
+}
+
+.product-category-wrapper-desktop .product-category-desktop .products .product .image-container {
+   margin-bottom: 10px;
+   font-size: 0;
+} .grid__col-8 {
+    width: 66.34% !important;
+}
+ .tilecomponent picture, .tilecomponent video {
+display: block !important;
+} 
     </style>
 </link></link></link></meta></head>
 <body class="common-home">
@@ -119,12 +119,12 @@ display: block !important;
 <div id="sidebar-wrapper">
 <ul class="sidebar-nav list-group titan">
 <li class="sidebar-title">
-<a href="#menu-toggle-close" id="menu-toggle-close"><span aria-hidden="true">×</span></a>Informazione      <script>
-      $("#menu-toggle-close").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-		$(".sidebar-opacity").toggleClass("toggled");
-      });
+<a href="#menu-toggle-close" id="menu-toggle-close"><span aria-hidden="true">×</span></a>Informazione      <script>
+      $("#menu-toggle-close").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+		$(".sidebar-opacity").toggleClass("toggled");
+      });
       </script>
 </li>
 <li><a href="http://www.kys-photography.de/index.php?route=information/information&amp;information_id=7">FAQ</a></li>
@@ -187,12 +187,12 @@ display: block !important;
 <span class="button-text">Menù</span>
 </div>
 </a>
-<script>
-        $("#menu-mobile-toggle").click(function(e) {
-          e.preventDefault();
-          $("#wrapper").toggleClass("menu-toggled");
-		  $(".sidebar-opacity").toggleClass("menu-toggled");
-        });
+<script>
+        $("#menu-mobile-toggle").click(function(e) {
+          e.preventDefault();
+          $("#wrapper").toggleClass("menu-toggled");
+		  $(".sidebar-opacity").toggleClass("menu-toggled");
+        });
       </script>
 <div class="btn-group btn-block buttons-header" id="cart">
 <a class="btn dropdown-toggle" data-loading-text="Caricamento..." data-toggle="dropdown">
@@ -230,26 +230,26 @@ display: block !important;
 </div>
 </div>
 </nav>
-<script type="text/javascript">
-$(document).ready(function() {
-	$('#accordion-mobile').dcAccordion({
-		disableLink: false,	
-		menuClose: false,
-		autoClose: true,
-		autoExpand: true,		
-		saveState: false
-	});
-});
+<script type="text/javascript">
+$(document).ready(function() {
+	$('#accordion-mobile').dcAccordion({
+		disableLink: false,	
+		menuClose: false,
+		autoClose: true,
+		autoExpand: true,		
+		saveState: false
+	});
+});
 </script>
 <div class="hidden-sm hidden-md hidden-lg" id="menu-mobile">
 <ul class="accordion sidebar-nav list-group" id="accordion-mobile">
 <li class="sidebar-title">
-<a href="#menu-mobile-toggle-close" id="menu-mobile-toggle-close"><span aria-hidden="true">×</span></a>Menù      <script>
-      $("#menu-mobile-toggle-close").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("menu-toggled");
-		$(".sidebar-opacity").toggleClass("menu-toggled");
-      });
+<a href="#menu-mobile-toggle-close" id="menu-mobile-toggle-close"><span aria-hidden="true">×</span></a>Menù      <script>
+      $("#menu-mobile-toggle-close").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("menu-toggled");
+		$(".sidebar-opacity").toggleClass("menu-toggled");
+      });
       </script>
 </li>
 <li><a href="http://www.kys-photography.de/">Home</a></li>
@@ -282,16 +282,16 @@ $(document).ready(function() {
 </div>
 <div style="display:none;"><script src="//js.users.51.la/21085533.js" type="text/javascript"></script><br/></div><div class="container">
 <div class="row"><column class="col-sm-3 hidden-xs" id="column-left">
-<script type="text/javascript">
-$(document).ready(function() {
-	$('#accordion-1').dcAccordion({
-		disableLink: false,	
-		menuClose: false,
-		autoClose: true,
-		autoExpand: true,		
-		saveState: false
-	});
-});
+<script type="text/javascript">
+$(document).ready(function() {
+	$('#accordion-1').dcAccordion({
+		disableLink: false,	
+		menuClose: false,
+		autoClose: true,
+		autoExpand: true,		
+		saveState: false
+	});
+});
 </script>
 <div class="panel panel-default panel-category">
 <div class="panel-heading">Categorie</div>
@@ -323,14 +323,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.kys-photography.de/spgood-set-di-portapacchi-per-mountain-bike-universale-regolabile-in-lega-di-alluminio-chiusura-rapida-e-montaggio-carico-massimo-100-kg-con-riflettore.html"><img alt="SPGOOD Set di portapacchi per mountain bike, universale, regolabile, in lega di alluminio, chiusura rapida e montaggio, carico massimo 100 kg, con riflettore" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/kysphotographyde/spgood-set-di-portapacchi-per-mountain-bike-universale-regolabile-in-lega-di-alluminio-chiusura-rapida-e-montaggio-carico-massimo-100-kg-con-riflettore-5705.jpg" title="SPGOOD Set di portapacchi per mountain bike, universale, regolabile, in lega di alluminio, chiusura rapida e montaggio, carico massimo 100 kg, con riflettore"/></a>
+<a class="arevision" href="http://www.kys-photography.de/dt-swiss-f-body-dt-pawl-shimano-mtb-taglia-colore-nero.html"><img alt="DT Swiss F/Body DT Pawl Shimano MTB | Taglia = | Colore = nero" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/kysphotographyde/dt-swiss-f-body-dt-pawl-shimano-mtb-taglia-colore-nero-4677.jpg" title="DT Swiss F/Body DT Pawl Shimano MTB | Taglia = | Colore = nero"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.kys-photography.de/spgood-set-di-portapacchi-per-mountain-bike-universale-regolabile-in-lega-di-alluminio-chiusura-rapida-e-montaggio-carico-massimo-100-kg-con-riflettore.html">SPGOOD Set di portapacchi per mountain bike, universale, regolabile, in lega di alluminio, chiusura rapida e montaggio, carico massimo 100 kg, con riflettore</a></h4></div>
+<div class="name"><h4><a href="http://www.kys-photography.de/dt-swiss-f-body-dt-pawl-shimano-mtb-taglia-colore-nero.html">DT Swiss F/Body DT Pawl Shimano MTB | Taglia = | Colore = nero</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€44,99</span> <span class="price-old">€126,99</span>
+<span class="price-new">€40,99</span> <span class="price-old">€127,99</span>
 </p>
 </div>
 </div>
@@ -339,14 +339,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.kys-photography.de/dedaelementi-manubrio-bicicletta-speciale-26-42cm-silver-p.html"><img alt="Deda-Elementi Manubrio bicicletta Speciale 26 42Cm Silver P" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/kysphotographyde/dedaelementi-manubrio-bicicletta-speciale-26-42cm-silver-px-4558.jpg" title="Deda-Elementi Manubrio bicicletta Speciale 26 42Cm Silver P"/></a>
+<a class="arevision" href="http://www.kys-photography.de/articoli-neri-ciclismo-rock-shox.html"><img alt="Articoli neri ciclismo Rock Shox" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/kysphotographyde/articoli-neri-ciclismo-rock-shox-3216.jpg" title="Articoli neri ciclismo Rock Shox"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.kys-photography.de/dedaelementi-manubrio-bicicletta-speciale-26-42cm-silver-p.html">Deda-Elementi Manubrio bicicletta Speciale 26 42Cm Silver P</a></h4></div>
+<div class="name"><h4><a href="http://www.kys-photography.de/articoli-neri-ciclismo-rock-shox.html">Articoli neri ciclismo Rock Shox</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€40,99</span> <span class="price-old">€120,99</span>
+<span class="price-new">€44,99</span> <span class="price-old">€115,99</span>
 </p>
 </div>
 </div>
@@ -355,14 +355,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.kys-photography.de/articoli-bianchi-ciclismo-sweet-protection.html"><img alt="Articoli bianchi ciclismo Sweet protection" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/kysphotographyde/articoli-bianchi-ciclismo-sweet-protection-2279.jpg" title="Articoli bianchi ciclismo Sweet protection"/></a>
+<a class="arevision" href="http://www.kys-photography.de/prophete-cestino-da-bicicletta-city-con-adattatore-attacco-manubrio-6453.html"><img alt="Prophete Cestino da Bicicletta City con Adattatore Attacco Manubrio, 6453" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/kysphotographyde/prophete-cestino-da-bicicletta-city-con-adattatore-attacco-manubrio-6453-2603.jpg" title="Prophete Cestino da Bicicletta City con Adattatore Attacco Manubrio, 6453"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.kys-photography.de/articoli-bianchi-ciclismo-sweet-protection.html">Articoli bianchi ciclismo Sweet protection</a></h4></div>
+<div class="name"><h4><a href="http://www.kys-photography.de/prophete-cestino-da-bicicletta-city-con-adattatore-attacco-manubrio-6453.html">Prophete Cestino da Bicicletta City con Adattatore Attacco Manubrio, 6453</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€42,99</span> <span class="price-old">€127,99</span>
+<span class="price-new">€41,99</span> <span class="price-old">€110,99</span>
 </p>
 </div>
 </div>
@@ -371,14 +371,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.kys-photography.de/hiland-mountain-bike-da-275-pollici-21-marce-con-forcella-ammortizzata-urban-commuter-city.html"><img alt="Hiland Mountain bike da 27,5 pollici, 21 marce, con forcella ammortizzata, Urban Commuter City" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/kysphotographyde/hiland-mountain-bike-da-275-pollici-21-marce-con-forcella-ammortizzata-urban-commuter-city-356.jpg" title="Hiland Mountain bike da 27,5 pollici, 21 marce, con forcella ammortizzata, Urban Commuter City"/></a>
+<a class="arevision" href="http://www.kys-photography.de/all-mountain-style-ams-paratelaio-full-unisexadult-ghepardo-grigio.html"><img alt="All Mountain Style Ams Paratelaio Full, Unisex-Adult, Ghepardo Grigio" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/kysphotographyde/all-mountain-style-ams-paratelaio-full-unisexadult-ghepardo-grigio-5853.jpg" title="All Mountain Style Ams Paratelaio Full, Unisex-Adult, Ghepardo Grigio"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.kys-photography.de/hiland-mountain-bike-da-275-pollici-21-marce-con-forcella-ammortizzata-urban-commuter-city.html">Hiland Mountain bike da 27,5 pollici, 21 marce, con forcella ammortizzata, Urban Commuter City</a></h4></div>
+<div class="name"><h4><a href="http://www.kys-photography.de/all-mountain-style-ams-paratelaio-full-unisexadult-ghepardo-grigio.html">All Mountain Style Ams Paratelaio Full, Unisex-Adult, Ghepardo Grigio</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€42,99</span> <span class="price-old">€122,99</span>
+<span class="price-new">€43,99</span> <span class="price-old">€124,99</span>
 </p>
 </div>
 </div>
@@ -387,14 +387,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.kys-photography.de/continental-xking-24-unisex-adulto-nero-29-x-24.html"><img alt="Continental, X-King 2.4 Unisex Adulto, Nero, 29 x 2.4" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/kysphotographyde/continental-xking-24-unisex-adulto-nero-29-x-24-2595.jpg" title="Continental, X-King 2.4 Unisex Adulto, Nero, 29 x 2.4"/></a>
+<a class="arevision" href="http://www.kys-photography.de/sharprepublic-mountain-bike-pedali-mtb-pedali-della-bicicletta-pedali-flat-9-16cuscinetto-sigillato-leggero-piattaforma-per-la-strada-di-montagna-bmx-mtb-bike-ad-verde.html"><img -="" ad="" alt="sharprepublic Mountain Bike Pedali MTB Pedali della Bicicletta Pedali Flat 9/16" bike,="" bmx="" class="img-responsive img-normal" cuscinetto="" di="" la="" leggero="" montagna="" mtb="" onload="setimg(this,'80','100')" per="" piattaforma="" sigillato="" src="image/kysphotographyde/sharprepublic-mountain-bike-pedali-mtb-pedali-della-bicicletta-pedali-flat-9-16cuscinetto-sigillato-leggero-piattaforma-per-la-strada-di-montagna-bmx-mtb-bike-ad-verde-7153.jpg" strada="" title="sharprepublic Mountain Bike Pedali MTB Pedali della Bicicletta Pedali Flat 9/16" verde"=""/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.kys-photography.de/continental-xking-24-unisex-adulto-nero-29-x-24.html">Continental, X-King 2.4 Unisex Adulto, Nero, 29 x 2.4</a></h4></div>
+<div class="name"><h4><a href="http://www.kys-photography.de/sharprepublic-mountain-bike-pedali-mtb-pedali-della-bicicletta-pedali-flat-9-16cuscinetto-sigillato-leggero-piattaforma-per-la-strada-di-montagna-bmx-mtb-bike-ad-verde.html">sharprepublic Mountain Bike Pedali MTB Pedali della Bicicletta Pedali Flat 9/16"Cuscinetto Sigillato Leggero Piattaforma per la Strada di Montagna BMX MTB Bike, ad - Verde</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€39,99</span> <span class="price-old">€113,99</span>
+<span class="price-new">€40,99</span> <span class="price-old">€117,99</span>
 </p>
 </div>
 </div>
@@ -403,14 +403,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.kys-photography.de/bllgsea-pedali-per-mountain-bike-e-mountain-bike-in-metallo-piattaforma-a-pedale-con-lega-di-alluminio-antiscivolo-e-leggera-zincata-colorata.html"><img alt="Bllgsea Pedali per mountain bike e mountain bike in metallo, piattaforma a pedale con lega di alluminio antiscivolo e leggera, zincata colorata" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/kysphotographyde/bllgsea-pedali-per-mountain-bike-e-mountain-bike-in-metallo-piattaforma-a-pedale-con-lega-di-alluminio-antiscivolo-e-leggera-zincata-colorata-4106.jpg" title="Bllgsea Pedali per mountain bike e mountain bike in metallo, piattaforma a pedale con lega di alluminio antiscivolo e leggera, zincata colorata"/></a>
+<a class="arevision" href="http://www.kys-photography.de/fischer-lucchetto-con-supporto-pieghevole-colore-nero-neon-85-85892.html"><img alt="Fischer Lucchetto con Supporto Pieghevole, Colore Nero Neon, 85, 85892" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/kysphotographyde/fischer-lucchetto-con-supporto-pieghevole-colore-nero-neon-85-85892-828.jpg" title="Fischer Lucchetto con Supporto Pieghevole, Colore Nero Neon, 85, 85892"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.kys-photography.de/bllgsea-pedali-per-mountain-bike-e-mountain-bike-in-metallo-piattaforma-a-pedale-con-lega-di-alluminio-antiscivolo-e-leggera-zincata-colorata.html">Bllgsea Pedali per mountain bike e mountain bike in metallo, piattaforma a pedale con lega di alluminio antiscivolo e leggera, zincata colorata</a></h4></div>
+<div class="name"><h4><a href="http://www.kys-photography.de/fischer-lucchetto-con-supporto-pieghevole-colore-nero-neon-85-85892.html">Fischer Lucchetto con Supporto Pieghevole, Colore Nero Neon, 85, 85892</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€44,99</span> <span class="price-old">€128,99</span>
+<span class="price-new">€45,99</span> <span class="price-old">€126,99</span>
 </p>
 </div>
 </div>
@@ -427,14 +427,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.kys-photography.de/selle-royal-freetime-relaxed-unisexadulto-neronero-267-x-218-cm.html"><img alt="Selle Royal Freetime Relaxed, Unisex-Adulto, Nero-Nero, 26.7 x 21.8 cm" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/kysphotographyde/selle-royal-freetime-relaxed-unisexadulto-neronero-267-x-218-cm-697.jpg" title="Selle Royal Freetime Relaxed, Unisex-Adulto, Nero-Nero, 26.7 x 21.8 cm"/></a>
+<a class="arevision" href="http://www.kys-photography.de/prophete-inmold-taglia-5558cmcasco-da-bicicletta-unisex-8133-blau-m.html"><img alt="Prophete Inmold, Taglia: 55 – 58 cm – Casco da Bicicletta, Unisex, 8133, Blau, M" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/kysphotographyde/prophete-inmold-taglia-5558cmcasco-da-bicicletta-unisex-8133-blau-mx-6915.jpg" title="Prophete Inmold, Taglia: 55 – 58 cm – Casco da Bicicletta, Unisex, 8133, Blau, M"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.kys-photography.de/selle-royal-freetime-relaxed-unisexadulto-neronero-267-x-218-cm.html">Selle Royal Freetime Relaxed, Unisex-Adulto, Nero-Nero, 26.7 x 21.8 cm</a></h4></div>
+<div class="name"><h4><a href="http://www.kys-photography.de/prophete-inmold-taglia-5558cmcasco-da-bicicletta-unisex-8133-blau-m.html">Prophete Inmold, Taglia: 55 – 58 cm – Casco da Bicicletta, Unisex, 8133, Blau, M</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€42,99</span> <span class="price-old">€122,99</span>
+<span class="price-new">€40,99</span> <span class="price-old">€117,99</span>
 </p>
 </div>
 </div>
@@ -443,14 +443,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.kys-photography.de/nsb-gt-fury-patte-di-deragliatore-per-quadro-unisex-adulto-argento.html"><img alt="NSB GT Fury Patte di Deragliatore per Quadro Unisex Adulto, Argento" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/kysphotographyde/nsb-gt-fury-patte-di-deragliatore-per-quadro-unisex-adulto-argento-5520.jpg" title="NSB GT Fury Patte di Deragliatore per Quadro Unisex Adulto, Argento"/></a>
+<a class="arevision" href="http://www.kys-photography.de/cane-creek-reggisella-con-sospensione-thudbuster-st-nero-schwarz-316-mm-o-x-350-mm.html"><img alt="Cane Creek, Reggisella con Sospensione Thudbuster ST, Nero (Schwarz), 31.6 mm ø x 350 mm" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/kysphotographyde/cane-creek-reggisella-con-sospensione-thudbuster-st-nero-schwarz-316-mm-o-x-350-mm-681.jpg" title="Cane Creek, Reggisella con Sospensione Thudbuster ST, Nero (Schwarz), 31.6 mm ø x 350 mm"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.kys-photography.de/nsb-gt-fury-patte-di-deragliatore-per-quadro-unisex-adulto-argento.html">NSB GT Fury Patte di Deragliatore per Quadro Unisex Adulto, Argento</a></h4></div>
+<div class="name"><h4><a href="http://www.kys-photography.de/cane-creek-reggisella-con-sospensione-thudbuster-st-nero-schwarz-316-mm-o-x-350-mm.html">Cane Creek, Reggisella con Sospensione Thudbuster ST, Nero (Schwarz), 31.6 mm ø x 350 mm</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€44,99</span> <span class="price-old">€129,99</span>
+<span class="price-new">€40,99</span> <span class="price-old">€116,99</span>
 </p>
 </div>
 </div>
@@ -459,14 +459,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.kys-photography.de/articoli-bianchi-ciclismo-sweet-protection.html"><img alt="Articoli bianchi ciclismo Sweet protection" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/kysphotographyde/articoli-bianchi-ciclismo-sweet-protection-2279.jpg" title="Articoli bianchi ciclismo Sweet protection"/></a>
+<a class="arevision" href="http://www.kys-photography.de/cst-sensamo-pneumatici-per-bicicletta-unisex-adulto-nero-28-x-1-5-8-x-1-3-8-37622.html"><img 37-622"="" alt="CST Sensamo, Pneumatici per Bicicletta. Unisex Adulto, Nero, 28 x 1 5/8 x 1 3/8" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/kysphotographyde/cst-sensamo-pneumatici-per-bicicletta-unisex-adulto-nero-28-x-1-5-8-x-1-3-8-37622-3915.jpg" title="CST Sensamo, Pneumatici per Bicicletta. Unisex Adulto, Nero, 28 x 1 5/8 x 1 3/8"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.kys-photography.de/articoli-bianchi-ciclismo-sweet-protection.html">Articoli bianchi ciclismo Sweet protection</a></h4></div>
+<div class="name"><h4><a href="http://www.kys-photography.de/cst-sensamo-pneumatici-per-bicicletta-unisex-adulto-nero-28-x-1-5-8-x-1-3-8-37622.html">CST Sensamo, Pneumatici per Bicicletta. Unisex Adulto, Nero, 28 x 1 5/8 x 1 3/8" 37-622</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€42,99</span> <span class="price-old">€127,99</span>
+<span class="price-new">€40,99</span> <span class="price-old">€129,99</span>
 </p>
 </div>
 </div>
@@ -475,14 +475,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.kys-photography.de/vittoria-corsa-tubolare-unisex-adulto-nero-700x28.html"><img alt="VITTORIA Corsa, Tubolare Unisex Adulto, Nero, 700x28" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/kysphotographyde/vittoria-corsa-tubolare-unisex-adulto-nero-700x28-973.jpg" title="VITTORIA Corsa, Tubolare Unisex Adulto, Nero, 700x28"/></a>
+<a class="arevision" href="http://www.kys-photography.de/articoli-ciclismo-met.html"><img alt="Articoli ciclismo MET" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/kysphotographyde/articoli-ciclismo-met-6834.jpg" title="Articoli ciclismo MET"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.kys-photography.de/vittoria-corsa-tubolare-unisex-adulto-nero-700x28.html">VITTORIA Corsa, Tubolare Unisex Adulto, Nero, 700x28</a></h4></div>
+<div class="name"><h4><a href="http://www.kys-photography.de/articoli-ciclismo-met.html">Articoli ciclismo MET</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€45,99</span> <span class="price-old">€122,99</span>
+<span class="price-new">€45,99</span> <span class="price-old">€127,99</span>
 </p>
 </div>
 </div>
@@ -491,14 +491,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.kys-photography.de/bellelli-eco-trailer-carrello-unisexadulto-nero-mini-40l.html"><img alt="Bellelli Eco Trailer, Carrello Unisex-Adulto, Nero, Mini (40L)" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/kysphotographyde/bellelli-eco-trailer-carrello-unisexadulto-nero-mini-40l-5401.jpg" title="Bellelli Eco Trailer, Carrello Unisex-Adulto, Nero, Mini (40L)"/></a>
+<a class="arevision" href="http://www.kys-photography.de/parktool-custodia-per-prs20-nero-schwarz.html"><img alt="ParkTool, Custodia per PRS-20, Nero (Schwarz)" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/kysphotographyde/parktool-custodia-per-prs20-nero-schwarz-6319.jpg" title="ParkTool, Custodia per PRS-20, Nero (Schwarz)"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.kys-photography.de/bellelli-eco-trailer-carrello-unisexadulto-nero-mini-40l.html">Bellelli Eco Trailer, Carrello Unisex-Adulto, Nero, Mini (40L)</a></h4></div>
+<div class="name"><h4><a href="http://www.kys-photography.de/parktool-custodia-per-prs20-nero-schwarz.html">ParkTool, Custodia per PRS-20, Nero (Schwarz)</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€45,99</span> <span class="price-old">€122,99</span>
+<span class="price-new">€41,99</span> <span class="price-old">€112,99</span>
 </p>
 </div>
 </div>
@@ -507,14 +507,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.kys-photography.de/michelin-force-am-copertura-per-bicicletta-unisex-adulto-nero-29x235.html"><img alt="Michelin Force AM, Copertura per Bicicletta Unisex Adulto, Nero, 29x2.35" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/kysphotographyde/michelin-force-am-copertura-per-bicicletta-unisex-adulto-nero-29x235-3329.jpg" title="Michelin Force AM, Copertura per Bicicletta Unisex Adulto, Nero, 29x2.35"/></a>
+<a class="arevision" href="http://www.kys-photography.de/bulls-bici-trekking-pulsar-cross-street-grigio-matt-donna-48.html"><img alt="Bulls Bici Trekking Pulsar Cross Street Grigio Matt Donna 48" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/kysphotographyde/bulls-bici-trekking-pulsar-cross-street-grigio-matt-donna-48-550.jpg" title="Bulls Bici Trekking Pulsar Cross Street Grigio Matt Donna 48"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.kys-photography.de/michelin-force-am-copertura-per-bicicletta-unisex-adulto-nero-29x235.html">Michelin Force AM, Copertura per Bicicletta Unisex Adulto, Nero, 29x2.35</a></h4></div>
+<div class="name"><h4><a href="http://www.kys-photography.de/bulls-bici-trekking-pulsar-cross-street-grigio-matt-donna-48.html">Bulls Bici Trekking Pulsar Cross Street Grigio Matt Donna 48</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€40,99</span> <span class="price-old">€120,99</span>
+<span class="price-new">€41,99</span> <span class="price-old">€111,99</span>
 </p>
 </div>
 </div>
@@ -523,14 +523,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.kys-photography.de/syncros-250588-bici-unisex-adulto-blk-squ-oran-1size.html"><img alt="SYNCROS 250588, Bici Unisex Adulto, Blk/squ Oran, 1size" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/kysphotographyde/syncros-250588-bici-unisex-adulto-blk-squ-oran-1size-6589.jpg" title="SYNCROS 250588, Bici Unisex Adulto, Blk/squ Oran, 1size"/></a>
+<a class="arevision" href="http://www.kys-photography.de/articoli-ciclismo-fox-racing.html"><img alt="Articoli ciclismo Fox Racing" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/kysphotographyde/articoli-ciclismo-fox-racing-4365.jpg" title="Articoli ciclismo Fox Racing"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.kys-photography.de/syncros-250588-bici-unisex-adulto-blk-squ-oran-1size.html">SYNCROS 250588, Bici Unisex Adulto, Blk/squ Oran, 1size</a></h4></div>
+<div class="name"><h4><a href="http://www.kys-photography.de/articoli-ciclismo-fox-racing.html">Articoli ciclismo Fox Racing</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€45,99</span> <span class="price-old">€121,99</span>
+<span class="price-new">€41,99</span> <span class="price-old">€115,99</span>
 </p>
 </div>
 </div>
@@ -539,14 +539,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.kys-photography.de/sqlab-611ergowave-active-titube-sattel-unisex-611-ergowave-active-titube-nero-14-cm.html"><img alt="SQlab 611 ergowave Active titube Sattel, Unisex, 611 Ergowave Active TiTube, Nero, 14 cm" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/kysphotographyde/sqlab-611ergowave-active-titube-sattel-unisex-611-ergowave-active-titube-nero-14-cm-4423.jpg" title="SQlab 611 ergowave Active titube Sattel, Unisex, 611 Ergowave Active TiTube, Nero, 14 cm"/></a>
+<a class="arevision" href="http://www.kys-photography.de/thule-timone-per-rimorchio-per-bambini.html"><img alt="Thule - Timone per rimorchio per bambini" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/kysphotographyde/thule-timone-per-rimorchio-per-bambini-5840.jpg" title="Thule - Timone per rimorchio per bambini"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.kys-photography.de/sqlab-611ergowave-active-titube-sattel-unisex-611-ergowave-active-titube-nero-14-cm.html">SQlab 611 ergowave Active titube Sattel, Unisex, 611 Ergowave Active TiTube, Nero, 14 cm</a></h4></div>
+<div class="name"><h4><a href="http://www.kys-photography.de/thule-timone-per-rimorchio-per-bambini.html">Thule - Timone per rimorchio per bambini</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€45,99</span> <span class="price-old">€124,99</span>
+<span class="price-new">€44,99</span> <span class="price-old">€111,99</span>
 </p>
 </div>
 </div>
@@ -555,14 +555,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.kys-photography.de/dedaelementi-manubrio-bicicletta-pista-42cm-matt-black.html"><img alt="Deda-Elementi Manubrio bicicletta Pista 42Cm Matt Black" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/kysphotographyde/dedaelementi-manubrio-bicicletta-pista-42cm-matt-black-3317.jpg" title="Deda-Elementi Manubrio bicicletta Pista 42Cm Matt Black"/></a>
+<a class="arevision" href="http://www.kys-photography.de/puky-rowerek-biegowy-lr-m-red-4064.html"><img alt="Puky Rowerek biegowy LR M Red 4064" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/kysphotographyde/puky-rowerek-biegowy-lr-mx-red-4064-5950.jpg" title="Puky Rowerek biegowy LR M Red 4064"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.kys-photography.de/dedaelementi-manubrio-bicicletta-pista-42cm-matt-black.html">Deda-Elementi Manubrio bicicletta Pista 42Cm Matt Black</a></h4></div>
+<div class="name"><h4><a href="http://www.kys-photography.de/puky-rowerek-biegowy-lr-m-red-4064.html">Puky Rowerek biegowy LR M Red 4064</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€45,99</span> <span class="price-old">€126,99</span>
+<span class="price-new">€43,99</span> <span class="price-old">€113,99</span>
 </p>
 </div>
 </div>
@@ -571,14 +571,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.kys-photography.de/scott-350-evo-plus-carry-ece-picco-casco-nero-taglia-l-2xl.html"><img alt="Scott 350 Evo Plus Carry ECE Picco casco, nero, taglia L 2XL" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/kysphotographyde/scott-350-evo-plus-carry-ece-picco-casco-nero-taglia-l-2xl-3202.jpg" title="Scott 350 Evo Plus Carry ECE Picco casco, nero, taglia L 2XL"/></a>
+<a class="arevision" href="http://www.kys-photography.de/articoli-ciclismo-michelin.html"><img alt="Articoli ciclismo Michelin" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/kysphotographyde/articoli-ciclismo-michelin-1338.jpg" title="Articoli ciclismo Michelin"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.kys-photography.de/scott-350-evo-plus-carry-ece-picco-casco-nero-taglia-l-2xl.html">Scott 350 Evo Plus Carry ECE Picco casco, nero, taglia L 2XL</a></h4></div>
+<div class="name"><h4><a href="http://www.kys-photography.de/articoli-ciclismo-michelin.html">Articoli ciclismo Michelin</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€44,99</span> <span class="price-old">€129,99</span>
+<span class="price-new">€41,99</span> <span class="price-old">€110,99</span>
 </p>
 </div>
 </div>
@@ -587,14 +587,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.kys-photography.de/copertone-da-strada-schwalbe-marathon-plus-smart-guard-nero-wire-bead-nero.html"><img alt="Copertone da Strada Schwalbe Marathon Plus - Smart Guard - nero - Wire Bead, nero" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/kysphotographyde/copertone-da-strada-schwalbe-marathon-plus-smart-guard-nero-wire-bead-nero-6340.jpg" title="Copertone da Strada Schwalbe Marathon Plus - Smart Guard - nero - Wire Bead, nero"/></a>
+<a class="arevision" href="http://www.kys-photography.de/shimano-blm6000l-leva-del-freno-unisex-adulto-grigio-taglia-unica.html"><img alt="SHIMANO BLM6000L, Leva del Freno Unisex – Adulto, Grigio, Taglia Unica" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/kysphotographyde/shimano-blm6000l-leva-del-freno-unisex-adulto-grigio-taglia-unica-5204.jpg" title="SHIMANO BLM6000L, Leva del Freno Unisex – Adulto, Grigio, Taglia Unica"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.kys-photography.de/copertone-da-strada-schwalbe-marathon-plus-smart-guard-nero-wire-bead-nero.html">Copertone da Strada Schwalbe Marathon Plus - Smart Guard - nero - Wire Bead, nero</a></h4></div>
+<div class="name"><h4><a href="http://www.kys-photography.de/shimano-blm6000l-leva-del-freno-unisex-adulto-grigio-taglia-unica.html">SHIMANO BLM6000L, Leva del Freno Unisex – Adulto, Grigio, Taglia Unica</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€43,99</span> <span class="price-old">€111,99</span>
+<span class="price-new">€43,99</span> <span class="price-old">€115,99</span>
 </p>
 </div>
 </div>
@@ -603,14 +603,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.kys-photography.de/alpina-carapax-jr-caschi-da-ciclismo-unisexyouth-blackneon-yellow-5156.html"><img alt="ALPINA Carapax JR, Caschi da Ciclismo Unisex-Youth, Black-Neon Yellow, 51-56" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/kysphotographyde/alpina-carapax-jr-caschi-da-ciclismo-unisexyouth-blackneon-yellow-5156-2898.jpg" title="ALPINA Carapax JR, Caschi da Ciclismo Unisex-Youth, Black-Neon Yellow, 51-56"/></a>
+<a class="arevision" href="http://www.kys-photography.de/articoli-ciclismo-per-uomo-dainese.html"><img alt="Articoli ciclismo per Uomo Dainese" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/kysphotographyde/articoli-ciclismo-per-uomo-dainese-5078.jpg" title="Articoli ciclismo per Uomo Dainese"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.kys-photography.de/alpina-carapax-jr-caschi-da-ciclismo-unisexyouth-blackneon-yellow-5156.html">ALPINA Carapax JR, Caschi da Ciclismo Unisex-Youth, Black-Neon Yellow, 51-56</a></h4></div>
+<div class="name"><h4><a href="http://www.kys-photography.de/articoli-ciclismo-per-uomo-dainese.html">Articoli ciclismo per Uomo Dainese</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€44,99</span> <span class="price-old">€110,99</span>
+<span class="price-new">€43,99</span> <span class="price-old">€127,99</span>
 </p>
 </div>
 </div>
@@ -646,43 +646,43 @@ $(document).ready(function() {
 <div id="powered">
 <div class="container">
 <div class="row">
-<div class="col-sm-12 col-md-12">
-      Copyright © 2022 <a href="//www.kys-photography.de" target="_blank">www.kys-photography.de</a> All Rights Reserved  
+<div class="col-sm-12 col-md-12">
+      Copyright © 2022 <a href="//www.kys-photography.de" target="_blank">www.kys-photography.de</a> All Rights Reserved  
       </div>
 </div>
 </div>
 </div>
 </footer>
 <script src="catalog/view/theme/titan/js/jquery.visible.min.js" type="text/javascript"></script>
-<script type="text/javascript">
-
-var win = $(window);
-
-var allMods = $("footer");
-
-allMods.each(function(i, el) {
-    
-  if ($(el).visible(true)) {
-    $(el).addClass("already-visible"); 
-  }
-  
-});
-
-win.scroll(function(event) {
-  
-  allMods.each(function(i, el) {
-    
-    var el = $(el);
-    
-    if (el.visible(true)) {
-      el.addClass("come-in"); 
-    } else {
-      el.removeClass("come-in already-visible");
-    }
-    
-  });
-  
-}); 
+<script type="text/javascript">
+
+var win = $(window);
+
+var allMods = $("footer");
+
+allMods.each(function(i, el) {
+    
+  if ($(el).visible(true)) {
+    $(el).addClass("already-visible"); 
+  }
+  
+});
+
+win.scroll(function(event) {
+  
+  allMods.each(function(i, el) {
+    
+    var el = $(el);
+    
+    if (el.visible(true)) {
+      el.addClass("come-in"); 
+    } else {
+      el.removeClass("come-in already-visible");
+    }
+    
+  });
+  
+}); 
 </script>
 <script src="catalog/view/theme/titan/js/jquery.easing-1.3.min.js" type="text/javascript"></script>
 <link href="catalog/view/theme/titan/js/quickview/fancybox/jquery.fancybox.css" property="stylesheet" rel="stylesheet">

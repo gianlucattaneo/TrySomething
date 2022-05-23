@@ -34,60 +34,60 @@
 <script src="catalog/view/theme/gentian/js/cloud-zoom.js" type="text/javascript"></script>
 <link href="catalog/view/theme/gentian/stylesheet/dcaccordion.css" property="stylesheet" rel="stylesheet" type="text/css">
 <script src="catalog/view/theme/gentian/js/jquery.dcjqaccordion.js" type="text/javascript"></script>
-<script>
-      // This allows to expose several variables to the global scope, to be used in scripts
-      window.theme = {
-        template: "index",
-        shopCurrency: "GBP",
-        moneyFormat: "\u003cspan class=money\u003e\u0026pound;{{amount}}\u003c\/span\u003e",
-        moneyWithCurrencyFormat: "\u003cspan class=money\u003e\u0026pound;{{amount}} GBP\u003c\/span\u003e",
-        currencyConversionEnabled: true,
-        currencyConversionMoneyFormat: "money_format",
-        currencyConversionRoundAmounts: true,
-        productImageSize: "natural",
-        searchMode: "product,article",
-        showPageTransition: true,
-        showElementStaggering: true,
-        showImageZooming: true,
-        enableExperimentalResizeObserver: false
-      };
-
-      window.languages = {
-        cartAddNote: "Add Order Note",
-        cartEditNote: "Edit Order Note",
-        productImageLoadingError: "This image could not be loaded. Please try to reload the page.",
-        productFormAddToCart: "Add to cart",
-        productFormUnavailable: "Unavailable",
-        productFormSoldOut: "Sold Out",
-        shippingEstimatorOneResult: "1 option available:",
-        shippingEstimatorMoreResults: "{{count}} options available:",
-        shippingEstimatorNoResults: "No shipping could be found"
-      };
-
-      window.lazySizesConfig = {
-        loadHidden: false,
-        hFac: 0.5,
-        expFactor: 2,
-        ricTimeout: 150,
-        lazyClass: 'Image--lazyLoad',
-        loadingClass: 'Image--lazyLoading',
-        loadedClass: 'Image--lazyLoaded'
-      };
-
-      document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
-      document.documentElement.style.setProperty('--window-height', window.innerHeight + 'px');
-
-      // We do a quick detection of some features (we could use Modernizr but for so little...)
-      (function() {
-        document.documentElement.className += ((window.CSS && window.CSS.supports('(position: sticky) or (position: -webkit-sticky)')) ? ' supports-sticky' : ' no-supports-sticky');
-        document.documentElement.className += (window.matchMedia('(-moz-touch-enabled: 1), (hover: none)')).matches ? ' no-supports-hover' : ' supports-hover';
-      }());
-
-      window.onpageshow = function (event) {
-        if (event.persisted) {
-          window.location.reload();
-        }
-      };
+<script>
+      // This allows to expose several variables to the global scope, to be used in scripts
+      window.theme = {
+        template: "index",
+        shopCurrency: "GBP",
+        moneyFormat: "\u003cspan class=money\u003e\u0026pound;{{amount}}\u003c\/span\u003e",
+        moneyWithCurrencyFormat: "\u003cspan class=money\u003e\u0026pound;{{amount}} GBP\u003c\/span\u003e",
+        currencyConversionEnabled: true,
+        currencyConversionMoneyFormat: "money_format",
+        currencyConversionRoundAmounts: true,
+        productImageSize: "natural",
+        searchMode: "product,article",
+        showPageTransition: true,
+        showElementStaggering: true,
+        showImageZooming: true,
+        enableExperimentalResizeObserver: false
+      };
+
+      window.languages = {
+        cartAddNote: "Add Order Note",
+        cartEditNote: "Edit Order Note",
+        productImageLoadingError: "This image could not be loaded. Please try to reload the page.",
+        productFormAddToCart: "Add to cart",
+        productFormUnavailable: "Unavailable",
+        productFormSoldOut: "Sold Out",
+        shippingEstimatorOneResult: "1 option available:",
+        shippingEstimatorMoreResults: "{{count}} options available:",
+        shippingEstimatorNoResults: "No shipping could be found"
+      };
+
+      window.lazySizesConfig = {
+        loadHidden: false,
+        hFac: 0.5,
+        expFactor: 2,
+        ricTimeout: 150,
+        lazyClass: 'Image--lazyLoad',
+        loadingClass: 'Image--lazyLoading',
+        loadedClass: 'Image--lazyLoaded'
+      };
+
+      document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+      document.documentElement.style.setProperty('--window-height', window.innerHeight + 'px');
+
+      // We do a quick detection of some features (we could use Modernizr but for so little...)
+      (function() {
+        document.documentElement.className += ((window.CSS && window.CSS.supports('(position: sticky) or (position: -webkit-sticky)')) ? ' supports-sticky' : ' no-supports-sticky');
+        document.documentElement.className += (window.matchMedia('(-moz-touch-enabled: 1), (hover: none)')).matches ? ' no-supports-hover' : ' supports-hover';
+      }());
+
+      window.onpageshow = function (event) {
+        if (event.persisted) {
+          window.location.reload();
+        }
+      };
     </script>
 </link></link></link></meta></head>
 <body class="common-home gentian">
@@ -96,12 +96,12 @@
 <div id="sidebar-wrapper">
 <ul class="sidebar-nav list-group gentian">
 <li class="sidebar-title">
-<a href="#menu-toggle-close" id="menu-toggle-close"><span aria-hidden="true">×</span></a>Informationen      <script>
-      $("#menu-toggle-close").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-		$(".sidebar-opacity").toggleClass("toggled");
-      });
+<a href="#menu-toggle-close" id="menu-toggle-close"><span aria-hidden="true">×</span></a>Informationen      <script>
+      $("#menu-toggle-close").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+		$(".sidebar-opacity").toggleClass("toggled");
+      });
       </script>
 </li>
 <li><a href="https://www.fassdesign.de/index.php?route=information/information&amp;information_id=7">FAQ</a></li>
@@ -165,12 +165,12 @@
 <span class="button-text">Speisekarte</span>
 </div>
 </a>
-<script>
-        $("#menu-mobile-toggle").click(function(e) {
-          e.preventDefault();
-          $("#wrapper").toggleClass("menu-toggled");
-		  $(".sidebar-opacity").toggleClass("menu-toggled");
-        });
+<script>
+        $("#menu-mobile-toggle").click(function(e) {
+          e.preventDefault();
+          $("#wrapper").toggleClass("menu-toggled");
+		  $(".sidebar-opacity").toggleClass("menu-toggled");
+        });
       </script>
 <div class="btn-group btn-block buttons-header" id="cart">
 <a class="btn dropdown-toggle" data-loading-text="Wird geladen..." data-toggle="dropdown">
@@ -208,26 +208,26 @@
 </div>
 </div>
 </nav>
-<script type="text/javascript">
-$(document).ready(function() {
-	$('#accordion-mobile').dcAccordion({
-		disableLink: false,	
-		menuClose: false,
-		autoClose: true,
-		autoExpand: true,		
-		saveState: false
-	});
-});
+<script type="text/javascript">
+$(document).ready(function() {
+	$('#accordion-mobile').dcAccordion({
+		disableLink: false,	
+		menuClose: false,
+		autoClose: true,
+		autoExpand: true,		
+		saveState: false
+	});
+});
 </script>
 <div class="hidden-sm hidden-md hidden-lg" id="menu-mobile">
 <ul class="accordion sidebar-nav list-group" id="accordion-mobile">
 <li class="sidebar-title">
-<a href="#menu-mobile-toggle-close" id="menu-mobile-toggle-close"><span aria-hidden="true">×</span></a>Speisekarte      <script>
-      $("#menu-mobile-toggle-close").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("menu-toggled");
-		$(".sidebar-opacity").toggleClass("menu-toggled");
-      });
+<a href="#menu-mobile-toggle-close" id="menu-mobile-toggle-close"><span aria-hidden="true">×</span></a>Speisekarte      <script>
+      $("#menu-mobile-toggle-close").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("menu-toggled");
+		$(".sidebar-opacity").toggleClass("menu-toggled");
+      });
       </script>
 </li>
 <li><a href="https://www.fassdesign.de/">Start</a></li>
@@ -263,16 +263,16 @@ $(document).ready(function() {
 </div>
 <div style="display:none;"><script src="//js.users.51.la/21085533.js" type="text/javascript"></script><br/></div><div class="container">
 <div class="row"><column class="col-sm-3 hidden-xs" id="column-left">
-<script type="text/javascript">
-$(document).ready(function() {
-	$('#accordion-1').dcAccordion({
-		disableLink: false,	
-		menuClose: false,
-		autoClose: true,
-		autoExpand: true,		
-		saveState: false
-	});
-});
+<script type="text/javascript">
+$(document).ready(function() {
+	$('#accordion-1').dcAccordion({
+		disableLink: false,	
+		menuClose: false,
+		autoClose: true,
+		autoExpand: true,		
+		saveState: false
+	});
+});
 </script>
 <div class="panel panel-default panel-category">
 <div class="panel-heading">Kategorien</div>
@@ -307,14 +307,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.fassdesign.de/champion-hooded-full-zip-suit-traningsset-dark-blue.html"><img alt="Champion Hooded Full Zip Suit - Träningsset Dark Blue Or" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/champion-hooded-full-zip-suit-traningsset-dark-blue-5343.jpg" title="Champion Hooded Full Zip Suit - Träningsset Dark Blue Or"/></a>
+<a class="arevision" href="https://www.fassdesign.de/true-religion-rocco-super-jeans-slim-fit-raw-fiber.html"><img alt="True Religion Rocco Super - Jeans Slim Fit Raw Fiber rl" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/true-religion-rocco-super-jeans-slim-fit-raw-fiber-6844.jpg" title="True Religion Rocco Super - Jeans Slim Fit Raw Fiber rl"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.fassdesign.de/champion-hooded-full-zip-suit-traningsset-dark-blue.html">Champion Hooded Full Zip Suit - Träningsset Dark Blue Or</a></h4></div>
+<div class="name"><h4><a href="https://www.fassdesign.de/true-religion-rocco-super-jeans-slim-fit-raw-fiber.html">True Religion Rocco Super - Jeans Slim Fit Raw Fiber rl</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€35.99</span> <span class="price-old">€176.49</span>
+<span class="price-new">€37.99</span> <span class="price-old">€176.59</span>
 </p>
 </div>
 </div>
@@ -323,14 +323,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.fassdesign.de/maria-black-senorita-hoop-pair-noon-charm-orhange-goldcoloured.html"><img alt="Maria Black Senorita Hoop Pair Noon Charm - Örhänge Gold-coloured nW" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/maria-black-senorita-hoop-pair-noon-charm-orhange-goldcoloured-315.jpg" title="Maria Black Senorita Hoop Pair Noon Charm - Örhänge Gold-coloured nW"/></a>
+<a class="arevision" href="https://www.fassdesign.de/marco-tozzi-sandaler-cognac.html"><img alt="Marco Tozzi Sandaler - Cognac TT" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/marco-tozzi-sandaler-cognac-4505.jpg" title="Marco Tozzi Sandaler - Cognac TT"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.fassdesign.de/maria-black-senorita-hoop-pair-noon-charm-orhange-goldcoloured.html">Maria Black Senorita Hoop Pair Noon Charm - Örhänge Gold-coloured nW</a></h4></div>
+<div class="name"><h4><a href="https://www.fassdesign.de/marco-tozzi-sandaler-cognac.html">Marco Tozzi Sandaler - Cognac TT</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€44.99</span> <span class="price-old">€176.69</span>
+<span class="price-new">€40.99</span> <span class="price-old">€169.59</span>
 </p>
 </div>
 </div>
@@ -339,14 +339,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.fassdesign.de/marc-opolo-sweatshirt-soft-white.html"><img alt="Marc O'polo Sweatshirt - Soft White t3" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/marc-opolo-sweatshirt-soft-white-2287.jpg" title="Marc O'polo Sweatshirt - Soft White t3"/></a>
+<a class="arevision" href="https://www.fassdesign.de/vogue-eyewear-solglasogon-copper-dark-blue.html"><img alt="Vogue Eyewear Solglasögon - Copper/dark Blue j6" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/vogue-eyewear-solglasogon-copper-dark-blue-241.jpg" title="Vogue Eyewear Solglasögon - Copper/dark Blue j6"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.fassdesign.de/marc-opolo-sweatshirt-soft-white.html">Marc O'polo Sweatshirt - Soft White t3</a></h4></div>
+<div class="name"><h4><a href="https://www.fassdesign.de/vogue-eyewear-solglasogon-copper-dark-blue.html">Vogue Eyewear Solglasögon - Copper/dark Blue j6</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€36.99</span> <span class="price-old">€176.59</span>
+<span class="price-new">€41.99</span> <span class="price-old">€169.59</span>
 </p>
 </div>
 </div>
@@ -355,46 +355,46 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.fassdesign.de/gstar-korpaz-mock-round-neck-stickad-troja-grey.html"><img alt="G-star Korpaz Mock Round Neck - Stickad Tröja Grey 7d" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/gstar-korpaz-mock-round-neck-stickad-troja-grey-6138.jpg" title="G-star Korpaz Mock Round Neck - Stickad Tröja Grey 7d"/></a>
+<a class="arevision" href="https://www.fassdesign.de/ea7-emporio-armani-tshirt-med-print-black-fancy.html"><img alt="Ea7 Emporio Armani T-shirt Med Print - Black Fancy 09" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/ea7-emporio-armani-tshirt-med-print-black-fancy-1929.jpg" title="Ea7 Emporio Armani T-shirt Med Print - Black Fancy 09"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.fassdesign.de/gstar-korpaz-mock-round-neck-stickad-troja-grey.html">G-star Korpaz Mock Round Neck - Stickad Tröja Grey 7d</a></h4></div>
+<div class="name"><h4><a href="https://www.fassdesign.de/ea7-emporio-armani-tshirt-med-print-black-fancy.html">Ea7 Emporio Armani T-shirt Med Print - Black Fancy 09</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€38.99</span> <span class="price-old">€169.59</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="https://www.fassdesign.de/birkenstock-madrid-badsandaler-metallic-silver.html"><img alt="Birkenstock Madrid - Badsandaler Metallic Silver sw" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/birkenstock-madrid-badsandaler-metallic-silver-4610.jpg" title="Birkenstock Madrid - Badsandaler Metallic Silver sw"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="https://www.fassdesign.de/birkenstock-madrid-badsandaler-metallic-silver.html">Birkenstock Madrid - Badsandaler Metallic Silver sw</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€45.99</span> <span class="price-old">€178.69</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="https://www.fassdesign.de/denham-bolt-jeans-slim-fit-grey.html"><img alt="Denham Bolt - Jeans Slim Fit Grey L1" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/denham-bolt-jeans-slim-fit-grey-6942.jpg" title="Denham Bolt - Jeans Slim Fit Grey L1"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="https://www.fassdesign.de/denham-bolt-jeans-slim-fit-grey.html">Denham Bolt - Jeans Slim Fit Grey L1</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
 <span class="price-new">€38.99</span> <span class="price-old">€178.69</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.fassdesign.de/tommy-sport-legging-tights-blue.html"><img alt="Tommy Sport Legging - Tights Blue GZ" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/tommy-sport-legging-tights-blue-2856.jpg" title="Tommy Sport Legging - Tights Blue GZ"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="https://www.fassdesign.de/tommy-sport-legging-tights-blue.html">Tommy Sport Legging - Tights Blue GZ</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€39.99</span> <span class="price-old">€169.69</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.fassdesign.de/nike-performance-romaleos-35-gym-amp-traningskor-white-metallic-platinum.html"><img alt="Nike Performance Romaleos 3.5 - Gym- &amp; Träningskor White/metallic Platinum Vy" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/nike-performance-romaleos-35-gym-amp-traningskor-white-metallic-platinum-7295.jpg" title="Nike Performance Romaleos 3.5 - Gym- &amp; Träningskor White/metallic Platinum Vy"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="https://www.fassdesign.de/nike-performance-romaleos-35-gym-amp-traningskor-white-metallic-platinum.html">Nike Performance Romaleos 3.5 - Gym- &amp; Träningskor White/metallic Platinum Vy</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€45.99</span> <span class="price-old">€176.89</span>
 </p>
 </div>
 </div>
@@ -411,14 +411,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.fassdesign.de/minimum-bindie-skjortklanning-racing-green.html"><img alt="Minimum Bindie - Skjortklänning Racing Green lW" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/minimum-bindie-skjortklanning-racing-green-1408.jpg" title="Minimum Bindie - Skjortklänning Racing Green lW"/></a>
+<a class="arevision" href="https://www.fassdesign.de/jlindeberg-pine-pike-white.html"><img alt="J.lindeberg Pine - Piké White qZ" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/jlindeberg-pine-pike-white-6473.jpg" title="J.lindeberg Pine - Piké White qZ"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.fassdesign.de/minimum-bindie-skjortklanning-racing-green.html">Minimum Bindie - Skjortklänning Racing Green lW</a></h4></div>
+<div class="name"><h4><a href="https://www.fassdesign.de/jlindeberg-pine-pike-white.html">J.lindeberg Pine - Piké White qZ</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€36.99</span> <span class="price-old">€169.69</span>
+<span class="price-new">€39.99</span> <span class="price-old">€168.99</span>
 </p>
 </div>
 </div>
@@ -427,14 +427,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.fassdesign.de/ps-paul-smith-mens-space-monkey-sweatshirt-navy.html"><img alt="Ps Paul Smith Mens Space Monkey - Sweatshirt Navy YD" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/ps-paul-smith-mens-space-monkey-sweatshirt-navy-6471.jpg" title="Ps Paul Smith Mens Space Monkey - Sweatshirt Navy YD"/></a>
+<a class="arevision" href="https://www.fassdesign.de/reebok-classic-classics-basketball-shorts-black.html"><img alt="Reebok Classic Classics Basketball Shorts - Black oX" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/reebok-classic-classics-basketball-shorts-black-6206.jpg" title="Reebok Classic Classics Basketball Shorts - Black oX"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.fassdesign.de/ps-paul-smith-mens-space-monkey-sweatshirt-navy.html">Ps Paul Smith Mens Space Monkey - Sweatshirt Navy YD</a></h4></div>
+<div class="name"><h4><a href="https://www.fassdesign.de/reebok-classic-classics-basketball-shorts-black.html">Reebok Classic Classics Basketball Shorts - Black oX</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€37.99</span> <span class="price-old">€176.89</span>
+<span class="price-new">€36.99</span> <span class="price-old">€176.89</span>
 </p>
 </div>
 </div>
@@ -443,14 +443,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.fassdesign.de/closed-mix-bumbag-baltesvaska-amethyst.html"><img alt="Closed Mix Bumbag - Bältesväska Amethyst Eu" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/closed-mix-bumbag-baltesvaska-amethyst-903.jpg" title="Closed Mix Bumbag - Bältesväska Amethyst Eu"/></a>
+<a class="arevision" href="https://www.fassdesign.de/tamaris-sandaler-med-skaft-black.html"><img alt="Tamaris Sandaler Med Skaft - Black VP" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/tamaris-sandaler-med-skaft-black-4039.jpg" title="Tamaris Sandaler Med Skaft - Black VP"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.fassdesign.de/closed-mix-bumbag-baltesvaska-amethyst.html">Closed Mix Bumbag - Bältesväska Amethyst Eu</a></h4></div>
+<div class="name"><h4><a href="https://www.fassdesign.de/tamaris-sandaler-med-skaft-black.html">Tamaris Sandaler Med Skaft - Black VP</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€44.99</span> <span class="price-old">€176.89</span>
+<span class="price-new">€45.99</span> <span class="price-old">€176.59</span>
 </p>
 </div>
 </div>
@@ -459,14 +459,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.fassdesign.de/levis-skinny-taper-jeans-fit-sage-overt.html"><img alt="Levi's® Skinny Taper - Jeans Fit Sage Overt 5i" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/levis-skinny-taper-jeans-fit-sage-overt-5846.jpg" title="Levi's® Skinny Taper - Jeans Fit Sage Overt 5i"/></a>
+<a class="arevision" href="https://www.fassdesign.de/polo-ralph-lauren-big-amp-tall-classic-fit-prepster-shorts-nautical-ink.html"><img alt="Polo Ralph Lauren Big &amp; Tall Classic Fit Prepster - Shorts Nautical Ink Zs" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/polo-ralph-lauren-big-amp-tall-classic-fit-prepster-shorts-nautical-ink-5327.jpg" title="Polo Ralph Lauren Big &amp; Tall Classic Fit Prepster - Shorts Nautical Ink Zs"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.fassdesign.de/levis-skinny-taper-jeans-fit-sage-overt.html">Levi's® Skinny Taper - Jeans Fit Sage Overt 5i</a></h4></div>
+<div class="name"><h4><a href="https://www.fassdesign.de/polo-ralph-lauren-big-amp-tall-classic-fit-prepster-shorts-nautical-ink.html">Polo Ralph Lauren Big &amp; Tall Classic Fit Prepster - Shorts Nautical Ink Zs</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€38.99</span> <span class="price-old">€169.69</span>
+<span class="price-new">€40.99</span> <span class="price-old">€178.99</span>
 </p>
 </div>
 </div>
@@ -475,14 +475,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.fassdesign.de/under-armour-traningsshorts-versa-blue-black-beta.html"><img alt="Under Armour Träningsshorts - Versa Blue/black/beta VW" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/under-armour-traningsshorts-versa-blue-black-beta-5662.jpg" title="Under Armour Träningsshorts - Versa Blue/black/beta VW"/></a>
+<a class="arevision" href="https://www.fassdesign.de/alpha-industries-luvtroja-grey.html"><img alt="Alpha Industries Luvtröja - Grey B3" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/alpha-industries-luvtroja-grey-5684.jpg" title="Alpha Industries Luvtröja - Grey B3"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.fassdesign.de/under-armour-traningsshorts-versa-blue-black-beta.html">Under Armour Träningsshorts - Versa Blue/black/beta VW</a></h4></div>
+<div class="name"><h4><a href="https://www.fassdesign.de/alpha-industries-luvtroja-grey.html">Alpha Industries Luvtröja - Grey B3</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€40.99</span> <span class="price-old">€178.69</span>
+<span class="price-new">€36.99</span> <span class="price-old">€168.69</span>
 </p>
 </div>
 </div>
@@ -491,91 +491,11 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.fassdesign.de/ras-sandaletter-fuffy-sand-kiddy-gold.html"><img alt="Ras Sandaletter - Fuffy Sand/kiddy Gold Vw" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/ras-sandaletter-fuffy-sand-kiddy-gold-4122.jpg" title="Ras Sandaletter - Fuffy Sand/kiddy Gold Vw"/></a>
+<a class="arevision" href="https://www.fassdesign.de/tommy-hilfiger-mini-cheeky-bikiniunderdel-navy-blazer.html"><img alt="Tommy Hilfiger Mini Cheeky - Bikiniunderdel Navy Blazer L6" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/tommy-hilfiger-mini-cheeky-bikiniunderdel-navy-blazer-2511.jpg" title="Tommy Hilfiger Mini Cheeky - Bikiniunderdel Navy Blazer L6"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.fassdesign.de/ras-sandaletter-fuffy-sand-kiddy-gold.html">Ras Sandaletter - Fuffy Sand/kiddy Gold Vw</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€44.99</span> <span class="price-old">€176.49</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.fassdesign.de/tommy-jeans-contrast-dress-jerseyklanning-black.html"><img alt="Tommy Jeans Contrast Dress - Jerseyklänning Black MV" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/tommy-jeans-contrast-dress-jerseyklanning-black-2769.jpg" title="Tommy Jeans Contrast Dress - Jerseyklänning Black MV"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="https://www.fassdesign.de/tommy-jeans-contrast-dress-jerseyklanning-black.html">Tommy Jeans Contrast Dress - Jerseyklänning Black MV</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€36.99</span> <span class="price-old">€178.89</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.fassdesign.de/polo-ralph-lauren-camilo-sneakers-white-black-grey.html"><img alt="Polo Ralph Lauren Camilo - Sneakers White/black/grey QW" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/polo-ralph-lauren-camilo-sneakers-white-black-grey-7296.jpg" title="Polo Ralph Lauren Camilo - Sneakers White/black/grey QW"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="https://www.fassdesign.de/polo-ralph-lauren-camilo-sneakers-white-black-grey.html">Polo Ralph Lauren Camilo - Sneakers White/black/grey QW</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€42.99</span> <span class="price-old">€169.69</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.fassdesign.de/nike-sportswear-m-nsw-short-jsy-cb-shorts-black-grey-heather.html"><img alt="Nike Sportswear M Nsw Short Jsy Cb - Shorts Black/grey Heather xS" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/nike-sportswear-mx-nsw-short-jsy-cb-shorts-black-grey-heather-6808.jpg" title="Nike Sportswear M Nsw Short Jsy Cb - Shorts Black/grey Heather xS"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="https://www.fassdesign.de/nike-sportswear-m-nsw-short-jsy-cb-shorts-black-grey-heather.html">Nike Sportswear M Nsw Short Jsy Cb - Shorts Black/grey Heather xS</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€39.99</span> <span class="price-old">€168.69</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.fassdesign.de/abro-axelremsvaska-green.html"><img alt="Abro Axelremsväska - Green e5" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/abro-axelremsvaska-green-250.jpg" title="Abro Axelremsväska - Green e5"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="https://www.fassdesign.de/abro-axelremsvaska-green.html">Abro Axelremsväska - Green e5</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€43.99</span> <span class="price-old">€178.99</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.fassdesign.de/drykorn-wyath-stickad-troja-light-grey.html"><img alt="Drykorn Wyath - Stickad Tröja Light Grey 1r" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/drykorn-wyath-stickad-troja-light-grey-6553.jpg" title="Drykorn Wyath - Stickad Tröja Light Grey 1r"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="https://www.fassdesign.de/drykorn-wyath-stickad-troja-light-grey.html">Drykorn Wyath - Stickad Tröja Light Grey 1r</a></h4></div>
+<div class="name"><h4><a href="https://www.fassdesign.de/tommy-hilfiger-mini-cheeky-bikiniunderdel-navy-blazer.html">Tommy Hilfiger Mini Cheeky - Bikiniunderdel Navy Blazer L6</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
 <span class="price-new">€35.99</span> <span class="price-old">€176.89</span>
@@ -587,14 +507,94 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.fassdesign.de/tom-tailor-perugia-axelremsvaska-mid-blue.html"><img alt="Tom Tailor Perugia - Axelremsväska Mid Blue sY" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/tom-tailor-perugia-axelremsvaska-mid-blue-945.jpg" title="Tom Tailor Perugia - Axelremsväska Mid Blue sY"/></a>
+<a class="arevision" href="https://www.fassdesign.de/simply-be-wide-fit-christa-ankelboots-black.html"><img alt="Simply Be Wide Fit Christa - Ankelboots Black Nn" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/simply-be-wide-fit-christa-ankelboots-black-4489.jpg" title="Simply Be Wide Fit Christa - Ankelboots Black Nn"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.fassdesign.de/tom-tailor-perugia-axelremsvaska-mid-blue.html">Tom Tailor Perugia - Axelremsväska Mid Blue sY</a></h4></div>
+<div class="name"><h4><a href="https://www.fassdesign.de/simply-be-wide-fit-christa-ankelboots-black.html">Simply Be Wide Fit Christa - Ankelboots Black Nn</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€44.99</span> <span class="price-old">€176.89</span>
+<span class="price-new">€41.99</span> <span class="price-old">€176.49</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="https://www.fassdesign.de/bruuns-bazaar-marie-osalia-dress-vardagsklanning-night-sky.html"><img alt="Bruuns Bazaar Marie Osalia Dress - Vardagsklänning Night Sky 2U" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/bruuns-bazaar-marie-osalia-dress-vardagsklanning-night-sky-2004.jpg" title="Bruuns Bazaar Marie Osalia Dress - Vardagsklänning Night Sky 2U"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="https://www.fassdesign.de/bruuns-bazaar-marie-osalia-dress-vardagsklanning-night-sky.html">Bruuns Bazaar Marie Osalia Dress - Vardagsklänning Night Sky 2U</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€36.99</span> <span class="price-old">€178.69</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="https://www.fassdesign.de/marc-opolo-sleeve-long-shape-solid-stickad-troja-soft-white.html"><img alt="Marc O'polo Sleeve Long Shape Solid - Stickad Tröja Soft White TT" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/marc-opolo-sleeve-long-shape-solid-stickad-troja-soft-white-2599.jpg" title="Marc O'polo Sleeve Long Shape Solid - Stickad Tröja Soft White TT"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="https://www.fassdesign.de/marc-opolo-sleeve-long-shape-solid-stickad-troja-soft-white.html">Marc O'polo Sleeve Long Shape Solid - Stickad Tröja Soft White TT</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€36.99</span> <span class="price-old">€169.59</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="https://www.fassdesign.de/guess-genuine-diamond-klocka-brown-silvercoloured.html"><img alt="Guess Genuine Diamond - Klocka Brown/silver-coloured B3" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/guess-genuine-diamond-klocka-brown-silvercoloured-918.jpg" title="Guess Genuine Diamond - Klocka Brown/silver-coloured B3"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="https://www.fassdesign.de/guess-genuine-diamond-klocka-brown-silvercoloured.html">Guess Genuine Diamond - Klocka Brown/silver-coloured B3</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€43.99</span> <span class="price-old">€178.49</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="https://www.fassdesign.de/adidas-performance-french-handball-federation-sweatshirt-blue-white.html"><img alt="Adidas Performance French Handball Federation Sweatshirt - Blue/ White Wn" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/adidas-performance-french-handball-federation-sweatshirt-blue-white-6222.jpg" title="Adidas Performance French Handball Federation Sweatshirt - Blue/ White Wn"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="https://www.fassdesign.de/adidas-performance-french-handball-federation-sweatshirt-blue-white.html">Adidas Performance French Handball Federation Sweatshirt - Blue/ White Wn</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€37.99</span> <span class="price-old">€176.69</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="https://www.fassdesign.de/ltb-molly-jeans-slim-fit-oxford-wash.html"><img alt="Ltb Molly - Jeans Slim Fit Oxford Wash up" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/ltb-molly-jeans-slim-fit-oxford-wash-1209.jpg" title="Ltb Molly - Jeans Slim Fit Oxford Wash up"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="https://www.fassdesign.de/ltb-molly-jeans-slim-fit-oxford-wash.html">Ltb Molly - Jeans Slim Fit Oxford Wash up</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€39.99</span> <span class="price-old">€176.69</span>
 </p>
 </div>
 </div>
@@ -630,43 +630,43 @@ $(document).ready(function() {
 <div id="powered">
 <div class="container">
 <div class="row">
-<div class="col-sm-12 col-md-12">
-      Copyright © 2022 <a href="//www.fassdesign.de" target="_blank">www.fassdesign.de</a> All Rights Reserved  
+<div class="col-sm-12 col-md-12">
+      Copyright © 2022 <a href="//www.fassdesign.de" target="_blank">www.fassdesign.de</a> All Rights Reserved  
       </div>
 </div>
 </div>
 </div>
 </footer>
 <script src="catalog/view/theme/gentian/js/jquery.visible.min.js" type="text/javascript"></script>
-<script type="text/javascript">
-
-var win = $(window);
-
-var allMods = $("footer");
-
-allMods.each(function(i, el) {
-    
-  if ($(el).visible(true)) {
-    $(el).addClass("already-visible"); 
-  }
-  
-});
-
-win.scroll(function(event) {
-  
-  allMods.each(function(i, el) {
-    
-    var el = $(el);
-    
-    if (el.visible(true)) {
-      el.addClass("come-in"); 
-    } else {
-      el.removeClass("come-in already-visible");
-    }
-    
-  });
-  
-}); 
+<script type="text/javascript">
+
+var win = $(window);
+
+var allMods = $("footer");
+
+allMods.each(function(i, el) {
+    
+  if ($(el).visible(true)) {
+    $(el).addClass("already-visible"); 
+  }
+  
+});
+
+win.scroll(function(event) {
+  
+  allMods.each(function(i, el) {
+    
+    var el = $(el);
+    
+    if (el.visible(true)) {
+      el.addClass("come-in"); 
+    } else {
+      el.removeClass("come-in already-visible");
+    }
+    
+  });
+  
+}); 
 </script>
 <script src="catalog/view/theme/gentian/js/jquery.easing-1.3.min.js" type="text/javascript"></script>
 <link href="catalog/view/theme/gentian/js/quickview/fancybox/jquery.fancybox.css" property="stylesheet" rel="stylesheet">

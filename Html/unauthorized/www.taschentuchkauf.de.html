@@ -34,62 +34,62 @@
 <script src="catalog/view/theme/congressman/js/cloud-zoom.js" type="text/javascript"></script>
 <link href="catalog/view/theme/congressman/stylesheet/dcaccordion.css" property="stylesheet" rel="stylesheet" type="text/css">
 <script src="catalog/view/theme/congressman/js/jquery.dcjqaccordion.js" type="text/javascript"></script>
-<script type="text/javascript">//<!--
-/* <![CDATA[ (head-active_data.js) */
-var dw = (window.dw || {});
-dw.ac = {
-    _analytics: null,
-    _events: [],
-    _category: "",
-    _searchData: "",
-    _anact: "",
-    _anact_nohit_tag: "",
-    _capture: function(configs) {
-        if (Object.prototype.toString.call(configs) === "[object Array]") {
-            configs.forEach(captureObject);
-            return;
-        }
-        dw.ac._events.push(configs);
-    },
-	capture: function() { 
-		dw.ac._capture(arguments);
-		// send to CQ as well:
-		if (window.CQuotient) {
-			window.CQuotient.trackEventsFromAC(arguments);
-		}
-	},
-    EV_PRD_SEARCHHIT: "searchhit",
-    EV_PRD_DETAIL: "detail",
-    EV_PRD_RECOMMENDATION: "recommendation",
-    EV_PRD_SETPRODUCT: "setproduct",
-    applyContext: function(context) {
-        if (typeof context === "object" && context.hasOwnProperty("category")) {
-        	dw.ac._category = context.category;
-        }
-        if (typeof context === "object" && context.hasOwnProperty("searchData")) {
-        	dw.ac._searchData = context.searchData;
-        }
-    },
-    setDWAnalytics: function(analytics) {
-        dw.ac._analytics = analytics;
-    }
-};
-/* ]]> */
-// -->
+<script type="text/javascript">//<!--
+/* <![CDATA[ (head-active_data.js) */
+var dw = (window.dw || {});
+dw.ac = {
+    _analytics: null,
+    _events: [],
+    _category: "",
+    _searchData: "",
+    _anact: "",
+    _anact_nohit_tag: "",
+    _capture: function(configs) {
+        if (Object.prototype.toString.call(configs) === "[object Array]") {
+            configs.forEach(captureObject);
+            return;
+        }
+        dw.ac._events.push(configs);
+    },
+	capture: function() { 
+		dw.ac._capture(arguments);
+		// send to CQ as well:
+		if (window.CQuotient) {
+			window.CQuotient.trackEventsFromAC(arguments);
+		}
+	},
+    EV_PRD_SEARCHHIT: "searchhit",
+    EV_PRD_DETAIL: "detail",
+    EV_PRD_RECOMMENDATION: "recommendation",
+    EV_PRD_SETPRODUCT: "setproduct",
+    applyContext: function(context) {
+        if (typeof context === "object" && context.hasOwnProperty("category")) {
+        	dw.ac._category = context.category;
+        }
+        if (typeof context === "object" && context.hasOwnProperty("searchData")) {
+        	dw.ac._searchData = context.searchData;
+        }
+    },
+    setDWAnalytics: function(analytics) {
+        dw.ac._analytics = analytics;
+    }
+};
+/* ]]> */
+// -->
 </script>
-<script>
-if ('serviceWorker' in navigator) {
-function registerSW() {
-navigator.serviceWorker.getRegistrations().then(function (registrations) {
-if(registrations.length == 0 ) {
-return navigator.serviceWorker.register('/service-worker',{
-updateViaCache:'all'
-});
-}
-});
-}
-window.addEventListener('load', registerSW);
-}
+<script>
+if ('serviceWorker' in navigator) {
+function registerSW() {
+navigator.serviceWorker.getRegistrations().then(function (registrations) {
+if(registrations.length == 0 ) {
+return navigator.serviceWorker.register('/service-worker',{
+updateViaCache:'all'
+});
+}
+});
+}
+window.addEventListener('load', registerSW);
+}
 </script>
 </link></link></link></meta></head>
 <body class="common-home congressman">
@@ -98,12 +98,12 @@ window.addEventListener('load', registerSW);
 <div id="sidebar-wrapper">
 <ul class="sidebar-nav list-group congressman">
 <li class="sidebar-title">
-<a href="#menu-toggle-close" id="menu-toggle-close"><span aria-hidden="true">×</span></a>Informationen      <script>
-      $("#menu-toggle-close").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-		$(".sidebar-opacity").toggleClass("toggled");
-      });
+<a href="#menu-toggle-close" id="menu-toggle-close"><span aria-hidden="true">×</span></a>Informationen      <script>
+      $("#menu-toggle-close").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+		$(".sidebar-opacity").toggleClass("toggled");
+      });
       </script>
 </li>
 <li><a href="https://www.taschentuchkauf.de/index.php?route=information/information&amp;information_id=7">FAQ</a></li>
@@ -167,12 +167,12 @@ window.addEventListener('load', registerSW);
 <span class="button-text">Speisekarte</span>
 </div>
 </a>
-<script>
-        $("#menu-mobile-toggle").click(function(e) {
-          e.preventDefault();
-          $("#wrapper").toggleClass("menu-toggled");
-		  $(".sidebar-opacity").toggleClass("menu-toggled");
-        });
+<script>
+        $("#menu-mobile-toggle").click(function(e) {
+          e.preventDefault();
+          $("#wrapper").toggleClass("menu-toggled");
+		  $(".sidebar-opacity").toggleClass("menu-toggled");
+        });
       </script>
 <div class="btn-group btn-block buttons-header" id="cart">
 <a class="btn dropdown-toggle" data-loading-text="Wird geladen..." data-toggle="dropdown">
@@ -210,26 +210,26 @@ window.addEventListener('load', registerSW);
 </div>
 </div>
 </nav>
-<script type="text/javascript">
-$(document).ready(function() {
-	$('#accordion-mobile').dcAccordion({
-		disableLink: false,	
-		menuClose: false,
-		autoClose: true,
-		autoExpand: true,		
-		saveState: false
-	});
-});
+<script type="text/javascript">
+$(document).ready(function() {
+	$('#accordion-mobile').dcAccordion({
+		disableLink: false,	
+		menuClose: false,
+		autoClose: true,
+		autoExpand: true,		
+		saveState: false
+	});
+});
 </script>
 <div class="hidden-sm hidden-md hidden-lg" id="menu-mobile">
 <ul class="accordion sidebar-nav list-group" id="accordion-mobile">
 <li class="sidebar-title">
-<a href="#menu-mobile-toggle-close" id="menu-mobile-toggle-close"><span aria-hidden="true">×</span></a>Speisekarte      <script>
-      $("#menu-mobile-toggle-close").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("menu-toggled");
-		$(".sidebar-opacity").toggleClass("menu-toggled");
-      });
+<a href="#menu-mobile-toggle-close" id="menu-mobile-toggle-close"><span aria-hidden="true">×</span></a>Speisekarte      <script>
+      $("#menu-mobile-toggle-close").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("menu-toggled");
+		$(".sidebar-opacity").toggleClass("menu-toggled");
+      });
       </script>
 </li>
 <li><a href="https://www.taschentuchkauf.de/">Start</a></li>
@@ -259,16 +259,16 @@ $(document).ready(function() {
 </div>
 <div style="display:none;"><script src="//js.users.51.la/21085533.js" type="text/javascript"></script><br/></div><div class="container">
 <div class="row"><column class="col-sm-3 hidden-xs" id="column-left">
-<script type="text/javascript">
-$(document).ready(function() {
-	$('#accordion-1').dcAccordion({
-		disableLink: false,	
-		menuClose: false,
-		autoClose: true,
-		autoExpand: true,		
-		saveState: false
-	});
-});
+<script type="text/javascript">
+$(document).ready(function() {
+	$('#accordion-1').dcAccordion({
+		disableLink: false,	
+		menuClose: false,
+		autoClose: true,
+		autoExpand: true,		
+		saveState: false
+	});
+});
 </script>
 <div class="panel panel-default panel-category">
 <div class="panel-heading">Kategorien</div>
@@ -297,14 +297,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.taschentuchkauf.de/edwin-ed55-63-rainbow-selvage-jeans-blau-occja.html"><img alt="Edwin ED-55 63 Rainbow Selvage Jeans Blau oCcJA" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/edwin-ed55-63-rainbow-selvage-jeans-blau-occja-5147.jpg" title="Edwin ED-55 63 Rainbow Selvage Jeans Blau oCcJA"/></a>
+<a class="arevision" href="https://www.taschentuchkauf.de/salewa-sarner-2l-wo-w-fz-sweatshirt-capri-0620-eccdn.html"><img alt="Salewa Sarner 2L WO W FZ Sweatshirt Capri/0620 ECcDn" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/salewa-sarner-2l-wo-w-fz-sweatshirt-capri-0620-eccdn-1197.jpg" title="Salewa Sarner 2L WO W FZ Sweatshirt Capri/0620 ECcDn"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.taschentuchkauf.de/edwin-ed55-63-rainbow-selvage-jeans-blau-occja.html">Edwin ED-55 63 Rainbow Selvage Jeans Blau oCcJA</a></h4></div>
+<div class="name"><h4><a href="https://www.taschentuchkauf.de/salewa-sarner-2l-wo-w-fz-sweatshirt-capri-0620-eccdn.html">Salewa Sarner 2L WO W FZ Sweatshirt Capri/0620 ECcDn</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€48.99</span> <span class="price-old">€124.99</span>
+<span class="price-new">€48.99</span> <span class="price-old">€137.99</span>
 </p>
 </div>
 </div>
@@ -313,14 +313,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.taschentuchkauf.de/fischer-sports-herren-primaloft-vest-ruka-primaloft-vest-ruka-weste-black-l6duj.html"><img alt="Fischer Sports Herren Primaloft Vest - Ruka/ Primaloft Vest - Ruka Weste Black l6DuJ" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/fischer-sports-herren-primaloft-vest-ruka-primaloft-vest-ruka-weste-black-l6duj-3763.jpg" title="Fischer Sports Herren Primaloft Vest - Ruka/ Primaloft Vest - Ruka Weste Black l6DuJ"/></a>
+<a class="arevision" href="https://www.taschentuchkauf.de/colmar-herren-leichte-daunenjacke-mit-kapuze-2020-gelb-gelb-yellow-vrvaw.html"><img alt="COLMAR Herren Leichte Daunenjacke mit Kapuze 2020 Gelb Gelb (Yellow) VRVAw" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/colmar-herren-leichte-daunenjacke-mit-kapuze-2020-gelb-gelb-yellow-vrvaw-2101.jpg" title="COLMAR Herren Leichte Daunenjacke mit Kapuze 2020 Gelb Gelb (Yellow) VRVAw"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.taschentuchkauf.de/fischer-sports-herren-primaloft-vest-ruka-primaloft-vest-ruka-weste-black-l6duj.html">Fischer Sports Herren Primaloft Vest - Ruka/ Primaloft Vest - Ruka Weste Black l6DuJ</a></h4></div>
+<div class="name"><h4><a href="https://www.taschentuchkauf.de/colmar-herren-leichte-daunenjacke-mit-kapuze-2020-gelb-gelb-yellow-vrvaw.html">COLMAR Herren Leichte Daunenjacke mit Kapuze 2020 Gelb Gelb (Yellow) VRVAw</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€48.99</span> <span class="price-old">€134.99</span>
+<span class="price-new">€46.99</span> <span class="price-old">€138.99</span>
 </p>
 </div>
 </div>
@@ -329,14 +329,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.taschentuchkauf.de/harleydavidson-mens-iron-block-casual-jacke-9857717vm-knpnu.html"><img alt="HARLEY-DAVIDSON Men's Iron Block Casual Jacke, 98577-17VM  KnpNU" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/harleydavidson-mens-iron-block-casual-jacke-9857717vm-knpnu-1090.jpg" title="HARLEY-DAVIDSON Men's Iron Block Casual Jacke, 98577-17VM  KnpNU"/></a>
+<a class="arevision" href="https://www.taschentuchkauf.de/qifengshop-dicke-daunenjacke-trendjacke-trend-daunenjacke-mit-kapuze-herren-daunenjacke-weise-entendaunenfullung-90-kaschmir-leicht-und-warm-black-dux5r.html"><img alt="Qifengshop Dicke Daunenjacke Trendjacke Trend Daunenjacke mit Kapuze Herren Daunenjacke weiße Entendaunenfüllung, 90% Kaschmir, leicht und warm Black DuX5r" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/qifengshop-dicke-daunenjacke-trendjacke-trend-daunenjacke-mit-kapuze-herren-daunenjacke-weise-entendaunenfullung-90-kaschmir-leicht-und-warm-black-dux5r-2958.jpg" title="Qifengshop Dicke Daunenjacke Trendjacke Trend Daunenjacke mit Kapuze Herren Daunenjacke weiße Entendaunenfüllung, 90% Kaschmir, leicht und warm Black DuX5r"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.taschentuchkauf.de/harleydavidson-mens-iron-block-casual-jacke-9857717vm-knpnu.html">HARLEY-DAVIDSON Men's Iron Block Casual Jacke, 98577-17VM  KnpNU</a></h4></div>
+<div class="name"><h4><a href="https://www.taschentuchkauf.de/qifengshop-dicke-daunenjacke-trendjacke-trend-daunenjacke-mit-kapuze-herren-daunenjacke-weise-entendaunenfullung-90-kaschmir-leicht-und-warm-black-dux5r.html">Qifengshop Dicke Daunenjacke Trendjacke Trend Daunenjacke mit Kapuze Herren Daunenjacke weiße Entendaunenfüllung, 90% Kaschmir, leicht und warm Black DuX5r</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€47.99</span> <span class="price-old">€141.99</span>
+<span class="price-new">€49.99</span> <span class="price-old">€140.99</span>
 </p>
 </div>
 </div>
@@ -345,14 +345,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.taschentuchkauf.de/wrangler-herren-greensboro-jeans-blau-sirocco-blue-150-dshxf.html"><img alt="Wrangler Herren Greensboro Jeans Blau (Sirocco Blue 150) dShxf" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/wrangler-herren-greensboro-jeans-blau-sirocco-blue-150-dshxf-1416.jpg" title="Wrangler Herren Greensboro Jeans Blau (Sirocco Blue 150) dShxf"/></a>
+<a class="arevision" href="https://www.taschentuchkauf.de/nike-herren-poloshirt-ts-core-blau-blue-dvmwu.html"><img alt="Nike Herren Poloshirt TS Core Blau (Blue) dVmWU" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/nike-herren-poloshirt-ts-core-blau-blue-dvmwu-3110.jpg" title="Nike Herren Poloshirt TS Core Blau (Blue) dVmWU"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.taschentuchkauf.de/wrangler-herren-greensboro-jeans-blau-sirocco-blue-150-dshxf.html">Wrangler Herren Greensboro Jeans Blau (Sirocco Blue 150) dShxf</a></h4></div>
+<div class="name"><h4><a href="https://www.taschentuchkauf.de/nike-herren-poloshirt-ts-core-blau-blue-dvmwu.html">Nike Herren Poloshirt TS Core Blau (Blue) dVmWU</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€50.99</span> <span class="price-old">€130.99</span>
+<span class="price-new">€46.99</span> <span class="price-old">€131.99</span>
 </p>
 </div>
 </div>
@@ -361,14 +361,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.taschentuchkauf.de/urban-classics-herren-hooded-boxy-puffer-jacket-jacke-grun-olive-00176-ikaey.html"><img alt="Urban Classics Herren Hooded Boxy Puffer Jacket Jacke Grün (Olive 00176) IKAey" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/urban-classics-herren-hooded-boxy-puffer-jacket-jacke-grun-olive-00176-ikaey-843.jpg" title="Urban Classics Herren Hooded Boxy Puffer Jacket Jacke Grün (Olive 00176) IKAey"/></a>
+<a class="arevision" href="https://www.taschentuchkauf.de/element-herren-jacke-dulcey-jacket-0dscu.html"><img alt="Element Herren Jacke Dulcey Jacket  0dScu" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/element-herren-jacke-dulcey-jacket-0dscu-5111.jpg" title="Element Herren Jacke Dulcey Jacket  0dScu"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.taschentuchkauf.de/urban-classics-herren-hooded-boxy-puffer-jacket-jacke-grun-olive-00176-ikaey.html">Urban Classics Herren Hooded Boxy Puffer Jacket Jacke Grün (Olive 00176) IKAey</a></h4></div>
+<div class="name"><h4><a href="https://www.taschentuchkauf.de/element-herren-jacke-dulcey-jacket-0dscu.html">Element Herren Jacke Dulcey Jacket  0dScu</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€47.99</span> <span class="price-old">€122.99</span>
+<span class="price-new">€46.99</span> <span class="price-old">€145.99</span>
 </p>
 </div>
 </div>
@@ -377,14 +377,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.taschentuchkauf.de/erima-herren-squad-trainings-jacke-rot-schwarz-weis-5jv0v.html"><img alt="Erima Herren Squad Trainings Jacke rot/Schwarz/Weiß 5jV0v" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/erima-herren-squad-trainings-jacke-rot-schwarz-weis-5jv0v-2194.jpg" title="Erima Herren Squad Trainings Jacke rot/Schwarz/Weiß 5jV0v"/></a>
+<a class="arevision" href="https://www.taschentuchkauf.de/wudube-manner-bequeme-boxer-briefs-weiche-feste-shorts-atmungsaktive-unterwascheunterhose-grau-s3f83.html"><img alt="WUDUBE Männer Bequeme Boxer Briefs weiche Feste Shorts atmungsaktive Unterwäsche-Unterhose Grau s3f83" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/wudube-manner-bequeme-boxer-briefs-weiche-feste-shorts-atmungsaktive-unterwascheunterhose-grau-s3f83-5685.jpg" title="WUDUBE Männer Bequeme Boxer Briefs weiche Feste Shorts atmungsaktive Unterwäsche-Unterhose Grau s3f83"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.taschentuchkauf.de/erima-herren-squad-trainings-jacke-rot-schwarz-weis-5jv0v.html">Erima Herren Squad Trainings Jacke rot/Schwarz/Weiß 5jV0v</a></h4></div>
+<div class="name"><h4><a href="https://www.taschentuchkauf.de/wudube-manner-bequeme-boxer-briefs-weiche-feste-shorts-atmungsaktive-unterwascheunterhose-grau-s3f83.html">WUDUBE Männer Bequeme Boxer Briefs weiche Feste Shorts atmungsaktive Unterwäsche-Unterhose Grau s3f83</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€47.99</span> <span class="price-old">€133.99</span>
+<span class="price-new">€49.99</span> <span class="price-old">€146.99</span>
 </p>
 </div>
 </div>
@@ -401,14 +401,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.taschentuchkauf.de/the-north-face-box-canyon-down-jacket-men-daunenjacke-british-khaki-zn89u.html"><img alt="THE NORTH FACE Box Canyon Down Jacket Men - Daunenjacke British Khaki zn89U" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/the-north-face-box-canyon-down-jacket-men-daunenjacke-british-khaki-zn89u-2368.jpg" title="THE NORTH FACE Box Canyon Down Jacket Men - Daunenjacke British Khaki zn89U"/></a>
+<a class="arevision" href="https://www.taschentuchkauf.de/ivanhoe-of-sweden-danny-full-zip-jacke-herren-light-navy-2020-funktionsjacke-light-navy-gbqyw.html"><img alt="Ivanhoe of Sweden Danny Full Zip Jacke Herren Light Navy 2020 Funktionsjacke Light Navy gBQYW" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/ivanhoe-of-sweden-danny-full-zip-jacke-herren-light-navy-2020-funktionsjacke-light-navy-gbqyw-3068.jpg" title="Ivanhoe of Sweden Danny Full Zip Jacke Herren Light Navy 2020 Funktionsjacke Light Navy gBQYW"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.taschentuchkauf.de/the-north-face-box-canyon-down-jacket-men-daunenjacke-british-khaki-zn89u.html">THE NORTH FACE Box Canyon Down Jacket Men - Daunenjacke British Khaki zn89U</a></h4></div>
+<div class="name"><h4><a href="https://www.taschentuchkauf.de/ivanhoe-of-sweden-danny-full-zip-jacke-herren-light-navy-2020-funktionsjacke-light-navy-gbqyw.html">Ivanhoe of Sweden Danny Full Zip Jacke Herren Light Navy 2020 Funktionsjacke Light Navy gBQYW</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€48.99</span> <span class="price-old">€123.99</span>
+<span class="price-new">€46.99</span> <span class="price-old">€122.99</span>
 </p>
 </div>
 </div>
@@ -417,14 +417,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.taschentuchkauf.de/adidas-herren-3s-clx-sh-cl-board-shorts-rosa-aaexl.html"><img alt="adidas Herren 3s Clx Sh Cl Board Shorts Rosa AAExL" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/adidas-herren-3s-clx-sh-cl-board-shorts-rosa-aaexl-2175.jpg" title="adidas Herren 3s Clx Sh Cl Board Shorts Rosa AAExL"/></a>
+<a class="arevision" href="https://www.taschentuchkauf.de/uvex-kollektion-26-herrenarbeitsjacke-dunkelblaue-mannersteppjacke-leicht-trotzdem-warm-noiah.html"><img alt="Uvex Kollektion 26 Herren-Arbeitsjacke - Dunkelblaue Männer-Steppjacke - Leicht &amp; Trotzdem Warm  NOIAh" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/uvex-kollektion-26-herrenarbeitsjacke-dunkelblaue-mannersteppjacke-leicht-trotzdem-warm-noiah-3188.jpg" title="Uvex Kollektion 26 Herren-Arbeitsjacke - Dunkelblaue Männer-Steppjacke - Leicht &amp; Trotzdem Warm  NOIAh"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.taschentuchkauf.de/adidas-herren-3s-clx-sh-cl-board-shorts-rosa-aaexl.html">adidas Herren 3s Clx Sh Cl Board Shorts Rosa AAExL</a></h4></div>
+<div class="name"><h4><a href="https://www.taschentuchkauf.de/uvex-kollektion-26-herrenarbeitsjacke-dunkelblaue-mannersteppjacke-leicht-trotzdem-warm-noiah.html">Uvex Kollektion 26 Herren-Arbeitsjacke - Dunkelblaue Männer-Steppjacke - Leicht &amp; Trotzdem Warm  NOIAh</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€49.99</span> <span class="price-old">€140.99</span>
+<span class="price-new">€48.99</span> <span class="price-old">€149.99</span>
 </p>
 </div>
 </div>
@@ -433,14 +433,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.taschentuchkauf.de/timezone-herren-washed-flannell-shirt-freizeithemd-schwarz-black-red-crossed-9309-beyte.html"><img alt="Timezone Herren Washed Flannell Shirt Freizeithemd Schwarz (Black Red Crossed 9309) BEyTE" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/timezone-herren-washed-flannell-shirt-freizeithemd-schwarz-black-red-crossed-9309-beyte-2332.jpg" title="Timezone Herren Washed Flannell Shirt Freizeithemd Schwarz (Black Red Crossed 9309) BEyTE"/></a>
+<a class="arevision" href="https://www.taschentuchkauf.de/replay-herren-pullover-558-bright-red-tdqov.html"><img alt="Replay Herren Pullover 558 Bright Red tdqOv" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/replay-herren-pullover-558-bright-red-tdqov-2163.jpg" title="Replay Herren Pullover 558 Bright Red tdqOv"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.taschentuchkauf.de/timezone-herren-washed-flannell-shirt-freizeithemd-schwarz-black-red-crossed-9309-beyte.html">Timezone Herren Washed Flannell Shirt Freizeithemd Schwarz (Black Red Crossed 9309) BEyTE</a></h4></div>
+<div class="name"><h4><a href="https://www.taschentuchkauf.de/replay-herren-pullover-558-bright-red-tdqov.html">Replay Herren Pullover 558 Bright Red tdqOv</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€47.99</span> <span class="price-old">€134.99</span>
+<span class="price-new">€49.99</span> <span class="price-old">€147.99</span>
 </p>
 </div>
 </div>
@@ -449,14 +449,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.taschentuchkauf.de/patago-bikerjacke-totenkopf-skull-strass-nieten-herren-lederjacke-schwarz-flbqj.html"><img alt="Patago Bikerjacke Totenkopf Skull Strass Nieten Herren Lederjacke Schwarz fLBQJ" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/patago-bikerjacke-totenkopf-skull-strass-nieten-herren-lederjacke-schwarz-flbqj-5185.jpg" title="Patago Bikerjacke Totenkopf Skull Strass Nieten Herren Lederjacke Schwarz fLBQJ"/></a>
+<a class="arevision" href="https://www.taschentuchkauf.de/infinity-herren-trucker-denim-schlank-passen-langarm-lassige-braun-lederhemd-jeansjacke-nldsq.html"><img alt="Infinity Herren Trucker Denim Schlank Passen Langarm Lässige Braun Lederhemd Jeansjacke  nLDSQ" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/infinity-herren-trucker-denim-schlank-passen-langarm-lassige-braun-lederhemd-jeansjacke-nldsq-308.jpg" title="Infinity Herren Trucker Denim Schlank Passen Langarm Lässige Braun Lederhemd Jeansjacke  nLDSQ"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.taschentuchkauf.de/patago-bikerjacke-totenkopf-skull-strass-nieten-herren-lederjacke-schwarz-flbqj.html">Patago Bikerjacke Totenkopf Skull Strass Nieten Herren Lederjacke Schwarz fLBQJ</a></h4></div>
+<div class="name"><h4><a href="https://www.taschentuchkauf.de/infinity-herren-trucker-denim-schlank-passen-langarm-lassige-braun-lederhemd-jeansjacke-nldsq.html">Infinity Herren Trucker Denim Schlank Passen Langarm Lässige Braun Lederhemd Jeansjacke  nLDSQ</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€46.99</span> <span class="price-old">€138.99</span>
+<span class="price-new">€46.99</span> <span class="price-old">€134.99</span>
 </p>
 </div>
 </div>
@@ -465,14 +465,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.taschentuchkauf.de/lee-herren-rider-jeans-fast-blue-ur4ix.html"><img alt="Lee Herren Rider' Jeans Fast Blue uR4IX" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/lee-herren-rider-jeans-fast-blue-ur4ix-3212.jpg" title="Lee Herren Rider' Jeans Fast Blue uR4IX"/></a>
+<a class="arevision" href="https://www.taschentuchkauf.de/adidas-essentials-herren-hose-mit-3-streifen-weis-schwarz-agsju.html"><img alt="adidas Essentials Herren Hose mit 3 Streifen Weiß / Schwarz agsju" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/adidas-essentials-herren-hose-mit-3-streifen-weis-schwarz-agsju-834.jpg" title="adidas Essentials Herren Hose mit 3 Streifen Weiß / Schwarz agsju"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.taschentuchkauf.de/lee-herren-rider-jeans-fast-blue-ur4ix.html">Lee Herren Rider' Jeans Fast Blue uR4IX</a></h4></div>
+<div class="name"><h4><a href="https://www.taschentuchkauf.de/adidas-essentials-herren-hose-mit-3-streifen-weis-schwarz-agsju.html">adidas Essentials Herren Hose mit 3 Streifen Weiß / Schwarz agsju</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€46.99</span> <span class="price-old">€140.99</span>
+<span class="price-new">€48.99</span> <span class="price-old">€138.99</span>
 </p>
 </div>
 </div>
@@ -481,14 +481,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.taschentuchkauf.de/carhartt-herren-midweight-sleeve-logo-hooded-sweatshirt-hemd-orange-opita.html"><img alt="Carhartt Herren Midweight Sleeve Logo Hooded Sweatshirt Hemd Orange OpiTa" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/carhartt-herren-midweight-sleeve-logo-hooded-sweatshirt-hemd-orange-opita-3077.jpg" title="Carhartt Herren Midweight Sleeve Logo Hooded Sweatshirt Hemd Orange OpiTa"/></a>
+<a class="arevision" href="https://www.taschentuchkauf.de/timezone-herren-eduardo-slim-jeans-blau-cool-3499-261y7.html"><img alt="Timezone Herren Eduardo Slim Jeans Blau (Cool 3499) 261y7" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/timezone-herren-eduardo-slim-jeans-blau-cool-3499-261y7-3262.jpg" title="Timezone Herren Eduardo Slim Jeans Blau (Cool 3499) 261y7"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.taschentuchkauf.de/carhartt-herren-midweight-sleeve-logo-hooded-sweatshirt-hemd-orange-opita.html">Carhartt Herren Midweight Sleeve Logo Hooded Sweatshirt Hemd Orange OpiTa</a></h4></div>
+<div class="name"><h4><a href="https://www.taschentuchkauf.de/timezone-herren-eduardo-slim-jeans-blau-cool-3499-261y7.html">Timezone Herren Eduardo Slim Jeans Blau (Cool 3499) 261y7</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€47.99</span> <span class="price-old">€120.99</span>
+<span class="price-new">€47.99</span> <span class="price-old">€125.99</span>
 </p>
 </div>
 </div>
@@ -497,14 +497,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.taschentuchkauf.de/uaisi-herren-gansedaunen-mantel-dicke-winterjacke-kapuzenjacke-parka-dunkelblau-0gsrv.html"><img alt="UAISI Herren Gänsedaunen Mantel Dicke Winterjacke Kapuzenjacke Parka Dunkelblau 0gSrV" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/uaisi-herren-gansedaunen-mantel-dicke-winterjacke-kapuzenjacke-parka-dunkelblau-0gsrv-1945.jpg" title="UAISI Herren Gänsedaunen Mantel Dicke Winterjacke Kapuzenjacke Parka Dunkelblau 0gSrV"/></a>
+<a class="arevision" href="https://www.taschentuchkauf.de/bms-buddeljacke-regenjacke-fur-kinder-mit-abnehmbarer-kapuze-marine-vszyj.html"><img alt="BMS Buddeljacke, Regenjacke für Kinder mit Abnehmbarer Kapuze Marine vsZyj" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/bms-buddeljacke-regenjacke-fur-kinder-mit-abnehmbarer-kapuze-marine-vszyj-5197.jpg" title="BMS Buddeljacke, Regenjacke für Kinder mit Abnehmbarer Kapuze Marine vsZyj"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.taschentuchkauf.de/uaisi-herren-gansedaunen-mantel-dicke-winterjacke-kapuzenjacke-parka-dunkelblau-0gsrv.html">UAISI Herren Gänsedaunen Mantel Dicke Winterjacke Kapuzenjacke Parka Dunkelblau 0gSrV</a></h4></div>
+<div class="name"><h4><a href="https://www.taschentuchkauf.de/bms-buddeljacke-regenjacke-fur-kinder-mit-abnehmbarer-kapuze-marine-vszyj.html">BMS Buddeljacke, Regenjacke für Kinder mit Abnehmbarer Kapuze Marine vsZyj</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€49.99</span> <span class="price-old">€124.99</span>
+<span class="price-new">€48.99</span> <span class="price-old">€129.99</span>
 </p>
 </div>
 </div>
@@ -513,14 +513,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.taschentuchkauf.de/columbia-herren-powder-pass-jacke-rot-wildfire-wgamu.html"><img alt="Columbia Herren, Powder Pass, Jacke Rot (Wildfire) WGAmU" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/columbia-herren-powder-pass-jacke-rot-wildfire-wgamu-853.jpg" title="Columbia Herren, Powder Pass, Jacke Rot (Wildfire) WGAmU"/></a>
+<a class="arevision" href="https://www.taschentuchkauf.de/lannister-herren-unter-warmen-sche-atmungsaktive-mesh-hosen-konvexen-unterhose-u-festlich-bekleidung-soft-slips-underpants-reiz-warmen-sche-nacht-warmen-sche-schwarz-rsglc.html"><img alt="Lannister _Herren Unter Wärmen Sche Atmungsaktive Mesh Hosen Konvexen Unterhose U Festlich Bekleidung Soft Slips Underpants Reiz Wärmen Sche Nacht Wärmen Sche Schwarz rsGLC" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/lannister-herren-unter-warmen-sche-atmungsaktive-mesh-hosen-konvexen-unterhose-u-festlich-bekleidung-soft-slips-underpants-reiz-warmen-sche-nacht-warmen-sche-schwarz-rsglc-5105.jpg" title="Lannister _Herren Unter Wärmen Sche Atmungsaktive Mesh Hosen Konvexen Unterhose U Festlich Bekleidung Soft Slips Underpants Reiz Wärmen Sche Nacht Wärmen Sche Schwarz rsGLC"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.taschentuchkauf.de/columbia-herren-powder-pass-jacke-rot-wildfire-wgamu.html">Columbia Herren, Powder Pass, Jacke Rot (Wildfire) WGAmU</a></h4></div>
+<div class="name"><h4><a href="https://www.taschentuchkauf.de/lannister-herren-unter-warmen-sche-atmungsaktive-mesh-hosen-konvexen-unterhose-u-festlich-bekleidung-soft-slips-underpants-reiz-warmen-sche-nacht-warmen-sche-schwarz-rsglc.html">Lannister _Herren Unter Wärmen Sche Atmungsaktive Mesh Hosen Konvexen Unterhose U Festlich Bekleidung Soft Slips Underpants Reiz Wärmen Sche Nacht Wärmen Sche Schwarz rsGLC</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€46.99</span> <span class="price-old">€124.99</span>
+<span class="price-new">€49.99</span> <span class="price-old">€144.99</span>
 </p>
 </div>
 </div>
@@ -529,14 +529,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.taschentuchkauf.de/olukai-nalukai-sandalen-herren-tan-tan-2020-fuchs-ip4l1.html"><img alt="OLUKAI Nalukai Sandalen Herren tan/tan 2020 Fuchs iP4l1" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/olukai-nalukai-sandalen-herren-tan-tan-2020-fuchs-ip4l1-4006.jpg" title="OLUKAI Nalukai Sandalen Herren tan/tan 2020 Fuchs iP4l1"/></a>
+<a class="arevision" href="https://www.taschentuchkauf.de/columbia-herren-top-pine-isolierte-regenjacke-black-iafxj.html"><img alt="Columbia Herren Top Pine Isolierte Regenjacke Black IaFXJ" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/columbia-herren-top-pine-isolierte-regenjacke-black-iafxj-2248.jpg" title="Columbia Herren Top Pine Isolierte Regenjacke Black IaFXJ"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.taschentuchkauf.de/olukai-nalukai-sandalen-herren-tan-tan-2020-fuchs-ip4l1.html">OLUKAI Nalukai Sandalen Herren tan/tan 2020 Fuchs iP4l1</a></h4></div>
+<div class="name"><h4><a href="https://www.taschentuchkauf.de/columbia-herren-top-pine-isolierte-regenjacke-black-iafxj.html">Columbia Herren Top Pine Isolierte Regenjacke Black IaFXJ</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€47.99</span> <span class="price-old">€143.99</span>
+<span class="price-new">€47.99</span> <span class="price-old">€142.99</span>
 </p>
 </div>
 </div>
@@ -545,14 +545,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.taschentuchkauf.de/cinque-herren-cirelli-businessanzug-jacke-67-npspx.html"><img alt="CINQUE Herren Cirelli Business-Anzug Jacke 67 nPSpx" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/cinque-herren-cirelli-businessanzug-jacke-67-npspx-3430.jpg" title="CINQUE Herren Cirelli Business-Anzug Jacke 67 nPSpx"/></a>
+<a class="arevision" href="https://www.taschentuchkauf.de/fjallraven-herren-hose-barents-pro-dark-grey-dark-grey-030-030-tsvyn.html"><img alt="Fjällräven Herren Hose Barents Pro Dark Grey/Dark Grey 030/030 tSVyN" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/fjallraven-herren-hose-barents-pro-dark-grey-dark-grey-030-030-tsvyn-3679.jpg" title="Fjällräven Herren Hose Barents Pro Dark Grey/Dark Grey 030/030 tSVyN"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.taschentuchkauf.de/cinque-herren-cirelli-businessanzug-jacke-67-npspx.html">CINQUE Herren Cirelli Business-Anzug Jacke 67 nPSpx</a></h4></div>
+<div class="name"><h4><a href="https://www.taschentuchkauf.de/fjallraven-herren-hose-barents-pro-dark-grey-dark-grey-030-030-tsvyn.html">Fjällräven Herren Hose Barents Pro Dark Grey/Dark Grey 030/030 tSVyN</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€48.99</span> <span class="price-old">€126.99</span>
+<span class="price-new">€49.99</span> <span class="price-old">€128.99</span>
 </p>
 </div>
 </div>
@@ -561,14 +561,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.taschentuchkauf.de/jack-wolfskin-herren-frosty-morning-jkt-m-wetterschutzjacke-storm-grey-6tlkd.html"><img alt="Jack Wolfskin Herren Frosty Morning Jkt M Wetterschutzjacke storm grey 6tLKD" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/jack-wolfskin-herren-frosty-morning-jkt-mx-wetterschutzjacke-storm-grey-6tlkd-879.jpg" title="Jack Wolfskin Herren Frosty Morning Jkt M Wetterschutzjacke storm grey 6tLKD"/></a>
+<a class="arevision" href="https://www.taschentuchkauf.de/lee-herren-morton-straight-jeans-blau-mid-blue-ro-xit3l.html"><img alt="Lee Herren Morton Straight Jeans Blau (Mid Blue Ro) XIt3l" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/lee-herren-morton-straight-jeans-blau-mid-blue-ro-xit3l-4176.jpg" title="Lee Herren Morton Straight Jeans Blau (Mid Blue Ro) XIt3l"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.taschentuchkauf.de/jack-wolfskin-herren-frosty-morning-jkt-m-wetterschutzjacke-storm-grey-6tlkd.html">Jack Wolfskin Herren Frosty Morning Jkt M Wetterschutzjacke storm grey 6tLKD</a></h4></div>
+<div class="name"><h4><a href="https://www.taschentuchkauf.de/lee-herren-morton-straight-jeans-blau-mid-blue-ro-xit3l.html">Lee Herren Morton Straight Jeans Blau (Mid Blue Ro) XIt3l</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€48.99</span> <span class="price-old">€122.99</span>
+<span class="price-new">€50.99</span> <span class="price-old">€140.99</span>
 </p>
 </div>
 </div>
@@ -577,14 +577,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.taschentuchkauf.de/mustang-herren-slim-fit-oregon-tapered-jeans-490-schwarz-e0ryw.html"><img alt="MUSTANG Herren Slim Fit Oregon Tapered Jeans 490 Schwarz e0ryw" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/mustang-herren-slim-fit-oregon-tapered-jeans-490-schwarz-e0ryw-1060.jpg" title="MUSTANG Herren Slim Fit Oregon Tapered Jeans 490 Schwarz e0ryw"/></a>
+<a class="arevision" href="https://www.taschentuchkauf.de/ks-herren-fahrschuhe-loafer-slip-on-schuhe-fur-formelle-kleider-casual-lederschuhe-braun-braun-1-41-eu-lp9kt.html"><img alt="KS Herren Fahrschuhe Loafer Slip On Schuhe für formelle Kleider Casual Lederschuhe, Braun (Braun/1), 41 EU  LP9Kt" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/ks-herren-fahrschuhe-loafer-slip-on-schuhe-fur-formelle-kleider-casual-lederschuhe-braun-braun-1-41-eu-lp9kt-4524.jpg" title="KS Herren Fahrschuhe Loafer Slip On Schuhe für formelle Kleider Casual Lederschuhe, Braun (Braun/1), 41 EU  LP9Kt"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.taschentuchkauf.de/mustang-herren-slim-fit-oregon-tapered-jeans-490-schwarz-e0ryw.html">MUSTANG Herren Slim Fit Oregon Tapered Jeans 490 Schwarz e0ryw</a></h4></div>
+<div class="name"><h4><a href="https://www.taschentuchkauf.de/ks-herren-fahrschuhe-loafer-slip-on-schuhe-fur-formelle-kleider-casual-lederschuhe-braun-braun-1-41-eu-lp9kt.html">KS Herren Fahrschuhe Loafer Slip On Schuhe für formelle Kleider Casual Lederschuhe, Braun (Braun/1), 41 EU  LP9Kt</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€46.99</span> <span class="price-old">€121.99</span>
+<span class="price-new">€49.99</span> <span class="price-old">€143.99</span>
 </p>
 </div>
 </div>
@@ -627,43 +627,43 @@ $(document).ready(function() {
 <div id="powered">
 <div class="container">
 <div class="row">
-<div class="col-sm-12 col-md-12">
-      Copyright © 2022 <a href="//www.taschentuchkauf.de" target="_blank">www.taschentuchkauf.de</a> All Rights Reserved  
+<div class="col-sm-12 col-md-12">
+      Copyright © 2022 <a href="//www.taschentuchkauf.de" target="_blank">www.taschentuchkauf.de</a> All Rights Reserved  
       </div>
 </div>
 </div>
 </div>
 </footer>
 <script src="catalog/view/theme/congressman/js/jquery.visible.min.js" type="text/javascript"></script>
-<script type="text/javascript">
-
-var win = $(window);
-
-var allMods = $("footer");
-
-allMods.each(function(i, el) {
-    
-  if ($(el).visible(true)) {
-    $(el).addClass("already-visible"); 
-  }
-  
-});
-
-win.scroll(function(event) {
-  
-  allMods.each(function(i, el) {
-    
-    var el = $(el);
-    
-    if (el.visible(true)) {
-      el.addClass("come-in"); 
-    } else {
-      el.removeClass("come-in already-visible");
-    }
-    
-  });
-  
-}); 
+<script type="text/javascript">
+
+var win = $(window);
+
+var allMods = $("footer");
+
+allMods.each(function(i, el) {
+    
+  if ($(el).visible(true)) {
+    $(el).addClass("already-visible"); 
+  }
+  
+});
+
+win.scroll(function(event) {
+  
+  allMods.each(function(i, el) {
+    
+    var el = $(el);
+    
+    if (el.visible(true)) {
+      el.addClass("come-in"); 
+    } else {
+      el.removeClass("come-in already-visible");
+    }
+    
+  });
+  
+}); 
 </script>
 <script src="catalog/view/theme/congressman/js/jquery.easing-1.3.min.js" type="text/javascript"></script>
 <link href="catalog/view/theme/congressman/js/quickview/fancybox/jquery.fancybox.css" property="stylesheet" rel="stylesheet">

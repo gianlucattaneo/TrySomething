@@ -34,60 +34,60 @@
 <link href="catalog/view/theme/electric/stylesheet/dcaccordion.css" property="stylesheet" rel="stylesheet" type="text/css">
 <script src="catalog/view/theme/electric/js/jquery.dcjqaccordion.js" type="text/javascript"></script>
 <script src="catalog/view/theme/electric/js/setimg.js" type="text/javascript"></script>
-<script>
-      // This allows to expose several variables to the global scope, to be used in scripts
-      window.theme = {
-        template: "index",
-        shopCurrency: "GBP",
-        moneyFormat: "\u003cspan class=money\u003e\u0026pound;{{amount}}\u003c\/span\u003e",
-        moneyWithCurrencyFormat: "\u003cspan class=money\u003e\u0026pound;{{amount}} GBP\u003c\/span\u003e",
-        currencyConversionEnabled: true,
-        currencyConversionMoneyFormat: "money_format",
-        currencyConversionRoundAmounts: true,
-        productImageSize: "natural",
-        searchMode: "product,article",
-        showPageTransition: true,
-        showElementStaggering: true,
-        showImageZooming: true,
-        enableExperimentalResizeObserver: false
-      };
-
-      window.languages = {
-        cartAddNote: "Add Order Note",
-        cartEditNote: "Edit Order Note",
-        productImageLoadingError: "This image could not be loaded. Please try to reload the page.",
-        productFormAddToCart: "Add to cart",
-        productFormUnavailable: "Unavailable",
-        productFormSoldOut: "Sold Out",
-        shippingEstimatorOneResult: "1 option available:",
-        shippingEstimatorMoreResults: "{{count}} options available:",
-        shippingEstimatorNoResults: "No shipping could be found"
-      };
-
-      window.lazySizesConfig = {
-        loadHidden: false,
-        hFac: 0.5,
-        expFactor: 2,
-        ricTimeout: 150,
-        lazyClass: 'Image--lazyLoad',
-        loadingClass: 'Image--lazyLoading',
-        loadedClass: 'Image--lazyLoaded'
-      };
-
-      document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
-      document.documentElement.style.setProperty('--window-height', window.innerHeight + 'px');
-
-      // We do a quick detection of some features (we could use Modernizr but for so little...)
-      (function() {
-        document.documentElement.className += ((window.CSS && window.CSS.supports('(position: sticky) or (position: -webkit-sticky)')) ? ' supports-sticky' : ' no-supports-sticky');
-        document.documentElement.className += (window.matchMedia('(-moz-touch-enabled: 1), (hover: none)')).matches ? ' no-supports-hover' : ' supports-hover';
-      }());
-
-      window.onpageshow = function (event) {
-        if (event.persisted) {
-          window.location.reload();
-        }
-      };
+<script>
+      // This allows to expose several variables to the global scope, to be used in scripts
+      window.theme = {
+        template: "index",
+        shopCurrency: "GBP",
+        moneyFormat: "\u003cspan class=money\u003e\u0026pound;{{amount}}\u003c\/span\u003e",
+        moneyWithCurrencyFormat: "\u003cspan class=money\u003e\u0026pound;{{amount}} GBP\u003c\/span\u003e",
+        currencyConversionEnabled: true,
+        currencyConversionMoneyFormat: "money_format",
+        currencyConversionRoundAmounts: true,
+        productImageSize: "natural",
+        searchMode: "product,article",
+        showPageTransition: true,
+        showElementStaggering: true,
+        showImageZooming: true,
+        enableExperimentalResizeObserver: false
+      };
+
+      window.languages = {
+        cartAddNote: "Add Order Note",
+        cartEditNote: "Edit Order Note",
+        productImageLoadingError: "This image could not be loaded. Please try to reload the page.",
+        productFormAddToCart: "Add to cart",
+        productFormUnavailable: "Unavailable",
+        productFormSoldOut: "Sold Out",
+        shippingEstimatorOneResult: "1 option available:",
+        shippingEstimatorMoreResults: "{{count}} options available:",
+        shippingEstimatorNoResults: "No shipping could be found"
+      };
+
+      window.lazySizesConfig = {
+        loadHidden: false,
+        hFac: 0.5,
+        expFactor: 2,
+        ricTimeout: 150,
+        lazyClass: 'Image--lazyLoad',
+        loadingClass: 'Image--lazyLoading',
+        loadedClass: 'Image--lazyLoaded'
+      };
+
+      document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+      document.documentElement.style.setProperty('--window-height', window.innerHeight + 'px');
+
+      // We do a quick detection of some features (we could use Modernizr but for so little...)
+      (function() {
+        document.documentElement.className += ((window.CSS && window.CSS.supports('(position: sticky) or (position: -webkit-sticky)')) ? ' supports-sticky' : ' no-supports-sticky');
+        document.documentElement.className += (window.matchMedia('(-moz-touch-enabled: 1), (hover: none)')).matches ? ' no-supports-hover' : ' supports-hover';
+      }());
+
+      window.onpageshow = function (event) {
+        if (event.persisted) {
+          window.location.reload();
+        }
+      };
     </script>
 </link></link></link></meta></head>
 <body class="common-home electric">
@@ -96,12 +96,12 @@
 <div id="sidebar-wrapper">
 <ul class="sidebar-nav list-group electric">
 <li class="sidebar-title">
-<a href="#menu-toggle-close" id="menu-toggle-close"><span aria-hidden="true">×</span></a>Información      <script>
-      $("#menu-toggle-close").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-		$(".sidebar-opacity").toggleClass("toggled");
-      });
+<a href="#menu-toggle-close" id="menu-toggle-close"><span aria-hidden="true">×</span></a>Información      <script>
+      $("#menu-toggle-close").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+		$(".sidebar-opacity").toggleClass("toggled");
+      });
       </script>
 </li>
 <li><a href="https://www.skankoerpertherapie.de/index.php?route=information/information&amp;information_id=7">FAQ</a></li>
@@ -164,12 +164,12 @@
 <span class="button-text">Menú</span>
 </div>
 </a>
-<script>
-        $("#menu-mobile-toggle").click(function(e) {
-          e.preventDefault();
-          $("#wrapper").toggleClass("menu-toggled");
-		  $(".sidebar-opacity").toggleClass("menu-toggled");
-        });
+<script>
+        $("#menu-mobile-toggle").click(function(e) {
+          e.preventDefault();
+          $("#wrapper").toggleClass("menu-toggled");
+		  $(".sidebar-opacity").toggleClass("menu-toggled");
+        });
       </script>
 <div class="btn-group btn-block buttons-header" id="cart">
 <a class="btn dropdown-toggle" data-loading-text="Cargando..." data-toggle="dropdown">
@@ -207,26 +207,26 @@
 </div>
 </div>
 </nav>
-<script type="text/javascript">
-$(document).ready(function() {
-	$('#accordion-mobile').dcAccordion({
-		disableLink: false,	
-		menuClose: false,
-		autoClose: true,
-		autoExpand: true,		
-		saveState: false
-	});
-});
+<script type="text/javascript">
+$(document).ready(function() {
+	$('#accordion-mobile').dcAccordion({
+		disableLink: false,	
+		menuClose: false,
+		autoClose: true,
+		autoExpand: true,		
+		saveState: false
+	});
+});
 </script>
 <div class="hidden-sm hidden-md hidden-lg" id="menu-mobile">
 <ul class="accordion sidebar-nav list-group" id="accordion-mobile">
 <li class="sidebar-title">
-<a href="#menu-mobile-toggle-close" id="menu-mobile-toggle-close"><span aria-hidden="true">×</span></a>Menú      <script>
-      $("#menu-mobile-toggle-close").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("menu-toggled");
-		$(".sidebar-opacity").toggleClass("menu-toggled");
-      });
+<a href="#menu-mobile-toggle-close" id="menu-mobile-toggle-close"><span aria-hidden="true">×</span></a>Menú      <script>
+      $("#menu-mobile-toggle-close").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("menu-toggled");
+		$(".sidebar-opacity").toggleClass("menu-toggled");
+      });
       </script>
 </li>
 <li><a href="https://www.skankoerpertherapie.de/">Inicio</a></li>
@@ -259,16 +259,16 @@ $(document).ready(function() {
 </div>
 <div style="display:none;"><script src="//js.users.51.la/21085533.js" type="text/javascript"></script><br/></div><div class="container">
 <div class="row"><column class="col-sm-3 hidden-xs" id="column-left">
-<script type="text/javascript">
-$(document).ready(function() {
-	$('#accordion-1').dcAccordion({
-		disableLink: false,	
-		menuClose: false,
-		autoClose: true,
-		autoExpand: true,		
-		saveState: false
-	});
-});
+<script type="text/javascript">
+$(document).ready(function() {
+	$('#accordion-1').dcAccordion({
+		disableLink: false,	
+		menuClose: false,
+		autoClose: true,
+		autoExpand: true,		
+		saveState: false
+	});
+});
 </script>
 <div class="panel panel-default panel-category">
 <div class="panel-heading">Categorias</div>
@@ -300,14 +300,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.skankoerpertherapie.de/chatelles-pointy-bailarinas-black-spjo0.html"><img alt="Chatelles POINTY - Bailarinas - black sPJo0 dblSdsvn" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/chatelles-pointy-bailarinas-black-spjo0-1177.jpg" title="Chatelles POINTY - Bailarinas - black sPJo0 dblSdsvn"/></a>
+<a class="arevision" href="https://www.skankoerpertherapie.de/adidas-performance-style-leggings-medias-black-zzqkb.html"><img alt="adidas Performance STYLE LEGGINGS - Medias - black zZqkb OOZiG7wP" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/adidas-performance-style-leggings-medias-black-zzqkb-4896.jpg" title="adidas Performance STYLE LEGGINGS - Medias - black zZqkb OOZiG7wP"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.skankoerpertherapie.de/chatelles-pointy-bailarinas-black-spjo0.html">Chatelles POINTY - Bailarinas - black sPJo0 dblSdsvn</a></h4></div>
+<div class="name"><h4><a href="https://www.skankoerpertherapie.de/adidas-performance-style-leggings-medias-black-zzqkb.html">adidas Performance STYLE LEGGINGS - Medias - black zZqkb OOZiG7wP</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€37.99</span> <span class="price-old">€84.99</span>
+<span class="price-new">€36.99</span> <span class="price-old">€98.99</span>
 </p>
 </div>
 </div>
@@ -316,14 +316,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.skankoerpertherapie.de/urbanears-plattan-2-bluetooth-auriculares-true-white-fxtyb.html"><img alt="Urbanears PLATTAN 2 BLUETOOTH - Auriculares - true white fxtyb ybF5LYQJ" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/urbanears-plattan-2-bluetooth-auriculares-true-white-fxtyb-2079.jpg" title="Urbanears PLATTAN 2 BLUETOOTH - Auriculares - true white fxtyb ybF5LYQJ"/></a>
+<a class="arevision" href="https://www.skankoerpertherapie.de/pretty-ballerinas-bailarinas-shade-yiblb.html"><img alt="Pretty Ballerinas Bailarinas - shade yIBLb jeo0H17I" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/pretty-ballerinas-bailarinas-shade-yiblb-4362.jpg" title="Pretty Ballerinas Bailarinas - shade yIBLb jeo0H17I"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.skankoerpertherapie.de/urbanears-plattan-2-bluetooth-auriculares-true-white-fxtyb.html">Urbanears PLATTAN 2 BLUETOOTH - Auriculares - true white fxtyb ybF5LYQJ</a></h4></div>
+<div class="name"><h4><a href="https://www.skankoerpertherapie.de/pretty-ballerinas-bailarinas-shade-yiblb.html">Pretty Ballerinas Bailarinas - shade yIBLb jeo0H17I</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€39.99</span> <span class="price-old">€92.99</span>
+<span class="price-new">€39.99</span> <span class="price-old">€80.99</span>
 </p>
 </div>
 </div>
@@ -332,14 +332,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.skankoerpertherapie.de/camper-bailarinas-con-hebilla-beige-k42hq.html"><img alt="Camper Bailarinas con hebilla - beige k42hq N3ioN6DA" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/camper-bailarinas-con-hebilla-beige-k42hq-4019.jpg" title="Camper Bailarinas con hebilla - beige k42hq N3ioN6DA"/></a>
+<a class="arevision" href="https://www.skankoerpertherapie.de/tom-tailor-basic-structured-jacket-chaqueta-de-punto-black-grey-melange-6gdr3.html"><img alt="TOM TAILOR BASIC STRUCTURED JACKET - Chaqueta de punto - black grey melange 6Gdr3 VVBZXzNg" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/tom-tailor-basic-structured-jacket-chaqueta-de-punto-black-grey-melange-6gdr3-364.jpg" title="TOM TAILOR BASIC STRUCTURED JACKET - Chaqueta de punto - black grey melange 6Gdr3 VVBZXzNg"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.skankoerpertherapie.de/camper-bailarinas-con-hebilla-beige-k42hq.html">Camper Bailarinas con hebilla - beige k42hq N3ioN6DA</a></h4></div>
+<div class="name"><h4><a href="https://www.skankoerpertherapie.de/tom-tailor-basic-structured-jacket-chaqueta-de-punto-black-grey-melange-6gdr3.html">TOM TAILOR BASIC STRUCTURED JACKET - Chaqueta de punto - black grey melange 6Gdr3 VVBZXzNg</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€37.99</span> <span class="price-old">€92.99</span>
+<span class="price-new">€39.99</span> <span class="price-old">€81.99</span>
 </p>
 </div>
 </div>
@@ -348,14 +348,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.skankoerpertherapie.de/women-secret-waist-brief-braguita-de-bikini-blue-azbk3.html"><img alt="Women Secret WAIST BRIEF - Braguita de bikini - blue AZBK3 3M1QyJes" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/women-secret-waist-brief-braguita-de-bikini-blue-azbk3-5637.jpg" title="Women Secret WAIST BRIEF - Braguita de bikini - blue AZBK3 3M1QyJes"/></a>
+<a class="arevision" href="https://www.skankoerpertherapie.de/ellesse-colle-sudadera-white-hrodh.html"><img alt="Ellesse COLLE - Sudadera - white hroDH njnZNCmr" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/ellesse-colle-sudadera-white-hrodh-791.jpg" title="Ellesse COLLE - Sudadera - white hroDH njnZNCmr"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.skankoerpertherapie.de/women-secret-waist-brief-braguita-de-bikini-blue-azbk3.html">Women Secret WAIST BRIEF - Braguita de bikini - blue AZBK3 3M1QyJes</a></h4></div>
+<div class="name"><h4><a href="https://www.skankoerpertherapie.de/ellesse-colle-sudadera-white-hrodh.html">Ellesse COLLE - Sudadera - white hroDH njnZNCmr</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€37.99</span> <span class="price-old">€87.99</span>
+<span class="price-new">€37.99</span> <span class="price-old">€99.99</span>
 </p>
 </div>
 </div>
@@ -364,14 +364,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.skankoerpertherapie.de/obey-clothing-commuter-traveler-bag-bandolera-black-yebcr.html"><img alt="Obey Clothing COMMUTER TRAVELER BAG - Bandolera - black yEbcR UHceA1hU" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/obey-clothing-commuter-traveler-bag-bandolera-black-yebcr-5629.jpg" title="Obey Clothing COMMUTER TRAVELER BAG - Bandolera - black yEbcR UHceA1hU"/></a>
+<a class="arevision" href="https://www.skankoerpertherapie.de/vila-viliva-v-neck-blusa-oil-blue-vn2vt.html"><img alt="Vila VILIVA V NECK - Blusa - oil blue vN2vt RxKCelIf" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/vila-viliva-v-neck-blusa-oil-blue-vn2vt-2135.jpg" title="Vila VILIVA V NECK - Blusa - oil blue vN2vt RxKCelIf"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.skankoerpertherapie.de/obey-clothing-commuter-traveler-bag-bandolera-black-yebcr.html">Obey Clothing COMMUTER TRAVELER BAG - Bandolera - black yEbcR UHceA1hU</a></h4></div>
+<div class="name"><h4><a href="https://www.skankoerpertherapie.de/vila-viliva-v-neck-blusa-oil-blue-vn2vt.html">Vila VILIVA V NECK - Blusa - oil blue vN2vt RxKCelIf</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€37.99</span> <span class="price-old">€80.99</span>
+<span class="price-new">€35.99</span> <span class="price-old">€98.99</span>
 </p>
 </div>
 </div>
@@ -380,14 +380,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.skankoerpertherapie.de/tom-tailor-tara-bolso-shopping-cognac-hiyv0.html"><img alt="TOM TAILOR TARA - Bolso shopping - cognac HiYV0 KrlKHbSv" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/tom-tailor-tara-bolso-shopping-cognac-hiyv0-5175.jpg" title="TOM TAILOR TARA - Bolso shopping - cognac HiYV0 KrlKHbSv"/></a>
+<a class="arevision" href="https://www.skankoerpertherapie.de/nike-sportswear-w-nsw-tee-jdi-slim-camiseta-estampada-white-black-8zrky.html"><img alt="Nike Sportswear W NSW TEE JDI SLIM - Camiseta estampada - white/black 8zrKY XklLZWFa" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/nike-sportswear-w-nsw-tee-jdi-slim-camiseta-estampada-white-black-8zrky-4968.jpg" title="Nike Sportswear W NSW TEE JDI SLIM - Camiseta estampada - white/black 8zrKY XklLZWFa"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.skankoerpertherapie.de/tom-tailor-tara-bolso-shopping-cognac-hiyv0.html">TOM TAILOR TARA - Bolso shopping - cognac HiYV0 KrlKHbSv</a></h4></div>
+<div class="name"><h4><a href="https://www.skankoerpertherapie.de/nike-sportswear-w-nsw-tee-jdi-slim-camiseta-estampada-white-black-8zrky.html">Nike Sportswear W NSW TEE JDI SLIM - Camiseta estampada - white/black 8zrKY XklLZWFa</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€38.99</span> <span class="price-old">€94.99</span>
+<span class="price-new">€37.99</span> <span class="price-old">€85.99</span>
 </p>
 </div>
 </div>
@@ -404,171 +404,11 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.skankoerpertherapie.de/barker-duxford-zapatos-con-cordones-black-g4j4i.html"><img alt="Barker DUXFORD - Zapatos con cordones - black g4j4I z2OaL6WD" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/barker-duxford-zapatos-con-cordones-black-g4j4i-3927.jpg" title="Barker DUXFORD - Zapatos con cordones - black g4j4I z2OaL6WD"/></a>
+<a class="arevision" href="https://www.skankoerpertherapie.de/skechers-sport-dlites-zapatillas-white-silver-kps3d.html"><img alt="Skechers Sport D'LITES - Zapatillas - white/silver KpS3D 5d5oVOW0" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/skechers-sport-dlites-zapatillas-white-silver-kps3d-3600.jpg" title="Skechers Sport D'LITES - Zapatillas - white/silver KpS3D 5d5oVOW0"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.skankoerpertherapie.de/barker-duxford-zapatos-con-cordones-black-g4j4i.html">Barker DUXFORD - Zapatos con cordones - black g4j4I z2OaL6WD</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€38.99</span> <span class="price-old">€98.99</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.skankoerpertherapie.de/missguided-check-vice-checked-highwaisted-vaqueros-pitillo-black-2cziz.html"><img alt="Missguided CHECK VICE CHECKED HIGHWAISTED - Vaqueros pitillo - black 2cZIZ FnWlxrM5" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/missguided-check-vice-checked-highwaisted-vaqueros-pitillo-black-2cziz-2296.jpg" title="Missguided CHECK VICE CHECKED HIGHWAISTED - Vaqueros pitillo - black 2cZIZ FnWlxrM5"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="https://www.skankoerpertherapie.de/missguided-check-vice-checked-highwaisted-vaqueros-pitillo-black-2cziz.html">Missguided CHECK VICE CHECKED HIGHWAISTED - Vaqueros pitillo - black 2cZIZ FnWlxrM5</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€36.99</span> <span class="price-old">€95.99</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.skankoerpertherapie.de/hunkemoller-diva-braguitas-black-irx00.html"><img alt="Hunkemöller DIVA - Braguitas - black irx00 ToLDSky4" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/hunkemoller-diva-braguitas-black-irx00-2215.jpg" title="Hunkemöller DIVA - Braguitas - black irx00 ToLDSky4"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="https://www.skankoerpertherapie.de/hunkemoller-diva-braguitas-black-irx00.html">Hunkemöller DIVA - Braguitas - black irx00 ToLDSky4</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€37.99</span> <span class="price-old">€94.99</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.skankoerpertherapie.de/petrol-industries-vestido-informal-love-potion-dhkfr.html"><img alt="Petrol Industries Vestido informal - love potion dhkfr VvChwQEp" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/petrol-industries-vestido-informal-love-potion-dhkfr-1344.jpg" title="Petrol Industries Vestido informal - love potion dhkfr VvChwQEp"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="https://www.skankoerpertherapie.de/petrol-industries-vestido-informal-love-potion-dhkfr.html">Petrol Industries Vestido informal - love potion dhkfr VvChwQEp</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€36.99</span> <span class="price-old">€80.99</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.skankoerpertherapie.de/emily-noah-denise-bandolera-black-white-mklwf.html"><img alt="Emily &amp; Noah DENISE - Bandolera - black/white mKlWF rXhsBmwt" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/emily-noah-denise-bandolera-black-white-mklwf-3887.jpg" title="Emily &amp; Noah DENISE - Bandolera - black/white mKlWF rXhsBmwt"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="https://www.skankoerpertherapie.de/emily-noah-denise-bandolera-black-white-mklwf.html">Emily &amp; Noah DENISE - Bandolera - black/white mKlWF rXhsBmwt</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€37.99</span> <span class="price-old">€97.99</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.skankoerpertherapie.de/petrol-industries-abrigo-de-invierno-black-v9thg.html"><img alt="Petrol Industries Abrigo de invierno - black V9THG m9usxSpL" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/petrol-industries-abrigo-de-invierno-black-v9thg-1716.jpg" title="Petrol Industries Abrigo de invierno - black V9THG m9usxSpL"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="https://www.skankoerpertherapie.de/petrol-industries-abrigo-de-invierno-black-v9thg.html">Petrol Industries Abrigo de invierno - black V9THG m9usxSpL</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€35.99</span> <span class="price-old">€89.99</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.skankoerpertherapie.de/les-deux-christoph-oxford-camisa-white-vfikw.html"><img alt="Les Deux CHRISTOPH OXFORD - Camisa - white vFikw mIDHJArJ" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/les-deux-christoph-oxford-camisa-white-vfikw-489.jpg" title="Les Deux CHRISTOPH OXFORD - Camisa - white vFikw mIDHJArJ"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="https://www.skankoerpertherapie.de/les-deux-christoph-oxford-camisa-white-vfikw.html">Les Deux CHRISTOPH OXFORD - Camisa - white vFikw mIDHJArJ</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€35.99</span> <span class="price-old">€92.99</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.skankoerpertherapie.de/as98-botines-camperos-nero-eaajh.html"><img alt="A.S.98 Botines camperos - nero EAAJh Y9w4jZnx" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/as98-botines-camperos-nero-eaajh-2015.jpg" title="A.S.98 Botines camperos - nero EAAJh Y9w4jZnx"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="https://www.skankoerpertherapie.de/as98-botines-camperos-nero-eaajh.html">A.S.98 Botines camperos - nero EAAJh Y9w4jZnx</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€37.99</span> <span class="price-old">€86.99</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.skankoerpertherapie.de/gestuz-bima-turtleneck-dress-vestido-informal-black-rojil.html"><img alt="Gestuz BIMA TURTLENECK DRESS - Vestido informal - black rOjIL N2o5ttvn" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/gestuz-bima-turtleneck-dress-vestido-informal-black-rojil-2043.jpg" title="Gestuz BIMA TURTLENECK DRESS - Vestido informal - black rOjIL N2o5ttvn"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="https://www.skankoerpertherapie.de/gestuz-bima-turtleneck-dress-vestido-informal-black-rojil.html">Gestuz BIMA TURTLENECK DRESS - Vestido informal - black rOjIL N2o5ttvn</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€37.99</span> <span class="price-old">€92.99</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.skankoerpertherapie.de/fila-pure-hoody-jersey-con-capucha-black-tqovc.html"><img alt="Fila PURE HOODY - Jersey con capucha - black tqoVC tUZ6Bwhj" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/fila-pure-hoody-jersey-con-capucha-black-tqovc-3158.jpg" title="Fila PURE HOODY - Jersey con capucha - black tqoVC tUZ6Bwhj"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="https://www.skankoerpertherapie.de/fila-pure-hoody-jersey-con-capucha-black-tqovc.html">Fila PURE HOODY - Jersey con capucha - black tqoVC tUZ6Bwhj</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€37.99</span> <span class="price-old">€98.99</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.skankoerpertherapie.de/joop-chiara-hanni-portafolios-black-xoh6v.html"><img alt="JOOP! CHIARA HANNI - Portafolios - black xOH6v ok89S15b" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/joop-chiara-hanni-portafolios-black-xoh6v-5650.jpg" title="JOOP! CHIARA HANNI - Portafolios - black xOH6v ok89S15b"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="https://www.skankoerpertherapie.de/joop-chiara-hanni-portafolios-black-xoh6v.html">JOOP! CHIARA HANNI - Portafolios - black xOH6v ok89S15b</a></h4></div>
+<div class="name"><h4><a href="https://www.skankoerpertherapie.de/skechers-sport-dlites-zapatillas-white-silver-kps3d.html">Skechers Sport D'LITES - Zapatillas - white/silver KpS3D 5d5oVOW0</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
 <span class="price-new">€37.99</span> <span class="price-old">€89.99</span>
@@ -580,14 +420,174 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.skankoerpertherapie.de/miansai-dove-pendant-collar-oxidized-silvercoloured-9omxb.html"><img alt="Miansai DOVE PENDANT - Collar - oxidized silver-coloured 9OmXB zJgslRbb" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/miansai-dove-pendant-collar-oxidized-silvercoloured-9omxb-5058.jpg" title="Miansai DOVE PENDANT - Collar - oxidized silver-coloured 9OmXB zJgslRbb"/></a>
+<a class="arevision" href="https://www.skankoerpertherapie.de/fossil-collar-silvercoloured-59t9f.html"><img alt="Fossil Collar - silver-coloured 59t9f sz6aIq5M" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/fossil-collar-silvercoloured-59t9f-608.jpg" title="Fossil Collar - silver-coloured 59t9f sz6aIq5M"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.skankoerpertherapie.de/miansai-dove-pendant-collar-oxidized-silvercoloured-9omxb.html">Miansai DOVE PENDANT - Collar - oxidized silver-coloured 9OmXB zJgslRbb</a></h4></div>
+<div class="name"><h4><a href="https://www.skankoerpertherapie.de/fossil-collar-silvercoloured-59t9f.html">Fossil Collar - silver-coloured 59t9f sz6aIq5M</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€37.99</span> <span class="price-old">€84.99</span>
+<span class="price-new">€38.99</span> <span class="price-old">€83.99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="https://www.skankoerpertherapie.de/kurt-geiger-london-kensington-quilt-wallet-monedero-black-os0xv.html"><img alt="Kurt Geiger London KENSINGTON QUILT WALLET - Monedero - black os0xv biw3CtNa" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/kurt-geiger-london-kensington-quilt-wallet-monedero-black-os0xv-2865.jpg" title="Kurt Geiger London KENSINGTON QUILT WALLET - Monedero - black os0xv biw3CtNa"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="https://www.skankoerpertherapie.de/kurt-geiger-london-kensington-quilt-wallet-monedero-black-os0xv.html">Kurt Geiger London KENSINGTON QUILT WALLET - Monedero - black os0xv biw3CtNa</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€36.99</span> <span class="price-old">€95.99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="https://www.skankoerpertherapie.de/levis-brandy-tee-camiseta-de-manga-larga-caviar-6edcs.html"><img alt="Levi's® BRANDY TEE - Camiseta de manga larga - caviar 6EdcS N8Dq4WjQ" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/levis-brandy-tee-camiseta-de-manga-larga-caviar-6edcs-3523.jpg" title="Levi's® BRANDY TEE - Camiseta de manga larga - caviar 6EdcS N8Dq4WjQ"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="https://www.skankoerpertherapie.de/levis-brandy-tee-camiseta-de-manga-larga-caviar-6edcs.html">Levi's® BRANDY TEE - Camiseta de manga larga - caviar 6EdcS N8Dq4WjQ</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€35.99</span> <span class="price-old">€86.99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="https://www.skankoerpertherapie.de/blood-brother-stockwell-bolsa-de-deporte-black-pkkfw.html"><img alt="Blood Brother STOCKWELL - Bolsa de deporte - black pkKfw S1Cd0KKe" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/blood-brother-stockwell-bolsa-de-deporte-black-pkkfw-2443.jpg" title="Blood Brother STOCKWELL - Bolsa de deporte - black pkKfw S1Cd0KKe"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="https://www.skankoerpertherapie.de/blood-brother-stockwell-bolsa-de-deporte-black-pkkfw.html">Blood Brother STOCKWELL - Bolsa de deporte - black pkKfw S1Cd0KKe</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€38.99</span> <span class="price-old">€96.99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="https://www.skankoerpertherapie.de/soeur-elsa-blusa-ecru-ldrab.html"><img alt="Soeur ELSA - Blusa - ecru LDrAb cbeUtIwg" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/soeur-elsa-blusa-ecru-ldrab-3890.jpg" title="Soeur ELSA - Blusa - ecru LDrAb cbeUtIwg"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="https://www.skankoerpertherapie.de/soeur-elsa-blusa-ecru-ldrab.html">Soeur ELSA - Blusa - ecru LDrAb cbeUtIwg</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€37.99</span> <span class="price-old">€90.99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="https://www.skankoerpertherapie.de/marco-tozzi-botines-con-cordones-red-h6oij.html"><img alt="Marco Tozzi Botines con cordones - red h6oiJ Mjp9Y0z8" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/marco-tozzi-botines-con-cordones-red-h6oij-102.jpg" title="Marco Tozzi Botines con cordones - red h6oiJ Mjp9Y0z8"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="https://www.skankoerpertherapie.de/marco-tozzi-botines-con-cordones-red-h6oij.html">Marco Tozzi Botines con cordones - red h6oiJ Mjp9Y0z8</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€36.99</span> <span class="price-old">€84.99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="https://www.skankoerpertherapie.de/needle-thread-ether-gown-vestido-de-fiesta-champagne-rsoop.html"><img alt="Needle &amp; Thread ETHER GOWN - Vestido de fiesta - champagne rSOOp he9t8hhw" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/needle-thread-ether-gown-vestido-de-fiesta-champagne-rsoop-2867.jpg" title="Needle &amp; Thread ETHER GOWN - Vestido de fiesta - champagne rSOOp he9t8hhw"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="https://www.skankoerpertherapie.de/needle-thread-ether-gown-vestido-de-fiesta-champagne-rsoop.html">Needle &amp; Thread ETHER GOWN - Vestido de fiesta - champagne rSOOp he9t8hhw</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€37.99</span> <span class="price-old">€96.99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="https://www.skankoerpertherapie.de/gap-side-pocket-ankle-pant-medias-multicoloured-xirql.html"><img alt="GAP SIDE POCKET ANKLE PANT - Medias - multicoloured xiRql jdvh7zLO" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/gap-side-pocket-ankle-pant-medias-multicoloured-xirql-2827.jpg" title="GAP SIDE POCKET ANKLE PANT - Medias - multicoloured xiRql jdvh7zLO"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="https://www.skankoerpertherapie.de/gap-side-pocket-ankle-pant-medias-multicoloured-xirql.html">GAP SIDE POCKET ANKLE PANT - Medias - multicoloured xiRql jdvh7zLO</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€39.99</span> <span class="price-old">€97.99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="https://www.skankoerpertherapie.de/adidas-performance-galaxy-classic-cloudfoam-sports-running-shoes-zapatillas-de-running-neutras-core-black-footwear-white-h2ios.html"><img alt="adidas Performance GALAXY CLASSIC CLOUDFOAM SPORTS RUNNING SHOES - Zapatillas de running neutras - core black/footwear white h2IOS y27x3jxb" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/adidas-performance-galaxy-classic-cloudfoam-sports-running-shoes-zapatillas-de-running-neutras-core-black-footwear-white-h2ios-3461.jpg" title="adidas Performance GALAXY CLASSIC CLOUDFOAM SPORTS RUNNING SHOES - Zapatillas de running neutras - core black/footwear white h2IOS y27x3jxb"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="https://www.skankoerpertherapie.de/adidas-performance-galaxy-classic-cloudfoam-sports-running-shoes-zapatillas-de-running-neutras-core-black-footwear-white-h2ios.html">adidas Performance GALAXY CLASSIC CLOUDFOAM SPORTS RUNNING SHOES - Zapatillas de running neutras - core black/footwear white h2IOS y27x3jxb</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€36.99</span> <span class="price-old">€91.99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="https://www.skankoerpertherapie.de/pier-one-camiseta-estampada-white-ptkgm.html"><img alt="Pier One Camiseta estampada - white pTkgM MNDorE1s" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/pier-one-camiseta-estampada-white-ptkgm-1242.jpg" title="Pier One Camiseta estampada - white pTkgM MNDorE1s"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="https://www.skankoerpertherapie.de/pier-one-camiseta-estampada-white-ptkgm.html">Pier One Camiseta estampada - white pTkgM MNDorE1s</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€36.99</span> <span class="price-old">€98.99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="https://www.skankoerpertherapie.de/anna-field-camiseta-basica-white-f2zwt.html"><img alt="Anna Field Camiseta básica - white F2zwT 8rTwqgkx" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/anna-field-camiseta-basica-white-f2zwt-1794.jpg" title="Anna Field Camiseta básica - white F2zwT 8rTwqgkx"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="https://www.skankoerpertherapie.de/anna-field-camiseta-basica-white-f2zwt.html">Anna Field Camiseta básica - white F2zwT 8rTwqgkx</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€37.99</span> <span class="price-old">€90.99</span>
 </p>
 </div>
 </div>
@@ -623,43 +623,43 @@ $(document).ready(function() {
 <div id="powered">
 <div class="container">
 <div class="row">
-<div class="col-sm-12 col-md-12">
-      Copyright © 2022 <a href="//www.skankoerpertherapie.de" target="_blank">www.skankoerpertherapie.de</a> All Rights Reserved  
+<div class="col-sm-12 col-md-12">
+      Copyright © 2022 <a href="//www.skankoerpertherapie.de" target="_blank">www.skankoerpertherapie.de</a> All Rights Reserved  
       </div>
 </div>
 </div>
 </div>
 </footer>
 <script src="catalog/view/theme/electric/js/jquery.visible.min.js" type="text/javascript"></script>
-<script type="text/javascript">
-
-var win = $(window);
-
-var allMods = $("footer");
-
-allMods.each(function(i, el) {
-    
-  if ($(el).visible(true)) {
-    $(el).addClass("already-visible"); 
-  }
-  
-});
-
-win.scroll(function(event) {
-  
-  allMods.each(function(i, el) {
-    
-    var el = $(el);
-    
-    if (el.visible(true)) {
-      el.addClass("come-in"); 
-    } else {
-      el.removeClass("come-in already-visible");
-    }
-    
-  });
-  
-}); 
+<script type="text/javascript">
+
+var win = $(window);
+
+var allMods = $("footer");
+
+allMods.each(function(i, el) {
+    
+  if ($(el).visible(true)) {
+    $(el).addClass("already-visible"); 
+  }
+  
+});
+
+win.scroll(function(event) {
+  
+  allMods.each(function(i, el) {
+    
+    var el = $(el);
+    
+    if (el.visible(true)) {
+      el.addClass("come-in"); 
+    } else {
+      el.removeClass("come-in already-visible");
+    }
+    
+  });
+  
+}); 
 </script>
 <script src="catalog/view/theme/electric/js/jquery.easing-1.3.min.js" type="text/javascript"></script>
 <link href="catalog/view/theme/electric/js/quickview/fancybox/jquery.fancybox.css" property="stylesheet" rel="stylesheet">

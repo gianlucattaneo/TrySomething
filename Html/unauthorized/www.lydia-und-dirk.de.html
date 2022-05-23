@@ -34,64 +34,64 @@
 <script src="catalog/view/theme/unelectable/js/cloud-zoom.js" type="text/javascript"></script>
 <link href="catalog/view/theme/unelectable/stylesheet/dcaccordion.css" property="stylesheet" rel="stylesheet" type="text/css">
 <script src="catalog/view/theme/unelectable/js/jquery.dcjqaccordion.js" type="text/javascript"></script>
-<script type="text/javascript">
-			function OptanonWrapper() {
- 			var banner = document.getElementById("onetrust-banner-sdk"); 
- 			if(banner && OneTrust.IsAlertBoxClosed()) {
-			banner.classList.add("alertBoxClosed");
-			}
-			}
+<script type="text/javascript">
+			function OptanonWrapper() {
+ 			var banner = document.getElementById("onetrust-banner-sdk"); 
+ 			if(banner && OneTrust.IsAlertBoxClosed()) {
+			banner.classList.add("alertBoxClosed");
+			}
+			}
 			</script>
-<script>
-  hm.waitUntil(function() {
-		return hm.version;
-	}).then(function() {
-		hm.cookies = hm.cookies || new hm.Cookies();  
-		var nuanceData={};
-		window.nuanceData = nuanceData;
-		if(hm.cookies && hm.cookies.readCookie('userCookie')){
-			var userCookieVal = JSON.parse(hm.cookies.readCookie('userCookie'));
-			if (userCookieVal){
-				
-				if(userCookieVal.cartCount>=0){
-					nuanceData["cartCount"] = userCookieVal.cartCount;
-				}
-			if(userCookieVal.dominantCategory){
-					nuanceData["dominantCategory"] = userCookieVal.dominantCategory;
-				}
-				if(userCookieVal.cartProducts){
-					nuanceData["cartProducts"] = userCookieVal.cartProducts;
-				}
-				if(userCookieVal.hybris_firstName){
-					nuanceData["hybris_firstName"] = decodeURIComponent((userCookieVal.hybris_firstName + '').replace(/\+/g, '%20'));
-				}
-				if(userCookieVal.hybris_uuid){
-					nuanceData["hybris_uuid"] = userCookieVal.hybris_uuid;
-				}
-				if(userCookieVal.customer_id){
-					nuanceData["customer_id"] = userCookieVal.customer_id;
-				}
-				if(userCookieVal.type){
-					nuanceData["type"] = userCookieVal.type;
-				}
-				if(userCookieVal.str){
-					nuanceData["st"] = decodeURIComponent(userCookieVal.str.replaceAll(/\+/g, ' '));
-				}
-				if(userCookieVal.zc){
-					var val = userCookieVal.zc.replace(/[+,-]/g," ");
-						nuanceData["zc"] = val;
-			}
-				if(userCookieVal.tn){
-					nuanceData["tn"] = decodeURIComponent(userCookieVal.tn.replaceAll(/\+/g, ' '));
-				}
-			}
-		}
-		var favouritesCookie = hm.options.product.country + "-favourites";
-		
-		var hasFav = hm.cookies.readCookie("hm-austria-favourites");
-		if(hasFav && !(hasFav==="\"\"")){nuanceData["hm-country-favourites"] = hasFav;}
-		console.log(nuanceData);
-	});
+<script>
+  hm.waitUntil(function() {
+		return hm.version;
+	}).then(function() {
+		hm.cookies = hm.cookies || new hm.Cookies();  
+		var nuanceData={};
+		window.nuanceData = nuanceData;
+		if(hm.cookies && hm.cookies.readCookie('userCookie')){
+			var userCookieVal = JSON.parse(hm.cookies.readCookie('userCookie'));
+			if (userCookieVal){
+				
+				if(userCookieVal.cartCount>=0){
+					nuanceData["cartCount"] = userCookieVal.cartCount;
+				}
+			if(userCookieVal.dominantCategory){
+					nuanceData["dominantCategory"] = userCookieVal.dominantCategory;
+				}
+				if(userCookieVal.cartProducts){
+					nuanceData["cartProducts"] = userCookieVal.cartProducts;
+				}
+				if(userCookieVal.hybris_firstName){
+					nuanceData["hybris_firstName"] = decodeURIComponent((userCookieVal.hybris_firstName + '').replace(/\+/g, '%20'));
+				}
+				if(userCookieVal.hybris_uuid){
+					nuanceData["hybris_uuid"] = userCookieVal.hybris_uuid;
+				}
+				if(userCookieVal.customer_id){
+					nuanceData["customer_id"] = userCookieVal.customer_id;
+				}
+				if(userCookieVal.type){
+					nuanceData["type"] = userCookieVal.type;
+				}
+				if(userCookieVal.str){
+					nuanceData["st"] = decodeURIComponent(userCookieVal.str.replaceAll(/\+/g, ' '));
+				}
+				if(userCookieVal.zc){
+					var val = userCookieVal.zc.replace(/[+,-]/g," ");
+						nuanceData["zc"] = val;
+			}
+				if(userCookieVal.tn){
+					nuanceData["tn"] = decodeURIComponent(userCookieVal.tn.replaceAll(/\+/g, ' '));
+				}
+			}
+		}
+		var favouritesCookie = hm.options.product.country + "-favourites";
+		
+		var hasFav = hm.cookies.readCookie("hm-austria-favourites");
+		if(hasFav && !(hasFav==="\"\"")){nuanceData["hm-country-favourites"] = hasFav;}
+		console.log(nuanceData);
+	});
 	</script>
 </link></link></link></meta></head>
 <body class="common-home">
@@ -100,12 +100,12 @@
 <div id="sidebar-wrapper">
 <ul class="sidebar-nav list-group unelectable">
 <li class="sidebar-title">
-<a href="#menu-toggle-close" id="menu-toggle-close"><span aria-hidden="true">×</span></a>Informatie      <script>
-      $("#menu-toggle-close").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-		$(".sidebar-opacity").toggleClass("toggled");
-      });
+<a href="#menu-toggle-close" id="menu-toggle-close"><span aria-hidden="true">×</span></a>Informatie      <script>
+      $("#menu-toggle-close").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+		$(".sidebar-opacity").toggleClass("toggled");
+      });
       </script>
 </li>
 <li><a href="http://www.lydia-und-dirk.de/index.php?route=information/information&amp;information_id=7">FAQ</a></li>
@@ -169,12 +169,12 @@
 <span class="button-text">Menu</span>
 </div>
 </a>
-<script>
-        $("#menu-mobile-toggle").click(function(e) {
-          e.preventDefault();
-          $("#wrapper").toggleClass("menu-toggled");
-		  $(".sidebar-opacity").toggleClass("menu-toggled");
-        });
+<script>
+        $("#menu-mobile-toggle").click(function(e) {
+          e.preventDefault();
+          $("#wrapper").toggleClass("menu-toggled");
+		  $(".sidebar-opacity").toggleClass("menu-toggled");
+        });
       </script>
 <div class="btn-group btn-block buttons-header" id="cart">
 <a class="btn dropdown-toggle" data-loading-text="Laden..." data-toggle="dropdown">
@@ -212,26 +212,26 @@
 </div>
 </div>
 </nav>
-<script type="text/javascript">
-$(document).ready(function() {
-	$('#accordion-mobile').dcAccordion({
-		disableLink: false,	
-		menuClose: false,
-		autoClose: true,
-		autoExpand: true,		
-		saveState: false
-	});
-});
+<script type="text/javascript">
+$(document).ready(function() {
+	$('#accordion-mobile').dcAccordion({
+		disableLink: false,	
+		menuClose: false,
+		autoClose: true,
+		autoExpand: true,		
+		saveState: false
+	});
+});
 </script>
 <div class="hidden-sm hidden-md hidden-lg" id="menu-mobile">
 <ul class="accordion sidebar-nav list-group" id="accordion-mobile">
 <li class="sidebar-title">
-<a href="#menu-mobile-toggle-close" id="menu-mobile-toggle-close"><span aria-hidden="true">×</span></a>Menu      <script>
-      $("#menu-mobile-toggle-close").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("menu-toggled");
-		$(".sidebar-opacity").toggleClass("menu-toggled");
-      });
+<a href="#menu-mobile-toggle-close" id="menu-mobile-toggle-close"><span aria-hidden="true">×</span></a>Menu      <script>
+      $("#menu-mobile-toggle-close").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("menu-toggled");
+		$(".sidebar-opacity").toggleClass("menu-toggled");
+      });
       </script>
 </li>
 <li><a href="http://www.lydia-und-dirk.de/">Home</a></li>
@@ -264,16 +264,16 @@ $(document).ready(function() {
 </div>
 <div style="display:none;"><script src="//js.users.51.la/21085533.js" type="text/javascript"></script><br/></div><div class="container">
 <div class="row"><column class="col-sm-3 hidden-xs" id="column-left">
-<script type="text/javascript">
-$(document).ready(function() {
-	$('#accordion-1').dcAccordion({
-		disableLink: false,	
-		menuClose: false,
-		autoClose: true,
-		autoExpand: true,		
-		saveState: false
-	});
-});
+<script type="text/javascript">
+$(document).ready(function() {
+	$('#accordion-1').dcAccordion({
+		disableLink: false,	
+		menuClose: false,
+		autoClose: true,
+		autoExpand: true,		
+		saveState: false
+	});
+});
 </script>
 <div class="panel panel-default panel-category">
 <div class="panel-heading">Categorieën</div>
@@ -305,14 +305,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.lydia-und-dirk.de/nike-functioneel-shirt-x27academy-19x27-in-rood-wit.html"><img alt="NIKE Functioneel shirt 'Academy 19' in Rood / Wit" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/nike-functioneel-shirt-x27academy-19x27-in-rood-wit-842.jpg" title="NIKE Functioneel shirt 'Academy 19' in Rood / Wit"/></a>
+<a class="arevision" href="http://www.lydia-und-dirk.de/gabor-blue-sport-moliere-sneakers-sneakers-blauw.html"><img alt="Gabor Blue Sport Moliere sneakers Sneakers - Blauw" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/gabor-blue-sport-moliere-sneakers-sneakers-blauw-1810.jpg" title="Gabor Blue Sport Moliere sneakers Sneakers - Blauw"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.lydia-und-dirk.de/nike-functioneel-shirt-x27academy-19x27-in-rood-wit.html">NIKE Functioneel shirt 'Academy 19' in Rood / Wit</a></h4></div>
+<div class="name"><h4><a href="http://www.lydia-und-dirk.de/gabor-blue-sport-moliere-sneakers-sneakers-blauw.html">Gabor Blue Sport Moliere sneakers Sneakers - Blauw</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€45,99</span> <span class="price-old">€132,99</span>
+<span class="price-new">€49,99</span> <span class="price-old">€126,99</span>
 </p>
 </div>
 </div>
@@ -321,78 +321,78 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.lydia-und-dirk.de/gentiluomo-blue-colbert-g1004859-rimini-colberts-blauw.html"><img alt="Gentiluomo Blue Colbert G1004-859 RIMINI Colberts - Blauw" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/gentiluomo-blue-colbert-g1004859-rimini-colberts-blauw-8553.jpg" title="Gentiluomo Blue Colbert G1004-859 RIMINI Colberts - Blauw"/></a>
+<a class="arevision" href="http://www.lydia-und-dirk.de/atlantic-stars-blue-sneakers-sneakers-blauw.html"><img alt="Atlantic Stars Blue SNEAKERS Sneakers - Blauw" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/atlantic-stars-blue-sneakers-sneakers-blauw-8749.jpg" title="Atlantic Stars Blue SNEAKERS Sneakers - Blauw"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.lydia-und-dirk.de/gentiluomo-blue-colbert-g1004859-rimini-colberts-blauw.html">Gentiluomo Blue Colbert G1004-859 RIMINI Colberts - Blauw</a></h4></div>
+<div class="name"><h4><a href="http://www.lydia-und-dirk.de/atlantic-stars-blue-sneakers-sneakers-blauw.html">Atlantic Stars Blue SNEAKERS Sneakers - Blauw</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€46,99</span> <span class="price-old">€129,99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="http://www.lydia-und-dirk.de/philippe-model-white-sneakers-shoes-sneakers-wit.html"><img alt="Philippe Model White Sneakers shoes Sneakers - Wit" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/philippe-model-white-sneakers-shoes-sneakers-wit-5676.jpg" title="Philippe Model White Sneakers shoes Sneakers - Wit"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="http://www.lydia-und-dirk.de/philippe-model-white-sneakers-shoes-sneakers-wit.html">Philippe Model White Sneakers shoes Sneakers - Wit</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€44,99</span> <span class="price-old">€127,99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="http://www.lydia-und-dirk.de/tckn-white-phone-case-geometric-tiger-iphone-6-amp-6s-phone-covers-wit.html"><img alt="TCKN White Phone case geometric tiger - iPhone 6 &amp; 6S Phone covers - Wit" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/tckn-white-phone-case-geometric-tiger-iphone-6-amp-6s-phone-covers-wit-5670.jpg" title="TCKN White Phone case geometric tiger - iPhone 6 &amp; 6S Phone covers - Wit"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="http://www.lydia-und-dirk.de/tckn-white-phone-case-geometric-tiger-iphone-6-amp-6s-phone-covers-wit.html">TCKN White Phone case geometric tiger - iPhone 6 &amp; 6S Phone covers - Wit</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€44,99</span> <span class="price-old">€130,99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="http://www.lydia-und-dirk.de/aigner-riem-in-zwart-zilver.html"><img alt="AIGNER Riem in Zwart / Zilver" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/aigner-riem-in-zwart-zilver-2560.jpg" title="AIGNER Riem in Zwart / Zilver"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="http://www.lydia-und-dirk.de/aigner-riem-in-zwart-zilver.html">AIGNER Riem in Zwart / Zilver</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€47,99</span> <span class="price-old">€147,99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="http://www.lydia-und-dirk.de/justing-gray-denim-trousers-broeken-grijs.html"><img alt="Justing Gray Denim Trousers Broeken - Grijs" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/justing-gray-denim-trousers-broeken-grijs-1718.jpg" title="Justing Gray Denim Trousers Broeken - Grijs"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="http://www.lydia-und-dirk.de/justing-gray-denim-trousers-broeken-grijs.html">Justing Gray Denim Trousers Broeken - Grijs</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
 <span class="price-new">€48,99</span> <span class="price-old">€129,99</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.lydia-und-dirk.de/dolce-amp-gabbana-blue-bow-cotton-trilby-capello-hoeden-blauw.html"><img alt="Dolce &amp; Gabbana Blue Bow Cotton Trilby Capello Hoeden - Blauw" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/dolce-amp-gabbana-blue-bow-cotton-trilby-capello-hoeden-blauw-2054.jpg" title="Dolce &amp; Gabbana Blue Bow Cotton Trilby Capello Hoeden - Blauw"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="http://www.lydia-und-dirk.de/dolce-amp-gabbana-blue-bow-cotton-trilby-capello-hoeden-blauw.html">Dolce &amp; Gabbana Blue Bow Cotton Trilby Capello Hoeden - Blauw</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€45,99</span> <span class="price-old">€127,99</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.lydia-und-dirk.de/rusty-neal-sweatshirt-in-antraciet.html"><img alt="Rusty Neal Sweatshirt in Antraciet" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/rusty-neal-sweatshirt-in-antraciet-7646.jpg" title="Rusty Neal Sweatshirt in Antraciet"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="http://www.lydia-und-dirk.de/rusty-neal-sweatshirt-in-antraciet.html">Rusty Neal Sweatshirt in Antraciet</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€49,99</span> <span class="price-old">€146,99</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.lydia-und-dirk.de/rains-xc-jacket-regenkleding-black.html"><img alt="Rains - XC Jacket - regenkleding - black" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/rains-xc-jacket-regenkleding-black-2081.jpg" title="Rains - XC Jacket - regenkleding - black"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="http://www.lydia-und-dirk.de/rains-xc-jacket-regenkleding-black.html">Rains - XC Jacket - regenkleding - black</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€42,99</span> <span class="price-old">€142,99</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.lydia-und-dirk.de/dolce-amp-gabbana-red-white-sneakers-sneakers-rood.html"><img alt="Dolce &amp; Gabbana Red/White Sneakers Sneakers - Rood" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/dolce-amp-gabbana-red-white-sneakers-sneakers-rood-4870.jpg" title="Dolce &amp; Gabbana Red/White Sneakers Sneakers - Rood"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="http://www.lydia-und-dirk.de/dolce-amp-gabbana-red-white-sneakers-sneakers-rood.html">Dolce &amp; Gabbana Red/White Sneakers Sneakers - Rood</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€46,99</span> <span class="price-old">€128,99</span>
 </p>
 </div>
 </div>
@@ -409,14 +409,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.lydia-und-dirk.de/roberto-collina-yellow-maglia-truien-amp-vesten-geel.html"><img alt="Roberto Collina Yellow MAGLIA Truien &amp; Vesten - Geel" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/roberto-collina-yellow-maglia-truien-amp-vesten-geel-5898.jpg" title="Roberto Collina Yellow MAGLIA Truien &amp; Vesten - Geel"/></a>
+<a class="arevision" href="http://www.lydia-und-dirk.de/matinique-matriton-truien-met-ronde-hals-dark-grey-melange.html"><img alt="Matinique - MAtriton - truien met ronde hals - dark grey melange" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/matinique-matriton-truien-met-ronde-hals-dark-grey-melange-1574.jpg" title="Matinique - MAtriton - truien met ronde hals - dark grey melange"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.lydia-und-dirk.de/roberto-collina-yellow-maglia-truien-amp-vesten-geel.html">Roberto Collina Yellow MAGLIA Truien &amp; Vesten - Geel</a></h4></div>
+<div class="name"><h4><a href="http://www.lydia-und-dirk.de/matinique-matriton-truien-met-ronde-hals-dark-grey-melange.html">Matinique - MAtriton - truien met ronde hals - dark grey melange</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€44,99</span> <span class="price-old">€129,99</span>
+<span class="price-new">€48,99</span> <span class="price-old">€132,99</span>
 </p>
 </div>
 </div>
@@ -425,14 +425,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.lydia-und-dirk.de/enval-soft-beige-3231444-shoes-veterschoenen-amp-veterboots-beige.html"><img alt="Enval Soft Beige 3231444 shoes Veterschoenen &amp; Veterboots - Beige" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/enval-soft-beige-3231444-shoes-veterschoenen-amp-veterboots-beige-5305.jpg" title="Enval Soft Beige 3231444 shoes Veterschoenen &amp; Veterboots - Beige"/></a>
+<a class="arevision" href="http://www.lydia-und-dirk.de/flexfit-pet-x27checkerboardx27-in-poederroze-wit.html"><img alt="Flexfit Pet 'Checkerboard' in Poederroze / Wit" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/flexfit-pet-x27checkerboardx27-in-poederroze-wit-3640.jpg" title="Flexfit Pet 'Checkerboard' in Poederroze / Wit"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.lydia-und-dirk.de/enval-soft-beige-3231444-shoes-veterschoenen-amp-veterboots-beige.html">Enval Soft Beige 3231444 shoes Veterschoenen &amp; Veterboots - Beige</a></h4></div>
+<div class="name"><h4><a href="http://www.lydia-und-dirk.de/flexfit-pet-x27checkerboardx27-in-poederroze-wit.html">Flexfit Pet 'Checkerboard' in Poederroze / Wit</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€47,99</span> <span class="price-old">€130,99</span>
+<span class="price-new">€48,99</span> <span class="price-old">€128,99</span>
 </p>
 </div>
 </div>
@@ -441,139 +441,11 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.lydia-und-dirk.de/salomon-propeller-dry-m-accessoires-black.html"><img alt="Salomon - PROPELLER DRY M - accessoires - black" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/salomon-propeller-dry-mx-accessoires-black-8502.jpg" title="Salomon - PROPELLER DRY M - accessoires - black"/></a>
+<a class="arevision" href="http://www.lydia-und-dirk.de/off-white-black-bag-schoudertassen-zwart.html"><img alt="Off White Black Bag Schoudertassen - Zwart" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/off-white-black-bag-schoudertassen-zwart-8907.jpg" title="Off White Black Bag Schoudertassen - Zwart"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.lydia-und-dirk.de/salomon-propeller-dry-m-accessoires-black.html">Salomon - PROPELLER DRY M - accessoires - black</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€46,99</span> <span class="price-old">€130,99</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.lydia-und-dirk.de/kangra-brown-sweater-truien-amp-vesten-bruin.html"><img alt="Kangra Brown Sweater Truien &amp; Vesten - Bruin" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/kangra-brown-sweater-truien-amp-vesten-bruin-8937.jpg" title="Kangra Brown Sweater Truien &amp; Vesten - Bruin"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="http://www.lydia-und-dirk.de/kangra-brown-sweater-truien-amp-vesten-bruin.html">Kangra Brown Sweater Truien &amp; Vesten - Bruin</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€46,99</span> <span class="price-old">€130,99</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.lydia-und-dirk.de/urban-classics-sweatvest-in-donkergrijs.html"><img alt="Urban Classics Sweatvest in Donkergrijs" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/urban-classics-sweatvest-in-donkergrijs-6135.jpg" title="Urban Classics Sweatvest in Donkergrijs"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="http://www.lydia-und-dirk.de/urban-classics-sweatvest-in-donkergrijs.html">Urban Classics Sweatvest in Donkergrijs</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€49,99</span> <span class="price-old">€120,99</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.lydia-und-dirk.de/the-bridge-portemonnee-in-zwart.html"><img alt="The Bridge Portemonnee in Zwart" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/the-bridge-portemonnee-in-zwart-1735.jpg" title="The Bridge Portemonnee in Zwart"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="http://www.lydia-und-dirk.de/the-bridge-portemonnee-in-zwart.html">The Bridge Portemonnee in Zwart</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€45,99</span> <span class="price-old">€139,99</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.lydia-und-dirk.de/eton-royal-twill-shirt-basic-overhemden-blue.html"><img alt="Eton - Royal twill shirt - basic overhemden - blue" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/eton-royal-twill-shirt-basic-overhemden-blue-1507.jpg" title="Eton - Royal twill shirt - basic overhemden - blue"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="http://www.lydia-und-dirk.de/eton-royal-twill-shirt-basic-overhemden-blue.html">Eton - Royal twill shirt - basic overhemden - blue</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€48,99</span> <span class="price-old">€149,99</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.lydia-und-dirk.de/palm-angels-black-corduroy-pockets-pants-broeken-zwart.html"><img alt="Palm Angels Black CORDUROY POCKETS PANTS Broeken - Zwart" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/palm-angels-black-corduroy-pockets-pants-broeken-zwart-5610.jpg" title="Palm Angels Black CORDUROY POCKETS PANTS Broeken - Zwart"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="http://www.lydia-und-dirk.de/palm-angels-black-corduroy-pockets-pants-broeken-zwart.html">Palm Angels Black CORDUROY POCKETS PANTS Broeken - Zwart</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€47,99</span> <span class="price-old">€127,99</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.lydia-und-dirk.de/rayban-gunmetal-classic-rb3362-cockpit-polarized-zonnebrillen-grijs.html"><img alt="Ray-Ban Gunmetal Classic RB3362 COCKPIT POLARIZED Zonnebrillen - Grijs" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/rayban-gunmetal-classic-rb3362-cockpit-polarized-zonnebrillen-grijs-1888.jpg" title="Ray-Ban Gunmetal Classic RB3362 COCKPIT POLARIZED Zonnebrillen - Grijs"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="http://www.lydia-und-dirk.de/rayban-gunmetal-classic-rb3362-cockpit-polarized-zonnebrillen-grijs.html">Ray-Ban Gunmetal Classic RB3362 COCKPIT POLARIZED Zonnebrillen - Grijs</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€44,99</span> <span class="price-old">€127,99</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.lydia-und-dirk.de/represent-green-camicia-terrier-camo-korte-mouwen-overhemden-groen.html"><img alt="REPRESENT Green CAMICIA TERRIER CAMO Korte mouwen Overhemden - Groen" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/represent-green-camicia-terrier-camo-korte-mouwen-overhemden-groen-7692.jpg" title="REPRESENT Green CAMICIA TERRIER CAMO Korte mouwen Overhemden - Groen"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="http://www.lydia-und-dirk.de/represent-green-camicia-terrier-camo-korte-mouwen-overhemden-groen.html">REPRESENT Green CAMICIA TERRIER CAMO Korte mouwen Overhemden - Groen</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€48,99</span> <span class="price-old">€125,99</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.lydia-und-dirk.de/msgm-blue-short-puffer-jacket-gewatteerde-jassen-blauw.html"><img alt="MSGM Blue Short puffer jacket Gewatteerde jassen - Blauw" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/msgm-blue-short-puffer-jacket-gewatteerde-jassen-blauw-213.jpg" title="MSGM Blue Short puffer jacket Gewatteerde jassen - Blauw"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="http://www.lydia-und-dirk.de/msgm-blue-short-puffer-jacket-gewatteerde-jassen-blauw.html">MSGM Blue Short puffer jacket Gewatteerde jassen - Blauw</a></h4></div>
+<div class="name"><h4><a href="http://www.lydia-und-dirk.de/off-white-black-bag-schoudertassen-zwart.html">Off White Black Bag Schoudertassen - Zwart</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
 <span class="price-new">€49,99</span> <span class="price-old">€128,99</span>
@@ -585,14 +457,142 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.lydia-und-dirk.de/lee-jeans-pique-polo-korte-mouwen-sterling-blue.html"><img alt="Lee Jeans - PIQUE POLO - korte mouwen - sterling blue" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/lee-jeans-pique-polo-korte-mouwen-sterling-blue-2940.jpg" title="Lee Jeans - PIQUE POLO - korte mouwen - sterling blue"/></a>
+<a class="arevision" href="http://www.lydia-und-dirk.de/barba-gray-regular-trousers-chino039s-grijs.html"><img alt="Barba Gray Regular trousers Chino's - Grijs" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/barba-gray-regular-trousers-chino039s-grijs-7169.jpg" title="Barba Gray Regular trousers Chino's - Grijs"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.lydia-und-dirk.de/lee-jeans-pique-polo-korte-mouwen-sterling-blue.html">Lee Jeans - PIQUE POLO - korte mouwen - sterling blue</a></h4></div>
+<div class="name"><h4><a href="http://www.lydia-und-dirk.de/barba-gray-regular-trousers-chino039s-grijs.html">Barba Gray Regular trousers Chino's - Grijs</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€47,99</span> <span class="price-old">€121,99</span>
+<span class="price-new">€47,99</span> <span class="price-old">€127,99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="http://www.lydia-und-dirk.de/marcelo-burlon-black-jeans-slim-fit-jeans-zwart.html"><img alt="Marcelo Burlon Black Jeans Slim Fit Jeans - Zwart" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/marcelo-burlon-black-jeans-slim-fit-jeans-zwart-1226.jpg" title="Marcelo Burlon Black Jeans Slim Fit Jeans - Zwart"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="http://www.lydia-und-dirk.de/marcelo-burlon-black-jeans-slim-fit-jeans-zwart.html">Marcelo Burlon Black Jeans Slim Fit Jeans - Zwart</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€45,99</span> <span class="price-old">€125,99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="http://www.lydia-und-dirk.de/reebok-sportschoen-in-donkerblauw.html"><img alt="REEBOK Sportschoen in Donkerblauw" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/reebok-sportschoen-in-donkerblauw-7552.jpg" title="REEBOK Sportschoen in Donkerblauw"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="http://www.lydia-und-dirk.de/reebok-sportschoen-in-donkerblauw.html">REEBOK Sportschoen in Donkerblauw</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€42,99</span> <span class="price-old">€120,99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="http://www.lydia-und-dirk.de/be-able-concept-blue-chino-trousers-chino039s-blauw.html"><img alt="Be Able Concept Blue Chino Trousers Chino's - Blauw" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/be-able-concept-blue-chino-trousers-chino039s-blauw-1798.jpg" title="Be Able Concept Blue Chino Trousers Chino's - Blauw"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="http://www.lydia-und-dirk.de/be-able-concept-blue-chino-trousers-chino039s-blauw.html">Be Able Concept Blue Chino Trousers Chino's - Blauw</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€44,99</span> <span class="price-old">€127,99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="http://www.lydia-und-dirk.de/howard-london-brown-leather-belt-davis-riemen-bruin.html"><img alt="Howard London Brown LEATHER BELT DAVIS Riemen - Bruin" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/howard-london-brown-leather-belt-davis-riemen-bruin-5263.jpg" title="Howard London Brown LEATHER BELT DAVIS Riemen - Bruin"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="http://www.lydia-und-dirk.de/howard-london-brown-leather-belt-davis-riemen-bruin.html">Howard London Brown LEATHER BELT DAVIS Riemen - Bruin</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€46,99</span> <span class="price-old">€126,99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="http://www.lydia-und-dirk.de/marc-ox27polo-trui-in-zwart.html"><img alt="Marc O'Polo Trui in Zwart" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/marc-ox27polo-trui-in-zwart-8431.jpg" title="Marc O'Polo Trui in Zwart"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="http://www.lydia-und-dirk.de/marc-ox27polo-trui-in-zwart.html">Marc O'Polo Trui in Zwart</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€49,99</span> <span class="price-old">€144,99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="http://www.lydia-und-dirk.de/panchic-blue-suede-boots-sneakers-blauw.html"><img alt="Panchic Blue SUÈDE BOOTS Sneakers - Blauw" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/panchic-blue-suede-boots-sneakers-blauw-4176.jpg" title="Panchic Blue SUÈDE BOOTS Sneakers - Blauw"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="http://www.lydia-und-dirk.de/panchic-blue-suede-boots-sneakers-blauw.html">Panchic Blue SUÈDE BOOTS Sneakers - Blauw</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€45,99</span> <span class="price-old">€126,99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="http://www.lydia-und-dirk.de/urban-classics-broek-in-donkerlila.html"><img alt="Urban Classics Broek in Donkerlila" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/urban-classics-broek-in-donkerlila-6242.jpg" title="Urban Classics Broek in Donkerlila"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="http://www.lydia-und-dirk.de/urban-classics-broek-in-donkerlila.html">Urban Classics Broek in Donkerlila</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€48,99</span> <span class="price-old">€131,99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="http://www.lydia-und-dirk.de/superdry-sweatshirt-in-zwart-wit.html"><img alt="Superdry Sweatshirt in Zwart / Wit" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/superdry-sweatshirt-in-zwart-wit-3769.jpg" title="Superdry Sweatshirt in Zwart / Wit"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="http://www.lydia-und-dirk.de/superdry-sweatshirt-in-zwart-wit.html">Superdry Sweatshirt in Zwart / Wit</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€47,99</span> <span class="price-old">€146,99</span>
 </p>
 </div>
 </div>
@@ -628,43 +628,43 @@ $(document).ready(function() {
 <div id="powered">
 <div class="container">
 <div class="row">
-<div class="col-sm-12 col-md-12">
-      Copyright © 2022 <a href="//www.lydia-und-dirk.de" target="_blank">www.lydia-und-dirk.de</a> All Rights Reserved  
+<div class="col-sm-12 col-md-12">
+      Copyright © 2022 <a href="//www.lydia-und-dirk.de" target="_blank">www.lydia-und-dirk.de</a> All Rights Reserved  
       </div>
 </div>
 </div>
 </div>
 </footer>
 <script src="catalog/view/theme/unelectable/js/jquery.visible.min.js" type="text/javascript"></script>
-<script type="text/javascript">
-
-var win = $(window);
-
-var allMods = $("footer");
-
-allMods.each(function(i, el) {
-    
-  if ($(el).visible(true)) {
-    $(el).addClass("already-visible"); 
-  }
-  
-});
-
-win.scroll(function(event) {
-  
-  allMods.each(function(i, el) {
-    
-    var el = $(el);
-    
-    if (el.visible(true)) {
-      el.addClass("come-in"); 
-    } else {
-      el.removeClass("come-in already-visible");
-    }
-    
-  });
-  
-}); 
+<script type="text/javascript">
+
+var win = $(window);
+
+var allMods = $("footer");
+
+allMods.each(function(i, el) {
+    
+  if ($(el).visible(true)) {
+    $(el).addClass("already-visible"); 
+  }
+  
+});
+
+win.scroll(function(event) {
+  
+  allMods.each(function(i, el) {
+    
+    var el = $(el);
+    
+    if (el.visible(true)) {
+      el.addClass("come-in"); 
+    } else {
+      el.removeClass("come-in already-visible");
+    }
+    
+  });
+  
+}); 
 </script>
 <script src="catalog/view/theme/unelectable/js/jquery.easing-1.3.min.js" type="text/javascript"></script>
 <link href="catalog/view/theme/unelectable/js/quickview/fancybox/jquery.fancybox.css" property="stylesheet" rel="stylesheet">

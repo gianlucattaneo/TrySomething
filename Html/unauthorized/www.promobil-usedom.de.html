@@ -34,139 +34,139 @@
 <script src="catalog/view/theme/videotaping/js/cloud-zoom.js" type="text/javascript"></script>
 <link href="catalog/view/theme/videotaping/stylesheet/dcaccordion.css" property="stylesheet" rel="stylesheet" type="text/css">
 <script src="catalog/view/theme/videotaping/js/jquery.dcjqaccordion.js" type="text/javascript"></script>
-<style type="text/css">
-.mau_gb_CTA2{
-	margin:0%;
-	padding:0%;
-    position:relative;
-    display:inline-block;
-    color:#fff;
-    text-transform:uppercase;
-}
-.mau_gb_CTA2:after{
-	content:"";
-	margin:0% 0% 0% 0%;
-	border-bottom:1px solid;
-	position:absolute;
-	left:0;
-	right:0;
-	bottom:0;
-}
-.mau_gb_CTA2:hover:after{
-	margin:0% 0% 0% 0%;
-	border-bottom:3px solid;
-}
-.mau_gb_promo_container{
-    display:flex;
-    align-items:center;
-}
-#previous_arrow, 
-#next_arrow{
-    padding:0 1em;
-    cursor:pointer;
-    z-index:20;
-}
-#previous_arrow::before{
-    content:"\276e";
-}
-#next_arrow::before{
-    content:"\276f";
-}
-.mau_gb_promo_box{
-    width:100%;
-    overflow:hidden;
-}    
-#mau_gb_promo_slides{
-    position:relative;
-    display:flex;
-}
-.mau_gb_promo{
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    position:relative;
-    text-transform:uppercase;
-    opacity: 0;
-    z-index:10;
-    -webkit-transition:opacity 0.5s ease-in-out;
-    -moz-transition:opacity 0.5s ease-in-out;
-    -ms-transition:opacity 0.5s ease-in-out;
-    -o-transition:opacity 0.5s ease-in-out;
-    transition:opacity 0.5 ease-in-out;
-}
-.mau_gb_promo.fade{
-    opacity:1;
-    z-index:20;
-}
+<style type="text/css">
+.mau_gb_CTA2{
+	margin:0%;
+	padding:0%;
+    position:relative;
+    display:inline-block;
+    color:#fff;
+    text-transform:uppercase;
+}
+.mau_gb_CTA2:after{
+	content:"";
+	margin:0% 0% 0% 0%;
+	border-bottom:1px solid;
+	position:absolute;
+	left:0;
+	right:0;
+	bottom:0;
+}
+.mau_gb_CTA2:hover:after{
+	margin:0% 0% 0% 0%;
+	border-bottom:3px solid;
+}
+.mau_gb_promo_container{
+    display:flex;
+    align-items:center;
+}
+#previous_arrow, 
+#next_arrow{
+    padding:0 1em;
+    cursor:pointer;
+    z-index:20;
+}
+#previous_arrow::before{
+    content:"\276e";
+}
+#next_arrow::before{
+    content:"\276f";
+}
+.mau_gb_promo_box{
+    width:100%;
+    overflow:hidden;
+}    
+#mau_gb_promo_slides{
+    position:relative;
+    display:flex;
+}
+.mau_gb_promo{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    position:relative;
+    text-transform:uppercase;
+    opacity: 0;
+    z-index:10;
+    -webkit-transition:opacity 0.5s ease-in-out;
+    -moz-transition:opacity 0.5s ease-in-out;
+    -ms-transition:opacity 0.5s ease-in-out;
+    -o-transition:opacity 0.5s ease-in-out;
+    transition:opacity 0.5 ease-in-out;
+}
+.mau_gb_promo.fade{
+    opacity:1;
+    z-index:20;
+}
 </style>
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        console.log("DOM loaded");
-        const promos = document.getElementsByClassName("mau_gb_promo");
-        const promoBox = document.getElementById("mau_gb_promo_slides");
-        //intialize layout based on number of promos
-        promoBox.style.width = (promos.length * 100) + "%";
-        for (let i = 0; i < promos.length; i++) {  
-            promos[i].style.width = (100/promos.length) + "%";
-            promos[i].style.left = "-" + (i*100/promos.length) + "%";
-        }
-        //initialize first promo message
-        promos[0].classList.toggle('fade');
-        if (promos.length < 2) {
-            //hide arrows 
-            document.getElementById("next_arrow").style.display = "none";
-            document.getElementById("previous_arrow").style.display = "none";        
-        } else {
-            var promoInterval = setInterval(promoFade, 5000);
-            function promoFade(){
-                toggleNext();        
-            }
-        }                    
-        function toggleNext(){
-            for (let i = 0; i < promos.length; i++) {                
-                if (parseInt(window.getComputedStyle(promos[i]).getPropertyValue('opacity')) === 1) {
-                    promos[i].classList.toggle('fade');
-                    if (i+1 === promos.length) {
-                        promos[0].classList.toggle('fade');
-                    } else {
-                        promos[++i].classList.toggle('fade');    
-                    }
-                    break;  
-                };
-            };
-        }
-        function togglePrevious(){
-            for (let i = 0; i < promos.length; i++) {                
-                if (parseInt(window.getComputedStyle(promos[i]).getPropertyValue('opacity')) === 1) {
-                    promos[i].classList.toggle('fade');
-                    if (i === 0) {
-                        promos[promos.length - 1].classList.toggle('fade');
-                    } else {
-                        promos[--i].classList.toggle('fade');    
-                    }
-                    break;  
-                };
-            };
-        }
-        document.getElementById("next_arrow").addEventListener("click", function() {
-            console.log('Next promo clicked');            
-            //stop the interval
-            clearInterval(promoInterval);
-            //toggle to next message
-            toggleNext();
-            //restart the interval
-            promoInterval = setInterval(promoFade, 5000);
-        }); 
-        document.getElementById("previous_arrow").addEventListener("click", function() {
-            console.log('Previous promo clicked');
-            //stop the interval
-            clearInterval(promoInterval);
-            //toggle to next message
-            togglePrevious();
-            //restart the interval
-            promoInterval = setInterval(promoFade, 5000);
-        }); 
-    });
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        console.log("DOM loaded");
+        const promos = document.getElementsByClassName("mau_gb_promo");
+        const promoBox = document.getElementById("mau_gb_promo_slides");
+        //intialize layout based on number of promos
+        promoBox.style.width = (promos.length * 100) + "%";
+        for (let i = 0; i < promos.length; i++) {  
+            promos[i].style.width = (100/promos.length) + "%";
+            promos[i].style.left = "-" + (i*100/promos.length) + "%";
+        }
+        //initialize first promo message
+        promos[0].classList.toggle('fade');
+        if (promos.length < 2) {
+            //hide arrows 
+            document.getElementById("next_arrow").style.display = "none";
+            document.getElementById("previous_arrow").style.display = "none";        
+        } else {
+            var promoInterval = setInterval(promoFade, 5000);
+            function promoFade(){
+                toggleNext();        
+            }
+        }                    
+        function toggleNext(){
+            for (let i = 0; i < promos.length; i++) {                
+                if (parseInt(window.getComputedStyle(promos[i]).getPropertyValue('opacity')) === 1) {
+                    promos[i].classList.toggle('fade');
+                    if (i+1 === promos.length) {
+                        promos[0].classList.toggle('fade');
+                    } else {
+                        promos[++i].classList.toggle('fade');    
+                    }
+                    break;  
+                };
+            };
+        }
+        function togglePrevious(){
+            for (let i = 0; i < promos.length; i++) {                
+                if (parseInt(window.getComputedStyle(promos[i]).getPropertyValue('opacity')) === 1) {
+                    promos[i].classList.toggle('fade');
+                    if (i === 0) {
+                        promos[promos.length - 1].classList.toggle('fade');
+                    } else {
+                        promos[--i].classList.toggle('fade');    
+                    }
+                    break;  
+                };
+            };
+        }
+        document.getElementById("next_arrow").addEventListener("click", function() {
+            console.log('Next promo clicked');            
+            //stop the interval
+            clearInterval(promoInterval);
+            //toggle to next message
+            toggleNext();
+            //restart the interval
+            promoInterval = setInterval(promoFade, 5000);
+        }); 
+        document.getElementById("previous_arrow").addEventListener("click", function() {
+            console.log('Previous promo clicked');
+            //stop the interval
+            clearInterval(promoInterval);
+            //toggle to next message
+            togglePrevious();
+            //restart the interval
+            promoInterval = setInterval(promoFade, 5000);
+        }); 
+    });
 </script>
 </link></link></link></meta></head>
 <body class="common-home">
@@ -175,12 +175,12 @@
 <div id="sidebar-wrapper">
 <ul class="sidebar-nav list-group videotaping">
 <li class="sidebar-title">
-<a href="#menu-toggle-close" id="menu-toggle-close"><span aria-hidden="true">×</span></a>Information      <script>
-      $("#menu-toggle-close").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-		$(".sidebar-opacity").toggleClass("toggled");
-      });
+<a href="#menu-toggle-close" id="menu-toggle-close"><span aria-hidden="true">×</span></a>Information      <script>
+      $("#menu-toggle-close").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+		$(".sidebar-opacity").toggleClass("toggled");
+      });
       </script>
 </li>
 <li><a href="http://www.promobil-usedom.de/index.php?route=information/information&amp;information_id=7">FAQ</a></li>
@@ -244,12 +244,12 @@
 <span class="button-text">Menu</span>
 </div>
 </a>
-<script>
-        $("#menu-mobile-toggle").click(function(e) {
-          e.preventDefault();
-          $("#wrapper").toggleClass("menu-toggled");
-		  $(".sidebar-opacity").toggleClass("menu-toggled");
-        });
+<script>
+        $("#menu-mobile-toggle").click(function(e) {
+          e.preventDefault();
+          $("#wrapper").toggleClass("menu-toggled");
+		  $(".sidebar-opacity").toggleClass("menu-toggled");
+        });
       </script>
 <div class="btn-group btn-block buttons-header" id="cart">
 <a class="btn dropdown-toggle" data-loading-text="Chargement..." data-toggle="dropdown">
@@ -287,26 +287,26 @@
 </div>
 </div>
 </nav>
-<script type="text/javascript">
-$(document).ready(function() {
-	$('#accordion-mobile').dcAccordion({
-		disableLink: false,	
-		menuClose: false,
-		autoClose: true,
-		autoExpand: true,		
-		saveState: false
-	});
-});
+<script type="text/javascript">
+$(document).ready(function() {
+	$('#accordion-mobile').dcAccordion({
+		disableLink: false,	
+		menuClose: false,
+		autoClose: true,
+		autoExpand: true,		
+		saveState: false
+	});
+});
 </script>
 <div class="hidden-sm hidden-md hidden-lg" id="menu-mobile">
 <ul class="accordion sidebar-nav list-group" id="accordion-mobile">
 <li class="sidebar-title">
-<a href="#menu-mobile-toggle-close" id="menu-mobile-toggle-close"><span aria-hidden="true">×</span></a>Menu      <script>
-      $("#menu-mobile-toggle-close").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("menu-toggled");
-		$(".sidebar-opacity").toggleClass("menu-toggled");
-      });
+<a href="#menu-mobile-toggle-close" id="menu-mobile-toggle-close"><span aria-hidden="true">×</span></a>Menu      <script>
+      $("#menu-mobile-toggle-close").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("menu-toggled");
+		$(".sidebar-opacity").toggleClass("menu-toggled");
+      });
       </script>
 </li>
 <li><a href="http://www.promobil-usedom.de/">Accueil</a></li>
@@ -348,16 +348,16 @@ $(document).ready(function() {
 </div>
 <div style="display:none;"><script src="//js.users.51.la/21085533.js" type="text/javascript"></script><br/></div><div class="container">
 <div class="row"><column class="col-sm-3 hidden-xs" id="column-left">
-<script type="text/javascript">
-$(document).ready(function() {
-	$('#accordion-1').dcAccordion({
-		disableLink: false,	
-		menuClose: false,
-		autoClose: true,
-		autoExpand: true,		
-		saveState: false
-	});
-});
+<script type="text/javascript">
+$(document).ready(function() {
+	$('#accordion-1').dcAccordion({
+		disableLink: false,	
+		menuClose: false,
+		autoClose: true,
+		autoExpand: true,		
+		saveState: false
+	});
+});
 </script>
 <div class="panel panel-default panel-category">
 <div class="panel-heading">Catégories</div>
@@ -398,14 +398,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.promobil-usedom.de/paul-smith-gents-tailored-fit-jacket-blazer-dark-blue-hwzqdc8.html"><img alt="Paul Smith Gents Tailored Fit Jacket - Blazer Dark Blue hwZqDc8" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/promobilusedomde/paul-smith-gents-tailored-fit-jacket-blazer-dark-blue-hwzqdc8-4933.jpg" title="Paul Smith Gents Tailored Fit Jacket - Blazer Dark Blue hwZqDc8"/></a>
+<a class="arevision" href="http://www.promobil-usedom.de/sandqvist-harald-sac-a-dos-black-zhcz2hd.html"><img alt="Sandqvist Harald - Sac À Dos Black zhcZ2HD" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/promobilusedomde/sandqvist-harald-sac-a-dos-black-zhcz2hd-8389.jpg" title="Sandqvist Harald - Sac À Dos Black zhcZ2HD"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.promobil-usedom.de/paul-smith-gents-tailored-fit-jacket-blazer-dark-blue-hwzqdc8.html">Paul Smith Gents Tailored Fit Jacket - Blazer Dark Blue hwZqDc8</a></h4></div>
+<div class="name"><h4><a href="http://www.promobil-usedom.de/sandqvist-harald-sac-a-dos-black-zhcz2hd.html">Sandqvist Harald - Sac À Dos Black zhcZ2HD</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€39,99</span> <span class="price-old">€169,59</span>
+<span class="price-new">€40,99</span> <span class="price-old">€168,99</span>
 </p>
 </div>
 </div>
@@ -414,14 +414,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.promobil-usedom.de/peak-performance-vislight-mid-jacket-veste-de-survetement-alpine-tundra-zfyhfey.html"><img alt="Peak Performance Vislight Mid Jacket - Veste De Survêtement Alpine Tundra ZFyHfey" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/promobilusedomde/peak-performance-vislight-mid-jacket-veste-de-survetement-alpine-tundra-zfyhfey-3716.jpg" title="Peak Performance Vislight Mid Jacket - Veste De Survêtement Alpine Tundra ZFyHfey"/></a>
+<a class="arevision" href="http://www.promobil-usedom.de/michael-kors-allie-trainer-extreme-baskets-basses-light-grey-h0fwham.html"><img alt="Michael Kors Allie Trainer Extreme - Baskets Basses Light Grey h0Fwham" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/promobilusedomde/michael-kors-allie-trainer-extreme-baskets-basses-light-grey-h0fwham-5727.jpg" title="Michael Kors Allie Trainer Extreme - Baskets Basses Light Grey h0Fwham"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.promobil-usedom.de/peak-performance-vislight-mid-jacket-veste-de-survetement-alpine-tundra-zfyhfey.html">Peak Performance Vislight Mid Jacket - Veste De Survêtement Alpine Tundra ZFyHfey</a></h4></div>
+<div class="name"><h4><a href="http://www.promobil-usedom.de/michael-kors-allie-trainer-extreme-baskets-basses-light-grey-h0fwham.html">Michael Kors Allie Trainer Extreme - Baskets Basses Light Grey h0Fwham</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€39,99</span> <span class="price-old">€168,69</span>
+<span class="price-new">€49,99</span> <span class="price-old">€176,49</span>
 </p>
 </div>
 </div>
@@ -430,14 +430,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.promobil-usedom.de/miista-araxie-mules-black-yxyoaqj.html"><img alt="Miista Araxie - Mules Black yxyOaqj" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/promobilusedomde/miista-araxie-mules-black-yxyoaqj-6244.jpg" title="Miista Araxie - Mules Black yxyOaqj"/></a>
+<a class="arevision" href="http://www.promobil-usedom.de/esprit-mit-blockstreifen-maillot-de-bain-light-khaki-ooidnf2.html"><img alt="Esprit Mit Blockstreifen - Maillot De Bain Light Khaki OOIDnF2" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/promobilusedomde/esprit-mit-blockstreifen-maillot-de-bain-light-khaki-ooidnf2-410.jpg" title="Esprit Mit Blockstreifen - Maillot De Bain Light Khaki OOIDnF2"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.promobil-usedom.de/miista-araxie-mules-black-yxyoaqj.html">Miista Araxie - Mules Black yxyOaqj</a></h4></div>
+<div class="name"><h4><a href="http://www.promobil-usedom.de/esprit-mit-blockstreifen-maillot-de-bain-light-khaki-ooidnf2.html">Esprit Mit Blockstreifen - Maillot De Bain Light Khaki OOIDnF2</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€49,99</span> <span class="price-old">€169,59</span>
+<span class="price-new">€41,99</span> <span class="price-old">€178,69</span>
 </p>
 </div>
 </div>
@@ -446,14 +446,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.promobil-usedom.de/cinque-cibrody-pantalon-classique-grey-q1rjqyr.html"><img alt="Cinque Cibrody - Pantalon Classique Grey q1RjQyr" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/promobilusedomde/cinque-cibrody-pantalon-classique-grey-q1rjqyr-5067.jpg" title="Cinque Cibrody - Pantalon Classique Grey q1RjQyr"/></a>
+<a class="arevision" href="http://www.promobil-usedom.de/nike-sportswear-sweatshirt-team-red-3cgzfvu.html"><img alt="Nike Sportswear Sweatshirt - Team Red 3CGZFvu" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/promobilusedomde/nike-sportswear-sweatshirt-team-red-3cgzfvu-3062.jpg" title="Nike Sportswear Sweatshirt - Team Red 3CGZFvu"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.promobil-usedom.de/cinque-cibrody-pantalon-classique-grey-q1rjqyr.html">Cinque Cibrody - Pantalon Classique Grey q1RjQyr</a></h4></div>
+<div class="name"><h4><a href="http://www.promobil-usedom.de/nike-sportswear-sweatshirt-team-red-3cgzfvu.html">Nike Sportswear Sweatshirt - Team Red 3CGZFvu</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€42,99</span> <span class="price-old">€178,49</span>
+<span class="price-new">€38,99</span> <span class="price-old">€178,99</span>
 </p>
 </div>
 </div>
@@ -462,14 +462,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.promobil-usedom.de/dreimaster-pullover-dark-grey-melange-j4udjyo.html"><img alt="Dreimaster Pullover - Dark Grey Melange J4uDjYO" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/promobilusedomde/dreimaster-pullover-dark-grey-melange-j4udjyo-5001.jpg" title="Dreimaster Pullover - Dark Grey Melange J4uDjYO"/></a>
+<a class="arevision" href="http://www.promobil-usedom.de/camper-ballerines-black-9wtzj27.html"><img alt="Camper Ballerines - Black 9WTzJ27" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/promobilusedomde/camper-ballerines-black-9wtzj27-6599.jpg" title="Camper Ballerines - Black 9WTzJ27"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.promobil-usedom.de/dreimaster-pullover-dark-grey-melange-j4udjyo.html">Dreimaster Pullover - Dark Grey Melange J4uDjYO</a></h4></div>
+<div class="name"><h4><a href="http://www.promobil-usedom.de/camper-ballerines-black-9wtzj27.html">Camper Ballerines - Black 9WTzJ27</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€37,99</span> <span class="price-old">€176,59</span>
+<span class="price-new">€48,99</span> <span class="price-old">€176,59</span>
 </p>
 </div>
 </div>
@@ -478,14 +478,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.promobil-usedom.de/samsoe-pamela-skirt-jupe-en-jean-black-bas10ai.html"><img alt="Samsøe Pamela Skirt - Jupe En Jean Black bAS10Ai" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/promobilusedomde/samsoe-pamela-skirt-jupe-en-jean-black-bas10ai-1677.jpg" title="Samsøe Pamela Skirt - Jupe En Jean Black bAS10Ai"/></a>
+<a class="arevision" href="http://www.promobil-usedom.de/persona-by-marina-rinaldi-reale-jeans-skinny-bianco-2g7nzgs.html"><img alt="Persona By Marina Rinaldi Reale - Jeans Skinny Bianco 2g7nZGs" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/promobilusedomde/persona-by-marina-rinaldi-reale-jeans-skinny-bianco-2g7nzgs-394.jpg" title="Persona By Marina Rinaldi Reale - Jeans Skinny Bianco 2g7nZGs"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.promobil-usedom.de/samsoe-pamela-skirt-jupe-en-jean-black-bas10ai.html">Samsøe Pamela Skirt - Jupe En Jean Black bAS10Ai</a></h4></div>
+<div class="name"><h4><a href="http://www.promobil-usedom.de/persona-by-marina-rinaldi-reale-jeans-skinny-bianco-2g7nzgs.html">Persona By Marina Rinaldi Reale - Jeans Skinny Bianco 2g7nZGs</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€37,99</span> <span class="price-old">€169,59</span>
+<span class="price-new">€39,99</span> <span class="price-old">€178,49</span>
 </p>
 </div>
 </div>
@@ -502,14 +502,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.promobil-usedom.de/camper-sandales-black-lpnmspd.html"><img alt="Camper Sandales - Black lPNMSPd" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/promobilusedomde/camper-sandales-black-lpnmspd-6502.jpg" title="Camper Sandales - Black lPNMSPd"/></a>
+<a class="arevision" href="http://www.promobil-usedom.de/calvin-klein-jeans-embroidery-tipping-hoodie-sweat-a-capuche-white-grey-heather-tsgfhca.html"><img alt="Calvin Klein Jeans Embroidery Tipping Hoodie - Sweat À Capuche White/grey Heather TsgFhcA" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/promobilusedomde/calvin-klein-jeans-embroidery-tipping-hoodie-sweat-a-capuche-white-grey-heather-tsgfhca-1187.jpg" title="Calvin Klein Jeans Embroidery Tipping Hoodie - Sweat À Capuche White/grey Heather TsgFhcA"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.promobil-usedom.de/camper-sandales-black-lpnmspd.html">Camper Sandales - Black lPNMSPd</a></h4></div>
+<div class="name"><h4><a href="http://www.promobil-usedom.de/calvin-klein-jeans-embroidery-tipping-hoodie-sweat-a-capuche-white-grey-heather-tsgfhca.html">Calvin Klein Jeans Embroidery Tipping Hoodie - Sweat À Capuche White/grey Heather TsgFhcA</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€44,99</span> <span class="price-old">€176,49</span>
+<span class="price-new">€41,99</span> <span class="price-old">€178,89</span>
 </p>
 </div>
 </div>
@@ -518,14 +518,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.promobil-usedom.de/inwear-pullover-blue-serenity-3lrjstd.html"><img alt="Inwear Pullover - Blue Serenity 3lrJSTD" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/promobilusedomde/inwear-pullover-blue-serenity-3lrjstd-548.jpg" title="Inwear Pullover - Blue Serenity 3lrJSTD"/></a>
+<a class="arevision" href="http://www.promobil-usedom.de/the-north-face-mens-glacier-snap-neck-sweat-polaire-lemon-black-ohckdw0.html"><img alt="The North Face Mens Glacier Snap Neck - Sweat Polaire Lemon/black ohcKDw0" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/promobilusedomde/the-north-face-mens-glacier-snap-neck-sweat-polaire-lemon-black-ohckdw0-3579.jpg" title="The North Face Mens Glacier Snap Neck - Sweat Polaire Lemon/black ohcKDw0"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.promobil-usedom.de/inwear-pullover-blue-serenity-3lrjstd.html">Inwear Pullover - Blue Serenity 3lrJSTD</a></h4></div>
+<div class="name"><h4><a href="http://www.promobil-usedom.de/the-north-face-mens-glacier-snap-neck-sweat-polaire-lemon-black-ohckdw0.html">The North Face Mens Glacier Snap Neck - Sweat Polaire Lemon/black ohcKDw0</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€39,99</span> <span class="price-old">€176,69</span>
+<span class="price-new">€38,99</span> <span class="price-old">€168,89</span>
 </p>
 </div>
 </div>
@@ -534,14 +534,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.promobil-usedom.de/oysho-combinaison-dark-blue-mmohd9c.html"><img alt="Oysho Combinaison - Dark Blue MmOhd9C" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/promobilusedomde/oysho-combinaison-dark-blue-mmohd9c-602.jpg" title="Oysho Combinaison - Dark Blue MmOhd9C"/></a>
+<a class="arevision" href="http://www.promobil-usedom.de/pulz-pzrosita-jeans-skinny-light-blue-ftg3h5b.html"><img alt="Pulz Pzrosita - Jeans Skinny Light Blue ftG3H5b" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/promobilusedomde/pulz-pzrosita-jeans-skinny-light-blue-ftg3h5b-2605.jpg" title="Pulz Pzrosita - Jeans Skinny Light Blue ftG3H5b"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.promobil-usedom.de/oysho-combinaison-dark-blue-mmohd9c.html">Oysho Combinaison - Dark Blue MmOhd9C</a></h4></div>
+<div class="name"><h4><a href="http://www.promobil-usedom.de/pulz-pzrosita-jeans-skinny-light-blue-ftg3h5b.html">Pulz Pzrosita - Jeans Skinny Light Blue ftG3H5b</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€41,99</span> <span class="price-old">€168,69</span>
+<span class="price-new">€42,99</span> <span class="price-old">€176,89</span>
 </p>
 </div>
 </div>
@@ -550,14 +550,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.promobil-usedom.de/tom-tailor-short-deep-black-ny8lx5s.html"><img alt="Tom Tailor Short - Deep Black nY8LX5s" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/promobilusedomde/tom-tailor-short-deep-black-ny8lx5s-665.jpg" title="Tom Tailor Short - Deep Black nY8LX5s"/></a>
+<a class="arevision" href="http://www.promobil-usedom.de/versace-jeans-couture-big-print-back-jean-boyfriend-indigo-seqlppd.html"><img alt="Versace Jeans Couture Big Print Back - Jean Boyfriend Indigo seqLpPd" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/promobilusedomde/versace-jeans-couture-big-print-back-jean-boyfriend-indigo-seqlppd-4682.jpg" title="Versace Jeans Couture Big Print Back - Jean Boyfriend Indigo seqLpPd"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.promobil-usedom.de/tom-tailor-short-deep-black-ny8lx5s.html">Tom Tailor Short - Deep Black nY8LX5s</a></h4></div>
+<div class="name"><h4><a href="http://www.promobil-usedom.de/versace-jeans-couture-big-print-back-jean-boyfriend-indigo-seqlppd.html">Versace Jeans Couture Big Print Back - Jean Boyfriend Indigo seqLpPd</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€42,99</span> <span class="price-old">€176,59</span>
+<span class="price-new">€40,99</span> <span class="price-old">€176,59</span>
 </p>
 </div>
 </div>
@@ -566,27 +566,11 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.promobil-usedom.de/jost-beutel-sac-a-dos-olive-d0r9oi3.html"><img alt="Jost Beutel - Sac À Dos Olive d0R9oI3" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/promobilusedomde/jost-beutel-sac-a-dos-olive-d0r9oi3-8373.jpg" title="Jost Beutel - Sac À Dos Olive d0R9oI3"/></a>
+<a class="arevision" href="http://www.promobil-usedom.de/pepe-jeans-piccadilly-7-8-jean-bootcut-denim-i7gkrcx.html"><img alt="Pepe Jeans Piccadilly 7/8 - Jean Bootcut Denim I7GkrCx" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/promobilusedomde/pepe-jeans-piccadilly-7-8-jean-bootcut-denim-i7gkrcx-450.jpg" title="Pepe Jeans Piccadilly 7/8 - Jean Bootcut Denim I7GkrCx"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.promobil-usedom.de/jost-beutel-sac-a-dos-olive-d0r9oi3.html">Jost Beutel - Sac À Dos Olive d0R9oI3</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€41,99</span> <span class="price-old">€178,69</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.promobil-usedom.de/adidas-originals-stripes-wrap-tracksuit-bottoms-pantalon-de-survetement-blue-lwt2h7i.html"><img alt="Adidas Originals Stripes Wrap Tracksuit Bottoms - Pantalon De Survêtement Blue LWt2H7I" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/promobilusedomde/adidas-originals-stripes-wrap-tracksuit-bottoms-pantalon-de-survetement-blue-lwt2h7i-4067.jpg" title="Adidas Originals Stripes Wrap Tracksuit Bottoms - Pantalon De Survêtement Blue LWt2H7I"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="http://www.promobil-usedom.de/adidas-originals-stripes-wrap-tracksuit-bottoms-pantalon-de-survetement-blue-lwt2h7i.html">Adidas Originals Stripes Wrap Tracksuit Bottoms - Pantalon De Survêtement Blue LWt2H7I</a></h4></div>
+<div class="name"><h4><a href="http://www.promobil-usedom.de/pepe-jeans-piccadilly-7-8-jean-bootcut-denim-i7gkrcx.html">Pepe Jeans Piccadilly 7/8 - Jean Bootcut Denim I7GkrCx</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
 <span class="price-new">€39,99</span> <span class="price-old">€176,89</span>
@@ -598,14 +582,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.promobil-usedom.de/dkny-bryant-camera-bag-sutton-sac-bandouliere-black-goldcoloured-iczlvec.html"><img alt="Dkny Bryant Camera Bag Sutton - Sac Bandoulière Black/gold-coloured IczlVec" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/promobilusedomde/dkny-bryant-camera-bag-sutton-sac-bandouliere-black-goldcoloured-iczlvec-7829.jpg" title="Dkny Bryant Camera Bag Sutton - Sac Bandoulière Black/gold-coloured IczlVec"/></a>
+<a class="arevision" href="http://www.promobil-usedom.de/studio-id-greta-dress-robe-dete-black-spots-ivuv0ua.html"><img alt="Studio Id Greta Dress - Robe D'été Black Spots ivUV0Ua" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/promobilusedomde/studio-id-greta-dress-robe-dete-black-spots-ivuv0ua-314.jpg" title="Studio Id Greta Dress - Robe D'été Black Spots ivUV0Ua"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.promobil-usedom.de/dkny-bryant-camera-bag-sutton-sac-bandouliere-black-goldcoloured-iczlvec.html">Dkny Bryant Camera Bag Sutton - Sac Bandoulière Black/gold-coloured IczlVec</a></h4></div>
+<div class="name"><h4><a href="http://www.promobil-usedom.de/studio-id-greta-dress-robe-dete-black-spots-ivuv0ua.html">Studio Id Greta Dress - Robe D'été Black Spots ivUV0Ua</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€42,99</span> <span class="price-old">€178,99</span>
+<span class="price-new">€41,99</span> <span class="price-old">€168,49</span>
 </p>
 </div>
 </div>
@@ -614,14 +598,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.promobil-usedom.de/levis-classic-camper-chemise-blue-gv5a1wk.html"><img alt="Levi's® Classic Camper - Chemise Blue gV5A1wk" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/promobilusedomde/levis-classic-camper-chemise-blue-gv5a1wk-3046.jpg" title="Levi's® Classic Camper - Chemise Blue gV5A1wk"/></a>
+<a class="arevision" href="http://www.promobil-usedom.de/adidas-originals-sweat-a-capuche-dark-red-gjv9ouu.html"><img alt="Adidas Originals Sweat À Capuche - Dark Red gjV9OUU" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/promobilusedomde/adidas-originals-sweat-a-capuche-dark-red-gjv9ouu-3217.jpg" title="Adidas Originals Sweat À Capuche - Dark Red gjV9OUU"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.promobil-usedom.de/levis-classic-camper-chemise-blue-gv5a1wk.html">Levi's® Classic Camper - Chemise Blue gV5A1wk</a></h4></div>
+<div class="name"><h4><a href="http://www.promobil-usedom.de/adidas-originals-sweat-a-capuche-dark-red-gjv9ouu.html">Adidas Originals Sweat À Capuche - Dark Red gjV9OUU</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€42,99</span> <span class="price-old">€178,99</span>
+<span class="price-new">€39,99</span> <span class="price-old">€178,89</span>
 </p>
 </div>
 </div>
@@ -630,14 +614,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.promobil-usedom.de/samoon-blouse-peacock-blue-gemustert-rscwond.html"><img alt="Samoon Blouse - Peacock Blue Gemustert RSCWOND" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/promobilusedomde/samoon-blouse-peacock-blue-gemustert-rscwond-1920.jpg" title="Samoon Blouse - Peacock Blue Gemustert RSCWOND"/></a>
+<a class="arevision" href="http://www.promobil-usedom.de/evenampodd-leather-sandales-a-talons-hauts-cognac-uw0zxc8.html"><img alt="Even&amp;odd Leather - Sandales À Talons Hauts Cognac Uw0zXc8" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/promobilusedomde/evenampodd-leather-sandales-a-talons-hauts-cognac-uw0zxc8-6118.jpg" title="Even&amp;odd Leather - Sandales À Talons Hauts Cognac Uw0zXc8"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.promobil-usedom.de/samoon-blouse-peacock-blue-gemustert-rscwond.html">Samoon Blouse - Peacock Blue Gemustert RSCWOND</a></h4></div>
+<div class="name"><h4><a href="http://www.promobil-usedom.de/evenampodd-leather-sandales-a-talons-hauts-cognac-uw0zxc8.html">Even&amp;odd Leather - Sandales À Talons Hauts Cognac Uw0zXc8</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€38,99</span> <span class="price-old">€176,59</span>
+<span class="price-new">€49,99</span> <span class="price-old">€169,89</span>
 </p>
 </div>
 </div>
@@ -646,14 +630,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.promobil-usedom.de/jordan-air-og-damenschuh-baskets-montantes-black-white-white-hv0kz2u.html"><img alt="Jordan Air Og Damenschuh - Baskets Montantes Black/white/white hv0KZ2U" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/promobilusedomde/jordan-air-og-damenschuh-baskets-montantes-black-white-white-hv0kz2u-5762.jpg" title="Jordan Air Og Damenschuh - Baskets Montantes Black/white/white hv0KZ2U"/></a>
+<a class="arevision" href="http://www.promobil-usedom.de/lk-bennett-wren-robe-fourreau-midnight-svqnznd.html"><img alt="Lk Bennett Wren - Robe Fourreau Midnight sVQnZnD" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/promobilusedomde/lk-bennett-wren-robe-fourreau-midnight-svqnznd-1139.jpg" title="Lk Bennett Wren - Robe Fourreau Midnight sVQnZnD"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.promobil-usedom.de/jordan-air-og-damenschuh-baskets-montantes-black-white-white-hv0kz2u.html">Jordan Air Og Damenschuh - Baskets Montantes Black/white/white hv0KZ2U</a></h4></div>
+<div class="name"><h4><a href="http://www.promobil-usedom.de/lk-bennett-wren-robe-fourreau-midnight-svqnznd.html">Lk Bennett Wren - Robe Fourreau Midnight sVQnZnD</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€46,99</span> <span class="price-old">€176,89</span>
+<span class="price-new">€41,99</span> <span class="price-old">€176,59</span>
 </p>
 </div>
 </div>
@@ -662,14 +646,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.promobil-usedom.de/lindbergh-mandarin-collar-shirt-chemise-white-0v7rxhn.html"><img alt="Lindbergh Mandarin Collar Shirt - Chemise White 0V7RxHn" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/promobilusedomde/lindbergh-mandarin-collar-shirt-chemise-white-0v7rxhn-3295.jpg" title="Lindbergh Mandarin Collar Shirt - Chemise White 0V7RxHn"/></a>
+<a class="arevision" href="http://www.promobil-usedom.de/merrell-mqm-flex-2-gtx-chaussures-de-marche-black-guvkjfv.html"><img alt="Merrell Mqm Flex 2 Gtx - Chaussures De Marche Black GUVkjFv" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/promobilusedomde/merrell-mqm-flex-2-gtx-chaussures-de-marche-black-guvkjfv-7546.jpg" title="Merrell Mqm Flex 2 Gtx - Chaussures De Marche Black GUVkjFv"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.promobil-usedom.de/lindbergh-mandarin-collar-shirt-chemise-white-0v7rxhn.html">Lindbergh Mandarin Collar Shirt - Chemise White 0V7RxHn</a></h4></div>
+<div class="name"><h4><a href="http://www.promobil-usedom.de/merrell-mqm-flex-2-gtx-chaussures-de-marche-black-guvkjfv.html">Merrell Mqm Flex 2 Gtx - Chaussures De Marche Black GUVkjFv</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€37,99</span> <span class="price-old">€168,69</span>
+<span class="price-new">€47,99</span> <span class="price-old">€178,89</span>
 </p>
 </div>
 </div>
@@ -678,14 +662,30 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.promobil-usedom.de/desigual-camcornac-chemise-yellow-ub0vzkw.html"><img alt="Desigual Cam_cornac - Chemise Yellow UB0VZkW" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/promobilusedomde/desigual-camcornac-chemise-yellow-ub0vzkw-5488.jpg" title="Desigual Cam_cornac - Chemise Yellow UB0VZkW"/></a>
+<a class="arevision" href="http://www.promobil-usedom.de/les-tropeziennes-par-m-belarbi-batress-sandales-blanc-fcqwqi8.html"><img alt="Les Tropéziennes Par M Belarbi Batress - Sandales Blanc fCQWQI8" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/promobilusedomde/les-tropeziennes-par-mx-belarbi-batress-sandales-blanc-fcqwqi8-5558.jpg" title="Les Tropéziennes Par M Belarbi Batress - Sandales Blanc fCQWQI8"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.promobil-usedom.de/desigual-camcornac-chemise-yellow-ub0vzkw.html">Desigual Cam_cornac - Chemise Yellow UB0VZkW</a></h4></div>
+<div class="name"><h4><a href="http://www.promobil-usedom.de/les-tropeziennes-par-m-belarbi-batress-sandales-blanc-fcqwqi8.html">Les Tropéziennes Par M Belarbi Batress - Sandales Blanc fCQWQI8</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€39,99</span> <span class="price-old">€169,59</span>
+<span class="price-new">€44,99</span> <span class="price-old">€176,89</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="http://www.promobil-usedom.de/les-deux-brenon-tshirt-basique-dark-navy-syvxkwg.html"><img alt="Les Deux Brenon - T-shirt Basique Dark Navy syVxKWg" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/promobilusedomde/les-deux-brenon-tshirt-basique-dark-navy-syvxkwg-4811.jpg" title="Les Deux Brenon - T-shirt Basique Dark Navy syVxKWg"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="http://www.promobil-usedom.de/les-deux-brenon-tshirt-basique-dark-navy-syvxkwg.html">Les Deux Brenon - T-shirt Basique Dark Navy syVxKWg</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€37,99</span> <span class="price-old">€168,89</span>
 </p>
 </div>
 </div>
@@ -721,43 +721,43 @@ $(document).ready(function() {
 <div id="powered">
 <div class="container">
 <div class="row">
-<div class="col-sm-12 col-md-12">
-      Copyright © 2022 <a href="//www.promobil-usedom.de" target="_blank">www.promobil-usedom.de</a> All Rights Reserved  
+<div class="col-sm-12 col-md-12">
+      Copyright © 2022 <a href="//www.promobil-usedom.de" target="_blank">www.promobil-usedom.de</a> All Rights Reserved  
       </div>
 </div>
 </div>
 </div>
 </footer>
 <script src="catalog/view/theme/videotaping/js/jquery.visible.min.js" type="text/javascript"></script>
-<script type="text/javascript">
-
-var win = $(window);
-
-var allMods = $("footer");
-
-allMods.each(function(i, el) {
-    
-  if ($(el).visible(true)) {
-    $(el).addClass("already-visible"); 
-  }
-  
-});
-
-win.scroll(function(event) {
-  
-  allMods.each(function(i, el) {
-    
-    var el = $(el);
-    
-    if (el.visible(true)) {
-      el.addClass("come-in"); 
-    } else {
-      el.removeClass("come-in already-visible");
-    }
-    
-  });
-  
-}); 
+<script type="text/javascript">
+
+var win = $(window);
+
+var allMods = $("footer");
+
+allMods.each(function(i, el) {
+    
+  if ($(el).visible(true)) {
+    $(el).addClass("already-visible"); 
+  }
+  
+});
+
+win.scroll(function(event) {
+  
+  allMods.each(function(i, el) {
+    
+    var el = $(el);
+    
+    if (el.visible(true)) {
+      el.addClass("come-in"); 
+    } else {
+      el.removeClass("come-in already-visible");
+    }
+    
+  });
+  
+}); 
 </script>
 <script src="catalog/view/theme/videotaping/js/jquery.easing-1.3.min.js" type="text/javascript"></script>
 <link href="catalog/view/theme/videotaping/js/quickview/fancybox/jquery.fancybox.css" property="stylesheet" rel="stylesheet">

@@ -34,83 +34,83 @@
 <script src="catalog/view/theme/notion/js/cloud-zoom.js" type="text/javascript"></script>
 <link href="catalog/view/theme/notion/stylesheet/dcaccordion.css" property="stylesheet" rel="stylesheet" type="text/css">
 <script src="catalog/view/theme/notion/js/jquery.dcjqaccordion.js" type="text/javascript"></script>
-<script type="text/javascript">
-      // Set default flag for the header bag feature and make sure they are booleans
-      var bagPeekFeature = "true" === 'true';
-      var courtesyNavFeature = "true" === 'true';
-      var expressInsider = "true" === 'true';
-      var mentionMe = "true" === 'true';
-      var captcha = "true" === 'true';
-      var alwaysCaptcha = "true" === 'true';
-      var profileComplete = "false" === 'true';
-      var freeShippingAndReturns = "true" === 'true';
-      var memberWallet = "true" === 'true';
-      var newTiers = "false" === 'true';
-      var EccHolderFlag = "false" === 'true';
-
-      window['FLAGS'] = { "BagPeek": bagPeekFeature, "CourtesyNav": courtesyNavFeature, "ExpressInsider": expressInsider, "MentionMe": mentionMe, "Captcha": captcha, "AlwaysCaptcha": alwaysCaptcha, "ProfileComplete": profileComplete,
-      "FreeShippingAndReturns": freeShippingAndReturns, "MemberWallet": memberWallet,
-      "NewTiers": newTiers, "EccHolderFlag": EccHolderFlag };
-
-      // Eva Script
-      !function(n,t){"object"==typeof exports&&"undefined"!=typeof module?module.exports=t():"function"==typeof define&&define.amd?define(t):n.Eva=t()}(this,function(){"use strict";var n=function(){var n=[];return this.get=function(t){for(var i=n.length;i--;)if(n[i].key===t)return n[i].value;return null}.bind(this),this.find=function(t){for(var i=n.length;i--;)if(n[i].key===t)return n[i];return null},this.set=function(t,i){var e=this.find(t);return e?e.value=i:n.push({key:t,value:i}),e?e.value:n[n.length-1].value}.bind(this),function(){return this}.call(this)},t=function(n){return function(n){if(window.Eva){var t=n.campaign,i=n.experience;(function(n){return n?"string"==typeof n||(console.error("Target `campaign` property should be a valid String."),!1):(console.error("Missing `campaign` property from Target campaign."),!1)})(t)&&function(n){return n?n instanceof Object&&n.constructor===Object||(console.error("Target `experience` property should be a valid JavaScript Object."),!1):(console.error("Missing `experience` property and date from Target campaign."),!1)}(i)&&window.Eva.campaign(t,i)}}.call(this,n)},i=function(n,t,i){var e={active:!1,data:null,listeners:[],name:null,scope:window},r=function(){this.active=!0,this.data=arguments,window.isDebugMode&&console.log("EVA.trigger",this);for(var n=this.listeners.pop();n;)"function"==typeof n&&n.apply(this.scope,arguments),n=this.listeners.pop()};return this.add=function(n){return"function"==typeof n&&e.listeners.push(n),this},this.data=function(){return e.data},this.isActive=function(){return e.active},function(n,t,i){return e.name=n,t&&(e.scope=t),this.add(i),e.scope.addEventListener&&e.scope.addEventListener(n,r.bind(e)),this}.call(this,n,t,i)};return new function(){window.Hash=n,window.Audience=t;var e=new Hash,r={},s={},o=function(n){var t=e.get(n);return t||e.set(n,{})},a=i;return this.listen=function(n,t,i){i=i||window;var e=o(i);if(e[n]){var r=e[n];r.isActive()?"function"==typeof t&&t.apply(i,r.data()):r.add(t)}else e[n]=new a(n,i,t)}.bind(this),this.signal=function(n,t,i){this.trigger.call(this,n,t,i)}.bind(this),this.trigger=function(n,t,i){t=t||window;o(t)[n]||this.capture(n,t),t.dispatchEvent(new CustomEvent(n,{detail:i})),window.isDebugMode&&console.log("EVA.signal",i)}.bind(this),this.capture=function(n,t){t=t||window;var i=o(t);i[n]||(i[n]=new a(n,t))}.bind(this),this.subscribe=function(n,t){r[n]||(r[n]=[]),t&&r[n].push(t)},this.unsubscribe=function(n,t){if(r[n])for(var i=r[n],e=i.length;e--;)i[e]===t&&array.splice(e,1)},this.publish=function(n,t){var i=r[n];if(i)for(var e=i.length;e--;)i[e](t)},this.campaign=function(n,t){s[n]=t,this.publish("audience",{name:n,experience:t})},this.campaigns=function(){return s},function(){return this}.call(this)}});
+<script type="text/javascript">
+      // Set default flag for the header bag feature and make sure they are booleans
+      var bagPeekFeature = "true" === 'true';
+      var courtesyNavFeature = "true" === 'true';
+      var expressInsider = "true" === 'true';
+      var mentionMe = "true" === 'true';
+      var captcha = "true" === 'true';
+      var alwaysCaptcha = "true" === 'true';
+      var profileComplete = "false" === 'true';
+      var freeShippingAndReturns = "true" === 'true';
+      var memberWallet = "true" === 'true';
+      var newTiers = "false" === 'true';
+      var EccHolderFlag = "false" === 'true';
+
+      window['FLAGS'] = { "BagPeek": bagPeekFeature, "CourtesyNav": courtesyNavFeature, "ExpressInsider": expressInsider, "MentionMe": mentionMe, "Captcha": captcha, "AlwaysCaptcha": alwaysCaptcha, "ProfileComplete": profileComplete,
+      "FreeShippingAndReturns": freeShippingAndReturns, "MemberWallet": memberWallet,
+      "NewTiers": newTiers, "EccHolderFlag": EccHolderFlag };
+
+      // Eva Script
+      !function(n,t){"object"==typeof exports&&"undefined"!=typeof module?module.exports=t():"function"==typeof define&&define.amd?define(t):n.Eva=t()}(this,function(){"use strict";var n=function(){var n=[];return this.get=function(t){for(var i=n.length;i--;)if(n[i].key===t)return n[i].value;return null}.bind(this),this.find=function(t){for(var i=n.length;i--;)if(n[i].key===t)return n[i];return null},this.set=function(t,i){var e=this.find(t);return e?e.value=i:n.push({key:t,value:i}),e?e.value:n[n.length-1].value}.bind(this),function(){return this}.call(this)},t=function(n){return function(n){if(window.Eva){var t=n.campaign,i=n.experience;(function(n){return n?"string"==typeof n||(console.error("Target `campaign` property should be a valid String."),!1):(console.error("Missing `campaign` property from Target campaign."),!1)})(t)&&function(n){return n?n instanceof Object&&n.constructor===Object||(console.error("Target `experience` property should be a valid JavaScript Object."),!1):(console.error("Missing `experience` property and date from Target campaign."),!1)}(i)&&window.Eva.campaign(t,i)}}.call(this,n)},i=function(n,t,i){var e={active:!1,data:null,listeners:[],name:null,scope:window},r=function(){this.active=!0,this.data=arguments,window.isDebugMode&&console.log("EVA.trigger",this);for(var n=this.listeners.pop();n;)"function"==typeof n&&n.apply(this.scope,arguments),n=this.listeners.pop()};return this.add=function(n){return"function"==typeof n&&e.listeners.push(n),this},this.data=function(){return e.data},this.isActive=function(){return e.active},function(n,t,i){return e.name=n,t&&(e.scope=t),this.add(i),e.scope.addEventListener&&e.scope.addEventListener(n,r.bind(e)),this}.call(this,n,t,i)};return new function(){window.Hash=n,window.Audience=t;var e=new Hash,r={},s={},o=function(n){var t=e.get(n);return t||e.set(n,{})},a=i;return this.listen=function(n,t,i){i=i||window;var e=o(i);if(e[n]){var r=e[n];r.isActive()?"function"==typeof t&&t.apply(i,r.data()):r.add(t)}else e[n]=new a(n,i,t)}.bind(this),this.signal=function(n,t,i){this.trigger.call(this,n,t,i)}.bind(this),this.trigger=function(n,t,i){t=t||window;o(t)[n]||this.capture(n,t),t.dispatchEvent(new CustomEvent(n,{detail:i})),window.isDebugMode&&console.log("EVA.signal",i)}.bind(this),this.capture=function(n,t){t=t||window;var i=o(t);i[n]||(i[n]=new a(n,t))}.bind(this),this.subscribe=function(n,t){r[n]||(r[n]=[]),t&&r[n].push(t)},this.unsubscribe=function(n,t){if(r[n])for(var i=r[n],e=i.length;e--;)i[e]===t&&array.splice(e,1)},this.publish=function(n,t){var i=r[n];if(i)for(var e=i.length;e--;)i[e](t)},this.campaign=function(n,t){s[n]=t,this.publish("audience",{name:n,experience:t})},this.campaigns=function(){return s},function(){return this}.call(this)}});
 	  </script>
-<style>
-        .calltoaction .btn-plaintext.btn-white:hover {
-    text-decoration: underline !important;
-    color: #fff !important;
-}
-
-.calltoaction .btn-plaintext.btn-white:hover:after {
-    border-left-color: #fff !important;
-}
-
-.calltoaction .btn-plaintext.btn-black:hover {
-	text-decoration: underline !important;
-	color: #000 !important;
-}
-
-.calltoaction .btn-plaintext.btn-black:hover:after {
-    border-left-color: #000 !important;
-} .twocolumncomponentlayout .twocolumn-right {
-    float: left;
-    width: 45.83333%;
-    padding-left: 1rem !important;
-} .product-category-wrapper-desktop 
-.product-messaging {
-display: none;
-visibility: hidden;
-}
-
-.product-category-mobile .product .online-exclusive-message, .product-category-mobile .product .petite-message {
-display: none;
-visibility: hidden;
-} .raven-new-product-tag {
-    position: absolute;
-    bottom: 0;
-    background: white;
-    left: 0;
-    font-weight: 600;
-    font-size: 1.1rem;
-    padding: 6px 10px;
-    letter-spacing: 1px;
-}
-
-a.express-view.mask {
-    display: inline-block !important;
-    background-color: transparent !important;
-    bottom: -1px !important;
-}
-
-.product-category-wrapper-desktop .product-category-desktop .products .product .image-container {
-   margin-bottom: 10px;
-   font-size: 0;
-} .grid__col-8 {
-    width: 66.34% !important;
-}
- .tilecomponent picture, .tilecomponent video {
-display: block !important;
-} 
+<style>
+        .calltoaction .btn-plaintext.btn-white:hover {
+    text-decoration: underline !important;
+    color: #fff !important;
+}
+
+.calltoaction .btn-plaintext.btn-white:hover:after {
+    border-left-color: #fff !important;
+}
+
+.calltoaction .btn-plaintext.btn-black:hover {
+	text-decoration: underline !important;
+	color: #000 !important;
+}
+
+.calltoaction .btn-plaintext.btn-black:hover:after {
+    border-left-color: #000 !important;
+} .twocolumncomponentlayout .twocolumn-right {
+    float: left;
+    width: 45.83333%;
+    padding-left: 1rem !important;
+} .product-category-wrapper-desktop 
+.product-messaging {
+display: none;
+visibility: hidden;
+}
+
+.product-category-mobile .product .online-exclusive-message, .product-category-mobile .product .petite-message {
+display: none;
+visibility: hidden;
+} .raven-new-product-tag {
+    position: absolute;
+    bottom: 0;
+    background: white;
+    left: 0;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 6px 10px;
+    letter-spacing: 1px;
+}
+
+a.express-view.mask {
+    display: inline-block !important;
+    background-color: transparent !important;
+    bottom: -1px !important;
+}
+
+.product-category-wrapper-desktop .product-category-desktop .products .product .image-container {
+   margin-bottom: 10px;
+   font-size: 0;
+} .grid__col-8 {
+    width: 66.34% !important;
+}
+ .tilecomponent picture, .tilecomponent video {
+display: block !important;
+} 
     </style>
 </link></link></link></meta></head>
 <body class="common-home">
@@ -119,12 +119,12 @@ display: block !important;
 <div id="sidebar-wrapper">
 <ul class="sidebar-nav list-group notion">
 <li class="sidebar-title">
-<a href="#menu-toggle-close" id="menu-toggle-close"><span aria-hidden="true">×</span></a>Información      <script>
-      $("#menu-toggle-close").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-		$(".sidebar-opacity").toggleClass("toggled");
-      });
+<a href="#menu-toggle-close" id="menu-toggle-close"><span aria-hidden="true">×</span></a>Información      <script>
+      $("#menu-toggle-close").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+		$(".sidebar-opacity").toggleClass("toggled");
+      });
       </script>
 </li>
 <li><a href="http://www.jordan-holzwelten.de/index.php?route=information/information&amp;information_id=7">FAQ</a></li>
@@ -187,12 +187,12 @@ display: block !important;
 <span class="button-text">Menú</span>
 </div>
 </a>
-<script>
-        $("#menu-mobile-toggle").click(function(e) {
-          e.preventDefault();
-          $("#wrapper").toggleClass("menu-toggled");
-		  $(".sidebar-opacity").toggleClass("menu-toggled");
-        });
+<script>
+        $("#menu-mobile-toggle").click(function(e) {
+          e.preventDefault();
+          $("#wrapper").toggleClass("menu-toggled");
+		  $(".sidebar-opacity").toggleClass("menu-toggled");
+        });
       </script>
 <div class="btn-group btn-block buttons-header" id="cart">
 <a class="btn dropdown-toggle" data-loading-text="Cargando..." data-toggle="dropdown">
@@ -230,26 +230,26 @@ display: block !important;
 </div>
 </div>
 </nav>
-<script type="text/javascript">
-$(document).ready(function() {
-	$('#accordion-mobile').dcAccordion({
-		disableLink: false,	
-		menuClose: false,
-		autoClose: true,
-		autoExpand: true,		
-		saveState: false
-	});
-});
+<script type="text/javascript">
+$(document).ready(function() {
+	$('#accordion-mobile').dcAccordion({
+		disableLink: false,	
+		menuClose: false,
+		autoClose: true,
+		autoExpand: true,		
+		saveState: false
+	});
+});
 </script>
 <div class="hidden-sm hidden-md hidden-lg" id="menu-mobile">
 <ul class="accordion sidebar-nav list-group" id="accordion-mobile">
 <li class="sidebar-title">
-<a href="#menu-mobile-toggle-close" id="menu-mobile-toggle-close"><span aria-hidden="true">×</span></a>Menú      <script>
-      $("#menu-mobile-toggle-close").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("menu-toggled");
-		$(".sidebar-opacity").toggleClass("menu-toggled");
-      });
+<a href="#menu-mobile-toggle-close" id="menu-mobile-toggle-close"><span aria-hidden="true">×</span></a>Menú      <script>
+      $("#menu-mobile-toggle-close").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("menu-toggled");
+		$(".sidebar-opacity").toggleClass("menu-toggled");
+      });
       </script>
 </li>
 <li><a href="http://www.jordan-holzwelten.de/">Inicio</a></li>
@@ -285,16 +285,16 @@ $(document).ready(function() {
 </div>
 <div style="display:none;"><script src="//js.users.51.la/21085533.js" type="text/javascript"></script><br/></div><div class="container">
 <div class="row"><column class="col-sm-3 hidden-xs" id="column-left">
-<script type="text/javascript">
-$(document).ready(function() {
-	$('#accordion-1').dcAccordion({
-		disableLink: false,	
-		menuClose: false,
-		autoClose: true,
-		autoExpand: true,		
-		saveState: false
-	});
-});
+<script type="text/javascript">
+$(document).ready(function() {
+	$('#accordion-1').dcAccordion({
+		disableLink: false,	
+		menuClose: false,
+		autoClose: true,
+		autoExpand: true,		
+		saveState: false
+	});
+});
 </script>
 <div class="panel panel-default panel-category">
 <div class="panel-heading">Categorias</div>
@@ -329,14 +329,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.jordan-holzwelten.de/salamander-dino-sandalias-de-senderismo-moro.html"><img alt="Salamander DINO - Sandalias de senderismo - moro" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/jordanholzweltende/salamander-dino-sandalias-de-senderismo-moro-7531.jpg" title="Salamander DINO - Sandalias de senderismo - moro"/></a>
+<a class="arevision" href="http://www.jordan-holzwelten.de/faguo-runnings-ivy-zapatillas-white-burgundy.html"><img alt="Faguo RUNNINGS IVY - Zapatillas - white/burgundy" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/jordanholzweltende/faguo-runnings-ivy-zapatillas-white-burgundy-4443.jpg" title="Faguo RUNNINGS IVY - Zapatillas - white/burgundy"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.jordan-holzwelten.de/salamander-dino-sandalias-de-senderismo-moro.html">Salamander DINO - Sandalias de senderismo - moro</a></h4></div>
+<div class="name"><h4><a href="http://www.jordan-holzwelten.de/faguo-runnings-ivy-zapatillas-white-burgundy.html">Faguo RUNNINGS IVY - Zapatillas - white/burgundy</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€41.99</span> <span class="price-old">€132.99</span>
+<span class="price-new">€42.99</span> <span class="price-old">€119.99</span>
 </p>
 </div>
 </div>
@@ -345,14 +345,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.jordan-holzwelten.de/jeepers-peepers-gafas-de-sol-black.html"><img alt="Jeepers Peepers Gafas de sol - black" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/jordanholzweltende/jeepers-peepers-gafas-de-sol-black-2594.jpg" title="Jeepers Peepers Gafas de sol - black"/></a>
+<a class="arevision" href="http://www.jordan-holzwelten.de/marc-ox27polo-cinturon-shaded-walnut.html"><img alt="Marc O'Polo Cinturón - shaded walnut" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/jordanholzweltende/marc-ox27polo-cinturon-shaded-walnut-1684.jpg" title="Marc O'Polo Cinturón - shaded walnut"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.jordan-holzwelten.de/jeepers-peepers-gafas-de-sol-black.html">Jeepers Peepers Gafas de sol - black</a></h4></div>
+<div class="name"><h4><a href="http://www.jordan-holzwelten.de/marc-ox27polo-cinturon-shaded-walnut.html">Marc O'Polo Cinturón - shaded walnut</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€36.99</span> <span class="price-old">€119.99</span>
+<span class="price-new">€36.99</span> <span class="price-old">€136.99</span>
 </p>
 </div>
 </div>
@@ -361,14 +361,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.jordan-holzwelten.de/tamaris-bailarinas-metallic.html"><img alt="Tamaris Bailarinas - metallic" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/jordanholzweltende/tamaris-bailarinas-metallic-2825.jpg" title="Tamaris Bailarinas - metallic"/></a>
+<a class="arevision" href="http://www.jordan-holzwelten.de/ted-baker-deannah-set-bolso-de-mano-black.html"><img alt="Ted Baker DEANNAH SET - Bolso de mano - black" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/jordanholzweltende/ted-baker-deannah-set-bolso-de-mano-black-7593.jpg" title="Ted Baker DEANNAH SET - Bolso de mano - black"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.jordan-holzwelten.de/tamaris-bailarinas-metallic.html">Tamaris Bailarinas - metallic</a></h4></div>
+<div class="name"><h4><a href="http://www.jordan-holzwelten.de/ted-baker-deannah-set-bolso-de-mano-black.html">Ted Baker DEANNAH SET - Bolso de mano - black</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€41.99</span> <span class="price-old">€124.99</span>
+<span class="price-new">€36.99</span> <span class="price-old">€132.99</span>
 </p>
 </div>
 </div>
@@ -377,14 +377,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.jordan-holzwelten.de/zign-sandalias-con-plataforma-black.html"><img alt="Zign Sandalias con plataforma - black" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/jordanholzweltende/zign-sandalias-con-plataforma-black-8079.jpg" title="Zign Sandalias con plataforma - black"/></a>
+<a class="arevision" href="http://www.jordan-holzwelten.de/billabong-sweet-side-tropic-braguita-de-bikini-black-pebble.html"><img alt="Billabong SWEET SIDE TROPIC - Braguita de bikini - black pebble" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/jordanholzweltende/billabong-sweet-side-tropic-braguita-de-bikini-black-pebble-332.jpg" title="Billabong SWEET SIDE TROPIC - Braguita de bikini - black pebble"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.jordan-holzwelten.de/zign-sandalias-con-plataforma-black.html">Zign Sandalias con plataforma - black</a></h4></div>
+<div class="name"><h4><a href="http://www.jordan-holzwelten.de/billabong-sweet-side-tropic-braguita-de-bikini-black-pebble.html">Billabong SWEET SIDE TROPIC - Braguita de bikini - black pebble</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€41.99</span> <span class="price-old">€112.99</span>
+<span class="price-new">€36.99</span> <span class="price-old">€129.99</span>
 </p>
 </div>
 </div>
@@ -393,14 +393,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.jordan-holzwelten.de/asics-sportstyle-tiger-runner-zapatillas-white-watershed-rose.html"><img alt="ASICS SportStyle TIGER RUNNER - Zapatillas - white/watershed rose" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/jordanholzweltende/asics-sportstyle-tiger-runner-zapatillas-white-watershed-rose-2268.jpg" title="ASICS SportStyle TIGER RUNNER - Zapatillas - white/watershed rose"/></a>
+<a class="arevision" href="http://www.jordan-holzwelten.de/nike-sportswear-ryz-zapatillas-white-pistachio-frost.html"><img alt="Nike Sportswear RYZ - Zapatillas - white/pistachio frost" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/jordanholzweltende/nike-sportswear-ryz-zapatillas-white-pistachio-frost-4318.jpg" title="Nike Sportswear RYZ - Zapatillas - white/pistachio frost"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.jordan-holzwelten.de/asics-sportstyle-tiger-runner-zapatillas-white-watershed-rose.html">ASICS SportStyle TIGER RUNNER - Zapatillas - white/watershed rose</a></h4></div>
+<div class="name"><h4><a href="http://www.jordan-holzwelten.de/nike-sportswear-ryz-zapatillas-white-pistachio-frost.html">Nike Sportswear RYZ - Zapatillas - white/pistachio frost</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€41.99</span> <span class="price-old">€119.99</span>
+<span class="price-new">€42.99</span> <span class="price-old">€119.99</span>
 </p>
 </div>
 </div>
@@ -409,14 +409,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.jordan-holzwelten.de/ted-baker-strrio-zapatos-con-cordones-brown.html"><img alt="Ted Baker STRRIO - Zapatos con cordones - brown" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/jordanholzweltende/ted-baker-strrio-zapatos-con-cordones-brown-811.jpg" title="Ted Baker STRRIO - Zapatos con cordones - brown"/></a>
+<a class="arevision" href="http://www.jordan-holzwelten.de/becksondergaard-beach-rya-bucket-bandolera-feldspar.html"><img alt="Becksöndergaard BEACH RYA BUCKET - Bandolera - feldspar" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/jordanholzweltende/becksondergaard-beach-rya-bucket-bandolera-feldspar-2167.jpg" title="Becksöndergaard BEACH RYA BUCKET - Bandolera - feldspar"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.jordan-holzwelten.de/ted-baker-strrio-zapatos-con-cordones-brown.html">Ted Baker STRRIO - Zapatos con cordones - brown</a></h4></div>
+<div class="name"><h4><a href="http://www.jordan-holzwelten.de/becksondergaard-beach-rya-bucket-bandolera-feldspar.html">Becksöndergaard BEACH RYA BUCKET - Bandolera - feldspar</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€43.99</span> <span class="price-old">€143.99</span>
+<span class="price-new">€36.99</span> <span class="price-old">€142.99</span>
 </p>
 </div>
 </div>
@@ -433,14 +433,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.jordan-holzwelten.de/mos-mosh-kay-tee-camiseta-estampada-gold.html"><img alt="Mos Mosh KAY TEE - Camiseta estampada - gold" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/jordanholzweltende/mos-mosh-kay-tee-camiseta-estampada-gold-1499.jpg" title="Mos Mosh KAY TEE - Camiseta estampada - gold"/></a>
+<a class="arevision" href="http://www.jordan-holzwelten.de/madden-by-steve-madden-zapatos-con-cordones-cognac.html"><img alt="Madden by Steve Madden Zapatos con cordones - cognac" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/jordanholzweltende/madden-by-steve-madden-zapatos-con-cordones-cognac-2117.jpg" title="Madden by Steve Madden Zapatos con cordones - cognac"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.jordan-holzwelten.de/mos-mosh-kay-tee-camiseta-estampada-gold.html">Mos Mosh KAY TEE - Camiseta estampada - gold</a></h4></div>
+<div class="name"><h4><a href="http://www.jordan-holzwelten.de/madden-by-steve-madden-zapatos-con-cordones-cognac.html">Madden by Steve Madden Zapatos con cordones - cognac</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€37.99</span> <span class="price-old">€124.99</span>
+<span class="price-new">€42.99</span> <span class="price-old">€132.99</span>
 </p>
 </div>
 </div>
@@ -449,14 +449,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.jordan-holzwelten.de/royal-republiq-diamond-belt-cinturon-black.html"><img alt="Royal RepubliQ DIAMOND BELT - Cinturón - black" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/jordanholzweltende/royal-republiq-diamond-belt-cinturon-black-6075.jpg" title="Royal RepubliQ DIAMOND BELT - Cinturón - black"/></a>
+<a class="arevision" href="http://www.jordan-holzwelten.de/jack-jones-jjeholmen-sudadera-con-cremallera-black-reg-fit.html"><img alt="Jack &amp; Jones JJEHOLMEN - Sudadera con cremallera - black/reg fit" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/jordanholzweltende/jack-jones-jjeholmen-sudadera-con-cremallera-black-reg-fit-6004.jpg" title="Jack &amp; Jones JJEHOLMEN - Sudadera con cremallera - black/reg fit"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.jordan-holzwelten.de/royal-republiq-diamond-belt-cinturon-black.html">Royal RepubliQ DIAMOND BELT - Cinturón - black</a></h4></div>
+<div class="name"><h4><a href="http://www.jordan-holzwelten.de/jack-jones-jjeholmen-sudadera-con-cremallera-black-reg-fit.html">Jack &amp; Jones JJEHOLMEN - Sudadera con cremallera - black/reg fit</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€37.99</span> <span class="price-old">€137.99</span>
+<span class="price-new">€37.99</span> <span class="price-old">€132.99</span>
 </p>
 </div>
 </div>
@@ -465,139 +465,11 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.jordan-holzwelten.de/nike-sportswear-nike-air-vapormax-360-zapatillas-black-anthracite-metallic-dark-grey.html"><img alt="Nike Sportswear NIKE AIR VAPORMAX 360 - Zapatillas - black/anthracite/metallic dark grey" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/jordanholzweltende/nike-sportswear-nike-air-vapormax-360-zapatillas-black-anthracite-metallic-dark-grey-6703.jpg" title="Nike Sportswear NIKE AIR VAPORMAX 360 - Zapatillas - black/anthracite/metallic dark grey"/></a>
+<a class="arevision" href="http://www.jordan-holzwelten.de/only-onlmillie-mini-paper-skirt-falda-vaquera-medium-blue-denim.html"><img alt="ONLY ONLMILLIE MINI PAPER SKIRT - Falda vaquera - medium blue denim" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/jordanholzweltende/only-onlmillie-mini-paper-skirt-falda-vaquera-medium-blue-denim-3498.jpg" title="ONLY ONLMILLIE MINI PAPER SKIRT - Falda vaquera - medium blue denim"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.jordan-holzwelten.de/nike-sportswear-nike-air-vapormax-360-zapatillas-black-anthracite-metallic-dark-grey.html">Nike Sportswear NIKE AIR VAPORMAX 360 - Zapatillas - black/anthracite/metallic dark grey</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€41.99</span> <span class="price-old">€128.99</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.jordan-holzwelten.de/new-look-915-generation-buckle-set-bikini-orange.html"><img alt="New Look 915 Generation BUCKLE SET - Bikini - orange" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/jordanholzweltende/new-look-915-generation-buckle-set-bikini-orange-7391.jpg" title="New Look 915 Generation BUCKLE SET - Bikini - orange"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="http://www.jordan-holzwelten.de/new-look-915-generation-buckle-set-bikini-orange.html">New Look 915 Generation BUCKLE SET - Bikini - orange</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€37.99</span> <span class="price-old">€129.99</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.jordan-holzwelten.de/sperry-nauticos-black.html"><img alt="Sperry Náuticos - black" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/jordanholzweltende/sperry-nauticos-black-6130.jpg" title="Sperry Náuticos - black"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="http://www.jordan-holzwelten.de/sperry-nauticos-black.html">Sperry Náuticos - black</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€43.99</span> <span class="price-old">€124.99</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.jordan-holzwelten.de/timberland-gafas-de-sol-shiny-gunmetal-brown.html"><img alt="Timberland Gafas de sol - shiny gunmetal/brown" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/jordanholzweltende/timberland-gafas-de-sol-shiny-gunmetal-brown-2966.jpg" title="Timberland Gafas de sol - shiny gunmetal/brown"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="http://www.jordan-holzwelten.de/timberland-gafas-de-sol-shiny-gunmetal-brown.html">Timberland Gafas de sol - shiny gunmetal/brown</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€37.99</span> <span class="price-old">€124.99</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.jordan-holzwelten.de/pier-one-zapatillas-cognac.html"><img alt="Pier One Zapatillas - cognac" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/jordanholzweltende/pier-one-zapatillas-cognac-2174.jpg" title="Pier One Zapatillas - cognac"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="http://www.jordan-holzwelten.de/pier-one-zapatillas-cognac.html">Pier One Zapatillas - cognac</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€41.99</span> <span class="price-old">€128.99</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.jordan-holzwelten.de/weekend-maxmara-ragusa-pantalones-blau.html"><img alt="WEEKEND MaxMara RAGUSA - Pantalones - blau" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/jordanholzweltende/weekend-maxmara-ragusa-pantalones-blau-7406.jpg" title="WEEKEND MaxMara RAGUSA - Pantalones - blau"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="http://www.jordan-holzwelten.de/weekend-maxmara-ragusa-pantalones-blau.html">WEEKEND MaxMara RAGUSA - Pantalones - blau</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€36.99</span> <span class="price-old">€144.99</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.jordan-holzwelten.de/camper-courb-zapatillas-light-beige.html"><img alt="Camper COURB - Zapatillas - light beige" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/jordanholzweltende/camper-courb-zapatillas-light-beige-5070.jpg" title="Camper COURB - Zapatillas - light beige"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="http://www.jordan-holzwelten.de/camper-courb-zapatillas-light-beige.html">Camper COURB - Zapatillas - light beige</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€41.99</span> <span class="price-old">€112.99</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.jordan-holzwelten.de/quay-australia-walk-on-blue-light-varios-accesorios-clear.html"><img alt="QUAY AUSTRALIA WALK ON BLUE LIGHT - Varios accesorios - clear" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/jordanholzweltende/quay-australia-walk-on-blue-light-varios-accesorios-clear-3098.jpg" title="QUAY AUSTRALIA WALK ON BLUE LIGHT - Varios accesorios - clear"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="http://www.jordan-holzwelten.de/quay-australia-walk-on-blue-light-varios-accesorios-clear.html">QUAY AUSTRALIA WALK ON BLUE LIGHT - Varios accesorios - clear</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€36.99</span> <span class="price-old">€112.99</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.jordan-holzwelten.de/ellesse-elvas-pantalon-corto-de-deporte-grey.html"><img alt="Ellesse ELVAS - Pantalón corto de deporte - grey" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/jordanholzweltende/ellesse-elvas-pantalon-corto-de-deporte-grey-1346.jpg" title="Ellesse ELVAS - Pantalón corto de deporte - grey"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="http://www.jordan-holzwelten.de/ellesse-elvas-pantalon-corto-de-deporte-grey.html">Ellesse ELVAS - Pantalón corto de deporte - grey</a></h4></div>
+<div class="name"><h4><a href="http://www.jordan-holzwelten.de/only-onlmillie-mini-paper-skirt-falda-vaquera-medium-blue-denim.html">ONLY ONLMILLIE MINI PAPER SKIRT - Falda vaquera - medium blue denim</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
 <span class="price-new">€37.99</span> <span class="price-old">€125.99</span>
@@ -609,14 +481,142 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.jordan-holzwelten.de/calvin-klein-jeans-bucket-pride-sombrero-black.html"><img alt="Calvin Klein Jeans BUCKET PRIDE - Sombrero - black" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/jordanholzweltende/calvin-klein-jeans-bucket-pride-sombrero-black-337.jpg" title="Calvin Klein Jeans BUCKET PRIDE - Sombrero - black"/></a>
+<a class="arevision" href="http://www.jordan-holzwelten.de/nike-performance-everyday-cush-crew-3-pack-calcetines-de-deporte-white-black.html"><img alt="Nike Performance EVERYDAY CUSH CREW 3 PACK - Calcetines de deporte - white/black" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/jordanholzweltende/nike-performance-everyday-cush-crew-3-pack-calcetines-de-deporte-white-black-5652.jpg" title="Nike Performance EVERYDAY CUSH CREW 3 PACK - Calcetines de deporte - white/black"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.jordan-holzwelten.de/calvin-klein-jeans-bucket-pride-sombrero-black.html">Calvin Klein Jeans BUCKET PRIDE - Sombrero - black</a></h4></div>
+<div class="name"><h4><a href="http://www.jordan-holzwelten.de/nike-performance-everyday-cush-crew-3-pack-calcetines-de-deporte-white-black.html">Nike Performance EVERYDAY CUSH CREW 3 PACK - Calcetines de deporte - white/black</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€37.99</span> <span class="price-old">€119.99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="http://www.jordan-holzwelten.de/new-era-female-wmns-metallic-9forty-gorra-new-york-yankees-whi.html"><img alt="New Era FEMALE WMNS METALLIC 9FORTY - Gorra - new york yankees whi" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/jordanholzweltende/new-era-female-wmns-metallic-9forty-gorra-new-york-yankees-whi-239.jpg" title="New Era FEMALE WMNS METALLIC 9FORTY - Gorra - new york yankees whi"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="http://www.jordan-holzwelten.de/new-era-female-wmns-metallic-9forty-gorra-new-york-yankees-whi.html">New Era FEMALE WMNS METALLIC 9FORTY - Gorra - new york yankees whi</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€36.99</span> <span class="price-old">€143.99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="http://www.jordan-holzwelten.de/gap-tee-camiseta-estampada-navy-uniform.html"><img alt="GAP TEE - Camiseta estampada - navy uniform" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/jordanholzweltende/gap-tee-camiseta-estampada-navy-uniform-7259.jpg" title="GAP TEE - Camiseta estampada - navy uniform"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="http://www.jordan-holzwelten.de/gap-tee-camiseta-estampada-navy-uniform.html">GAP TEE - Camiseta estampada - navy uniform</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€37.99</span> <span class="price-old">€142.99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="http://www.jordan-holzwelten.de/puma-prowl-alt-asym-zapatillas-de-entrenamiento-white-black.html"><img alt="Puma PROWL ALT ASYM - Zapatillas de entrenamiento - white/black" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/jordanholzweltende/puma-prowl-alt-asym-zapatillas-de-entrenamiento-white-black-268.jpg" title="Puma PROWL ALT ASYM - Zapatillas de entrenamiento - white/black"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="http://www.jordan-holzwelten.de/puma-prowl-alt-asym-zapatillas-de-entrenamiento-white-black.html">Puma PROWL ALT ASYM - Zapatillas de entrenamiento - white/black</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€43.99</span> <span class="price-old">€143.99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="http://www.jordan-holzwelten.de/miss-selfridge-whisky-chunky-flatform-wedge-alpargatas-white.html"><img alt="Miss Selfridge WHISKY CHUNKY FLATFORM WEDGE - Alpargatas - white" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/jordanholzweltende/miss-selfridge-whisky-chunky-flatform-wedge-alpargatas-white-4057.jpg" title="Miss Selfridge WHISKY CHUNKY FLATFORM WEDGE - Alpargatas - white"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="http://www.jordan-holzwelten.de/miss-selfridge-whisky-chunky-flatform-wedge-alpargatas-white.html">Miss Selfridge WHISKY CHUNKY FLATFORM WEDGE - Alpargatas - white</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€42.99</span> <span class="price-old">€149.99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="http://www.jordan-holzwelten.de/anna-field-2-pack-top-de-bikini-white-black.html"><img alt="Anna Field 2 PACK - Top de bikini - white/black" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/jordanholzweltende/anna-field-2-pack-top-de-bikini-white-black-218.jpg" title="Anna Field 2 PACK - Top de bikini - white/black"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="http://www.jordan-holzwelten.de/anna-field-2-pack-top-de-bikini-white-black.html">Anna Field 2 PACK - Top de bikini - white/black</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
 <span class="price-new">€37.99</span> <span class="price-old">€156.99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="http://www.jordan-holzwelten.de/anna-field-leather-pumps-tacones-grey.html"><img alt="Anna Field LEATHER PUMPS - Tacones - grey" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/jordanholzweltende/anna-field-leather-pumps-tacones-grey-599.jpg" title="Anna Field LEATHER PUMPS - Tacones - grey"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="http://www.jordan-holzwelten.de/anna-field-leather-pumps-tacones-grey.html">Anna Field LEATHER PUMPS - Tacones - grey</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€41.99</span> <span class="price-old">€132.99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="http://www.jordan-holzwelten.de/michael-kors-greyson-billfold-coin-pocket-monedero-brown-black.html"><img alt="Michael Kors GREYSON BILLFOLD COIN POCKET - Monedero - brown/black" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/jordanholzweltende/michael-kors-greyson-billfold-coin-pocket-monedero-brown-black-135.jpg" title="Michael Kors GREYSON BILLFOLD COIN POCKET - Monedero - brown/black"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="http://www.jordan-holzwelten.de/michael-kors-greyson-billfold-coin-pocket-monedero-brown-black.html">Michael Kors GREYSON BILLFOLD COIN POCKET - Monedero - brown/black</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€37.99</span> <span class="price-old">€143.99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="http://www.jordan-holzwelten.de/bdg-urban-outfitters-skate-vaqueros-boyfriend-black-dragon.html"><img alt="BDG Urban Outfitters SKATE - Vaqueros boyfriend - black dragon" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/jordanholzweltende/bdg-urban-outfitters-skate-vaqueros-boyfriend-black-dragon-1114.jpg" title="BDG Urban Outfitters SKATE - Vaqueros boyfriend - black dragon"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="http://www.jordan-holzwelten.de/bdg-urban-outfitters-skate-vaqueros-boyfriend-black-dragon.html">BDG Urban Outfitters SKATE - Vaqueros boyfriend - black dragon</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€37.99</span> <span class="price-old">€132.99</span>
 </p>
 </div>
 </div>
@@ -652,43 +652,43 @@ $(document).ready(function() {
 <div id="powered">
 <div class="container">
 <div class="row">
-<div class="col-sm-12 col-md-12">
-      Copyright © 2022 <a href="//www.jordan-holzwelten.de" target="_blank">www.jordan-holzwelten.de</a> All Rights Reserved  
+<div class="col-sm-12 col-md-12">
+      Copyright © 2022 <a href="//www.jordan-holzwelten.de" target="_blank">www.jordan-holzwelten.de</a> All Rights Reserved  
       </div>
 </div>
 </div>
 </div>
 </footer>
 <script src="catalog/view/theme/notion/js/jquery.visible.min.js" type="text/javascript"></script>
-<script type="text/javascript">
-
-var win = $(window);
-
-var allMods = $("footer");
-
-allMods.each(function(i, el) {
-    
-  if ($(el).visible(true)) {
-    $(el).addClass("already-visible"); 
-  }
-  
-});
-
-win.scroll(function(event) {
-  
-  allMods.each(function(i, el) {
-    
-    var el = $(el);
-    
-    if (el.visible(true)) {
-      el.addClass("come-in"); 
-    } else {
-      el.removeClass("come-in already-visible");
-    }
-    
-  });
-  
-}); 
+<script type="text/javascript">
+
+var win = $(window);
+
+var allMods = $("footer");
+
+allMods.each(function(i, el) {
+    
+  if ($(el).visible(true)) {
+    $(el).addClass("already-visible"); 
+  }
+  
+});
+
+win.scroll(function(event) {
+  
+  allMods.each(function(i, el) {
+    
+    var el = $(el);
+    
+    if (el.visible(true)) {
+      el.addClass("come-in"); 
+    } else {
+      el.removeClass("come-in already-visible");
+    }
+    
+  });
+  
+}); 
 </script>
 <script src="catalog/view/theme/notion/js/jquery.easing-1.3.min.js" type="text/javascript"></script>
 <link href="catalog/view/theme/notion/js/quickview/fancybox/jquery.fancybox.css" property="stylesheet" rel="stylesheet">

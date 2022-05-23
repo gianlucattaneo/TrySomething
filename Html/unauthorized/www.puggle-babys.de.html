@@ -34,64 +34,64 @@
 <script src="catalog/view/theme/ostracism/js/cloud-zoom.js" type="text/javascript"></script>
 <link href="catalog/view/theme/ostracism/stylesheet/dcaccordion.css" property="stylesheet" rel="stylesheet" type="text/css">
 <script src="catalog/view/theme/ostracism/js/jquery.dcjqaccordion.js" type="text/javascript"></script>
-<script type="text/javascript">
-			function OptanonWrapper() {
- 			var banner = document.getElementById("onetrust-banner-sdk"); 
- 			if(banner && OneTrust.IsAlertBoxClosed()) {
-			banner.classList.add("alertBoxClosed");
-			}
-			}
+<script type="text/javascript">
+			function OptanonWrapper() {
+ 			var banner = document.getElementById("onetrust-banner-sdk"); 
+ 			if(banner && OneTrust.IsAlertBoxClosed()) {
+			banner.classList.add("alertBoxClosed");
+			}
+			}
 			</script>
-<script>
-  hm.waitUntil(function() {
-		return hm.version;
-	}).then(function() {
-		hm.cookies = hm.cookies || new hm.Cookies();  
-		var nuanceData={};
-		window.nuanceData = nuanceData;
-		if(hm.cookies && hm.cookies.readCookie('userCookie')){
-			var userCookieVal = JSON.parse(hm.cookies.readCookie('userCookie'));
-			if (userCookieVal){
-				
-				if(userCookieVal.cartCount>=0){
-					nuanceData["cartCount"] = userCookieVal.cartCount;
-				}
-			if(userCookieVal.dominantCategory){
-					nuanceData["dominantCategory"] = userCookieVal.dominantCategory;
-				}
-				if(userCookieVal.cartProducts){
-					nuanceData["cartProducts"] = userCookieVal.cartProducts;
-				}
-				if(userCookieVal.hybris_firstName){
-					nuanceData["hybris_firstName"] = decodeURIComponent((userCookieVal.hybris_firstName + '').replace(/\+/g, '%20'));
-				}
-				if(userCookieVal.hybris_uuid){
-					nuanceData["hybris_uuid"] = userCookieVal.hybris_uuid;
-				}
-				if(userCookieVal.customer_id){
-					nuanceData["customer_id"] = userCookieVal.customer_id;
-				}
-				if(userCookieVal.type){
-					nuanceData["type"] = userCookieVal.type;
-				}
-				if(userCookieVal.str){
-					nuanceData["st"] = decodeURIComponent(userCookieVal.str.replaceAll(/\+/g, ' '));
-				}
-				if(userCookieVal.zc){
-					var val = userCookieVal.zc.replace(/[+,-]/g," ");
-						nuanceData["zc"] = val;
-			}
-				if(userCookieVal.tn){
-					nuanceData["tn"] = decodeURIComponent(userCookieVal.tn.replaceAll(/\+/g, ' '));
-				}
-			}
-		}
-		var favouritesCookie = hm.options.product.country + "-favourites";
-		
-		var hasFav = hm.cookies.readCookie("hm-austria-favourites");
-		if(hasFav && !(hasFav==="\"\"")){nuanceData["hm-country-favourites"] = hasFav;}
-		console.log(nuanceData);
-	});
+<script>
+  hm.waitUntil(function() {
+		return hm.version;
+	}).then(function() {
+		hm.cookies = hm.cookies || new hm.Cookies();  
+		var nuanceData={};
+		window.nuanceData = nuanceData;
+		if(hm.cookies && hm.cookies.readCookie('userCookie')){
+			var userCookieVal = JSON.parse(hm.cookies.readCookie('userCookie'));
+			if (userCookieVal){
+				
+				if(userCookieVal.cartCount>=0){
+					nuanceData["cartCount"] = userCookieVal.cartCount;
+				}
+			if(userCookieVal.dominantCategory){
+					nuanceData["dominantCategory"] = userCookieVal.dominantCategory;
+				}
+				if(userCookieVal.cartProducts){
+					nuanceData["cartProducts"] = userCookieVal.cartProducts;
+				}
+				if(userCookieVal.hybris_firstName){
+					nuanceData["hybris_firstName"] = decodeURIComponent((userCookieVal.hybris_firstName + '').replace(/\+/g, '%20'));
+				}
+				if(userCookieVal.hybris_uuid){
+					nuanceData["hybris_uuid"] = userCookieVal.hybris_uuid;
+				}
+				if(userCookieVal.customer_id){
+					nuanceData["customer_id"] = userCookieVal.customer_id;
+				}
+				if(userCookieVal.type){
+					nuanceData["type"] = userCookieVal.type;
+				}
+				if(userCookieVal.str){
+					nuanceData["st"] = decodeURIComponent(userCookieVal.str.replaceAll(/\+/g, ' '));
+				}
+				if(userCookieVal.zc){
+					var val = userCookieVal.zc.replace(/[+,-]/g," ");
+						nuanceData["zc"] = val;
+			}
+				if(userCookieVal.tn){
+					nuanceData["tn"] = decodeURIComponent(userCookieVal.tn.replaceAll(/\+/g, ' '));
+				}
+			}
+		}
+		var favouritesCookie = hm.options.product.country + "-favourites";
+		
+		var hasFav = hm.cookies.readCookie("hm-austria-favourites");
+		if(hasFav && !(hasFav==="\"\"")){nuanceData["hm-country-favourites"] = hasFav;}
+		console.log(nuanceData);
+	});
 	</script>
 </link></link></link></meta></head>
 <body class="common-home">
@@ -100,12 +100,12 @@
 <div id="sidebar-wrapper">
 <ul class="sidebar-nav list-group ostracism">
 <li class="sidebar-title">
-<a href="#menu-toggle-close" id="menu-toggle-close"><span aria-hidden="true">×</span></a>Informazione      <script>
-      $("#menu-toggle-close").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-		$(".sidebar-opacity").toggleClass("toggled");
-      });
+<a href="#menu-toggle-close" id="menu-toggle-close"><span aria-hidden="true">×</span></a>Informazione      <script>
+      $("#menu-toggle-close").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+		$(".sidebar-opacity").toggleClass("toggled");
+      });
       </script>
 </li>
 <li><a href="http://www.puggle-babys.de/index.php?route=information/information&amp;information_id=7">FAQ</a></li>
@@ -168,12 +168,12 @@
 <span class="button-text">Menù</span>
 </div>
 </a>
-<script>
-        $("#menu-mobile-toggle").click(function(e) {
-          e.preventDefault();
-          $("#wrapper").toggleClass("menu-toggled");
-		  $(".sidebar-opacity").toggleClass("menu-toggled");
-        });
+<script>
+        $("#menu-mobile-toggle").click(function(e) {
+          e.preventDefault();
+          $("#wrapper").toggleClass("menu-toggled");
+		  $(".sidebar-opacity").toggleClass("menu-toggled");
+        });
       </script>
 <div class="btn-group btn-block buttons-header" id="cart">
 <a class="btn dropdown-toggle" data-loading-text="Caricamento..." data-toggle="dropdown">
@@ -211,26 +211,26 @@
 </div>
 </div>
 </nav>
-<script type="text/javascript">
-$(document).ready(function() {
-	$('#accordion-mobile').dcAccordion({
-		disableLink: false,	
-		menuClose: false,
-		autoClose: true,
-		autoExpand: true,		
-		saveState: false
-	});
-});
+<script type="text/javascript">
+$(document).ready(function() {
+	$('#accordion-mobile').dcAccordion({
+		disableLink: false,	
+		menuClose: false,
+		autoClose: true,
+		autoExpand: true,		
+		saveState: false
+	});
+});
 </script>
 <div class="hidden-sm hidden-md hidden-lg" id="menu-mobile">
 <ul class="accordion sidebar-nav list-group" id="accordion-mobile">
 <li class="sidebar-title">
-<a href="#menu-mobile-toggle-close" id="menu-mobile-toggle-close"><span aria-hidden="true">×</span></a>Menù      <script>
-      $("#menu-mobile-toggle-close").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("menu-toggled");
-		$(".sidebar-opacity").toggleClass("menu-toggled");
-      });
+<a href="#menu-mobile-toggle-close" id="menu-mobile-toggle-close"><span aria-hidden="true">×</span></a>Menù      <script>
+      $("#menu-mobile-toggle-close").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("menu-toggled");
+		$(".sidebar-opacity").toggleClass("menu-toggled");
+      });
       </script>
 </li>
 <li><a href="http://www.puggle-babys.de/">Home</a></li>
@@ -263,16 +263,16 @@ $(document).ready(function() {
 </div>
 <div style="display:none;"><script src="//js.users.51.la/21085533.js" type="text/javascript"></script><br/></div><div class="container">
 <div class="row"><column class="col-sm-3 hidden-xs" id="column-left">
-<script type="text/javascript">
-$(document).ready(function() {
-	$('#accordion-1').dcAccordion({
-		disableLink: false,	
-		menuClose: false,
-		autoClose: true,
-		autoExpand: true,		
-		saveState: false
-	});
-});
+<script type="text/javascript">
+$(document).ready(function() {
+	$('#accordion-1').dcAccordion({
+		disableLink: false,	
+		menuClose: false,
+		autoClose: true,
+		autoExpand: true,		
+		saveState: false
+	});
+});
 </script>
 <div class="panel panel-default panel-category">
 <div class="panel-heading">Categorie</div>
@@ -304,14 +304,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.puggle-babys.de/caschi-rossi-da-moto-hjc-helmets.html"><img alt="Caschi rossi da moto HJC Helmets" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/pugglebabysde/caschi-rossi-da-moto-hjc-helmets-1960.jpg" title="Caschi rossi da moto HJC Helmets"/></a>
+<a class="arevision" href="http://www.puggle-babys.de/hjc-rpha-11-misano-misano-mc2.html"><img alt="Hjc Rpha 11 Misano - (misano Mc2)" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/pugglebabysde/hjc-rpha-11-misano-misano-mc2-617.jpg" title="Hjc Rpha 11 Misano - (misano Mc2)"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.puggle-babys.de/caschi-rossi-da-moto-hjc-helmets.html">Caschi rossi da moto HJC Helmets</a></h4></div>
+<div class="name"><h4><a href="http://www.puggle-babys.de/hjc-rpha-11-misano-misano-mc2.html">Hjc Rpha 11 Misano - (misano Mc2)</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€44,99</span> <span class="price-old">€114,99</span>
+<span class="price-new">€44,99</span> <span class="price-old">€126,99</span>
 </p>
 </div>
 </div>
@@ -320,14 +320,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.puggle-babys.de/ls2-ff353j-rapid-mini-casco-per-bambini-nero-dimensione-m.html"><img alt="LS2 FF353J Rapid Mini Casco per bambini, nero, dimensione M" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/pugglebabysde/ls2-ff353j-rapid-mini-casco-per-bambini-nero-dimensione-mx-3149.jpg" title="LS2 FF353J Rapid Mini Casco per bambini, nero, dimensione M"/></a>
+<a class="arevision" href="http://www.puggle-babys.de/caschi-grigi-da-moto-ls2.html"><img alt="Caschi grigi da moto LS2" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/pugglebabysde/caschi-grigi-da-moto-ls2-1557.jpg" title="Caschi grigi da moto LS2"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.puggle-babys.de/ls2-ff353j-rapid-mini-casco-per-bambini-nero-dimensione-m.html">LS2 FF353J Rapid Mini Casco per bambini, nero, dimensione M</a></h4></div>
+<div class="name"><h4><a href="http://www.puggle-babys.de/caschi-grigi-da-moto-ls2.html">Caschi grigi da moto LS2</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€42,99</span> <span class="price-old">€110,99</span>
+<span class="price-new">€42,99</span> <span class="price-old">€125,99</span>
 </p>
 </div>
 </div>
@@ -336,14 +336,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.puggle-babys.de/caschi-46-cm-trasparenti-da-moto-agv.html"><img alt="Caschi 46 cm trasparenti da moto AGV" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/pugglebabysde/caschi-46-cm-trasparenti-da-moto-agv-3507.jpg" title="Caschi 46 cm trasparenti da moto AGV"/></a>
+<a class="arevision" href="http://www.puggle-babys.de/ls2-of600-copter-casco-jet-xl-male-bianco.html"><img alt="LS2 OF600 Copter, casco jet XL male Bianco" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/pugglebabysde/ls2-of600-copter-casco-jet-xl-male-bianco-1812.jpg" title="LS2 OF600 Copter, casco jet XL male Bianco"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.puggle-babys.de/caschi-46-cm-trasparenti-da-moto-agv.html">Caschi 46 cm trasparenti da moto AGV</a></h4></div>
+<div class="name"><h4><a href="http://www.puggle-babys.de/ls2-of600-copter-casco-jet-xl-male-bianco.html">LS2 OF600 Copter, casco jet XL male Bianco</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€43,99</span> <span class="price-old">€124,99</span>
+<span class="price-new">€40,99</span> <span class="price-old">€115,99</span>
 </p>
 </div>
 </div>
@@ -352,14 +352,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.puggle-babys.de/caschi-gialli-da-moto-origine.html"><img alt="Caschi gialli da moto Origine" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/pugglebabysde/caschi-gialli-da-moto-origine-1892.jpg" title="Caschi gialli da moto Origine"/></a>
+<a class="arevision" href="http://www.puggle-babys.de/rocc-771-xxl-male-bianco-nero-rosso.html"><img alt="Rocc 771 XXL male Bianco/Nero/Rosso" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/pugglebabysde/rocc-771-xxl-male-bianco-nero-rosso-4230.jpg" title="Rocc 771 XXL male Bianco/Nero/Rosso"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.puggle-babys.de/caschi-gialli-da-moto-origine.html">Caschi gialli da moto Origine</a></h4></div>
+<div class="name"><h4><a href="http://www.puggle-babys.de/rocc-771-xxl-male-bianco-nero-rosso.html">Rocc 771 XXL male Bianco/Nero/Rosso</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€45,99</span> <span class="price-old">€125,99</span>
+<span class="price-new">€43,99</span> <span class="price-old">€130,99</span>
 </p>
 </div>
 </div>
@@ -368,14 +368,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.puggle-babys.de/hjc-v30-equinox-casco-jet-nerooro-dimensione-m.html"><img alt="HJC V30 Equinox Casco jet, nero-oro, dimensione M" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/pugglebabysde/hjc-v30-equinox-casco-jet-nerooro-dimensione-mx-1915.jpg" title="HJC V30 Equinox Casco jet, nero-oro, dimensione M"/></a>
+<a class="arevision" href="http://www.puggle-babys.de/caschi-grigi-da-moto-arai.html"><img alt="Caschi grigi da moto Arai" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/pugglebabysde/caschi-grigi-da-moto-arai-5237.jpg" title="Caschi grigi da moto Arai"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.puggle-babys.de/hjc-v30-equinox-casco-jet-nerooro-dimensione-m.html">HJC V30 Equinox Casco jet, nero-oro, dimensione M</a></h4></div>
+<div class="name"><h4><a href="http://www.puggle-babys.de/caschi-grigi-da-moto-arai.html">Caschi grigi da moto Arai</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€44,99</span> <span class="price-old">€117,99</span>
+<span class="price-new">€43,99</span> <span class="price-old">€122,99</span>
 </p>
 </div>
 </div>
@@ -384,14 +384,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.puggle-babys.de/caschi-da-moto-scorpion.html"><img alt="Caschi da moto Scorpion" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/pugglebabysde/caschi-da-moto-scorpion-210.jpg" title="Caschi da moto Scorpion"/></a>
+<a class="arevision" href="http://www.puggle-babys.de/caschi-neri-da-moto-ixon.html"><img alt="Caschi neri da moto Ixon" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/pugglebabysde/caschi-neri-da-moto-ixon-2266.jpg" title="Caschi neri da moto Ixon"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.puggle-babys.de/caschi-da-moto-scorpion.html">Caschi da moto Scorpion</a></h4></div>
+<div class="name"><h4><a href="http://www.puggle-babys.de/caschi-neri-da-moto-ixon.html">Caschi neri da moto Ixon</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€40,99</span> <span class="price-old">€127,99</span>
+<span class="price-new">€41,99</span> <span class="price-old">€118,99</span>
 </p>
 </div>
 </div>
@@ -408,14 +408,126 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.puggle-babys.de/scorpion-exo-1400-air-toa-casco-biancorosa-taglia-l.html"><img alt="Scorpion EXO 1400 Air Toa casco, bianco-rosa, taglia L" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/pugglebabysde/scorpion-exo-1400-air-toa-casco-biancorosa-taglia-l-788.jpg" title="Scorpion EXO 1400 Air Toa casco, bianco-rosa, taglia L"/></a>
+<a class="arevision" href="http://www.puggle-babys.de/caschi-46-cm-trasparenti-da-moto-agv.html"><img alt="Caschi 46 cm trasparenti da moto AGV" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/pugglebabysde/caschi-46-cm-trasparenti-da-moto-agv-3507.jpg" title="Caschi 46 cm trasparenti da moto AGV"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.puggle-babys.de/scorpion-exo-1400-air-toa-casco-biancorosa-taglia-l.html">Scorpion EXO 1400 Air Toa casco, bianco-rosa, taglia L</a></h4></div>
+<div class="name"><h4><a href="http://www.puggle-babys.de/caschi-46-cm-trasparenti-da-moto-agv.html">Caschi 46 cm trasparenti da moto AGV</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€43,99</span> <span class="price-old">€122,99</span>
+<span class="price-new">€43,99</span> <span class="price-old">€124,99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="http://www.puggle-babys.de/caschi-neri-da-moto-ixon.html"><img alt="Caschi neri da moto Ixon" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/pugglebabysde/caschi-neri-da-moto-ixon-2547.jpg" title="Caschi neri da moto Ixon"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="http://www.puggle-babys.de/caschi-neri-da-moto-ixon.html">Caschi neri da moto Ixon</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€44,99</span> <span class="price-old">€122,99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="http://www.puggle-babys.de/fox-racing-rampage-comp-helmet-mt-blk-casco-integrale-ciclismo-xl-nero.html"><img alt="FOX Racing - Rampage Comp Helmet Mt Blk - Casco integrale ciclismo XL nero" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/pugglebabysde/fox-racing-rampage-comp-helmet-mt-blk-casco-integrale-ciclismo-xl-nero-4468.jpg" title="FOX Racing - Rampage Comp Helmet Mt Blk - Casco integrale ciclismo XL nero"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="http://www.puggle-babys.de/fox-racing-rampage-comp-helmet-mt-blk-casco-integrale-ciclismo-xl-nero.html">FOX Racing - Rampage Comp Helmet Mt Blk - Casco integrale ciclismo XL nero</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€42,99</span> <span class="price-old">€130,99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="http://www.puggle-babys.de/fox-v1-tro-casco-motocross-turchese-dimensione-xl.html"><img alt="FOX V1 Tro Casco Motocross, turchese, dimensione XL" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/pugglebabysde/fox-v1-tro-casco-motocross-turchese-dimensione-xl-3595.jpg" title="FOX V1 Tro Casco Motocross, turchese, dimensione XL"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="http://www.puggle-babys.de/fox-v1-tro-casco-motocross-turchese-dimensione-xl.html">FOX V1 Tro Casco Motocross, turchese, dimensione XL</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€41,99</span> <span class="price-old">€111,99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="http://www.puggle-babys.de/shoei-xspirit-iii-dello-sportello-posteriore-klein-male-grigio.html"><img alt="Shoei X-Spirit III, dello sportello posteriore Klein male Grigio" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/pugglebabysde/shoei-xspirit-iii-dello-sportello-posteriore-klein-male-grigio-2763.jpg" title="Shoei X-Spirit III, dello sportello posteriore Klein male Grigio"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="http://www.puggle-babys.de/shoei-xspirit-iii-dello-sportello-posteriore-klein-male-grigio.html">Shoei X-Spirit III, dello sportello posteriore Klein male Grigio</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€43,99</span> <span class="price-old">€118,99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="http://www.puggle-babys.de/casco-jet-lazer-mambo-evo-old-school-oronero-opaco-uomo-m-5758cm.html"><img alt="Casco Jet Lazer Mambo Evo Old School Oro-Nero Opaco Uomo M 57-58cm" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/pugglebabysde/casco-jet-lazer-mambo-evo-old-school-oronero-opaco-uomo-mx-5758cm-655.jpg" title="Casco Jet Lazer Mambo Evo Old School Oro-Nero Opaco Uomo M 57-58cm"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="http://www.puggle-babys.de/casco-jet-lazer-mambo-evo-old-school-oronero-opaco-uomo-m-5758cm.html">Casco Jet Lazer Mambo Evo Old School Oro-Nero Opaco Uomo M 57-58cm</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€43,99</span> <span class="price-old">€117,99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="http://www.puggle-babys.de/kyt-tt-course-grand-prix-casco-biancoblu-dimensione-xl.html"><img alt="KYT TT Course Grand Prix Casco, bianco-blu, dimensione XL" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/pugglebabysde/kyt-tt-course-grand-prix-casco-biancoblu-dimensione-xl-5460.jpg" title="KYT TT Course Grand Prix Casco, bianco-blu, dimensione XL"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="http://www.puggle-babys.de/kyt-tt-course-grand-prix-casco-biancoblu-dimensione-xl.html">KYT TT Course Grand Prix Casco, bianco-blu, dimensione XL</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€43,99</span> <span class="price-old">€129,99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="http://www.puggle-babys.de/ixs-99-10-casco-jet-argento-dimensione-xs.html"><img alt="IXS 99 1.0 Casco Jet, argento, dimensione XS" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/pugglebabysde/ixs-99-10-casco-jet-argento-dimensione-xs-5074.jpg" title="IXS 99 1.0 Casco Jet, argento, dimensione XS"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="http://www.puggle-babys.de/ixs-99-10-casco-jet-argento-dimensione-xs.html">IXS 99 1.0 Casco Jet, argento, dimensione XS</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€41,99</span> <span class="price-old">€111,99</span>
 </p>
 </div>
 </div>
@@ -440,14 +552,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.puggle-babys.de/hjc-hj20-visiera-pinlock-grigio.html"><img alt="HJC HJ-20 Visiera Pinlock, grigio" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/pugglebabysde/hjc-hj20-visiera-pinlock-grigio-1102.jpg" title="HJC HJ-20 Visiera Pinlock, grigio"/></a>
+<a class="arevision" href="http://www.puggle-babys.de/nolan-pinlook-n103-102-91-90-101-100-trasparente.html"><img alt="Nolan Pinlook N103/102/91/90/101/100 - (trasparente)" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/pugglebabysde/nolan-pinlook-n103-102-91-90-101-100-trasparente-4729.jpg" title="Nolan Pinlook N103/102/91/90/101/100 - (trasparente)"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.puggle-babys.de/hjc-hj20-visiera-pinlock-grigio.html">HJC HJ-20 Visiera Pinlock, grigio</a></h4></div>
+<div class="name"><h4><a href="http://www.puggle-babys.de/nolan-pinlook-n103-102-91-90-101-100-trasparente.html">Nolan Pinlook N103/102/91/90/101/100 - (trasparente)</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€40,99</span> <span class="price-old">€110,99</span>
+<span class="price-new">€43,99</span> <span class="price-old">€121,99</span>
 </p>
 </div>
 </div>
@@ -456,14 +568,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.puggle-babys.de/origine-strada-solid-casco-integrale-m-male-nero-opaco.html"><img alt="Origine Strada Solid, casco integrale M male Nero Opaco" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/pugglebabysde/origine-strada-solid-casco-integrale-mx-male-nero-opaco-626.jpg" title="Origine Strada Solid, casco integrale M male Nero Opaco"/></a>
+<a class="arevision" href="http://www.puggle-babys.de/caschi-giallo-fluo-da-moto-astone.html"><img alt="Caschi giallo fluo da moto Astone" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/pugglebabysde/caschi-giallo-fluo-da-moto-astone-867.jpg" title="Caschi giallo fluo da moto Astone"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.puggle-babys.de/origine-strada-solid-casco-integrale-m-male-nero-opaco.html">Origine Strada Solid, casco integrale M male Nero Opaco</a></h4></div>
+<div class="name"><h4><a href="http://www.puggle-babys.de/caschi-giallo-fluo-da-moto-astone.html">Caschi giallo fluo da moto Astone</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€44,99</span> <span class="price-old">€112,99</span>
+<span class="price-new">€44,99</span> <span class="price-old">€116,99</span>
 </p>
 </div>
 </div>
@@ -472,126 +584,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.puggle-babys.de/baruffaldi-zar-floralis-tetti-casco-jet-bianco-dimensione-m-l.html"><img alt="Baruffaldi Zar Floralis Tetti Casco Jet, bianco, dimensione M L" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/pugglebabysde/baruffaldi-zar-floralis-tetti-casco-jet-bianco-dimensione-mx-l-1088.jpg" title="Baruffaldi Zar Floralis Tetti Casco Jet, bianco, dimensione M L"/></a>
+<a class="arevision" href="http://www.puggle-babys.de/schuberth-r2-nemesis-casco-neroblu-dimensione-xs.html"><img alt="Schuberth R2 Nemesis casco, nero-blu, dimensione XS" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/pugglebabysde/schuberth-r2-nemesis-casco-neroblu-dimensione-xs-2416.jpg" title="Schuberth R2 Nemesis casco, nero-blu, dimensione XS"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.puggle-babys.de/baruffaldi-zar-floralis-tetti-casco-jet-bianco-dimensione-m-l.html">Baruffaldi Zar Floralis Tetti Casco Jet, bianco, dimensione M L</a></h4></div>
+<div class="name"><h4><a href="http://www.puggle-babys.de/schuberth-r2-nemesis-casco-neroblu-dimensione-xs.html">Schuberth R2 Nemesis casco, nero-blu, dimensione XS</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€43,99</span> <span class="price-old">€117,99</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.puggle-babys.de/caschi-antracite-da-moto-shark.html"><img alt="Caschi antracite da moto Shark" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/pugglebabysde/caschi-antracite-da-moto-shark-925.jpg" title="Caschi antracite da moto Shark"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="http://www.puggle-babys.de/caschi-antracite-da-moto-shark.html">Caschi antracite da moto Shark</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€40,99</span> <span class="price-old">€117,99</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.puggle-babys.de/caschi-bianchi-da-moto.html"><img alt="Caschi bianchi da moto" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/pugglebabysde/caschi-bianchi-da-moto-5307.jpg" title="Caschi bianchi da moto"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="http://www.puggle-babys.de/caschi-bianchi-da-moto.html">Caschi bianchi da moto</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€41,99</span> <span class="price-old">€112,99</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.puggle-babys.de/visiera-3-bottoni-bell-custom-500-3snap-bubble-colore-argento.html"><img alt="Visiera 3 Bottoni Bell Custom 500 3-Snap Bubble - Colore: Argento" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/pugglebabysde/visiera-3-bottoni-bell-custom-500-3snap-bubble-colore-argento-3628.jpg" title="Visiera 3 Bottoni Bell Custom 500 3-Snap Bubble - Colore: Argento"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="http://www.puggle-babys.de/visiera-3-bottoni-bell-custom-500-3snap-bubble-colore-argento.html">Visiera 3 Bottoni Bell Custom 500 3-Snap Bubble - Colore: Argento</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€39,99</span> <span class="price-old">€115,99</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.puggle-babys.de/caschi-blu-da-moto-givi.html"><img alt="Caschi blu da moto Givi" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/pugglebabysde/caschi-blu-da-moto-givi-4096.jpg" title="Caschi blu da moto Givi"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="http://www.puggle-babys.de/caschi-blu-da-moto-givi.html">Caschi blu da moto Givi</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€45,99</span> <span class="price-old">€128,99</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.puggle-babys.de/caschi-da-moto-per-uomo-premier.html"><img alt="Caschi da moto per Uomo Premier" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/pugglebabysde/caschi-da-moto-per-uomo-premier-3117.jpg" title="Caschi da moto per Uomo Premier"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="http://www.puggle-babys.de/caschi-da-moto-per-uomo-premier.html">Caschi da moto per Uomo Premier</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€43,99</span> <span class="price-old">€123,99</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.puggle-babys.de/caschi-da-moto-bogotto.html"><img alt="Caschi da moto Bogotto" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/pugglebabysde/caschi-da-moto-bogotto-2541.jpg" title="Caschi da moto Bogotto"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="http://www.puggle-babys.de/caschi-da-moto-bogotto.html">Caschi da moto Bogotto</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€43,99</span> <span class="price-old">€125,99</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.puggle-babys.de/casco-jet-ixs-880-20-uomo-l-5960cm.html"><img alt="Casco Jet iXS 880 2.0 Uomo L 59-60cm" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/pugglebabysde/casco-jet-ixs-880-20-uomo-l-5960cm-3291.jpg" title="Casco Jet iXS 880 2.0 Uomo L 59-60cm"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="http://www.puggle-babys.de/casco-jet-ixs-880-20-uomo-l-5960cm.html">Casco Jet iXS 880 2.0 Uomo L 59-60cm</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€40,99</span> <span class="price-old">€115,99</span>
+<span class="price-new">€43,99</span> <span class="price-old">€126,99</span>
 </p>
 </div>
 </div>
@@ -627,43 +627,43 @@ $(document).ready(function() {
 <div id="powered">
 <div class="container">
 <div class="row">
-<div class="col-sm-12 col-md-12">
-      Copyright © 2022 <a href="//www.puggle-babys.de" target="_blank">www.puggle-babys.de</a> All Rights Reserved  
+<div class="col-sm-12 col-md-12">
+      Copyright © 2022 <a href="//www.puggle-babys.de" target="_blank">www.puggle-babys.de</a> All Rights Reserved  
       </div>
 </div>
 </div>
 </div>
 </footer>
 <script src="catalog/view/theme/ostracism/js/jquery.visible.min.js" type="text/javascript"></script>
-<script type="text/javascript">
-
-var win = $(window);
-
-var allMods = $("footer");
-
-allMods.each(function(i, el) {
-    
-  if ($(el).visible(true)) {
-    $(el).addClass("already-visible"); 
-  }
-  
-});
-
-win.scroll(function(event) {
-  
-  allMods.each(function(i, el) {
-    
-    var el = $(el);
-    
-    if (el.visible(true)) {
-      el.addClass("come-in"); 
-    } else {
-      el.removeClass("come-in already-visible");
-    }
-    
-  });
-  
-}); 
+<script type="text/javascript">
+
+var win = $(window);
+
+var allMods = $("footer");
+
+allMods.each(function(i, el) {
+    
+  if ($(el).visible(true)) {
+    $(el).addClass("already-visible"); 
+  }
+  
+});
+
+win.scroll(function(event) {
+  
+  allMods.each(function(i, el) {
+    
+    var el = $(el);
+    
+    if (el.visible(true)) {
+      el.addClass("come-in"); 
+    } else {
+      el.removeClass("come-in already-visible");
+    }
+    
+  });
+  
+}); 
 </script>
 <script src="catalog/view/theme/ostracism/js/jquery.easing-1.3.min.js" type="text/javascript"></script>
 <link href="catalog/view/theme/ostracism/js/quickview/fancybox/jquery.fancybox.css" property="stylesheet" rel="stylesheet">

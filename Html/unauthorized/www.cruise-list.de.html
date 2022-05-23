@@ -34,62 +34,62 @@
 <script src="catalog/view/theme/discord/js/cloud-zoom.js" type="text/javascript"></script>
 <link href="catalog/view/theme/discord/stylesheet/dcaccordion.css" property="stylesheet" rel="stylesheet" type="text/css">
 <script src="catalog/view/theme/discord/js/jquery.dcjqaccordion.js" type="text/javascript"></script>
-<script type="text/javascript">//<!--
-/* <![CDATA[ (head-active_data.js) */
-var dw = (window.dw || {});
-dw.ac = {
-    _analytics: null,
-    _events: [],
-    _category: "",
-    _searchData: "",
-    _anact: "",
-    _anact_nohit_tag: "",
-    _capture: function(configs) {
-        if (Object.prototype.toString.call(configs) === "[object Array]") {
-            configs.forEach(captureObject);
-            return;
-        }
-        dw.ac._events.push(configs);
-    },
-	capture: function() { 
-		dw.ac._capture(arguments);
-		// send to CQ as well:
-		if (window.CQuotient) {
-			window.CQuotient.trackEventsFromAC(arguments);
-		}
-	},
-    EV_PRD_SEARCHHIT: "searchhit",
-    EV_PRD_DETAIL: "detail",
-    EV_PRD_RECOMMENDATION: "recommendation",
-    EV_PRD_SETPRODUCT: "setproduct",
-    applyContext: function(context) {
-        if (typeof context === "object" && context.hasOwnProperty("category")) {
-        	dw.ac._category = context.category;
-        }
-        if (typeof context === "object" && context.hasOwnProperty("searchData")) {
-        	dw.ac._searchData = context.searchData;
-        }
-    },
-    setDWAnalytics: function(analytics) {
-        dw.ac._analytics = analytics;
-    }
-};
-/* ]]> */
-// -->
+<script type="text/javascript">//<!--
+/* <![CDATA[ (head-active_data.js) */
+var dw = (window.dw || {});
+dw.ac = {
+    _analytics: null,
+    _events: [],
+    _category: "",
+    _searchData: "",
+    _anact: "",
+    _anact_nohit_tag: "",
+    _capture: function(configs) {
+        if (Object.prototype.toString.call(configs) === "[object Array]") {
+            configs.forEach(captureObject);
+            return;
+        }
+        dw.ac._events.push(configs);
+    },
+	capture: function() { 
+		dw.ac._capture(arguments);
+		// send to CQ as well:
+		if (window.CQuotient) {
+			window.CQuotient.trackEventsFromAC(arguments);
+		}
+	},
+    EV_PRD_SEARCHHIT: "searchhit",
+    EV_PRD_DETAIL: "detail",
+    EV_PRD_RECOMMENDATION: "recommendation",
+    EV_PRD_SETPRODUCT: "setproduct",
+    applyContext: function(context) {
+        if (typeof context === "object" && context.hasOwnProperty("category")) {
+        	dw.ac._category = context.category;
+        }
+        if (typeof context === "object" && context.hasOwnProperty("searchData")) {
+        	dw.ac._searchData = context.searchData;
+        }
+    },
+    setDWAnalytics: function(analytics) {
+        dw.ac._analytics = analytics;
+    }
+};
+/* ]]> */
+// -->
 </script>
-<script>
-if ('serviceWorker' in navigator) {
-function registerSW() {
-navigator.serviceWorker.getRegistrations().then(function (registrations) {
-if(registrations.length == 0 ) {
-return navigator.serviceWorker.register('/service-worker',{
-updateViaCache:'all'
-});
-}
-});
-}
-window.addEventListener('load', registerSW);
-}
+<script>
+if ('serviceWorker' in navigator) {
+function registerSW() {
+navigator.serviceWorker.getRegistrations().then(function (registrations) {
+if(registrations.length == 0 ) {
+return navigator.serviceWorker.register('/service-worker',{
+updateViaCache:'all'
+});
+}
+});
+}
+window.addEventListener('load', registerSW);
+}
 </script>
 </link></link></link></meta></head>
 <body class="common-home discord">
@@ -98,12 +98,12 @@ window.addEventListener('load', registerSW);
 <div id="sidebar-wrapper">
 <ul class="sidebar-nav list-group discord">
 <li class="sidebar-title">
-<a href="#menu-toggle-close" id="menu-toggle-close"><span aria-hidden="true">×</span></a>Informazione      <script>
-      $("#menu-toggle-close").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-		$(".sidebar-opacity").toggleClass("toggled");
-      });
+<a href="#menu-toggle-close" id="menu-toggle-close"><span aria-hidden="true">×</span></a>Informazione      <script>
+      $("#menu-toggle-close").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+		$(".sidebar-opacity").toggleClass("toggled");
+      });
       </script>
 </li>
 <li><a href="http://www.cruise-list.de/index.php?route=information/information&amp;information_id=7">FAQ</a></li>
@@ -166,12 +166,12 @@ window.addEventListener('load', registerSW);
 <span class="button-text">Menù</span>
 </div>
 </a>
-<script>
-        $("#menu-mobile-toggle").click(function(e) {
-          e.preventDefault();
-          $("#wrapper").toggleClass("menu-toggled");
-		  $(".sidebar-opacity").toggleClass("menu-toggled");
-        });
+<script>
+        $("#menu-mobile-toggle").click(function(e) {
+          e.preventDefault();
+          $("#wrapper").toggleClass("menu-toggled");
+		  $(".sidebar-opacity").toggleClass("menu-toggled");
+        });
       </script>
 <div class="btn-group btn-block buttons-header" id="cart">
 <a class="btn dropdown-toggle" data-loading-text="Caricamento..." data-toggle="dropdown">
@@ -209,26 +209,26 @@ window.addEventListener('load', registerSW);
 </div>
 </div>
 </nav>
-<script type="text/javascript">
-$(document).ready(function() {
-	$('#accordion-mobile').dcAccordion({
-		disableLink: false,	
-		menuClose: false,
-		autoClose: true,
-		autoExpand: true,		
-		saveState: false
-	});
-});
+<script type="text/javascript">
+$(document).ready(function() {
+	$('#accordion-mobile').dcAccordion({
+		disableLink: false,	
+		menuClose: false,
+		autoClose: true,
+		autoExpand: true,		
+		saveState: false
+	});
+});
 </script>
 <div class="hidden-sm hidden-md hidden-lg" id="menu-mobile">
 <ul class="accordion sidebar-nav list-group" id="accordion-mobile">
 <li class="sidebar-title">
-<a href="#menu-mobile-toggle-close" id="menu-mobile-toggle-close"><span aria-hidden="true">×</span></a>Menù      <script>
-      $("#menu-mobile-toggle-close").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("menu-toggled");
-		$(".sidebar-opacity").toggleClass("menu-toggled");
-      });
+<a href="#menu-mobile-toggle-close" id="menu-mobile-toggle-close"><span aria-hidden="true">×</span></a>Menù      <script>
+      $("#menu-mobile-toggle-close").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("menu-toggled");
+		$(".sidebar-opacity").toggleClass("menu-toggled");
+      });
       </script>
 </li>
 <li><a href="http://www.cruise-list.de/">Home</a></li>
@@ -261,16 +261,16 @@ $(document).ready(function() {
 </div>
 <div style="display:none;"><script src="//js.users.51.la/21085533.js" type="text/javascript"></script><br/></div><div class="container">
 <div class="row"><column class="col-sm-3 hidden-xs" id="column-left">
-<script type="text/javascript">
-$(document).ready(function() {
-	$('#accordion-1').dcAccordion({
-		disableLink: false,	
-		menuClose: false,
-		autoClose: true,
-		autoExpand: true,		
-		saveState: false
-	});
-});
+<script type="text/javascript">
+$(document).ready(function() {
+	$('#accordion-1').dcAccordion({
+		disableLink: false,	
+		menuClose: false,
+		autoClose: true,
+		autoExpand: true,		
+		saveState: false
+	});
+});
 </script>
 <div class="panel panel-default panel-category">
 <div class="panel-heading">Categorie</div>
@@ -302,14 +302,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.cruise-list.de/caschi-grigi-da-moto-astone.html"><img alt="Caschi grigi da moto Astone" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/cruiselistde/caschi-grigi-da-moto-astone-4178.jpg" title="Caschi grigi da moto Astone"/></a>
+<a class="arevision" href="http://www.cruise-list.de/caschi-da-moto-caberg.html"><img alt="Caschi da moto Caberg" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/cruiselistde/caschi-da-moto-caberg-1500.jpg" title="Caschi da moto Caberg"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.cruise-list.de/caschi-grigi-da-moto-astone.html">Caschi grigi da moto Astone</a></h4></div>
+<div class="name"><h4><a href="http://www.cruise-list.de/caschi-da-moto-caberg.html">Caschi da moto Caberg</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€40,99</span> <span class="price-old">€113,99</span>
+<span class="price-new">€44,99</span> <span class="price-old">€129,99</span>
 </p>
 </div>
 </div>
@@ -318,14 +318,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.cruise-list.de/caschi-neri-da-moto-shark.html"><img alt="Caschi neri da moto Shark" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/cruiselistde/caschi-neri-da-moto-shark-1917.jpg" title="Caschi neri da moto Shark"/></a>
+<a class="arevision" href="http://www.cruise-list.de/shark-vz1540p-strappi-5-pz-male-trasparente.html"><img alt="Shark VZ1540P, strappi 5 pz. male Trasparente" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/cruiselistde/shark-vz1540p-strappi-5-pz-male-trasparente-499.jpg" title="Shark VZ1540P, strappi 5 pz. male Trasparente"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.cruise-list.de/caschi-neri-da-moto-shark.html">Caschi neri da moto Shark</a></h4></div>
+<div class="name"><h4><a href="http://www.cruise-list.de/shark-vz1540p-strappi-5-pz-male-trasparente.html">Shark VZ1540P, strappi 5 pz. male Trasparente</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€43,99</span> <span class="price-old">€118,99</span>
+<span class="price-new">€45,99</span> <span class="price-old">€115,99</span>
 </p>
 </div>
 </div>
@@ -334,14 +334,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.cruise-list.de/caschi-blu-da-moto-airoh.html"><img alt="Caschi blu da moto Airoh" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/cruiselistde/caschi-blu-da-moto-airoh-3562.jpg" title="Caschi blu da moto Airoh"/></a>
+<a class="arevision" href="http://www.cruise-list.de/xlite-x803-rs-ultra-carbon-replica-stoner-replica-stoner.html"><img alt="X-Lite X-803 Rs Ultra Carbon Replica Stoner - (replica Stoner)" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/cruiselistde/xlite-x803-rs-ultra-carbon-replica-stoner-replica-stoner-3040.jpg" title="X-Lite X-803 Rs Ultra Carbon Replica Stoner - (replica Stoner)"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.cruise-list.de/caschi-blu-da-moto-airoh.html">Caschi blu da moto Airoh</a></h4></div>
+<div class="name"><h4><a href="http://www.cruise-list.de/xlite-x803-rs-ultra-carbon-replica-stoner-replica-stoner.html">X-Lite X-803 Rs Ultra Carbon Replica Stoner - (replica Stoner)</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€45,99</span> <span class="price-old">€120,99</span>
+<span class="price-new">€43,99</span> <span class="price-old">€110,99</span>
 </p>
 </div>
 </div>
@@ -350,14 +350,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.cruise-list.de/caschi-neri-da-moto-ixs.html"><img alt="Caschi neri da moto IXS" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/cruiselistde/caschi-neri-da-moto-ixs-609.jpg" title="Caschi neri da moto IXS"/></a>
+<a class="arevision" href="http://www.cruise-list.de/bell-casco-vintage-integrale-bullitt-flow-grey-black.html"><img alt="Bell casco vintage integrale Bullitt Flow - Grey Black" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/cruiselistde/bell-casco-vintage-integrale-bullitt-flow-grey-black-986.jpg" title="Bell casco vintage integrale Bullitt Flow - Grey Black"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.cruise-list.de/caschi-neri-da-moto-ixs.html">Caschi neri da moto IXS</a></h4></div>
+<div class="name"><h4><a href="http://www.cruise-list.de/bell-casco-vintage-integrale-bullitt-flow-grey-black.html">Bell casco vintage integrale Bullitt Flow - Grey Black</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€42,99</span> <span class="price-old">€127,99</span>
+<span class="price-new">€43,99</span> <span class="price-old">€129,99</span>
 </p>
 </div>
 </div>
@@ -366,14 +366,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.cruise-list.de/caschi-da-moto-bogotto.html"><img alt="Caschi da moto Bogotto" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/cruiselistde/caschi-da-moto-bogotto-1127.jpg" title="Caschi da moto Bogotto"/></a>
+<a class="arevision" href="http://www.cruise-list.de/airoh-valor-nexy-casco-integrale-s-male-opaco-bianco-nero.html"><img alt="Airoh Valor Nexy, casco integrale S male Opaco Bianco/Nero" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/cruiselistde/airoh-valor-nexy-casco-integrale-s-male-opaco-bianco-nero-3232.jpg" title="Airoh Valor Nexy, casco integrale S male Opaco Bianco/Nero"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.cruise-list.de/caschi-da-moto-bogotto.html">Caschi da moto Bogotto</a></h4></div>
+<div class="name"><h4><a href="http://www.cruise-list.de/airoh-valor-nexy-casco-integrale-s-male-opaco-bianco-nero.html">Airoh Valor Nexy, casco integrale S male Opaco Bianco/Nero</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€39,99</span> <span class="price-old">€121,99</span>
+<span class="price-new">€39,99</span> <span class="price-old">€113,99</span>
 </p>
 </div>
 </div>
@@ -382,14 +382,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.cruise-list.de/caschi-multicolore-da-moto-oneal.html"><img alt="Caschi multicolore da moto O'Neal" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/cruiselistde/caschi-multicolore-da-moto-oneal-4607.jpg" title="Caschi multicolore da moto O'Neal"/></a>
+<a class="arevision" href="http://www.cruise-list.de/caschi-rossi-da-moto-hjc-helmets.html"><img alt="Caschi rossi da moto HJC Helmets" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/cruiselistde/caschi-rossi-da-moto-hjc-helmets-1102.jpg" title="Caschi rossi da moto HJC Helmets"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.cruise-list.de/caschi-multicolore-da-moto-oneal.html">Caschi multicolore da moto O'Neal</a></h4></div>
+<div class="name"><h4><a href="http://www.cruise-list.de/caschi-rossi-da-moto-hjc-helmets.html">Caschi rossi da moto HJC Helmets</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€40,99</span> <span class="price-old">€116,99</span>
+<span class="price-new">€44,99</span> <span class="price-old">€112,99</span>
 </p>
 </div>
 </div>
@@ -406,14 +406,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.cruise-list.de/caschi-rosa-da-moto-agv.html"><img alt="Caschi rosa da moto AGV" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/cruiselistde/caschi-rosa-da-moto-agv-3203.jpg" title="Caschi rosa da moto AGV"/></a>
+<a class="arevision" href="http://www.cruise-list.de/xlite-x10031004-visiera-trasparente.html"><img alt="X-Lite X-1003-1004 Visiera, trasparente" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/cruiselistde/xlite-x10031004-visiera-trasparente-1787.jpg" title="X-Lite X-1003-1004 Visiera, trasparente"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.cruise-list.de/caschi-rosa-da-moto-agv.html">Caschi rosa da moto AGV</a></h4></div>
+<div class="name"><h4><a href="http://www.cruise-list.de/xlite-x10031004-visiera-trasparente.html">X-Lite X-1003-1004 Visiera, trasparente</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€44,99</span> <span class="price-old">€111,99</span>
+<span class="price-new">€42,99</span> <span class="price-old">€117,99</span>
 </p>
 </div>
 </div>
@@ -422,14 +422,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.cruise-list.de/caschi-gialli-da-moto-nolan.html"><img alt="Caschi gialli da moto Nolan" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/cruiselistde/caschi-gialli-da-moto-nolan-1171.jpg" title="Caschi gialli da moto Nolan"/></a>
+<a class="arevision" href="http://www.cruise-list.de/airoh-hunter-simple-elmetto-jet-nerobianco-dimensione-m.html"><img alt="Airoh Hunter Simple Elmetto jet, nero-bianco, dimensione M" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/cruiselistde/airoh-hunter-simple-elmetto-jet-nerobianco-dimensione-mx-5182.jpg" title="Airoh Hunter Simple Elmetto jet, nero-bianco, dimensione M"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.cruise-list.de/caschi-gialli-da-moto-nolan.html">Caschi gialli da moto Nolan</a></h4></div>
+<div class="name"><h4><a href="http://www.cruise-list.de/airoh-hunter-simple-elmetto-jet-nerobianco-dimensione-m.html">Airoh Hunter Simple Elmetto jet, nero-bianco, dimensione M</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€45,99</span> <span class="price-old">€121,99</span>
+<span class="price-new">€42,99</span> <span class="price-old">€113,99</span>
 </p>
 </div>
 </div>
@@ -438,14 +438,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.cruise-list.de/bores-srm-slight-visiera-trasparente-dimensione-2xs-xs-s-m.html"><img alt="Bores SRM Slight Visiera, trasparente, dimensione 2XS XS S M" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/cruiselistde/bores-srm-slight-visiera-trasparente-dimensione-2xs-xs-s-mx-3564.jpg" title="Bores SRM Slight Visiera, trasparente, dimensione 2XS XS S M"/></a>
+<a class="arevision" href="http://www.cruise-list.de/caschi-verdi-da-moto-per-uomo-shark.html"><img alt="Caschi verdi da moto per Uomo Shark" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/cruiselistde/caschi-verdi-da-moto-per-uomo-shark-2048.jpg" title="Caschi verdi da moto per Uomo Shark"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.cruise-list.de/bores-srm-slight-visiera-trasparente-dimensione-2xs-xs-s-m.html">Bores SRM Slight Visiera, trasparente, dimensione 2XS XS S M</a></h4></div>
+<div class="name"><h4><a href="http://www.cruise-list.de/caschi-verdi-da-moto-per-uomo-shark.html">Caschi verdi da moto per Uomo Shark</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€41,99</span> <span class="price-old">€121,99</span>
+<span class="price-new">€45,99</span> <span class="price-old">€128,99</span>
 </p>
 </div>
 </div>
@@ -454,14 +454,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.cruise-list.de/caschi-giallo-fluo-da-moto-astone.html"><img alt="Caschi giallo fluo da moto Astone" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/cruiselistde/caschi-giallo-fluo-da-moto-astone-877.jpg" title="Caschi giallo fluo da moto Astone"/></a>
+<a class="arevision" href="http://www.cruise-list.de/casco-ls2-ff320-stream-evo-jink-nero-opacogiallo-uomo-2xl-6364cm.html"><img alt="Casco LS2 FF320 Stream Evo Jink Nero Opaco-Giallo Uomo 2XL 63-64cm" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/cruiselistde/casco-ls2-ff320-stream-evo-jink-nero-opacogiallo-uomo-2xl-6364cm-4198.jpg" title="Casco LS2 FF320 Stream Evo Jink Nero Opaco-Giallo Uomo 2XL 63-64cm"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.cruise-list.de/caschi-giallo-fluo-da-moto-astone.html">Caschi giallo fluo da moto Astone</a></h4></div>
+<div class="name"><h4><a href="http://www.cruise-list.de/casco-ls2-ff320-stream-evo-jink-nero-opacogiallo-uomo-2xl-6364cm.html">Casco LS2 FF320 Stream Evo Jink Nero Opaco-Giallo Uomo 2XL 63-64cm</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€42,99</span> <span class="price-old">€129,99</span>
+<span class="price-new">€41,99</span> <span class="price-old">€128,99</span>
 </p>
 </div>
 </div>
@@ -470,14 +470,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.cruise-list.de/hjc-rpha-11-ben-spies-casco-biancorossoblu-dimensione-m.html"><img alt="HJC RPHA 11 Ben Spies casco, bianco-rosso-blu, dimensione M" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/cruiselistde/hjc-rpha-11-ben-spies-casco-biancorossoblu-dimensione-mx-3077.jpg" title="HJC RPHA 11 Ben Spies casco, bianco-rosso-blu, dimensione M"/></a>
+<a class="arevision" href="http://www.cruise-list.de/held-root-moto-casco-decor-nerorossogiallo-taglia-xs.html"><img alt="Held Root Moto casco Decor, nero-rosso-giallo, taglia XS" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/cruiselistde/held-root-moto-casco-decor-nerorossogiallo-taglia-xs-2013.jpg" title="Held Root Moto casco Decor, nero-rosso-giallo, taglia XS"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.cruise-list.de/hjc-rpha-11-ben-spies-casco-biancorossoblu-dimensione-m.html">HJC RPHA 11 Ben Spies casco, bianco-rosso-blu, dimensione M</a></h4></div>
+<div class="name"><h4><a href="http://www.cruise-list.de/held-root-moto-casco-decor-nerorossogiallo-taglia-xs.html">Held Root Moto casco Decor, nero-rosso-giallo, taglia XS</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€42,99</span> <span class="price-old">€116,99</span>
+<span class="price-new">€45,99</span> <span class="price-old">€122,99</span>
 </p>
 </div>
 </div>
@@ -486,14 +486,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.cruise-list.de/smith-occhiali-moto-cross-enduro-smith-fuel-v2-sweatx-m-blue-burnout.html"><img alt="Smith Occhiali moto cross enduro smith fuel v2 sweat-x m blue burnout" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/cruiselistde/smith-occhiali-moto-cross-enduro-smith-fuel-v2-sweatx-mx-blue-burnout-4879.jpg" title="Smith Occhiali moto cross enduro smith fuel v2 sweat-x m blue burnout"/></a>
+<a class="arevision" href="http://www.cruise-list.de/caschi-grigi-da-moto-astone.html"><img alt="Caschi grigi da moto Astone" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/cruiselistde/caschi-grigi-da-moto-astone-4178.jpg" title="Caschi grigi da moto Astone"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.cruise-list.de/smith-occhiali-moto-cross-enduro-smith-fuel-v2-sweatx-m-blue-burnout.html">Smith Occhiali moto cross enduro smith fuel v2 sweat-x m blue burnout</a></h4></div>
+<div class="name"><h4><a href="http://www.cruise-list.de/caschi-grigi-da-moto-astone.html">Caschi grigi da moto Astone</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€42,99</span> <span class="price-old">€111,99</span>
+<span class="price-new">€40,99</span> <span class="price-old">€113,99</span>
 </p>
 </div>
 </div>
@@ -502,14 +502,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.cruise-list.de/caschi-grigi-da-moto-revit.html"><img alt="Caschi grigi da moto Rev'it" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/cruiselistde/caschi-grigi-da-moto-revit-2499.jpg" title="Caschi grigi da moto Rev'it"/></a>
+<a class="arevision" href="http://www.cruise-list.de/caberg-avalon-giga-casco-integrale-xs-male-opaco-nero-giallo-fluo-verde-fluo-rosso.html"><img alt="Caberg Avalon Giga, casco integrale XS male Opaco Nero/Giallo Fluo/Verde Fluo/Rosso" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/cruiselistde/caberg-avalon-giga-casco-integrale-xs-male-opaco-nero-giallo-fluo-verde-fluo-rosso-3907.jpg" title="Caberg Avalon Giga, casco integrale XS male Opaco Nero/Giallo Fluo/Verde Fluo/Rosso"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.cruise-list.de/caschi-grigi-da-moto-revit.html">Caschi grigi da moto Rev'it</a></h4></div>
+<div class="name"><h4><a href="http://www.cruise-list.de/caberg-avalon-giga-casco-integrale-xs-male-opaco-nero-giallo-fluo-verde-fluo-rosso.html">Caberg Avalon Giga, casco integrale XS male Opaco Nero/Giallo Fluo/Verde Fluo/Rosso</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€41,99</span> <span class="price-old">€117,99</span>
+<span class="price-new">€43,99</span> <span class="price-old">€129,99</span>
 </p>
 </div>
 </div>
@@ -518,14 +518,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.cruise-list.de/caschi-blu-da-moto-vemar.html"><img alt="Caschi blu da moto Vemar" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/cruiselistde/caschi-blu-da-moto-vemar-5204.jpg" title="Caschi blu da moto Vemar"/></a>
+<a class="arevision" href="http://www.cruise-list.de/caschi-rossi-da-moto-ls2.html"><img alt="Caschi rossi da moto LS2" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/cruiselistde/caschi-rossi-da-moto-ls2-1120.jpg" title="Caschi rossi da moto LS2"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.cruise-list.de/caschi-blu-da-moto-vemar.html">Caschi blu da moto Vemar</a></h4></div>
+<div class="name"><h4><a href="http://www.cruise-list.de/caschi-rossi-da-moto-ls2.html">Caschi rossi da moto LS2</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€46,99</span> <span class="price-old">€122,99</span>
+<span class="price-new">€41,99</span> <span class="price-old">€122,99</span>
 </p>
 </div>
 </div>
@@ -534,14 +534,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.cruise-list.de/3tsister-casco-con-trecce-a-forma-di-rose-coda-di-cavallo-per-moto-bicicletta-casco-da-sci-design-a-ventosa-24-cm-molti-colori-a-scelta-2-adesivi-in-poliuretano.html"><img alt="3T-SISTER - Casco con trecce a forma di rose, coda di cavallo, per moto, bicicletta, casco da sci, design a ventosa, 24 cm, molti colori a scelta   2 adesivi in poliuretano" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/cruiselistde/3tsister-casco-con-trecce-a-forma-di-rose-coda-di-cavallo-per-moto-bicicletta-casco-da-sci-design-a-ventosa-24-cm-molti-colori-a-scelta-2-adesivi-in-poliuretano-1448.jpg" title="3T-SISTER - Casco con trecce a forma di rose, coda di cavallo, per moto, bicicletta, casco da sci, design a ventosa, 24 cm, molti colori a scelta   2 adesivi in poliuretano"/></a>
+<a class="arevision" href="http://www.cruise-list.de/bell-custom-500-bubble-visiera-grigio.html"><img alt="Bell Custom 500 Bubble Visiera, grigio" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/cruiselistde/bell-custom-500-bubble-visiera-grigio-943.jpg" title="Bell Custom 500 Bubble Visiera, grigio"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.cruise-list.de/3tsister-casco-con-trecce-a-forma-di-rose-coda-di-cavallo-per-moto-bicicletta-casco-da-sci-design-a-ventosa-24-cm-molti-colori-a-scelta-2-adesivi-in-poliuretano.html">3T-SISTER - Casco con trecce a forma di rose, coda di cavallo, per moto, bicicletta, casco da sci, design a ventosa, 24 cm, molti colori a scelta   2 adesivi in poliuretano</a></h4></div>
+<div class="name"><h4><a href="http://www.cruise-list.de/bell-custom-500-bubble-visiera-grigio.html">Bell Custom 500 Bubble Visiera, grigio</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€39,99</span> <span class="price-old">€128,99</span>
+<span class="price-new">€42,99</span> <span class="price-old">€128,99</span>
 </p>
 </div>
 </div>
@@ -550,14 +550,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.cruise-list.de/oneal-casco-mx-10srs-hyperlite-grigio-xs.html"><img alt="O'Neal Casco MX 10SRS Hyperlite Grigio XS" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/cruiselistde/oneal-casco-mx-10srs-hyperlite-grigio-xs-4799.jpg" title="O'Neal Casco MX 10SRS Hyperlite Grigio XS"/></a>
+<a class="arevision" href="http://www.cruise-list.de/nolan-n1005-hilltop-ncom-casco-arancione-dimensione-l.html"><img alt="Nolan N100-5 Hilltop N-Com Casco, arancione, dimensione L" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/cruiselistde/nolan-n1005-hilltop-ncom-casco-arancione-dimensione-l-1549.jpg" title="Nolan N100-5 Hilltop N-Com Casco, arancione, dimensione L"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.cruise-list.de/oneal-casco-mx-10srs-hyperlite-grigio-xs.html">O'Neal Casco MX 10SRS Hyperlite Grigio XS</a></h4></div>
+<div class="name"><h4><a href="http://www.cruise-list.de/nolan-n1005-hilltop-ncom-casco-arancione-dimensione-l.html">Nolan N100-5 Hilltop N-Com Casco, arancione, dimensione L</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€41,99</span> <span class="price-old">€117,99</span>
+<span class="price-new">€39,99</span> <span class="price-old">€126,99</span>
 </p>
 </div>
 </div>
@@ -566,14 +566,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.cruise-list.de/caschi-neri-da-moto-mds.html"><img alt="Caschi neri da moto MDS" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/cruiselistde/caschi-neri-da-moto-mds-2391.jpg" title="Caschi neri da moto MDS"/></a>
+<a class="arevision" href="http://www.cruise-list.de/caschi-neri-da-moto-per-uomo-nexx.html"><img alt="Caschi neri da moto per Uomo Nexx" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/cruiselistde/caschi-neri-da-moto-per-uomo-nexx-3435.jpg" title="Caschi neri da moto per Uomo Nexx"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.cruise-list.de/caschi-neri-da-moto-mds.html">Caschi neri da moto MDS</a></h4></div>
+<div class="name"><h4><a href="http://www.cruise-list.de/caschi-neri-da-moto-per-uomo-nexx.html">Caschi neri da moto per Uomo Nexx</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€42,99</span> <span class="price-old">€127,99</span>
+<span class="price-new">€40,99</span> <span class="price-old">€113,99</span>
 </p>
 </div>
 </div>
@@ -582,14 +582,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.cruise-list.de/vemar-zephir-casco-bianco-taglia-2xl.html"><img alt="Vemar Zephir Casco, bianco, taglia 2XL" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/cruiselistde/vemar-zephir-casco-bianco-taglia-2xl-3138.jpg" title="Vemar Zephir Casco, bianco, taglia 2XL"/></a>
+<a class="arevision" href="http://www.cruise-list.de/copricasco-animali-cane-peluches-tu-copri-casco-caschi-adulti-bambini-sci.html"><img alt="Copricasco Animali CANE peluches T.U. - copri casco caschi adulti bambini sci" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/cruiselistde/copricasco-animali-cane-peluches-tu-copri-casco-caschi-adulti-bambini-sci-229.jpg" title="Copricasco Animali CANE peluches T.U. - copri casco caschi adulti bambini sci"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.cruise-list.de/vemar-zephir-casco-bianco-taglia-2xl.html">Vemar Zephir Casco, bianco, taglia 2XL</a></h4></div>
+<div class="name"><h4><a href="http://www.cruise-list.de/copricasco-animali-cane-peluches-tu-copri-casco-caschi-adulti-bambini-sci.html">Copricasco Animali CANE peluches T.U. - copri casco caschi adulti bambini sci</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€45,99</span> <span class="price-old">€115,99</span>
+<span class="price-new">€40,99</span> <span class="price-old">€110,99</span>
 </p>
 </div>
 </div>
@@ -632,43 +632,43 @@ $(document).ready(function() {
 <div id="powered">
 <div class="container">
 <div class="row">
-<div class="col-sm-12 col-md-12">
-      Copyright © 2022 <a href="//www.cruise-list.de" target="_blank">www.cruise-list.de</a> All Rights Reserved  
+<div class="col-sm-12 col-md-12">
+      Copyright © 2022 <a href="//www.cruise-list.de" target="_blank">www.cruise-list.de</a> All Rights Reserved  
       </div>
 </div>
 </div>
 </div>
 </footer>
 <script src="catalog/view/theme/discord/js/jquery.visible.min.js" type="text/javascript"></script>
-<script type="text/javascript">
-
-var win = $(window);
-
-var allMods = $("footer");
-
-allMods.each(function(i, el) {
-    
-  if ($(el).visible(true)) {
-    $(el).addClass("already-visible"); 
-  }
-  
-});
-
-win.scroll(function(event) {
-  
-  allMods.each(function(i, el) {
-    
-    var el = $(el);
-    
-    if (el.visible(true)) {
-      el.addClass("come-in"); 
-    } else {
-      el.removeClass("come-in already-visible");
-    }
-    
-  });
-  
-}); 
+<script type="text/javascript">
+
+var win = $(window);
+
+var allMods = $("footer");
+
+allMods.each(function(i, el) {
+    
+  if ($(el).visible(true)) {
+    $(el).addClass("already-visible"); 
+  }
+  
+});
+
+win.scroll(function(event) {
+  
+  allMods.each(function(i, el) {
+    
+    var el = $(el);
+    
+    if (el.visible(true)) {
+      el.addClass("come-in"); 
+    } else {
+      el.removeClass("come-in already-visible");
+    }
+    
+  });
+  
+}); 
 </script>
 <script src="catalog/view/theme/discord/js/jquery.easing-1.3.min.js" type="text/javascript"></script>
 <link href="catalog/view/theme/discord/js/quickview/fancybox/jquery.fancybox.css" property="stylesheet" rel="stylesheet">

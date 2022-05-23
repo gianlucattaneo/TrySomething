@@ -34,80 +34,80 @@
 <script src="catalog/view/theme/nears/js/cloud-zoom.js" type="text/javascript"></script>
 <link href="catalog/view/theme/nears/stylesheet/dcaccordion.css" property="stylesheet" rel="stylesheet" type="text/css">
 <script src="catalog/view/theme/nears/js/jquery.dcjqaccordion.js" type="text/javascript"></script>
-<style id="shopify-dynamic-checkout">.shopify-payment-button__button--hidden {
-  visibility: hidden;
-}
-
-.shopify-payment-button__button {
-  border-radius: 4px;
-  border: none;
-  box-shadow: 0 0 0 0 transparent;
-  color: white;
-  cursor: pointer;
-  display: block;
-  font-size: 1em;
-  font-weight: 500;
-  line-height: 1;
-  text-align: center;
-  width: 100%;
-  transition: background 0.2s ease-in-out;
-}
-
-.shopify-payment-button__button[disabled] {
-  opacity: 0.6;
-  cursor: default;
-}
-
-.shopify-payment-button__button--unbranded {
-  background-color: #1990c6;
-  padding: 1em 2em;
-}
-
-.shopify-payment-button__button--unbranded:hover:not([disabled]) {
-  background-color: #136f99;
-}
-
-.shopify-payment-button__more-options {
-  background: transparent;
-  border: 0 none;
-  cursor: pointer;
-  display: block;
-  font-size: 1em;
-  margin-top: 1em;
-  text-align: center;
-  width: 100%;
-}
-
-.shopify-payment-button__more-options:hover:not([disabled]) {
-  text-decoration: underline;
-}
-
-.shopify-payment-button__more-options[disabled] {
-  opacity: 0.6;
-  cursor: default;
-}
-
-.shopify-payment-button__button--branded {
-  display: flex;
-  flex-direction: column;
-  min-height: 44px;
-  position: relative;
-  z-index: 1;
-}
-
-.shopify-payment-button__button--branded .shopify-cleanslate {
-  flex: 1 !important;
-  display: flex !important;
-  flex-direction: column !important;
-}
+<style id="shopify-dynamic-checkout">.shopify-payment-button__button--hidden {
+  visibility: hidden;
+}
+
+.shopify-payment-button__button {
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0 0 0 0 transparent;
+  color: white;
+  cursor: pointer;
+  display: block;
+  font-size: 1em;
+  font-weight: 500;
+  line-height: 1;
+  text-align: center;
+  width: 100%;
+  transition: background 0.2s ease-in-out;
+}
+
+.shopify-payment-button__button[disabled] {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.shopify-payment-button__button--unbranded {
+  background-color: #1990c6;
+  padding: 1em 2em;
+}
+
+.shopify-payment-button__button--unbranded:hover:not([disabled]) {
+  background-color: #136f99;
+}
+
+.shopify-payment-button__more-options {
+  background: transparent;
+  border: 0 none;
+  cursor: pointer;
+  display: block;
+  font-size: 1em;
+  margin-top: 1em;
+  text-align: center;
+  width: 100%;
+}
+
+.shopify-payment-button__more-options:hover:not([disabled]) {
+  text-decoration: underline;
+}
+
+.shopify-payment-button__more-options[disabled] {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.shopify-payment-button__button--branded {
+  display: flex;
+  flex-direction: column;
+  min-height: 44px;
+  position: relative;
+  z-index: 1;
+}
+
+.shopify-payment-button__button--branded .shopify-cleanslate {
+  flex: 1 !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
 </style>
-<script>
-$(function(){
-  $.stellar({
-    horizontalScrolling: false,
-	verticalOffset: 0
-  });
-});
+<script>
+$(function(){
+  $.stellar({
+    horizontalScrolling: false,
+	verticalOffset: 0
+  });
+});
 </script>
 </link></link></link></meta></head>
 <body class="common-home nears">
@@ -116,12 +116,12 @@ $(function(){
 <div id="sidebar-wrapper">
 <ul class="sidebar-nav list-group nears">
 <li class="sidebar-title">
-<a href="#menu-toggle-close" id="menu-toggle-close"><span aria-hidden="true">×</span></a>Información      <script>
-      $("#menu-toggle-close").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-		$(".sidebar-opacity").toggleClass("toggled");
-      });
+<a href="#menu-toggle-close" id="menu-toggle-close"><span aria-hidden="true">×</span></a>Información      <script>
+      $("#menu-toggle-close").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+		$(".sidebar-opacity").toggleClass("toggled");
+      });
       </script>
 </li>
 <li><a href="https://www.boxerwaltrop.de/index.php?route=information/information&amp;information_id=7">FAQ</a></li>
@@ -184,12 +184,12 @@ $(function(){
 <span class="button-text">Menú</span>
 </div>
 </a>
-<script>
-        $("#menu-mobile-toggle").click(function(e) {
-          e.preventDefault();
-          $("#wrapper").toggleClass("menu-toggled");
-		  $(".sidebar-opacity").toggleClass("menu-toggled");
-        });
+<script>
+        $("#menu-mobile-toggle").click(function(e) {
+          e.preventDefault();
+          $("#wrapper").toggleClass("menu-toggled");
+		  $(".sidebar-opacity").toggleClass("menu-toggled");
+        });
       </script>
 <div class="btn-group btn-block buttons-header" id="cart">
 <a class="btn dropdown-toggle" data-loading-text="Cargando..." data-toggle="dropdown">
@@ -227,26 +227,26 @@ $(function(){
 </div>
 </div>
 </nav>
-<script type="text/javascript">
-$(document).ready(function() {
-	$('#accordion-mobile').dcAccordion({
-		disableLink: false,	
-		menuClose: false,
-		autoClose: true,
-		autoExpand: true,		
-		saveState: false
-	});
-});
+<script type="text/javascript">
+$(document).ready(function() {
+	$('#accordion-mobile').dcAccordion({
+		disableLink: false,	
+		menuClose: false,
+		autoClose: true,
+		autoExpand: true,		
+		saveState: false
+	});
+});
 </script>
 <div class="hidden-sm hidden-md hidden-lg" id="menu-mobile">
 <ul class="accordion sidebar-nav list-group" id="accordion-mobile">
 <li class="sidebar-title">
-<a href="#menu-mobile-toggle-close" id="menu-mobile-toggle-close"><span aria-hidden="true">×</span></a>Menú      <script>
-      $("#menu-mobile-toggle-close").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("menu-toggled");
-		$(".sidebar-opacity").toggleClass("menu-toggled");
-      });
+<a href="#menu-mobile-toggle-close" id="menu-mobile-toggle-close"><span aria-hidden="true">×</span></a>Menú      <script>
+      $("#menu-mobile-toggle-close").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("menu-toggled");
+		$(".sidebar-opacity").toggleClass("menu-toggled");
+      });
       </script>
 </li>
 <li><a href="https://www.boxerwaltrop.de/">Inicio</a></li>
@@ -282,16 +282,16 @@ $(document).ready(function() {
 </div>
 <div style="display:none;"><script src="https://js.users.51.la/21085533.js" type="text/javascript"></script><br/></div><div class="container">
 <div class="row"><column class="col-sm-3 hidden-xs" id="column-left">
-<script type="text/javascript">
-$(document).ready(function() {
-	$('#accordion-1').dcAccordion({
-		disableLink: false,	
-		menuClose: false,
-		autoClose: true,
-		autoExpand: true,		
-		saveState: false
-	});
-});
+<script type="text/javascript">
+$(document).ready(function() {
+	$('#accordion-1').dcAccordion({
+		disableLink: false,	
+		menuClose: false,
+		autoClose: true,
+		autoExpand: true,		
+		saveState: false
+	});
+});
 </script>
 <div class="panel panel-default panel-category">
 <div class="panel-heading">Categorias</div>
@@ -326,14 +326,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.boxerwaltrop.de/dbscd-mujer-bolsos-de-mano-con-asas-2019-bolsos-cruzados-bolsos-mujer-solapa-roja-de-cuero-red.html"><img alt="DBSCD Mujer, Bolsos de Mano con Asas 2019 Bolsos Cruzados Bolsos Mujer, Solapa roja de Cuero Red y2WX8e7p" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/dbscd-mujer-bolsos-de-mano-con-asas-2019-bolsos-cruzados-bolsos-mujer-solapa-roja-de-cuero-red-2924.jpg" title="DBSCD Mujer, Bolsos de Mano con Asas 2019 Bolsos Cruzados Bolsos Mujer, Solapa roja de Cuero Red y2WX8e7p"/></a>
+<a class="arevision" href="https://www.boxerwaltrop.de/nananma-bolso-bandolera-de-piel-con-asa-superior-para-mujer-con-estampado-de-flores-coloridas.html"><img alt="Nananma Bolso bandolera de piel con asa superior para mujer con estampado de flores coloridas xm5jpoDo" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/nananma-bolso-bandolera-de-piel-con-asa-superior-para-mujer-con-estampado-de-flores-coloridas-2509.jpg" title="Nananma Bolso bandolera de piel con asa superior para mujer con estampado de flores coloridas xm5jpoDo"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.boxerwaltrop.de/dbscd-mujer-bolsos-de-mano-con-asas-2019-bolsos-cruzados-bolsos-mujer-solapa-roja-de-cuero-red.html">DBSCD Mujer, Bolsos de Mano con Asas 2019 Bolsos Cruzados Bolsos Mujer, Solapa roja de Cuero Red y2WX8e7p</a></h4></div>
+<div class="name"><h4><a href="https://www.boxerwaltrop.de/nananma-bolso-bandolera-de-piel-con-asa-superior-para-mujer-con-estampado-de-flores-coloridas.html">Nananma Bolso bandolera de piel con asa superior para mujer con estampado de flores coloridas xm5jpoDo</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€46.00</span> <span class="price-old">€140.00</span>
+<span class="price-new">€46.00</span> <span class="price-old">€129.00</span>
 </p>
 </div>
 </div>
@@ -342,14 +342,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.boxerwaltrop.de/columbia-18l-tote-firwoodbolso-de-mano-18-l-hombre-verde-oliva.html"><img alt="Columbia 18l Tote Firwood-Bolso de Mano (18 L), Hombre Verde Oliva ybSPCDmY" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/columbia-18l-tote-firwoodbolso-de-mano-18-l-hombre-verde-oliva-6210.jpg" title="Columbia 18l Tote Firwood-Bolso de Mano (18 L), Hombre Verde Oliva ybSPCDmY"/></a>
+<a class="arevision" href="https://www.boxerwaltrop.de/nuevo-bolso-de-cuero-portatil-bolso-de-compras-para-dama-de-estilo-vintage-retro-de-diseno-simple-estilo-versatil-gran-capacidadcumple-con-el-uso-diario-vino-tinto.html"><img alt="Nuevo Bolso de Cuero Portátil, Bolso de Compras para Dama de Estilo Vintage Retro de Diseño Simple, Estilo Versátil, Gran capacidadCumple con el Uso Diario Vino Tinto ZHqBaWdO" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/nuevo-bolso-de-cuero-portatil-bolso-de-compras-para-dama-de-estilo-vintage-retro-de-diseno-simple-estilo-versatil-gran-capacidadcumple-con-el-uso-diario-vino-tinto-3435.jpg" title="Nuevo Bolso de Cuero Portátil, Bolso de Compras para Dama de Estilo Vintage Retro de Diseño Simple, Estilo Versátil, Gran capacidadCumple con el Uso Diario Vino Tinto ZHqBaWdO"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.boxerwaltrop.de/columbia-18l-tote-firwoodbolso-de-mano-18-l-hombre-verde-oliva.html">Columbia 18l Tote Firwood-Bolso de Mano (18 L), Hombre Verde Oliva ybSPCDmY</a></h4></div>
+<div class="name"><h4><a href="https://www.boxerwaltrop.de/nuevo-bolso-de-cuero-portatil-bolso-de-compras-para-dama-de-estilo-vintage-retro-de-diseno-simple-estilo-versatil-gran-capacidadcumple-con-el-uso-diario-vino-tinto.html">Nuevo Bolso de Cuero Portátil, Bolso de Compras para Dama de Estilo Vintage Retro de Diseño Simple, Estilo Versátil, Gran capacidadCumple con el Uso Diario Vino Tinto ZHqBaWdO</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€46.00</span> <span class="price-old">€124.00</span>
+<span class="price-new">€45.00</span> <span class="price-old">€150.00</span>
 </p>
 </div>
 </div>
@@ -358,14 +358,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.boxerwaltrop.de/marine-clownfish-bolso-de-hombro-de-piel-autentica-con-remaches-pequeno-dinosaurio-fresco.html"><img alt="Marine Clownfish - Bolso de hombro de piel auténtica con remaches Pequeño Dinosaurio Fresco dkx6tMB3" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/marine-clownfish-bolso-de-hombro-de-piel-autentica-con-remaches-pequeno-dinosaurio-fresco-6188.jpg" title="Marine Clownfish - Bolso de hombro de piel auténtica con remaches Pequeño Dinosaurio Fresco dkx6tMB3"/></a>
+<a class="arevision" href="https://www.boxerwaltrop.de/uzumaki-naruto-bolso-de-mano-para-mujer-y-hombre-con-cremallera.html"><img alt="Uzumaki Naruto - Bolso de mano para mujer y hombre con cremallera ZbOYhqHo" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/uzumaki-naruto-bolso-de-mano-para-mujer-y-hombre-con-cremallera-9840.jpg" title="Uzumaki Naruto - Bolso de mano para mujer y hombre con cremallera ZbOYhqHo"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.boxerwaltrop.de/marine-clownfish-bolso-de-hombro-de-piel-autentica-con-remaches-pequeno-dinosaurio-fresco.html">Marine Clownfish - Bolso de hombro de piel auténtica con remaches Pequeño Dinosaurio Fresco dkx6tMB3</a></h4></div>
+<div class="name"><h4><a href="https://www.boxerwaltrop.de/uzumaki-naruto-bolso-de-mano-para-mujer-y-hombre-con-cremallera.html">Uzumaki Naruto - Bolso de mano para mujer y hombre con cremallera ZbOYhqHo</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€47.00</span> <span class="price-old">€123.00</span>
+<span class="price-new">€47.00</span> <span class="price-old">€127.00</span>
 </p>
 </div>
 </div>
@@ -374,14 +374,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.boxerwaltrop.de/fredsbruder-bestseller-riffel-goldy-muddy-toffee.html"><img alt="FREDsBRUDER Bestseller Riffel Goldy Muddy Toffee qQRYzeDF" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/fredsbruder-bestseller-riffel-goldy-muddy-toffee-10436.jpg" title="FREDsBRUDER Bestseller Riffel Goldy Muddy Toffee qQRYzeDF"/></a>
+<a class="arevision" href="https://www.boxerwaltrop.de/bolsos-mujer-bolso-de-embrague-de-acrilico-bolso-de-mujer-bolso-de-embrague-de-boda-bolso-y-bolso-patron-de-rayas-de-moda-bolso-de-hombro-de-fiesta-de-retazos.html"><img alt="Bolsos Mujer Bolso De Embrague De Acrílico Bolso De Mujer Bolso De Embrague De Boda Bolso Y Bolso Patrón De Rayas De Moda Bolso De Hombro De Fiesta De Retazos mYE7nG0y" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/bolsos-mujer-bolso-de-embrague-de-acrilico-bolso-de-mujer-bolso-de-embrague-de-boda-bolso-y-bolso-patron-de-rayas-de-moda-bolso-de-hombro-de-fiesta-de-retazos-5783.jpg" title="Bolsos Mujer Bolso De Embrague De Acrílico Bolso De Mujer Bolso De Embrague De Boda Bolso Y Bolso Patrón De Rayas De Moda Bolso De Hombro De Fiesta De Retazos mYE7nG0y"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.boxerwaltrop.de/fredsbruder-bestseller-riffel-goldy-muddy-toffee.html">FREDsBRUDER Bestseller Riffel Goldy Muddy Toffee qQRYzeDF</a></h4></div>
+<div class="name"><h4><a href="https://www.boxerwaltrop.de/bolsos-mujer-bolso-de-embrague-de-acrilico-bolso-de-mujer-bolso-de-embrague-de-boda-bolso-y-bolso-patron-de-rayas-de-moda-bolso-de-hombro-de-fiesta-de-retazos.html">Bolsos Mujer Bolso De Embrague De Acrílico Bolso De Mujer Bolso De Embrague De Boda Bolso Y Bolso Patrón De Rayas De Moda Bolso De Hombro De Fiesta De Retazos mYE7nG0y</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€45.00</span> <span class="price-old">€128.00</span>
+<span class="price-new">€46.00</span> <span class="price-old">€122.00</span>
 </p>
 </div>
 </div>
@@ -390,14 +390,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.boxerwaltrop.de/aren-bolso-bandolera-de-mujer-en-piel-genuina-fabricado-en-italia-34x23x12-cm-gris.html"><img alt="Aren - Bolso bandolera de mujer en piel genuina fabricado en italia - 34x23x12 Cm Gris k5cLGls0" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/aren-bolso-bandolera-de-mujer-en-piel-genuina-fabricado-en-italia-34x23x12-cm-gris-4198.jpg" title="Aren - Bolso bandolera de mujer en piel genuina fabricado en italia - 34x23x12 Cm Gris k5cLGls0"/></a>
+<a class="arevision" href="https://www.boxerwaltrop.de/ysswjzz-bolsos-de-mujer-bolsos-de-mensajero-bolso-bandolera-ligero-deporte-al-aire-libre-viajes-senderismo-mochila-informal-for-mujeres-color-e-b.html"><img alt="Ysswjzz Bolsos de Mujer Bolsos de Mensajero, Bolso Bandolera Ligero Deporte al Aire Libre Viajes Senderismo Mochila Informal for Mujeres (Color : E) B Y6CB6EDg" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/ysswjzz-bolsos-de-mujer-bolsos-de-mensajero-bolso-bandolera-ligero-deporte-al-aire-libre-viajes-senderismo-mochila-informal-for-mujeres-color-e-b-7891.jpg" title="Ysswjzz Bolsos de Mujer Bolsos de Mensajero, Bolso Bandolera Ligero Deporte al Aire Libre Viajes Senderismo Mochila Informal for Mujeres (Color : E) B Y6CB6EDg"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.boxerwaltrop.de/aren-bolso-bandolera-de-mujer-en-piel-genuina-fabricado-en-italia-34x23x12-cm-gris.html">Aren - Bolso bandolera de mujer en piel genuina fabricado en italia - 34x23x12 Cm Gris k5cLGls0</a></h4></div>
+<div class="name"><h4><a href="https://www.boxerwaltrop.de/ysswjzz-bolsos-de-mujer-bolsos-de-mensajero-bolso-bandolera-ligero-deporte-al-aire-libre-viajes-senderismo-mochila-informal-for-mujeres-color-e-b.html">Ysswjzz Bolsos de Mujer Bolsos de Mensajero, Bolso Bandolera Ligero Deporte al Aire Libre Viajes Senderismo Mochila Informal for Mujeres (Color : E) B Y6CB6EDg</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€45.00</span> <span class="price-old">€125.00</span>
+<span class="price-new">€45.00</span> <span class="price-old">€145.00</span>
 </p>
 </div>
 </div>
@@ -406,14 +406,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.boxerwaltrop.de/browcin-crucero-de-lujo-tropical-y-palmeras-de-isla-tropical-desmontable-moda-tendencia-bolso-de-las-senoras-bolso-de-hombro-cor5.html"><img alt="BROWCIN Crucero de lujo tropical y palmeras de isla tropical Desmontable Moda Tendencia Bolso de las señoras Bolso de hombro Cor5 rtJZloSw" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/browcin-crucero-de-lujo-tropical-y-palmeras-de-isla-tropical-desmontable-moda-tendencia-bolso-de-las-senoras-bolso-de-hombro-cor5-692.jpg" title="BROWCIN Crucero de lujo tropical y palmeras de isla tropical Desmontable Moda Tendencia Bolso de las señoras Bolso de hombro Cor5 rtJZloSw"/></a>
+<a class="arevision" href="https://www.boxerwaltrop.de/chicca-borse-el-hombro-de-la-mujer-bolso-de-cuero-34-x-23-x-10-cm-mod-gaia-cuero.html"><img alt="Chicca Borse El hombro de la mujer bolso de cuero 34 x 23 x 10 cm - mod. Gaia Cuero vsu89KHl" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/chicca-borse-el-hombro-de-la-mujer-bolso-de-cuero-34-x-23-x-10-cm-mod-gaia-cuero-6613.jpg" title="Chicca Borse El hombro de la mujer bolso de cuero 34 x 23 x 10 cm - mod. Gaia Cuero vsu89KHl"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.boxerwaltrop.de/browcin-crucero-de-lujo-tropical-y-palmeras-de-isla-tropical-desmontable-moda-tendencia-bolso-de-las-senoras-bolso-de-hombro-cor5.html">BROWCIN Crucero de lujo tropical y palmeras de isla tropical Desmontable Moda Tendencia Bolso de las señoras Bolso de hombro Cor5 rtJZloSw</a></h4></div>
+<div class="name"><h4><a href="https://www.boxerwaltrop.de/chicca-borse-el-hombro-de-la-mujer-bolso-de-cuero-34-x-23-x-10-cm-mod-gaia-cuero.html">Chicca Borse El hombro de la mujer bolso de cuero 34 x 23 x 10 cm - mod. Gaia Cuero vsu89KHl</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€45.00</span> <span class="price-old">€144.00</span>
+<span class="price-new">€46.00</span> <span class="price-old">€142.00</span>
 </p>
 </div>
 </div>
@@ -430,14 +430,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.boxerwaltrop.de/dvusgd-tt-bolso-de-hombro-para-mujer-bolso-simple-de-cuero-bolso-de-mujer-casual-simple-black.html"><img alt="DVUSGD TT Bolso De Hombro para Mujer, Bolso Simple De Cuero Bolso De Mujer Casual Simple Black CcoKiuT5" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/dvusgd-tt-bolso-de-hombro-para-mujer-bolso-simple-de-cuero-bolso-de-mujer-casual-simple-black-8841.jpg" title="DVUSGD TT Bolso De Hombro para Mujer, Bolso Simple De Cuero Bolso De Mujer Casual Simple Black CcoKiuT5"/></a>
+<a class="arevision" href="https://www.boxerwaltrop.de/shigure-bolso-mujer-casual-bolsos-bandolera-bolsos-hombro-cuero-pu-cuero-grande-shopper-bolsaazul-gray.html"><img alt="SHIGURE Bolso Mujer Casual Bolsos Bandolera Bolsos Hombro Cuero PU Cuero Grande Shopper Bolsa,Azul Gray L07Ew5Zk" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/shigure-bolso-mujer-casual-bolsos-bandolera-bolsos-hombro-cuero-pu-cuero-grande-shopper-bolsaazul-gray-9141.jpg" title="SHIGURE Bolso Mujer Casual Bolsos Bandolera Bolsos Hombro Cuero PU Cuero Grande Shopper Bolsa,Azul Gray L07Ew5Zk"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.boxerwaltrop.de/dvusgd-tt-bolso-de-hombro-para-mujer-bolso-simple-de-cuero-bolso-de-mujer-casual-simple-black.html">DVUSGD TT Bolso De Hombro para Mujer, Bolso Simple De Cuero Bolso De Mujer Casual Simple Black CcoKiuT5</a></h4></div>
+<div class="name"><h4><a href="https://www.boxerwaltrop.de/shigure-bolso-mujer-casual-bolsos-bandolera-bolsos-hombro-cuero-pu-cuero-grande-shopper-bolsaazul-gray.html">SHIGURE Bolso Mujer Casual Bolsos Bandolera Bolsos Hombro Cuero PU Cuero Grande Shopper Bolsa,Azul Gray L07Ew5Zk</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€45.00</span> <span class="price-old">€142.00</span>
+<span class="price-new">€45.00</span> <span class="price-old">€129.00</span>
 </p>
 </div>
 </div>
@@ -446,14 +446,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.boxerwaltrop.de/aoaqrfa-bolsos-de-hombro-de-lona-de-gran-capacidad-de-lona-de-las-mujeres-bolsos-femeninos-ocasionales-del-bolso-de-crossbody-del-vintage-43x15x38cm-rojo.html"><img alt="A.OAQRFA Bolsos de hombro de lona de gran capacidad de lona de las mujeres Bolsos femeninos ocasionales del bolso de Crossbody del vintage, 43X15X38CM Rojo ySypVXAM" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/aoaqrfa-bolsos-de-hombro-de-lona-de-gran-capacidad-de-lona-de-las-mujeres-bolsos-femeninos-ocasionales-del-bolso-de-crossbody-del-vintage-43x15x38cm-rojo-4248.jpg" title="A.OAQRFA Bolsos de hombro de lona de gran capacidad de lona de las mujeres Bolsos femeninos ocasionales del bolso de Crossbody del vintage, 43X15X38CM Rojo ySypVXAM"/></a>
+<a class="arevision" href="https://www.boxerwaltrop.de/dingzhhangzh-mochila-retro-pu-para-negocio-trabajo-diario-viaje-color-brown-black.html"><img alt="DINGZH-HANGZH Mochila Retro PU para Negocio Trabajo Diario Viaje (Color : Brown) Black ZarJlyl2" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/dingzhhangzh-mochila-retro-pu-para-negocio-trabajo-diario-viaje-color-brown-black-7125.jpg" title="DINGZH-HANGZH Mochila Retro PU para Negocio Trabajo Diario Viaje (Color : Brown) Black ZarJlyl2"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.boxerwaltrop.de/aoaqrfa-bolsos-de-hombro-de-lona-de-gran-capacidad-de-lona-de-las-mujeres-bolsos-femeninos-ocasionales-del-bolso-de-crossbody-del-vintage-43x15x38cm-rojo.html">A.OAQRFA Bolsos de hombro de lona de gran capacidad de lona de las mujeres Bolsos femeninos ocasionales del bolso de Crossbody del vintage, 43X15X38CM Rojo ySypVXAM</a></h4></div>
+<div class="name"><h4><a href="https://www.boxerwaltrop.de/dingzhhangzh-mochila-retro-pu-para-negocio-trabajo-diario-viaje-color-brown-black.html">DINGZH-HANGZH Mochila Retro PU para Negocio Trabajo Diario Viaje (Color : Brown) Black ZarJlyl2</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€47.00</span> <span class="price-old">€146.00</span>
+<span class="price-new">€46.00</span> <span class="price-old">€128.00</span>
 </p>
 </div>
 </div>
@@ -462,14 +462,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.boxerwaltrop.de/asdfg-claras-y-bandolera-mujer-pequena-bolsa-de-hombro-transparentenegro-naranja-grande.html"><img alt="ASDFG Claras Y Bandolera Mujer Pequeña Bolsa De Hombro Transparente,Negro Naranja Grande lx6KKXxl" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/asdfg-claras-y-bandolera-mujer-pequena-bolsa-de-hombro-transparentenegro-naranja-grande-1521.jpg" title="ASDFG Claras Y Bandolera Mujer Pequeña Bolsa De Hombro Transparente,Negro Naranja Grande lx6KKXxl"/></a>
+<a class="arevision" href="https://www.boxerwaltrop.de/roberta-rossi-bolso-de-hombro-tracolla-artesanias-italiana-crossbody-fashion-casual-piel-autentica-gamuza-made-in-italy-23x16x9-cm-rr10st011cgnat-tan.html"><img alt="Roberta Rossi bolso de hombro tracolla artesanías italiana Crossbody Fashion casual piel auténtica gamuza Made in Italy 23x16x9 cm RR10ST011CGNAT Tan gXSmx9o7" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/roberta-rossi-bolso-de-hombro-tracolla-artesanias-italiana-crossbody-fashion-casual-piel-autentica-gamuza-made-in-italy-23x16x9-cm-rr10st011cgnat-tan-5235.jpg" title="Roberta Rossi bolso de hombro tracolla artesanías italiana Crossbody Fashion casual piel auténtica gamuza Made in Italy 23x16x9 cm RR10ST011CGNAT Tan gXSmx9o7"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.boxerwaltrop.de/asdfg-claras-y-bandolera-mujer-pequena-bolsa-de-hombro-transparentenegro-naranja-grande.html">ASDFG Claras Y Bandolera Mujer Pequeña Bolsa De Hombro Transparente,Negro Naranja Grande lx6KKXxl</a></h4></div>
+<div class="name"><h4><a href="https://www.boxerwaltrop.de/roberta-rossi-bolso-de-hombro-tracolla-artesanias-italiana-crossbody-fashion-casual-piel-autentica-gamuza-made-in-italy-23x16x9-cm-rr10st011cgnat-tan.html">Roberta Rossi bolso de hombro tracolla artesanías italiana Crossbody Fashion casual piel auténtica gamuza Made in Italy 23x16x9 cm RR10ST011CGNAT Tan gXSmx9o7</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€46.00</span> <span class="price-old">€122.00</span>
+<span class="price-new">€46.00</span> <span class="price-old">€128.00</span>
 </p>
 </div>
 </div>
@@ -478,59 +478,11 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.boxerwaltrop.de/gigi-senoras-suave-piel-bolso-de-hombro-collection-de-piel-classic-bolsa-negro.html"><img alt="Gigi Señoras suave piel bolso de hombro Collection; De piel Classic bolsa Negro BlTsx2qk" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/gigi-senoras-suave-piel-bolso-de-hombro-collection-de-piel-classic-bolsa-negro-5221.jpg" title="Gigi Señoras suave piel bolso de hombro Collection; De piel Classic bolsa Negro BlTsx2qk"/></a>
+<a class="arevision" href="https://www.boxerwaltrop.de/mochila-de-piel-autentica-color-azul-marino-para-mujer-para-viajes-escuela-mini-bolso-de-hombro-geometria-de-estilo-memphis.html"><img alt="Mochila de piel auténtica, color azul marino, para mujer, para viajes, escuela, mini bolso de hombro Geometría de Estilo Memphis GVsR6vr1" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/mochila-de-piel-autentica-color-azul-marino-para-mujer-para-viajes-escuela-mini-bolso-de-hombro-geometria-de-estilo-memphis-9159.jpg" title="Mochila de piel auténtica, color azul marino, para mujer, para viajes, escuela, mini bolso de hombro Geometría de Estilo Memphis GVsR6vr1"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.boxerwaltrop.de/gigi-senoras-suave-piel-bolso-de-hombro-collection-de-piel-classic-bolsa-negro.html">Gigi Señoras suave piel bolso de hombro Collection; De piel Classic bolsa Negro BlTsx2qk</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€45.00</span> <span class="price-old">€135.00</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.boxerwaltrop.de/kkaavv-bolso-bandolera-bolsos-de-mano-en-piel-para-mujer-bolsos-con-billetera-bolso-bandolera-para-mujerbolsos-de-mano-redaaa.html"><img alt="KKAAVV Bolso bandolera Bolsos de mano en piel para mujer Bolsos con billetera Bolso bandolera para mujerBolsos de mano Red---aaa 3Rg48ZbL" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/kkaavv-bolso-bandolera-bolsos-de-mano-en-piel-para-mujer-bolsos-con-billetera-bolso-bandolera-para-mujerbolsos-de-mano-redaaa-4171.jpg" title="KKAAVV Bolso bandolera Bolsos de mano en piel para mujer Bolsos con billetera Bolso bandolera para mujerBolsos de mano Red---aaa 3Rg48ZbL"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="https://www.boxerwaltrop.de/kkaavv-bolso-bandolera-bolsos-de-mano-en-piel-para-mujer-bolsos-con-billetera-bolso-bandolera-para-mujerbolsos-de-mano-redaaa.html">KKAAVV Bolso bandolera Bolsos de mano en piel para mujer Bolsos con billetera Bolso bandolera para mujerBolsos de mano Red---aaa 3Rg48ZbL</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€46.00</span> <span class="price-old">€134.00</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.boxerwaltrop.de/romeo-gigli-b1642-mochila-para-mujer-color-beige-y-rosa.html"><img alt="Romeo Gigli B1642 - Mochila para mujer, color beige y rosa 8g5QSaFv" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/romeo-gigli-b1642-mochila-para-mujer-color-beige-y-rosa-1625.jpg" title="Romeo Gigli B1642 - Mochila para mujer, color beige y rosa 8g5QSaFv"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="https://www.boxerwaltrop.de/romeo-gigli-b1642-mochila-para-mujer-color-beige-y-rosa.html">Romeo Gigli B1642 - Mochila para mujer, color beige y rosa 8g5QSaFv</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€46.00</span> <span class="price-old">€136.00</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.boxerwaltrop.de/cybhr-bolso-de-hombro-hueco-bolso-de-mujer-bolso-de-mensajero-bolso-antirrobo-impermeable-bolso-de-borla-excursion-multicolor-fiesta-de-compras-regalos-de-viaje-3.html"><img alt="CYBHR Bolso de hombro hueco Bolso de mujer Bolso de mensajero Bolso antirrobo impermeable Bolso de borla Excursión multicolor Fiesta de compras Regalos de viaje 3 5gkYmdht" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/cybhr-bolso-de-hombro-hueco-bolso-de-mujer-bolso-de-mensajero-bolso-antirrobo-impermeable-bolso-de-borla-excursion-multicolor-fiesta-de-compras-regalos-de-viaje-3-5524.jpg" title="CYBHR Bolso de hombro hueco Bolso de mujer Bolso de mensajero Bolso antirrobo impermeable Bolso de borla Excursión multicolor Fiesta de compras Regalos de viaje 3 5gkYmdht"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="https://www.boxerwaltrop.de/cybhr-bolso-de-hombro-hueco-bolso-de-mujer-bolso-de-mensajero-bolso-antirrobo-impermeable-bolso-de-borla-excursion-multicolor-fiesta-de-compras-regalos-de-viaje-3.html">CYBHR Bolso de hombro hueco Bolso de mujer Bolso de mensajero Bolso antirrobo impermeable Bolso de borla Excursión multicolor Fiesta de compras Regalos de viaje 3 5gkYmdht</a></h4></div>
+<div class="name"><h4><a href="https://www.boxerwaltrop.de/mochila-de-piel-autentica-color-azul-marino-para-mujer-para-viajes-escuela-mini-bolso-de-hombro-geometria-de-estilo-memphis.html">Mochila de piel auténtica, color azul marino, para mujer, para viajes, escuela, mini bolso de hombro Geometría de Estilo Memphis GVsR6vr1</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
 <span class="price-new">€45.00</span> <span class="price-old">€124.00</span>
@@ -542,14 +494,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.boxerwaltrop.de/liliylove-buffalo-bolsa-de-hombro-de-piel-sintetica-para-mujer-diseno-a-cuadros-gran-capacidad.html"><img alt="Liliylove Buffalo Bolsa de hombro de piel sintética para mujer, diseño a cuadros, gran capacidad KahwsFaO" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/liliylove-buffalo-bolsa-de-hombro-de-piel-sintetica-para-mujer-diseno-a-cuadros-gran-capacidad-7290.jpg" title="Liliylove Buffalo Bolsa de hombro de piel sintética para mujer, diseño a cuadros, gran capacidad KahwsFaO"/></a>
+<a class="arevision" href="https://www.boxerwaltrop.de/gran-capacidad-hombres-y-mujeres-lienzo-retro-prepucio-hombro-correa-hombro-messenger-bag-bucket-hombro-bolsa-para-cortical-sky-blue.html"><img alt="Gran Capacidad Hombres y Mujeres Lienzo Retro Prepucio Hombro Correa Hombro Messenger Bag Bucket Hombro Bolsa para cortical Sky Blue UoMG4BuG" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/gran-capacidad-hombres-y-mujeres-lienzo-retro-prepucio-hombro-correa-hombro-messenger-bag-bucket-hombro-bolsa-para-cortical-sky-blue-6998.jpg" title="Gran Capacidad Hombres y Mujeres Lienzo Retro Prepucio Hombro Correa Hombro Messenger Bag Bucket Hombro Bolsa para cortical Sky Blue UoMG4BuG"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.boxerwaltrop.de/liliylove-buffalo-bolsa-de-hombro-de-piel-sintetica-para-mujer-diseno-a-cuadros-gran-capacidad.html">Liliylove Buffalo Bolsa de hombro de piel sintética para mujer, diseño a cuadros, gran capacidad KahwsFaO</a></h4></div>
+<div class="name"><h4><a href="https://www.boxerwaltrop.de/gran-capacidad-hombres-y-mujeres-lienzo-retro-prepucio-hombro-correa-hombro-messenger-bag-bucket-hombro-bolsa-para-cortical-sky-blue.html">Gran Capacidad Hombres y Mujeres Lienzo Retro Prepucio Hombro Correa Hombro Messenger Bag Bucket Hombro Bolsa para cortical Sky Blue UoMG4BuG</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€45.00</span> <span class="price-old">€144.00</span>
+<span class="price-new">€46.00</span> <span class="price-old">€133.00</span>
 </p>
 </div>
 </div>
@@ -558,14 +510,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.boxerwaltrop.de/sagebrown-amy-flap-over-handbag-navy.html"><img alt="SageBrown Amy Flap Over Handbag Navy F3GlE5iS" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/sagebrown-amy-flap-over-handbag-navy-4155.jpg" title="SageBrown Amy Flap Over Handbag Navy F3GlE5iS"/></a>
+<a class="arevision" href="https://www.boxerwaltrop.de/iubbki-flores-y-mariposas-01-bolso-de-cuero-con-remaches-bolso-de-mano-para-mujer-bolso-bandolera-para-mujer-nina.html"><img alt="IUBBKI Flores y mariposas 01 Bolso de cuero con remaches Bolso de mano para mujer Bolso bandolera para mujer niña htrXkTlA" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/iubbki-flores-y-mariposas-01-bolso-de-cuero-con-remaches-bolso-de-mano-para-mujer-bolso-bandolera-para-mujer-nina-6008.jpg" title="IUBBKI Flores y mariposas 01 Bolso de cuero con remaches Bolso de mano para mujer Bolso bandolera para mujer niña htrXkTlA"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.boxerwaltrop.de/sagebrown-amy-flap-over-handbag-navy.html">SageBrown Amy Flap Over Handbag Navy F3GlE5iS</a></h4></div>
+<div class="name"><h4><a href="https://www.boxerwaltrop.de/iubbki-flores-y-mariposas-01-bolso-de-cuero-con-remaches-bolso-de-mano-para-mujer-bolso-bandolera-para-mujer-nina.html">IUBBKI Flores y mariposas 01 Bolso de cuero con remaches Bolso de mano para mujer Bolso bandolera para mujer niña htrXkTlA</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€47.00</span> <span class="price-old">€140.00</span>
+<span class="price-new">€46.00</span> <span class="price-old">€133.00</span>
 </p>
 </div>
 </div>
@@ -574,14 +526,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.boxerwaltrop.de/aooa-bolsa-de-hombro-para-mujer-piel-sintetica-diseno-de-bolso-de-mano-color-negro-verde.html"><img alt="AOOA - Bolsa de hombro para mujer, piel sintética, diseño de bolso de mano, color negro Verde UyTXeDyq" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/aooa-bolsa-de-hombro-para-mujer-piel-sintetica-diseno-de-bolso-de-mano-color-negro-verde-5655.jpg" title="AOOA - Bolsa de hombro para mujer, piel sintética, diseño de bolso de mano, color negro Verde UyTXeDyq"/></a>
+<a class="arevision" href="https://www.boxerwaltrop.de/le-pandorine-bolso-leslie-crazy-angels-gris.html"><img alt="Le Pandorine - Bolso Leslie crazy Angels, gris 7hVduLXu" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/le-pandorine-bolso-leslie-crazy-angels-gris-3700.jpg" title="Le Pandorine - Bolso Leslie crazy Angels, gris 7hVduLXu"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.boxerwaltrop.de/aooa-bolsa-de-hombro-para-mujer-piel-sintetica-diseno-de-bolso-de-mano-color-negro-verde.html">AOOA - Bolsa de hombro para mujer, piel sintética, diseño de bolso de mano, color negro Verde UyTXeDyq</a></h4></div>
+<div class="name"><h4><a href="https://www.boxerwaltrop.de/le-pandorine-bolso-leslie-crazy-angels-gris.html">Le Pandorine - Bolso Leslie crazy Angels, gris 7hVduLXu</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€45.00</span> <span class="price-old">€127.00</span>
+<span class="price-new">€46.00</span> <span class="price-old">€149.00</span>
 </p>
 </div>
 </div>
@@ -590,14 +542,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.boxerwaltrop.de/cybhr-bolso-bandolera-de-gran-capacidad-de-color-solido-para-mujer-bolsa-de-mensajero-bolsa-antirrobo-impermeable-excursion-fiesta-de-compras-regalo-de-viaje-b.html"><img alt="CYBHR Bolso bandolera de gran capacidad de color sólido para mujer Bolsa de mensajero bolsa antirrobo impermeable excursión fiesta de compras regalo de viaje B PlizX5wj" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/cybhr-bolso-bandolera-de-gran-capacidad-de-color-solido-para-mujer-bolsa-de-mensajero-bolsa-antirrobo-impermeable-excursion-fiesta-de-compras-regalo-de-viaje-b-8554.jpg" title="CYBHR Bolso bandolera de gran capacidad de color sólido para mujer Bolsa de mensajero bolsa antirrobo impermeable excursión fiesta de compras regalo de viaje B PlizX5wj"/></a>
+<a class="arevision" href="https://www.boxerwaltrop.de/shenaishiren-la-bolsa-crossbody-bolsa-de-mensajero-del-bolso-de-hombro-bolsos-for-la-mujer-adecuado-compras-viajes-cita-ocio-color-c-l.html"><img alt="SHENAISHIREN La Bolsa Crossbody Bolsa de Mensajero del Bolso de Hombro Bolsos for la Mujer Adecuado Compras Viajes Cita Ocio (Color : C) L xJRH33cH" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/shenaishiren-la-bolsa-crossbody-bolsa-de-mensajero-del-bolso-de-hombro-bolsos-for-la-mujer-adecuado-compras-viajes-cita-ocio-color-cx-l-9542.jpg" title="SHENAISHIREN La Bolsa Crossbody Bolsa de Mensajero del Bolso de Hombro Bolsos for la Mujer Adecuado Compras Viajes Cita Ocio (Color : C) L xJRH33cH"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.boxerwaltrop.de/cybhr-bolso-bandolera-de-gran-capacidad-de-color-solido-para-mujer-bolsa-de-mensajero-bolsa-antirrobo-impermeable-excursion-fiesta-de-compras-regalo-de-viaje-b.html">CYBHR Bolso bandolera de gran capacidad de color sólido para mujer Bolsa de mensajero bolsa antirrobo impermeable excursión fiesta de compras regalo de viaje B PlizX5wj</a></h4></div>
+<div class="name"><h4><a href="https://www.boxerwaltrop.de/shenaishiren-la-bolsa-crossbody-bolsa-de-mensajero-del-bolso-de-hombro-bolsos-for-la-mujer-adecuado-compras-viajes-cita-ocio-color-c-l.html">SHENAISHIREN La Bolsa Crossbody Bolsa de Mensajero del Bolso de Hombro Bolsos for la Mujer Adecuado Compras Viajes Cita Ocio (Color : C) L xJRH33cH</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€47.00</span> <span class="price-old">€139.00</span>
+<span class="price-new">€45.00</span> <span class="price-old">€146.00</span>
 </p>
 </div>
 </div>
@@ -606,14 +558,62 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.boxerwaltrop.de/pclwskno-bolsos-para-damas-bolsos-de-cuero-sintetico-bolso-de-mano-bolso-3pcs-bolsa-de-hombro-gray.html"><img alt="PCLWSKNO Bolsos para damas Bolsos de cuero sintético + Bolso de mano + Bolso 3pcs Bolsa de hombro Gray bBwSJMja" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/pclwskno-bolsos-para-damas-bolsos-de-cuero-sintetico-bolso-de-mano-bolso-3pcs-bolsa-de-hombro-gray-10467.jpg" title="PCLWSKNO Bolsos para damas Bolsos de cuero sintético + Bolso de mano + Bolso 3pcs Bolsa de hombro Gray bBwSJMja"/></a>
+<a class="arevision" href="https://www.boxerwaltrop.de/browcin-feliz-pascua-huevo-blanco-bowknot-flores-desmontable-moda-tendencia-bolso-de-las-senoras-bolso-de-hombro-cor20.html"><img alt="BROWCIN Feliz Pascua huevo blanco bowknot flores Desmontable Moda Tendencia Bolso de las señoras Bolso de hombro Cor20 EiEKHCSx" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/browcin-feliz-pascua-huevo-blanco-bowknot-flores-desmontable-moda-tendencia-bolso-de-las-senoras-bolso-de-hombro-cor20-2835.jpg" title="BROWCIN Feliz Pascua huevo blanco bowknot flores Desmontable Moda Tendencia Bolso de las señoras Bolso de hombro Cor20 EiEKHCSx"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.boxerwaltrop.de/pclwskno-bolsos-para-damas-bolsos-de-cuero-sintetico-bolso-de-mano-bolso-3pcs-bolsa-de-hombro-gray.html">PCLWSKNO Bolsos para damas Bolsos de cuero sintético + Bolso de mano + Bolso 3pcs Bolsa de hombro Gray bBwSJMja</a></h4></div>
+<div class="name"><h4><a href="https://www.boxerwaltrop.de/browcin-feliz-pascua-huevo-blanco-bowknot-flores-desmontable-moda-tendencia-bolso-de-las-senoras-bolso-de-hombro-cor20.html">BROWCIN Feliz Pascua huevo blanco bowknot flores Desmontable Moda Tendencia Bolso de las señoras Bolso de hombro Cor20 EiEKHCSx</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€46.00</span> <span class="price-old">€135.00</span>
+<span class="price-new">€45.00</span> <span class="price-old">€136.00</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="https://www.boxerwaltrop.de/goorin-bros-gorra-para-hombre-azul-y-blanco.html"><img alt="Goorin Bros. - Gorra para hombre Azul y blanco. xaWQjE3Z" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/goorin-bros-gorra-para-hombre-azul-y-blanco-9306.jpg" title="Goorin Bros. - Gorra para hombre Azul y blanco. xaWQjE3Z"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="https://www.boxerwaltrop.de/goorin-bros-gorra-para-hombre-azul-y-blanco.html">Goorin Bros. - Gorra para hombre Azul y blanco. xaWQjE3Z</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€45.00</span> <span class="price-old">€132.00</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="https://www.boxerwaltrop.de/kipling-art-m-bolsa-tiempo-libre-y-sportwear-mujer-verde-satin-camo-negro-rich-negro.html"><img alt="Kipling ART M, Bolsa Tiempo libre y sportwear Mujer, Verde (SATIN CAMO) Negro (Rich Negro) tAiAISu9" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/kipling-art-mx-bolsa-tiempo-libre-y-sportwear-mujer-verde-satin-camo-negro-rich-negro-6077.jpg" title="Kipling ART M, Bolsa Tiempo libre y sportwear Mujer, Verde (SATIN CAMO) Negro (Rich Negro) tAiAISu9"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="https://www.boxerwaltrop.de/kipling-art-m-bolsa-tiempo-libre-y-sportwear-mujer-verde-satin-camo-negro-rich-negro.html">Kipling ART M, Bolsa Tiempo libre y sportwear Mujer, Verde (SATIN CAMO) Negro (Rich Negro) tAiAISu9</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€46.00</span> <span class="price-old">€136.00</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="https://www.boxerwaltrop.de/asdahsfgmn-bolsos-de-moda-bolsos-de-mujer-bolsos-de-hombro-de-gran-capacidad-cubo-bolso-cruzado-cuerpo-de-mujer-solapa-de-cuero-yello.html"><img alt="ASDAHSFGMN Bolsos De Moda Bolsos De Mujer Bolsos De Hombro De Gran Capacidad Cubo Bolso Cruzado Cuerpo De Mujer Solapa De Cuero Yello locVNaWg" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/asdahsfgmn-bolsos-de-moda-bolsos-de-mujer-bolsos-de-hombro-de-gran-capacidad-cubo-bolso-cruzado-cuerpo-de-mujer-solapa-de-cuero-yello-9299.jpg" title="ASDAHSFGMN Bolsos De Moda Bolsos De Mujer Bolsos De Hombro De Gran Capacidad Cubo Bolso Cruzado Cuerpo De Mujer Solapa De Cuero Yello locVNaWg"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="https://www.boxerwaltrop.de/asdahsfgmn-bolsos-de-moda-bolsos-de-mujer-bolsos-de-hombro-de-gran-capacidad-cubo-bolso-cruzado-cuerpo-de-mujer-solapa-de-cuero-yello.html">ASDAHSFGMN Bolsos De Moda Bolsos De Mujer Bolsos De Hombro De Gran Capacidad Cubo Bolso Cruzado Cuerpo De Mujer Solapa De Cuero Yello locVNaWg</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€46.00</span> <span class="price-old">€124.00</span>
 </p>
 </div>
 </div>
@@ -654,43 +654,43 @@ $(document).ready(function() {
 <div id="powered">
 <div class="container">
 <div class="row">
-<div class="col-sm-12 col-md-12">
-      Copyright © 2022 <a href="//www.boxerwaltrop.de" target="_blank">www.boxerwaltrop.de</a> All Rights Reserved  
+<div class="col-sm-12 col-md-12">
+      Copyright © 2022 <a href="//www.boxerwaltrop.de" target="_blank">www.boxerwaltrop.de</a> All Rights Reserved  
       </div>
 </div>
 </div>
 </div>
 </footer>
 <script src="catalog/view/theme/nears/js/jquery.visible.min.js" type="text/javascript"></script>
-<script type="text/javascript">
-
-var win = $(window);
-
-var allMods = $("footer");
-
-allMods.each(function(i, el) {
-    
-  if ($(el).visible(true)) {
-    $(el).addClass("already-visible"); 
-  }
-  
-});
-
-win.scroll(function(event) {
-  
-  allMods.each(function(i, el) {
-    
-    var el = $(el);
-    
-    if (el.visible(true)) {
-      el.addClass("come-in"); 
-    } else {
-      el.removeClass("come-in already-visible");
-    }
-    
-  });
-  
-}); 
+<script type="text/javascript">
+
+var win = $(window);
+
+var allMods = $("footer");
+
+allMods.each(function(i, el) {
+    
+  if ($(el).visible(true)) {
+    $(el).addClass("already-visible"); 
+  }
+  
+});
+
+win.scroll(function(event) {
+  
+  allMods.each(function(i, el) {
+    
+    var el = $(el);
+    
+    if (el.visible(true)) {
+      el.addClass("come-in"); 
+    } else {
+      el.removeClass("come-in already-visible");
+    }
+    
+  });
+  
+}); 
 </script>
 <script src="catalog/view/theme/nears/js/jquery.easing-1.3.min.js" type="text/javascript"></script>
 <link href="catalog/view/theme/nears/js/quickview/fancybox/jquery.fancybox.css" property="stylesheet" rel="stylesheet">

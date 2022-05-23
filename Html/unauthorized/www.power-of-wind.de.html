@@ -34,35 +34,35 @@
 <script src="catalog/view/theme/claptrap/js/cloud-zoom.js" type="text/javascript"></script>
 <link href="catalog/view/theme/claptrap/stylesheet/dcaccordion.css" property="stylesheet" rel="stylesheet" type="text/css">
 <script src="catalog/view/theme/claptrap/js/jquery.dcjqaccordion.js" type="text/javascript"></script>
-<script>
-      // This allows to expose several variables to the global scope, to be used in scripts
-      window.shop = {
-        template: "index",
-        currentPage: 1,
-        shopCurrency: "GBP",
-        moneyFormat: "\u003cspan class=money\u003e£{{amount}}\u003c\/span\u003e",
-        moneyWithCurrencyFormat: "\u003cspan class=money\u003e£{{amount}} GBP\u003c\/span\u003e",
-        collectionSortBy: null
-      };
-
-      window.languages = {
-        autocompleteStartingAt: "Starting at",
-        autocompletePageType: "Page",
-        autocompleteSeeAll: "See all results",
-        recoverPassword: "Recover your password",
-        cartTerms: "You need to accept terms and conditions",
-        cartEstimatedShipping: "+ estimated shipping:",
-        shippingEstimatorSubmit: "Estimate",
-        shippingEstimatorSubmitting: "Estimating...",
-        shippingEstimatorNoRates: "We do not ship to this destination",
-        shippingEstimatorRates: "Available shipping rates:",
-        shippingEstimatorError: "There are some errors:",
-        productAddedStatus: "Product was successfully added!",
-        unavailableLabel: "Unavailable",
-        soldOutLabel: "Sold out",
-        addToCartLabel: "Add to cart",
-        addingToCartLabel: "Adding to cart..."
-      }
+<script>
+      // This allows to expose several variables to the global scope, to be used in scripts
+      window.shop = {
+        template: "index",
+        currentPage: 1,
+        shopCurrency: "GBP",
+        moneyFormat: "\u003cspan class=money\u003e£{{amount}}\u003c\/span\u003e",
+        moneyWithCurrencyFormat: "\u003cspan class=money\u003e£{{amount}} GBP\u003c\/span\u003e",
+        collectionSortBy: null
+      };
+
+      window.languages = {
+        autocompleteStartingAt: "Starting at",
+        autocompletePageType: "Page",
+        autocompleteSeeAll: "See all results",
+        recoverPassword: "Recover your password",
+        cartTerms: "You need to accept terms and conditions",
+        cartEstimatedShipping: "+ estimated shipping:",
+        shippingEstimatorSubmit: "Estimate",
+        shippingEstimatorSubmitting: "Estimating...",
+        shippingEstimatorNoRates: "We do not ship to this destination",
+        shippingEstimatorRates: "Available shipping rates:",
+        shippingEstimatorError: "There are some errors:",
+        productAddedStatus: "Product was successfully added!",
+        unavailableLabel: "Unavailable",
+        soldOutLabel: "Sold out",
+        addToCartLabel: "Add to cart",
+        addingToCartLabel: "Adding to cart..."
+      }
     </script>
 </link></link></link></meta></head>
 <body class="common-home claptrap">
@@ -71,12 +71,12 @@
 <div id="sidebar-wrapper">
 <ul class="sidebar-nav list-group claptrap">
 <li class="sidebar-title">
-<a href="#menu-toggle-close" id="menu-toggle-close"><span aria-hidden="true">×</span></a>Información      <script>
-      $("#menu-toggle-close").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-		$(".sidebar-opacity").toggleClass("toggled");
-      });
+<a href="#menu-toggle-close" id="menu-toggle-close"><span aria-hidden="true">×</span></a>Información      <script>
+      $("#menu-toggle-close").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+		$(".sidebar-opacity").toggleClass("toggled");
+      });
       </script>
 </li>
 <li><a href="https://www.power-of-wind.de/index.php?route=information/information&amp;information_id=7">FAQ</a></li>
@@ -139,12 +139,12 @@
 <span class="button-text">Menú</span>
 </div>
 </a>
-<script>
-        $("#menu-mobile-toggle").click(function(e) {
-          e.preventDefault();
-          $("#wrapper").toggleClass("menu-toggled");
-		  $(".sidebar-opacity").toggleClass("menu-toggled");
-        });
+<script>
+        $("#menu-mobile-toggle").click(function(e) {
+          e.preventDefault();
+          $("#wrapper").toggleClass("menu-toggled");
+		  $(".sidebar-opacity").toggleClass("menu-toggled");
+        });
       </script>
 <div class="btn-group btn-block buttons-header" id="cart">
 <a class="btn dropdown-toggle" data-loading-text="Cargando..." data-toggle="dropdown">
@@ -182,26 +182,26 @@
 </div>
 </div>
 </nav>
-<script type="text/javascript">
-$(document).ready(function() {
-	$('#accordion-mobile').dcAccordion({
-		disableLink: false,	
-		menuClose: false,
-		autoClose: true,
-		autoExpand: true,		
-		saveState: false
-	});
-});
+<script type="text/javascript">
+$(document).ready(function() {
+	$('#accordion-mobile').dcAccordion({
+		disableLink: false,	
+		menuClose: false,
+		autoClose: true,
+		autoExpand: true,		
+		saveState: false
+	});
+});
 </script>
 <div class="hidden-sm hidden-md hidden-lg" id="menu-mobile">
 <ul class="accordion sidebar-nav list-group" id="accordion-mobile">
 <li class="sidebar-title">
-<a href="#menu-mobile-toggle-close" id="menu-mobile-toggle-close"><span aria-hidden="true">×</span></a>Menú      <script>
-      $("#menu-mobile-toggle-close").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("menu-toggled");
-		$(".sidebar-opacity").toggleClass("menu-toggled");
-      });
+<a href="#menu-mobile-toggle-close" id="menu-mobile-toggle-close"><span aria-hidden="true">×</span></a>Menú      <script>
+      $("#menu-mobile-toggle-close").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("menu-toggled");
+		$(".sidebar-opacity").toggleClass("menu-toggled");
+      });
       </script>
 </li>
 <li><a href="https://www.power-of-wind.de/">Inicio</a></li>
@@ -234,16 +234,16 @@ $(document).ready(function() {
 </div>
 <div style="display:none;"><script src="//js.users.51.la/21085533.js" type="text/javascript"></script><br/></div><div class="container">
 <div class="row"><column class="col-sm-3 hidden-xs" id="column-left">
-<script type="text/javascript">
-$(document).ready(function() {
-	$('#accordion-1').dcAccordion({
-		disableLink: false,	
-		menuClose: false,
-		autoClose: true,
-		autoExpand: true,		
-		saveState: false
-	});
-});
+<script type="text/javascript">
+$(document).ready(function() {
+	$('#accordion-1').dcAccordion({
+		disableLink: false,	
+		menuClose: false,
+		autoClose: true,
+		autoExpand: true,		
+		saveState: false
+	});
+});
 </script>
 <div class="panel panel-default panel-category">
 <div class="panel-heading">Categorias</div>
@@ -275,14 +275,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.power-of-wind.de/pieces-vestido-largo-lotus-z9cas.html"><img alt="Pieces Vestido largo - lotus z9CaS UKRikifc" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/pieces-vestido-largo-lotus-z9cas-4259.jpg" title="Pieces Vestido largo - lotus z9CaS UKRikifc"/></a>
+<a class="arevision" href="https://www.power-of-wind.de/noisy-may-nmlea-puff-camiseta-de-manga-larga-ermine-black-d4lrz.html"><img alt="Noisy May NMLEA PUFF - Camiseta de manga larga - ermine/black d4lrZ xIXDn631" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/noisy-may-nmlea-puff-camiseta-de-manga-larga-ermine-black-d4lrz-5377.jpg" title="Noisy May NMLEA PUFF - Camiseta de manga larga - ermine/black d4lrZ xIXDn631"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.power-of-wind.de/pieces-vestido-largo-lotus-z9cas.html">Pieces Vestido largo - lotus z9CaS UKRikifc</a></h4></div>
+<div class="name"><h4><a href="https://www.power-of-wind.de/noisy-may-nmlea-puff-camiseta-de-manga-larga-ermine-black-d4lrz.html">Noisy May NMLEA PUFF - Camiseta de manga larga - ermine/black d4lrZ xIXDn631</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€39.99</span> <span class="price-old">€95.99</span>
+<span class="price-new">€37.99</span> <span class="price-old">€86.99</span>
 </p>
 </div>
 </div>
@@ -291,14 +291,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.power-of-wind.de/anna-field-curvy-mini-scuba-dress-vestido-de-coctel-flower-prloj.html"><img alt="Anna Field Curvy MINI SCUBA DRESS - Vestido de cóctel - flower prLOj A1bZOcfY" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/anna-field-curvy-mini-scuba-dress-vestido-de-coctel-flower-prloj-4407.jpg" title="Anna Field Curvy MINI SCUBA DRESS - Vestido de cóctel - flower prLOj A1bZOcfY"/></a>
+<a class="arevision" href="https://www.power-of-wind.de/miss-selfridge-paisley-shirred-mini-minifalda-black-nawb0.html"><img alt="Miss Selfridge PAISLEY SHIRRED MINI - Minifalda - black naWB0 cPi2DN4w" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/miss-selfridge-paisley-shirred-mini-minifalda-black-nawb0-2452.jpg" title="Miss Selfridge PAISLEY SHIRRED MINI - Minifalda - black naWB0 cPi2DN4w"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.power-of-wind.de/anna-field-curvy-mini-scuba-dress-vestido-de-coctel-flower-prloj.html">Anna Field Curvy MINI SCUBA DRESS - Vestido de cóctel - flower prLOj A1bZOcfY</a></h4></div>
+<div class="name"><h4><a href="https://www.power-of-wind.de/miss-selfridge-paisley-shirred-mini-minifalda-black-nawb0.html">Miss Selfridge PAISLEY SHIRRED MINI - Minifalda - black naWB0 cPi2DN4w</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€39.99</span> <span class="price-old">€81.99</span>
+<span class="price-new">€36.99</span> <span class="price-old">€97.99</span>
 </p>
 </div>
 </div>
@@ -307,14 +307,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.power-of-wind.de/umbro-fc-schalke-04-training-equipacion-de-clubes-brilliant-white-zen-blue-blue-sapphire-s0fht.html"><img alt="Umbro FC SCHALKE 04 TRAINING - Equipación de clubes - brilliant white/zen blue/blue sapphire S0FHt OtfAeMC3" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/umbro-fc-schalke-04-training-equipacion-de-clubes-brilliant-white-zen-blue-blue-sapphire-s0fht-3613.jpg" title="Umbro FC SCHALKE 04 TRAINING - Equipación de clubes - brilliant white/zen blue/blue sapphire S0FHt OtfAeMC3"/></a>
+<a class="arevision" href="https://www.power-of-wind.de/roxy-viva-stamp-chanclas-de-dedo-navy-r2fxk.html"><img alt="Roxy VIVA STAMP - Chanclas de dedo - navy R2fxk d4753d8A" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/roxy-viva-stamp-chanclas-de-dedo-navy-r2fxk-4078.jpg" title="Roxy VIVA STAMP - Chanclas de dedo - navy R2fxk d4753d8A"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.power-of-wind.de/umbro-fc-schalke-04-training-equipacion-de-clubes-brilliant-white-zen-blue-blue-sapphire-s0fht.html">Umbro FC SCHALKE 04 TRAINING - Equipación de clubes - brilliant white/zen blue/blue sapphire S0FHt OtfAeMC3</a></h4></div>
+<div class="name"><h4><a href="https://www.power-of-wind.de/roxy-viva-stamp-chanclas-de-dedo-navy-r2fxk.html">Roxy VIVA STAMP - Chanclas de dedo - navy R2fxk d4753d8A</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€37.99</span> <span class="price-old">€83.99</span>
+<span class="price-new">€38.99</span> <span class="price-old">€95.99</span>
 </p>
 </div>
 </div>
@@ -323,14 +323,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.power-of-wind.de/american-eagle-slit-midi-skirt-falda-larga-purple-9i2xo.html"><img alt="American Eagle SLIT MIDI SKIRT - Falda larga - purple 9i2Xo zgT9bCNX" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/american-eagle-slit-midi-skirt-falda-larga-purple-9i2xo-267.jpg" title="American Eagle SLIT MIDI SKIRT - Falda larga - purple 9i2Xo zgT9bCNX"/></a>
+<a class="arevision" href="https://www.power-of-wind.de/soliver-black-label-blusa-anthracite-xln2a.html"><img alt="s.Oliver BLACK LABEL Blusa - anthracite XLn2a jwVDIuBc" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/soliver-black-label-blusa-anthracite-xln2a-2974.jpg" title="s.Oliver BLACK LABEL Blusa - anthracite XLn2a jwVDIuBc"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.power-of-wind.de/american-eagle-slit-midi-skirt-falda-larga-purple-9i2xo.html">American Eagle SLIT MIDI SKIRT - Falda larga - purple 9i2Xo zgT9bCNX</a></h4></div>
+<div class="name"><h4><a href="https://www.power-of-wind.de/soliver-black-label-blusa-anthracite-xln2a.html">s.Oliver BLACK LABEL Blusa - anthracite XLn2a jwVDIuBc</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€37.99</span> <span class="price-old">€97.99</span>
+<span class="price-new">€35.99</span> <span class="price-old">€88.99</span>
 </p>
 </div>
 </div>
@@ -339,14 +339,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.power-of-wind.de/edited-fabiane-dress-vestido-de-coctel-gelb-blau-t6pvi.html"><img alt="EDITED FABIANE DRESS - Vestido de cóctel - gelb/blau T6PVi qmRKGiRN" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/edited-fabiane-dress-vestido-de-coctel-gelb-blau-t6pvi-1484.jpg" title="EDITED FABIANE DRESS - Vestido de cóctel - gelb/blau T6PVi qmRKGiRN"/></a>
+<a class="arevision" href="https://www.power-of-wind.de/defacto-leggings-black-29qoa.html"><img alt="DeFacto Leggings - black 29Qoa dWyA0igm" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/defacto-leggings-black-29qoa-5016.jpg" title="DeFacto Leggings - black 29Qoa dWyA0igm"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.power-of-wind.de/edited-fabiane-dress-vestido-de-coctel-gelb-blau-t6pvi.html">EDITED FABIANE DRESS - Vestido de cóctel - gelb/blau T6PVi qmRKGiRN</a></h4></div>
+<div class="name"><h4><a href="https://www.power-of-wind.de/defacto-leggings-black-29qoa.html">DeFacto Leggings - black 29Qoa dWyA0igm</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€37.99</span> <span class="price-old">€85.99</span>
+<span class="price-new">€37.99</span> <span class="price-old">€92.99</span>
 </p>
 </div>
 </div>
@@ -355,11 +355,11 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.power-of-wind.de/nike-performance-dry-camiseta-estampada-black-white-yjdy1.html"><img alt="Nike Performance DRY - Camiseta estampada - black/white YJDY1 ovW9pMlT" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/nike-performance-dry-camiseta-estampada-black-white-yjdy1-1086.jpg" title="Nike Performance DRY - Camiseta estampada - black/white YJDY1 ovW9pMlT"/></a>
+<a class="arevision" href="https://www.power-of-wind.de/q-s-designed-by-langarm-chaqueta-fina-black-ojwnn.html"><img alt="Q/S designed by LANGARM - Chaqueta fina - black ojwnN HBZqOD5X" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/q-s-designed-by-langarm-chaqueta-fina-black-ojwnn-3428.jpg" title="Q/S designed by LANGARM - Chaqueta fina - black ojwnN HBZqOD5X"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.power-of-wind.de/nike-performance-dry-camiseta-estampada-black-white-yjdy1.html">Nike Performance DRY - Camiseta estampada - black/white YJDY1 ovW9pMlT</a></h4></div>
+<div class="name"><h4><a href="https://www.power-of-wind.de/q-s-designed-by-langarm-chaqueta-fina-black-ojwnn.html">Q/S designed by LANGARM - Chaqueta fina - black ojwnN HBZqOD5X</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
 <span class="price-new">€37.99</span> <span class="price-old">€83.99</span>
@@ -379,14 +379,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.power-of-wind.de/calvin-klein-underwear-2-pack-braguitas-black-dhmal.html"><img alt="Calvin Klein Underwear 2 PACK - Braguitas - black DhMAL PkaWM5Xk" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/calvin-klein-underwear-2-pack-braguitas-black-dhmal-359.jpg" title="Calvin Klein Underwear 2 PACK - Braguitas - black DhMAL PkaWM5Xk"/></a>
+<a class="arevision" href="https://www.power-of-wind.de/elli-set-pendientes-rose-goldcoloured-ww32j.html"><img alt="Elli SET - Pendientes - rose gold-coloured WW32j BvYaYM0a" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/elli-set-pendientes-rose-goldcoloured-ww32j-2129.jpg" title="Elli SET - Pendientes - rose gold-coloured WW32j BvYaYM0a"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.power-of-wind.de/calvin-klein-underwear-2-pack-braguitas-black-dhmal.html">Calvin Klein Underwear 2 PACK - Braguitas - black DhMAL PkaWM5Xk</a></h4></div>
+<div class="name"><h4><a href="https://www.power-of-wind.de/elli-set-pendientes-rose-goldcoloured-ww32j.html">Elli SET - Pendientes - rose gold-coloured WW32j BvYaYM0a</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€38.99</span> <span class="price-old">€82.99</span>
+<span class="price-new">€37.99</span> <span class="price-old">€98.99</span>
 </p>
 </div>
 </div>
@@ -395,59 +395,11 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.power-of-wind.de/bravado-designs-stillbh-top-white-grey-spacedye-m7nki.html"><img alt="Bravado Designs STILL-BH - Top - white grey spacedye M7NkI hUKGb1tW" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/bravado-designs-stillbh-top-white-grey-spacedye-m7nki-432.jpg" title="Bravado Designs STILL-BH - Top - white grey spacedye M7NkI hUKGb1tW"/></a>
+<a class="arevision" href="https://www.power-of-wind.de/anna-field-chaqueta-de-punto-black-jht7w.html"><img alt="Anna Field Chaqueta de punto - black jhT7W m3BufZil" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/anna-field-chaqueta-de-punto-black-jht7w-5069.jpg" title="Anna Field Chaqueta de punto - black jhT7W m3BufZil"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.power-of-wind.de/bravado-designs-stillbh-top-white-grey-spacedye-m7nki.html">Bravado Designs STILL-BH - Top - white grey spacedye M7NkI hUKGb1tW</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€38.99</span> <span class="price-old">€95.99</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.power-of-wind.de/patagonia-lined-happy-hike-studio-pants-pantalones-montaneros-largos-black-tf9r5.html"><img alt="Patagonia LINED HAPPY HIKE STUDIO PANTS - Pantalones montañeros largos - black tf9r5 fS6jbCHr" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/patagonia-lined-happy-hike-studio-pants-pantalones-montaneros-largos-black-tf9r5-1835.jpg" title="Patagonia LINED HAPPY HIKE STUDIO PANTS - Pantalones montañeros largos - black tf9r5 fS6jbCHr"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="https://www.power-of-wind.de/patagonia-lined-happy-hike-studio-pants-pantalones-montaneros-largos-black-tf9r5.html">Patagonia LINED HAPPY HIKE STUDIO PANTS - Pantalones montañeros largos - black tf9r5 fS6jbCHr</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€39.99</span> <span class="price-old">€95.99</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.power-of-wind.de/vagabond-zoe-platform-zapatillas-altas-black-wstkz.html"><img alt="Vagabond ZOE PLATFORM - Zapatillas altas - black WSTKZ 8PeZSzCE" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/vagabond-zoe-platform-zapatillas-altas-black-wstkz-3393.jpg" title="Vagabond ZOE PLATFORM - Zapatillas altas - black WSTKZ 8PeZSzCE"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="https://www.power-of-wind.de/vagabond-zoe-platform-zapatillas-altas-black-wstkz.html">Vagabond ZOE PLATFORM - Zapatillas altas - black WSTKZ 8PeZSzCE</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€37.99</span> <span class="price-old">€87.99</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.power-of-wind.de/lcredi-florentia-bolso-de-mano-schwarz-2u0oe.html"><img alt="L.Credi FLORENTIA - Bolso de mano - schwarz 2u0oE DaiNTlz4" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/lcredi-florentia-bolso-de-mano-schwarz-2u0oe-4838.jpg" title="L.Credi FLORENTIA - Bolso de mano - schwarz 2u0oE DaiNTlz4"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="https://www.power-of-wind.de/lcredi-florentia-bolso-de-mano-schwarz-2u0oe.html">L.Credi FLORENTIA - Bolso de mano - schwarz 2u0oE DaiNTlz4</a></h4></div>
+<div class="name"><h4><a href="https://www.power-of-wind.de/anna-field-chaqueta-de-punto-black-jht7w.html">Anna Field Chaqueta de punto - black jhT7W m3BufZil</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
 <span class="price-new">€37.99</span> <span class="price-old">€91.99</span>
@@ -459,14 +411,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.power-of-wind.de/playful-promises-top-black-2mqq3.html"><img alt="Playful Promises Top - black 2Mqq3 fx4BusQh" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/playful-promises-top-black-2mqq3-2441.jpg" title="Playful Promises Top - black 2Mqq3 fx4BusQh"/></a>
+<a class="arevision" href="https://www.power-of-wind.de/samsoe-samsoe-chaqueta-de-punto-black-1evc0.html"><img alt="Samsøe Samsøe Chaqueta de punto - black 1EVc0 Cke6VNcP" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/samsoe-samsoe-chaqueta-de-punto-black-1evc0-3549.jpg" title="Samsøe Samsøe Chaqueta de punto - black 1EVc0 Cke6VNcP"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.power-of-wind.de/playful-promises-top-black-2mqq3.html">Playful Promises Top - black 2Mqq3 fx4BusQh</a></h4></div>
+<div class="name"><h4><a href="https://www.power-of-wind.de/samsoe-samsoe-chaqueta-de-punto-black-1evc0.html">Samsøe Samsøe Chaqueta de punto - black 1EVc0 Cke6VNcP</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€39.99</span> <span class="price-old">€84.99</span>
+<span class="price-new">€38.99</span> <span class="price-old">€90.99</span>
 </p>
 </div>
 </div>
@@ -475,14 +427,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.power-of-wind.de/chimi-gafas-de-sol-mango-mirror-r4kif.html"><img alt="CHiMi Gafas de sol - mango mirror r4KiF F3xWUrEe" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/chimi-gafas-de-sol-mango-mirror-r4kif-4119.jpg" title="CHiMi Gafas de sol - mango mirror r4KiF F3xWUrEe"/></a>
+<a class="arevision" href="https://www.power-of-wind.de/evita-zapatos-altos-black-vyt93.html"><img alt="Evita Zapatos altos - black vyT93 4nLzUW8q" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/evita-zapatos-altos-black-vyt93-3589.jpg" title="Evita Zapatos altos - black vyT93 4nLzUW8q"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.power-of-wind.de/chimi-gafas-de-sol-mango-mirror-r4kif.html">CHiMi Gafas de sol - mango mirror r4KiF F3xWUrEe</a></h4></div>
+<div class="name"><h4><a href="https://www.power-of-wind.de/evita-zapatos-altos-black-vyt93.html">Evita Zapatos altos - black vyT93 4nLzUW8q</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€38.99</span> <span class="price-old">€93.99</span>
+<span class="price-new">€37.99</span> <span class="price-old">€90.99</span>
 </p>
 </div>
 </div>
@@ -491,14 +443,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.power-of-wind.de/modstrom-novo-print-dress-vestido-informal-pink-black-dywq3.html"><img alt="Modström NOVO PRINT DRESS - Vestido informal - pink/black DYWq3 eTWv25Qa" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/modstrom-novo-print-dress-vestido-informal-pink-black-dywq3-1673.jpg" title="Modström NOVO PRINT DRESS - Vestido informal - pink/black DYWq3 eTWv25Qa"/></a>
+<a class="arevision" href="https://www.power-of-wind.de/jcrew-pendientes-goldcoloured-zldoz.html"><img alt="J.CREW Pendientes - gold-coloured ZlDOZ Y0I2oi8Z" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/jcrew-pendientes-goldcoloured-zldoz-107.jpg" title="J.CREW Pendientes - gold-coloured ZlDOZ Y0I2oi8Z"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.power-of-wind.de/modstrom-novo-print-dress-vestido-informal-pink-black-dywq3.html">Modström NOVO PRINT DRESS - Vestido informal - pink/black DYWq3 eTWv25Qa</a></h4></div>
+<div class="name"><h4><a href="https://www.power-of-wind.de/jcrew-pendientes-goldcoloured-zldoz.html">J.CREW Pendientes - gold-coloured ZlDOZ Y0I2oi8Z</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€38.99</span> <span class="price-old">€89.99</span>
+<span class="price-new">€37.99</span> <span class="price-old">€99.99</span>
 </p>
 </div>
 </div>
@@ -507,14 +459,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.power-of-wind.de/zign-zapatillas-white-green-55zsu.html"><img alt="Zign Zapatillas - white/green 55ZSu sxygZsEh" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/zign-zapatillas-white-green-55zsu-4085.jpg" title="Zign Zapatillas - white/green 55ZSu sxygZsEh"/></a>
+<a class="arevision" href="https://www.power-of-wind.de/ps-paul-smith-sudadera-black-blue-lmnkf.html"><img alt="PS Paul Smith Sudadera - black/blue LMnkf cIyKbFzh" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/ps-paul-smith-sudadera-black-blue-lmnkf-610.jpg" title="PS Paul Smith Sudadera - black/blue LMnkf cIyKbFzh"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.power-of-wind.de/zign-zapatillas-white-green-55zsu.html">Zign Zapatillas - white/green 55ZSu sxygZsEh</a></h4></div>
+<div class="name"><h4><a href="https://www.power-of-wind.de/ps-paul-smith-sudadera-black-blue-lmnkf.html">PS Paul Smith Sudadera - black/blue LMnkf cIyKbFzh</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€36.99</span> <span class="price-old">€97.99</span>
+<span class="price-new">€35.99</span> <span class="price-old">€90.99</span>
 </p>
 </div>
 </div>
@@ -523,14 +475,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.power-of-wind.de/nike-performance-rival-bra-high-support-sujetador-deportivo-black-black-white-js919.html"><img alt="Nike Performance RIVAL BRA HIGH SUPPORT - Sujetador deportivo - black/black/white Js919 5WP4HFic" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/nike-performance-rival-bra-high-support-sujetador-deportivo-black-black-white-js919-363.jpg" title="Nike Performance RIVAL BRA HIGH SUPPORT - Sujetador deportivo - black/black/white Js919 5WP4HFic"/></a>
+<a class="arevision" href="https://www.power-of-wind.de/mcq-alexander-mcqueen-magazine-tote-swallow-bolso-shopping-black-cvlgd.html"><img alt="McQ Alexander McQueen MAGAZINE TOTE SWALLOW - Bolso shopping - black cvLGD k35XBJMx" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/mcq-alexander-mcqueen-magazine-tote-swallow-bolso-shopping-black-cvlgd-4397.jpg" title="McQ Alexander McQueen MAGAZINE TOTE SWALLOW - Bolso shopping - black cvLGD k35XBJMx"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.power-of-wind.de/nike-performance-rival-bra-high-support-sujetador-deportivo-black-black-white-js919.html">Nike Performance RIVAL BRA HIGH SUPPORT - Sujetador deportivo - black/black/white Js919 5WP4HFic</a></h4></div>
+<div class="name"><h4><a href="https://www.power-of-wind.de/mcq-alexander-mcqueen-magazine-tote-swallow-bolso-shopping-black-cvlgd.html">McQ Alexander McQueen MAGAZINE TOTE SWALLOW - Bolso shopping - black cvLGD k35XBJMx</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€38.99</span> <span class="price-old">€85.99</span>
+<span class="price-new">€37.99</span> <span class="price-old">€95.99</span>
 </p>
 </div>
 </div>
@@ -539,14 +491,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.power-of-wind.de/pier-one-jersey-con-capucha-black-hw9by.html"><img alt="Pier One Jersey con capucha - black Hw9BY NVjMRgU5" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/pier-one-jersey-con-capucha-black-hw9by-2717.jpg" title="Pier One Jersey con capucha - black Hw9BY NVjMRgU5"/></a>
+<a class="arevision" href="https://www.power-of-wind.de/nike-sportswear-squash-type-zapatillas-white-sail-platinum-tint-dllbc.html"><img alt="Nike Sportswear SQUASH TYPE - Zapatillas - white/sail/platinum tint dLlbC ZLpgxp98" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/nike-sportswear-squash-type-zapatillas-white-sail-platinum-tint-dllbc-1536.jpg" title="Nike Sportswear SQUASH TYPE - Zapatillas - white/sail/platinum tint dLlbC ZLpgxp98"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.power-of-wind.de/pier-one-jersey-con-capucha-black-hw9by.html">Pier One Jersey con capucha - black Hw9BY NVjMRgU5</a></h4></div>
+<div class="name"><h4><a href="https://www.power-of-wind.de/nike-sportswear-squash-type-zapatillas-white-sail-platinum-tint-dllbc.html">Nike Sportswear SQUASH TYPE - Zapatillas - white/sail/platinum tint dLlbC ZLpgxp98</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€36.99</span> <span class="price-old">€95.99</span>
+<span class="price-new">€37.99</span> <span class="price-old">€88.99</span>
 </p>
 </div>
 </div>
@@ -555,14 +507,62 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.power-of-wind.de/anna-field-leather-classic-heels-tacones-light-brown-1tlvf.html"><img alt="Anna Field LEATHER CLASSIC HEELS - Tacones - light brown 1tLvF NQQYrzPj" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/anna-field-leather-classic-heels-tacones-light-brown-1tlvf-3616.jpg" title="Anna Field LEATHER CLASSIC HEELS - Tacones - light brown 1tLvF NQQYrzPj"/></a>
+<a class="arevision" href="https://www.power-of-wind.de/nikkie-gigi-dress-vestido-de-tubo-star-white-xzipg.html"><img alt="NIKKIE GIGI DRESS - Vestido de tubo - star white XZIPG 9vR6Ffzu" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/nikkie-gigi-dress-vestido-de-tubo-star-white-xzipg-5239.jpg" title="NIKKIE GIGI DRESS - Vestido de tubo - star white XZIPG 9vR6Ffzu"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.power-of-wind.de/anna-field-leather-classic-heels-tacones-light-brown-1tlvf.html">Anna Field LEATHER CLASSIC HEELS - Tacones - light brown 1tLvF NQQYrzPj</a></h4></div>
+<div class="name"><h4><a href="https://www.power-of-wind.de/nikkie-gigi-dress-vestido-de-tubo-star-white-xzipg.html">NIKKIE GIGI DRESS - Vestido de tubo - star white XZIPG 9vR6Ffzu</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€39.99</span> <span class="price-old">€94.99</span>
+<span class="price-new">€39.99</span> <span class="price-old">€87.99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="https://www.power-of-wind.de/karl-lagerfeld-ikonik-guss-cardholder-monedero-black-mbhmh.html"><img alt="KARL LAGERFELD IKONIK GUSS CARDHOLDER - Monedero - black mBhMh o95M8rEv" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/karl-lagerfeld-ikonik-guss-cardholder-monedero-black-mbhmh-4449.jpg" title="KARL LAGERFELD IKONIK GUSS CARDHOLDER - Monedero - black mBhMh o95M8rEv"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="https://www.power-of-wind.de/karl-lagerfeld-ikonik-guss-cardholder-monedero-black-mbhmh.html">KARL LAGERFELD IKONIK GUSS CARDHOLDER - Monedero - black mBhMh o95M8rEv</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€37.99</span> <span class="price-old">€99.99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="https://www.power-of-wind.de/prada-gafas-de-sol-black-grey-m1r4u.html"><img alt="Prada Gafas de sol - black/grey m1r4U pgyBYQ7R" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/prada-gafas-de-sol-black-grey-m1r4u-3007.jpg" title="Prada Gafas de sol - black/grey m1r4U pgyBYQ7R"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="https://www.power-of-wind.de/prada-gafas-de-sol-black-grey-m1r4u.html">Prada Gafas de sol - black/grey m1r4U pgyBYQ7R</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€35.99</span> <span class="price-old">€97.99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="https://www.power-of-wind.de/mamalicious-mlparisian-dress-vestido-informal-black-zhro6.html"><img alt="MAMALICIOUS MLPARISIAN DRESS - Vestido informal - black zHRO6 xoo8zClo" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/mamalicious-mlparisian-dress-vestido-informal-black-zhro6-3814.jpg" title="MAMALICIOUS MLPARISIAN DRESS - Vestido informal - black zHRO6 xoo8zClo"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="https://www.power-of-wind.de/mamalicious-mlparisian-dress-vestido-informal-black-zhro6.html">MAMALICIOUS MLPARISIAN DRESS - Vestido informal - black zHRO6 xoo8zClo</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€37.99</span> <span class="price-old">€84.99</span>
 </p>
 </div>
 </div>
@@ -598,43 +598,43 @@ $(document).ready(function() {
 <div id="powered">
 <div class="container">
 <div class="row">
-<div class="col-sm-12 col-md-12">
-      Copyright © 2022 <a href="//www.power-of-wind.de" target="_blank">www.power-of-wind.de</a> All Rights Reserved  
+<div class="col-sm-12 col-md-12">
+      Copyright © 2022 <a href="//www.power-of-wind.de" target="_blank">www.power-of-wind.de</a> All Rights Reserved  
       </div>
 </div>
 </div>
 </div>
 </footer>
 <script src="catalog/view/theme/claptrap/js/jquery.visible.min.js" type="text/javascript"></script>
-<script type="text/javascript">
-
-var win = $(window);
-
-var allMods = $("footer");
-
-allMods.each(function(i, el) {
-    
-  if ($(el).visible(true)) {
-    $(el).addClass("already-visible"); 
-  }
-  
-});
-
-win.scroll(function(event) {
-  
-  allMods.each(function(i, el) {
-    
-    var el = $(el);
-    
-    if (el.visible(true)) {
-      el.addClass("come-in"); 
-    } else {
-      el.removeClass("come-in already-visible");
-    }
-    
-  });
-  
-}); 
+<script type="text/javascript">
+
+var win = $(window);
+
+var allMods = $("footer");
+
+allMods.each(function(i, el) {
+    
+  if ($(el).visible(true)) {
+    $(el).addClass("already-visible"); 
+  }
+  
+});
+
+win.scroll(function(event) {
+  
+  allMods.each(function(i, el) {
+    
+    var el = $(el);
+    
+    if (el.visible(true)) {
+      el.addClass("come-in"); 
+    } else {
+      el.removeClass("come-in already-visible");
+    }
+    
+  });
+  
+}); 
 </script>
 <script src="catalog/view/theme/claptrap/js/jquery.easing-1.3.min.js" type="text/javascript"></script>
 <link href="catalog/view/theme/claptrap/js/quickview/fancybox/jquery.fancybox.css" property="stylesheet" rel="stylesheet">

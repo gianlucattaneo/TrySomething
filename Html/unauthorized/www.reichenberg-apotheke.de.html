@@ -60,8 +60,8 @@
                 s.parentNode.insertBefore(p, s);
             })();
         </script>
-<link href="/bundle/assets/sf/css/app.css?v=3522f8e1c9c6d8b4cba5f78af019b39f" rel="stylesheet"/><script>
-    window.meshop = {"customer":{"signedIn":false},"form":{"titles":{"6":{"titleId":"6","name":"Divers"},"3":{"titleId":"3","name":"Familie"},"4":{"titleId":"4","name":"Firma"},"2":{"titleId":"2","name":"Frau"},"1":{"titleId":"1","name":"Herr"}}}};
+<link href="/bundle/assets/sf/css/app.css?v=3522f8e1c9c6d8b4cba5f78af019b39f" rel="stylesheet"/><script>
+    window.meshop = {"customer":{"signedIn":false},"form":{"titles":{"6":{"titleId":"6","name":"Divers"},"3":{"titleId":"3","name":"Familie"},"4":{"titleId":"4","name":"Firma"},"2":{"titleId":"2","name":"Frau"},"1":{"titleId":"1","name":"Herr"}}}};
 </script><script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
     ga('create', 'UA-210414108-2', 'auto');
@@ -173,7 +173,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 <header>
 <div class="bg-white">
 <div class="text-center mb-1 md:hidden">
-<span class="block w-full px-1 py-1 text-xs bg-green text-white">Wir sind für dich erreichbar bis 18:30 Uhr</span>
+<span class="block w-full px-1 py-1 text-xs bg-red text-white">Unser Service-Team ist aktuell leider nicht erreichbar. Bitte beachte unsere Öffnungszeiten.</span>
 </div>
 <div class="container py-1 sm:pb-2 md:py-3">
 <div class="relative z-20">
@@ -296,7 +296,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </svg>
 </figure>
 <div class="text-sm leading-none">
-<span class="block w-full px-1 py-1 text-xs bg-green text-white">Wir sind für dich erreichbar bis 18:30 Uhr</span>
+<span class="block w-full px-1 py-1 text-xs bg-red text-white">Unser Service-Team ist aktuell leider nicht erreichbar. Bitte beachte unsere Öffnungszeiten.</span>
 <div>
     Rats-Apotheke Inhaberin Biana Silbermann e.K <i class="fa fa-angle-right"></i><br/>
 <span class="text-xs">
@@ -1045,18 +1045,15 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 <div class="flex flex-wrap bg-white mb-3 md:mb-6 mt-2">
 <div class="w-full md:w-1/4 p-3 md:p-4">
 <div class="banner text-sm leading-normal mb-3">
-<a href="https://www.apotree.de/content/natuerlich-fuer-duesseldorf.18.html" rel="noopener noreferrer" target="_blank">
-<div class="banner__title text-lg font-bold mb-1">
-                    Erste Botenlieferung GRATIS mit Gutscheincode SameDay2022 - Jetzt testen!
-                </div>
 <div class="banner__content wysiwyg">
-<img alt="Erste Botenlieferung GRATIS mit Gutscheincode SameDay2022 - Jetzt testen!" src="/documents/products/Statisch/Banner/RAT-Website-Banner-LO-02-.jpg?ver=1649058523" title="Erste Botenlieferung GRATIS mit Gutscheincode SameDay2022 - Jetzt testen!"/>
 </div>
-</a>
 </div>
 <div class="banner text-sm leading-normal mb-3">
+<a href="/kategorie/angebote-8.html">
 <div class="banner__content wysiwyg">
+<img alt="" src="/documents/products/Statisch/Banner/RAT-Website-Banner-LO-01-2.jpg?ver=1649058523" title=""/>
 </div>
+</a>
 </div>
 </div>
 <div class="hidden md:block md:w-3/4 panorama-slider">
@@ -1167,7 +1164,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
         " :scrollbar="true">
 <cg-slider-item>
 <div class="h-full px-3">
-<article class="product-box" data-product="736631" data-render-id="628b3ae06ecaf">
+<article class="product-box" data-product="736631" data-render-id="628be9d307f21">
 <cg-notepad-star :product-id="736631" class="mb-2" v-slot="slotProps">
 <div class="notepad-star">
 <button @click.prevent="slotProps.toggle" class="text-primary text-lg no-underline block mb-1">
@@ -1240,8 +1237,8 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 <select class="form-select border-0 bg-transparent w-full" onchange="customEvent('package-size-selector', {
                                     url: 'https://www.apotree.de/_fragment/products/placeholder',
                                     product_id: this.value,
-                                    render_id: '628b3ae06ecaf',
-                                    loading_id: '628b3ae06ecaf_loading'
+                                    render_id: '628be9d307f21',
+                                    loading_id: '628be9d307f21_loading'
                                     })">
 <option selected="selected" value="736631">
                                     30 ml
@@ -1261,15 +1258,15 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepDown',
-                    input_id: '628b3ae0709ab',
+                    input_id: '628be9d30a196',
                 })">
                 -
             </button>
-<input :step="1" class="border-0 w-full text-center" id="628b3ae0709ab" min="1" name="product[quantity]" required="" type="number" value="1"/>
+<input :step="1" class="border-0 w-full text-center" id="628be9d30a196" min="1" name="product[quantity]" required="" type="number" value="1"/>
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepUp',
-                    input_id: '628b3ae0709ab',
+                    input_id: '628be9d30a196',
                 })">
                 +
             </button>
@@ -1281,7 +1278,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </button>
 </input></form>
 </div>
-<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628b3ae06ecaf_loading">
+<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628be9d307f21_loading">
 <svg class="loading" version="1.1" viewbox="0 0 80 80" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px"> <path d="M40,72C22.4,72,8,57.6,8,40C8,22.4, 22.4,8,40,8c17.6,0,32,14.4,32,32c0,1.1-0.9,2-2,2 s-2-0.9-2-2c0-15.4-12.6-28-28-28S12,24.6,12,40s12.6,28,28,28c1.1,0,2,0.9,2,2S41.1,72,40,72z" id="spinner"></path></svg>
 </div>
 </article>
@@ -1289,7 +1286,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </cg-slider-item>
 <cg-slider-item>
 <div class="h-full px-3">
-<article class="product-box" data-product="33625" data-render-id="628b3ae072e92">
+<article class="product-box" data-product="33625" data-render-id="628be9d30c17d">
 <cg-notepad-star :product-id="33625" class="mb-2" v-slot="slotProps">
 <div class="notepad-star">
 <button @click.prevent="slotProps.toggle" class="text-primary text-lg no-underline block mb-1">
@@ -1362,8 +1359,8 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 <select class="form-select border-0 bg-transparent w-full" onchange="customEvent('package-size-selector', {
                                     url: 'https://www.apotree.de/_fragment/products/placeholder',
                                     product_id: this.value,
-                                    render_id: '628b3ae072e92',
-                                    loading_id: '628b3ae072e92_loading'
+                                    render_id: '628be9d30c17d',
+                                    loading_id: '628be9d30c17d_loading'
                                     })">
 <option selected="selected" value="33625">
                                     15 ml
@@ -1380,15 +1377,15 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepDown',
-                    input_id: '628b3ae07413a',
+                    input_id: '628be9d30d093',
                 })">
                 -
             </button>
-<input :max="3" :step="1" class="border-0 w-full text-center" id="628b3ae07413a" min="1" name="product[quantity]" required="" type="number" value="1"/>
+<input :max="3" :step="1" class="border-0 w-full text-center" id="628be9d30d093" min="1" name="product[quantity]" required="" type="number" value="1"/>
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepUp',
-                    input_id: '628b3ae07413a',
+                    input_id: '628be9d30d093',
                 })">
                 +
             </button>
@@ -1400,7 +1397,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </button>
 </input></form>
 </div>
-<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628b3ae072e92_loading">
+<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628be9d30c17d_loading">
 <svg class="loading" version="1.1" viewbox="0 0 80 80" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px"> <path d="M40,72C22.4,72,8,57.6,8,40C8,22.4, 22.4,8,40,8c17.6,0,32,14.4,32,32c0,1.1-0.9,2-2,2 s-2-0.9-2-2c0-15.4-12.6-28-28-28S12,24.6,12,40s12.6,28,28,28c1.1,0,2,0.9,2,2S41.1,72,40,72z" id="spinner"></path></svg>
 </div>
 </article>
@@ -1408,7 +1405,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </cg-slider-item>
 <cg-slider-item>
 <div class="h-full px-3">
-<article class="product-box" data-product="158" data-render-id="628b3ae076b1a">
+<article class="product-box" data-product="158" data-render-id="628be9d30f80e">
 <cg-notepad-star :product-id="158" class="mb-2" v-slot="slotProps">
 <div class="notepad-star">
 <button @click.prevent="slotProps.toggle" class="text-primary text-lg no-underline block mb-1">
@@ -1473,8 +1470,8 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 <select class="form-select border-0 bg-transparent w-full" onchange="customEvent('package-size-selector', {
                                     url: 'https://www.apotree.de/_fragment/products/placeholder',
                                     product_id: this.value,
-                                    render_id: '628b3ae076b1a',
-                                    loading_id: '628b3ae076b1a_loading'
+                                    render_id: '628be9d30f80e',
+                                    loading_id: '628be9d30f80e_loading'
                                     })">
 <option selected="selected" value="158">
                                     30 St
@@ -1497,15 +1494,15 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepDown',
-                    input_id: '628b3ae078063',
+                    input_id: '628be9d310cc8',
                 })">
                 -
             </button>
-<input :step="1" class="border-0 w-full text-center" id="628b3ae078063" min="1" name="product[quantity]" required="" type="number" value="1"/>
+<input :step="1" class="border-0 w-full text-center" id="628be9d310cc8" min="1" name="product[quantity]" required="" type="number" value="1"/>
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepUp',
-                    input_id: '628b3ae078063',
+                    input_id: '628be9d310cc8',
                 })">
                 +
             </button>
@@ -1517,7 +1514,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </button>
 </input></form>
 </div>
-<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628b3ae076b1a_loading">
+<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628be9d30f80e_loading">
 <svg class="loading" version="1.1" viewbox="0 0 80 80" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px"> <path d="M40,72C22.4,72,8,57.6,8,40C8,22.4, 22.4,8,40,8c17.6,0,32,14.4,32,32c0,1.1-0.9,2-2,2 s-2-0.9-2-2c0-15.4-12.6-28-28-28S12,24.6,12,40s12.6,28,28,28c1.1,0,2,0.9,2,2S41.1,72,40,72z" id="spinner"></path></svg>
 </div>
 </article>
@@ -1525,7 +1522,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </cg-slider-item>
 <cg-slider-item>
 <div class="h-full px-3">
-<article class="product-box" data-product="134653" data-render-id="628b3ae07a8f9">
+<article class="product-box" data-product="134653" data-render-id="628be9d312f10">
 <cg-notepad-star :product-id="134653" class="mb-2" v-slot="slotProps">
 <div class="notepad-star">
 <button @click.prevent="slotProps.toggle" class="text-primary text-lg no-underline block mb-1">
@@ -1590,8 +1587,8 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 <select class="form-select border-0 bg-transparent w-full" onchange="customEvent('package-size-selector', {
                                     url: 'https://www.apotree.de/_fragment/products/placeholder',
                                     product_id: this.value,
-                                    render_id: '628b3ae07a8f9',
-                                    loading_id: '628b3ae07a8f9_loading'
+                                    render_id: '628be9d312f10',
+                                    loading_id: '628be9d312f10_loading'
                                     })">
 <option selected="selected" value="134653">
                                     20 St
@@ -1611,15 +1608,15 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepDown',
-                    input_id: '628b3ae07cab6',
+                    input_id: '628be9d3148cd',
                 })">
                 -
             </button>
-<input :step="1" class="border-0 w-full text-center" id="628b3ae07cab6" min="1" name="product[quantity]" required="" type="number" value="1"/>
+<input :step="1" class="border-0 w-full text-center" id="628be9d3148cd" min="1" name="product[quantity]" required="" type="number" value="1"/>
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepUp',
-                    input_id: '628b3ae07cab6',
+                    input_id: '628be9d3148cd',
                 })">
                 +
             </button>
@@ -1631,7 +1628,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </button>
 </input></form>
 </div>
-<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628b3ae07a8f9_loading">
+<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628be9d312f10_loading">
 <svg class="loading" version="1.1" viewbox="0 0 80 80" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px"> <path d="M40,72C22.4,72,8,57.6,8,40C8,22.4, 22.4,8,40,8c17.6,0,32,14.4,32,32c0,1.1-0.9,2-2,2 s-2-0.9-2-2c0-15.4-12.6-28-28-28S12,24.6,12,40s12.6,28,28,28c1.1,0,2,0.9,2,2S41.1,72,40,72z" id="spinner"></path></svg>
 </div>
 </article>
@@ -1639,7 +1636,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </cg-slider-item>
 <cg-slider-item>
 <div class="h-full px-3">
-<article class="product-box" data-product="306234" data-render-id="628b3ae07e71d">
+<article class="product-box" data-product="306234" data-render-id="628be9d31676d">
 <cg-notepad-star :product-id="306234" class="mb-2" v-slot="slotProps">
 <div class="notepad-star">
 <button @click.prevent="slotProps.toggle" class="text-primary text-lg no-underline block mb-1">
@@ -1712,8 +1709,8 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 <select class="form-select border-0 bg-transparent w-full" onchange="customEvent('package-size-selector', {
                                     url: 'https://www.apotree.de/_fragment/products/placeholder',
                                     product_id: this.value,
-                                    render_id: '628b3ae07e71d',
-                                    loading_id: '628b3ae07e71d_loading'
+                                    render_id: '628be9d31676d',
+                                    loading_id: '628be9d31676d_loading'
                                     })">
 <option selected="selected" value="306234">
                                     100 ml
@@ -1730,15 +1727,15 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepDown',
-                    input_id: '628b3ae07f71d',
+                    input_id: '628be9d3178d4',
                 })">
                 -
             </button>
-<input :step="1" class="border-0 w-full text-center" id="628b3ae07f71d" min="1" name="product[quantity]" required="" type="number" value="1"/>
+<input :step="1" class="border-0 w-full text-center" id="628be9d3178d4" min="1" name="product[quantity]" required="" type="number" value="1"/>
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepUp',
-                    input_id: '628b3ae07f71d',
+                    input_id: '628be9d3178d4',
                 })">
                 +
             </button>
@@ -1750,7 +1747,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </button>
 </input></form>
 </div>
-<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628b3ae07e71d_loading">
+<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628be9d31676d_loading">
 <svg class="loading" version="1.1" viewbox="0 0 80 80" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px"> <path d="M40,72C22.4,72,8,57.6,8,40C8,22.4, 22.4,8,40,8c17.6,0,32,14.4,32,32c0,1.1-0.9,2-2,2 s-2-0.9-2-2c0-15.4-12.6-28-28-28S12,24.6,12,40s12.6,28,28,28c1.1,0,2,0.9,2,2S41.1,72,40,72z" id="spinner"></path></svg>
 </div>
 </article>
@@ -1758,7 +1755,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </cg-slider-item>
 <cg-slider-item>
 <div class="h-full px-3">
-<article class="product-box" data-product="161118" data-render-id="628b3ae081902">
+<article class="product-box" data-product="161118" data-render-id="628be9d319e59">
 <cg-notepad-star :product-id="161118" class="mb-2" v-slot="slotProps">
 <div class="notepad-star">
 <button @click.prevent="slotProps.toggle" class="text-primary text-lg no-underline block mb-1">
@@ -1831,8 +1828,8 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 <select class="form-select border-0 bg-transparent w-full" onchange="customEvent('package-size-selector', {
                                     url: 'https://www.apotree.de/_fragment/products/placeholder',
                                     product_id: this.value,
-                                    render_id: '628b3ae081902',
-                                    loading_id: '628b3ae081902_loading'
+                                    render_id: '628be9d319e59',
+                                    loading_id: '628be9d319e59_loading'
                                     })">
 <option selected="selected" value="161118">
                                     25 g
@@ -1852,15 +1849,15 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepDown',
-                    input_id: '628b3ae082b6d',
+                    input_id: '628be9d31b905',
                 })">
                 -
             </button>
-<input :step="1" class="border-0 w-full text-center" id="628b3ae082b6d" min="1" name="product[quantity]" required="" type="number" value="1"/>
+<input :step="1" class="border-0 w-full text-center" id="628be9d31b905" min="1" name="product[quantity]" required="" type="number" value="1"/>
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepUp',
-                    input_id: '628b3ae082b6d',
+                    input_id: '628be9d31b905',
                 })">
                 +
             </button>
@@ -1872,7 +1869,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </button>
 </input></form>
 </div>
-<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628b3ae081902_loading">
+<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628be9d319e59_loading">
 <svg class="loading" version="1.1" viewbox="0 0 80 80" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px"> <path d="M40,72C22.4,72,8,57.6,8,40C8,22.4, 22.4,8,40,8c17.6,0,32,14.4,32,32c0,1.1-0.9,2-2,2 s-2-0.9-2-2c0-15.4-12.6-28-28-28S12,24.6,12,40s12.6,28,28,28c1.1,0,2,0.9,2,2S41.1,72,40,72z" id="spinner"></path></svg>
 </div>
 </article>
@@ -1880,7 +1877,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </cg-slider-item>
 <cg-slider-item>
 <div class="h-full px-3">
-<article class="product-box" data-product="259007" data-render-id="628b3ae0851a6">
+<article class="product-box" data-product="259007" data-render-id="628be9d31d928">
 <cg-notepad-star :product-id="259007" class="mb-2" v-slot="slotProps">
 <div class="notepad-star">
 <button @click.prevent="slotProps.toggle" class="text-primary text-lg no-underline block mb-1">
@@ -1961,15 +1958,15 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepDown',
-                    input_id: '628b3ae086cc4',
+                    input_id: '628be9d31ec83',
                 })">
                 -
             </button>
-<input :max="4" :step="1" class="border-0 w-full text-center" id="628b3ae086cc4" min="1" name="product[quantity]" required="" type="number" value="1"/>
+<input :max="4" :step="1" class="border-0 w-full text-center" id="628be9d31ec83" min="1" name="product[quantity]" required="" type="number" value="1"/>
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepUp',
-                    input_id: '628b3ae086cc4',
+                    input_id: '628be9d31ec83',
                 })">
                 +
             </button>
@@ -1981,7 +1978,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </button>
 </input></form>
 </div>
-<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628b3ae0851a6_loading">
+<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628be9d31d928_loading">
 <svg class="loading" version="1.1" viewbox="0 0 80 80" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px"> <path d="M40,72C22.4,72,8,57.6,8,40C8,22.4, 22.4,8,40,8c17.6,0,32,14.4,32,32c0,1.1-0.9,2-2,2 s-2-0.9-2-2c0-15.4-12.6-28-28-28S12,24.6,12,40s12.6,28,28,28c1.1,0,2,0.9,2,2S41.1,72,40,72z" id="spinner"></path></svg>
 </div>
 </article>
@@ -1989,7 +1986,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </cg-slider-item>
 <cg-slider-item>
 <div class="h-full px-3">
-<article class="product-box" data-product="662966" data-render-id="628b3ae08978b">
+<article class="product-box" data-product="662966" data-render-id="628be9d320f96">
 <cg-notepad-star :product-id="662966" class="mb-2" v-slot="slotProps">
 <div class="notepad-star">
 <button @click.prevent="slotProps.toggle" class="text-primary text-lg no-underline block mb-1">
@@ -2062,8 +2059,8 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 <select class="form-select border-0 bg-transparent w-full" onchange="customEvent('package-size-selector', {
                                     url: 'https://www.apotree.de/_fragment/products/placeholder',
                                     product_id: this.value,
-                                    render_id: '628b3ae08978b',
-                                    loading_id: '628b3ae08978b_loading'
+                                    render_id: '628be9d320f96',
+                                    loading_id: '628be9d320f96_loading'
                                     })">
 <option selected="selected" value="662966">
                                     30 St
@@ -2080,15 +2077,15 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepDown',
-                    input_id: '628b3ae08b3ba',
+                    input_id: '628be9d322c61',
                 })">
                 -
             </button>
-<input :step="1" class="border-0 w-full text-center" id="628b3ae08b3ba" min="1" name="product[quantity]" required="" type="number" value="1"/>
+<input :step="1" class="border-0 w-full text-center" id="628be9d322c61" min="1" name="product[quantity]" required="" type="number" value="1"/>
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepUp',
-                    input_id: '628b3ae08b3ba',
+                    input_id: '628be9d322c61',
                 })">
                 +
             </button>
@@ -2100,7 +2097,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </button>
 </input></form>
 </div>
-<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628b3ae08978b_loading">
+<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628be9d320f96_loading">
 <svg class="loading" version="1.1" viewbox="0 0 80 80" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px"> <path d="M40,72C22.4,72,8,57.6,8,40C8,22.4, 22.4,8,40,8c17.6,0,32,14.4,32,32c0,1.1-0.9,2-2,2 s-2-0.9-2-2c0-15.4-12.6-28-28-28S12,24.6,12,40s12.6,28,28,28c1.1,0,2,0.9,2,2S41.1,72,40,72z" id="spinner"></path></svg>
 </div>
 </article>
@@ -2108,7 +2105,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </cg-slider-item>
 <cg-slider-item>
 <div class="h-full px-3">
-<article class="product-box" data-product="732579" data-render-id="628b3ae08dff0">
+<article class="product-box" data-product="732579" data-render-id="628be9d325161">
 <cg-notepad-star :product-id="732579" class="mb-2" v-slot="slotProps">
 <div class="notepad-star">
 <button @click.prevent="slotProps.toggle" class="text-primary text-lg no-underline block mb-1">
@@ -2181,15 +2178,15 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepDown',
-                    input_id: '628b3ae08f52a',
+                    input_id: '628be9d326648',
                 })">
                 -
             </button>
-<input :max="3" :step="1" class="border-0 w-full text-center" id="628b3ae08f52a" min="1" name="product[quantity]" required="" type="number" value="1"/>
+<input :max="3" :step="1" class="border-0 w-full text-center" id="628be9d326648" min="1" name="product[quantity]" required="" type="number" value="1"/>
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepUp',
-                    input_id: '628b3ae08f52a',
+                    input_id: '628be9d326648',
                 })">
                 +
             </button>
@@ -2201,7 +2198,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </button>
 </input></form>
 </div>
-<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628b3ae08dff0_loading">
+<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628be9d325161_loading">
 <svg class="loading" version="1.1" viewbox="0 0 80 80" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px"> <path d="M40,72C22.4,72,8,57.6,8,40C8,22.4, 22.4,8,40,8c17.6,0,32,14.4,32,32c0,1.1-0.9,2-2,2 s-2-0.9-2-2c0-15.4-12.6-28-28-28S12,24.6,12,40s12.6,28,28,28c1.1,0,2,0.9,2,2S41.1,72,40,72z" id="spinner"></path></svg>
 </div>
 </article>
@@ -2209,7 +2206,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </cg-slider-item>
 <cg-slider-item>
 <div class="h-full px-3">
-<article class="product-box" data-product="662938" data-render-id="628b3ae091bbe">
+<article class="product-box" data-product="662938" data-render-id="628be9d3286eb">
 <cg-notepad-star :product-id="662938" class="mb-2" v-slot="slotProps">
 <div class="notepad-star">
 <button @click.prevent="slotProps.toggle" class="text-primary text-lg no-underline block mb-1">
@@ -2282,15 +2279,15 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepDown',
-                    input_id: '628b3ae093443',
+                    input_id: '628be9d329a32',
                 })">
                 -
             </button>
-<input :step="1" class="border-0 w-full text-center" id="628b3ae093443" min="1" name="product[quantity]" required="" type="number" value="1"/>
+<input :step="1" class="border-0 w-full text-center" id="628be9d329a32" min="1" name="product[quantity]" required="" type="number" value="1"/>
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepUp',
-                    input_id: '628b3ae093443',
+                    input_id: '628be9d329a32',
                 })">
                 +
             </button>
@@ -2302,7 +2299,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </button>
 </input></form>
 </div>
-<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628b3ae091bbe_loading">
+<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628be9d3286eb_loading">
 <svg class="loading" version="1.1" viewbox="0 0 80 80" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px"> <path d="M40,72C22.4,72,8,57.6,8,40C8,22.4, 22.4,8,40,8c17.6,0,32,14.4,32,32c0,1.1-0.9,2-2,2 s-2-0.9-2-2c0-15.4-12.6-28-28-28S12,24.6,12,40s12.6,28,28,28c1.1,0,2,0.9,2,2S41.1,72,40,72z" id="spinner"></path></svg>
 </div>
 </article>
@@ -2336,7 +2333,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
         " :scrollbar="true">
 <cg-slider-item>
 <div class="h-full px-3">
-<article class="product-box" data-product="23584" data-render-id="628b3ae098039">
+<article class="product-box" data-product="23584" data-render-id="628be9d32d38a">
 <cg-notepad-star :product-id="23584" class="mb-2" v-slot="slotProps">
 <div class="notepad-star">
 <button @click.prevent="slotProps.toggle" class="text-primary text-lg no-underline block mb-1">
@@ -2409,15 +2406,15 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepDown',
-                    input_id: '628b3ae0997a6',
+                    input_id: '628be9d32e8e5',
                 })">
                 -
             </button>
-<input :step="1" class="border-0 w-full text-center" id="628b3ae0997a6" min="1" name="product[quantity]" required="" type="number" value="1"/>
+<input :step="1" class="border-0 w-full text-center" id="628be9d32e8e5" min="1" name="product[quantity]" required="" type="number" value="1"/>
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepUp',
-                    input_id: '628b3ae0997a6',
+                    input_id: '628be9d32e8e5',
                 })">
                 +
             </button>
@@ -2429,7 +2426,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </button>
 </input></form>
 </div>
-<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628b3ae098039_loading">
+<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628be9d32d38a_loading">
 <svg class="loading" version="1.1" viewbox="0 0 80 80" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px"> <path d="M40,72C22.4,72,8,57.6,8,40C8,22.4, 22.4,8,40,8c17.6,0,32,14.4,32,32c0,1.1-0.9,2-2,2 s-2-0.9-2-2c0-15.4-12.6-28-28-28S12,24.6,12,40s12.6,28,28,28c1.1,0,2,0.9,2,2S41.1,72,40,72z" id="spinner"></path></svg>
 </div>
 </article>
@@ -2437,7 +2434,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </cg-slider-item>
 <cg-slider-item>
 <div class="h-full px-3">
-<article class="product-box" data-product="519050" data-render-id="628b3ae09bab3">
+<article class="product-box" data-product="519050" data-render-id="628be9d33059a">
 <cg-notepad-star :product-id="519050" class="mb-2" v-slot="slotProps">
 <div class="notepad-star">
 <button @click.prevent="slotProps.toggle" class="text-primary text-lg no-underline block mb-1">
@@ -2510,15 +2507,15 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepDown',
-                    input_id: '628b3ae09d104',
+                    input_id: '628be9d33147a',
                 })">
                 -
             </button>
-<input :step="1" class="border-0 w-full text-center" id="628b3ae09d104" min="1" name="product[quantity]" required="" type="number" value="1"/>
+<input :step="1" class="border-0 w-full text-center" id="628be9d33147a" min="1" name="product[quantity]" required="" type="number" value="1"/>
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepUp',
-                    input_id: '628b3ae09d104',
+                    input_id: '628be9d33147a',
                 })">
                 +
             </button>
@@ -2530,7 +2527,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </button>
 </input></form>
 </div>
-<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628b3ae09bab3_loading">
+<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628be9d33059a_loading">
 <svg class="loading" version="1.1" viewbox="0 0 80 80" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px"> <path d="M40,72C22.4,72,8,57.6,8,40C8,22.4, 22.4,8,40,8c17.6,0,32,14.4,32,32c0,1.1-0.9,2-2,2 s-2-0.9-2-2c0-15.4-12.6-28-28-28S12,24.6,12,40s12.6,28,28,28c1.1,0,2,0.9,2,2S41.1,72,40,72z" id="spinner"></path></svg>
 </div>
 </article>
@@ -2538,7 +2535,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </cg-slider-item>
 <cg-slider-item>
 <div class="h-full px-3">
-<article class="product-box" data-product="93745" data-render-id="628b3ae09fc96">
+<article class="product-box" data-product="93745" data-render-id="628be9d333a4f">
 <cg-notepad-star :product-id="93745" class="mb-2" v-slot="slotProps">
 <div class="notepad-star">
 <button @click.prevent="slotProps.toggle" class="text-primary text-lg no-underline block mb-1">
@@ -2603,8 +2600,8 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 <select class="form-select border-0 bg-transparent w-full" onchange="customEvent('package-size-selector', {
                                     url: 'https://www.apotree.de/_fragment/products/placeholder',
                                     product_id: this.value,
-                                    render_id: '628b3ae09fc96',
-                                    loading_id: '628b3ae09fc96_loading'
+                                    render_id: '628be9d333a4f',
+                                    loading_id: '628be9d333a4f_loading'
                                     })">
 <option selected="selected" value="93745">
                                     20 St
@@ -2624,15 +2621,15 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepDown',
-                    input_id: '628b3ae0a1835',
+                    input_id: '628be9d335351',
                 })">
                 -
             </button>
-<input :step="1" class="border-0 w-full text-center" id="628b3ae0a1835" min="1" name="product[quantity]" required="" type="number" value="1"/>
+<input :step="1" class="border-0 w-full text-center" id="628be9d335351" min="1" name="product[quantity]" required="" type="number" value="1"/>
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepUp',
-                    input_id: '628b3ae0a1835',
+                    input_id: '628be9d335351',
                 })">
                 +
             </button>
@@ -2644,7 +2641,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </button>
 </input></form>
 </div>
-<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628b3ae09fc96_loading">
+<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628be9d333a4f_loading">
 <svg class="loading" version="1.1" viewbox="0 0 80 80" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px"> <path d="M40,72C22.4,72,8,57.6,8,40C8,22.4, 22.4,8,40,8c17.6,0,32,14.4,32,32c0,1.1-0.9,2-2,2 s-2-0.9-2-2c0-15.4-12.6-28-28-28S12,24.6,12,40s12.6,28,28,28c1.1,0,2,0.9,2,2S41.1,72,40,72z" id="spinner"></path></svg>
 </div>
 </article>
@@ -2652,7 +2649,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </cg-slider-item>
 <cg-slider-item>
 <div class="h-full px-3">
-<article class="product-box" data-product="23581" data-render-id="628b3ae0a3d0e">
+<article class="product-box" data-product="23581" data-render-id="628be9d3371ab">
 <cg-notepad-star :product-id="23581" class="mb-2" v-slot="slotProps">
 <div class="notepad-star">
 <button @click.prevent="slotProps.toggle" class="text-primary text-lg no-underline block mb-1">
@@ -2725,15 +2722,15 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepDown',
-                    input_id: '628b3ae0a544b',
+                    input_id: '628be9d3383dd',
                 })">
                 -
             </button>
-<input :step="1" class="border-0 w-full text-center" id="628b3ae0a544b" min="1" name="product[quantity]" required="" type="number" value="1"/>
+<input :step="1" class="border-0 w-full text-center" id="628be9d3383dd" min="1" name="product[quantity]" required="" type="number" value="1"/>
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepUp',
-                    input_id: '628b3ae0a544b',
+                    input_id: '628be9d3383dd',
                 })">
                 +
             </button>
@@ -2745,7 +2742,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </button>
 </input></form>
 </div>
-<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628b3ae0a3d0e_loading">
+<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628be9d3371ab_loading">
 <svg class="loading" version="1.1" viewbox="0 0 80 80" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px"> <path d="M40,72C22.4,72,8,57.6,8,40C8,22.4, 22.4,8,40,8c17.6,0,32,14.4,32,32c0,1.1-0.9,2-2,2 s-2-0.9-2-2c0-15.4-12.6-28-28-28S12,24.6,12,40s12.6,28,28,28c1.1,0,2,0.9,2,2S41.1,72,40,72z" id="spinner"></path></svg>
 </div>
 </article>
@@ -2753,7 +2750,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </cg-slider-item>
 <cg-slider-item>
 <div class="h-full px-3">
-<article class="product-box" data-product="519049" data-render-id="628b3ae0a7c08">
+<article class="product-box" data-product="519049" data-render-id="628be9d33a1ac">
 <cg-notepad-star :product-id="519049" class="mb-2" v-slot="slotProps">
 <div class="notepad-star">
 <button @click.prevent="slotProps.toggle" class="text-primary text-lg no-underline block mb-1">
@@ -2826,15 +2823,15 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepDown',
-                    input_id: '628b3ae0a9271',
+                    input_id: '628be9d33b525',
                 })">
                 -
             </button>
-<input :step="1" class="border-0 w-full text-center" id="628b3ae0a9271" min="1" name="product[quantity]" required="" type="number" value="1"/>
+<input :step="1" class="border-0 w-full text-center" id="628be9d33b525" min="1" name="product[quantity]" required="" type="number" value="1"/>
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepUp',
-                    input_id: '628b3ae0a9271',
+                    input_id: '628be9d33b525',
                 })">
                 +
             </button>
@@ -2846,7 +2843,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </button>
 </input></form>
 </div>
-<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628b3ae0a7c08_loading">
+<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628be9d33a1ac_loading">
 <svg class="loading" version="1.1" viewbox="0 0 80 80" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px"> <path d="M40,72C22.4,72,8,57.6,8,40C8,22.4, 22.4,8,40,8c17.6,0,32,14.4,32,32c0,1.1-0.9,2-2,2 s-2-0.9-2-2c0-15.4-12.6-28-28-28S12,24.6,12,40s12.6,28,28,28c1.1,0,2,0.9,2,2S41.1,72,40,72z" id="spinner"></path></svg>
 </div>
 </article>
@@ -2854,7 +2851,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </cg-slider-item>
 <cg-slider-item>
 <div class="h-full px-3">
-<article class="product-box" data-product="524554" data-render-id="628b3ae0ab40c">
+<article class="product-box" data-product="524554" data-render-id="628be9d33d384">
 <cg-notepad-star :product-id="524554" class="mb-2" v-slot="slotProps">
 <div class="notepad-star">
 <button @click.prevent="slotProps.toggle" class="text-primary text-lg no-underline block mb-1">
@@ -2919,8 +2916,8 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 <select class="form-select border-0 bg-transparent w-full" onchange="customEvent('package-size-selector', {
                                     url: 'https://www.apotree.de/_fragment/products/placeholder',
                                     product_id: this.value,
-                                    render_id: '628b3ae0ab40c',
-                                    loading_id: '628b3ae0ab40c_loading'
+                                    render_id: '628be9d33d384',
+                                    loading_id: '628be9d33d384_loading'
                                     })">
 <option selected="selected" value="524554">
                                     10 ml
@@ -2937,15 +2934,15 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepDown',
-                    input_id: '628b3ae0acbfb',
+                    input_id: '628be9d33eda8',
                 })">
                 -
             </button>
-<input :step="1" class="border-0 w-full text-center" id="628b3ae0acbfb" min="1" name="product[quantity]" required="" type="number" value="1"/>
+<input :step="1" class="border-0 w-full text-center" id="628be9d33eda8" min="1" name="product[quantity]" required="" type="number" value="1"/>
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepUp',
-                    input_id: '628b3ae0acbfb',
+                    input_id: '628be9d33eda8',
                 })">
                 +
             </button>
@@ -2957,7 +2954,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </button>
 </input></form>
 </div>
-<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628b3ae0ab40c_loading">
+<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628be9d33d384_loading">
 <svg class="loading" version="1.1" viewbox="0 0 80 80" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px"> <path d="M40,72C22.4,72,8,57.6,8,40C8,22.4, 22.4,8,40,8c17.6,0,32,14.4,32,32c0,1.1-0.9,2-2,2 s-2-0.9-2-2c0-15.4-12.6-28-28-28S12,24.6,12,40s12.6,28,28,28c1.1,0,2,0.9,2,2S41.1,72,40,72z" id="spinner"></path></svg>
 </div>
 </article>
@@ -2965,7 +2962,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </cg-slider-item>
 <cg-slider-item>
 <div class="h-full px-3">
-<article class="product-box" data-product="232757" data-render-id="628b3ae0aff7d">
+<article class="product-box" data-product="232757" data-render-id="628be9d3411d1">
 <cg-notepad-star :product-id="232757" class="mb-2" v-slot="slotProps">
 <div class="notepad-star">
 <button @click.prevent="slotProps.toggle" class="text-primary text-lg no-underline block mb-1">
@@ -3038,15 +3035,15 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepDown',
-                    input_id: '628b3ae0b1f2f',
+                    input_id: '628be9d3424ad',
                 })">
                 -
             </button>
-<input :step="1" class="border-0 w-full text-center" id="628b3ae0b1f2f" min="1" name="product[quantity]" required="" type="number" value="1"/>
+<input :step="1" class="border-0 w-full text-center" id="628be9d3424ad" min="1" name="product[quantity]" required="" type="number" value="1"/>
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepUp',
-                    input_id: '628b3ae0b1f2f',
+                    input_id: '628be9d3424ad',
                 })">
                 +
             </button>
@@ -3058,7 +3055,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </button>
 </input></form>
 </div>
-<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628b3ae0aff7d_loading">
+<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628be9d3411d1_loading">
 <svg class="loading" version="1.1" viewbox="0 0 80 80" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px"> <path d="M40,72C22.4,72,8,57.6,8,40C8,22.4, 22.4,8,40,8c17.6,0,32,14.4,32,32c0,1.1-0.9,2-2,2 s-2-0.9-2-2c0-15.4-12.6-28-28-28S12,24.6,12,40s12.6,28,28,28c1.1,0,2,0.9,2,2S41.1,72,40,72z" id="spinner"></path></svg>
 </div>
 </article>
@@ -3066,7 +3063,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </cg-slider-item>
 <cg-slider-item>
 <div class="h-full px-3">
-<article class="product-box" data-product="70591" data-render-id="628b3ae0b4a5e">
+<article class="product-box" data-product="70591" data-render-id="628be9d344750">
 <cg-notepad-star :product-id="70591" class="mb-2" v-slot="slotProps">
 <div class="notepad-star">
 <button @click.prevent="slotProps.toggle" class="text-primary text-lg no-underline block mb-1">
@@ -3139,8 +3136,8 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 <select class="form-select border-0 bg-transparent w-full" onchange="customEvent('package-size-selector', {
                                     url: 'https://www.apotree.de/_fragment/products/placeholder',
                                     product_id: this.value,
-                                    render_id: '628b3ae0b4a5e',
-                                    loading_id: '628b3ae0b4a5e_loading'
+                                    render_id: '628be9d344750',
+                                    loading_id: '628be9d344750_loading'
                                     })">
 <option selected="selected" value="70591">
                                     20 St
@@ -3163,15 +3160,15 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepDown',
-                    input_id: '628b3ae0b6a9f',
+                    input_id: '628be9d345ea7',
                 })">
                 -
             </button>
-<input :step="1" class="border-0 w-full text-center" id="628b3ae0b6a9f" min="1" name="product[quantity]" required="" type="number" value="1"/>
+<input :step="1" class="border-0 w-full text-center" id="628be9d345ea7" min="1" name="product[quantity]" required="" type="number" value="1"/>
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepUp',
-                    input_id: '628b3ae0b6a9f',
+                    input_id: '628be9d345ea7',
                 })">
                 +
             </button>
@@ -3183,7 +3180,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </button>
 </input></form>
 </div>
-<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628b3ae0b4a5e_loading">
+<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628be9d344750_loading">
 <svg class="loading" version="1.1" viewbox="0 0 80 80" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px"> <path d="M40,72C22.4,72,8,57.6,8,40C8,22.4, 22.4,8,40,8c17.6,0,32,14.4,32,32c0,1.1-0.9,2-2,2 s-2-0.9-2-2c0-15.4-12.6-28-28-28S12,24.6,12,40s12.6,28,28,28c1.1,0,2,0.9,2,2S41.1,72,40,72z" id="spinner"></path></svg>
 </div>
 </article>
@@ -3191,7 +3188,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </cg-slider-item>
 <cg-slider-item>
 <div class="h-full px-3">
-<article class="product-box" data-product="71630" data-render-id="628b3ae0b9309">
+<article class="product-box" data-product="71630" data-render-id="628be9d3478d0">
 <cg-notepad-star :product-id="71630" class="mb-2" v-slot="slotProps">
 <div class="notepad-star">
 <button @click.prevent="slotProps.toggle" class="text-primary text-lg no-underline block mb-1">
@@ -3264,8 +3261,8 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 <select class="form-select border-0 bg-transparent w-full" onchange="customEvent('package-size-selector', {
                                     url: 'https://www.apotree.de/_fragment/products/placeholder',
                                     product_id: this.value,
-                                    render_id: '628b3ae0b9309',
-                                    loading_id: '628b3ae0b9309_loading'
+                                    render_id: '628be9d3478d0',
+                                    loading_id: '628be9d3478d0_loading'
                                     })">
 <option selected="selected" value="71630">
                                     150 ml
@@ -3282,15 +3279,15 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepDown',
-                    input_id: '628b3ae0bac18',
+                    input_id: '628be9d348cd0',
                 })">
                 -
             </button>
-<input :step="1" class="border-0 w-full text-center" id="628b3ae0bac18" min="1" name="product[quantity]" required="" type="number" value="1"/>
+<input :step="1" class="border-0 w-full text-center" id="628be9d348cd0" min="1" name="product[quantity]" required="" type="number" value="1"/>
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepUp',
-                    input_id: '628b3ae0bac18',
+                    input_id: '628be9d348cd0',
                 })">
                 +
             </button>
@@ -3302,7 +3299,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </button>
 </input></form>
 </div>
-<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628b3ae0b9309_loading">
+<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628be9d3478d0_loading">
 <svg class="loading" version="1.1" viewbox="0 0 80 80" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px"> <path d="M40,72C22.4,72,8,57.6,8,40C8,22.4, 22.4,8,40,8c17.6,0,32,14.4,32,32c0,1.1-0.9,2-2,2 s-2-0.9-2-2c0-15.4-12.6-28-28-28S12,24.6,12,40s12.6,28,28,28c1.1,0,2,0.9,2,2S41.1,72,40,72z" id="spinner"></path></svg>
 </div>
 </article>
@@ -3310,7 +3307,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </cg-slider-item>
 <cg-slider-item>
 <div class="h-full px-3">
-<article class="product-box" data-product="93746" data-render-id="628b3ae0bd5fb">
+<article class="product-box" data-product="93746" data-render-id="628be9d34b096">
 <cg-notepad-star :product-id="93746" class="mb-2" v-slot="slotProps">
 <div class="notepad-star">
 <button @click.prevent="slotProps.toggle" class="text-primary text-lg no-underline block mb-1">
@@ -3375,8 +3372,8 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 <select class="form-select border-0 bg-transparent w-full" onchange="customEvent('package-size-selector', {
                                     url: 'https://www.apotree.de/_fragment/products/placeholder',
                                     product_id: this.value,
-                                    render_id: '628b3ae0bd5fb',
-                                    loading_id: '628b3ae0bd5fb_loading'
+                                    render_id: '628be9d34b096',
+                                    loading_id: '628be9d34b096_loading'
                                     })">
 <option selected="selected" value="93746">
                                     50 St
@@ -3396,15 +3393,15 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepDown',
-                    input_id: '628b3ae0bf30c',
+                    input_id: '628be9d34c8ce',
                 })">
                 -
             </button>
-<input :step="1" class="border-0 w-full text-center" id="628b3ae0bf30c" min="1" name="product[quantity]" required="" type="number" value="1"/>
+<input :step="1" class="border-0 w-full text-center" id="628be9d34c8ce" min="1" name="product[quantity]" required="" type="number" value="1"/>
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepUp',
-                    input_id: '628b3ae0bf30c',
+                    input_id: '628be9d34c8ce',
                 })">
                 +
             </button>
@@ -3416,7 +3413,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </button>
 </input></form>
 </div>
-<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628b3ae0bd5fb_loading">
+<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628be9d34b096_loading">
 <svg class="loading" version="1.1" viewbox="0 0 80 80" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px"> <path d="M40,72C22.4,72,8,57.6,8,40C8,22.4, 22.4,8,40,8c17.6,0,32,14.4,32,32c0,1.1-0.9,2-2,2 s-2-0.9-2-2c0-15.4-12.6-28-28-28S12,24.6,12,40s12.6,28,28,28c1.1,0,2,0.9,2,2S41.1,72,40,72z" id="spinner"></path></svg>
 </div>
 </article>
@@ -3450,7 +3447,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
         " :scrollbar="true">
 <cg-slider-item>
 <div class="h-full px-3">
-<article class="product-box" data-product="135005" data-render-id="628b3ae0c3928">
+<article class="product-box" data-product="135005" data-render-id="628be9d34f9c7">
 <cg-notepad-star :product-id="135005" class="mb-2" v-slot="slotProps">
 <div class="notepad-star">
 <button @click.prevent="slotProps.toggle" class="text-primary text-lg no-underline block mb-1">
@@ -3515,8 +3512,8 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 <select class="form-select border-0 bg-transparent w-full" onchange="customEvent('package-size-selector', {
                                     url: 'https://www.apotree.de/_fragment/products/placeholder',
                                     product_id: this.value,
-                                    render_id: '628b3ae0c3928',
-                                    loading_id: '628b3ae0c3928_loading'
+                                    render_id: '628be9d34f9c7',
+                                    loading_id: '628be9d34f9c7_loading'
                                     })">
 <option selected="selected" value="135005">
                                     20 St
@@ -3533,15 +3530,15 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepDown',
-                    input_id: '628b3ae0c573e',
+                    input_id: '628be9d3515c1',
                 })">
                 -
             </button>
-<input :max="3" :step="1" class="border-0 w-full text-center" id="628b3ae0c573e" min="1" name="product[quantity]" required="" type="number" value="1"/>
+<input :max="3" :step="1" class="border-0 w-full text-center" id="628be9d3515c1" min="1" name="product[quantity]" required="" type="number" value="1"/>
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepUp',
-                    input_id: '628b3ae0c573e',
+                    input_id: '628be9d3515c1',
                 })">
                 +
             </button>
@@ -3553,7 +3550,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </button>
 </input></form>
 </div>
-<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628b3ae0c3928_loading">
+<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628be9d34f9c7_loading">
 <svg class="loading" version="1.1" viewbox="0 0 80 80" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px"> <path d="M40,72C22.4,72,8,57.6,8,40C8,22.4, 22.4,8,40,8c17.6,0,32,14.4,32,32c0,1.1-0.9,2-2,2 s-2-0.9-2-2c0-15.4-12.6-28-28-28S12,24.6,12,40s12.6,28,28,28c1.1,0,2,0.9,2,2S41.1,72,40,72z" id="spinner"></path></svg>
 </div>
 </article>
@@ -3561,7 +3558,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </cg-slider-item>
 <cg-slider-item>
 <div class="h-full px-3">
-<article class="product-box" data-product="793444" data-render-id="628b3ae0c883b">
+<article class="product-box" data-product="793444" data-render-id="628be9d3540a8">
 <cg-notepad-star :product-id="793444" class="mb-2" v-slot="slotProps">
 <div class="notepad-star">
 <button @click.prevent="slotProps.toggle" class="text-primary text-lg no-underline block mb-1">
@@ -3633,15 +3630,15 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepDown',
-                    input_id: '628b3ae0c9a50',
+                    input_id: '628be9d3551fd',
                 })">
                 -
             </button>
-<input :step="1" class="border-0 w-full text-center" id="628b3ae0c9a50" min="1" name="product[quantity]" required="" type="number" value="1"/>
+<input :step="1" class="border-0 w-full text-center" id="628be9d3551fd" min="1" name="product[quantity]" required="" type="number" value="1"/>
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepUp',
-                    input_id: '628b3ae0c9a50',
+                    input_id: '628be9d3551fd',
                 })">
                 +
             </button>
@@ -3653,7 +3650,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </button>
 </input></form>
 </div>
-<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628b3ae0c883b_loading">
+<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628be9d3540a8_loading">
 <svg class="loading" version="1.1" viewbox="0 0 80 80" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px"> <path d="M40,72C22.4,72,8,57.6,8,40C8,22.4, 22.4,8,40,8c17.6,0,32,14.4,32,32c0,1.1-0.9,2-2,2 s-2-0.9-2-2c0-15.4-12.6-28-28-28S12,24.6,12,40s12.6,28,28,28c1.1,0,2,0.9,2,2S41.1,72,40,72z" id="spinner"></path></svg>
 </div>
 </article>
@@ -3661,7 +3658,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </cg-slider-item>
 <cg-slider-item>
 <div class="h-full px-3">
-<article class="product-box" data-product="790602" data-render-id="628b3ae0cc7b2">
+<article class="product-box" data-product="790602" data-render-id="628be9d35787f">
 <cg-notepad-star :product-id="790602" class="mb-2" v-slot="slotProps">
 <div class="notepad-star">
 <button @click.prevent="slotProps.toggle" class="text-primary text-lg no-underline block mb-1">
@@ -3733,15 +3730,15 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepDown',
-                    input_id: '628b3ae0ce4ac',
+                    input_id: '628be9d358fb6',
                 })">
                 -
             </button>
-<input :step="1" class="border-0 w-full text-center" id="628b3ae0ce4ac" min="1" name="product[quantity]" required="" type="number" value="1"/>
+<input :step="1" class="border-0 w-full text-center" id="628be9d358fb6" min="1" name="product[quantity]" required="" type="number" value="1"/>
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepUp',
-                    input_id: '628b3ae0ce4ac',
+                    input_id: '628be9d358fb6',
                 })">
                 +
             </button>
@@ -3753,7 +3750,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </button>
 </input></form>
 </div>
-<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628b3ae0cc7b2_loading">
+<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628be9d35787f_loading">
 <svg class="loading" version="1.1" viewbox="0 0 80 80" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px"> <path d="M40,72C22.4,72,8,57.6,8,40C8,22.4, 22.4,8,40,8c17.6,0,32,14.4,32,32c0,1.1-0.9,2-2,2 s-2-0.9-2-2c0-15.4-12.6-28-28-28S12,24.6,12,40s12.6,28,28,28c1.1,0,2,0.9,2,2S41.1,72,40,72z" id="spinner"></path></svg>
 </div>
 </article>
@@ -3761,7 +3758,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </cg-slider-item>
 <cg-slider-item>
 <div class="h-full px-3">
-<article class="product-box" data-product="737477" data-render-id="628b3ae0d0c57">
+<article class="product-box" data-product="737477" data-render-id="628be9d35b2bd">
 <cg-notepad-star :product-id="737477" class="mb-2" v-slot="slotProps">
 <div class="notepad-star">
 <button @click.prevent="slotProps.toggle" class="text-primary text-lg no-underline block mb-1">
@@ -3834,15 +3831,15 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepDown',
-                    input_id: '628b3ae0d209c',
+                    input_id: '628be9d35c1b7',
                 })">
                 -
             </button>
-<input :step="1" class="border-0 w-full text-center" id="628b3ae0d209c" min="1" name="product[quantity]" required="" type="number" value="1"/>
+<input :step="1" class="border-0 w-full text-center" id="628be9d35c1b7" min="1" name="product[quantity]" required="" type="number" value="1"/>
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepUp',
-                    input_id: '628b3ae0d209c',
+                    input_id: '628be9d35c1b7',
                 })">
                 +
             </button>
@@ -3854,7 +3851,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </button>
 </input></form>
 </div>
-<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628b3ae0d0c57_loading">
+<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628be9d35b2bd_loading">
 <svg class="loading" version="1.1" viewbox="0 0 80 80" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px"> <path d="M40,72C22.4,72,8,57.6,8,40C8,22.4, 22.4,8,40,8c17.6,0,32,14.4,32,32c0,1.1-0.9,2-2,2 s-2-0.9-2-2c0-15.4-12.6-28-28-28S12,24.6,12,40s12.6,28,28,28c1.1,0,2,0.9,2,2S41.1,72,40,72z" id="spinner"></path></svg>
 </div>
 </article>
@@ -3862,7 +3859,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </cg-slider-item>
 <cg-slider-item>
 <div class="h-full px-3">
-<article class="product-box" data-product="662938" data-render-id="628b3ae0d39ac">
+<article class="product-box" data-product="662938" data-render-id="628be9d35d2a7">
 <cg-notepad-star :product-id="662938" class="mb-2" v-slot="slotProps">
 <div class="notepad-star">
 <button @click.prevent="slotProps.toggle" class="text-primary text-lg no-underline block mb-1">
@@ -3935,15 +3932,15 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepDown',
-                    input_id: '628b3ae0d5565',
+                    input_id: '628be9d35e6ba',
                 })">
                 -
             </button>
-<input :step="1" class="border-0 w-full text-center" id="628b3ae0d5565" min="1" name="product[quantity]" required="" type="number" value="1"/>
+<input :step="1" class="border-0 w-full text-center" id="628be9d35e6ba" min="1" name="product[quantity]" required="" type="number" value="1"/>
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepUp',
-                    input_id: '628b3ae0d5565',
+                    input_id: '628be9d35e6ba',
                 })">
                 +
             </button>
@@ -3955,7 +3952,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </button>
 </input></form>
 </div>
-<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628b3ae0d39ac_loading">
+<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628be9d35d2a7_loading">
 <svg class="loading" version="1.1" viewbox="0 0 80 80" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px"> <path d="M40,72C22.4,72,8,57.6,8,40C8,22.4, 22.4,8,40,8c17.6,0,32,14.4,32,32c0,1.1-0.9,2-2,2 s-2-0.9-2-2c0-15.4-12.6-28-28-28S12,24.6,12,40s12.6,28,28,28c1.1,0,2,0.9,2,2S41.1,72,40,72z" id="spinner"></path></svg>
 </div>
 </article>
@@ -3963,7 +3960,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </cg-slider-item>
 <cg-slider-item>
 <div class="h-full px-3">
-<article class="product-box" data-product="493506" data-render-id="628b3ae0d8047">
+<article class="product-box" data-product="493506" data-render-id="628be9d36093a">
 <cg-notepad-star :product-id="493506" class="mb-2" v-slot="slotProps">
 <div class="notepad-star">
 <button @click.prevent="slotProps.toggle" class="text-primary text-lg no-underline block mb-1">
@@ -4028,8 +4025,8 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 <select class="form-select border-0 bg-transparent w-full" onchange="customEvent('package-size-selector', {
                                     url: 'https://www.apotree.de/_fragment/products/placeholder',
                                     product_id: this.value,
-                                    render_id: '628b3ae0d8047',
-                                    loading_id: '628b3ae0d8047_loading'
+                                    render_id: '628be9d36093a',
+                                    loading_id: '628be9d36093a_loading'
                                     })">
 <option selected="selected" value="493506">
                                     20 St
@@ -4046,15 +4043,15 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepDown',
-                    input_id: '628b3ae0d9e89',
+                    input_id: '628be9d361db9',
                 })">
                 -
             </button>
-<input :step="1" class="border-0 w-full text-center" id="628b3ae0d9e89" min="1" name="product[quantity]" required="" type="number" value="1"/>
+<input :step="1" class="border-0 w-full text-center" id="628be9d361db9" min="1" name="product[quantity]" required="" type="number" value="1"/>
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepUp',
-                    input_id: '628b3ae0d9e89',
+                    input_id: '628be9d361db9',
                 })">
                 +
             </button>
@@ -4066,7 +4063,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </button>
 </input></form>
 </div>
-<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628b3ae0d8047_loading">
+<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628be9d36093a_loading">
 <svg class="loading" version="1.1" viewbox="0 0 80 80" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px"> <path d="M40,72C22.4,72,8,57.6,8,40C8,22.4, 22.4,8,40,8c17.6,0,32,14.4,32,32c0,1.1-0.9,2-2,2 s-2-0.9-2-2c0-15.4-12.6-28-28-28S12,24.6,12,40s12.6,28,28,28c1.1,0,2,0.9,2,2S41.1,72,40,72z" id="spinner"></path></svg>
 </div>
 </article>
@@ -4074,7 +4071,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </cg-slider-item>
 <cg-slider-item>
 <div class="h-full px-3">
-<article class="product-box" data-product="426711" data-render-id="628b3ae0dd02f">
+<article class="product-box" data-product="426711" data-render-id="628be9d363d10">
 <cg-notepad-star :product-id="426711" class="mb-2" v-slot="slotProps">
 <div class="notepad-star">
 <button @click.prevent="slotProps.toggle" class="text-primary text-lg no-underline block mb-1">
@@ -4139,8 +4136,8 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 <select class="form-select border-0 bg-transparent w-full" onchange="customEvent('package-size-selector', {
                                     url: 'https://www.apotree.de/_fragment/products/placeholder',
                                     product_id: this.value,
-                                    render_id: '628b3ae0dd02f',
-                                    loading_id: '628b3ae0dd02f_loading'
+                                    render_id: '628be9d363d10',
+                                    loading_id: '628be9d363d10_loading'
                                     })">
 <option selected="selected" value="426711">
                                     20 St
@@ -4157,15 +4154,15 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepDown',
-                    input_id: '628b3ae0de728',
+                    input_id: '628be9d3659ad',
                 })">
                 -
             </button>
-<input :max="3" :step="1" class="border-0 w-full text-center" id="628b3ae0de728" min="1" name="product[quantity]" required="" type="number" value="1"/>
+<input :max="3" :step="1" class="border-0 w-full text-center" id="628be9d3659ad" min="1" name="product[quantity]" required="" type="number" value="1"/>
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepUp',
-                    input_id: '628b3ae0de728',
+                    input_id: '628be9d3659ad',
                 })">
                 +
             </button>
@@ -4177,7 +4174,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </button>
 </input></form>
 </div>
-<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628b3ae0dd02f_loading">
+<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628be9d363d10_loading">
 <svg class="loading" version="1.1" viewbox="0 0 80 80" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px"> <path d="M40,72C22.4,72,8,57.6,8,40C8,22.4, 22.4,8,40,8c17.6,0,32,14.4,32,32c0,1.1-0.9,2-2,2 s-2-0.9-2-2c0-15.4-12.6-28-28-28S12,24.6,12,40s12.6,28,28,28c1.1,0,2,0.9,2,2S41.1,72,40,72z" id="spinner"></path></svg>
 </div>
 </article>
@@ -4185,7 +4182,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </cg-slider-item>
 <cg-slider-item>
 <div class="h-full px-3">
-<article class="product-box" data-product="348268" data-render-id="628b3ae0e0291">
+<article class="product-box" data-product="348268" data-render-id="628be9d36742e">
 <cg-notepad-star :product-id="348268" class="mb-2" v-slot="slotProps">
 <div class="notepad-star">
 <button @click.prevent="slotProps.toggle" class="text-primary text-lg no-underline block mb-1">
@@ -4258,15 +4255,15 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepDown',
-                    input_id: '628b3ae0e144f',
+                    input_id: '628be9d3680ef',
                 })">
                 -
             </button>
-<input :step="1" class="border-0 w-full text-center" id="628b3ae0e144f" min="1" name="product[quantity]" required="" type="number" value="1"/>
+<input :step="1" class="border-0 w-full text-center" id="628be9d3680ef" min="1" name="product[quantity]" required="" type="number" value="1"/>
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepUp',
-                    input_id: '628b3ae0e144f',
+                    input_id: '628be9d3680ef',
                 })">
                 +
             </button>
@@ -4278,7 +4275,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </button>
 </input></form>
 </div>
-<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628b3ae0e0291_loading">
+<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628be9d36742e_loading">
 <svg class="loading" version="1.1" viewbox="0 0 80 80" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px"> <path d="M40,72C22.4,72,8,57.6,8,40C8,22.4, 22.4,8,40,8c17.6,0,32,14.4,32,32c0,1.1-0.9,2-2,2 s-2-0.9-2-2c0-15.4-12.6-28-28-28S12,24.6,12,40s12.6,28,28,28c1.1,0,2,0.9,2,2S41.1,72,40,72z" id="spinner"></path></svg>
 </div>
 </article>
@@ -4286,7 +4283,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </cg-slider-item>
 <cg-slider-item>
 <div class="h-full px-3">
-<article class="product-box" data-product="294713" data-render-id="628b3ae0e334a">
+<article class="product-box" data-product="294713" data-render-id="628be9d369cbe">
 <cg-notepad-star :product-id="294713" class="mb-2" v-slot="slotProps">
 <div class="notepad-star">
 <button @click.prevent="slotProps.toggle" class="text-primary text-lg no-underline block mb-1">
@@ -4351,8 +4348,8 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 <select class="form-select border-0 bg-transparent w-full" onchange="customEvent('package-size-selector', {
                                     url: 'https://www.apotree.de/_fragment/products/placeholder',
                                     product_id: this.value,
-                                    render_id: '628b3ae0e334a',
-                                    loading_id: '628b3ae0e334a_loading'
+                                    render_id: '628be9d369cbe',
+                                    loading_id: '628be9d369cbe_loading'
                                     })">
 <option selected="selected" value="294713">
                                     15 ml
@@ -4372,15 +4369,15 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepDown',
-                    input_id: '628b3ae0e4151',
+                    input_id: '628be9d36b046',
                 })">
                 -
             </button>
-<input :max="3" :step="1" class="border-0 w-full text-center" id="628b3ae0e4151" min="1" name="product[quantity]" required="" type="number" value="1"/>
+<input :max="3" :step="1" class="border-0 w-full text-center" id="628be9d36b046" min="1" name="product[quantity]" required="" type="number" value="1"/>
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepUp',
-                    input_id: '628b3ae0e4151',
+                    input_id: '628be9d36b046',
                 })">
                 +
             </button>
@@ -4392,7 +4389,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </button>
 </input></form>
 </div>
-<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628b3ae0e334a_loading">
+<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628be9d369cbe_loading">
 <svg class="loading" version="1.1" viewbox="0 0 80 80" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px"> <path d="M40,72C22.4,72,8,57.6,8,40C8,22.4, 22.4,8,40,8c17.6,0,32,14.4,32,32c0,1.1-0.9,2-2,2 s-2-0.9-2-2c0-15.4-12.6-28-28-28S12,24.6,12,40s12.6,28,28,28c1.1,0,2,0.9,2,2S41.1,72,40,72z" id="spinner"></path></svg>
 </div>
 </article>
@@ -4400,7 +4397,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </cg-slider-item>
 <cg-slider-item>
 <div class="h-full px-3">
-<article class="product-box" data-product="82548" data-render-id="628b3ae0e6891">
+<article class="product-box" data-product="82548" data-render-id="628be9d36ccf9">
 <cg-notepad-star :product-id="82548" class="mb-2" v-slot="slotProps">
 <div class="notepad-star">
 <button @click.prevent="slotProps.toggle" class="text-primary text-lg no-underline block mb-1">
@@ -4473,8 +4470,8 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 <select class="form-select border-0 bg-transparent w-full" onchange="customEvent('package-size-selector', {
                                     url: 'https://www.apotree.de/_fragment/products/placeholder',
                                     product_id: this.value,
-                                    render_id: '628b3ae0e6891',
-                                    loading_id: '628b3ae0e6891_loading'
+                                    render_id: '628be9d36ccf9',
+                                    loading_id: '628be9d36ccf9_loading'
                                     })">
 <option selected="selected" value="82548">
                                     120 St
@@ -4494,15 +4491,15 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepDown',
-                    input_id: '628b3ae0e832d',
+                    input_id: '628be9d36e272',
                 })">
                 -
             </button>
-<input :step="1" class="border-0 w-full text-center" id="628b3ae0e832d" min="1" name="product[quantity]" required="" type="number" value="1"/>
+<input :step="1" class="border-0 w-full text-center" id="628be9d36e272" min="1" name="product[quantity]" required="" type="number" value="1"/>
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepUp',
-                    input_id: '628b3ae0e832d',
+                    input_id: '628be9d36e272',
                 })">
                 +
             </button>
@@ -4514,7 +4511,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </button>
 </input></form>
 </div>
-<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628b3ae0e6891_loading">
+<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628be9d36ccf9_loading">
 <svg class="loading" version="1.1" viewbox="0 0 80 80" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px"> <path d="M40,72C22.4,72,8,57.6,8,40C8,22.4, 22.4,8,40,8c17.6,0,32,14.4,32,32c0,1.1-0.9,2-2,2 s-2-0.9-2-2c0-15.4-12.6-28-28-28S12,24.6,12,40s12.6,28,28,28c1.1,0,2,0.9,2,2S41.1,72,40,72z" id="spinner"></path></svg>
 </div>
 </article>
@@ -4548,7 +4545,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
         " :scrollbar="true">
 <cg-slider-item>
 <div class="h-full px-3">
-<article class="product-box" data-product="821575" data-render-id="628b3ae0ebcf3">
+<article class="product-box" data-product="821575" data-render-id="628be9d370975">
 <cg-notepad-star :product-id="821575" class="mb-2" v-slot="slotProps">
 <div class="notepad-star">
 <button @click.prevent="slotProps.toggle" class="text-primary text-lg no-underline block mb-1">
@@ -4621,8 +4618,8 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 <select class="form-select border-0 bg-transparent w-full" onchange="customEvent('package-size-selector', {
                                     url: 'https://www.apotree.de/_fragment/products/placeholder',
                                     product_id: this.value,
-                                    render_id: '628b3ae0ebcf3',
-                                    loading_id: '628b3ae0ebcf3_loading'
+                                    render_id: '628be9d370975',
+                                    loading_id: '628be9d370975_loading'
                                     })">
 <option selected="selected" value="821575">
                                     150 ml
@@ -4633,7 +4630,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </select>
 </div>
 </div>
-<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628b3ae0ebcf3_loading">
+<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628be9d370975_loading">
 <svg class="loading" version="1.1" viewbox="0 0 80 80" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px"> <path d="M40,72C22.4,72,8,57.6,8,40C8,22.4, 22.4,8,40,8c17.6,0,32,14.4,32,32c0,1.1-0.9,2-2,2 s-2-0.9-2-2c0-15.4-12.6-28-28-28S12,24.6,12,40s12.6,28,28,28c1.1,0,2,0.9,2,2S41.1,72,40,72z" id="spinner"></path></svg>
 </div>
 </article>
@@ -4641,7 +4638,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </cg-slider-item>
 <cg-slider-item>
 <div class="h-full px-3">
-<article class="product-box" data-product="788281" data-render-id="628b3ae0ee7a6">
+<article class="product-box" data-product="788281" data-render-id="628be9d372edd">
 <cg-notepad-star :product-id="788281" class="mb-2" v-slot="slotProps">
 <div class="notepad-star">
 <button @click.prevent="slotProps.toggle" class="text-primary text-lg no-underline block mb-1">
@@ -4706,8 +4703,8 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 <select class="form-select border-0 bg-transparent w-full" onchange="customEvent('package-size-selector', {
                                     url: 'https://www.apotree.de/_fragment/products/placeholder',
                                     product_id: this.value,
-                                    render_id: '628b3ae0ee7a6',
-                                    loading_id: '628b3ae0ee7a6_loading'
+                                    render_id: '628be9d372edd',
+                                    loading_id: '628be9d372edd_loading'
                                     })">
 <option selected="selected" value="788281">
                                     20 ml
@@ -4724,15 +4721,15 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepDown',
-                    input_id: '628b3ae0ef868',
+                    input_id: '628be9d374056',
                 })">
                 -
             </button>
-<input :step="1" class="border-0 w-full text-center" id="628b3ae0ef868" min="1" name="product[quantity]" required="" type="number" value="1"/>
+<input :step="1" class="border-0 w-full text-center" id="628be9d374056" min="1" name="product[quantity]" required="" type="number" value="1"/>
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepUp',
-                    input_id: '628b3ae0ef868',
+                    input_id: '628be9d374056',
                 })">
                 +
             </button>
@@ -4744,7 +4741,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </button>
 </input></form>
 </div>
-<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628b3ae0ee7a6_loading">
+<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628be9d372edd_loading">
 <svg class="loading" version="1.1" viewbox="0 0 80 80" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px"> <path d="M40,72C22.4,72,8,57.6,8,40C8,22.4, 22.4,8,40,8c17.6,0,32,14.4,32,32c0,1.1-0.9,2-2,2 s-2-0.9-2-2c0-15.4-12.6-28-28-28S12,24.6,12,40s12.6,28,28,28c1.1,0,2,0.9,2,2S41.1,72,40,72z" id="spinner"></path></svg>
 </div>
 </article>
@@ -4752,7 +4749,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </cg-slider-item>
 <cg-slider-item>
 <div class="h-full px-3">
-<article class="product-box" data-product="745586" data-render-id="628b3ae0f1a4f">
+<article class="product-box" data-product="745586" data-render-id="628be9d37691d">
 <cg-notepad-star :product-id="745586" class="mb-2" v-slot="slotProps">
 <div class="notepad-star">
 <button @click.prevent="slotProps.toggle" class="text-primary text-lg no-underline block mb-1">
@@ -4825,15 +4822,15 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepDown',
-                    input_id: '628b3ae0f3059',
+                    input_id: '628be9d377f14',
                 })">
                 -
             </button>
-<input :step="1" class="border-0 w-full text-center" id="628b3ae0f3059" min="1" name="product[quantity]" required="" type="number" value="1"/>
+<input :step="1" class="border-0 w-full text-center" id="628be9d377f14" min="1" name="product[quantity]" required="" type="number" value="1"/>
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepUp',
-                    input_id: '628b3ae0f3059',
+                    input_id: '628be9d377f14',
                 })">
                 +
             </button>
@@ -4845,7 +4842,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </button>
 </input></form>
 </div>
-<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628b3ae0f1a4f_loading">
+<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628be9d37691d_loading">
 <svg class="loading" version="1.1" viewbox="0 0 80 80" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px"> <path d="M40,72C22.4,72,8,57.6,8,40C8,22.4, 22.4,8,40,8c17.6,0,32,14.4,32,32c0,1.1-0.9,2-2,2 s-2-0.9-2-2c0-15.4-12.6-28-28-28S12,24.6,12,40s12.6,28,28,28c1.1,0,2,0.9,2,2S41.1,72,40,72z" id="spinner"></path></svg>
 </div>
 </article>
@@ -4853,7 +4850,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </cg-slider-item>
 <cg-slider-item>
 <div class="h-full px-3">
-<article class="product-box" data-product="662938" data-render-id="628b3ae10019d">
+<article class="product-box" data-product="662938" data-render-id="628be9d379830">
 <cg-notepad-star :product-id="662938" class="mb-2" v-slot="slotProps">
 <div class="notepad-star">
 <button @click.prevent="slotProps.toggle" class="text-primary text-lg no-underline block mb-1">
@@ -4926,15 +4923,15 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepDown',
-                    input_id: '628b3ae101b42',
+                    input_id: '628be9d37aefe',
                 })">
                 -
             </button>
-<input :step="1" class="border-0 w-full text-center" id="628b3ae101b42" min="1" name="product[quantity]" required="" type="number" value="1"/>
+<input :step="1" class="border-0 w-full text-center" id="628be9d37aefe" min="1" name="product[quantity]" required="" type="number" value="1"/>
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepUp',
-                    input_id: '628b3ae101b42',
+                    input_id: '628be9d37aefe',
                 })">
                 +
             </button>
@@ -4946,7 +4943,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </button>
 </input></form>
 </div>
-<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628b3ae10019d_loading">
+<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628be9d379830_loading">
 <svg class="loading" version="1.1" viewbox="0 0 80 80" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px"> <path d="M40,72C22.4,72,8,57.6,8,40C8,22.4, 22.4,8,40,8c17.6,0,32,14.4,32,32c0,1.1-0.9,2-2,2 s-2-0.9-2-2c0-15.4-12.6-28-28-28S12,24.6,12,40s12.6,28,28,28c1.1,0,2,0.9,2,2S41.1,72,40,72z" id="spinner"></path></svg>
 </div>
 </article>
@@ -4954,7 +4951,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </cg-slider-item>
 <cg-slider-item>
 <div class="h-full px-3">
-<article class="product-box" data-product="552416" data-render-id="628b3ae1043f9">
+<article class="product-box" data-product="552416" data-render-id="628be9d37c972">
 <cg-notepad-star :product-id="552416" class="mb-2" v-slot="slotProps">
 <div class="notepad-star">
 <button @click.prevent="slotProps.toggle" class="text-primary text-lg no-underline block mb-1">
@@ -5035,15 +5032,15 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepDown',
-                    input_id: '628b3ae105a6a',
+                    input_id: '628be9d37d7c8',
                 })">
                 -
             </button>
-<input :step="1" class="border-0 w-full text-center" id="628b3ae105a6a" min="1" name="product[quantity]" required="" type="number" value="1"/>
+<input :step="1" class="border-0 w-full text-center" id="628be9d37d7c8" min="1" name="product[quantity]" required="" type="number" value="1"/>
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepUp',
-                    input_id: '628b3ae105a6a',
+                    input_id: '628be9d37d7c8',
                 })">
                 +
             </button>
@@ -5055,7 +5052,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </button>
 </input></form>
 </div>
-<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628b3ae1043f9_loading">
+<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628be9d37c972_loading">
 <svg class="loading" version="1.1" viewbox="0 0 80 80" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px"> <path d="M40,72C22.4,72,8,57.6,8,40C8,22.4, 22.4,8,40,8c17.6,0,32,14.4,32,32c0,1.1-0.9,2-2,2 s-2-0.9-2-2c0-15.4-12.6-28-28-28S12,24.6,12,40s12.6,28,28,28c1.1,0,2,0.9,2,2S41.1,72,40,72z" id="spinner"></path></svg>
 </div>
 </article>
@@ -5063,7 +5060,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </cg-slider-item>
 <cg-slider-item>
 <div class="h-full px-3">
-<article class="product-box" data-product="432982" data-render-id="628b3ae10806a">
+<article class="product-box" data-product="432982" data-render-id="628be9d37f816">
 <cg-notepad-star :product-id="432982" class="mb-2" v-slot="slotProps">
 <div class="notepad-star">
 <button @click.prevent="slotProps.toggle" class="text-primary text-lg no-underline block mb-1">
@@ -5128,8 +5125,8 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 <select class="form-select border-0 bg-transparent w-full" onchange="customEvent('package-size-selector', {
                                     url: 'https://www.apotree.de/_fragment/products/placeholder',
                                     product_id: this.value,
-                                    render_id: '628b3ae10806a',
-                                    loading_id: '628b3ae10806a_loading'
+                                    render_id: '628be9d37f816',
+                                    loading_id: '628be9d37f816_loading'
                                     })">
 <option selected="selected" value="432982">
                                     10 St
@@ -5146,15 +5143,15 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepDown',
-                    input_id: '628b3ae109c4f',
+                    input_id: '628be9d381e6d',
                 })">
                 -
             </button>
-<input :step="1" class="border-0 w-full text-center" id="628b3ae109c4f" min="1" name="product[quantity]" required="" type="number" value="1"/>
+<input :step="1" class="border-0 w-full text-center" id="628be9d381e6d" min="1" name="product[quantity]" required="" type="number" value="1"/>
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepUp',
-                    input_id: '628b3ae109c4f',
+                    input_id: '628be9d381e6d',
                 })">
                 +
             </button>
@@ -5166,7 +5163,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </button>
 </input></form>
 </div>
-<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628b3ae10806a_loading">
+<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628be9d37f816_loading">
 <svg class="loading" version="1.1" viewbox="0 0 80 80" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px"> <path d="M40,72C22.4,72,8,57.6,8,40C8,22.4, 22.4,8,40,8c17.6,0,32,14.4,32,32c0,1.1-0.9,2-2,2 s-2-0.9-2-2c0-15.4-12.6-28-28-28S12,24.6,12,40s12.6,28,28,28c1.1,0,2,0.9,2,2S41.1,72,40,72z" id="spinner"></path></svg>
 </div>
 </article>
@@ -5174,7 +5171,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </cg-slider-item>
 <cg-slider-item>
 <div class="h-full px-3">
-<article class="product-box" data-product="432507" data-render-id="628b3ae10be07">
+<article class="product-box" data-product="432507" data-render-id="628be9d3839e7">
 <cg-notepad-star :product-id="432507" class="mb-2" v-slot="slotProps">
 <div class="notepad-star">
 <button @click.prevent="slotProps.toggle" class="text-primary text-lg no-underline block mb-1">
@@ -5239,8 +5236,8 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 <select class="form-select border-0 bg-transparent w-full" onchange="customEvent('package-size-selector', {
                                     url: 'https://www.apotree.de/_fragment/products/placeholder',
                                     product_id: this.value,
-                                    render_id: '628b3ae10be07',
-                                    loading_id: '628b3ae10be07_loading'
+                                    render_id: '628be9d3839e7',
+                                    loading_id: '628be9d3839e7_loading'
                                     })">
 <option selected="selected" value="432507">
                                     30 g
@@ -5263,15 +5260,15 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepDown',
-                    input_id: '628b3ae10e082',
+                    input_id: '628be9d384beb',
                 })">
                 -
             </button>
-<input :step="1" class="border-0 w-full text-center" id="628b3ae10e082" min="1" name="product[quantity]" required="" type="number" value="1"/>
+<input :step="1" class="border-0 w-full text-center" id="628be9d384beb" min="1" name="product[quantity]" required="" type="number" value="1"/>
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepUp',
-                    input_id: '628b3ae10e082',
+                    input_id: '628be9d384beb',
                 })">
                 +
             </button>
@@ -5283,7 +5280,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </button>
 </input></form>
 </div>
-<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628b3ae10be07_loading">
+<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628be9d3839e7_loading">
 <svg class="loading" version="1.1" viewbox="0 0 80 80" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px"> <path d="M40,72C22.4,72,8,57.6,8,40C8,22.4, 22.4,8,40,8c17.6,0,32,14.4,32,32c0,1.1-0.9,2-2,2 s-2-0.9-2-2c0-15.4-12.6-28-28-28S12,24.6,12,40s12.6,28,28,28c1.1,0,2,0.9,2,2S41.1,72,40,72z" id="spinner"></path></svg>
 </div>
 </article>
@@ -5291,7 +5288,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </cg-slider-item>
 <cg-slider-item>
 <div class="h-full px-3">
-<article class="product-box" data-product="386073" data-render-id="628b3ae1106b7">
+<article class="product-box" data-product="386073" data-render-id="628be9d38657a">
 <cg-notepad-star :product-id="386073" class="mb-2" v-slot="slotProps">
 <div class="notepad-star">
 <button @click.prevent="slotProps.toggle" class="text-primary text-lg no-underline block mb-1">
@@ -5372,15 +5369,15 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepDown',
-                    input_id: '628b3ae1115dc',
+                    input_id: '628be9d387287',
                 })">
                 -
             </button>
-<input :step="1" class="border-0 w-full text-center" id="628b3ae1115dc" min="1" name="product[quantity]" required="" type="number" value="1"/>
+<input :step="1" class="border-0 w-full text-center" id="628be9d387287" min="1" name="product[quantity]" required="" type="number" value="1"/>
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepUp',
-                    input_id: '628b3ae1115dc',
+                    input_id: '628be9d387287',
                 })">
                 +
             </button>
@@ -5392,7 +5389,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </button>
 </input></form>
 </div>
-<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628b3ae1106b7_loading">
+<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628be9d38657a_loading">
 <svg class="loading" version="1.1" viewbox="0 0 80 80" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px"> <path d="M40,72C22.4,72,8,57.6,8,40C8,22.4, 22.4,8,40,8c17.6,0,32,14.4,32,32c0,1.1-0.9,2-2,2 s-2-0.9-2-2c0-15.4-12.6-28-28-28S12,24.6,12,40s12.6,28,28,28c1.1,0,2,0.9,2,2S41.1,72,40,72z" id="spinner"></path></svg>
 </div>
 </article>
@@ -5400,7 +5397,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </cg-slider-item>
 <cg-slider-item>
 <div class="h-full px-3">
-<article class="product-box" data-product="382671" data-render-id="628b3ae113065">
+<article class="product-box" data-product="382671" data-render-id="628be9d388e35">
 <cg-notepad-star :product-id="382671" class="mb-2" v-slot="slotProps">
 <div class="notepad-star">
 <button @click.prevent="slotProps.toggle" class="text-primary text-lg no-underline block mb-1">
@@ -5481,15 +5478,15 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepDown',
-                    input_id: '628b3ae113e86',
+                    input_id: '628be9d389c7f',
                 })">
                 -
             </button>
-<input :step="1" class="border-0 w-full text-center" id="628b3ae113e86" min="1" name="product[quantity]" required="" type="number" value="1"/>
+<input :step="1" class="border-0 w-full text-center" id="628be9d389c7f" min="1" name="product[quantity]" required="" type="number" value="1"/>
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepUp',
-                    input_id: '628b3ae113e86',
+                    input_id: '628be9d389c7f',
                 })">
                 +
             </button>
@@ -5501,7 +5498,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </button>
 </input></form>
 </div>
-<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628b3ae113065_loading">
+<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628be9d388e35_loading">
 <svg class="loading" version="1.1" viewbox="0 0 80 80" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px"> <path d="M40,72C22.4,72,8,57.6,8,40C8,22.4, 22.4,8,40,8c17.6,0,32,14.4,32,32c0,1.1-0.9,2-2,2 s-2-0.9-2-2c0-15.4-12.6-28-28-28S12,24.6,12,40s12.6,28,28,28c1.1,0,2,0.9,2,2S41.1,72,40,72z" id="spinner"></path></svg>
 </div>
 </article>
@@ -5509,7 +5506,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </cg-slider-item>
 <cg-slider-item>
 <div class="h-full px-3">
-<article class="product-box" data-product="234018" data-render-id="628b3ae116c20">
+<article class="product-box" data-product="234018" data-render-id="628be9d38bfb1">
 <cg-notepad-star :product-id="234018" class="mb-2" v-slot="slotProps">
 <div class="notepad-star">
 <button @click.prevent="slotProps.toggle" class="text-primary text-lg no-underline block mb-1">
@@ -5574,8 +5571,8 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 <select class="form-select border-0 bg-transparent w-full" onchange="customEvent('package-size-selector', {
                                     url: 'https://www.apotree.de/_fragment/products/placeholder',
                                     product_id: this.value,
-                                    render_id: '628b3ae116c20',
-                                    loading_id: '628b3ae116c20_loading'
+                                    render_id: '628be9d38bfb1',
+                                    loading_id: '628be9d38bfb1_loading'
                                     })">
 <option selected="selected" value="234018">
                                     20 St
@@ -5595,15 +5592,15 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepDown',
-                    input_id: '628b3ae11932d',
+                    input_id: '628be9d38e20b',
                 })">
                 -
             </button>
-<input :max="3" :step="1" class="border-0 w-full text-center" id="628b3ae11932d" min="1" name="product[quantity]" required="" type="number" value="1"/>
+<input :max="3" :step="1" class="border-0 w-full text-center" id="628be9d38e20b" min="1" name="product[quantity]" required="" type="number" value="1"/>
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepUp',
-                    input_id: '628b3ae11932d',
+                    input_id: '628be9d38e20b',
                 })">
                 +
             </button>
@@ -5615,7 +5612,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </button>
 </input></form>
 </div>
-<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628b3ae116c20_loading">
+<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628be9d38bfb1_loading">
 <svg class="loading" version="1.1" viewbox="0 0 80 80" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px"> <path d="M40,72C22.4,72,8,57.6,8,40C8,22.4, 22.4,8,40,8c17.6,0,32,14.4,32,32c0,1.1-0.9,2-2,2 s-2-0.9-2-2c0-15.4-12.6-28-28-28S12,24.6,12,40s12.6,28,28,28c1.1,0,2,0.9,2,2S41.1,72,40,72z" id="spinner"></path></svg>
 </div>
 </article>
@@ -5649,7 +5646,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
         " :scrollbar="true">
 <cg-slider-item>
 <div class="h-full px-3">
-<article class="product-box" data-product="194007" data-render-id="628b3ae11deea">
+<article class="product-box" data-product="194007" data-render-id="628be9d3921c9">
 <cg-notepad-star :product-id="194007" class="mb-2" v-slot="slotProps">
 <div class="notepad-star">
 <button @click.prevent="slotProps.toggle" class="text-primary text-lg no-underline block mb-1">
@@ -5714,8 +5711,8 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 <select class="form-select border-0 bg-transparent w-full" onchange="customEvent('package-size-selector', {
                                     url: 'https://www.apotree.de/_fragment/products/placeholder',
                                     product_id: this.value,
-                                    render_id: '628b3ae11deea',
-                                    loading_id: '628b3ae11deea_loading'
+                                    render_id: '628be9d3921c9',
+                                    loading_id: '628be9d3921c9_loading'
                                     })">
 <option selected="selected" value="194007">
                                     60 St
@@ -5735,15 +5732,15 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepDown',
-                    input_id: '628b3ae11fb9c',
+                    input_id: '628be9d393eda',
                 })">
                 -
             </button>
-<input :step="1" class="border-0 w-full text-center" id="628b3ae11fb9c" min="1" name="product[quantity]" required="" type="number" value="1"/>
+<input :step="1" class="border-0 w-full text-center" id="628be9d393eda" min="1" name="product[quantity]" required="" type="number" value="1"/>
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepUp',
-                    input_id: '628b3ae11fb9c',
+                    input_id: '628be9d393eda',
                 })">
                 +
             </button>
@@ -5755,7 +5752,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </button>
 </input></form>
 </div>
-<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628b3ae11deea_loading">
+<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628be9d3921c9_loading">
 <svg class="loading" version="1.1" viewbox="0 0 80 80" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px"> <path d="M40,72C22.4,72,8,57.6,8,40C8,22.4, 22.4,8,40,8c17.6,0,32,14.4,32,32c0,1.1-0.9,2-2,2 s-2-0.9-2-2c0-15.4-12.6-28-28-28S12,24.6,12,40s12.6,28,28,28c1.1,0,2,0.9,2,2S41.1,72,40,72z" id="spinner"></path></svg>
 </div>
 </article>
@@ -5763,7 +5760,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </cg-slider-item>
 <cg-slider-item>
 <div class="h-full px-3">
-<article class="product-box" data-product="88883" data-render-id="628b3ae1224b8">
+<article class="product-box" data-product="88883" data-render-id="628be9d3969ac">
 <cg-notepad-star :product-id="88883" class="mb-2" v-slot="slotProps">
 <div class="notepad-star">
 <button @click.prevent="slotProps.toggle" class="text-primary text-lg no-underline block mb-1">
@@ -5836,8 +5833,8 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 <select class="form-select border-0 bg-transparent w-full" onchange="customEvent('package-size-selector', {
                                     url: 'https://www.apotree.de/_fragment/products/placeholder',
                                     product_id: this.value,
-                                    render_id: '628b3ae1224b8',
-                                    loading_id: '628b3ae1224b8_loading'
+                                    render_id: '628be9d3969ac',
+                                    loading_id: '628be9d3969ac_loading'
                                     })">
 <option selected="selected" value="88883">
                                     40 St
@@ -5857,15 +5854,15 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepDown',
-                    input_id: '628b3ae1241a9',
+                    input_id: '628be9d398765',
                 })">
                 -
             </button>
-<input :step="1" class="border-0 w-full text-center" id="628b3ae1241a9" min="1" name="product[quantity]" required="" type="number" value="1"/>
+<input :step="1" class="border-0 w-full text-center" id="628be9d398765" min="1" name="product[quantity]" required="" type="number" value="1"/>
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepUp',
-                    input_id: '628b3ae1241a9',
+                    input_id: '628be9d398765',
                 })">
                 +
             </button>
@@ -5877,7 +5874,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </button>
 </input></form>
 </div>
-<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628b3ae1224b8_loading">
+<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628be9d3969ac_loading">
 <svg class="loading" version="1.1" viewbox="0 0 80 80" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px"> <path d="M40,72C22.4,72,8,57.6,8,40C8,22.4, 22.4,8,40,8c17.6,0,32,14.4,32,32c0,1.1-0.9,2-2,2 s-2-0.9-2-2c0-15.4-12.6-28-28-28S12,24.6,12,40s12.6,28,28,28c1.1,0,2,0.9,2,2S41.1,72,40,72z" id="spinner"></path></svg>
 </div>
 </article>
@@ -5885,7 +5882,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </cg-slider-item>
 <cg-slider-item>
 <div class="h-full px-3">
-<article class="product-box" data-product="106229" data-render-id="628b3ae126b1f">
+<article class="product-box" data-product="106229" data-render-id="628be9d39c8d6">
 <cg-notepad-star :product-id="106229" class="mb-2" v-slot="slotProps">
 <div class="notepad-star">
 <button @click.prevent="slotProps.toggle" class="text-primary text-lg no-underline block mb-1">
@@ -5966,15 +5963,15 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepDown',
-                    input_id: '628b3ae128810',
+                    input_id: '628be9d39e552',
                 })">
                 -
             </button>
-<input :step="1" class="border-0 w-full text-center" id="628b3ae128810" min="1" name="product[quantity]" required="" type="number" value="1"/>
+<input :step="1" class="border-0 w-full text-center" id="628be9d39e552" min="1" name="product[quantity]" required="" type="number" value="1"/>
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepUp',
-                    input_id: '628b3ae128810',
+                    input_id: '628be9d39e552',
                 })">
                 +
             </button>
@@ -5986,7 +5983,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </button>
 </input></form>
 </div>
-<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628b3ae126b1f_loading">
+<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628be9d39c8d6_loading">
 <svg class="loading" version="1.1" viewbox="0 0 80 80" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px"> <path d="M40,72C22.4,72,8,57.6,8,40C8,22.4, 22.4,8,40,8c17.6,0,32,14.4,32,32c0,1.1-0.9,2-2,2 s-2-0.9-2-2c0-15.4-12.6-28-28-28S12,24.6,12,40s12.6,28,28,28c1.1,0,2,0.9,2,2S41.1,72,40,72z" id="spinner"></path></svg>
 </div>
 </article>
@@ -5994,7 +5991,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </cg-slider-item>
 <cg-slider-item>
 <div class="h-full px-3">
-<article class="product-box" data-product="819999" data-render-id="628b3ae12acaf">
+<article class="product-box" data-product="819999" data-render-id="628be9d3a067b">
 <cg-notepad-star :product-id="819999" class="mb-2" v-slot="slotProps">
 <div class="notepad-star">
 <button @click.prevent="slotProps.toggle" class="text-primary text-lg no-underline block mb-1">
@@ -6075,15 +6072,15 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepDown',
-                    input_id: '628b3ae12c2e7',
+                    input_id: '628be9d3a1705',
                 })">
                 -
             </button>
-<input :step="1" class="border-0 w-full text-center" id="628b3ae12c2e7" min="1" name="product[quantity]" required="" type="number" value="1"/>
+<input :step="1" class="border-0 w-full text-center" id="628be9d3a1705" min="1" name="product[quantity]" required="" type="number" value="1"/>
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepUp',
-                    input_id: '628b3ae12c2e7',
+                    input_id: '628be9d3a1705',
                 })">
                 +
             </button>
@@ -6095,7 +6092,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </button>
 </input></form>
 </div>
-<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628b3ae12acaf_loading">
+<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628be9d3a067b_loading">
 <svg class="loading" version="1.1" viewbox="0 0 80 80" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px"> <path d="M40,72C22.4,72,8,57.6,8,40C8,22.4, 22.4,8,40,8c17.6,0,32,14.4,32,32c0,1.1-0.9,2-2,2 s-2-0.9-2-2c0-15.4-12.6-28-28-28S12,24.6,12,40s12.6,28,28,28c1.1,0,2,0.9,2,2S41.1,72,40,72z" id="spinner"></path></svg>
 </div>
 </article>
@@ -6103,7 +6100,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </cg-slider-item>
 <cg-slider-item>
 <div class="h-full px-3">
-<article class="product-box" data-product="793505" data-render-id="628b3ae12e558">
+<article class="product-box" data-product="793505" data-render-id="628be9d3a32b8">
 <cg-notepad-star :product-id="793505" class="mb-2" v-slot="slotProps">
 <div class="notepad-star">
 <button @click.prevent="slotProps.toggle" class="text-primary text-lg no-underline block mb-1">
@@ -6184,15 +6181,15 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepDown',
-                    input_id: '628b3ae12f5d3',
+                    input_id: '628be9d3a4139',
                 })">
                 -
             </button>
-<input :step="1" class="border-0 w-full text-center" id="628b3ae12f5d3" min="1" name="product[quantity]" required="" type="number" value="1"/>
+<input :step="1" class="border-0 w-full text-center" id="628be9d3a4139" min="1" name="product[quantity]" required="" type="number" value="1"/>
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepUp',
-                    input_id: '628b3ae12f5d3',
+                    input_id: '628be9d3a4139',
                 })">
                 +
             </button>
@@ -6204,7 +6201,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </button>
 </input></form>
 </div>
-<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628b3ae12e558_loading">
+<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628be9d3a32b8_loading">
 <svg class="loading" version="1.1" viewbox="0 0 80 80" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px"> <path d="M40,72C22.4,72,8,57.6,8,40C8,22.4, 22.4,8,40,8c17.6,0,32,14.4,32,32c0,1.1-0.9,2-2,2 s-2-0.9-2-2c0-15.4-12.6-28-28-28S12,24.6,12,40s12.6,28,28,28c1.1,0,2,0.9,2,2S41.1,72,40,72z" id="spinner"></path></svg>
 </div>
 </article>
@@ -6212,7 +6209,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </cg-slider-item>
 <cg-slider-item>
 <div class="h-full px-3">
-<article class="product-box" data-product="792658" data-render-id="628b3ae13244e">
+<article class="product-box" data-product="792658" data-render-id="628be9d3a6190">
 <cg-notepad-star :product-id="792658" class="mb-2" v-slot="slotProps">
 <div class="notepad-star">
 <button @click.prevent="slotProps.toggle" class="text-primary text-lg no-underline block mb-1">
@@ -6293,15 +6290,15 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepDown',
-                    input_id: '628b3ae133fe9',
+                    input_id: '628be9d3a7640',
                 })">
                 -
             </button>
-<input :step="1" class="border-0 w-full text-center" id="628b3ae133fe9" min="1" name="product[quantity]" required="" type="number" value="1"/>
+<input :step="1" class="border-0 w-full text-center" id="628be9d3a7640" min="1" name="product[quantity]" required="" type="number" value="1"/>
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepUp',
-                    input_id: '628b3ae133fe9',
+                    input_id: '628be9d3a7640',
                 })">
                 +
             </button>
@@ -6313,7 +6310,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </button>
 </input></form>
 </div>
-<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628b3ae13244e_loading">
+<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628be9d3a6190_loading">
 <svg class="loading" version="1.1" viewbox="0 0 80 80" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px"> <path d="M40,72C22.4,72,8,57.6,8,40C8,22.4, 22.4,8,40,8c17.6,0,32,14.4,32,32c0,1.1-0.9,2-2,2 s-2-0.9-2-2c0-15.4-12.6-28-28-28S12,24.6,12,40s12.6,28,28,28c1.1,0,2,0.9,2,2S41.1,72,40,72z" id="spinner"></path></svg>
 </div>
 </article>
@@ -6321,7 +6318,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </cg-slider-item>
 <cg-slider-item>
 <div class="h-full px-3">
-<article class="product-box" data-product="792610" data-render-id="628b3ae1365c1">
+<article class="product-box" data-product="792610" data-render-id="628be9d3a914d">
 <cg-notepad-star :product-id="792610" class="mb-2" v-slot="slotProps">
 <div class="notepad-star">
 <button @click.prevent="slotProps.toggle" class="text-primary text-lg no-underline block mb-1">
@@ -6394,8 +6391,8 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 <select class="form-select border-0 bg-transparent w-full" onchange="customEvent('package-size-selector', {
                                     url: 'https://www.apotree.de/_fragment/products/placeholder',
                                     product_id: this.value,
-                                    render_id: '628b3ae1365c1',
-                                    loading_id: '628b3ae1365c1_loading'
+                                    render_id: '628be9d3a914d',
+                                    loading_id: '628be9d3a914d_loading'
                                     })">
 <option selected="selected" value="792610">
                                     30 ml
@@ -6412,15 +6409,15 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepDown',
-                    input_id: '628b3ae13775c',
+                    input_id: '628be9d3aa4c8',
                 })">
                 -
             </button>
-<input :step="1" class="border-0 w-full text-center" id="628b3ae13775c" min="1" name="product[quantity]" required="" type="number" value="1"/>
+<input :step="1" class="border-0 w-full text-center" id="628be9d3aa4c8" min="1" name="product[quantity]" required="" type="number" value="1"/>
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepUp',
-                    input_id: '628b3ae13775c',
+                    input_id: '628be9d3aa4c8',
                 })">
                 +
             </button>
@@ -6432,7 +6429,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </button>
 </input></form>
 </div>
-<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628b3ae1365c1_loading">
+<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628be9d3a914d_loading">
 <svg class="loading" version="1.1" viewbox="0 0 80 80" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px"> <path d="M40,72C22.4,72,8,57.6,8,40C8,22.4, 22.4,8,40,8c17.6,0,32,14.4,32,32c0,1.1-0.9,2-2,2 s-2-0.9-2-2c0-15.4-12.6-28-28-28S12,24.6,12,40s12.6,28,28,28c1.1,0,2,0.9,2,2S41.1,72,40,72z" id="spinner"></path></svg>
 </div>
 </article>
@@ -6440,7 +6437,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </cg-slider-item>
 <cg-slider-item>
 <div class="h-full px-3">
-<article class="product-box" data-product="781776" data-render-id="628b3ae13a73d">
+<article class="product-box" data-product="781776" data-render-id="628be9d3ac7cb">
 <cg-notepad-star :product-id="781776" class="mb-2" v-slot="slotProps">
 <div class="notepad-star">
 <button @click.prevent="slotProps.toggle" class="text-primary text-lg no-underline block mb-1">
@@ -6515,7 +6512,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
                             </div>
 </div>
 </div>
-<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628b3ae13a73d_loading">
+<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628be9d3ac7cb_loading">
 <svg class="loading" version="1.1" viewbox="0 0 80 80" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px"> <path d="M40,72C22.4,72,8,57.6,8,40C8,22.4, 22.4,8,40,8c17.6,0,32,14.4,32,32c0,1.1-0.9,2-2,2 s-2-0.9-2-2c0-15.4-12.6-28-28-28S12,24.6,12,40s12.6,28,28,28c1.1,0,2,0.9,2,2S41.1,72,40,72z" id="spinner"></path></svg>
 </div>
 </article>
@@ -6523,7 +6520,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </cg-slider-item>
 <cg-slider-item>
 <div class="h-full px-3">
-<article class="product-box" data-product="762832" data-render-id="628b3ae13e703">
+<article class="product-box" data-product="762832" data-render-id="628be9d3afd13">
 <cg-notepad-star :product-id="762832" class="mb-2" v-slot="slotProps">
 <div class="notepad-star">
 <button @click.prevent="slotProps.toggle" class="text-primary text-lg no-underline block mb-1">
@@ -6596,8 +6593,8 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 <select class="form-select border-0 bg-transparent w-full" onchange="customEvent('package-size-selector', {
                                     url: 'https://www.apotree.de/_fragment/products/placeholder',
                                     product_id: this.value,
-                                    render_id: '628b3ae13e703',
-                                    loading_id: '628b3ae13e703_loading'
+                                    render_id: '628be9d3afd13',
+                                    loading_id: '628be9d3afd13_loading'
                                     })">
 <option selected="selected" value="762832">
                                     20 ml
@@ -6614,15 +6611,15 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepDown',
-                    input_id: '628b3ae13f93f',
+                    input_id: '628be9d3b0fc5',
                 })">
                 -
             </button>
-<input :step="1" class="border-0 w-full text-center" id="628b3ae13f93f" min="1" name="product[quantity]" required="" type="number" value="1"/>
+<input :step="1" class="border-0 w-full text-center" id="628be9d3b0fc5" min="1" name="product[quantity]" required="" type="number" value="1"/>
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepUp',
-                    input_id: '628b3ae13f93f',
+                    input_id: '628be9d3b0fc5',
                 })">
                 +
             </button>
@@ -6634,7 +6631,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </button>
 </input></form>
 </div>
-<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628b3ae13e703_loading">
+<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628be9d3afd13_loading">
 <svg class="loading" version="1.1" viewbox="0 0 80 80" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px"> <path d="M40,72C22.4,72,8,57.6,8,40C8,22.4, 22.4,8,40,8c17.6,0,32,14.4,32,32c0,1.1-0.9,2-2,2 s-2-0.9-2-2c0-15.4-12.6-28-28-28S12,24.6,12,40s12.6,28,28,28c1.1,0,2,0.9,2,2S41.1,72,40,72z" id="spinner"></path></svg>
 </div>
 </article>
@@ -6642,7 +6639,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </cg-slider-item>
 <cg-slider-item>
 <div class="h-full px-3">
-<article class="product-box" data-product="731684" data-render-id="628b3ae141f10">
+<article class="product-box" data-product="731684" data-render-id="628be9d3b322a">
 <cg-notepad-star :product-id="731684" class="mb-2" v-slot="slotProps">
 <div class="notepad-star">
 <button @click.prevent="slotProps.toggle" class="text-primary text-lg no-underline block mb-1">
@@ -6723,15 +6720,15 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepDown',
-                    input_id: '628b3ae143d3d',
+                    input_id: '628be9d3b4637',
                 })">
                 -
             </button>
-<input :step="1" class="border-0 w-full text-center" id="628b3ae143d3d" min="1" name="product[quantity]" required="" type="number" value="1"/>
+<input :step="1" class="border-0 w-full text-center" id="628be9d3b4637" min="1" name="product[quantity]" required="" type="number" value="1"/>
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepUp',
-                    input_id: '628b3ae143d3d',
+                    input_id: '628be9d3b4637',
                 })">
                 +
             </button>
@@ -6743,7 +6740,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </button>
 </input></form>
 </div>
-<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628b3ae141f10_loading">
+<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628be9d3b322a_loading">
 <svg class="loading" version="1.1" viewbox="0 0 80 80" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px"> <path d="M40,72C22.4,72,8,57.6,8,40C8,22.4, 22.4,8,40,8c17.6,0,32,14.4,32,32c0,1.1-0.9,2-2,2 s-2-0.9-2-2c0-15.4-12.6-28-28-28S12,24.6,12,40s12.6,28,28,28c1.1,0,2,0.9,2,2S41.1,72,40,72z" id="spinner"></path></svg>
 </div>
 </article>
@@ -7164,110 +7161,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 <div class="hl-3">Unsere Eigenmarke</div>
 <div class="product-grid flex flex-wrap -mx-2">
 <div class="product-box-wrapper flex mb-4 w-full px-2 sm:w-1/2 md:w-1/3">
-<article class="product-box" data-product="663798" data-render-id="628b3ae16b159">
-<cg-notepad-star :product-id="663798" class="mb-2" v-slot="slotProps">
-<div class="notepad-star">
-<button @click.prevent="slotProps.toggle" class="text-primary text-lg no-underline block mb-1">
-<div v-if="slotProps.isStared">
-<figure class="text-inherit">
-<svg class="fill-current w-2 h-2" viewbox="0 0 22.5 20.25" xmlns="http://www.w3.org/2000/svg">
-<path d="M11.25,20.25A.76.76,0,0,1,10.7,20L1.75,10.49A6.26,6.26,0,0,1,.63,3.41a6,6,0,0,1,9.69-1.6l.93.89.94-.91a6,6,0,0,1,8.46-.09,5.93,5.93,0,0,1,1.22,1.71,6.24,6.24,0,0,1-1.13,7.08L11.8,20A.76.76,0,0,1,11.25,20.25Z"></path>
-</svg>
-</figure> </div>
-<div v-else="">
-<figure class="text-inherit">
-<svg class="fill-current w-2 h-2" viewbox="0 0 22.51 20.25" xmlns="http://www.w3.org/2000/svg">
-<path d="M11.25,20.25A.77.77,0,0,1,10.7,20L1.75,10.49A6.24,6.24,0,0,1,.64,3.41a6,6,0,0,1,8-2.82,5.75,5.75,0,0,1,1.71,1.22l.92.9.94-.92a6,6,0,0,1,8.46-.09,5.75,5.75,0,0,1,1.22,1.71,6.23,6.23,0,0,1-1.13,7.08L11.8,20A.76.76,0,0,1,11.25,20.25ZM6,1.5A4.49,4.49,0,0,0,2,4.06a4.75,4.75,0,0,0,.85,5.39l8.41,9,8.4-8.94a4.77,4.77,0,0,0,.87-5.4,4.49,4.49,0,0,0-7.27-1.2L11.77,4.29a.75.75,0,0,1-1,0L9.27,2.88A4.59,4.59,0,0,0,8,1.94,4.43,4.43,0,0,0,6,1.5Z"></path>
-</svg>
-</figure>
-</div>
-</button>
-</div>
-</cg-notepad-star>
-<a class="product-box__image-wrapper relative flex justify-center pb-2" href="/artikel/gingko-biloba-100-mg-kapseln-08000695.html" title="Gingko Biloba 100 mg Kapseln">
-<div class="bg-red text-white w-5 h-5 flex flex-col justify-between text-center leading-none absolute right-0 top-0 -mt-1 mr-1 z-10 rounded-full">
-<span class="font-bold text-base tracking-tight mt-auto">21 %</span>
-<span class="text-xs mb-auto">gespart <sup>4</sup></span>
-</div>
-<figure class="product-box__image">
-<img alt="Gingko Biloba 100 mg Kapseln" class="h-full w-full object-contain" src="/documents/products/Listenansicht/613L9uZgTdL._AC_SL1000_.jpg?ver=1649058523"/>
-</figure>
-</a>
-<div class="product-box__meta">
-<a class="pb-2 block" href="/artikel/gingko-biloba-100-mg-kapseln-08000695.html">
-<h1 class="product-box__title">Gingko Biloba 100 mg Kapseln</h1>
-</a>
-<ul class="list-reset leading-normal mb-3">
-<li>
-                                Packungsgröße
-                                100 St
-                            </li>
-<li>Artikelnummer: 08000695</li>
-<div class="my-3">
-<div data-deliverytime="663798">
-<span class="flex items-center">
-<img class="flex-shrink-0 mr-2" src="/documents/delivery_times/green.png"><br/>
-<span class="text-xs">
-                            Sofort lieferbar
-                    </span>
-</img></span>
-</div>
-</div>
-</ul>
-</div>
-<div class="h-6">
-<div class="flex items-end mb-1">
-<span class="text-lg mr-2 text-primary whitespace-nowrap">
-                                                                                                                            nur
-                                        <span data-price="663798">17,95 €</span>
-<sup>2</sup>
-</span>
-<span class="text-sm text-grey line-through">
-                                                        UVP¹                                    22,95 €
-                                
-                </span>
-</div>
-</div>
-<div class="mt-auto">
-<div class="bg-gray-100">
-<div class="form-input bg-transparent border-0">
-                                100 St
-                            </div>
-</div>
-<form action="/checkout/cart/add/product" class="flex mb-0 mt-1" method="post" onsubmit="customEvent('add-to-cart', { event: event })">
-<input name="product[product_id]" type="hidden" value="663798">
-<input name="options[PrescriptionType]" type="hidden" value="0"/>
-<div class="flex justify-center items-center form-control form-quantity-select w-full">
-<button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
-                    event: event,
-                    action: 'stepDown',
-                    input_id: '628b3ae16c368',
-                })">
-                -
-            </button>
-<input :step="1" class="border-0 w-full text-center" id="628b3ae16c368" min="1" name="product[quantity]" required="" type="number" value="1"/>
-<button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
-                    event: event,
-                    action: 'stepUp',
-                    input_id: '628b3ae16c368',
-                })">
-                +
-            </button>
-</div>
-<button aria-label="Zum Warenkorb hinzufügen" class="flex justify-center items-center px-2 py-1 text-xl product-box__tocart text-primary hover:bg-primary hover:text-white" name="refresh_submit" type="submit">
-<svg aria-hidden="true" fill="currentColor" height="20" viewbox="0 0 20 20" width="20" xmlns="http://www.w3.org/2000/svg">
-<path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path>
-</svg>
-</button>
-</input></form>
-</div>
-<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628b3ae16b159_loading">
-<svg class="loading" version="1.1" viewbox="0 0 80 80" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px"> <path d="M40,72C22.4,72,8,57.6,8,40C8,22.4, 22.4,8,40,8c17.6,0,32,14.4,32,32c0,1.1-0.9,2-2,2 s-2-0.9-2-2c0-15.4-12.6-28-28-28S12,24.6,12,40s12.6,28,28,28c1.1,0,2,0.9,2,2S41.1,72,40,72z" id="spinner"></path></svg>
-</div>
-</article>
-</div>
-<div class="product-box-wrapper flex mb-4 w-full px-2 sm:w-1/2 md:w-1/3">
-<article class="product-box" data-product="663800" data-render-id="628b3ae16d744">
+<article class="product-box" data-product="663800" data-render-id="628be9d3d8e57">
 <cg-notepad-star :product-id="663800" class="mb-2" v-slot="slotProps">
 <div class="notepad-star">
 <button @click.prevent="slotProps.toggle" class="text-primary text-lg no-underline block mb-1">
@@ -7344,15 +7238,15 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepDown',
-                    input_id: '628b3ae16e45b',
+                    input_id: '628be9d3d9d73',
                 })">
                 -
             </button>
-<input :step="1" class="border-0 w-full text-center" id="628b3ae16e45b" min="1" name="product[quantity]" required="" type="number" value="1"/>
+<input :step="1" class="border-0 w-full text-center" id="628be9d3d9d73" min="1" name="product[quantity]" required="" type="number" value="1"/>
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepUp',
-                    input_id: '628b3ae16e45b',
+                    input_id: '628be9d3d9d73',
                 })">
                 +
             </button>
@@ -7364,14 +7258,14 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </button>
 </input></form>
 </div>
-<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628b3ae16d744_loading">
+<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628be9d3d8e57_loading">
 <svg class="loading" version="1.1" viewbox="0 0 80 80" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px"> <path d="M40,72C22.4,72,8,57.6,8,40C8,22.4, 22.4,8,40,8c17.6,0,32,14.4,32,32c0,1.1-0.9,2-2,2 s-2-0.9-2-2c0-15.4-12.6-28-28-28S12,24.6,12,40s12.6,28,28,28c1.1,0,2,0.9,2,2S41.1,72,40,72z" id="spinner"></path></svg>
 </div>
 </article>
 </div>
 <div class="product-box-wrapper flex mb-4 w-full px-2 sm:w-1/2 md:w-1/3">
-<article class="product-box" data-product="663797" data-render-id="628b3ae16f782">
-<cg-notepad-star :product-id="663797" class="mb-2" v-slot="slotProps">
+<article class="product-box" data-product="695625" data-render-id="628be9d3daeeb">
+<cg-notepad-star :product-id="695625" class="mb-2" v-slot="slotProps">
 <div class="notepad-star">
 <button @click.prevent="slotProps.toggle" class="text-primary text-lg no-underline block mb-1">
 <div v-if="slotProps.isStared">
@@ -7390,23 +7284,27 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </button>
 </div>
 </cg-notepad-star>
-<a class="product-box__image-wrapper relative flex justify-center pb-2" href="/artikel/alpha-liponsaeure-600-mg-08000376.html" title="Alpha-Liponsäure 600 mg">
+<a class="product-box__image-wrapper relative flex justify-center pb-2" href="/artikel/selen-100-g-kapseln-08000269.html" title="Selen 100µg Kapseln">
+<div class="bg-red text-white w-5 h-5 flex flex-col justify-between text-center leading-none absolute right-0 top-0 -mt-1 mr-1 z-10 rounded-full">
+<span class="font-bold text-base tracking-tight mt-auto">2 %</span>
+<span class="text-xs mb-auto">gespart <sup>4</sup></span>
+</div>
 <figure class="product-box__image">
-<img alt="Alpha-Liponsäure 600 mg" class="h-full w-full object-contain" src="/documents/products/Listenansicht/51tosbsqUGL._AC_SL1000_.jpg?ver=1649058523"/>
+<img alt="Selen 100µg Kapseln" class="h-full w-full object-contain" src="/documents/products/Listenansicht/Selen Kapseln.png?ver=1649058523"/>
 </figure>
 </a>
 <div class="product-box__meta">
-<a class="pb-2 block" href="/artikel/alpha-liponsaeure-600-mg-08000376.html">
-<h1 class="product-box__title">Alpha-Liponsäure 600 mg</h1>
+<a class="pb-2 block" href="/artikel/selen-100-g-kapseln-08000269.html">
+<h1 class="product-box__title">Selen 100µg Kapseln</h1>
 </a>
 <ul class="list-reset leading-normal mb-3">
 <li>
                                 Packungsgröße
                                 60 St
                             </li>
-<li>Artikelnummer: 08000376</li>
+<li>Artikelnummer: 08000269</li>
 <div class="my-3">
-<div data-deliverytime="663797">
+<div data-deliverytime="695625">
 <span class="flex items-center">
 <img class="flex-shrink-0 mr-2" src="/documents/delivery_times/red.png"><br/>
 <span class="text-xs">
@@ -7421,9 +7319,13 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 <div class="flex items-end mb-1">
 <span class="text-lg mr-2 text-primary whitespace-nowrap">
                                                                                                                             nur
-                                        <span data-price="663797">19,50 €</span>
+                                        <span data-price="695625">12,95 €</span>
 <sup>2</sup>
 </span>
+<span class="text-sm text-grey line-through">
+                                                        UVP¹                                    13,28 €
+                                
+                </span>
 </div>
 </div>
 <div class="mt-auto">
@@ -7433,7 +7335,102 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
                             </div>
 </div>
 </div>
-<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628b3ae16f782_loading">
+<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628be9d3daeeb_loading">
+<svg class="loading" version="1.1" viewbox="0 0 80 80" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px"> <path d="M40,72C22.4,72,8,57.6,8,40C8,22.4, 22.4,8,40,8c17.6,0,32,14.4,32,32c0,1.1-0.9,2-2,2 s-2-0.9-2-2c0-15.4-12.6-28-28-28S12,24.6,12,40s12.6,28,28,28c1.1,0,2,0.9,2,2S41.1,72,40,72z" id="spinner"></path></svg>
+</div>
+</article>
+</div>
+<div class="product-box-wrapper flex mb-4 w-full px-2 sm:w-1/2 md:w-1/3">
+<article class="product-box" data-product="678845" data-render-id="628be9d3dcd72">
+<cg-notepad-star :product-id="678845" class="mb-2" v-slot="slotProps">
+<div class="notepad-star">
+<button @click.prevent="slotProps.toggle" class="text-primary text-lg no-underline block mb-1">
+<div v-if="slotProps.isStared">
+<figure class="text-inherit">
+<svg class="fill-current w-2 h-2" viewbox="0 0 22.5 20.25" xmlns="http://www.w3.org/2000/svg">
+<path d="M11.25,20.25A.76.76,0,0,1,10.7,20L1.75,10.49A6.26,6.26,0,0,1,.63,3.41a6,6,0,0,1,9.69-1.6l.93.89.94-.91a6,6,0,0,1,8.46-.09,5.93,5.93,0,0,1,1.22,1.71,6.24,6.24,0,0,1-1.13,7.08L11.8,20A.76.76,0,0,1,11.25,20.25Z"></path>
+</svg>
+</figure> </div>
+<div v-else="">
+<figure class="text-inherit">
+<svg class="fill-current w-2 h-2" viewbox="0 0 22.51 20.25" xmlns="http://www.w3.org/2000/svg">
+<path d="M11.25,20.25A.77.77,0,0,1,10.7,20L1.75,10.49A6.24,6.24,0,0,1,.64,3.41a6,6,0,0,1,8-2.82,5.75,5.75,0,0,1,1.71,1.22l.92.9.94-.92a6,6,0,0,1,8.46-.09,5.75,5.75,0,0,1,1.22,1.71,6.23,6.23,0,0,1-1.13,7.08L11.8,20A.76.76,0,0,1,11.25,20.25ZM6,1.5A4.49,4.49,0,0,0,2,4.06a4.75,4.75,0,0,0,.85,5.39l8.41,9,8.4-8.94a4.77,4.77,0,0,0,.87-5.4,4.49,4.49,0,0,0-7.27-1.2L11.77,4.29a.75.75,0,0,1-1,0L9.27,2.88A4.59,4.59,0,0,0,8,1.94,4.43,4.43,0,0,0,6,1.5Z"></path>
+</svg>
+</figure>
+</div>
+</button>
+</div>
+</cg-notepad-star>
+<a class="product-box__image-wrapper relative flex justify-center pb-2" href="/artikel/gelenk-kapseln-08003742.html" title="Gelenk Kapseln">
+<figure class="product-box__image">
+<img alt="Gelenk Kapseln" class="h-full w-full object-contain" src="/documents/products/Listenansicht/Gelenk.png?ver=1649058523"/>
+</figure>
+</a>
+<div class="product-box__meta">
+<a class="pb-2 block" href="/artikel/gelenk-kapseln-08003742.html">
+<h1 class="product-box__title">Gelenk Kapseln</h1>
+</a>
+<ul class="list-reset leading-normal mb-3">
+<li>
+                                Packungsgröße
+                                90 St
+                            </li>
+<li>Artikelnummer: 08003742</li>
+<div class="my-3">
+<div data-deliverytime="678845">
+<span class="flex items-center">
+<img class="flex-shrink-0 mr-2" src="/documents/delivery_times/green.png"><br/>
+<span class="text-xs">
+                            Sofort lieferbar
+                    </span>
+</img></span>
+</div>
+</div>
+</ul>
+</div>
+<div class="h-6">
+<div class="flex items-end mb-1">
+<span class="text-lg mr-2 text-primary whitespace-nowrap">
+                                                                                                                            nur
+                                        <span data-price="678845">16,95 €</span>
+<sup>2</sup>
+</span>
+</div>
+</div>
+<div class="mt-auto">
+<div class="bg-gray-100">
+<div class="form-input bg-transparent border-0">
+                                90 St
+                            </div>
+</div>
+<form action="/checkout/cart/add/product" class="flex mb-0 mt-1" method="post" onsubmit="customEvent('add-to-cart', { event: event })">
+<input name="product[product_id]" type="hidden" value="678845">
+<input name="options[PrescriptionType]" type="hidden" value="0"/>
+<div class="flex justify-center items-center form-control form-quantity-select w-full">
+<button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
+                    event: event,
+                    action: 'stepDown',
+                    input_id: '628be9d3dd9d9',
+                })">
+                -
+            </button>
+<input :step="1" class="border-0 w-full text-center" id="628be9d3dd9d9" min="1" name="product[quantity]" required="" type="number" value="1"/>
+<button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
+                    event: event,
+                    action: 'stepUp',
+                    input_id: '628be9d3dd9d9',
+                })">
+                +
+            </button>
+</div>
+<button aria-label="Zum Warenkorb hinzufügen" class="flex justify-center items-center px-2 py-1 text-xl product-box__tocart text-primary hover:bg-primary hover:text-white" name="refresh_submit" type="submit">
+<svg aria-hidden="true" fill="currentColor" height="20" viewbox="0 0 20 20" width="20" xmlns="http://www.w3.org/2000/svg">
+<path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path>
+</svg>
+</button>
+</input></form>
+</div>
+<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628be9d3dcd72_loading">
 <svg class="loading" version="1.1" viewbox="0 0 80 80" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px"> <path d="M40,72C22.4,72,8,57.6,8,40C8,22.4, 22.4,8,40,8c17.6,0,32,14.4,32,32c0,1.1-0.9,2-2,2 s-2-0.9-2-2c0-15.4-12.6-28-28-28S12,24.6,12,40s12.6,28,28,28c1.1,0,2,0.9,2,2S41.1,72,40,72z" id="spinner"></path></svg>
 </div>
 </article>
@@ -7442,8 +7439,8 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 <div class="hl-3">Sets für jeden Anlass</div>
 <div class="product-grid flex flex-wrap -mx-2">
 <div class="product-box-wrapper flex mb-4 w-full px-2 sm:w-1/2 md:w-1/3">
-<article class="product-box" data-product="825214" data-render-id="628b3ae171853">
-<cg-notepad-star :product-id="825214" class="mb-2" v-slot="slotProps">
+<article class="product-box" data-product="790617" data-render-id="628be9d3dea19">
+<cg-notepad-star :product-id="790617" class="mb-2" v-slot="slotProps">
 <div class="notepad-star">
 <button @click.prevent="slotProps.toggle" class="text-primary text-lg no-underline block mb-1">
 <div v-if="slotProps.isStared">
@@ -7462,219 +7459,23 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </button>
 </div>
 </cg-notepad-star>
-<a class="product-box__image-wrapper relative flex justify-center pb-2" href="/artikel/sparset-allergie-pollival-0-5-mg-ml-augentropfen-10-ml-cetirizin-vividrin-10-mg-filmtabletten-20-st-08000603.html" title="Sparset Allergie - POLLIVAL 0,5 mg/ml Augentropfen 10 ml + CETIRIZIN Vividrin 10 mg Filmtabletten 20 St.">
-<div class="bg-red text-white w-5 h-5 flex flex-col justify-between text-center leading-none absolute right-0 top-0 -mt-1 mr-1 z-10 rounded-full">
-<span class="font-bold text-base tracking-tight mt-auto">23 %</span>
-<span class="text-xs mb-auto">gespart <sup>4</sup></span>
-</div>
-<figure class="product-box__image">
-<img alt="Sparset Allergie - POLLIVAL 0,5 mg/ml Augentropfen 10 ml + CETIRIZIN Vividrin 10 mg Filmtabletten 20 St." class="h-full w-full object-contain" src="/documents/products/Listenansicht/Allergie Set Pollival AU &amp; Cetirizin Vividrin 20.jpg?ver=1649058523"/>
-</figure>
-</a>
-<div class="product-box__meta">
-<a class="pb-2 block" href="/artikel/sparset-allergie-pollival-0-5-mg-ml-augentropfen-10-ml-cetirizin-vividrin-10-mg-filmtabletten-20-st-08000603.html">
-<h1 class="product-box__title">Sparset Allergie - POLLIVAL 0,5 mg/ml Augentropfen 10 ml + CETIRIZIN Vividrin 10 mg Filmtabletten 20 St.</h1>
-</a>
-<ul class="list-reset leading-normal mb-3">
-<li>Artikelnummer: 08000603</li>
-<div class="my-3">
-<div data-deliverytime="825214">
-<span class="flex items-center">
-<img class="flex-shrink-0 mr-2" src="/documents/delivery_times/green.png"><br/>
-<span class="text-xs">
-                            Sofort lieferbar
-                    </span>
-</img></span>
-</div>
-</div>
-</ul>
-</div>
-<div class="h-6">
-<div class="flex items-end mb-1">
-<span class="text-lg mr-2 text-primary whitespace-nowrap">
-                                                                                                                            nur
-                                        <span data-price="825214">14,95 €</span>
-<sup>2</sup>
-</span>
-<span class="text-sm text-grey line-through">
-                                                        UVP¹                                    19,52 €
-                                
-                </span>
-</div>
-</div>
-<div class="mt-auto">
-<div class="bg-gray-100">
-<div class="form-input bg-transparent border-0">
-</div>
-</div>
-<form action="/checkout/cart/add/product" class="flex mb-0 mt-1" method="post" onsubmit="customEvent('add-to-cart', { event: event })">
-<input name="product[product_id]" type="hidden" value="825214">
-<input name="options[PrescriptionType]" type="hidden" value="0"/>
-<div class="flex justify-center items-center form-control form-quantity-select w-full">
-<button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
-                    event: event,
-                    action: 'stepDown',
-                    input_id: '628b3ae172b22',
-                })">
-                -
-            </button>
-<input :step="1" class="border-0 w-full text-center" id="628b3ae172b22" min="1" name="product[quantity]" required="" type="number" value="1"/>
-<button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
-                    event: event,
-                    action: 'stepUp',
-                    input_id: '628b3ae172b22',
-                })">
-                +
-            </button>
-</div>
-<button aria-label="Zum Warenkorb hinzufügen" class="flex justify-center items-center px-2 py-1 text-xl product-box__tocart text-primary hover:bg-primary hover:text-white" name="refresh_submit" type="submit">
-<svg aria-hidden="true" fill="currentColor" height="20" viewbox="0 0 20 20" width="20" xmlns="http://www.w3.org/2000/svg">
-<path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path>
-</svg>
-</button>
-</input></form>
-</div>
-<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628b3ae171853_loading">
-<svg class="loading" version="1.1" viewbox="0 0 80 80" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px"> <path d="M40,72C22.4,72,8,57.6,8,40C8,22.4, 22.4,8,40,8c17.6,0,32,14.4,32,32c0,1.1-0.9,2-2,2 s-2-0.9-2-2c0-15.4-12.6-28-28-28S12,24.6,12,40s12.6,28,28,28c1.1,0,2,0.9,2,2S41.1,72,40,72z" id="spinner"></path></svg>
-</div>
-</article>
-</div>
-<div class="product-box-wrapper flex mb-4 w-full px-2 sm:w-1/2 md:w-1/3">
-<article class="product-box" data-product="790610" data-render-id="628b3ae1744c1">
-<cg-notepad-star :product-id="790610" class="mb-2" v-slot="slotProps">
-<div class="notepad-star">
-<button @click.prevent="slotProps.toggle" class="text-primary text-lg no-underline block mb-1">
-<div v-if="slotProps.isStared">
-<figure class="text-inherit">
-<svg class="fill-current w-2 h-2" viewbox="0 0 22.5 20.25" xmlns="http://www.w3.org/2000/svg">
-<path d="M11.25,20.25A.76.76,0,0,1,10.7,20L1.75,10.49A6.26,6.26,0,0,1,.63,3.41a6,6,0,0,1,9.69-1.6l.93.89.94-.91a6,6,0,0,1,8.46-.09,5.93,5.93,0,0,1,1.22,1.71,6.24,6.24,0,0,1-1.13,7.08L11.8,20A.76.76,0,0,1,11.25,20.25Z"></path>
-</svg>
-</figure> </div>
-<div v-else="">
-<figure class="text-inherit">
-<svg class="fill-current w-2 h-2" viewbox="0 0 22.51 20.25" xmlns="http://www.w3.org/2000/svg">
-<path d="M11.25,20.25A.77.77,0,0,1,10.7,20L1.75,10.49A6.24,6.24,0,0,1,.64,3.41a6,6,0,0,1,8-2.82,5.75,5.75,0,0,1,1.71,1.22l.92.9.94-.92a6,6,0,0,1,8.46-.09,5.75,5.75,0,0,1,1.22,1.71,6.23,6.23,0,0,1-1.13,7.08L11.8,20A.76.76,0,0,1,11.25,20.25ZM6,1.5A4.49,4.49,0,0,0,2,4.06a4.75,4.75,0,0,0,.85,5.39l8.41,9,8.4-8.94a4.77,4.77,0,0,0,.87-5.4,4.49,4.49,0,0,0-7.27-1.2L11.77,4.29a.75.75,0,0,1-1,0L9.27,2.88A4.59,4.59,0,0,0,8,1.94,4.43,4.43,0,0,0,6,1.5Z"></path>
-</svg>
-</figure>
-</div>
-</button>
-</div>
-</cg-notepad-star>
-<a class="product-box__image-wrapper relative flex justify-center pb-2" href="/artikel/sparset-mund-chlorhexamed-fluid-200-ml-kamistad-gel-10-ml-08000549.html" title="Sparset Mund - CHLORHEXAMED Fluid 200 ml + KAMISTAD Gel 10 ml">
-<div class="bg-red text-white w-5 h-5 flex flex-col justify-between text-center leading-none absolute right-0 top-0 -mt-1 mr-1 z-10 rounded-full">
-<span class="font-bold text-base tracking-tight mt-auto">20 %</span>
-<span class="text-xs mb-auto">gespart <sup>4</sup></span>
-</div>
-<figure class="product-box__image">
-<img alt="Sparset Mund - CHLORHEXAMED Fluid 200 ml + KAMISTAD Gel 10 ml" class="h-full w-full object-contain" src="/documents/products/Listenansicht/Kamistad Chlorhex.png?ver=1649058523"/>
-</figure>
-</a>
-<div class="product-box__meta">
-<a class="pb-2 block" href="/artikel/sparset-mund-chlorhexamed-fluid-200-ml-kamistad-gel-10-ml-08000549.html">
-<h1 class="product-box__title">Sparset Mund - CHLORHEXAMED Fluid 200 ml + KAMISTAD Gel 10 ml</h1>
-</a>
-<ul class="list-reset leading-normal mb-3">
-<li>Artikelnummer: 08000549</li>
-<div class="my-3">
-<div data-deliverytime="790610">
-<span class="flex items-center">
-<img class="flex-shrink-0 mr-2" src="/documents/delivery_times/green.png"><br/>
-<span class="text-xs">
-                            Sofort lieferbar
-                    </span>
-</img></span>
-</div>
-</div>
-</ul>
-</div>
-<div class="h-6">
-<div class="flex items-end mb-1">
-<span class="text-lg mr-2 text-primary whitespace-nowrap">
-                                                                                                                            nur
-                                        <span data-price="790610">17,95 €</span>
-<sup>2</sup>
-</span>
-<span class="text-sm text-grey line-through">
-                                                        UVP¹                                    22,47 €
-                                
-                </span>
-</div>
-</div>
-<div class="mt-auto">
-<div class="bg-gray-100">
-<div class="form-input bg-transparent border-0">
-</div>
-</div>
-<form action="/checkout/cart/add/product" class="flex mb-0 mt-1" method="post" onsubmit="customEvent('add-to-cart', { event: event })">
-<input name="product[product_id]" type="hidden" value="790610">
-<input name="options[PrescriptionType]" type="hidden" value="0"/>
-<div class="flex justify-center items-center form-control form-quantity-select w-full">
-<button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
-                    event: event,
-                    action: 'stepDown',
-                    input_id: '628b3ae175b4a',
-                })">
-                -
-            </button>
-<input :step="1" class="border-0 w-full text-center" id="628b3ae175b4a" min="1" name="product[quantity]" required="" type="number" value="1"/>
-<button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
-                    event: event,
-                    action: 'stepUp',
-                    input_id: '628b3ae175b4a',
-                })">
-                +
-            </button>
-</div>
-<button aria-label="Zum Warenkorb hinzufügen" class="flex justify-center items-center px-2 py-1 text-xl product-box__tocart text-primary hover:bg-primary hover:text-white" name="refresh_submit" type="submit">
-<svg aria-hidden="true" fill="currentColor" height="20" viewbox="0 0 20 20" width="20" xmlns="http://www.w3.org/2000/svg">
-<path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path>
-</svg>
-</button>
-</input></form>
-</div>
-<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628b3ae1744c1_loading">
-<svg class="loading" version="1.1" viewbox="0 0 80 80" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px"> <path d="M40,72C22.4,72,8,57.6,8,40C8,22.4, 22.4,8,40,8c17.6,0,32,14.4,32,32c0,1.1-0.9,2-2,2 s-2-0.9-2-2c0-15.4-12.6-28-28-28S12,24.6,12,40s12.6,28,28,28c1.1,0,2,0.9,2,2S41.1,72,40,72z" id="spinner"></path></svg>
-</div>
-</article>
-</div>
-<div class="product-box-wrapper flex mb-4 w-full px-2 sm:w-1/2 md:w-1/3">
-<article class="product-box" data-product="790613" data-render-id="628b3ae17720f">
-<cg-notepad-star :product-id="790613" class="mb-2" v-slot="slotProps">
-<div class="notepad-star">
-<button @click.prevent="slotProps.toggle" class="text-primary text-lg no-underline block mb-1">
-<div v-if="slotProps.isStared">
-<figure class="text-inherit">
-<svg class="fill-current w-2 h-2" viewbox="0 0 22.5 20.25" xmlns="http://www.w3.org/2000/svg">
-<path d="M11.25,20.25A.76.76,0,0,1,10.7,20L1.75,10.49A6.26,6.26,0,0,1,.63,3.41a6,6,0,0,1,9.69-1.6l.93.89.94-.91a6,6,0,0,1,8.46-.09,5.93,5.93,0,0,1,1.22,1.71,6.24,6.24,0,0,1-1.13,7.08L11.8,20A.76.76,0,0,1,11.25,20.25Z"></path>
-</svg>
-</figure> </div>
-<div v-else="">
-<figure class="text-inherit">
-<svg class="fill-current w-2 h-2" viewbox="0 0 22.51 20.25" xmlns="http://www.w3.org/2000/svg">
-<path d="M11.25,20.25A.77.77,0,0,1,10.7,20L1.75,10.49A6.24,6.24,0,0,1,.64,3.41a6,6,0,0,1,8-2.82,5.75,5.75,0,0,1,1.71,1.22l.92.9.94-.92a6,6,0,0,1,8.46-.09,5.75,5.75,0,0,1,1.22,1.71,6.23,6.23,0,0,1-1.13,7.08L11.8,20A.76.76,0,0,1,11.25,20.25ZM6,1.5A4.49,4.49,0,0,0,2,4.06a4.75,4.75,0,0,0,.85,5.39l8.41,9,8.4-8.94a4.77,4.77,0,0,0,.87-5.4,4.49,4.49,0,0,0-7.27-1.2L11.77,4.29a.75.75,0,0,1-1,0L9.27,2.88A4.59,4.59,0,0,0,8,1.94,4.43,4.43,0,0,0,6,1.5Z"></path>
-</svg>
-</figure>
-</div>
-</button>
-</div>
-</cg-notepad-star>
-<a class="product-box__image-wrapper relative flex justify-center pb-2" href="/artikel/sparset-haemorrhoiden-hametum-salbe-50-g-hametum-zaepfchen-10-st-08000553.html" title="Sparset Hämorrhoiden - HAMETUM Salbe 50 g + HAMETUM Zäpfchen 10 St.">
+<a class="product-box__image-wrapper relative flex justify-center pb-2" href="/artikel/sparset-wundversorgung-tyrosur-wundheilgel-15-g-tyrosur-careexpert-wundgel-25-g-08000559.html" title="Sparset Wundversorgung - TYROSUR Wundheilgel 15 g + TYROSUR CareExpert Wundgel 25 g">
 <div class="bg-red text-white w-5 h-5 flex flex-col justify-between text-center leading-none absolute right-0 top-0 -mt-1 mr-1 z-10 rounded-full">
 <span class="font-bold text-base tracking-tight mt-auto">16 %</span>
 <span class="text-xs mb-auto">gespart <sup>4</sup></span>
 </div>
 <figure class="product-box__image">
-<img alt="Sparset Hämorrhoiden - HAMETUM Salbe 50 g + HAMETUM Zäpfchen 10 St." class="h-full w-full object-contain" src="/documents/products/Listenansicht/Hametum Set.png?ver=1649058523"/>
+<img alt="Sparset Wundversorgung - TYROSUR Wundheilgel 15 g + TYROSUR CareExpert Wundgel 25 g" class="h-full w-full object-contain" src="/documents/products/Listenansicht/Tyrosur Set.png?ver=1649058523"/>
 </figure>
 </a>
 <div class="product-box__meta">
-<a class="pb-2 block" href="/artikel/sparset-haemorrhoiden-hametum-salbe-50-g-hametum-zaepfchen-10-st-08000553.html">
-<h1 class="product-box__title">Sparset Hämorrhoiden - HAMETUM Salbe 50 g + HAMETUM Zäpfchen 10 St.</h1>
+<a class="pb-2 block" href="/artikel/sparset-wundversorgung-tyrosur-wundheilgel-15-g-tyrosur-careexpert-wundgel-25-g-08000559.html">
+<h1 class="product-box__title">Sparset Wundversorgung - TYROSUR Wundheilgel 15 g + TYROSUR CareExpert Wundgel 25 g</h1>
 </a>
 <ul class="list-reset leading-normal mb-3">
-<li>Artikelnummer: 08000553</li>
+<li>Artikelnummer: 08000559</li>
 <div class="my-3">
-<div data-deliverytime="790613">
+<div data-deliverytime="790617">
 <span class="flex items-center">
 <img class="flex-shrink-0 mr-2" src="/documents/delivery_times/green.png"><br/>
 <span class="text-xs">
@@ -7689,11 +7490,11 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 <div class="flex items-end mb-1">
 <span class="text-lg mr-2 text-primary whitespace-nowrap">
                                                                                                                             nur
-                                        <span data-price="790613">25,95 €</span>
+                                        <span data-price="790617">12,95 €</span>
 <sup>2</sup>
 </span>
 <span class="text-sm text-grey line-through">
-                                                        UVP¹                                    30,95 €
+                                                        UVP¹                                    15,42 €
                                 
                 </span>
 </div>
@@ -7704,21 +7505,21 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </div>
 </div>
 <form action="/checkout/cart/add/product" class="flex mb-0 mt-1" method="post" onsubmit="customEvent('add-to-cart', { event: event })">
-<input name="product[product_id]" type="hidden" value="790613">
+<input name="product[product_id]" type="hidden" value="790617">
 <input name="options[PrescriptionType]" type="hidden" value="0"/>
 <div class="flex justify-center items-center form-control form-quantity-select w-full">
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepDown',
-                    input_id: '628b3ae178319',
+                    input_id: '628be9d3df6e8',
                 })">
                 -
             </button>
-<input :step="1" class="border-0 w-full text-center" id="628b3ae178319" min="1" name="product[quantity]" required="" type="number" value="1"/>
+<input :step="1" class="border-0 w-full text-center" id="628be9d3df6e8" min="1" name="product[quantity]" required="" type="number" value="1"/>
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepUp',
-                    input_id: '628b3ae178319',
+                    input_id: '628be9d3df6e8',
                 })">
                 +
             </button>
@@ -7730,7 +7531,208 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </button>
 </input></form>
 </div>
-<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628b3ae17720f_loading">
+<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628be9d3dea19_loading">
+<svg class="loading" version="1.1" viewbox="0 0 80 80" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px"> <path d="M40,72C22.4,72,8,57.6,8,40C8,22.4, 22.4,8,40,8c17.6,0,32,14.4,32,32c0,1.1-0.9,2-2,2 s-2-0.9-2-2c0-15.4-12.6-28-28-28S12,24.6,12,40s12.6,28,28,28c1.1,0,2,0.9,2,2S41.1,72,40,72z" id="spinner"></path></svg>
+</div>
+</article>
+</div>
+<div class="product-box-wrapper flex mb-4 w-full px-2 sm:w-1/2 md:w-1/3">
+<article class="product-box" data-product="766885" data-render-id="628be9d3e075e">
+<cg-notepad-star :product-id="766885" class="mb-2" v-slot="slotProps">
+<div class="notepad-star">
+<button @click.prevent="slotProps.toggle" class="text-primary text-lg no-underline block mb-1">
+<div v-if="slotProps.isStared">
+<figure class="text-inherit">
+<svg class="fill-current w-2 h-2" viewbox="0 0 22.5 20.25" xmlns="http://www.w3.org/2000/svg">
+<path d="M11.25,20.25A.76.76,0,0,1,10.7,20L1.75,10.49A6.26,6.26,0,0,1,.63,3.41a6,6,0,0,1,9.69-1.6l.93.89.94-.91a6,6,0,0,1,8.46-.09,5.93,5.93,0,0,1,1.22,1.71,6.24,6.24,0,0,1-1.13,7.08L11.8,20A.76.76,0,0,1,11.25,20.25Z"></path>
+</svg>
+</figure> </div>
+<div v-else="">
+<figure class="text-inherit">
+<svg class="fill-current w-2 h-2" viewbox="0 0 22.51 20.25" xmlns="http://www.w3.org/2000/svg">
+<path d="M11.25,20.25A.77.77,0,0,1,10.7,20L1.75,10.49A6.24,6.24,0,0,1,.64,3.41a6,6,0,0,1,8-2.82,5.75,5.75,0,0,1,1.71,1.22l.92.9.94-.92a6,6,0,0,1,8.46-.09,5.75,5.75,0,0,1,1.22,1.71,6.23,6.23,0,0,1-1.13,7.08L11.8,20A.76.76,0,0,1,11.25,20.25ZM6,1.5A4.49,4.49,0,0,0,2,4.06a4.75,4.75,0,0,0,.85,5.39l8.41,9,8.4-8.94a4.77,4.77,0,0,0,.87-5.4,4.49,4.49,0,0,0-7.27-1.2L11.77,4.29a.75.75,0,0,1-1,0L9.27,2.88A4.59,4.59,0,0,0,8,1.94,4.43,4.43,0,0,0,6,1.5Z"></path>
+</svg>
+</figure>
+</div>
+</button>
+</div>
+</cg-notepad-star>
+<a class="product-box__image-wrapper relative flex justify-center pb-2" href="/artikel/sparset-wundheilung-2x-bepanthen-wund-und-heilsalbe-08000507.html" title="Sparset Wundheilung - 2x BEPANTHEN Wund- und Heilsalbe">
+<div class="bg-red text-white w-5 h-5 flex flex-col justify-between text-center leading-none absolute right-0 top-0 -mt-1 mr-1 z-10 rounded-full">
+<span class="font-bold text-base tracking-tight mt-auto">21 %</span>
+<span class="text-xs mb-auto">gespart <sup>4</sup></span>
+</div>
+<figure class="product-box__image">
+<img alt="Sparset Wundheilung - 2x BEPANTHEN Wund- und Heilsalbe" class="h-full w-full object-contain" src="/documents/products/Listenansicht/Bepanthen 100g Set.jpg?ver=1649058523"/>
+</figure>
+</a>
+<div class="product-box__meta">
+<a class="pb-2 block" href="/artikel/sparset-wundheilung-2x-bepanthen-wund-und-heilsalbe-08000507.html">
+<h1 class="product-box__title">Sparset Wundheilung - 2x BEPANTHEN Wund- und Heilsalbe</h1>
+</a>
+<ul class="list-reset leading-normal mb-3">
+<li>
+                                Packungsgröße
+                                100 g
+                            </li>
+<li>Artikelnummer: 08000507</li>
+<div class="my-3">
+<div data-deliverytime="766885">
+<span class="flex items-center">
+<img class="flex-shrink-0 mr-2" src="/documents/delivery_times/green.png"><br/>
+<span class="text-xs">
+                            Sofort lieferbar
+                    </span>
+</img></span>
+</div>
+</div>
+</ul>
+</div>
+<div class="h-6">
+<div class="flex items-end mb-1">
+<span class="text-lg mr-2 text-primary whitespace-nowrap">
+                                                                                                                            nur
+                                        <span data-price="766885">25,95 €</span>
+<sup>2</sup>
+</span>
+<span class="text-sm text-grey line-through">
+                                                        UVP¹                                    32,96 €
+                                
+                </span>
+</div>
+</div>
+<div class="mt-auto">
+<div class="bg-gray-100">
+<div class="form-input bg-transparent border-0">
+                                100 g
+                            </div>
+</div>
+<form action="/checkout/cart/add/product" class="flex mb-0 mt-1" method="post" onsubmit="customEvent('add-to-cart', { event: event })">
+<input name="product[product_id]" type="hidden" value="766885">
+<input name="options[PrescriptionType]" type="hidden" value="0"/>
+<div class="flex justify-center items-center form-control form-quantity-select w-full">
+<button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
+                    event: event,
+                    action: 'stepDown',
+                    input_id: '628be9d3e1518',
+                })">
+                -
+            </button>
+<input :step="1" class="border-0 w-full text-center" id="628be9d3e1518" min="1" name="product[quantity]" required="" type="number" value="1"/>
+<button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
+                    event: event,
+                    action: 'stepUp',
+                    input_id: '628be9d3e1518',
+                })">
+                +
+            </button>
+</div>
+<button aria-label="Zum Warenkorb hinzufügen" class="flex justify-center items-center px-2 py-1 text-xl product-box__tocart text-primary hover:bg-primary hover:text-white" name="refresh_submit" type="submit">
+<svg aria-hidden="true" fill="currentColor" height="20" viewbox="0 0 20 20" width="20" xmlns="http://www.w3.org/2000/svg">
+<path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path>
+</svg>
+</button>
+</input></form>
+</div>
+<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628be9d3e075e_loading">
+<svg class="loading" version="1.1" viewbox="0 0 80 80" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px"> <path d="M40,72C22.4,72,8,57.6,8,40C8,22.4, 22.4,8,40,8c17.6,0,32,14.4,32,32c0,1.1-0.9,2-2,2 s-2-0.9-2-2c0-15.4-12.6-28-28-28S12,24.6,12,40s12.6,28,28,28c1.1,0,2,0.9,2,2S41.1,72,40,72z" id="spinner"></path></svg>
+</div>
+</article>
+</div>
+<div class="product-box-wrapper flex mb-4 w-full px-2 sm:w-1/2 md:w-1/3">
+<article class="product-box" data-product="790605" data-render-id="628be9d3e257d">
+<cg-notepad-star :product-id="790605" class="mb-2" v-slot="slotProps">
+<div class="notepad-star">
+<button @click.prevent="slotProps.toggle" class="text-primary text-lg no-underline block mb-1">
+<div v-if="slotProps.isStared">
+<figure class="text-inherit">
+<svg class="fill-current w-2 h-2" viewbox="0 0 22.5 20.25" xmlns="http://www.w3.org/2000/svg">
+<path d="M11.25,20.25A.76.76,0,0,1,10.7,20L1.75,10.49A6.26,6.26,0,0,1,.63,3.41a6,6,0,0,1,9.69-1.6l.93.89.94-.91a6,6,0,0,1,8.46-.09,5.93,5.93,0,0,1,1.22,1.71,6.24,6.24,0,0,1-1.13,7.08L11.8,20A.76.76,0,0,1,11.25,20.25Z"></path>
+</svg>
+</figure> </div>
+<div v-else="">
+<figure class="text-inherit">
+<svg class="fill-current w-2 h-2" viewbox="0 0 22.51 20.25" xmlns="http://www.w3.org/2000/svg">
+<path d="M11.25,20.25A.77.77,0,0,1,10.7,20L1.75,10.49A6.24,6.24,0,0,1,.64,3.41a6,6,0,0,1,8-2.82,5.75,5.75,0,0,1,1.71,1.22l.92.9.94-.92a6,6,0,0,1,8.46-.09,5.75,5.75,0,0,1,1.22,1.71,6.23,6.23,0,0,1-1.13,7.08L11.8,20A.76.76,0,0,1,11.25,20.25ZM6,1.5A4.49,4.49,0,0,0,2,4.06a4.75,4.75,0,0,0,.85,5.39l8.41,9,8.4-8.94a4.77,4.77,0,0,0,.87-5.4,4.49,4.49,0,0,0-7.27-1.2L11.77,4.29a.75.75,0,0,1-1,0L9.27,2.88A4.59,4.59,0,0,0,8,1.94,4.43,4.43,0,0,0,6,1.5Z"></path>
+</svg>
+</figure>
+</div>
+</button>
+</div>
+</cg-notepad-star>
+<a class="product-box__image-wrapper relative flex justify-center pb-2" href="/artikel/sparset-mueckenschutz-behandlung-anti-brumm-forte-pumpzerstaeuber-75-ml-soventol-anti-juck-stift-gel-4-ml-08000545.html" title="Sparset Mückenschutz- &amp; Behandlung - ANTI-BRUMM forte Pumpzerstäuber 75 ml + SOVENTOL Anti-Juck Stift Gel 4 ml">
+<div class="bg-red text-white w-5 h-5 flex flex-col justify-between text-center leading-none absolute right-0 top-0 -mt-1 mr-1 z-10 rounded-full">
+<span class="font-bold text-base tracking-tight mt-auto">5 %</span>
+<span class="text-xs mb-auto">gespart <sup>4</sup></span>
+</div>
+<figure class="product-box__image">
+<img alt="Sparset Mückenschutz- &amp; Behandlung - ANTI-BRUMM forte Pumpzerstäuber 75 ml + SOVENTOL Anti-Juck Stift Gel 4 ml" class="h-full w-full object-contain" src="/documents/products/Listenansicht/Mückenset Antibrumm 75 Soventol Stift.png?ver=1649058523"/>
+</figure>
+</a>
+<div class="product-box__meta">
+<a class="pb-2 block" href="/artikel/sparset-mueckenschutz-behandlung-anti-brumm-forte-pumpzerstaeuber-75-ml-soventol-anti-juck-stift-gel-4-ml-08000545.html">
+<h1 class="product-box__title">Sparset Mückenschutz- &amp; Behandlung - ANTI-BRUMM forte Pumpzerstäuber 75 ml + SOVENTOL Anti-Juck Stift Gel 4 ml</h1>
+</a>
+<ul class="list-reset leading-normal mb-3">
+<li>Artikelnummer: 08000545</li>
+<div class="my-3">
+<div data-deliverytime="790605">
+<span class="flex items-center">
+<img class="flex-shrink-0 mr-2" src="/documents/delivery_times/green.png"><br/>
+<span class="text-xs">
+                            Sofort lieferbar
+                    </span>
+</img></span>
+</div>
+</div>
+</ul>
+</div>
+<div class="h-6">
+<div class="flex items-end mb-1">
+<span class="text-lg mr-2 text-primary whitespace-nowrap">
+                                                                                                                            nur
+                                        <span data-price="790605">16,95 €</span>
+<sup>2</sup>
+</span>
+<span class="text-sm text-grey line-through">
+                                                        UVP¹                                    17,90 €
+                                
+                </span>
+</div>
+</div>
+<div class="mt-auto">
+<div class="bg-gray-100">
+<div class="form-input bg-transparent border-0">
+</div>
+</div>
+<form action="/checkout/cart/add/product" class="flex mb-0 mt-1" method="post" onsubmit="customEvent('add-to-cart', { event: event })">
+<input name="product[product_id]" type="hidden" value="790605">
+<input name="options[PrescriptionType]" type="hidden" value="0"/>
+<div class="flex justify-center items-center form-control form-quantity-select w-full">
+<button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
+                    event: event,
+                    action: 'stepDown',
+                    input_id: '628be9d3e319b',
+                })">
+                -
+            </button>
+<input :step="1" class="border-0 w-full text-center" id="628be9d3e319b" min="1" name="product[quantity]" required="" type="number" value="1"/>
+<button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
+                    event: event,
+                    action: 'stepUp',
+                    input_id: '628be9d3e319b',
+                })">
+                +
+            </button>
+</div>
+<button aria-label="Zum Warenkorb hinzufügen" class="flex justify-center items-center px-2 py-1 text-xl product-box__tocart text-primary hover:bg-primary hover:text-white" name="refresh_submit" type="submit">
+<svg aria-hidden="true" fill="currentColor" height="20" viewbox="0 0 20 20" width="20" xmlns="http://www.w3.org/2000/svg">
+<path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path>
+</svg>
+</button>
+</input></form>
+</div>
+<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628be9d3e257d_loading">
 <svg class="loading" version="1.1" viewbox="0 0 80 80" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px"> <path d="M40,72C22.4,72,8,57.6,8,40C8,22.4, 22.4,8,40,8c17.6,0,32,14.4,32,32c0,1.1-0.9,2-2,2 s-2-0.9-2-2c0-15.4-12.6-28-28-28S12,24.6,12,40s12.6,28,28,28c1.1,0,2,0.9,2,2S41.1,72,40,72z" id="spinner"></path></svg>
 </div>
 </article>
@@ -7739,7 +7741,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 <div class="hl-3">Neuheiten</div>
 <div class="product-grid flex flex-wrap -mx-2">
 <div class="product-box-wrapper flex mb-4 w-full px-2 sm:w-1/2 md:w-1/3">
-<article class="product-box" data-product="823087" data-render-id="628b3ae178eda">
+<article class="product-box" data-product="823087" data-render-id="628be9d3e3d9f">
 <cg-notepad-star :product-id="823087" class="mb-2" v-slot="slotProps">
 <div class="notepad-star">
 <button @click.prevent="slotProps.toggle" class="text-primary text-lg no-underline block mb-1">
@@ -7820,15 +7822,15 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepDown',
-                    input_id: '628b3ae179b5d',
+                    input_id: '628be9d3e4ac3',
                 })">
                 -
             </button>
-<input :step="1" class="border-0 w-full text-center" id="628b3ae179b5d" min="1" name="product[quantity]" required="" type="number" value="1"/>
+<input :step="1" class="border-0 w-full text-center" id="628be9d3e4ac3" min="1" name="product[quantity]" required="" type="number" value="1"/>
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepUp',
-                    input_id: '628b3ae179b5d',
+                    input_id: '628be9d3e4ac3',
                 })">
                 +
             </button>
@@ -7840,13 +7842,13 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </button>
 </input></form>
 </div>
-<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628b3ae178eda_loading">
+<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628be9d3e3d9f_loading">
 <svg class="loading" version="1.1" viewbox="0 0 80 80" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px"> <path d="M40,72C22.4,72,8,57.6,8,40C8,22.4, 22.4,8,40,8c17.6,0,32,14.4,32,32c0,1.1-0.9,2-2,2 s-2-0.9-2-2c0-15.4-12.6-28-28-28S12,24.6,12,40s12.6,28,28,28c1.1,0,2,0.9,2,2S41.1,72,40,72z" id="spinner"></path></svg>
 </div>
 </article>
 </div>
 <div class="product-box-wrapper flex mb-4 w-full px-2 sm:w-1/2 md:w-1/3">
-<article class="product-box" data-product="779949" data-render-id="628b3ae17ae6b">
+<article class="product-box" data-product="779949" data-render-id="628be9d3e5c9c">
 <cg-notepad-star :product-id="779949" class="mb-2" v-slot="slotProps">
 <div class="notepad-star">
 <button @click.prevent="slotProps.toggle" class="text-primary text-lg no-underline block mb-1">
@@ -7919,8 +7921,8 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 <select class="form-select border-0 bg-transparent w-full" onchange="customEvent('package-size-selector', {
                                     url: 'https://www.apotree.de/_fragment/products/placeholder',
                                     product_id: this.value,
-                                    render_id: '628b3ae17ae6b',
-                                    loading_id: '628b3ae17ae6b_loading'
+                                    render_id: '628be9d3e5c9c',
+                                    loading_id: '628be9d3e5c9c_loading'
                                     })">
 <option selected="selected" value="779949">
                                     60 St
@@ -7937,15 +7939,15 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepDown',
-                    input_id: '628b3ae17c7ce',
+                    input_id: '628be9d3e7224',
                 })">
                 -
             </button>
-<input :max="3" :step="1" class="border-0 w-full text-center" id="628b3ae17c7ce" min="1" name="product[quantity]" required="" type="number" value="1"/>
+<input :max="3" :step="1" class="border-0 w-full text-center" id="628be9d3e7224" min="1" name="product[quantity]" required="" type="number" value="1"/>
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepUp',
-                    input_id: '628b3ae17c7ce',
+                    input_id: '628be9d3e7224',
                 })">
                 +
             </button>
@@ -7957,13 +7959,13 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </button>
 </input></form>
 </div>
-<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628b3ae17ae6b_loading">
+<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628be9d3e5c9c_loading">
 <svg class="loading" version="1.1" viewbox="0 0 80 80" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px"> <path d="M40,72C22.4,72,8,57.6,8,40C8,22.4, 22.4,8,40,8c17.6,0,32,14.4,32,32c0,1.1-0.9,2-2,2 s-2-0.9-2-2c0-15.4-12.6-28-28-28S12,24.6,12,40s12.6,28,28,28c1.1,0,2,0.9,2,2S41.1,72,40,72z" id="spinner"></path></svg>
 </div>
 </article>
 </div>
 <div class="product-box-wrapper flex mb-4 w-full px-2 sm:w-1/2 md:w-1/3">
-<article class="product-box" data-product="822737" data-render-id="628b3ae17d3a6">
+<article class="product-box" data-product="822737" data-render-id="628be9d3e7d8e">
 <cg-notepad-star :product-id="822737" class="mb-2" v-slot="slotProps">
 <div class="notepad-star">
 <button @click.prevent="slotProps.toggle" class="text-primary text-lg no-underline block mb-1">
@@ -8044,15 +8046,15 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepDown',
-                    input_id: '628b3ae17e4a3',
+                    input_id: '628be9d3e8b7f',
                 })">
                 -
             </button>
-<input :step="1" class="border-0 w-full text-center" id="628b3ae17e4a3" min="1" name="product[quantity]" required="" type="number" value="1"/>
+<input :step="1" class="border-0 w-full text-center" id="628be9d3e8b7f" min="1" name="product[quantity]" required="" type="number" value="1"/>
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepUp',
-                    input_id: '628b3ae17e4a3',
+                    input_id: '628be9d3e8b7f',
                 })">
                 +
             </button>
@@ -8064,13 +8066,13 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </button>
 </input></form>
 </div>
-<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628b3ae17d3a6_loading">
+<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628be9d3e7d8e_loading">
 <svg class="loading" version="1.1" viewbox="0 0 80 80" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px"> <path d="M40,72C22.4,72,8,57.6,8,40C8,22.4, 22.4,8,40,8c17.6,0,32,14.4,32,32c0,1.1-0.9,2-2,2 s-2-0.9-2-2c0-15.4-12.6-28-28-28S12,24.6,12,40s12.6,28,28,28c1.1,0,2,0.9,2,2S41.1,72,40,72z" id="spinner"></path></svg>
 </div>
 </article>
 </div>
 <div class="product-box-wrapper flex mb-4 w-full px-2 sm:w-1/2 md:w-1/3">
-<article class="product-box" data-product="825946" data-render-id="628b3ae17fa05">
+<article class="product-box" data-product="825946" data-render-id="628be9d3ea1e2">
 <cg-notepad-star :product-id="825946" class="mb-2" v-slot="slotProps">
 <div class="notepad-star">
 <button @click.prevent="slotProps.toggle" class="text-primary text-lg no-underline block mb-1">
@@ -8151,15 +8153,15 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepDown',
-                    input_id: '628b3ae1811b0',
+                    input_id: '628be9d3eb4f4',
                 })">
                 -
             </button>
-<input :step="1" class="border-0 w-full text-center" id="628b3ae1811b0" min="1" name="product[quantity]" required="" type="number" value="1"/>
+<input :step="1" class="border-0 w-full text-center" id="628be9d3eb4f4" min="1" name="product[quantity]" required="" type="number" value="1"/>
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepUp',
-                    input_id: '628b3ae1811b0',
+                    input_id: '628be9d3eb4f4',
                 })">
                 +
             </button>
@@ -8171,13 +8173,13 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </button>
 </input></form>
 </div>
-<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628b3ae17fa05_loading">
+<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628be9d3ea1e2_loading">
 <svg class="loading" version="1.1" viewbox="0 0 80 80" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px"> <path d="M40,72C22.4,72,8,57.6,8,40C8,22.4, 22.4,8,40,8c17.6,0,32,14.4,32,32c0,1.1-0.9,2-2,2 s-2-0.9-2-2c0-15.4-12.6-28-28-28S12,24.6,12,40s12.6,28,28,28c1.1,0,2,0.9,2,2S41.1,72,40,72z" id="spinner"></path></svg>
 </div>
 </article>
 </div>
 <div class="product-box-wrapper flex mb-4 w-full px-2 sm:w-1/2 md:w-1/3">
-<article class="product-box" data-product="810755" data-render-id="628b3ae1820af">
+<article class="product-box" data-product="810755" data-render-id="628be9d3ec1a7">
 <cg-notepad-star :product-id="810755" class="mb-2" v-slot="slotProps">
 <div class="notepad-star">
 <button @click.prevent="slotProps.toggle" class="text-primary text-lg no-underline block mb-1">
@@ -8250,15 +8252,15 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepDown',
-                    input_id: '628b3ae182fb3',
+                    input_id: '628be9d3ece76',
                 })">
                 -
             </button>
-<input :step="1" class="border-0 w-full text-center" id="628b3ae182fb3" min="1" name="product[quantity]" required="" type="number" value="1"/>
+<input :step="1" class="border-0 w-full text-center" id="628be9d3ece76" min="1" name="product[quantity]" required="" type="number" value="1"/>
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepUp',
-                    input_id: '628b3ae182fb3',
+                    input_id: '628be9d3ece76',
                 })">
                 +
             </button>
@@ -8270,13 +8272,13 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </button>
 </input></form>
 </div>
-<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628b3ae1820af_loading">
+<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628be9d3ec1a7_loading">
 <svg class="loading" version="1.1" viewbox="0 0 80 80" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px"> <path d="M40,72C22.4,72,8,57.6,8,40C8,22.4, 22.4,8,40,8c17.6,0,32,14.4,32,32c0,1.1-0.9,2-2,2 s-2-0.9-2-2c0-15.4-12.6-28-28-28S12,24.6,12,40s12.6,28,28,28c1.1,0,2,0.9,2,2S41.1,72,40,72z" id="spinner"></path></svg>
 </div>
 </article>
 </div>
 <div class="product-box-wrapper flex mb-4 w-full px-2 sm:w-1/2 md:w-1/3">
-<article class="product-box" data-product="821731" data-render-id="628b3ae184207">
+<article class="product-box" data-product="821731" data-render-id="628be9d3ee200">
 <cg-notepad-star :product-id="821731" class="mb-2" v-slot="slotProps">
 <div class="notepad-star">
 <button @click.prevent="slotProps.toggle" class="text-primary text-lg no-underline block mb-1">
@@ -8357,15 +8359,15 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepDown',
-                    input_id: '628b3ae18555d',
+                    input_id: '628be9d3ef6ba',
                 })">
                 -
             </button>
-<input :step="1" class="border-0 w-full text-center" id="628b3ae18555d" min="1" name="product[quantity]" required="" type="number" value="1"/>
+<input :step="1" class="border-0 w-full text-center" id="628be9d3ef6ba" min="1" name="product[quantity]" required="" type="number" value="1"/>
 <button class="px-2 text-xl" onclick="customEvent('quantity-picker', {
                     event: event,
                     action: 'stepUp',
-                    input_id: '628b3ae18555d',
+                    input_id: '628be9d3ef6ba',
                 })">
                 +
             </button>
@@ -8377,7 +8379,7 @@ html[debug-shoptext=true] [debug="shoptext"]:hover::after {
 </button>
 </input></form>
 </div>
-<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628b3ae184207_loading">
+<div class="absolute top-0 left-0 w-full h-full transparency flex justify-center items-center hidden" data-render-id="628be9d3ee200_loading">
 <svg class="loading" version="1.1" viewbox="0 0 80 80" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px"> <path d="M40,72C22.4,72,8,57.6,8,40C8,22.4, 22.4,8,40,8c17.6,0,32,14.4,32,32c0,1.1-0.9,2-2,2 s-2-0.9-2-2c0-15.4-12.6-28-28-28S12,24.6,12,40s12.6,28,28,28c1.1,0,2,0.9,2,2S41.1,72,40,72z" id="spinner"></path></svg>
 </div>
 </article>

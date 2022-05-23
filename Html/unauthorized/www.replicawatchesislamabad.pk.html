@@ -13,94 +13,94 @@
 <link href="//fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet" type="text/css"/>
 <link href="http://replicawatchesislamabad.pk/media/favicon/stores/25/favicon_1.ico" rel="icon" type="image/x-icon"/>
 <link href="http://replicawatchesislamabad.pk/media/favicon/stores/25/favicon_1.ico" rel="shortcut icon" type="image/x-icon"/>
-<link href="//fonts.googleapis.com/css?family=Open+Sans%3A300%2C300italic%2C400%2C400italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic&amp;v1&amp;subset=latin%2Clatin-ext" media="screen" rel="stylesheet" type="text/css"/> <link href="//fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet"/><link href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet"/><link href="//fonts.googleapis.com/css?family=Open+Sans%3A300%2C300italic%2C400%2C400italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic&amp;v1&amp;subset=latin%2Clatin-ext" media="screen" rel="stylesheet" type="text/css"> <link href="http://replicawatchesislamabad.pk/media/porto/web/bootstrap/css/bootstrap.optimized.min.css" media="all" rel="stylesheet" type="text/css"/> <link href="http://replicawatchesislamabad.pk/media/porto/web/css/animate.optimized.css" media="all" rel="stylesheet" type="text/css"/> <link href="http://replicawatchesislamabad.pk/media/porto/web/css/header/type2.css" media="all" rel="stylesheet" type="text/css"/><link href="http://replicawatchesislamabad.pk/media/porto/web/css/custom.css" media="all" rel="stylesheet" type="text/css"/><link href="http://replicawatchesislamabad.pk/media/porto/configed_css/design_replicawatchesislamabad_pk.css" media="all" rel="stylesheet" type="text/css"/><link href="http://replicawatchesislamabad.pk/media/porto/configed_css/settings_replicawatchesislamabad_pk.css" media="all" rel="stylesheet" type="text/css"/><script type="text/javascript">
-var porto_config = {
-    paths: {
-        'parallax': 'js/jquery.parallax.min',
-        'owlcarousel': 'owl.carousel/owl.carousel',
-        'owlcarousel_thumbs': 'owl.carousel/owl.carousel2.thumbs',
-        'imagesloaded': 'Smartwave_Porto/js/imagesloaded',
-        'packery': 'Smartwave_Porto/js/packery.pkgd',
-        'floatelement': 'js/jquery.floatelement'
-    },
-    shim: {
-        'parallax': {
-          deps: ['jquery']
-        },
-        'owlcarousel': {
-          deps: ['jquery']
-        },        
-        'owlcarousel_thumbs': {
-          deps: ['jquery','owlcarousel']
-        },    
-        'packery': {
-          deps: ['jquery','imagesloaded']
-        },
-        'floatelement': {
-          deps: ['jquery']
-        }
-    }
-};
-
-require.config(porto_config);</script><script type="text/javascript">
-require([
-    'jquery'
-], function ($) {
-    $(document).ready(function(){
-        $(".drop-menu > a").off("click").on("click", function(){
-            if($(this).parent().children(".nav-sections").hasClass("visible")) {
-                $(this).parent().children(".nav-sections").removeClass("visible");
-                $(this).removeClass("active");
-            }
-            else {
-                $(this).parent().children(".nav-sections").addClass("visible");
-                $(this).addClass("active");
-            }
-        });
-    });
-    var scrolled = false;
-    $(window).scroll(function(){
-        if(!$('.page-header').hasClass('type10')) {
-            if($(window).width()>=768){
-                if(160<$(window).scrollTop() && !scrolled){
-                    $('.page-header:not(.sticky-header)').css("height",$('.page-header:not(.sticky-header)').height()+'px');
-                    $('.page-header').addClass("sticky-header");
-                    scrolled = true;
-                    if((!$(".page-header").hasClass("type12")) && (!$(".page-header").hasClass("type23")) && (!$(".page-header").hasClass("type25")) && (!$(".page-header").hasClass("type26"))) {
-                        $('.page-header .minicart-wrapper').after('<div class="minicart-place hide"></div>');
-
-                        if($(".page-header").hasClass("type2"))
-                            $('.page-header .navigation').append($('header.page-header.type2 a.action.my-wishlist').detach());
-
-                        var minicart = $('.page-header .minicart-wrapper').detach();
-                        if($(".page-header").hasClass("type8"))
-                            $('.page-header .menu-wrapper').append(minicart);
-                        else
-                            $('.page-header .navigation').append(minicart);
-                        
-                         } else {
-                         }
-                     }
-                if(160>=$(window).scrollTop() && scrolled){
-                    $('.page-header.sticky-header').css("height",'auto');
-                    $('.page-header').removeClass("sticky-header");
-                    scrolled = false;
-                    if((!$(".page-header").hasClass("type12")) && (!$(".page-header").hasClass("type23")) && (!$(".page-header").hasClass("type25")) && (!$(".page-header").hasClass("type26"))) {
-                        var minicart;
-                        if($(".page-header").hasClass("type8"))
-                            minicart = $('.page-header .menu-wrapper .minicart-wrapper').detach();
-                        else
-                            minicart = $('.page-header .navigation .minicart-wrapper').detach();
-                        $('.minicart-place').after(minicart);
-                        $('.minicart-place').remove();
-                        if($(".page-header").hasClass("type2"))
-                            $('.page-header .block.block-search').before($('.page-header .navigation a.action.my-wishlist').detach());
-                        $('.page-header .minicart-wrapper-moved').addClass("minicart-wrapper").removeClass("minicart-wrapper-moved").removeClass("hide");
-                    }
-                     }
-            }
-        }
-    });
+<link href="//fonts.googleapis.com/css?family=Open+Sans%3A300%2C300italic%2C400%2C400italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic&amp;v1&amp;subset=latin%2Clatin-ext" media="screen" rel="stylesheet" type="text/css"/> <link href="//fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet"/><link href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet"/><link href="//fonts.googleapis.com/css?family=Open+Sans%3A300%2C300italic%2C400%2C400italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic&amp;v1&amp;subset=latin%2Clatin-ext" media="screen" rel="stylesheet" type="text/css"> <link href="http://replicawatchesislamabad.pk/media/porto/web/bootstrap/css/bootstrap.optimized.min.css" media="all" rel="stylesheet" type="text/css"/> <link href="http://replicawatchesislamabad.pk/media/porto/web/css/animate.optimized.css" media="all" rel="stylesheet" type="text/css"/> <link href="http://replicawatchesislamabad.pk/media/porto/web/css/header/type2.css" media="all" rel="stylesheet" type="text/css"/><link href="http://replicawatchesislamabad.pk/media/porto/web/css/custom.css" media="all" rel="stylesheet" type="text/css"/><link href="http://replicawatchesislamabad.pk/media/porto/configed_css/design_replicawatchesislamabad_pk.css" media="all" rel="stylesheet" type="text/css"/><link href="http://replicawatchesislamabad.pk/media/porto/configed_css/settings_replicawatchesislamabad_pk.css" media="all" rel="stylesheet" type="text/css"/><script type="text/javascript">
+var porto_config = {
+    paths: {
+        'parallax': 'js/jquery.parallax.min',
+        'owlcarousel': 'owl.carousel/owl.carousel',
+        'owlcarousel_thumbs': 'owl.carousel/owl.carousel2.thumbs',
+        'imagesloaded': 'Smartwave_Porto/js/imagesloaded',
+        'packery': 'Smartwave_Porto/js/packery.pkgd',
+        'floatelement': 'js/jquery.floatelement'
+    },
+    shim: {
+        'parallax': {
+          deps: ['jquery']
+        },
+        'owlcarousel': {
+          deps: ['jquery']
+        },        
+        'owlcarousel_thumbs': {
+          deps: ['jquery','owlcarousel']
+        },    
+        'packery': {
+          deps: ['jquery','imagesloaded']
+        },
+        'floatelement': {
+          deps: ['jquery']
+        }
+    }
+};
+
+require.config(porto_config);</script><script type="text/javascript">
+require([
+    'jquery'
+], function ($) {
+    $(document).ready(function(){
+        $(".drop-menu > a").off("click").on("click", function(){
+            if($(this).parent().children(".nav-sections").hasClass("visible")) {
+                $(this).parent().children(".nav-sections").removeClass("visible");
+                $(this).removeClass("active");
+            }
+            else {
+                $(this).parent().children(".nav-sections").addClass("visible");
+                $(this).addClass("active");
+            }
+        });
+    });
+    var scrolled = false;
+    $(window).scroll(function(){
+        if(!$('.page-header').hasClass('type10')) {
+            if($(window).width()>=768){
+                if(160<$(window).scrollTop() && !scrolled){
+                    $('.page-header:not(.sticky-header)').css("height",$('.page-header:not(.sticky-header)').height()+'px');
+                    $('.page-header').addClass("sticky-header");
+                    scrolled = true;
+                    if((!$(".page-header").hasClass("type12")) && (!$(".page-header").hasClass("type23")) && (!$(".page-header").hasClass("type25")) && (!$(".page-header").hasClass("type26"))) {
+                        $('.page-header .minicart-wrapper').after('<div class="minicart-place hide"></div>');
+
+                        if($(".page-header").hasClass("type2"))
+                            $('.page-header .navigation').append($('header.page-header.type2 a.action.my-wishlist').detach());
+
+                        var minicart = $('.page-header .minicart-wrapper').detach();
+                        if($(".page-header").hasClass("type8"))
+                            $('.page-header .menu-wrapper').append(minicart);
+                        else
+                            $('.page-header .navigation').append(minicart);
+                        
+                         } else {
+                         }
+                     }
+                if(160>=$(window).scrollTop() && scrolled){
+                    $('.page-header.sticky-header').css("height",'auto');
+                    $('.page-header').removeClass("sticky-header");
+                    scrolled = false;
+                    if((!$(".page-header").hasClass("type12")) && (!$(".page-header").hasClass("type23")) && (!$(".page-header").hasClass("type25")) && (!$(".page-header").hasClass("type26"))) {
+                        var minicart;
+                        if($(".page-header").hasClass("type8"))
+                            minicart = $('.page-header .menu-wrapper .minicart-wrapper').detach();
+                        else
+                            minicart = $('.page-header .navigation .minicart-wrapper').detach();
+                        $('.minicart-place').after(minicart);
+                        $('.minicart-place').remove();
+                        if($(".page-header").hasClass("type2"))
+                            $('.page-header .block.block-search').before($('.page-header .navigation a.action.my-wishlist').detach());
+                        $('.page-header .minicart-wrapper-moved').addClass("minicart-wrapper").removeClass("minicart-wrapper-moved").removeClass("hide");
+                    }
+                     }
+            }
+        }
+    });
  });</script> <!-- BEGIN GOOGLE ANALYTICS CODE --><script type="text/x-magento-init">
 {
     "*": {
@@ -176,8 +176,8 @@ require([
                 }
             }
         }
-    }</script> <li><a href="http://replicawatchesislamabad.pk/contact">Contact Us</a></li> <li class="link authorization-link" data-label="or"><a href="https://replicawatchesislamabad.pk/customer/account/login/referer/aHR0cDovL3JlcGxpY2F3YXRjaGVzaXNsYW1hYmFkLnBrLw%2C%2C/">Sign In</a></li><li><a href="https://replicawatchesislamabad.pk/customer/account/create/" id="idk66cY2cg">Create an Account</a></li></ul></div></div></div></div></div><div class="header content"><span class="action nav-toggle" data-action="toggle-nav"><span>Toggle Nav</span></span> <strong class="logo" title="Watches in Pakistan"> <img alt="Watches in Pakistan" src="https://replicawatchesislamabad.pk/media/logo/stores/25/replicawatchesislamabad.pk-.jpg" width="170"/></strong> <div class="minicart-wrapper" data-block="minicart"><a class="action showcart" data-bind="scope: 'minicart_content'" href="https://replicawatchesislamabad.pk/checkout/cart/"><span class="text">Cart</span> <span class="counter qty empty" data-bind="css: { empty: !!getCartParam('summary_count') == false }, blockLoader: isLoading"><span class="counter-number"><!-- ko if: getCartParam('summary_count') --><!-- ko text: getCartParam('summary_count') --><!-- /ko --><!-- /ko --><!-- ko ifnot: getCartParam('summary_count') -->0<!-- /ko --></span> <span class="counter-label"><!-- ko i18n: 'items' --><!-- /ko --></span></span></a> <div class="block block-minicart empty" data-mage-init='{"dropdownDialog":{ "appendTo":"[data-block=minicart]", "triggerTarget":".showcart", "timeout": "2000", "closeOnMouseLeave": false, "closeOnEscape": true, "triggerClass":"active", "parentClass":"active", "buttons":[]}}' data-role="dropdownDialog"><div data-bind="scope: 'minicart_content'" id="minicart-content-wrapper"><!-- ko template: getTemplate() --><!-- /ko --></div></div> <script>
-        window.checkout = {"shoppingCartUrl":"https:\/\/replicawatchesislamabad.pk\/checkout\/cart\/","checkoutUrl":"https:\/\/replicawatchesislamabad.pk\/checkout\/","updateItemQtyUrl":"http:\/\/replicawatchesislamabad.pk\/checkout\/sidebar\/updateItemQty\/","removeItemUrl":"http:\/\/replicawatchesislamabad.pk\/checkout\/sidebar\/removeItem\/","imageTemplate":"Magento_Catalog\/product\/image_with_borders","baseUrl":"http:\/\/replicawatchesislamabad.pk\/","minicartMaxItemsVisible":5,"websiteId":"1","maxItemsToDisplay":10,"storeId":"25","storeGroupId":"1","customerLoginUrl":"https:\/\/replicawatchesislamabad.pk\/customer\/account\/login\/referer\/aHR0cDovL3JlcGxpY2F3YXRjaGVzaXNsYW1hYmFkLnBrLw%2C%2C\/","isRedirectRequired":true,"autocomplete":"on","captcha":{"user_login":{"isCaseSensitive":false,"imageHeight":50,"imageSrc":"","refreshUrl":"http:\/\/replicawatchesislamabad.pk\/captcha\/refresh\/","isRequired":false,"timestamp":1653291761}}};</script><script type="text/x-magento-init">
+    }</script> <li><a href="http://replicawatchesislamabad.pk/contact">Contact Us</a></li> <li class="link authorization-link" data-label="or"><a href="https://replicawatchesislamabad.pk/customer/account/login/referer/aHR0cDovL3JlcGxpY2F3YXRjaGVzaXNsYW1hYmFkLnBrLw%2C%2C/">Sign In</a></li><li><a href="https://replicawatchesislamabad.pk/customer/account/create/" id="idg2xZI7S8">Create an Account</a></li></ul></div></div></div></div></div><div class="header content"><span class="action nav-toggle" data-action="toggle-nav"><span>Toggle Nav</span></span> <strong class="logo" title="Watches in Pakistan"> <img alt="Watches in Pakistan" src="https://replicawatchesislamabad.pk/media/logo/stores/25/replicawatchesislamabad.pk-.jpg" width="170"/></strong> <div class="minicart-wrapper" data-block="minicart"><a class="action showcart" data-bind="scope: 'minicart_content'" href="https://replicawatchesislamabad.pk/checkout/cart/"><span class="text">Cart</span> <span class="counter qty empty" data-bind="css: { empty: !!getCartParam('summary_count') == false }, blockLoader: isLoading"><span class="counter-number"><!-- ko if: getCartParam('summary_count') --><!-- ko text: getCartParam('summary_count') --><!-- /ko --><!-- /ko --><!-- ko ifnot: getCartParam('summary_count') -->0<!-- /ko --></span> <span class="counter-label"><!-- ko i18n: 'items' --><!-- /ko --></span></span></a> <div class="block block-minicart empty" data-mage-init='{"dropdownDialog":{ "appendTo":"[data-block=minicart]", "triggerTarget":".showcart", "timeout": "2000", "closeOnMouseLeave": false, "closeOnEscape": true, "triggerClass":"active", "parentClass":"active", "buttons":[]}}' data-role="dropdownDialog"><div data-bind="scope: 'minicart_content'" id="minicart-content-wrapper"><!-- ko template: getTemplate() --><!-- /ko --></div></div> <script>
+        window.checkout = {"shoppingCartUrl":"https:\/\/replicawatchesislamabad.pk\/checkout\/cart\/","checkoutUrl":"https:\/\/replicawatchesislamabad.pk\/checkout\/","updateItemQtyUrl":"http:\/\/replicawatchesislamabad.pk\/checkout\/sidebar\/updateItemQty\/","removeItemUrl":"http:\/\/replicawatchesislamabad.pk\/checkout\/sidebar\/removeItem\/","imageTemplate":"Magento_Catalog\/product\/image_with_borders","baseUrl":"http:\/\/replicawatchesislamabad.pk\/","minicartMaxItemsVisible":5,"websiteId":"1","maxItemsToDisplay":10,"storeId":"25","storeGroupId":"1","customerLoginUrl":"https:\/\/replicawatchesislamabad.pk\/customer\/account\/login\/referer\/aHR0cDovL3JlcGxpY2F3YXRjaGVzaXNsYW1hYmFkLnBrLw%2C%2C\/","isRedirectRequired":true,"autocomplete":"on","captcha":{"user_login":{"isCaseSensitive":false,"imageHeight":50,"imageSrc":"","refreshUrl":"http:\/\/replicawatchesislamabad.pk\/captcha\/refresh\/","isRequired":false,"timestamp":1653336554}}};</script><script type="text/x-magento-init">
     {
         "[data-block='minicart']": {
             "Magento_Ui/js/core/app": {"components":{"minicart_content":{"children":{"subtotal.container":{"children":{"subtotal":{"children":{"subtotal.totals":{"config":{"display_cart_subtotal_incl_tax":0,"display_cart_subtotal_excl_tax":1,"template":"Magento_Tax\/checkout\/minicart\/subtotal\/totals"},"children":{"subtotal.totals.msrp":{"component":"Magento_Msrp\/js\/view\/checkout\/minicart\/subtotal\/totals","config":{"displayArea":"minicart-subtotal-hidden","template":"Magento_Msrp\/checkout\/minicart\/subtotal\/totals"}}},"component":"Magento_Tax\/js\/view\/checkout\/minicart\/subtotal\/totals"}},"component":"uiComponent","config":{"template":"Magento_Checkout\/minicart\/subtotal"}}},"component":"uiComponent","config":{"displayArea":"subtotalContainer"}},"item.renderer":{"component":"Magento_Checkout\/js\/view\/cart-item-renderer","config":{"displayArea":"defaultRenderer","template":"Magento_Checkout\/minicart\/item\/default"},"children":{"item.image":{"component":"Magento_Catalog\/js\/view\/image","config":{"template":"Magento_Catalog\/product\/image","displayArea":"itemImage"}},"checkout.cart.item.price.sidebar":{"component":"uiComponent","config":{"template":"Magento_Checkout\/minicart\/item\/price","displayArea":"priceSidebar"}}}},"extra_info":{"component":"uiComponent","config":{"displayArea":"extraInfo"}},"promotion":{"component":"uiComponent","config":{"displayArea":"promotion"}}},"config":{"itemRenderer":{"default":"defaultRenderer","simple":"defaultRenderer","virtual":"defaultRenderer"},"template":"Magento_Checkout\/minicart\/content"},"component":"Magento_Checkout\/js\/view\/minicart"}},"types":[]}        },
@@ -224,7 +224,7 @@ require([
                     }
                 }
             }
-    }</script></div><div class="columns"><div class="column main"><input name="form_key" type="hidden" value="AlsA2k3w7w9mpY2U"/> <div data-bind="scope:'authenticationPopup', style: {display: 'none'}" id="authenticationPopup"> <script>window.authenticationPopup = {"autocomplete":"on","customerRegisterUrl":"https:\/\/replicawatchesislamabad.pk\/customer\/account\/create\/","customerForgotPasswordUrl":"https:\/\/replicawatchesislamabad.pk\/customer\/account\/forgotpassword\/","baseUrl":"http:\/\/replicawatchesislamabad.pk\/"}</script> <!-- ko template: getTemplate() --><!-- /ko --><script type="text/x-magento-init">
+    }</script></div><div class="columns"><div class="column main"><input name="form_key" type="hidden" value="6RqYKUfrY1lsZfbA"/> <div data-bind="scope:'authenticationPopup', style: {display: 'none'}" id="authenticationPopup"> <script>window.authenticationPopup = {"autocomplete":"on","customerRegisterUrl":"https:\/\/replicawatchesislamabad.pk\/customer\/account\/create\/","customerForgotPasswordUrl":"https:\/\/replicawatchesislamabad.pk\/customer\/account\/forgotpassword\/","baseUrl":"http:\/\/replicawatchesislamabad.pk\/"}</script> <!-- ko template: getTemplate() --><!-- /ko --><script type="text/x-magento-init">
         {
             "#authenticationPopup": {
                 "Magento_Ui/js/core/app": {"components":{"authenticationPopup":{"component":"Vnecoms_Sms\/js\/account\/authentication-popup","children":{"messages":{"component":"Magento_Ui\/js\/view\/messages","displayArea":"messages"},"captcha":{"component":"Magento_Captcha\/js\/view\/checkout\/loginCaptcha","displayArea":"additional-login-form-fields","formId":"user_login","configSource":"checkout"}},"template":"Vnecoms_Sms\/account\/authentication-popup","initialCountry":"pk","geoIpUrl":"https:\/\/ipinfo.io","allowDropdown":"false","onlyCountries":false,"preferredCountries":["PK"]}}}            },
@@ -283,220 +283,220 @@ require([
                     "size": "compact"
                 }
             }
-        }</script> <style type="text/css">
-.page-main {
-    max-width: 100%;
-    padding: 0;
-}
-.columns .column.main {
-    padding: 0;
-}
-#banner-slider-demo-22 h5 {
-    font-size: 27px;
-    line-height: 1.2;
-    text-transform: uppercase;
-    font-weight: 400;
-    letter-spacing: -.01em;
-    margin: 0;
-    margin-bottom: 0;
-    color: #444;
-}
-#banner-slider-demo-22 h2 {
-    font-size: 60px;
-    line-height: 1.2;
-    text-transform: uppercase;
-    font-weight: 700;
-    letter-spacing: -.05em;
-    margin: 0;
-    margin-left: -3px;
-    margin-bottom: 7px;
-    color: #222529;
-}
-#banner-slider-demo-22 p {
-    margin: 0;
-}
-#banner-slider-demo-22 a.btn {
-    font-size: 16px;
-    font-weight: 600;
-    text-transform: uppercase;
-    color: #fff;
-    background-color: #222529;
-    margin-top: 30px;
-    padding: 20px 47px;
-}
-@media (max-width: 991px) {
-    #banner-slider-demo-22 h5 {
-        font-size: 20px;
-    }
-    #banner-slider-demo-22 h2 {
-        font-size: 36px;
-    }
-}
-.banner-container {
-    position: relative;
-}
-.banner-thumbs-container {
-    position: absolute;
-    width: 100%;
-    text-align: right;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 1;
-    pointer-events: none;
-}
-.owl-thumbs .owl-thumb-item {
-    display: block;
-    margin-left: auto;
-    border: 0;
-    background: transparent;
-    padding-right: 35px;
-    margin-bottom: 12px;
-    text-align: right;
-    color: #171f2f;
-    font-size: 17px;
-    white-space: nowrap;
-    font-weight: 600;
-    height: auto;
-    position: relative;
-    pointer-events: all;
-}
-.owl-thumbs .owl-thumb-item.active {
-    color: #ff6840;
-}
-.owl-thumbs .owl-thumb-item:after {
-    content: '';
-    position: absolute;
-    right: 0;
-    top: 50%;
-    border-top: 2px solid;
-    width: 16px;
-}
-.home-ads .porto-ibanner-desc {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: between;
-    justify-content: space-between;
-    -ms-flex-align: center;
-    align-items: center;
-    padding: 10px;
-    flex-direction: initial;
-}
-.home-ads .porto-ibanner-desc .porto-ibanner-title {
-    font-size: 35px;
-    line-height: 1.2;
-    padding-left: 30px;
-    max-width: 33.3333%;
-    -ms-flex: 0 0 33.3333%;
-    flex: 0 0 33.3333%;
-    text-align: left;
-    font-weight: 700;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -ms-flex-order: 2;
-    order: 2;
-    font-family: 'Open Sans';
-}
-.home-ads .porto-ibanner-desc .porto-ibanner-content {
-    padding-left: 40px;
-    flex-direction: column;
-    max-width: 33.3333%;
-    -ms-flex: 0 0 33.3333%;
-    flex: 0 0 33.3333%;
-    text-align: left;
-    font-weight: 700;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -ms-flex-order: 2;
-    order: 2;
-    font-size: 13px;
-    color: #222529;
-}
-.home-ads .porto-ibanner-desc .porto-ibanner-content h4 {
-    font-size: 16px;
-    margin: 0;
-    line-height: 19px;
-    font-weight: 700;
-    color: #444
-}
-.home-ads .porto-ibanner-desc .porto-ibanner-content h4 b {
-    font-size: 1.625em;
-    line-height: 1.5;
-    display: block;
-}
-.home-ads .porto-ibanner-desc .btn {
-    padding: 10px 20px;
-    background-color: #f4631b;
-    border: 0;
-    text-transform: uppercase;
-    text-shadow: none;
-    font-family: 'Open Sans';
-    letter-spacing: 0;
-    font-weight: 700;
-    margin-top: 15px;
-}
-.special-offers-section .product-item-photo > a {
-    display: block;
-    overflow: hidden;
-    padding-top: 75%;
-    position: relative;
-}
-.special-offers-section .product-item-photo > a > img {
-    object-fit: cover;
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-}
-.special-offers-section .product-item .product-reviews-summary {
-    display: none;
-}
-.special-offers-section .price-box {
-    margin-top: 5px;
-}
-@media (max-width: 575px) {
-    .home-ads .porto-ibanner-desc .porto-ibanner-title {
-        font-size: 23px;
-    }
-}
-@media (min-width: 768px) {
-    .filterproducts-tab .data.items > .item.title.active > a.data.switch {
-        border-bottom: 3px solid;
-    }
-    .filterproducts-tab .data.items > .item.title {
-        background: none;
-    }
-    .filterproducts-tab .data.items > .item.title > a.data.switch {
-        text-decoration: none;
-        border: 0;
-        padding: 0 22px 19px;
-        text-transform: none;
-        font-weight: 600;
-        display: block;
-        border-bottom: 3px solid transparent;
-    }
-    .filterproducts-tab .data.items > .item.content {
-        margin-top: 42px;
-        border-top: 1px solid rgba(0,0,0,0.08);
-        padding-top: 17px;
-    }
-    .filterproducts-tab .data.items {
-        background: none;
-    }
-}
-@media (max-width: 1220px) {
-.filterproducts-tab .data.items > .item.title > a.data.switch {
-    padding-left: 8px;
-    padding-right: 8px;
-}
-}
-.brands-slider .owl-carousel .owl-item img {
-    margin: 0 auto;
-}
+        }</script> <style type="text/css">
+.page-main {
+    max-width: 100%;
+    padding: 0;
+}
+.columns .column.main {
+    padding: 0;
+}
+#banner-slider-demo-22 h5 {
+    font-size: 27px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    margin: 0;
+    margin-bottom: 0;
+    color: #444;
+}
+#banner-slider-demo-22 h2 {
+    font-size: 60px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: -.05em;
+    margin: 0;
+    margin-left: -3px;
+    margin-bottom: 7px;
+    color: #222529;
+}
+#banner-slider-demo-22 p {
+    margin: 0;
+}
+#banner-slider-demo-22 a.btn {
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #222529;
+    margin-top: 30px;
+    padding: 20px 47px;
+}
+@media (max-width: 991px) {
+    #banner-slider-demo-22 h5 {
+        font-size: 20px;
+    }
+    #banner-slider-demo-22 h2 {
+        font-size: 36px;
+    }
+}
+.banner-container {
+    position: relative;
+}
+.banner-thumbs-container {
+    position: absolute;
+    width: 100%;
+    text-align: right;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    pointer-events: none;
+}
+.owl-thumbs .owl-thumb-item {
+    display: block;
+    margin-left: auto;
+    border: 0;
+    background: transparent;
+    padding-right: 35px;
+    margin-bottom: 12px;
+    text-align: right;
+    color: #171f2f;
+    font-size: 17px;
+    white-space: nowrap;
+    font-weight: 600;
+    height: auto;
+    position: relative;
+    pointer-events: all;
+}
+.owl-thumbs .owl-thumb-item.active {
+    color: #ff6840;
+}
+.owl-thumbs .owl-thumb-item:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    border-top: 2px solid;
+    width: 16px;
+}
+.home-ads .porto-ibanner-desc {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: between;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 10px;
+    flex-direction: initial;
+}
+.home-ads .porto-ibanner-desc .porto-ibanner-title {
+    font-size: 35px;
+    line-height: 1.2;
+    padding-left: 30px;
+    max-width: 33.3333%;
+    -ms-flex: 0 0 33.3333%;
+    flex: 0 0 33.3333%;
+    text-align: left;
+    font-weight: 700;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-order: 2;
+    order: 2;
+    font-family: 'Open Sans';
+}
+.home-ads .porto-ibanner-desc .porto-ibanner-content {
+    padding-left: 40px;
+    flex-direction: column;
+    max-width: 33.3333%;
+    -ms-flex: 0 0 33.3333%;
+    flex: 0 0 33.3333%;
+    text-align: left;
+    font-weight: 700;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-order: 2;
+    order: 2;
+    font-size: 13px;
+    color: #222529;
+}
+.home-ads .porto-ibanner-desc .porto-ibanner-content h4 {
+    font-size: 16px;
+    margin: 0;
+    line-height: 19px;
+    font-weight: 700;
+    color: #444
+}
+.home-ads .porto-ibanner-desc .porto-ibanner-content h4 b {
+    font-size: 1.625em;
+    line-height: 1.5;
+    display: block;
+}
+.home-ads .porto-ibanner-desc .btn {
+    padding: 10px 20px;
+    background-color: #f4631b;
+    border: 0;
+    text-transform: uppercase;
+    text-shadow: none;
+    font-family: 'Open Sans';
+    letter-spacing: 0;
+    font-weight: 700;
+    margin-top: 15px;
+}
+.special-offers-section .product-item-photo > a {
+    display: block;
+    overflow: hidden;
+    padding-top: 75%;
+    position: relative;
+}
+.special-offers-section .product-item-photo > a > img {
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+.special-offers-section .product-item .product-reviews-summary {
+    display: none;
+}
+.special-offers-section .price-box {
+    margin-top: 5px;
+}
+@media (max-width: 575px) {
+    .home-ads .porto-ibanner-desc .porto-ibanner-title {
+        font-size: 23px;
+    }
+}
+@media (min-width: 768px) {
+    .filterproducts-tab .data.items > .item.title.active > a.data.switch {
+        border-bottom: 3px solid;
+    }
+    .filterproducts-tab .data.items > .item.title {
+        background: none;
+    }
+    .filterproducts-tab .data.items > .item.title > a.data.switch {
+        text-decoration: none;
+        border: 0;
+        padding: 0 22px 19px;
+        text-transform: none;
+        font-weight: 600;
+        display: block;
+        border-bottom: 3px solid transparent;
+    }
+    .filterproducts-tab .data.items > .item.content {
+        margin-top: 42px;
+        border-top: 1px solid rgba(0,0,0,0.08);
+        padding-top: 17px;
+    }
+    .filterproducts-tab .data.items {
+        background: none;
+    }
+}
+@media (max-width: 1220px) {
+.filterproducts-tab .data.items > .item.title > a.data.switch {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+}
+.brands-slider .owl-carousel .owl-item img {
+    margin: 0 auto;
+}
 </style>
 <div class="banner-container">
 <div class="owl-carousel owl-banner-carousel" data-slider-id="1" id="banner-slider-demo-22">
@@ -560,33 +560,33 @@ require([
 </div>
 </div>
 </div>
-<script type="text/javascript">
-    require([
-        'jquery',
-        'owlcarousel',
-        'owlcarousel_thumbs'
-    ], function ($) {
-        var banner_owl = $("#banner-slider-demo-22");
-        banner_owl.owlCarousel({
-            items: 1,
-            autoplay: true,
-            autoplayTimeout: 5000,
-            autoplayHoverPause: true,
-            dots: false,
-            nav: false,
-            navRewind: true,
-            animateIn: 'fadeIn',
-            animateOut: 'fadeOut',
-            loop: true,
-            lazyLoad: true,
-            navText: ["<em class='porto-icon-chevron-left'></em>","<em class='porto-icon-chevron-right'></em>"],
-            thumbs: true,
-            thumbImage: false,
-            thumbsPrerendered: true,
-            thumbContainerClass: 'owl-thumbs',
-            thumbItemClass: 'owl-thumb-item'
-        });
-    });
+<script type="text/javascript">
+    require([
+        'jquery',
+        'owlcarousel',
+        'owlcarousel_thumbs'
+    ], function ($) {
+        var banner_owl = $("#banner-slider-demo-22");
+        banner_owl.owlCarousel({
+            items: 1,
+            autoplay: true,
+            autoplayTimeout: 5000,
+            autoplayHoverPause: true,
+            dots: false,
+            nav: false,
+            navRewind: true,
+            animateIn: 'fadeIn',
+            animateOut: 'fadeOut',
+            loop: true,
+            lazyLoad: true,
+            navText: ["<em class='porto-icon-chevron-left'></em>","<em class='porto-icon-chevron-right'></em>"],
+            thumbs: true,
+            thumbImage: false,
+            thumbsPrerendered: true,
+            thumbContainerClass: 'owl-thumbs',
+            thumbItemClass: 'owl-thumb-item'
+        });
+    });
     </script>
 </div>
 <div class="container" style="padding-top: 3.5vw;padding-bottom: 2.5vw;">

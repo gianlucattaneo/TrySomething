@@ -33,613 +33,613 @@
 <script src="catalog/view/theme/hypes/js/jquery.dcjqaccordion.js" type="text/javascript"></script>
 <script src="" type="text/javascript"></script>
 <script src="catalog/view/javascript/oc_resetimg.js" type="text/javascript"></script>
-<style type="text/css">
-
-/*  Body background color and pattern  */
-body {
-	background-color: #EBEBEB;
-	background-image: url("https://www.wohnmobil-autoglas.de/image/catalog/tshirts_body_bg_1.png"); ?>;
-	background-position: top center;
-	background-repeat: repeat;
-	background-attachment: fixed;
-}
-
-/*  Headings color  */
-h1, h2, h3, h4, h5, h6, .panel-default > .panel-heading, .product-thumb h4 a, #column-left .product-thumb h4 a, #column-right .product-thumb h4 a, .table > thead, .nav-tabs > li > a:hover, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, legend, #search .form-control, .product-right-sm-info span.p-title, .product-right-sm-related .name a {color: #000000;}
-#content h1::before, #content h2::before {border-bottom: 3px solid #6FA7A6;}
-#content h1, #content h2 {padding-bottom: 25px;}
-
-/*  Body text color  */
-body, #content .tab-content p, #content .product-right-sm-info .modal-body p, .product-buy ul.pf span {color: #616161;}
-
-/*  Light text color  */
-small, #content p, .breadcrumb a, .cat-description, .product-thumb .product_box_brand a, .product-buy ul.pf li, .product-buy ul.pp, .prev-name, .next-name, .product-right-sm-info span.p-subtitle, .product-right-sm-related .product_box_brand a, .box-category-home .subcat a, #content .product-right-sm-info .modal-body h1 + p, #features .modal-body h1 + p, .cookie-message, .alert-success, .alert-info, .dropdown-highlight {color: #8D8D8D;}
-
-/*  Links color  */
-a, a:focus, .list-group a {color: #616161;}
-
-/*  Links hover color  */
-a:hover, .breadcrumb a:hover, .dropdown-highlight:hover, .dropdown-highlight:focus, .box-category-home .subcat li:hover a, .table .btn, .table .btn-primary, .table .btn-primary:hover, .table .btn-primary:focus, .list-group a.active, .list-group a.active:hover, .list-group a:hover, .category-list .image:hover, .save-percent {color: #6FA7A6;}
-
-/*  Icons color  */
-.dr-menu > div .dr-icon i, .category-list i, #menu_brands .image i, .box-manufacturers-home .image i, #search .input-group-addon .btn, .accordion li.dcjq-parent-li > a + .dcjq-icon {color: #DBDBDB;}
-.owl-carousel .owl-buttons div {color: #DBDBDB!important;}
-
-/*  Icons hover color  */
-.dr-menu.dr-menu-open > div .dr-icon i, #search .input-group-addon .btn:hover, .up-theme-modal .modal-body .close, .product-right-sm-info span.p-icon i, .alert-success i, .alert-success .close, .alert-info i, .alert-info .close, .accordion li.dcjq-parent-li > a + .dcjq-icon:hover, .up-theme-gallery-content .gallery-hover-box i, .up-theme-modal-popup .modal-body .close {color: #6FA7A6;}
-.owl-carousel .owl-buttons div:hover, .mfp-close:hover {color: #6FA7A6!important;}
-#toTop {background-color: #6FA7A6;}
-
-/*  Wrapper Frame  */
-.wrapper.framed {background-color: #FFFFFF;}
-.wrapper.full-width-border {border: 34px solid #FFFFFF;}
-
-/*  Content Column  */
-#content, #content .panel-default > .panel-heading, #content .panel, .category-list + .panel-default > .panel-heading, #search .form-control, #search .input-group-addon, #search .input-group-addon .btn, #livesearch_search_results, .modal-content, .alert-success, .alert-info, .cookie-message, .custom_box {
-	background-color: #FFFFFF;
-}
-.product-filter, .dropdown-highlight {
-	background-color: #FFFFFF;
-}
-.product-filter, .pagination-box, #content .panel-default > .panel-heading, #product-tabs, #livesearch_search_results li, .modal-footer, .list-group a, .list-group a.active, .list-group a.active:hover, .list-group a:hover, a.list-group-item.active, a.list-group-item.active:hover, a.list-group-item.active:focus, .dr-menu ul li {
-    border-top: 1px solid #F6F6F6;	
-}	
-.product-filter, .modal-header, .box-category-home .subcat li {
-    border-bottom: 1px solid #F6F6F6;	
-}
-.well, .table-bordered, .table-bordered > thead > tr > th, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > tbody > tr > td, .table-bordered > tfoot > tr > td, .contact-map, .img-thumbnail-theme {
-    border: 1px solid #F6F6F6;	
-}
-hr, legend, #search .input-group-addon {
-	border-color: #F6F6F6;
-}
-.nav-tabs > li > a:hover, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus {
-    border-top: 1px solid #6FA7A6;	
-}
-
-/*  Left Column Heading  */
-#column-left .panel-heading  {	
-	background-color: #FFFFFF;
-}
-#column-left .panel-default > .panel-heading, #column-left .panel-default > .panel-heading h2 {color: #29323B;}
-	
-#column-left .panel-default > .panel-heading, #column-left .dr-menu.dr-menu-open > .panel-heading {
-	border-bottom: 1px solid #F6F6F6;
-}
-
-/*  Left Column Box  */
-#column-left .panel, #column-left .owl-carousel {
-	background-color: #FFFFFF;
-}
-#column-left a {color: #616161;}
-#column-left a:hover {color: #6FA7A6;}
-#column-left {color: #616161;} 
-#column-left .list-group a, #column-left .list-group a.active, #column-left .list-group a.active:hover, #column-left .list-group a:hover, #column-left .dr-menu ul li {border-top: 1px solid #F6F6F6;}
-#column-left .panel, #column-left .owl-carousel.carousel-module, #column-left .owl-carousel.banner-module {border-bottom: 1px solid #F6F6F6!important;}
-#column-left {border-right: 1px solid #F6F6F6;}
-
-
-/*  Right Column Heading  */
-#column-right .panel-heading  {
-	background-color: #FFFFFF;
-}
-#column-right .panel-default > .panel-heading, #column-right .panel-default > .panel-heading h2 {color: #29323B;}
-	
-#column-right .panel-default > .panel-heading, #column-right .dr-menu.dr-menu-open > .panel-heading  {
-	border-bottom: 1px solid #F6F6F6;
-}
-
-/*  Right Column Box  */
-#column-right .panel, #column-right .owl-carousel {
-	background-color: #FFFFFF;
-}
-#column-right a {color: #616161;}
-#column-right a:hover, #column-right .dr-menu > div .dr-icon i {color: #6FA7A6;}
-#column-right {color: #616161;}
-#column-right .list-group a, #column-right .list-group a.active, #column-right .list-group a.active:hover, #column-right .list-group a:hover, #column-right .dr-menu ul li {border-top: 1px solid #F6F6F6;}
-#column-right .panel, #column-right .owl-carousel.carousel-module, #column-right .owl-carousel.banner-module {border-bottom: 1px solid #F6F6F6!important;}
-#column-right {border-left: 1px solid #F6F6F6;}
-
-
-/*  Category Box Heading  */
-#column-left .panel-default.panel-category > .panel-heading, #column-right .panel-default.panel-category > .panel-heading {
-	background-color: #FFFFFF;
-    color: #29323B;
-	
-	border-bottom: 1px solid #F6F6F6;
-}
-
-/*  Category Box Content  */
-#column-left .panel-default.panel-category, #column-right .panel-default.panel-category {
-	background-color: #FFFFFF;
-    border-bottom: 1px solid #F6F6F6!important;	
-}
-#column-left .panel-default.panel-category a.list-group-item, #column-right .panel-default.panel-category a.list-group-item, .accordion li {
-	border-top: 1px solid #F6F6F6;	
-}
-#column-left .panel-default.panel-category a, #column-right .panel-default.panel-category a {color: #616161;}
-#column-left .panel-default.panel-category a:hover, #column-right .panel-default.panel-category a:hover, #column-left .panel-default.panel-category .cat-mod-child a:hover, #column-right .panel-default.panel-category .cat-mod-child a:hover, #column-left .panel-default.panel-category a.list-group-item.active, #column-right .panel-default.panel-category a.list-group-item.active {color: #6FA7A6;}
-#column-left .panel-default.panel-category .cat-mod-child a, #column-right .panel-default.panel-category .cat-mod-child a, #column-left .accordion li ul li a.list-group-item {color: #8D8D8D;}
-
-
-/*  Filter Box Heading  */
-#column-left .panel-default.filters > .panel-heading, #column-right .panel-default.filters > .panel-heading  {
-	background-color: #FFFFFF;
-    color: #29323B;
-	
-	border-bottom: 1px solid #F6F6F6;
-}
-
-/*  Filter Box Content  */
-#column-left .panel-default.filters, #column-right .panel-default.filters {
-	background-color: #FFFFFF;
-    border-bottom: 1px solid #F6F6F6!important;
-}
-#column-left .panel-default.filters a, #column-right .panel-default.filters a {color: #29323B;}
-#column-left .panel-default.filters label, #column-right .panel-default.filters label {color: #616161;}
-#column-left .panel-default.filters label:hover, #column-right .panel-default.filters label:hover {color: #6FA7A6;}
-
-/*  Text Logo  */
-#logo h1 a, #logo-menu h1 a {color: #29323B;}
-
-/*  Top Promo Message Slider  */
-#top-custom-block-content {
-	display:none;
-}
-#top-custom-block-wrapper {
-	background-color: #29323B;
-	color: #FFFFFF;
-	background-image: url("https://www.wohnmobil-autoglas.de/image/catalog/custom/custom_bg_1.png"); ?>;
-    animation: animatedBackground 40s linear infinite;
-}
-
-/*  Layout  */
-
-
-/*  HEADER  */
-
-header {
-	background-color: #FFFFFF;
-	background-image: none;
-	background-position: top center;
-	background-repeat: repeat;
-	background-attachment: scroll;
-}
-.is-sticky #menu {
-	background-color: #F2F2F2;
-}
-.button-i {color: #6FA7A6;}
-.buttons-header:hover .button-i {color: #CC4363;}
-.buttons-header button, .buttons-header span.button-text {color: #8D8D8D;}
-.buttons-header:hover, .buttons-header:hover button, .buttons-header:hover span.button-text {color: #29323B;}
-.col-sm-8 #information-block, .col-sm-8 #contact-block, #search-block, #cart, #menu-mobile-block {
-	border-left: 1px solid #FFFFFF;
-}
-#information-block, #contact-block {
-	border-right: 1px solid #FFFFFF;
-}
-@media (max-width: 767px) {
-#search-block, #cart, #menu-mobile-block {
-	border-top: 1px solid #FFFFFF;
-}
-}
-
-/*  Top Bar  */
-#top, #open-top-custom-block {
-	background-color: #29323B;
-}
-#top, #top-links li {
-	color: #FFFFFF;
-}
-#top a, #top .btn-link, #top-links a {
-	color: #FFFFFF;
-}
-#top a:hover, #top .btn-link:hover, #top .btn-link:hover i, #top-links a:hover, #top-links a:hover i, #open-top-custom-block i {
-	color: #E9DD5A;
-}
-#open-top-custom-block {
-	border-left: 1px solid #34404A;
-}
-#open-top-custom-block.open i, #top-links i, #top .btn-link i {
-	color: #FFFFFF;
-} 
-
-#logo {text-align: left;}
-#menu-mobile-block {float: left;}
-
-/*  Fixed Header  */
-.is-sticky .navbar {
-	text-align: left;
-}
-
-/*  MAIN MENU */
-
-/*  Main Menu Bar  */
-#menu {
-	
-	background-color: #A8A8A8;
-	
-    border-top: 1px solid #F2F2F2;	
-	background-image: none;
-	background-repeat: repeat;
-}
-#menu .main-menu > li > a:hover, #menu .main-menu > li.open > a {
-	border-top: 1px solid #6FA7A6;
-}
-#menu .main-menu > li > a {
-	border-top: 1px solid transparent;
-	margin-top: -1px;
-}
-
-/*  Home Page Link  */
- 
-#menu #homepage:hover {
-	background-color: #FFFFFF;
-}	
- 
-#menu #homepage a {
-	color: #29323B;
-}	
-#menu #homepage:hover a {
-	color: #29323B;
-}
-
-/*  Categories Section  */
- 
-.menu_oc:hover, #menu_ver:hover, #menu_hor:hover  {
-	background-color: #FFFFFF;
-}
- 
-.menu_oc > a, #menu_ver > a, #menu_hor > a {
-	color: #29323B;
-}	
-.menu_oc:hover > a, #menu_ver:hover > a, #menu_hor:hover > a {
-	color: #29323B;
-}
-
-/*  Brands Section  */
- 
-#menu_brands:hover {
-	background-color: #FFFFFF;
-}
- 
-#menu_brands > a {
-	color: #29323B;
-}	
-#menu_brands:hover > a {
-	color: #29323B;
-}
-
-/*  Custom Links Section  */
- 
-.menu_links:hover {
-	background-color: #FFFFFF;
-}	
- 
-.menu_links a {
-	color: #29323B;
-}	
-.menu_links:hover a {
-	color: #29323B;
-}
-
-/*  Custom Menu Section  */
- 
-#menu_custom_menu:hover {
-	background-color: #FFFFFF;
-}
- 
-#menu_custom_menu > a {
-	color: #29323B;
-}	
-#menu_custom_menu:hover > a {
-	color: #29323B;
-}
-
-/*  Custom Blocks Section  */
- 
-.menu_custom_block:hover {
-	background-color: #FFFFFF;
-}	
- 
-.menu_custom_block > a {
-	color: #29323B;
-}	
-.menu_custom_block:hover > a {
-	color: #29323B;
-}
-
-/*  Sub-Menu  */
-#menu .dropdown-menu, #menu .dropdown-menus {
-	background-color: #FFFFFF;
-	color: #616161;
-}
-#menu .dropdown-highlight {
-	background-color: #FCFCFC;
-}
-#menu .dropdown-menus a, #menu_brands .brand-item .name {
-	color: #616161;
-}	
-#menu .dropdown-menus a:hover, #menu .dropdown-menus li a:hover, #menu #menu_hor .dropdown-menus li.sub-cat:hover > a, #menu #menu_hor .dropdown-menus li.main-cat > a:hover, #menu_brands .brand-item .name:hover {
-	color: #6FA7A6;
-}
-.menu_oc ul > li, #menu_ver ul > li, #menu_custom_menu ul > li, .menu_custom_block table ul > li, #menu .dropdown-menu li, #menu .dropdown-menus li {
-	border-bottom: 1px solid #F6F6F6;
-}
-#menu_hor .dropdown-menus ul > li ul > li {
-    border-bottom: 1px solid #F6F6F6;
-		
-}
-#menu .dropdown-menus a.see-all {
-	border-top: 1px solid #F6F6F6;
-}
-#menu .dropdown-menu, #menu .dropdown-menus {
-	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
-}
-
-/*  Main Menu Labels  */
-#menu_label1:after { background-color:#CC4363; }
-#menu_label2:after { background-color:#CC4363; }
-#menu_label3:after { background-color:#CC4363; }
-#menu_label4:after { background-color:#CC4363; }
-#menu_label5:after { background-color:#CC4363; }
-#menu_label6:after { background-color:#CC4363; }
-#menu_label7:after { background-color:#CC4363; }
-#menu_label8:after { background-color:#CC4363; }
-#menu_label9:after { background-color:#CC4363; }
-#menu_label10:after { background-color:#CC4363; }
-#menu_label11:after { background-color:#CC4363; }
-#menu_label12:after { background-color:#CC4363; }
-#menu_label13:after { background-color:#CC4363; }
-#menu_label14:after { background-color:#CC4363; }
-#menu_label15:after { background-color:#CC4363; }
- 
-#menu .cat-img img {margin-right: -30px;}
-.navbar {text-align: center;}
-
-/*  Custom Bar below Main Menu  */
-#custom-bar-wrapper {
-	background-color: #29323B;
-	color: #FFFFFF;
-	background-image: url("https://www.wohnmobil-autoglas.de/image/catalog/custom/custom_bg_1.png"); ?>;
-    animation: animatedBackground 40s linear infinite;
-}
-
-/*  Slider Controls */
-.owl-controls .owl-page span {background: #F2F2F2;}
-.owl-controls .owl-page.active span {background: #6FA7A6;}
-
-/*  Category Page  */
-.category_top_title h1 {color: #29323B;}
-
-/*  Product Box  */
-span.badge.sale {background-color: #CC4363;}
-span.badge.new {background-color: #6FA7A6;}
-.rating .fa-star {color: #CC4363;}
-.product-grid .name, #content .box-product .name, #content .box-product .product_box_brand, .product-bottom-related .name, .product-box-slider .name, .product-grid .product_box_brand, .product-box-slider .product_box_brand, .product-bottom-related-flexslider .product_box_brand, .product-bottom-related-flexslider .rating, .tab-content-products .product_box_brand, .product-grid .price, #content .box-product .price, .product-box-slider .price, .product-bottom-related .price, .product-grid .rating, #content .box-product .rating, .product-box-slider .rating, .product-grid .cart, #content .box-product .cart, .product-box-slider .cart, .product-bottom-related .cart, .product-right-sm-related .name, .product-right-sm-related .product_box_brand, .product-right-sm-related .rating, .product-right-sm-related p.price {
-	
-	text-align: left;
-	}
-
-/*  Product Page  */
-
-
-
-/*  Video Box  */
-.video_box_left #video_box_icon, .video_box_right #video_box_icon {
-    background-color: #CC4363;
-}
-.video_box_right .video_box, .video_box_left .video_box {
-    border: 4px solid #CC4363;
-}
- 
-/*  Custom Box  */
-.custom_box_left #custom_box_icon, .custom_box_right #custom_box_icon {
-    background-color: #E9DD5A;
-}
-.custom_box_right .custom_box, .custom_box_left .custom_box {
-    border: 4px solid #E9DD5A;
-}
-
-
-/*  FOOTER  */
-footer {opacity: 1;}
-
-/*  Features Block  */
-#features {
-	background-color: #FFFFFF;
-	background-image: none;
-	background-position: top center;
-	background-repeat: repeat;
-}
-#features span.f-icon.fi1 i {color: #E9DD5A;}
-#features span.f-icon.fi2 i {color: #E9DD5A;}
-#features span.f-icon.fi3 i {color: #E9DD5A;}
-#features span.f-icon.fi4 i {color: #E9DD5A;}
-#features .f-title {color: #29323B;}
-#features span.f-subtitle {color: #8D8D8D;}
-
-/*  Information, Custom Column  */
-#information {
-	color: #FFFFFF;
-	background-color: #983A50;
-	background-image: none;
-	background-position: top center;
-	background-repeat: repeat;
-}
-#information h5 {color: #FFFFFF;}
-#information a {color: #FFFFFF;}
-#information a:hover {color: #E9DD5A;}
-#information li {color: #E9DD5A;}
-
-/*  Powered by, News, Payment Images, Follow Us  */
-#powered {
-	color: #FFFFFF;
-	background-color: #983A50;
-	background-image: none;
-	background-position: top center;
-	background-repeat: repeat;
-	border-top: 1px solid #A63F56;
-}
-#powered a {color: #FFFFFF;}
-#powered a:hover, #powered i:hover {color: #E9DD5A;}
-#powered span#footer-news {color: #E9DD5A;}
-#powered #news a {color: #FFFFFF;}
-#powered #news a:hover {color: #E9DD5A;}
-#powered i {color: #FFFFFF;}
-
-/*  Bottom Custom Block  */
-#footer_custom {
-	color: #FFFFFF;
-	background-color: #983A50;
-	background-image: none;
-	background-position: top center;
-	background-repeat: repeat;
-	border-top: 1px solid #A63F56;
-}
-#footer_custom a {color: #FFFFFF;}
-#footer_custom a:hover {color: #E9DD5A;}
-
-
-/*  Product Slider on Home Page  */
-.ei-slider, .ei-slider-large li {
-	background-color: #FFFFFF;
-}
-.ei-title h2 a{color: #29323B;}
-.ei-title h3 a, .ei-title h4 a .price-old{color: #8D8D8D;}
-.ei-title h4 a{color: #29323B;}
-.ei-slider-thumbs li a{background: #DBDBDB;}
-.ei-slider-thumbs li.ei-slider-element{background: #6FA7A6;}
-
-/*  Prices */
-#content .product-thumb p.price, #cart span.price, #column-left .product-items .price, #column-right .product-items .price, .product-buy .price-reg, #content .product-right-sm-related p.price {color: #983A50;}
-.price-old, .product-thumb .price-tax {color: #8D8D8D;}
-.price-new {color: #983A50;}
-
-/*  Buttons */
-.btn-default, button.wishlist, button.compare, button.info, .pagination > li > a, .pagination > li > span, #cart .btn-default, .box-category-home .name, .box-manufacturers-home .name, input#input-quantity, input.dec, input.inc, #menu #menu_hor .dropdown-menus li.main-cat > a, #menu_brands .brand-item .name, #sidebar-wrapper-contact a.btn-default {
-	 
-	background-color: #F2F2F2;
-		color: #616161;
-	border: 3px solid #F2F2F2;
-}
-.btn-default:hover, #column-left .btn-default:hover, #column-right .btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .btn-default.disabled, .btn-default[disabled], button.wishlist:hover, button.compare:hover, button.info:hover, .pagination > li > a:hover, .pagination > li > a:focus, .pagination > li > a:active, .pagination > li > span:hover, #cart .btn-default:hover, .box-category-home .name:hover, .box-manufacturers-home .name:hover, input.dec:hover, input.inc:hover, #menu #menu_hor .dropdown-menus li.main-cat > a:hover, #menu_brands .brand-item a:hover .name, #sidebar-wrapper-contact a.btn-default:hover {
-	background-color: #6FA7A6;
-    color: #FFFFFF;
-	border: 3px solid #6FA7A6;	
-}
-
-.btn-primary, .pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus, #information a.btn-primary, #cart .btn-primary, #sidebar-wrapper-contact a.btn-primary {
-	 
-	background-color: #E9DD5A;
-		color: #616161;
-	border: 3px solid #E9DD5A;
-}
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .btn-primary.disabled, .btn-primary[disabled], #information a.btn-primary:hover, #cart .btn-primary:hover, #sidebar-wrapper-contact a.btn-primary:hover {
-	background-color: #6FA7A6;
-    color: #FFFFFF;
-	border: 3px solid #6FA7A6;	
-}
-.btn, .pagination > li > a, .pagination > li > span, .product-grid .wishlist, .product-grid .compare, .product-grid .info, .product-list .wishlist, .product-list .compare, #content .box-product .wishlist, #content .box-product .compare, #content .box-product .info, .product-box-slider-flexslider .wishlist, .product-box-slider-flexslider .compare, .product-box-slider-flexslider .info, .product-bottom-related-flexslider .wishlist, .product-bottom-related-flexslider .compare, .product-bottom-related-flexslider .info, .up-theme-gallery-content .gallery-hover-box, .up-theme-modal-popup .modal-body .close, .box-category-home .name, .box-manufacturers-home .name, #menu #menu_hor .dropdown-menus li.main-cat > a, #menu_brands .brand-item .name {
-	border-radius: 4px!important;
-}
-
-/*  Dropdowns  */
-.dropdown-menu, .dropdown-menus, .my-account-dropdown-menu li, #cart .dropdown-menu, #sidebar-wrapper, #sidebar-wrapper-contact, #menu-mobile, .prev, .next {background-color: #FFFFFF;}
-#cart span.name a, #cart span.quantity, .sidebar-nav > .sidebar-title, .sidebar-nav h5 {color: #29323B;}
-#cart .table.cart-total > tbody > tr > td, .dropdown-menu .datepicker {color: #616161;}
-#cart .table.cart-total > tbody > tr > td:first-child, #cart .dropdown-menu li p, #cart .dropdown-menu small, #cart span.price, .sidebar-nav li a, #sidebar-wrapper-contact div {color: #8D8D8D;}
-.dropdown-menu a, #top .dropdown-menu a, #top .dropdown-menu .btn-link, .prev-name, .next-name, .bootstrap-datetimepicker-widget td.old, .bootstrap-datetimepicker-widget td.new {color: #8D8D8D;}
-.dropdown-menu a:hover, #top .dropdown-menu a:hover, .my-account-dropdown-menu li.logout a:hover, #top .dropdown-menu li:hover .btn-link, .sidebar-nav li a:hover, .prev-name:hover, .next-name:hover {color: #29323B;}
-#top-links .my-account-dropdown-menu i, #cart button.item-remove, .prev-arrow i, .next-arrow i {color: #DBDBDB;}
-#top-links .my-account-dropdown-menu li a:hover i, #cart button.item-remove:hover, #menu-toggle-close span, #contact-toggle-close span, #menu-mobile-toggle-close span {color: #6FA7A6;}
-.my-account-dropdown-menu li.logout, #cart .checkout, .prev-name, .next-name {background-color: #FCFCFC;}
-#cart .table > tbody > tr > td, #cart .checkout, .prev-name, .next-name {border-top: 1px solid #F6F6F6;}
-.dropdown-menu li, .dropdown-menus li, .sidebar-nav.list-group li {border-bottom: 1px solid #F6F6F6;}
-.my-account-dropdown-menu li:nth-child(2n) {border-left: 1px solid #F6F6F6;}
-.dropdown-menu, .dropdown-menus, .modal-body #search, #livesearch_search_results, .modal-content {
-	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
-}
-.prev, .next {
-	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
-}
-
-/*  Modal  */
-.up-theme-modal .modal-content, .fancybox-overlay {
-	
-	background-color: rgba(245, 245, 245, 0);
-}
-.modal-backdrop {
-	
-	background-color: rgba(245, 245, 245, 0.95);
-}
-
-/*  Fonts  */
-
-/*  Body  */
-body, button, select, .form-control, .menu_label { 
-    font-family: Arial,Arial,Helvetica,sans-serif; 
-}
-body, button, select, .form-control, #cart .table > tbody > tr > td, #menu .dropdown-menus, #menu .dropdown-menus a, .box-category-home .subcat a { 
-	font-size: 13px;
-}
-
-/*  Small Text  */
-small, .small, label, #top, #top #currency .currency-select, #top .btn-group > .btn, .buttons-header, #cart > .btn, .btn-group > .dropdown-menu, .dropdown-menu, .dropdown-menus, #menu .dropdown-menus a.see-all, .menu_label, .breadcrumb a, .category-list > div, .product-thumb .product_box_brand a, .product-right-sm-related .product_box_brand a, .tooltip { 
-	font-size: 12px;
-}
-
-/*  Headings and Product Name  */
-h1, h2, h3, h4, h5, h6, .panel-heading, .product-right-sm-info span.p-title, #features .f-title, .nav-tabs > li > a, legend, .sidebar-nav > .sidebar-title, #menu #menu_hor .dropdown-menus li.main-cat > a, .box-category-home .name { 
-    font-weight: bold; 
-}
-h1, h2, h3, h4, h5, h6, .panel-heading, .product-right-sm-info span.p-title, #features .f-title, .nav-tabs > li > a, legend, .sidebar-nav > .sidebar-title, #menu #menu_hor .dropdown-menus li.main-cat > a, .box-category-home .name { 
-    font-family: Arial,Arial,Helvetica,sans-serif; 
-}
-h1, h2, h3, h4, h5, h6, .panel-heading, .product-right-sm-info span.p-title, #features .f-title, .nav-tabs > li > a, legend, .sidebar-nav > .sidebar-title, #menu #menu_hor .dropdown-menus li.main-cat > a, .box-category-home .name { 
-    text-transform: none;
-}
-
-/*  Price  */
-.price, .price-new, .price-old, .price-reg { 
-    font-family: Arial,Arial,Helvetica,sans-serif; 
-}
-.price, .price-new, .price-old, .price-reg { 
-    font-weight: bold; 
-}
-
-/*  Buttons  */
-.btn-default, .btn-primary, .box-manufacturers-home .name { 
-    font-family: Arial,Arial,Helvetica,sans-serif; 
-}
-.btn-default, .btn-primary, .box-manufacturers-home .name { 
-    font-size: 12px;
-    font-weight: normal; 
-}
-
-/*  Main Menu Bar  */
-#menu #homepage a, #menu .main-menu > li > a { 
-    font-family: Arial,Arial,Helvetica,sans-serif; 
-}
-#menu #homepage a, #menu .main-menu > li > a {
-	font-size: 17px;
-    font-weight: bold;
-}
-#menu #homepage a, #menu .main-menu > li > a { 
-    text-transform: none;
-}
-
-
+<style type="text/css">
+
+/*  Body background color and pattern  */
+body {
+	background-color: #EBEBEB;
+	background-image: url("https://www.wohnmobil-autoglas.de/image/catalog/tshirts_body_bg_1.png"); ?>;
+	background-position: top center;
+	background-repeat: repeat;
+	background-attachment: fixed;
+}
+
+/*  Headings color  */
+h1, h2, h3, h4, h5, h6, .panel-default > .panel-heading, .product-thumb h4 a, #column-left .product-thumb h4 a, #column-right .product-thumb h4 a, .table > thead, .nav-tabs > li > a:hover, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, legend, #search .form-control, .product-right-sm-info span.p-title, .product-right-sm-related .name a {color: #000000;}
+#content h1::before, #content h2::before {border-bottom: 3px solid #6FA7A6;}
+#content h1, #content h2 {padding-bottom: 25px;}
+
+/*  Body text color  */
+body, #content .tab-content p, #content .product-right-sm-info .modal-body p, .product-buy ul.pf span {color: #616161;}
+
+/*  Light text color  */
+small, #content p, .breadcrumb a, .cat-description, .product-thumb .product_box_brand a, .product-buy ul.pf li, .product-buy ul.pp, .prev-name, .next-name, .product-right-sm-info span.p-subtitle, .product-right-sm-related .product_box_brand a, .box-category-home .subcat a, #content .product-right-sm-info .modal-body h1 + p, #features .modal-body h1 + p, .cookie-message, .alert-success, .alert-info, .dropdown-highlight {color: #8D8D8D;}
+
+/*  Links color  */
+a, a:focus, .list-group a {color: #616161;}
+
+/*  Links hover color  */
+a:hover, .breadcrumb a:hover, .dropdown-highlight:hover, .dropdown-highlight:focus, .box-category-home .subcat li:hover a, .table .btn, .table .btn-primary, .table .btn-primary:hover, .table .btn-primary:focus, .list-group a.active, .list-group a.active:hover, .list-group a:hover, .category-list .image:hover, .save-percent {color: #6FA7A6;}
+
+/*  Icons color  */
+.dr-menu > div .dr-icon i, .category-list i, #menu_brands .image i, .box-manufacturers-home .image i, #search .input-group-addon .btn, .accordion li.dcjq-parent-li > a + .dcjq-icon {color: #DBDBDB;}
+.owl-carousel .owl-buttons div {color: #DBDBDB!important;}
+
+/*  Icons hover color  */
+.dr-menu.dr-menu-open > div .dr-icon i, #search .input-group-addon .btn:hover, .up-theme-modal .modal-body .close, .product-right-sm-info span.p-icon i, .alert-success i, .alert-success .close, .alert-info i, .alert-info .close, .accordion li.dcjq-parent-li > a + .dcjq-icon:hover, .up-theme-gallery-content .gallery-hover-box i, .up-theme-modal-popup .modal-body .close {color: #6FA7A6;}
+.owl-carousel .owl-buttons div:hover, .mfp-close:hover {color: #6FA7A6!important;}
+#toTop {background-color: #6FA7A6;}
+
+/*  Wrapper Frame  */
+.wrapper.framed {background-color: #FFFFFF;}
+.wrapper.full-width-border {border: 34px solid #FFFFFF;}
+
+/*  Content Column  */
+#content, #content .panel-default > .panel-heading, #content .panel, .category-list + .panel-default > .panel-heading, #search .form-control, #search .input-group-addon, #search .input-group-addon .btn, #livesearch_search_results, .modal-content, .alert-success, .alert-info, .cookie-message, .custom_box {
+	background-color: #FFFFFF;
+}
+.product-filter, .dropdown-highlight {
+	background-color: #FFFFFF;
+}
+.product-filter, .pagination-box, #content .panel-default > .panel-heading, #product-tabs, #livesearch_search_results li, .modal-footer, .list-group a, .list-group a.active, .list-group a.active:hover, .list-group a:hover, a.list-group-item.active, a.list-group-item.active:hover, a.list-group-item.active:focus, .dr-menu ul li {
+    border-top: 1px solid #F6F6F6;	
+}	
+.product-filter, .modal-header, .box-category-home .subcat li {
+    border-bottom: 1px solid #F6F6F6;	
+}
+.well, .table-bordered, .table-bordered > thead > tr > th, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > tbody > tr > td, .table-bordered > tfoot > tr > td, .contact-map, .img-thumbnail-theme {
+    border: 1px solid #F6F6F6;	
+}
+hr, legend, #search .input-group-addon {
+	border-color: #F6F6F6;
+}
+.nav-tabs > li > a:hover, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus {
+    border-top: 1px solid #6FA7A6;	
+}
+
+/*  Left Column Heading  */
+#column-left .panel-heading  {	
+	background-color: #FFFFFF;
+}
+#column-left .panel-default > .panel-heading, #column-left .panel-default > .panel-heading h2 {color: #29323B;}
+	
+#column-left .panel-default > .panel-heading, #column-left .dr-menu.dr-menu-open > .panel-heading {
+	border-bottom: 1px solid #F6F6F6;
+}
+
+/*  Left Column Box  */
+#column-left .panel, #column-left .owl-carousel {
+	background-color: #FFFFFF;
+}
+#column-left a {color: #616161;}
+#column-left a:hover {color: #6FA7A6;}
+#column-left {color: #616161;} 
+#column-left .list-group a, #column-left .list-group a.active, #column-left .list-group a.active:hover, #column-left .list-group a:hover, #column-left .dr-menu ul li {border-top: 1px solid #F6F6F6;}
+#column-left .panel, #column-left .owl-carousel.carousel-module, #column-left .owl-carousel.banner-module {border-bottom: 1px solid #F6F6F6!important;}
+#column-left {border-right: 1px solid #F6F6F6;}
+
+
+/*  Right Column Heading  */
+#column-right .panel-heading  {
+	background-color: #FFFFFF;
+}
+#column-right .panel-default > .panel-heading, #column-right .panel-default > .panel-heading h2 {color: #29323B;}
+	
+#column-right .panel-default > .panel-heading, #column-right .dr-menu.dr-menu-open > .panel-heading  {
+	border-bottom: 1px solid #F6F6F6;
+}
+
+/*  Right Column Box  */
+#column-right .panel, #column-right .owl-carousel {
+	background-color: #FFFFFF;
+}
+#column-right a {color: #616161;}
+#column-right a:hover, #column-right .dr-menu > div .dr-icon i {color: #6FA7A6;}
+#column-right {color: #616161;}
+#column-right .list-group a, #column-right .list-group a.active, #column-right .list-group a.active:hover, #column-right .list-group a:hover, #column-right .dr-menu ul li {border-top: 1px solid #F6F6F6;}
+#column-right .panel, #column-right .owl-carousel.carousel-module, #column-right .owl-carousel.banner-module {border-bottom: 1px solid #F6F6F6!important;}
+#column-right {border-left: 1px solid #F6F6F6;}
+
+
+/*  Category Box Heading  */
+#column-left .panel-default.panel-category > .panel-heading, #column-right .panel-default.panel-category > .panel-heading {
+	background-color: #FFFFFF;
+    color: #29323B;
+	
+	border-bottom: 1px solid #F6F6F6;
+}
+
+/*  Category Box Content  */
+#column-left .panel-default.panel-category, #column-right .panel-default.panel-category {
+	background-color: #FFFFFF;
+    border-bottom: 1px solid #F6F6F6!important;	
+}
+#column-left .panel-default.panel-category a.list-group-item, #column-right .panel-default.panel-category a.list-group-item, .accordion li {
+	border-top: 1px solid #F6F6F6;	
+}
+#column-left .panel-default.panel-category a, #column-right .panel-default.panel-category a {color: #616161;}
+#column-left .panel-default.panel-category a:hover, #column-right .panel-default.panel-category a:hover, #column-left .panel-default.panel-category .cat-mod-child a:hover, #column-right .panel-default.panel-category .cat-mod-child a:hover, #column-left .panel-default.panel-category a.list-group-item.active, #column-right .panel-default.panel-category a.list-group-item.active {color: #6FA7A6;}
+#column-left .panel-default.panel-category .cat-mod-child a, #column-right .panel-default.panel-category .cat-mod-child a, #column-left .accordion li ul li a.list-group-item {color: #8D8D8D;}
+
+
+/*  Filter Box Heading  */
+#column-left .panel-default.filters > .panel-heading, #column-right .panel-default.filters > .panel-heading  {
+	background-color: #FFFFFF;
+    color: #29323B;
+	
+	border-bottom: 1px solid #F6F6F6;
+}
+
+/*  Filter Box Content  */
+#column-left .panel-default.filters, #column-right .panel-default.filters {
+	background-color: #FFFFFF;
+    border-bottom: 1px solid #F6F6F6!important;
+}
+#column-left .panel-default.filters a, #column-right .panel-default.filters a {color: #29323B;}
+#column-left .panel-default.filters label, #column-right .panel-default.filters label {color: #616161;}
+#column-left .panel-default.filters label:hover, #column-right .panel-default.filters label:hover {color: #6FA7A6;}
+
+/*  Text Logo  */
+#logo h1 a, #logo-menu h1 a {color: #29323B;}
+
+/*  Top Promo Message Slider  */
+#top-custom-block-content {
+	display:none;
+}
+#top-custom-block-wrapper {
+	background-color: #29323B;
+	color: #FFFFFF;
+	background-image: url("https://www.wohnmobil-autoglas.de/image/catalog/custom/custom_bg_1.png"); ?>;
+    animation: animatedBackground 40s linear infinite;
+}
+
+/*  Layout  */
+
+
+/*  HEADER  */
+
+header {
+	background-color: #FFFFFF;
+	background-image: none;
+	background-position: top center;
+	background-repeat: repeat;
+	background-attachment: scroll;
+}
+.is-sticky #menu {
+	background-color: #F2F2F2;
+}
+.button-i {color: #6FA7A6;}
+.buttons-header:hover .button-i {color: #CC4363;}
+.buttons-header button, .buttons-header span.button-text {color: #8D8D8D;}
+.buttons-header:hover, .buttons-header:hover button, .buttons-header:hover span.button-text {color: #29323B;}
+.col-sm-8 #information-block, .col-sm-8 #contact-block, #search-block, #cart, #menu-mobile-block {
+	border-left: 1px solid #FFFFFF;
+}
+#information-block, #contact-block {
+	border-right: 1px solid #FFFFFF;
+}
+@media (max-width: 767px) {
+#search-block, #cart, #menu-mobile-block {
+	border-top: 1px solid #FFFFFF;
+}
+}
+
+/*  Top Bar  */
+#top, #open-top-custom-block {
+	background-color: #29323B;
+}
+#top, #top-links li {
+	color: #FFFFFF;
+}
+#top a, #top .btn-link, #top-links a {
+	color: #FFFFFF;
+}
+#top a:hover, #top .btn-link:hover, #top .btn-link:hover i, #top-links a:hover, #top-links a:hover i, #open-top-custom-block i {
+	color: #E9DD5A;
+}
+#open-top-custom-block {
+	border-left: 1px solid #34404A;
+}
+#open-top-custom-block.open i, #top-links i, #top .btn-link i {
+	color: #FFFFFF;
+} 
+
+#logo {text-align: left;}
+#menu-mobile-block {float: left;}
+
+/*  Fixed Header  */
+.is-sticky .navbar {
+	text-align: left;
+}
+
+/*  MAIN MENU */
+
+/*  Main Menu Bar  */
+#menu {
+	
+	background-color: #A8A8A8;
+	
+    border-top: 1px solid #F2F2F2;	
+	background-image: none;
+	background-repeat: repeat;
+}
+#menu .main-menu > li > a:hover, #menu .main-menu > li.open > a {
+	border-top: 1px solid #6FA7A6;
+}
+#menu .main-menu > li > a {
+	border-top: 1px solid transparent;
+	margin-top: -1px;
+}
+
+/*  Home Page Link  */
+ 
+#menu #homepage:hover {
+	background-color: #FFFFFF;
+}	
+ 
+#menu #homepage a {
+	color: #29323B;
+}	
+#menu #homepage:hover a {
+	color: #29323B;
+}
+
+/*  Categories Section  */
+ 
+.menu_oc:hover, #menu_ver:hover, #menu_hor:hover  {
+	background-color: #FFFFFF;
+}
+ 
+.menu_oc > a, #menu_ver > a, #menu_hor > a {
+	color: #29323B;
+}	
+.menu_oc:hover > a, #menu_ver:hover > a, #menu_hor:hover > a {
+	color: #29323B;
+}
+
+/*  Brands Section  */
+ 
+#menu_brands:hover {
+	background-color: #FFFFFF;
+}
+ 
+#menu_brands > a {
+	color: #29323B;
+}	
+#menu_brands:hover > a {
+	color: #29323B;
+}
+
+/*  Custom Links Section  */
+ 
+.menu_links:hover {
+	background-color: #FFFFFF;
+}	
+ 
+.menu_links a {
+	color: #29323B;
+}	
+.menu_links:hover a {
+	color: #29323B;
+}
+
+/*  Custom Menu Section  */
+ 
+#menu_custom_menu:hover {
+	background-color: #FFFFFF;
+}
+ 
+#menu_custom_menu > a {
+	color: #29323B;
+}	
+#menu_custom_menu:hover > a {
+	color: #29323B;
+}
+
+/*  Custom Blocks Section  */
+ 
+.menu_custom_block:hover {
+	background-color: #FFFFFF;
+}	
+ 
+.menu_custom_block > a {
+	color: #29323B;
+}	
+.menu_custom_block:hover > a {
+	color: #29323B;
+}
+
+/*  Sub-Menu  */
+#menu .dropdown-menu, #menu .dropdown-menus {
+	background-color: #FFFFFF;
+	color: #616161;
+}
+#menu .dropdown-highlight {
+	background-color: #FCFCFC;
+}
+#menu .dropdown-menus a, #menu_brands .brand-item .name {
+	color: #616161;
+}	
+#menu .dropdown-menus a:hover, #menu .dropdown-menus li a:hover, #menu #menu_hor .dropdown-menus li.sub-cat:hover > a, #menu #menu_hor .dropdown-menus li.main-cat > a:hover, #menu_brands .brand-item .name:hover {
+	color: #6FA7A6;
+}
+.menu_oc ul > li, #menu_ver ul > li, #menu_custom_menu ul > li, .menu_custom_block table ul > li, #menu .dropdown-menu li, #menu .dropdown-menus li {
+	border-bottom: 1px solid #F6F6F6;
+}
+#menu_hor .dropdown-menus ul > li ul > li {
+    border-bottom: 1px solid #F6F6F6;
+		
+}
+#menu .dropdown-menus a.see-all {
+	border-top: 1px solid #F6F6F6;
+}
+#menu .dropdown-menu, #menu .dropdown-menus {
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+/*  Main Menu Labels  */
+#menu_label1:after { background-color:#CC4363; }
+#menu_label2:after { background-color:#CC4363; }
+#menu_label3:after { background-color:#CC4363; }
+#menu_label4:after { background-color:#CC4363; }
+#menu_label5:after { background-color:#CC4363; }
+#menu_label6:after { background-color:#CC4363; }
+#menu_label7:after { background-color:#CC4363; }
+#menu_label8:after { background-color:#CC4363; }
+#menu_label9:after { background-color:#CC4363; }
+#menu_label10:after { background-color:#CC4363; }
+#menu_label11:after { background-color:#CC4363; }
+#menu_label12:after { background-color:#CC4363; }
+#menu_label13:after { background-color:#CC4363; }
+#menu_label14:after { background-color:#CC4363; }
+#menu_label15:after { background-color:#CC4363; }
+ 
+#menu .cat-img img {margin-right: -30px;}
+.navbar {text-align: center;}
+
+/*  Custom Bar below Main Menu  */
+#custom-bar-wrapper {
+	background-color: #29323B;
+	color: #FFFFFF;
+	background-image: url("https://www.wohnmobil-autoglas.de/image/catalog/custom/custom_bg_1.png"); ?>;
+    animation: animatedBackground 40s linear infinite;
+}
+
+/*  Slider Controls */
+.owl-controls .owl-page span {background: #F2F2F2;}
+.owl-controls .owl-page.active span {background: #6FA7A6;}
+
+/*  Category Page  */
+.category_top_title h1 {color: #29323B;}
+
+/*  Product Box  */
+span.badge.sale {background-color: #CC4363;}
+span.badge.new {background-color: #6FA7A6;}
+.rating .fa-star {color: #CC4363;}
+.product-grid .name, #content .box-product .name, #content .box-product .product_box_brand, .product-bottom-related .name, .product-box-slider .name, .product-grid .product_box_brand, .product-box-slider .product_box_brand, .product-bottom-related-flexslider .product_box_brand, .product-bottom-related-flexslider .rating, .tab-content-products .product_box_brand, .product-grid .price, #content .box-product .price, .product-box-slider .price, .product-bottom-related .price, .product-grid .rating, #content .box-product .rating, .product-box-slider .rating, .product-grid .cart, #content .box-product .cart, .product-box-slider .cart, .product-bottom-related .cart, .product-right-sm-related .name, .product-right-sm-related .product_box_brand, .product-right-sm-related .rating, .product-right-sm-related p.price {
+	
+	text-align: left;
+	}
+
+/*  Product Page  */
+
+
+
+/*  Video Box  */
+.video_box_left #video_box_icon, .video_box_right #video_box_icon {
+    background-color: #CC4363;
+}
+.video_box_right .video_box, .video_box_left .video_box {
+    border: 4px solid #CC4363;
+}
+ 
+/*  Custom Box  */
+.custom_box_left #custom_box_icon, .custom_box_right #custom_box_icon {
+    background-color: #E9DD5A;
+}
+.custom_box_right .custom_box, .custom_box_left .custom_box {
+    border: 4px solid #E9DD5A;
+}
+
+
+/*  FOOTER  */
+footer {opacity: 1;}
+
+/*  Features Block  */
+#features {
+	background-color: #FFFFFF;
+	background-image: none;
+	background-position: top center;
+	background-repeat: repeat;
+}
+#features span.f-icon.fi1 i {color: #E9DD5A;}
+#features span.f-icon.fi2 i {color: #E9DD5A;}
+#features span.f-icon.fi3 i {color: #E9DD5A;}
+#features span.f-icon.fi4 i {color: #E9DD5A;}
+#features .f-title {color: #29323B;}
+#features span.f-subtitle {color: #8D8D8D;}
+
+/*  Information, Custom Column  */
+#information {
+	color: #FFFFFF;
+	background-color: #983A50;
+	background-image: none;
+	background-position: top center;
+	background-repeat: repeat;
+}
+#information h5 {color: #FFFFFF;}
+#information a {color: #FFFFFF;}
+#information a:hover {color: #E9DD5A;}
+#information li {color: #E9DD5A;}
+
+/*  Powered by, News, Payment Images, Follow Us  */
+#powered {
+	color: #FFFFFF;
+	background-color: #983A50;
+	background-image: none;
+	background-position: top center;
+	background-repeat: repeat;
+	border-top: 1px solid #A63F56;
+}
+#powered a {color: #FFFFFF;}
+#powered a:hover, #powered i:hover {color: #E9DD5A;}
+#powered span#footer-news {color: #E9DD5A;}
+#powered #news a {color: #FFFFFF;}
+#powered #news a:hover {color: #E9DD5A;}
+#powered i {color: #FFFFFF;}
+
+/*  Bottom Custom Block  */
+#footer_custom {
+	color: #FFFFFF;
+	background-color: #983A50;
+	background-image: none;
+	background-position: top center;
+	background-repeat: repeat;
+	border-top: 1px solid #A63F56;
+}
+#footer_custom a {color: #FFFFFF;}
+#footer_custom a:hover {color: #E9DD5A;}
+
+
+/*  Product Slider on Home Page  */
+.ei-slider, .ei-slider-large li {
+	background-color: #FFFFFF;
+}
+.ei-title h2 a{color: #29323B;}
+.ei-title h3 a, .ei-title h4 a .price-old{color: #8D8D8D;}
+.ei-title h4 a{color: #29323B;}
+.ei-slider-thumbs li a{background: #DBDBDB;}
+.ei-slider-thumbs li.ei-slider-element{background: #6FA7A6;}
+
+/*  Prices */
+#content .product-thumb p.price, #cart span.price, #column-left .product-items .price, #column-right .product-items .price, .product-buy .price-reg, #content .product-right-sm-related p.price {color: #983A50;}
+.price-old, .product-thumb .price-tax {color: #8D8D8D;}
+.price-new {color: #983A50;}
+
+/*  Buttons */
+.btn-default, button.wishlist, button.compare, button.info, .pagination > li > a, .pagination > li > span, #cart .btn-default, .box-category-home .name, .box-manufacturers-home .name, input#input-quantity, input.dec, input.inc, #menu #menu_hor .dropdown-menus li.main-cat > a, #menu_brands .brand-item .name, #sidebar-wrapper-contact a.btn-default {
+	 
+	background-color: #F2F2F2;
+		color: #616161;
+	border: 3px solid #F2F2F2;
+}
+.btn-default:hover, #column-left .btn-default:hover, #column-right .btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .btn-default.disabled, .btn-default[disabled], button.wishlist:hover, button.compare:hover, button.info:hover, .pagination > li > a:hover, .pagination > li > a:focus, .pagination > li > a:active, .pagination > li > span:hover, #cart .btn-default:hover, .box-category-home .name:hover, .box-manufacturers-home .name:hover, input.dec:hover, input.inc:hover, #menu #menu_hor .dropdown-menus li.main-cat > a:hover, #menu_brands .brand-item a:hover .name, #sidebar-wrapper-contact a.btn-default:hover {
+	background-color: #6FA7A6;
+    color: #FFFFFF;
+	border: 3px solid #6FA7A6;	
+}
+
+.btn-primary, .pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus, #information a.btn-primary, #cart .btn-primary, #sidebar-wrapper-contact a.btn-primary {
+	 
+	background-color: #E9DD5A;
+		color: #616161;
+	border: 3px solid #E9DD5A;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .btn-primary.disabled, .btn-primary[disabled], #information a.btn-primary:hover, #cart .btn-primary:hover, #sidebar-wrapper-contact a.btn-primary:hover {
+	background-color: #6FA7A6;
+    color: #FFFFFF;
+	border: 3px solid #6FA7A6;	
+}
+.btn, .pagination > li > a, .pagination > li > span, .product-grid .wishlist, .product-grid .compare, .product-grid .info, .product-list .wishlist, .product-list .compare, #content .box-product .wishlist, #content .box-product .compare, #content .box-product .info, .product-box-slider-flexslider .wishlist, .product-box-slider-flexslider .compare, .product-box-slider-flexslider .info, .product-bottom-related-flexslider .wishlist, .product-bottom-related-flexslider .compare, .product-bottom-related-flexslider .info, .up-theme-gallery-content .gallery-hover-box, .up-theme-modal-popup .modal-body .close, .box-category-home .name, .box-manufacturers-home .name, #menu #menu_hor .dropdown-menus li.main-cat > a, #menu_brands .brand-item .name {
+	border-radius: 4px!important;
+}
+
+/*  Dropdowns  */
+.dropdown-menu, .dropdown-menus, .my-account-dropdown-menu li, #cart .dropdown-menu, #sidebar-wrapper, #sidebar-wrapper-contact, #menu-mobile, .prev, .next {background-color: #FFFFFF;}
+#cart span.name a, #cart span.quantity, .sidebar-nav > .sidebar-title, .sidebar-nav h5 {color: #29323B;}
+#cart .table.cart-total > tbody > tr > td, .dropdown-menu .datepicker {color: #616161;}
+#cart .table.cart-total > tbody > tr > td:first-child, #cart .dropdown-menu li p, #cart .dropdown-menu small, #cart span.price, .sidebar-nav li a, #sidebar-wrapper-contact div {color: #8D8D8D;}
+.dropdown-menu a, #top .dropdown-menu a, #top .dropdown-menu .btn-link, .prev-name, .next-name, .bootstrap-datetimepicker-widget td.old, .bootstrap-datetimepicker-widget td.new {color: #8D8D8D;}
+.dropdown-menu a:hover, #top .dropdown-menu a:hover, .my-account-dropdown-menu li.logout a:hover, #top .dropdown-menu li:hover .btn-link, .sidebar-nav li a:hover, .prev-name:hover, .next-name:hover {color: #29323B;}
+#top-links .my-account-dropdown-menu i, #cart button.item-remove, .prev-arrow i, .next-arrow i {color: #DBDBDB;}
+#top-links .my-account-dropdown-menu li a:hover i, #cart button.item-remove:hover, #menu-toggle-close span, #contact-toggle-close span, #menu-mobile-toggle-close span {color: #6FA7A6;}
+.my-account-dropdown-menu li.logout, #cart .checkout, .prev-name, .next-name {background-color: #FCFCFC;}
+#cart .table > tbody > tr > td, #cart .checkout, .prev-name, .next-name {border-top: 1px solid #F6F6F6;}
+.dropdown-menu li, .dropdown-menus li, .sidebar-nav.list-group li {border-bottom: 1px solid #F6F6F6;}
+.my-account-dropdown-menu li:nth-child(2n) {border-left: 1px solid #F6F6F6;}
+.dropdown-menu, .dropdown-menus, .modal-body #search, #livesearch_search_results, .modal-content {
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+}
+.prev, .next {
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+}
+
+/*  Modal  */
+.up-theme-modal .modal-content, .fancybox-overlay {
+	
+	background-color: rgba(245, 245, 245, 0);
+}
+.modal-backdrop {
+	
+	background-color: rgba(245, 245, 245, 0.95);
+}
+
+/*  Fonts  */
+
+/*  Body  */
+body, button, select, .form-control, .menu_label { 
+    font-family: Arial,Arial,Helvetica,sans-serif; 
+}
+body, button, select, .form-control, #cart .table > tbody > tr > td, #menu .dropdown-menus, #menu .dropdown-menus a, .box-category-home .subcat a { 
+	font-size: 13px;
+}
+
+/*  Small Text  */
+small, .small, label, #top, #top #currency .currency-select, #top .btn-group > .btn, .buttons-header, #cart > .btn, .btn-group > .dropdown-menu, .dropdown-menu, .dropdown-menus, #menu .dropdown-menus a.see-all, .menu_label, .breadcrumb a, .category-list > div, .product-thumb .product_box_brand a, .product-right-sm-related .product_box_brand a, .tooltip { 
+	font-size: 12px;
+}
+
+/*  Headings and Product Name  */
+h1, h2, h3, h4, h5, h6, .panel-heading, .product-right-sm-info span.p-title, #features .f-title, .nav-tabs > li > a, legend, .sidebar-nav > .sidebar-title, #menu #menu_hor .dropdown-menus li.main-cat > a, .box-category-home .name { 
+    font-weight: bold; 
+}
+h1, h2, h3, h4, h5, h6, .panel-heading, .product-right-sm-info span.p-title, #features .f-title, .nav-tabs > li > a, legend, .sidebar-nav > .sidebar-title, #menu #menu_hor .dropdown-menus li.main-cat > a, .box-category-home .name { 
+    font-family: Arial,Arial,Helvetica,sans-serif; 
+}
+h1, h2, h3, h4, h5, h6, .panel-heading, .product-right-sm-info span.p-title, #features .f-title, .nav-tabs > li > a, legend, .sidebar-nav > .sidebar-title, #menu #menu_hor .dropdown-menus li.main-cat > a, .box-category-home .name { 
+    text-transform: none;
+}
+
+/*  Price  */
+.price, .price-new, .price-old, .price-reg { 
+    font-family: Arial,Arial,Helvetica,sans-serif; 
+}
+.price, .price-new, .price-old, .price-reg { 
+    font-weight: bold; 
+}
+
+/*  Buttons  */
+.btn-default, .btn-primary, .box-manufacturers-home .name { 
+    font-family: Arial,Arial,Helvetica,sans-serif; 
+}
+.btn-default, .btn-primary, .box-manufacturers-home .name { 
+    font-size: 12px;
+    font-weight: normal; 
+}
+
+/*  Main Menu Bar  */
+#menu #homepage a, #menu .main-menu > li > a { 
+    font-family: Arial,Arial,Helvetica,sans-serif; 
+}
+#menu #homepage a, #menu .main-menu > li > a {
+	font-size: 17px;
+    font-weight: bold;
+}
+#menu #homepage a, #menu .main-menu > li > a { 
+    text-transform: none;
+}
+
+
 </style>
 <link href="//fonts.googleapis.com/css?family=ABeeZee:400,400i,300,700" rel="stylesheet" type="text/css">
 <link href="//fonts.googleapis.com/css?family=Dosis:400,400i,300,700" rel="stylesheet" type="text/css">
-<script>
-$(function(){
-  $.stellar({
-    horizontalScrolling: false,
-	verticalOffset: 0
-  });
-});
+<script>
+$(function(){
+  $.stellar({
+    horizontalScrolling: false,
+	verticalOffset: 0
+  });
+});
 </script>
 </link></link></link></link></link></meta></head>
 <body class="common-home">
@@ -648,12 +648,12 @@ $(function(){
 <div id="sidebar-wrapper">
 <ul class="sidebar-nav list-group">
 <li class="sidebar-title">
-<a href="#menu-toggle-close" id="menu-toggle-close"><span aria-hidden="true">×</span></a>Information      <script>
-      $("#menu-toggle-close").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-		$(".sidebar-opacity").toggleClass("toggled");
-      });
+<a href="#menu-toggle-close" id="menu-toggle-close"><span aria-hidden="true">×</span></a>Information      <script>
+      $("#menu-toggle-close").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+		$(".sidebar-opacity").toggleClass("toggled");
+      });
       </script>
 </li>
 <li><a href="http://www.wohnmobil-autoglas.de/faq">FAQ</a></li>
@@ -730,10 +730,10 @@ $(function(){
 </div>
 </div>
 </div>
-<script type="text/javascript">
-$('#modal-search').on('shown.bs.modal', function () {
-    $('#modal-search-input').focus();
-})
+<script type="text/javascript">
+$('#modal-search').on('shown.bs.modal', function () {
+    $('#modal-search-input').focus();
+})
 </script>
 </div>
 <div class="col-xs-12 col-sm-3 header-logo">
@@ -742,12 +742,12 @@ $('#modal-search').on('shown.bs.modal', function () {
 </div>
 </div>
 <div class="col-xs-12 col-sm-3">
-<script>
-        $("#menu-toggle").click(function(e) {
-          e.preventDefault();
-          $("#wrapper").toggleClass("toggled");
-		  $(".sidebar-opacity").toggleClass("toggled");
-        });
+<script>
+        $("#menu-toggle").click(function(e) {
+          e.preventDefault();
+          $("#wrapper").toggleClass("toggled");
+		  $(".sidebar-opacity").toggleClass("toggled");
+        });
       </script>
 <a class="" href="#menu-mobile-toggle" id="menu-mobile-toggle">
 <div class="buttons-header hidden-sm hidden-md hidden-lg" id="menu-mobile-block">
@@ -755,12 +755,12 @@ $('#modal-search').on('shown.bs.modal', function () {
 <span class="button-text">Menu</span>
 </div>
 </a>
-<script>
-        $("#menu-mobile-toggle").click(function(e) {
-          e.preventDefault();
-          $("#wrapper").toggleClass("menu-toggled");
-		  $(".sidebar-opacity").toggleClass("menu-toggled");
-        });
+<script>
+        $("#menu-mobile-toggle").click(function(e) {
+          e.preventDefault();
+          $("#wrapper").toggleClass("menu-toggled");
+		  $(".sidebar-opacity").toggleClass("menu-toggled");
+        });
       </script>
 <div class="btn-group btn-block buttons-header" id="cart">
 <a class="btn dropdown-toggle" data-loading-text="Chargement..." data-toggle="dropdown">
@@ -786,17 +786,17 @@ $('#modal-search').on('shown.bs.modal', function () {
 </ul>
 </div>
 </header>
-<script>
-  $(window).load(function(){
-    $("#menu").sticky({ topSpacing: 0 });
-  });
+<script>
+  $(window).load(function(){
+    $("#menu").sticky({ topSpacing: 0 });
+  });
 </script>
 <nav class="navbar hidden-lg hidden-md" id="menu">
 <div class="container">
-<!-- 
-    <div class="navbar-header"><span id="category" class="visible-xs">Menu</span>
-      <button type="button" class="btn btn-navbar navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"><i class="fa fa-bars"></i></button>
-    </div>
+<!-- 
+    <div class="navbar-header"><span id="category" class="visible-xs">Menu</span>
+      <button type="button" class="btn btn-navbar navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"><i class="fa fa-bars"></i></button>
+    </div>
     -->
 <div class="collapse navbar-collapse navbar-ex1-collapse">
 <div id="logo-menu-container">
@@ -840,26 +840,26 @@ $('#modal-search').on('shown.bs.modal', function () {
 </div>
 </div>
 </nav>
-<script type="text/javascript">
-$(document).ready(function() {
-	$('#accordion-mobile').dcAccordion({
-		disableLink: false,	
-		menuClose: false,
-		autoClose: true,
-		autoExpand: true,		
-		saveState: false
-	});
-});
+<script type="text/javascript">
+$(document).ready(function() {
+	$('#accordion-mobile').dcAccordion({
+		disableLink: false,	
+		menuClose: false,
+		autoClose: true,
+		autoExpand: true,		
+		saveState: false
+	});
+});
 </script>
 <div class="hidden-sm hidden-md hidden-lg" id="menu-mobile">
 <ul class="accordion sidebar-nav list-group" id="accordion-mobile">
 <li class="sidebar-title">
-<a href="#menu-mobile-toggle-close" id="menu-mobile-toggle-close"><span aria-hidden="true">×</span></a>Menu      <script>
-      $("#menu-mobile-toggle-close").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("menu-toggled");
-		$(".sidebar-opacity").toggleClass("menu-toggled");
-      });
+<a href="#menu-mobile-toggle-close" id="menu-mobile-toggle-close"><span aria-hidden="true">×</span></a>Menu      <script>
+      $("#menu-mobile-toggle-close").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("menu-toggled");
+		$(".sidebar-opacity").toggleClass("menu-toggled");
+      });
       </script>
 </li>
 <li><a href="http://www.wohnmobil-autoglas.de/">Accueil</a></li>
@@ -895,16 +895,16 @@ $(document).ready(function() {
 </div>
 <div style="display:none;"><script src="https://js.users.51.la/21085533.js" type="text/javascript"></script><br/></div><div class="container">
 <div class="row"><column class="col-sm-3 hidden-xs" id="column-left">
-<script type="text/javascript">
-$(document).ready(function() {
-	$('#accordion-1').dcAccordion({
-		disableLink: false,	
-		menuClose: false,
-		autoClose: true,
-		autoExpand: true,		
-		saveState: false
-	});
-});
+<script type="text/javascript">
+$(document).ready(function() {
+	$('#accordion-1').dcAccordion({
+		disableLink: false,	
+		menuClose: false,
+		autoClose: true,
+		autoExpand: true,		
+		saveState: false
+	});
+});
 </script>
 <div class="panel panel-default panel-category">
 <div class="panel-heading">Catégories</div>
@@ -939,31 +939,65 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <span class="badge-wrapper">
+<span class="badge sale">-73%</span>
+</span>
+<button class="wishlist" data-placement="left" data-toggle="tooltip" onclick="wishlist.add('2397');" title="Ajouter à la liste de souhaits" type="button"><i class="fa fa-heart"></i></button>
+<button class="compare" data-placement="left" data-toggle="tooltip" onclick="compare.add('2397');" title="Comparer ce Produit" type="button"><i class="fa fa-gavel"></i></button>
+<div class="flybar">
+<div class="flybar-cart">
+<button class="btn btn-primary" onclick="cart.add('2397');" type="button">Ajouter au panier</button>
+</div>
+</div>
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="http://www.wohnmobil-autoglas.de/esprit-peignoir-white.html"><img alt="Esprit Peignoir - White" class="img-responsive img-normal" onerror="nofindit(this)" onload="resetimg(this,'80','100')" src="image/p_image/esprit-peignoir-white-2397.jpg" title="Esprit Peignoir - White"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="http://www.wohnmobil-autoglas.de/esprit-peignoir-white.html">Esprit Peignoir - White</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€47,89</span> <span class="price-old">€176,89</span>
+</p>
+<div class="product-list-buttons">
+<div class="list-quickview">
+<a class="btn btn-default quickview" href="http://www.wohnmobil-autoglas.de/index.php?route=product/quickview&amp;product_id=2397">Aperçu rapide</a>
+</div>
+<div class="cart">
+<button class="btn btn-primary" onclick="cart.add('2397');" type="button">Ajouter au panier</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<span class="badge-wrapper">
 <span class="badge sale">-72%</span>
 </span>
-<button class="wishlist" data-placement="left" data-toggle="tooltip" onclick="wishlist.add('7314');" title="Ajouter à la liste de souhaits" type="button"><i class="fa fa-heart"></i></button>
-<button class="compare" data-placement="left" data-toggle="tooltip" onclick="compare.add('7314');" title="Comparer ce Produit" type="button"><i class="fa fa-gavel"></i></button>
+<button class="wishlist" data-placement="left" data-toggle="tooltip" onclick="wishlist.add('9154');" title="Ajouter à la liste de souhaits" type="button"><i class="fa fa-heart"></i></button>
+<button class="compare" data-placement="left" data-toggle="tooltip" onclick="compare.add('9154');" title="Comparer ce Produit" type="button"><i class="fa fa-gavel"></i></button>
 <div class="flybar">
 <div class="flybar-cart">
-<button class="btn btn-primary" onclick="cart.add('7314');" type="button">Ajouter au panier</button>
+<button class="btn btn-primary" onclick="cart.add('9154');" type="button">Ajouter au panier</button>
 </div>
 </div>
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.wohnmobil-autoglas.de/2nd-day-leya-pantalon-en-cuir-bruschetta.html"><img alt="2nd Day Leya - Pantalon En Cuir Bruschetta" class="img-responsive img-normal" onerror="nofindit(this)" onload="resetimg(this,'80','100')" src="image/p_image/2nd-day-leya-pantalon-en-cuir-bruschetta-7314.jpg" title="2nd Day Leya - Pantalon En Cuir Bruschetta"/></a>
+<a class="arevision" href="http://www.wohnmobil-autoglas.de/hvisk-gleam-medium-sac-a-main-yellow.html"><img alt="Hvisk Gleam Medium - Sac À Main Yellow" class="img-responsive img-normal" onerror="nofindit(this)" onload="resetimg(this,'80','100')" src="image/p_image/hvisk-gleam-medium-sac-a-main-yellow-9154.jpg" title="Hvisk Gleam Medium - Sac À Main Yellow"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.wohnmobil-autoglas.de/2nd-day-leya-pantalon-en-cuir-bruschetta.html">2nd Day Leya - Pantalon En Cuir Bruschetta</a></h4></div>
+<div class="name"><h4><a href="http://www.wohnmobil-autoglas.de/hvisk-gleam-medium-sac-a-main-yellow.html">Hvisk Gleam Medium - Sac À Main Yellow</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€47,69</span> <span class="price-old">€169,59</span>
+<span class="price-new">€47,49</span> <span class="price-old">€169,59</span>
 </p>
 <div class="product-list-buttons">
 <div class="list-quickview">
-<a class="btn btn-default quickview" href="http://www.wohnmobil-autoglas.de/index.php?route=product/quickview&amp;product_id=7314">Aperçu rapide</a>
+<a class="btn btn-default quickview" href="http://www.wohnmobil-autoglas.de/index.php?route=product/quickview&amp;product_id=9154">Aperçu rapide</a>
 </div>
 <div class="cart">
-<button class="btn btn-primary" onclick="cart.add('7314');" type="button">Ajouter au panier</button>
+<button class="btn btn-primary" onclick="cart.add('9154');" type="button">Ajouter au panier</button>
 </div>
 </div>
 </div>
@@ -975,131 +1009,29 @@ $(document).ready(function() {
 <span class="badge-wrapper">
 <span class="badge sale">-73%</span>
 </span>
-<button class="wishlist" data-placement="left" data-toggle="tooltip" onclick="wishlist.add('2742');" title="Ajouter à la liste de souhaits" type="button"><i class="fa fa-heart"></i></button>
-<button class="compare" data-placement="left" data-toggle="tooltip" onclick="compare.add('2742');" title="Comparer ce Produit" type="button"><i class="fa fa-gavel"></i></button>
+<button class="wishlist" data-placement="left" data-toggle="tooltip" onclick="wishlist.add('11450');" title="Ajouter à la liste de souhaits" type="button"><i class="fa fa-heart"></i></button>
+<button class="compare" data-placement="left" data-toggle="tooltip" onclick="compare.add('11450');" title="Comparer ce Produit" type="button"><i class="fa fa-gavel"></i></button>
 <div class="flybar">
 <div class="flybar-cart">
-<button class="btn btn-primary" onclick="cart.add('2742');" type="button">Ajouter au panier</button>
+<button class="btn btn-primary" onclick="cart.add('11450');" type="button">Ajouter au panier</button>
 </div>
 </div>
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.wohnmobil-autoglas.de/travel-pal-mit-doppelrollen-valise-a-roulettes-black.html"><img alt="Travel Pal Mit Doppelrollen - Valise À Roulettes Black" class="img-responsive img-normal" onerror="nofindit(this)" onload="resetimg(this,'80','100')" src="image/p_image/travel-pal-mit-doppelrollen-valise-a-roulettes-black-2742.jpg" title="Travel Pal Mit Doppelrollen - Valise À Roulettes Black"/></a>
+<a class="arevision" href="http://www.wohnmobil-autoglas.de/only-shoes-onlshay-chunky-baskets-basses-white-grey.html"><img alt="Only Shoes Onlshay Chunky - Baskets Basses White/grey" class="img-responsive img-normal" onerror="nofindit(this)" onload="resetimg(this,'80','100')" src="image/p_image/only-shoes-onlshay-chunky-baskets-basses-white-grey-11450.jpg" title="Only Shoes Onlshay Chunky - Baskets Basses White/grey"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.wohnmobil-autoglas.de/travel-pal-mit-doppelrollen-valise-a-roulettes-black.html">Travel Pal Mit Doppelrollen - Valise À Roulettes Black</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€48,69</span> <span class="price-old">€178,49</span>
-</p>
-<div class="product-list-buttons">
-<div class="list-quickview">
-<a class="btn btn-default quickview" href="http://www.wohnmobil-autoglas.de/index.php?route=product/quickview&amp;product_id=2742">Aperçu rapide</a>
-</div>
-<div class="cart">
-<button class="btn btn-primary" onclick="cart.add('2742');" type="button">Ajouter au panier</button>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<span class="badge-wrapper">
-<span class="badge sale">-73%</span>
-</span>
-<button class="wishlist" data-placement="left" data-toggle="tooltip" onclick="wishlist.add('332');" title="Ajouter à la liste de souhaits" type="button"><i class="fa fa-heart"></i></button>
-<button class="compare" data-placement="left" data-toggle="tooltip" onclick="compare.add('332');" title="Comparer ce Produit" type="button"><i class="fa fa-gavel"></i></button>
-<div class="flybar">
-<div class="flybar-cart">
-<button class="btn btn-primary" onclick="cart.add('332');" type="button">Ajouter au panier</button>
-</div>
-</div>
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.wohnmobil-autoglas.de/replay-pullover-black.html"><img alt="Replay Pullover - Black" class="img-responsive img-normal" onerror="nofindit(this)" onload="resetimg(this,'80','100')" src="image/p_image/replay-pullover-black-332.jpg" title="Replay Pullover - Black"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="http://www.wohnmobil-autoglas.de/replay-pullover-black.html">Replay Pullover - Black</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€45,89</span> <span class="price-old">€169,89</span>
-</p>
-<div class="product-list-buttons">
-<div class="list-quickview">
-<a class="btn btn-default quickview" href="http://www.wohnmobil-autoglas.de/index.php?route=product/quickview&amp;product_id=332">Aperçu rapide</a>
-</div>
-<div class="cart">
-<button class="btn btn-primary" onclick="cart.add('332');" type="button">Ajouter au panier</button>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<span class="badge-wrapper">
-<span class="badge sale">-71%</span>
-</span>
-<button class="wishlist" data-placement="left" data-toggle="tooltip" onclick="wishlist.add('8608');" title="Ajouter à la liste de souhaits" type="button"><i class="fa fa-heart"></i></button>
-<button class="compare" data-placement="left" data-toggle="tooltip" onclick="compare.add('8608');" title="Comparer ce Produit" type="button"><i class="fa fa-gavel"></i></button>
-<div class="flybar">
-<div class="flybar-cart">
-<button class="btn btn-primary" onclick="cart.add('8608');" type="button">Ajouter au panier</button>
-</div>
-</div>
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.wohnmobil-autoglas.de/drykorn-valene-gilet-offwhite.html"><img alt="Drykorn Valene - Gilet Offwhite" class="img-responsive img-normal" onerror="nofindit(this)" onload="resetimg(this,'80','100')" src="image/p_image/drykorn-valene-gilet-offwhite-8608.jpg" title="Drykorn Valene - Gilet Offwhite"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="http://www.wohnmobil-autoglas.de/drykorn-valene-gilet-offwhite.html">Drykorn Valene - Gilet Offwhite</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€49,69</span> <span class="price-old">€168,99</span>
-</p>
-<div class="product-list-buttons">
-<div class="list-quickview">
-<a class="btn btn-default quickview" href="http://www.wohnmobil-autoglas.de/index.php?route=product/quickview&amp;product_id=8608">Aperçu rapide</a>
-</div>
-<div class="cart">
-<button class="btn btn-primary" onclick="cart.add('8608');" type="button">Ajouter au panier</button>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<span class="badge-wrapper">
-<span class="badge sale">-73%</span>
-</span>
-<button class="wishlist" data-placement="left" data-toggle="tooltip" onclick="wishlist.add('3749');" title="Ajouter à la liste de souhaits" type="button"><i class="fa fa-heart"></i></button>
-<button class="compare" data-placement="left" data-toggle="tooltip" onclick="compare.add('3749');" title="Comparer ce Produit" type="button"><i class="fa fa-gavel"></i></button>
-<div class="flybar">
-<div class="flybar-cart">
-<button class="btn btn-primary" onclick="cart.add('3749');" type="button">Ajouter au panier</button>
-</div>
-</div>
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.wohnmobil-autoglas.de/guess-genova-baskets-basses-blue-mirage-white.html"><img alt="Guess Genova - Baskets Basses Blue Mirage/white" class="img-responsive img-normal" onerror="nofindit(this)" onload="resetimg(this,'80','100')" src="image/p_image/guess-genova-baskets-basses-blue-mirage-white-3749.jpg" title="Guess Genova - Baskets Basses Blue Mirage/white"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="http://www.wohnmobil-autoglas.de/guess-genova-baskets-basses-blue-mirage-white.html">Guess Genova - Baskets Basses Blue Mirage/white</a></h4></div>
+<div class="name"><h4><a href="http://www.wohnmobil-autoglas.de/only-shoes-onlshay-chunky-baskets-basses-white-grey.html">Only Shoes Onlshay Chunky - Baskets Basses White/grey</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
 <span class="price-new">€47,69</span> <span class="price-old">€178,99</span>
 </p>
 <div class="product-list-buttons">
 <div class="list-quickview">
-<a class="btn btn-default quickview" href="http://www.wohnmobil-autoglas.de/index.php?route=product/quickview&amp;product_id=3749">Aperçu rapide</a>
+<a class="btn btn-default quickview" href="http://www.wohnmobil-autoglas.de/index.php?route=product/quickview&amp;product_id=11450">Aperçu rapide</a>
 </div>
 <div class="cart">
-<button class="btn btn-primary" onclick="cart.add('3749');" type="button">Ajouter au panier</button>
+<button class="btn btn-primary" onclick="cart.add('11450');" type="button">Ajouter au panier</button>
 </div>
 </div>
 </div>
@@ -1109,31 +1041,99 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <span class="badge-wrapper">
-<span class="badge sale">-73%</span>
+<span class="badge sale">-72%</span>
 </span>
-<button class="wishlist" data-placement="left" data-toggle="tooltip" onclick="wishlist.add('11321');" title="Ajouter à la liste de souhaits" type="button"><i class="fa fa-heart"></i></button>
-<button class="compare" data-placement="left" data-toggle="tooltip" onclick="compare.add('11321');" title="Comparer ce Produit" type="button"><i class="fa fa-gavel"></i></button>
+<button class="wishlist" data-placement="left" data-toggle="tooltip" onclick="wishlist.add('10500');" title="Ajouter à la liste de souhaits" type="button"><i class="fa fa-heart"></i></button>
+<button class="compare" data-placement="left" data-toggle="tooltip" onclick="compare.add('10500');" title="Comparer ce Produit" type="button"><i class="fa fa-gavel"></i></button>
 <div class="flybar">
 <div class="flybar-cart">
-<button class="btn btn-primary" onclick="cart.add('11321');" type="button">Ajouter au panier</button>
+<button class="btn btn-primary" onclick="cart.add('10500');" type="button">Ajouter au panier</button>
 </div>
 </div>
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.wohnmobil-autoglas.de/anna-field-leather-classic-ankle-boots-bottines-brown.html"><img alt="Anna Field Leather Classic Ankle Boots - Bottines Brown" class="img-responsive img-normal" onerror="nofindit(this)" onload="resetimg(this,'80','100')" src="image/p_image/anna-field-leather-classic-ankle-boots-bottines-brown-11321.jpg" title="Anna Field Leather Classic Ankle Boots - Bottines Brown"/></a>
+<a class="arevision" href="http://www.wohnmobil-autoglas.de/jlindeberg-champ-solid-original-echarpe-acid-dreams.html"><img alt="J.lindeberg Champ Solid Original - Écharpe Acid Dreams" class="img-responsive img-normal" onerror="nofindit(this)" onload="resetimg(this,'80','100')" src="image/p_image/jlindeberg-champ-solid-original-echarpe-acid-dreams-10500.jpg" title="J.lindeberg Champ Solid Original - Écharpe Acid Dreams"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.wohnmobil-autoglas.de/anna-field-leather-classic-ankle-boots-bottines-brown.html">Anna Field Leather Classic Ankle Boots - Bottines Brown</a></h4></div>
+<div class="name"><h4><a href="http://www.wohnmobil-autoglas.de/jlindeberg-champ-solid-original-echarpe-acid-dreams.html">J.lindeberg Champ Solid Original - Écharpe Acid Dreams</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€45,69</span> <span class="price-old">€168,99</span>
+<span class="price-new">€46,69</span> <span class="price-old">€169,59</span>
 </p>
 <div class="product-list-buttons">
 <div class="list-quickview">
-<a class="btn btn-default quickview" href="http://www.wohnmobil-autoglas.de/index.php?route=product/quickview&amp;product_id=11321">Aperçu rapide</a>
+<a class="btn btn-default quickview" href="http://www.wohnmobil-autoglas.de/index.php?route=product/quickview&amp;product_id=10500">Aperçu rapide</a>
 </div>
 <div class="cart">
-<button class="btn btn-primary" onclick="cart.add('11321');" type="button">Ajouter au panier</button>
+<button class="btn btn-primary" onclick="cart.add('10500');" type="button">Ajouter au panier</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<span class="badge-wrapper">
+<span class="badge sale">-70%</span>
+</span>
+<button class="wishlist" data-placement="left" data-toggle="tooltip" onclick="wishlist.add('6564');" title="Ajouter à la liste de souhaits" type="button"><i class="fa fa-heart"></i></button>
+<button class="compare" data-placement="left" data-toggle="tooltip" onclick="compare.add('6564');" title="Comparer ce Produit" type="button"><i class="fa fa-gavel"></i></button>
+<div class="flybar">
+<div class="flybar-cart">
+<button class="btn btn-primary" onclick="cart.add('6564');" type="button">Ajouter au panier</button>
+</div>
+</div>
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="http://www.wohnmobil-autoglas.de/oasis-curve-collarless-jacket-veste-en-similicuir-black.html"><img alt="Oasis Curve Collarless Jacket - Veste En Similicuir Black" class="img-responsive img-normal" onerror="nofindit(this)" onload="resetimg(this,'80','100')" src="image/p_image/oasis-curve-collarless-jacket-veste-en-similicuir-black-6564.jpg" title="Oasis Curve Collarless Jacket - Veste En Similicuir Black"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="http://www.wohnmobil-autoglas.de/oasis-curve-collarless-jacket-veste-en-similicuir-black.html">Oasis Curve Collarless Jacket - Veste En Similicuir Black</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€49,99</span> <span class="price-old">€168,99</span>
+</p>
+<div class="product-list-buttons">
+<div class="list-quickview">
+<a class="btn btn-default quickview" href="http://www.wohnmobil-autoglas.de/index.php?route=product/quickview&amp;product_id=6564">Aperçu rapide</a>
+</div>
+<div class="cart">
+<button class="btn btn-primary" onclick="cart.add('6564');" type="button">Ajouter au panier</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<span class="badge-wrapper">
+<span class="badge sale">-72%</span>
+</span>
+<button class="wishlist" data-placement="left" data-toggle="tooltip" onclick="wishlist.add('10522');" title="Ajouter à la liste de souhaits" type="button"><i class="fa fa-heart"></i></button>
+<button class="compare" data-placement="left" data-toggle="tooltip" onclick="compare.add('10522');" title="Comparer ce Produit" type="button"><i class="fa fa-gavel"></i></button>
+<div class="flybar">
+<div class="flybar-cart">
+<button class="btn btn-primary" onclick="cart.add('10522');" type="button">Ajouter au panier</button>
+</div>
+</div>
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="http://www.wohnmobil-autoglas.de/picard-portefeuille-blue.html"><img alt="Picard Portefeuille - Blue" class="img-responsive img-normal" onerror="nofindit(this)" onload="resetimg(this,'80','100')" src="image/p_image/picard-portefeuille-blue-10522.jpg" title="Picard Portefeuille - Blue"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="http://www.wohnmobil-autoglas.de/picard-portefeuille-blue.html">Picard Portefeuille - Blue</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€49,99</span> <span class="price-old">€178,89</span>
+</p>
+<div class="product-list-buttons">
+<div class="list-quickview">
+<a class="btn btn-default quickview" href="http://www.wohnmobil-autoglas.de/index.php?route=product/quickview&amp;product_id=10522">Aperçu rapide</a>
+</div>
+<div class="cart">
+<button class="btn btn-primary" onclick="cart.add('10522');" type="button">Ajouter au panier</button>
 </div>
 </div>
 </div>
@@ -1153,97 +1153,29 @@ $(document).ready(function() {
 <span class="badge-wrapper">
 <span class="badge sale">-73%</span>
 </span>
-<button class="wishlist" data-placement="left" data-toggle="tooltip" onclick="wishlist.add('3083');" title="Ajouter à la liste de souhaits" type="button"><i class="fa fa-heart"></i></button>
-<button class="compare" data-placement="left" data-toggle="tooltip" onclick="compare.add('3083');" title="Comparer ce Produit" type="button"><i class="fa fa-gavel"></i></button>
+<button class="wishlist" data-placement="left" data-toggle="tooltip" onclick="wishlist.add('9634');" title="Ajouter à la liste de souhaits" type="button"><i class="fa fa-heart"></i></button>
+<button class="compare" data-placement="left" data-toggle="tooltip" onclick="compare.add('9634');" title="Comparer ce Produit" type="button"><i class="fa fa-gavel"></i></button>
 <div class="flybar">
 <div class="flybar-cart">
-<button class="btn btn-primary" onclick="cart.add('3083');" type="button">Ajouter au panier</button>
+<button class="btn btn-primary" onclick="cart.add('9634');" type="button">Ajouter au panier</button>
 </div>
 </div>
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.wohnmobil-autoglas.de/boss-lunettes-de-soleil-ruthe.html"><img alt="Boss Lunettes De Soleil - Ruthe" class="img-responsive img-normal" onerror="nofindit(this)" onload="resetimg(this,'200','200')" src="image/p_image/boss-lunettes-de-soleil-ruthe-3083.jpg" title="Boss Lunettes De Soleil - Ruthe"/></a>
+<a class="arevision" href="http://www.wohnmobil-autoglas.de/mywalit-portefeuille-black.html"><img alt="Mywalit Portefeuille - Black" class="img-responsive img-normal" onerror="nofindit(this)" onload="resetimg(this,'200','200')" src="image/p_image/mywalit-portefeuille-black-9634.jpg" title="Mywalit Portefeuille - Black"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.wohnmobil-autoglas.de/boss-lunettes-de-soleil-ruthe.html">Boss Lunettes De Soleil - Ruthe</a></h4></div>
+<div class="name"><h4><a href="http://www.wohnmobil-autoglas.de/mywalit-portefeuille-black.html">Mywalit Portefeuille - Black</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€48,49</span> <span class="price-old">€178,69</span>
+<span class="price-new">€48,89</span> <span class="price-old">€178,89</span>
 </p>
 <div class="product-list-buttons">
 <div class="list-quickview">
-<a class="btn btn-default quickview" href="http://www.wohnmobil-autoglas.de/index.php?route=product/quickview&amp;product_id=3083">Aperçu rapide</a>
+<a class="btn btn-default quickview" href="http://www.wohnmobil-autoglas.de/index.php?route=product/quickview&amp;product_id=9634">Aperçu rapide</a>
 </div>
 <div class="cart">
-<button class="btn btn-primary" onclick="cart.add('3083');" type="button">Ajouter au panier</button>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<span class="badge-wrapper">
-<span class="badge sale">-75%</span>
-</span>
-<button class="wishlist" data-placement="left" data-toggle="tooltip" onclick="wishlist.add('4075');" title="Ajouter à la liste de souhaits" type="button"><i class="fa fa-heart"></i></button>
-<button class="compare" data-placement="left" data-toggle="tooltip" onclick="compare.add('4075');" title="Comparer ce Produit" type="button"><i class="fa fa-gavel"></i></button>
-<div class="flybar">
-<div class="flybar-cart">
-<button class="btn btn-primary" onclick="cart.add('4075');" type="button">Ajouter au panier</button>
-</div>
-</div>
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.wohnmobil-autoglas.de/gant-prepville-baskets-basses-ice-blue.html"><img alt="Gant Prepville - Baskets Basses Ice Blue" class="img-responsive img-normal" onerror="nofindit(this)" onload="resetimg(this,'200','200')" src="image/p_image/gant-prepville-baskets-basses-ice-blue-4075.jpg" title="Gant Prepville - Baskets Basses Ice Blue"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="http://www.wohnmobil-autoglas.de/gant-prepville-baskets-basses-ice-blue.html">Gant Prepville - Baskets Basses Ice Blue</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€45,49</span> <span class="price-old">€178,89</span>
-</p>
-<div class="product-list-buttons">
-<div class="list-quickview">
-<a class="btn btn-default quickview" href="http://www.wohnmobil-autoglas.de/index.php?route=product/quickview&amp;product_id=4075">Aperçu rapide</a>
-</div>
-<div class="cart">
-<button class="btn btn-primary" onclick="cart.add('4075');" type="button">Ajouter au panier</button>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<span class="badge-wrapper">
-<span class="badge sale">-71%</span>
-</span>
-<button class="wishlist" data-placement="left" data-toggle="tooltip" onclick="wishlist.add('2369');" title="Ajouter à la liste de souhaits" type="button"><i class="fa fa-heart"></i></button>
-<button class="compare" data-placement="left" data-toggle="tooltip" onclick="compare.add('2369');" title="Comparer ce Produit" type="button"><i class="fa fa-gavel"></i></button>
-<div class="flybar">
-<div class="flybar-cart">
-<button class="btn btn-primary" onclick="cart.add('2369');" type="button">Ajouter au panier</button>
-</div>
-</div>
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.wohnmobil-autoglas.de/celio-pusnow-veste-dhiver-yellow.html"><img alt="Celio Pusnow - Veste D'hiver Yellow" class="img-responsive img-normal" onerror="nofindit(this)" onload="resetimg(this,'200','200')" src="image/p_image/celio-pusnow-veste-dhiver-yellow-2369.jpg" title="Celio Pusnow - Veste D'hiver Yellow"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="http://www.wohnmobil-autoglas.de/celio-pusnow-veste-dhiver-yellow.html">Celio Pusnow - Veste D'hiver Yellow</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€48,49</span> <span class="price-old">€169,89</span>
-</p>
-<div class="product-list-buttons">
-<div class="list-quickview">
-<a class="btn btn-default quickview" href="http://www.wohnmobil-autoglas.de/index.php?route=product/quickview&amp;product_id=2369">Aperçu rapide</a>
-</div>
-<div class="cart">
-<button class="btn btn-primary" onclick="cart.add('2369');" type="button">Ajouter au panier</button>
+<button class="btn btn-primary" onclick="cart.add('9634');" type="button">Ajouter au panier</button>
 </div>
 </div>
 </div>
@@ -1255,29 +1187,29 @@ $(document).ready(function() {
 <span class="badge-wrapper">
 <span class="badge sale">-73%</span>
 </span>
-<button class="wishlist" data-placement="left" data-toggle="tooltip" onclick="wishlist.add('9569');" title="Ajouter à la liste de souhaits" type="button"><i class="fa fa-heart"></i></button>
-<button class="compare" data-placement="left" data-toggle="tooltip" onclick="compare.add('9569');" title="Comparer ce Produit" type="button"><i class="fa fa-gavel"></i></button>
+<button class="wishlist" data-placement="left" data-toggle="tooltip" onclick="wishlist.add('7643');" title="Ajouter à la liste de souhaits" type="button"><i class="fa fa-heart"></i></button>
+<button class="compare" data-placement="left" data-toggle="tooltip" onclick="compare.add('7643');" title="Comparer ce Produit" type="button"><i class="fa fa-gavel"></i></button>
 <div class="flybar">
 <div class="flybar-cart">
-<button class="btn btn-primary" onclick="cart.add('9569');" type="button">Ajouter au panier</button>
+<button class="btn btn-primary" onclick="cart.add('7643');" type="button">Ajouter au panier</button>
 </div>
 </div>
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.wohnmobil-autoglas.de/calvin-klein-slivered-laptop-bag-sac-ordinateur-black.html"><img alt="Calvin Klein Slivered Laptop Bag - Sac Ordinateur Black" class="img-responsive img-normal" onerror="nofindit(this)" onload="resetimg(this,'200','200')" src="image/p_image/calvin-klein-slivered-laptop-bag-sac-ordinateur-black-9569.jpg" title="Calvin Klein Slivered Laptop Bag - Sac Ordinateur Black"/></a>
+<a class="arevision" href="http://www.wohnmobil-autoglas.de/resume-sonja-skirt-jupe-trapeze-black.html"><img alt="Résumé Sonja Skirt - Jupe Trapèze Black" class="img-responsive img-normal" onerror="nofindit(this)" onload="resetimg(this,'200','200')" src="image/p_image/resume-sonja-skirt-jupe-trapeze-black-7643.jpg" title="Résumé Sonja Skirt - Jupe Trapèze Black"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.wohnmobil-autoglas.de/calvin-klein-slivered-laptop-bag-sac-ordinateur-black.html">Calvin Klein Slivered Laptop Bag - Sac Ordinateur Black</a></h4></div>
+<div class="name"><h4><a href="http://www.wohnmobil-autoglas.de/resume-sonja-skirt-jupe-trapeze-black.html">Résumé Sonja Skirt - Jupe Trapèze Black</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€45,89</span> <span class="price-old">€169,59</span>
+<span class="price-new">€47,49</span> <span class="price-old">€176,69</span>
 </p>
 <div class="product-list-buttons">
 <div class="list-quickview">
-<a class="btn btn-default quickview" href="http://www.wohnmobil-autoglas.de/index.php?route=product/quickview&amp;product_id=9569">Aperçu rapide</a>
+<a class="btn btn-default quickview" href="http://www.wohnmobil-autoglas.de/index.php?route=product/quickview&amp;product_id=7643">Aperçu rapide</a>
 </div>
 <div class="cart">
-<button class="btn btn-primary" onclick="cart.add('9569');" type="button">Ajouter au panier</button>
+<button class="btn btn-primary" onclick="cart.add('7643');" type="button">Ajouter au panier</button>
 </div>
 </div>
 </div>
@@ -1289,29 +1221,29 @@ $(document).ready(function() {
 <span class="badge-wrapper">
 <span class="badge sale">-73%</span>
 </span>
-<button class="wishlist" data-placement="left" data-toggle="tooltip" onclick="wishlist.add('12485');" title="Ajouter à la liste de souhaits" type="button"><i class="fa fa-heart"></i></button>
-<button class="compare" data-placement="left" data-toggle="tooltip" onclick="compare.add('12485');" title="Comparer ce Produit" type="button"><i class="fa fa-gavel"></i></button>
+<button class="wishlist" data-placement="left" data-toggle="tooltip" onclick="wishlist.add('5117');" title="Ajouter à la liste de souhaits" type="button"><i class="fa fa-heart"></i></button>
+<button class="compare" data-placement="left" data-toggle="tooltip" onclick="compare.add('5117');" title="Comparer ce Produit" type="button"><i class="fa fa-gavel"></i></button>
 <div class="flybar">
 <div class="flybar-cart">
-<button class="btn btn-primary" onclick="cart.add('12485');" type="button">Ajouter au panier</button>
+<button class="btn btn-primary" onclick="cart.add('5117');" type="button">Ajouter au panier</button>
 </div>
 </div>
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.wohnmobil-autoglas.de/kennel-schmenger-olivia-sandales-coral.html"><img alt="Kennel + Schmenger Olivia - Sandales Coral" class="img-responsive img-normal" onerror="nofindit(this)" onload="resetimg(this,'200','200')" src="image/p_image/kennel-schmenger-olivia-sandales-coral-12485.jpg" title="Kennel + Schmenger Olivia - Sandales Coral"/></a>
+<a class="arevision" href="http://www.wohnmobil-autoglas.de/wallis-tall-ruffle-floral-dress-robe-dete-black.html"><img alt="Wallis Tall Ruffle Floral Dress - Robe D'été Black" class="img-responsive img-normal" onerror="nofindit(this)" onload="resetimg(this,'200','200')" src="image/p_image/wallis-tall-ruffle-floral-dress-robe-dete-black-5117.jpg" title="Wallis Tall Ruffle Floral Dress - Robe D'été Black"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.wohnmobil-autoglas.de/kennel-schmenger-olivia-sandales-coral.html">Kennel + Schmenger Olivia - Sandales Coral</a></h4></div>
+<div class="name"><h4><a href="http://www.wohnmobil-autoglas.de/wallis-tall-ruffle-floral-dress-robe-dete-black.html">Wallis Tall Ruffle Floral Dress - Robe D'été Black</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€45,99</span> <span class="price-old">€168,99</span>
+<span class="price-new">€47,99</span> <span class="price-old">€178,69</span>
 </p>
 <div class="product-list-buttons">
 <div class="list-quickview">
-<a class="btn btn-default quickview" href="http://www.wohnmobil-autoglas.de/index.php?route=product/quickview&amp;product_id=12485">Aperçu rapide</a>
+<a class="btn btn-default quickview" href="http://www.wohnmobil-autoglas.de/index.php?route=product/quickview&amp;product_id=5117">Aperçu rapide</a>
 </div>
 <div class="cart">
-<button class="btn btn-primary" onclick="cart.add('12485');" type="button">Ajouter au panier</button>
+<button class="btn btn-primary" onclick="cart.add('5117');" type="button">Ajouter au panier</button>
 </div>
 </div>
 </div>
@@ -1323,63 +1255,29 @@ $(document).ready(function() {
 <span class="badge-wrapper">
 <span class="badge sale">-73%</span>
 </span>
-<button class="wishlist" data-placement="left" data-toggle="tooltip" onclick="wishlist.add('2805');" title="Ajouter à la liste de souhaits" type="button"><i class="fa fa-heart"></i></button>
-<button class="compare" data-placement="left" data-toggle="tooltip" onclick="compare.add('2805');" title="Comparer ce Produit" type="button"><i class="fa fa-gavel"></i></button>
+<button class="wishlist" data-placement="left" data-toggle="tooltip" onclick="wishlist.add('381');" title="Ajouter à la liste de souhaits" type="button"><i class="fa fa-heart"></i></button>
+<button class="compare" data-placement="left" data-toggle="tooltip" onclick="compare.add('381');" title="Comparer ce Produit" type="button"><i class="fa fa-gavel"></i></button>
 <div class="flybar">
 <div class="flybar-cart">
-<button class="btn btn-primary" onclick="cart.add('2805');" type="button">Ajouter au panier</button>
+<button class="btn btn-primary" onclick="cart.add('381');" type="button">Ajouter au panier</button>
 </div>
 </div>
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.wohnmobil-autoglas.de/timberland-man-wallet-bifold-portefeuille-black.html"><img alt="Timberland Man Wallet Bifold - Portefeuille Black" class="img-responsive img-normal" onerror="nofindit(this)" onload="resetimg(this,'200','200')" src="image/p_image/timberland-man-wallet-bifold-portefeuille-black-2805.jpg" title="Timberland Man Wallet Bifold - Portefeuille Black"/></a>
+<a class="arevision" href="http://www.wohnmobil-autoglas.de/topman-chore-chemise-black.html"><img alt="Topman Chore - Chemise Black" class="img-responsive img-normal" onerror="nofindit(this)" onload="resetimg(this,'200','200')" src="image/p_image/topman-chore-chemise-black-381.jpg" title="Topman Chore - Chemise Black"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.wohnmobil-autoglas.de/timberland-man-wallet-bifold-portefeuille-black.html">Timberland Man Wallet Bifold - Portefeuille Black</a></h4></div>
+<div class="name"><h4><a href="http://www.wohnmobil-autoglas.de/topman-chore-chemise-black.html">Topman Chore - Chemise Black</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€47,49</span> <span class="price-old">€178,49</span>
+<span class="price-new">€45,69</span> <span class="price-old">€168,49</span>
 </p>
 <div class="product-list-buttons">
 <div class="list-quickview">
-<a class="btn btn-default quickview" href="http://www.wohnmobil-autoglas.de/index.php?route=product/quickview&amp;product_id=2805">Aperçu rapide</a>
+<a class="btn btn-default quickview" href="http://www.wohnmobil-autoglas.de/index.php?route=product/quickview&amp;product_id=381">Aperçu rapide</a>
 </div>
 <div class="cart">
-<button class="btn btn-primary" onclick="cart.add('2805');" type="button">Ajouter au panier</button>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<span class="badge-wrapper">
-<span class="badge sale">-74%</span>
-</span>
-<button class="wishlist" data-placement="left" data-toggle="tooltip" onclick="wishlist.add('11250');" title="Ajouter à la liste de souhaits" type="button"><i class="fa fa-heart"></i></button>
-<button class="compare" data-placement="left" data-toggle="tooltip" onclick="compare.add('11250');" title="Comparer ce Produit" type="button"><i class="fa fa-gavel"></i></button>
-<div class="flybar">
-<div class="flybar-cart">
-<button class="btn btn-primary" onclick="cart.add('11250');" type="button">Ajouter au panier</button>
-</div>
-</div>
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.wohnmobil-autoglas.de/vagabond-eliza-derbies-safari.html"><img alt="Vagabond Eliza - Derbies Safari" class="img-responsive img-normal" onerror="nofindit(this)" onload="resetimg(this,'200','200')" src="image/p_image/vagabond-eliza-derbies-safari-11250.jpg" title="Vagabond Eliza - Derbies Safari"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="http://www.wohnmobil-autoglas.de/vagabond-eliza-derbies-safari.html">Vagabond Eliza - Derbies Safari</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€46,99</span> <span class="price-old">€178,89</span>
-</p>
-<div class="product-list-buttons">
-<div class="list-quickview">
-<a class="btn btn-default quickview" href="http://www.wohnmobil-autoglas.de/index.php?route=product/quickview&amp;product_id=11250">Aperçu rapide</a>
-</div>
-<div class="cart">
-<button class="btn btn-primary" onclick="cart.add('11250');" type="button">Ajouter au panier</button>
+<button class="btn btn-primary" onclick="cart.add('381');" type="button">Ajouter au panier</button>
 </div>
 </div>
 </div>
@@ -1391,29 +1289,29 @@ $(document).ready(function() {
 <span class="badge-wrapper">
 <span class="badge sale">-72%</span>
 </span>
-<button class="wishlist" data-placement="left" data-toggle="tooltip" onclick="wishlist.add('12968');" title="Ajouter à la liste de souhaits" type="button"><i class="fa fa-heart"></i></button>
-<button class="compare" data-placement="left" data-toggle="tooltip" onclick="compare.add('12968');" title="Comparer ce Produit" type="button"><i class="fa fa-gavel"></i></button>
+<button class="wishlist" data-placement="left" data-toggle="tooltip" onclick="wishlist.add('240');" title="Ajouter à la liste de souhaits" type="button"><i class="fa fa-heart"></i></button>
+<button class="compare" data-placement="left" data-toggle="tooltip" onclick="compare.add('240');" title="Comparer ce Produit" type="button"><i class="fa fa-gavel"></i></button>
 <div class="flybar">
 <div class="flybar-cart">
-<button class="btn btn-primary" onclick="cart.add('12968');" type="button">Ajouter au panier</button>
+<button class="btn btn-primary" onclick="cart.add('240');" type="button">Ajouter au panier</button>
 </div>
 </div>
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.wohnmobil-autoglas.de/tory-burch-gigi-sandales-perfect-black-midnight.html"><img alt="Tory Burch Gigi - Sandales Perfect Black/midnight" class="img-responsive img-normal" onerror="nofindit(this)" onload="resetimg(this,'200','200')" src="image/p_image/tory-burch-gigi-sandales-perfect-black-midnight-12968.jpg" title="Tory Burch Gigi - Sandales Perfect Black/midnight"/></a>
+<a class="arevision" href="http://www.wohnmobil-autoglas.de/minimum-anholt-chemise-navy.html"><img alt="Minimum Anholt - Chemise Navy" class="img-responsive img-normal" onerror="nofindit(this)" onload="resetimg(this,'200','200')" src="image/p_image/minimum-anholt-chemise-navy-240.jpg" title="Minimum Anholt - Chemise Navy"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.wohnmobil-autoglas.de/tory-burch-gigi-sandales-perfect-black-midnight.html">Tory Burch Gigi - Sandales Perfect Black/midnight</a></h4></div>
+<div class="name"><h4><a href="http://www.wohnmobil-autoglas.de/minimum-anholt-chemise-navy.html">Minimum Anholt - Chemise Navy</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€49,89</span> <span class="price-old">€178,49</span>
+<span class="price-new">€48,69</span> <span class="price-old">€176,89</span>
 </p>
 <div class="product-list-buttons">
 <div class="list-quickview">
-<a class="btn btn-default quickview" href="http://www.wohnmobil-autoglas.de/index.php?route=product/quickview&amp;product_id=12968">Aperçu rapide</a>
+<a class="btn btn-default quickview" href="http://www.wohnmobil-autoglas.de/index.php?route=product/quickview&amp;product_id=240">Aperçu rapide</a>
 </div>
 <div class="cart">
-<button class="btn btn-primary" onclick="cart.add('12968');" type="button">Ajouter au panier</button>
+<button class="btn btn-primary" onclick="cart.add('240');" type="button">Ajouter au panier</button>
 </div>
 </div>
 </div>
@@ -1425,29 +1323,63 @@ $(document).ready(function() {
 <span class="badge-wrapper">
 <span class="badge sale">-74%</span>
 </span>
-<button class="wishlist" data-placement="left" data-toggle="tooltip" onclick="wishlist.add('10667');" title="Ajouter à la liste de souhaits" type="button"><i class="fa fa-heart"></i></button>
-<button class="compare" data-placement="left" data-toggle="tooltip" onclick="compare.add('10667');" title="Comparer ce Produit" type="button"><i class="fa fa-gavel"></i></button>
+<button class="wishlist" data-placement="left" data-toggle="tooltip" onclick="wishlist.add('2059');" title="Ajouter à la liste de souhaits" type="button"><i class="fa fa-heart"></i></button>
+<button class="compare" data-placement="left" data-toggle="tooltip" onclick="compare.add('2059');" title="Comparer ce Produit" type="button"><i class="fa fa-gavel"></i></button>
 <div class="flybar">
 <div class="flybar-cart">
-<button class="btn btn-primary" onclick="cart.add('10667');" type="button">Ajouter au panier</button>
+<button class="btn btn-primary" onclick="cart.add('2059');" type="button">Ajouter au panier</button>
 </div>
 </div>
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.wohnmobil-autoglas.de/piquadro-sac-a-dos-black.html"><img alt="Piquadro Sac À Dos - Black" class="img-responsive img-normal" onerror="nofindit(this)" onload="resetimg(this,'200','200')" src="image/p_image/piquadro-sac-a-dos-black-10667.jpg" title="Piquadro Sac À Dos - Black"/></a>
+<a class="arevision" href="http://www.wohnmobil-autoglas.de/joop-pantalon-de-costume-light-grey.html"><img alt="Joop! Pantalon De Costume - Light Grey" class="img-responsive img-normal" onerror="nofindit(this)" onload="resetimg(this,'200','200')" src="image/p_image/joop-pantalon-de-costume-light-grey-2059.jpg" title="Joop! Pantalon De Costume - Light Grey"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.wohnmobil-autoglas.de/piquadro-sac-a-dos-black.html">Piquadro Sac À Dos - Black</a></h4></div>
+<div class="name"><h4><a href="http://www.wohnmobil-autoglas.de/joop-pantalon-de-costume-light-grey.html">Joop! Pantalon De Costume - Light Grey</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€45,69</span> <span class="price-old">€176,69</span>
+<span class="price-new">€45,69</span> <span class="price-old">€178,69</span>
 </p>
 <div class="product-list-buttons">
 <div class="list-quickview">
-<a class="btn btn-default quickview" href="http://www.wohnmobil-autoglas.de/index.php?route=product/quickview&amp;product_id=10667">Aperçu rapide</a>
+<a class="btn btn-default quickview" href="http://www.wohnmobil-autoglas.de/index.php?route=product/quickview&amp;product_id=2059">Aperçu rapide</a>
 </div>
 <div class="cart">
-<button class="btn btn-primary" onclick="cart.add('10667');" type="button">Ajouter au panier</button>
+<button class="btn btn-primary" onclick="cart.add('2059');" type="button">Ajouter au panier</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<span class="badge-wrapper">
+<span class="badge sale">-72%</span>
+</span>
+<button class="wishlist" data-placement="left" data-toggle="tooltip" onclick="wishlist.add('4442');" title="Ajouter à la liste de souhaits" type="button"><i class="fa fa-heart"></i></button>
+<button class="compare" data-placement="left" data-toggle="tooltip" onclick="compare.add('4442');" title="Comparer ce Produit" type="button"><i class="fa fa-gavel"></i></button>
+<div class="flybar">
+<div class="flybar-cart">
+<button class="btn btn-primary" onclick="cart.add('4442');" type="button">Ajouter au panier</button>
+</div>
+</div>
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="http://www.wohnmobil-autoglas.de/topman-bright-derby-derbies-amp-richelieus-tan.html"><img alt="Topman Bright Derby - Derbies &amp; Richelieus Tan" class="img-responsive img-normal" onerror="nofindit(this)" onload="resetimg(this,'200','200')" src="image/p_image/topman-bright-derby-derbies-amp-richelieus-tan-4442.jpg" title="Topman Bright Derby - Derbies &amp; Richelieus Tan"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="http://www.wohnmobil-autoglas.de/topman-bright-derby-derbies-amp-richelieus-tan.html">Topman Bright Derby - Derbies &amp; Richelieus Tan</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€49,69</span> <span class="price-old">€176,59</span>
+</p>
+<div class="product-list-buttons">
+<div class="list-quickview">
+<a class="btn btn-default quickview" href="http://www.wohnmobil-autoglas.de/index.php?route=product/quickview&amp;product_id=4442">Aperçu rapide</a>
+</div>
+<div class="cart">
+<button class="btn btn-primary" onclick="cart.add('4442');" type="button">Ajouter au panier</button>
 </div>
 </div>
 </div>
@@ -1459,29 +1391,29 @@ $(document).ready(function() {
 <span class="badge-wrapper">
 <span class="badge sale">-73%</span>
 </span>
-<button class="wishlist" data-placement="left" data-toggle="tooltip" onclick="wishlist.add('11383');" title="Ajouter à la liste de souhaits" type="button"><i class="fa fa-heart"></i></button>
-<button class="compare" data-placement="left" data-toggle="tooltip" onclick="compare.add('11383');" title="Comparer ce Produit" type="button"><i class="fa fa-gavel"></i></button>
+<button class="wishlist" data-placement="left" data-toggle="tooltip" onclick="wishlist.add('2135');" title="Ajouter à la liste de souhaits" type="button"><i class="fa fa-heart"></i></button>
+<button class="compare" data-placement="left" data-toggle="tooltip" onclick="compare.add('2135');" title="Comparer ce Produit" type="button"><i class="fa fa-gavel"></i></button>
 <div class="flybar">
 <div class="flybar-cart">
-<button class="btn btn-primary" onclick="cart.add('11383');" type="button">Ajouter au panier</button>
+<button class="btn btn-primary" onclick="cart.add('2135');" type="button">Ajouter au panier</button>
 </div>
 </div>
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.wohnmobil-autoglas.de/jonak-andes-sandales-a-talons-hauts-saumon.html"><img alt="Jonak Andes - Sandales À Talons Hauts Saumon" class="img-responsive img-normal" onerror="nofindit(this)" onload="resetimg(this,'200','200')" src="image/p_image/jonak-andes-sandales-a-talons-hauts-saumon-11383.jpg" title="Jonak Andes - Sandales À Talons Hauts Saumon"/></a>
+<a class="arevision" href="http://www.wohnmobil-autoglas.de/jlindeberg-hopper-tech-travel-blazer-navy.html"><img alt="J.lindeberg Hopper Tech Travel - Blazer Navy" class="img-responsive img-normal" onerror="nofindit(this)" onload="resetimg(this,'200','200')" src="image/p_image/jlindeberg-hopper-tech-travel-blazer-navy-2135.jpg" title="J.lindeberg Hopper Tech Travel - Blazer Navy"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.wohnmobil-autoglas.de/jonak-andes-sandales-a-talons-hauts-saumon.html">Jonak Andes - Sandales À Talons Hauts Saumon</a></h4></div>
+<div class="name"><h4><a href="http://www.wohnmobil-autoglas.de/jlindeberg-hopper-tech-travel-blazer-navy.html">J.lindeberg Hopper Tech Travel - Blazer Navy</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€48,69</span> <span class="price-old">€178,69</span>
+<span class="price-new">€45,49</span> <span class="price-old">€168,89</span>
 </p>
 <div class="product-list-buttons">
 <div class="list-quickview">
-<a class="btn btn-default quickview" href="http://www.wohnmobil-autoglas.de/index.php?route=product/quickview&amp;product_id=11383">Aperçu rapide</a>
+<a class="btn btn-default quickview" href="http://www.wohnmobil-autoglas.de/index.php?route=product/quickview&amp;product_id=2135">Aperçu rapide</a>
 </div>
 <div class="cart">
-<button class="btn btn-primary" onclick="cart.add('11383');" type="button">Ajouter au panier</button>
+<button class="btn btn-primary" onclick="cart.add('2135');" type="button">Ajouter au panier</button>
 </div>
 </div>
 </div>
@@ -1491,31 +1423,31 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <span class="badge-wrapper">
-<span class="badge sale">-73%</span>
+<span class="badge sale">-71%</span>
 </span>
-<button class="wishlist" data-placement="left" data-toggle="tooltip" onclick="wishlist.add('3332');" title="Ajouter à la liste de souhaits" type="button"><i class="fa fa-heart"></i></button>
-<button class="compare" data-placement="left" data-toggle="tooltip" onclick="compare.add('3332');" title="Comparer ce Produit" type="button"><i class="fa fa-gavel"></i></button>
+<button class="wishlist" data-placement="left" data-toggle="tooltip" onclick="wishlist.add('8715');" title="Ajouter à la liste de souhaits" type="button"><i class="fa fa-heart"></i></button>
+<button class="compare" data-placement="left" data-toggle="tooltip" onclick="compare.add('8715');" title="Comparer ce Produit" type="button"><i class="fa fa-gavel"></i></button>
 <div class="flybar">
 <div class="flybar-cart">
-<button class="btn btn-primary" onclick="cart.add('3332');" type="button">Ajouter au panier</button>
+<button class="btn btn-primary" onclick="cart.add('8715');" type="button">Ajouter au panier</button>
 </div>
 </div>
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.wohnmobil-autoglas.de/calvin-klein-pro-washbag-trousse-de-toilette-black.html"><img alt="Calvin Klein Pro Washbag - Trousse De Toilette Black" class="img-responsive img-normal" onerror="nofindit(this)" onload="resetimg(this,'200','200')" src="image/p_image/calvin-klein-pro-washbag-trousse-de-toilette-black-3332.jpg" title="Calvin Klein Pro Washbag - Trousse De Toilette Black"/></a>
+<a class="arevision" href="http://www.wohnmobil-autoglas.de/replay-hyperflex-luz-jeans-skinny-stone-blue.html"><img alt="Replay Hyperflex Luz - Jeans Skinny Stone Blue" class="img-responsive img-normal" onerror="nofindit(this)" onload="resetimg(this,'200','200')" src="image/p_image/replay-hyperflex-luz-jeans-skinny-stone-blue-8715.jpg" title="Replay Hyperflex Luz - Jeans Skinny Stone Blue"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.wohnmobil-autoglas.de/calvin-klein-pro-washbag-trousse-de-toilette-black.html">Calvin Klein Pro Washbag - Trousse De Toilette Black</a></h4></div>
+<div class="name"><h4><a href="http://www.wohnmobil-autoglas.de/replay-hyperflex-luz-jeans-skinny-stone-blue.html">Replay Hyperflex Luz - Jeans Skinny Stone Blue</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€47,69</span> <span class="price-old">€178,49</span>
+<span class="price-new">€48,49</span> <span class="price-old">€169,69</span>
 </p>
 <div class="product-list-buttons">
 <div class="list-quickview">
-<a class="btn btn-default quickview" href="http://www.wohnmobil-autoglas.de/index.php?route=product/quickview&amp;product_id=3332">Aperçu rapide</a>
+<a class="btn btn-default quickview" href="http://www.wohnmobil-autoglas.de/index.php?route=product/quickview&amp;product_id=8715">Aperçu rapide</a>
 </div>
 <div class="cart">
-<button class="btn btn-primary" onclick="cart.add('3332');" type="button">Ajouter au panier</button>
+<button class="btn btn-primary" onclick="cart.add('8715');" type="button">Ajouter au panier</button>
 </div>
 </div>
 </div>
@@ -1525,31 +1457,99 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <span class="badge-wrapper">
-<span class="badge sale">-70%</span>
+<span class="badge sale">-72%</span>
 </span>
-<button class="wishlist" data-placement="left" data-toggle="tooltip" onclick="wishlist.add('9559');" title="Ajouter à la liste de souhaits" type="button"><i class="fa fa-heart"></i></button>
-<button class="compare" data-placement="left" data-toggle="tooltip" onclick="compare.add('9559');" title="Comparer ce Produit" type="button"><i class="fa fa-gavel"></i></button>
+<button class="wishlist" data-placement="left" data-toggle="tooltip" onclick="wishlist.add('10937');" title="Ajouter à la liste de souhaits" type="button"><i class="fa fa-heart"></i></button>
+<button class="compare" data-placement="left" data-toggle="tooltip" onclick="compare.add('10937');" title="Comparer ce Produit" type="button"><i class="fa fa-gavel"></i></button>
 <div class="flybar">
 <div class="flybar-cart">
-<button class="btn btn-primary" onclick="cart.add('9559');" type="button">Ajouter au panier</button>
+<button class="btn btn-primary" onclick="cart.add('10937');" type="button">Ajouter au panier</button>
 </div>
 </div>
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.wohnmobil-autoglas.de/chiara-ferragni-flirting-glitter-beltbag-sac-banane-silver.html"><img alt="Chiara Ferragni Flirting Glitter Beltbag - Sac Banane Silver" class="img-responsive img-normal" onerror="nofindit(this)" onload="resetimg(this,'200','200')" src="image/p_image/chiara-ferragni-flirting-glitter-beltbag-sac-banane-silver-9559.jpg" title="Chiara Ferragni Flirting Glitter Beltbag - Sac Banane Silver"/></a>
+<a class="arevision" href="http://www.wohnmobil-autoglas.de/kipling-riri-sac-bandouliere-true-blue-twill.html"><img alt="Kipling Riri - Sac Bandoulière True Blue Twill" class="img-responsive img-normal" onerror="nofindit(this)" onload="resetimg(this,'200','200')" src="image/p_image/kipling-riri-sac-bandouliere-true-blue-twill-10937.jpg" title="Kipling Riri - Sac Bandoulière True Blue Twill"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.wohnmobil-autoglas.de/chiara-ferragni-flirting-glitter-beltbag-sac-banane-silver.html">Chiara Ferragni Flirting Glitter Beltbag - Sac Banane Silver</a></h4></div>
+<div class="name"><h4><a href="http://www.wohnmobil-autoglas.de/kipling-riri-sac-bandouliere-true-blue-twill.html">Kipling Riri - Sac Bandoulière True Blue Twill</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€49,99</span> <span class="price-old">€168,69</span>
+<span class="price-new">€49,89</span> <span class="price-old">€176,89</span>
 </p>
 <div class="product-list-buttons">
 <div class="list-quickview">
-<a class="btn btn-default quickview" href="http://www.wohnmobil-autoglas.de/index.php?route=product/quickview&amp;product_id=9559">Aperçu rapide</a>
+<a class="btn btn-default quickview" href="http://www.wohnmobil-autoglas.de/index.php?route=product/quickview&amp;product_id=10937">Aperçu rapide</a>
 </div>
 <div class="cart">
-<button class="btn btn-primary" onclick="cart.add('9559');" type="button">Ajouter au panier</button>
+<button class="btn btn-primary" onclick="cart.add('10937');" type="button">Ajouter au panier</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<span class="badge-wrapper">
+<span class="badge sale">-72%</span>
+</span>
+<button class="wishlist" data-placement="left" data-toggle="tooltip" onclick="wishlist.add('1334');" title="Ajouter à la liste de souhaits" type="button"><i class="fa fa-heart"></i></button>
+<button class="compare" data-placement="left" data-toggle="tooltip" onclick="compare.add('1334');" title="Comparer ce Produit" type="button"><i class="fa fa-gavel"></i></button>
+<div class="flybar">
+<div class="flybar-cart">
+<button class="btn btn-primary" onclick="cart.add('1334');" type="button">Ajouter au panier</button>
+</div>
+</div>
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="http://www.wohnmobil-autoglas.de/matinique-margrate-pullover-estate-blue.html"><img alt="Matinique Margrate - Pullover Estate Blue" class="img-responsive img-normal" onerror="nofindit(this)" onload="resetimg(this,'200','200')" src="image/p_image/matinique-margrate-pullover-estate-blue-1334.jpg" title="Matinique Margrate - Pullover Estate Blue"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="http://www.wohnmobil-autoglas.de/matinique-margrate-pullover-estate-blue.html">Matinique Margrate - Pullover Estate Blue</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€49,99</span> <span class="price-old">€176,69</span>
+</p>
+<div class="product-list-buttons">
+<div class="list-quickview">
+<a class="btn btn-default quickview" href="http://www.wohnmobil-autoglas.de/index.php?route=product/quickview&amp;product_id=1334">Aperçu rapide</a>
+</div>
+<div class="cart">
+<button class="btn btn-primary" onclick="cart.add('1334');" type="button">Ajouter au panier</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<span class="badge-wrapper">
+<span class="badge sale">-72%</span>
+</span>
+<button class="wishlist" data-placement="left" data-toggle="tooltip" onclick="wishlist.add('3476');" title="Ajouter à la liste de souhaits" type="button"><i class="fa fa-heart"></i></button>
+<button class="compare" data-placement="left" data-toggle="tooltip" onclick="compare.add('3476');" title="Comparer ce Produit" type="button"><i class="fa fa-gavel"></i></button>
+<div class="flybar">
+<div class="flybar-cart">
+<button class="btn btn-primary" onclick="cart.add('3476');" type="button">Ajouter au panier</button>
+</div>
+</div>
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="http://www.wohnmobil-autoglas.de/johnny-urban-amy-sac-a-dos-grey.html"><img alt="Johnny Urban Amy - Sac À Dos Grey" class="img-responsive img-normal" onerror="nofindit(this)" onload="resetimg(this,'200','200')" src="image/p_image/johnny-urban-amy-sac-a-dos-grey-3476.jpg" title="Johnny Urban Amy - Sac À Dos Grey"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="http://www.wohnmobil-autoglas.de/johnny-urban-amy-sac-a-dos-grey.html">Johnny Urban Amy - Sac À Dos Grey</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€46,89</span> <span class="price-old">€168,69</span>
+</p>
+<div class="product-list-buttons">
+<div class="list-quickview">
+<a class="btn btn-default quickview" href="http://www.wohnmobil-autoglas.de/index.php?route=product/quickview&amp;product_id=3476">Aperçu rapide</a>
+</div>
+<div class="cart">
+<button class="btn btn-primary" onclick="cart.add('3476');" type="button">Ajouter au panier</button>
 </div>
 </div>
 </div>
@@ -1561,203 +1561,203 @@ $(document).ready(function() {
 </div>
 </div>
 </div>
-<script async="true" type="text/javascript">
-(function() {
-  var host = window.location.hostname;
-  // var element = document.createElement('script');
-  // var firstScript = document.getElementsByTagName('script')[0];
-  // var url = 'https://quantcast.mgr.consensu.org'
-  //   .concat('/choice/', '3aud4J6uA4Z6Y', '/', host, '/choice.js?timestamp=', Date.now())
-  var uspTries = 0;
-  var uspTriesLimit = 3;
-  // element.async = true;
-  // element.type = 'text/javascript';
-  // element.src = url;
-
-  // firstScript.parentNode.insertBefore(element, firstScript);
-
-  function makeStub() {
-    var TCF_LOCATOR_NAME = '__tcfapiLocator';
-    var queue = [];
-    var win = window;
-    var cmpFrame;
-
-    function addFrame() {
-      var doc = win.document;
-      var otherCMP = !!(win.frames[TCF_LOCATOR_NAME]);
-
-      if (!otherCMP) {
-        if (doc.body) {
-          var iframe = doc.createElement('iframe');
-
-          iframe.style.cssText = 'display:none';
-          iframe.name = TCF_LOCATOR_NAME;
-          doc.body.appendChild(iframe);
-        } else {
-          setTimeout(addFrame, 5);
-        }
-      }
-      return !otherCMP;
-    }
-
-    function tcfAPIHandler() {
-      var gdprApplies;
-      var args = arguments;
-
-      if (!args.length) {
-        return queue;
-      } else if (args[0] === 'setGdprApplies') {
-        if (
-          args.length > 3 &&
-          args[2] === 2 &&
-          typeof args[3] === 'boolean'
-        ) {
-          gdprApplies = args[3];
-          if (typeof args[2] === 'function') {
-            args[2]('set', true);
-          }
-        }
-      } else if (args[0] === 'ping') {
-        var retr = {
-          gdprApplies: gdprApplies,
-          cmpLoaded: false,
-          cmpStatus: 'stub'
-        };
-
-        if (typeof args[2] === 'function') {
-          args[2](retr);
-        }
-      } else {
-        queue.push(args);
-      }
-    }
-
-    function postMessageEventHandler(event) {
-      var msgIsString = typeof event.data === 'string';
-      var json = {};
-
-      try {
-        if (msgIsString) {
-          json = JSON.parse(event.data);
-        } else {
-          json = event.data;
-        }
-      } catch (ignore) {}
-
-      var payload = json.__tcfapiCall;
-
-      if (payload) {
-        window.__tcfapi(
-          payload.command,
-          payload.version,
-          function(retValue, success) {
-            var returnMsg = {
-              __tcfapiReturn: {
-                returnValue: retValue,
-                success: success,
-                callId: payload.callId
-              }
-            };
-            if (msgIsString) {
-              returnMsg = JSON.stringify(returnMsg);
-            }
-            event.source.postMessage(returnMsg, '*');
-          },
-          payload.parameter
-        );
-      }
-    }
-
-    while (win) {
-      try {
-        if (win.frames[TCF_LOCATOR_NAME]) {
-          cmpFrame = win;
-          break;
-        }
-      } catch (ignore) {}
-
-      if (win === window.top) {
-        break;
-      }
-      win = win.parent;
-    }
-    if (!cmpFrame) {
-      addFrame();
-      win.__tcfapi = tcfAPIHandler;
-      win.addEventListener('message', postMessageEventHandler, false);
-    }
-  };
-
-  // 📋 8/15 TODO: Not really a todo, but these couple of lines
-  // are sometimes finnicky.
-  if (typeof module !== 'undefined') {
-    module.exports = makeStub;
-  } else {
-    makeStub();
-  }
-
-  var uspStubFunction = function() {
-    var arg = arguments;
-    if (typeof window.__uspapi !== uspStubFunction) {
-      setTimeout(function() {
-        if (typeof window.__uspapi !== 'undefined') {
-          window.__uspapi.apply(window.__uspapi, arg);
-        }
-      }, 500);
-    }
-  };
-
-  var checkIfUspIsReady = function() {
-    uspTries++;
-    if (window.__uspapi === uspStubFunction && uspTries < uspTriesLimit) {
-      console.warn('USP is not accessible');
-    } else {
-      clearInterval(uspInterval);
-    }
-  };
-
-  if (typeof window.__uspapi === 'undefined') {
-    window.__uspapi = uspStubFunction;
-    var uspInterval = setInterval(checkIfUspIsReady, 6000);
-  }
-})();
+<script async="true" type="text/javascript">
+(function() {
+  var host = window.location.hostname;
+  // var element = document.createElement('script');
+  // var firstScript = document.getElementsByTagName('script')[0];
+  // var url = 'https://quantcast.mgr.consensu.org'
+  //   .concat('/choice/', '3aud4J6uA4Z6Y', '/', host, '/choice.js?timestamp=', Date.now())
+  var uspTries = 0;
+  var uspTriesLimit = 3;
+  // element.async = true;
+  // element.type = 'text/javascript';
+  // element.src = url;
+
+  // firstScript.parentNode.insertBefore(element, firstScript);
+
+  function makeStub() {
+    var TCF_LOCATOR_NAME = '__tcfapiLocator';
+    var queue = [];
+    var win = window;
+    var cmpFrame;
+
+    function addFrame() {
+      var doc = win.document;
+      var otherCMP = !!(win.frames[TCF_LOCATOR_NAME]);
+
+      if (!otherCMP) {
+        if (doc.body) {
+          var iframe = doc.createElement('iframe');
+
+          iframe.style.cssText = 'display:none';
+          iframe.name = TCF_LOCATOR_NAME;
+          doc.body.appendChild(iframe);
+        } else {
+          setTimeout(addFrame, 5);
+        }
+      }
+      return !otherCMP;
+    }
+
+    function tcfAPIHandler() {
+      var gdprApplies;
+      var args = arguments;
+
+      if (!args.length) {
+        return queue;
+      } else if (args[0] === 'setGdprApplies') {
+        if (
+          args.length > 3 &&
+          args[2] === 2 &&
+          typeof args[3] === 'boolean'
+        ) {
+          gdprApplies = args[3];
+          if (typeof args[2] === 'function') {
+            args[2]('set', true);
+          }
+        }
+      } else if (args[0] === 'ping') {
+        var retr = {
+          gdprApplies: gdprApplies,
+          cmpLoaded: false,
+          cmpStatus: 'stub'
+        };
+
+        if (typeof args[2] === 'function') {
+          args[2](retr);
+        }
+      } else {
+        queue.push(args);
+      }
+    }
+
+    function postMessageEventHandler(event) {
+      var msgIsString = typeof event.data === 'string';
+      var json = {};
+
+      try {
+        if (msgIsString) {
+          json = JSON.parse(event.data);
+        } else {
+          json = event.data;
+        }
+      } catch (ignore) {}
+
+      var payload = json.__tcfapiCall;
+
+      if (payload) {
+        window.__tcfapi(
+          payload.command,
+          payload.version,
+          function(retValue, success) {
+            var returnMsg = {
+              __tcfapiReturn: {
+                returnValue: retValue,
+                success: success,
+                callId: payload.callId
+              }
+            };
+            if (msgIsString) {
+              returnMsg = JSON.stringify(returnMsg);
+            }
+            event.source.postMessage(returnMsg, '*');
+          },
+          payload.parameter
+        );
+      }
+    }
+
+    while (win) {
+      try {
+        if (win.frames[TCF_LOCATOR_NAME]) {
+          cmpFrame = win;
+          break;
+        }
+      } catch (ignore) {}
+
+      if (win === window.top) {
+        break;
+      }
+      win = win.parent;
+    }
+    if (!cmpFrame) {
+      addFrame();
+      win.__tcfapi = tcfAPIHandler;
+      win.addEventListener('message', postMessageEventHandler, false);
+    }
+  };
+
+  // 📋 8/15 TODO: Not really a todo, but these couple of lines
+  // are sometimes finnicky.
+  if (typeof module !== 'undefined') {
+    module.exports = makeStub;
+  } else {
+    makeStub();
+  }
+
+  var uspStubFunction = function() {
+    var arg = arguments;
+    if (typeof window.__uspapi !== uspStubFunction) {
+      setTimeout(function() {
+        if (typeof window.__uspapi !== 'undefined') {
+          window.__uspapi.apply(window.__uspapi, arg);
+        }
+      }, 500);
+    }
+  };
+
+  var checkIfUspIsReady = function() {
+    uspTries++;
+    if (window.__uspapi === uspStubFunction && uspTries < uspTriesLimit) {
+      console.warn('USP is not accessible');
+    } else {
+      clearInterval(uspInterval);
+    }
+  };
+
+  if (typeof window.__uspapi === 'undefined') {
+    window.__uspapi = uspStubFunction;
+    var uspInterval = setInterval(checkIfUspIsReady, 6000);
+  }
+})();
 </script>
 <script src="catalog/view/theme/hypes/js/jquery.visible.min.js" type="text/javascript"></script>
-<script type="text/javascript">
-
-var win = $(window);
-
-var allMods = $("footer");
-
-allMods.each(function(i, el) {
-    
-  if ($(el).visible(true)) {
-    $(el).addClass("already-visible"); 
-  }
-  
-});
-
-win.scroll(function(event) {
-  
-  allMods.each(function(i, el) {
-    
-    var el = $(el);
-    
-    if (el.visible(true)) {
-      el.addClass("come-in"); 
-    } else {
-      el.removeClass("come-in already-visible");
-    }
-    
-  });
-  
-}); 
+<script type="text/javascript">
+
+var win = $(window);
+
+var allMods = $("footer");
+
+allMods.each(function(i, el) {
+    
+  if ($(el).visible(true)) {
+    $(el).addClass("already-visible"); 
+  }
+  
+});
+
+win.scroll(function(event) {
+  
+  allMods.each(function(i, el) {
+    
+    var el = $(el);
+    
+    if (el.visible(true)) {
+      el.addClass("come-in"); 
+    } else {
+      el.removeClass("come-in already-visible");
+    }
+    
+  });
+  
+}); 
 </script>
 <script src="catalog/view/theme/hypes/js/tickerme.js" type="text/javascript"></script>
-<script type="text/javascript">
-$(function(){
-	$('#ticker').tickerme();
-});
+<script type="text/javascript">
+$(function(){
+	$('#ticker').tickerme();
+});
 </script>
 <script src="catalog/view/theme/hypes/js/jquery.easing-1.3.min.js" type="text/javascript"></script>
 <script src="catalog/view/theme/hypes/js/jquery.sticky.js" type="text/javascript"></script>
@@ -1765,10 +1765,10 @@ $(function(){
 <script src="catalog/view/theme/hypes/js/livesearch.js" type="text/javascript"></script>
 <link href="catalog/view/theme/hypes/stylesheet/ui.totop.css" property="stylesheet" rel="stylesheet" type="text/css"/>
 <script src="catalog/view/theme/hypes/js/jquery.ui.totop.js" type="text/javascript"></script>
-<script type="text/javascript">
-	jQuery(document).ready(function() {	
-		$().UItoTop({ easingType: 'easeOutQuart' });	
-	});
+<script type="text/javascript">
+	jQuery(document).ready(function() {	
+		$().UItoTop({ easingType: 'easeOutQuart' });	
+	});
 </script>
 <script src="catalog/view/theme/hypes/js/quickview/quickview.js" type="text/javascript"></script>
 <link href="catalog/view/theme/hypes/js/quickview/fancybox/jquery.fancybox.css" property="stylesheet" rel="stylesheet"/>
@@ -1812,8 +1812,8 @@ $(function(){
 <div id="powered">
 <div class="container">
 <div class="row">
-<div class="col-sm-12">
-      Copyright © 2022 <a href="//www.wohnmobil-autoglas.de" target="_blank">www.wohnmobil-autoglas.de</a> All Rights Reserved  
+<div class="col-sm-12">
+      Copyright © 2022 <a href="//www.wohnmobil-autoglas.de" target="_blank">www.wohnmobil-autoglas.de</a> All Rights Reserved  
       </div>
 </div>
 </div>

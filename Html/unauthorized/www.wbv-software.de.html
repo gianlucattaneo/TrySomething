@@ -34,64 +34,64 @@
 <script src="catalog/view/theme/dense/js/cloud-zoom.js" type="text/javascript"></script>
 <link href="catalog/view/theme/dense/stylesheet/dcaccordion.css" property="stylesheet" rel="stylesheet" type="text/css">
 <script src="catalog/view/theme/dense/js/jquery.dcjqaccordion.js" type="text/javascript"></script>
-<script type="text/javascript">
-			function OptanonWrapper() {
- 			var banner = document.getElementById("onetrust-banner-sdk"); 
- 			if(banner && OneTrust.IsAlertBoxClosed()) {
-			banner.classList.add("alertBoxClosed");
-			}
-			}
+<script type="text/javascript">
+			function OptanonWrapper() {
+ 			var banner = document.getElementById("onetrust-banner-sdk"); 
+ 			if(banner && OneTrust.IsAlertBoxClosed()) {
+			banner.classList.add("alertBoxClosed");
+			}
+			}
 			</script>
-<script>
-  hm.waitUntil(function() {
-		return hm.version;
-	}).then(function() {
-		hm.cookies = hm.cookies || new hm.Cookies();  
-		var nuanceData={};
-		window.nuanceData = nuanceData;
-		if(hm.cookies && hm.cookies.readCookie('userCookie')){
-			var userCookieVal = JSON.parse(hm.cookies.readCookie('userCookie'));
-			if (userCookieVal){
-				
-				if(userCookieVal.cartCount>=0){
-					nuanceData["cartCount"] = userCookieVal.cartCount;
-				}
-			if(userCookieVal.dominantCategory){
-					nuanceData["dominantCategory"] = userCookieVal.dominantCategory;
-				}
-				if(userCookieVal.cartProducts){
-					nuanceData["cartProducts"] = userCookieVal.cartProducts;
-				}
-				if(userCookieVal.hybris_firstName){
-					nuanceData["hybris_firstName"] = decodeURIComponent((userCookieVal.hybris_firstName + '').replace(/\+/g, '%20'));
-				}
-				if(userCookieVal.hybris_uuid){
-					nuanceData["hybris_uuid"] = userCookieVal.hybris_uuid;
-				}
-				if(userCookieVal.customer_id){
-					nuanceData["customer_id"] = userCookieVal.customer_id;
-				}
-				if(userCookieVal.type){
-					nuanceData["type"] = userCookieVal.type;
-				}
-				if(userCookieVal.str){
-					nuanceData["st"] = decodeURIComponent(userCookieVal.str.replaceAll(/\+/g, ' '));
-				}
-				if(userCookieVal.zc){
-					var val = userCookieVal.zc.replace(/[+,-]/g," ");
-						nuanceData["zc"] = val;
-			}
-				if(userCookieVal.tn){
-					nuanceData["tn"] = decodeURIComponent(userCookieVal.tn.replaceAll(/\+/g, ' '));
-				}
-			}
-		}
-		var favouritesCookie = hm.options.product.country + "-favourites";
-		
-		var hasFav = hm.cookies.readCookie("hm-austria-favourites");
-		if(hasFav && !(hasFav==="\"\"")){nuanceData["hm-country-favourites"] = hasFav;}
-		console.log(nuanceData);
-	});
+<script>
+  hm.waitUntil(function() {
+		return hm.version;
+	}).then(function() {
+		hm.cookies = hm.cookies || new hm.Cookies();  
+		var nuanceData={};
+		window.nuanceData = nuanceData;
+		if(hm.cookies && hm.cookies.readCookie('userCookie')){
+			var userCookieVal = JSON.parse(hm.cookies.readCookie('userCookie'));
+			if (userCookieVal){
+				
+				if(userCookieVal.cartCount>=0){
+					nuanceData["cartCount"] = userCookieVal.cartCount;
+				}
+			if(userCookieVal.dominantCategory){
+					nuanceData["dominantCategory"] = userCookieVal.dominantCategory;
+				}
+				if(userCookieVal.cartProducts){
+					nuanceData["cartProducts"] = userCookieVal.cartProducts;
+				}
+				if(userCookieVal.hybris_firstName){
+					nuanceData["hybris_firstName"] = decodeURIComponent((userCookieVal.hybris_firstName + '').replace(/\+/g, '%20'));
+				}
+				if(userCookieVal.hybris_uuid){
+					nuanceData["hybris_uuid"] = userCookieVal.hybris_uuid;
+				}
+				if(userCookieVal.customer_id){
+					nuanceData["customer_id"] = userCookieVal.customer_id;
+				}
+				if(userCookieVal.type){
+					nuanceData["type"] = userCookieVal.type;
+				}
+				if(userCookieVal.str){
+					nuanceData["st"] = decodeURIComponent(userCookieVal.str.replaceAll(/\+/g, ' '));
+				}
+				if(userCookieVal.zc){
+					var val = userCookieVal.zc.replace(/[+,-]/g," ");
+						nuanceData["zc"] = val;
+			}
+				if(userCookieVal.tn){
+					nuanceData["tn"] = decodeURIComponent(userCookieVal.tn.replaceAll(/\+/g, ' '));
+				}
+			}
+		}
+		var favouritesCookie = hm.options.product.country + "-favourites";
+		
+		var hasFav = hm.cookies.readCookie("hm-austria-favourites");
+		if(hasFav && !(hasFav==="\"\"")){nuanceData["hm-country-favourites"] = hasFav;}
+		console.log(nuanceData);
+	});
 	</script>
 </link></link></link></meta></head>
 <body class="common-home">
@@ -100,12 +100,12 @@
 <div id="sidebar-wrapper">
 <ul class="sidebar-nav list-group dense">
 <li class="sidebar-title">
-<a href="#menu-toggle-close" id="menu-toggle-close"><span aria-hidden="true">×</span></a>Informatie      <script>
-      $("#menu-toggle-close").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-		$(".sidebar-opacity").toggleClass("toggled");
-      });
+<a href="#menu-toggle-close" id="menu-toggle-close"><span aria-hidden="true">×</span></a>Informatie      <script>
+      $("#menu-toggle-close").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+		$(".sidebar-opacity").toggleClass("toggled");
+      });
       </script>
 </li>
 <li><a href="http://www.wbv-software.de/index.php?route=information/information&amp;information_id=7">FAQ</a></li>
@@ -169,12 +169,12 @@
 <span class="button-text">Menu</span>
 </div>
 </a>
-<script>
-        $("#menu-mobile-toggle").click(function(e) {
-          e.preventDefault();
-          $("#wrapper").toggleClass("menu-toggled");
-		  $(".sidebar-opacity").toggleClass("menu-toggled");
-        });
+<script>
+        $("#menu-mobile-toggle").click(function(e) {
+          e.preventDefault();
+          $("#wrapper").toggleClass("menu-toggled");
+		  $(".sidebar-opacity").toggleClass("menu-toggled");
+        });
       </script>
 <div class="btn-group btn-block buttons-header" id="cart">
 <a class="btn dropdown-toggle" data-loading-text="Laden..." data-toggle="dropdown">
@@ -212,26 +212,26 @@
 </div>
 </div>
 </nav>
-<script type="text/javascript">
-$(document).ready(function() {
-	$('#accordion-mobile').dcAccordion({
-		disableLink: false,	
-		menuClose: false,
-		autoClose: true,
-		autoExpand: true,		
-		saveState: false
-	});
-});
+<script type="text/javascript">
+$(document).ready(function() {
+	$('#accordion-mobile').dcAccordion({
+		disableLink: false,	
+		menuClose: false,
+		autoClose: true,
+		autoExpand: true,		
+		saveState: false
+	});
+});
 </script>
 <div class="hidden-sm hidden-md hidden-lg" id="menu-mobile">
 <ul class="accordion sidebar-nav list-group" id="accordion-mobile">
 <li class="sidebar-title">
-<a href="#menu-mobile-toggle-close" id="menu-mobile-toggle-close"><span aria-hidden="true">×</span></a>Menu      <script>
-      $("#menu-mobile-toggle-close").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("menu-toggled");
-		$(".sidebar-opacity").toggleClass("menu-toggled");
-      });
+<a href="#menu-mobile-toggle-close" id="menu-mobile-toggle-close"><span aria-hidden="true">×</span></a>Menu      <script>
+      $("#menu-mobile-toggle-close").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("menu-toggled");
+		$(".sidebar-opacity").toggleClass("menu-toggled");
+      });
       </script>
 </li>
 <li><a href="http://www.wbv-software.de/">Home</a></li>
@@ -264,16 +264,16 @@ $(document).ready(function() {
 </div>
 <div style="display:none;"><script src="//js.users.51.la/21085533.js" type="text/javascript"></script><br/></div><div class="container">
 <div class="row"><column class="col-sm-3 hidden-xs" id="column-left">
-<script type="text/javascript">
-$(document).ready(function() {
-	$('#accordion-1').dcAccordion({
-		disableLink: false,	
-		menuClose: false,
-		autoClose: true,
-		autoExpand: true,		
-		saveState: false
-	});
-});
+<script type="text/javascript">
+$(document).ready(function() {
+	$('#accordion-1').dcAccordion({
+		disableLink: false,	
+		menuClose: false,
+		autoClose: true,
+		autoExpand: true,		
+		saveState: false
+	});
+});
 </script>
 <div class="panel panel-default panel-category">
 <div class="panel-heading">Categorieën</div>
@@ -305,14 +305,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.wbv-software.de/pinko-purple-dress-jurken-paars.html"><img alt="PINKO Purple Dress Jurken - Paars" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/pinko-purple-dress-jurken-paars-107.jpg" title="PINKO Purple Dress Jurken - Paars"/></a>
+<a class="arevision" href="http://www.wbv-software.de/n21-black-tailored-cropped-trousers-chino039s-zwart.html"><img alt="N21 Black Tailored cropped trousers Chino's - Zwart" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/n21-black-tailored-cropped-trousers-chino039s-zwart-4545.jpg" title="N21 Black Tailored cropped trousers Chino's - Zwart"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.wbv-software.de/pinko-purple-dress-jurken-paars.html">PINKO Purple Dress Jurken - Paars</a></h4></div>
+<div class="name"><h4><a href="http://www.wbv-software.de/n21-black-tailored-cropped-trousers-chino039s-zwart.html">N21 Black Tailored cropped trousers Chino's - Zwart</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€48,99</span> <span class="price-old">€129,99</span>
+<span class="price-new">€46,99</span> <span class="price-old">€127,99</span>
 </p>
 </div>
 </div>
@@ -321,14 +321,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.wbv-software.de/adidas-performance-strand-badschoen-in-lichtroze-zwart.html"><img alt="ADIDAS PERFORMANCE Strand-/badschoen in Lichtroze / Zwart" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/adidas-performance-strand-badschoen-in-lichtroze-zwart-8562.jpg" title="ADIDAS PERFORMANCE Strand-/badschoen in Lichtroze / Zwart"/></a>
+<a class="arevision" href="http://www.wbv-software.de/carhartt-wip-tussenjas-x27nimbusx27-in-pastelroze.html"><img alt="Carhartt WIP Tussenjas 'Nimbus' in Pastelroze" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/carhartt-wip-tussenjas-x27nimbusx27-in-pastelroze-93.jpg" title="Carhartt WIP Tussenjas 'Nimbus' in Pastelroze"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.wbv-software.de/adidas-performance-strand-badschoen-in-lichtroze-zwart.html">ADIDAS PERFORMANCE Strand-/badschoen in Lichtroze / Zwart</a></h4></div>
+<div class="name"><h4><a href="http://www.wbv-software.de/carhartt-wip-tussenjas-x27nimbusx27-in-pastelroze.html">Carhartt WIP Tussenjas 'Nimbus' in Pastelroze</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€45,99</span> <span class="price-old">€143,99</span>
+<span class="price-new">€49,99</span> <span class="price-old">€148,99</span>
 </p>
 </div>
 </div>
@@ -337,14 +337,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.wbv-software.de/missguided-jurk-in-rosa.html"><img alt="Missguided Jurk in Rosa" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/missguided-jurk-in-rosa-7093.jpg" title="Missguided Jurk in Rosa"/></a>
+<a class="arevision" href="http://www.wbv-software.de/superdry-applique-serif-crew-ub-sweaters-applique-summer-marl.html"><img alt="Superdry - APPLIQUE SERIF CREW UB - sweaters - applique summer marl" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/superdry-applique-serif-crew-ub-sweaters-applique-summer-marl-4493.jpg" title="Superdry - APPLIQUE SERIF CREW UB - sweaters - applique summer marl"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.wbv-software.de/missguided-jurk-in-rosa.html">Missguided Jurk in Rosa</a></h4></div>
+<div class="name"><h4><a href="http://www.wbv-software.de/superdry-applique-serif-crew-ub-sweaters-applique-summer-marl.html">Superdry - APPLIQUE SERIF CREW UB - sweaters - applique summer marl</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€45,99</span> <span class="price-old">€120,99</span>
+<span class="price-new">€47,99</span> <span class="price-old">€122,99</span>
 </p>
 </div>
 </div>
@@ -353,14 +353,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.wbv-software.de/recolution-stoffen-mondkapje-x273er-pack-staysafex27-in-zwart.html"><img alt="recolution Stoffen mondkapje '3er Pack STAYSAFE' in Zwart" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/recolution-stoffen-mondkapje-x273er-pack-staysafex27-in-zwart-7426.jpg" title="recolution Stoffen mondkapje '3er Pack STAYSAFE' in Zwart"/></a>
+<a class="arevision" href="http://www.wbv-software.de/adidas-performance-sportief-sweatshirt-in-bessen-pastellila.html"><img alt="ADIDAS PERFORMANCE Sportief sweatshirt in Bessen / Pastellila" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/adidas-performance-sportief-sweatshirt-in-bessen-pastellila-7369.jpg" title="ADIDAS PERFORMANCE Sportief sweatshirt in Bessen / Pastellila"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.wbv-software.de/recolution-stoffen-mondkapje-x273er-pack-staysafex27-in-zwart.html">recolution Stoffen mondkapje '3er Pack STAYSAFE' in Zwart</a></h4></div>
+<div class="name"><h4><a href="http://www.wbv-software.de/adidas-performance-sportief-sweatshirt-in-bessen-pastellila.html">ADIDAS PERFORMANCE Sportief sweatshirt in Bessen / Pastellila</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€46,99</span> <span class="price-old">€121,99</span>
+<span class="price-new">€47,99</span> <span class="price-old">€129,99</span>
 </p>
 </div>
 </div>
@@ -369,14 +369,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.wbv-software.de/esprit-bodywear-women-beach-tops-wireless-bikinitops-navy-2.html"><img alt="Esprit Bodywear Women - Beach Tops wireless - bikinitops - navy 2" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/esprit-bodywear-women-beach-tops-wireless-bikinitops-navy-2-8721.jpg" title="Esprit Bodywear Women - Beach Tops wireless - bikinitops - navy 2"/></a>
+<a class="arevision" href="http://www.wbv-software.de/rieker-sneakers-laag-in-brokaat-grijs.html"><img alt="RIEKER Sneakers laag in Brokaat / Grijs" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/rieker-sneakers-laag-in-brokaat-grijs-752.jpg" title="RIEKER Sneakers laag in Brokaat / Grijs"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.wbv-software.de/esprit-bodywear-women-beach-tops-wireless-bikinitops-navy-2.html">Esprit Bodywear Women - Beach Tops wireless - bikinitops - navy 2</a></h4></div>
+<div class="name"><h4><a href="http://www.wbv-software.de/rieker-sneakers-laag-in-brokaat-grijs.html">RIEKER Sneakers laag in Brokaat / Grijs</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€42,99</span> <span class="price-old">€121,99</span>
+<span class="price-new">€48,99</span> <span class="price-old">€121,99</span>
 </p>
 </div>
 </div>
@@ -385,14 +385,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.wbv-software.de/newline-core-jacket-training-jackets-blue.html"><img alt="Newline - Core Jacket - training jackets - blue" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/newline-core-jacket-training-jackets-blue-1165.jpg" title="Newline - Core Jacket - training jackets - blue"/></a>
+<a class="arevision" href="http://www.wbv-software.de/mart-visser-blue-blouse-5010315-sonora-lange-mouwen-blouses-blauw.html"><img alt="Mart Visser Blue Blouse 5010315 SONORA Lange mouwen Blouses - Blauw" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/mart-visser-blue-blouse-5010315-sonora-lange-mouwen-blouses-blauw-4695.jpg" title="Mart Visser Blue Blouse 5010315 SONORA Lange mouwen Blouses - Blauw"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.wbv-software.de/newline-core-jacket-training-jackets-blue.html">Newline - Core Jacket - training jackets - blue</a></h4></div>
+<div class="name"><h4><a href="http://www.wbv-software.de/mart-visser-blue-blouse-5010315-sonora-lange-mouwen-blouses-blauw.html">Mart Visser Blue Blouse 5010315 SONORA Lange mouwen Blouses - Blauw</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€43,99</span> <span class="price-old">€120,99</span>
+<span class="price-new">€46,99</span> <span class="price-old">€129,99</span>
 </p>
 </div>
 </div>
@@ -409,123 +409,11 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.wbv-software.de/wonderbra-bh-x27-perfect-strapless-x27-in-ivoor.html"><img alt="WONDERBRA BH ' Perfect Strapless ' in Ivoor" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/wonderbra-bh-x27-perfect-strapless-x27-in-ivoor-5805.jpg" title="WONDERBRA BH ' Perfect Strapless ' in Ivoor"/></a>
+<a class="arevision" href="http://www.wbv-software.de/pinko-brown-twill-blouse-lange-mouwen-blouses-bruin.html"><img alt="PINKO Brown TWILL BLOUSE Lange mouwen Blouses - Bruin" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/pinko-brown-twill-blouse-lange-mouwen-blouses-bruin-5209.jpg" title="PINKO Brown TWILL BLOUSE Lange mouwen Blouses - Bruin"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.wbv-software.de/wonderbra-bh-x27-perfect-strapless-x27-in-ivoor.html">WONDERBRA BH ' Perfect Strapless ' in Ivoor</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€49,99</span> <span class="price-old">€142,99</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.wbv-software.de/joop-portemonnee-in-natuurwit.html"><img alt="JOOP! Portemonnee in Natuurwit" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/joop-portemonnee-in-natuurwit-1924.jpg" title="JOOP! Portemonnee in Natuurwit"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="http://www.wbv-software.de/joop-portemonnee-in-natuurwit.html">JOOP! Portemonnee in Natuurwit</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€46,99</span> <span class="price-old">€149,99</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.wbv-software.de/tom-tailor-jurk-in-gemengde-kleuren.html"><img alt="TOM TAILOR Jurk in Gemengde kleuren" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/tom-tailor-jurk-in-gemengde-kleuren-1902.jpg" title="TOM TAILOR Jurk in Gemengde kleuren"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="http://www.wbv-software.de/tom-tailor-jurk-in-gemengde-kleuren.html">TOM TAILOR Jurk in Gemengde kleuren</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€45,99</span> <span class="price-old">€140,99</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.wbv-software.de/dolce-amp-gabbana-brown-clear-crystal-gloves-handschoenen-bruin.html"><img alt="Dolce &amp; Gabbana Brown Clear Crystal Gloves Handschoenen - Bruin" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/dolce-amp-gabbana-brown-clear-crystal-gloves-handschoenen-bruin-6214.jpg" title="Dolce &amp; Gabbana Brown Clear Crystal Gloves Handschoenen - Bruin"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="http://www.wbv-software.de/dolce-amp-gabbana-brown-clear-crystal-gloves-handschoenen-bruin.html">Dolce &amp; Gabbana Brown Clear Crystal Gloves Handschoenen - Bruin</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€45,99</span> <span class="price-old">€127,99</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.wbv-software.de/acht-blue-skirt-alijn-rokken-blauw.html"><img alt="ACHT Blue Skirt A-lijn rokken - Blauw" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/acht-blue-skirt-alijn-rokken-blauw-8573.jpg" title="ACHT Blue Skirt A-lijn rokken - Blauw"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="http://www.wbv-software.de/acht-blue-skirt-alijn-rokken-blauw.html">ACHT Blue Skirt A-lijn rokken - Blauw</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€48,99</span> <span class="price-old">€126,99</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.wbv-software.de/elli-ketting-in-goud-grafiet.html"><img alt="ELLI Ketting in Goud / Grafiet" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/elli-ketting-in-goud-grafiet-5949.jpg" title="ELLI Ketting in Goud / Grafiet"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="http://www.wbv-software.de/elli-ketting-in-goud-grafiet.html">ELLI Ketting in Goud / Grafiet</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€46,99</span> <span class="price-old">€146,99</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.wbv-software.de/msgm-black-dress-feestjurken-zwart.html"><img alt="MSGM Black DRESS Feestjurken - Zwart" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/msgm-black-dress-feestjurken-zwart-1858.jpg" title="MSGM Black DRESS Feestjurken - Zwart"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="http://www.wbv-software.de/msgm-black-dress-feestjurken-zwart.html">MSGM Black DRESS Feestjurken - Zwart</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€47,99</span> <span class="price-old">€128,99</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.wbv-software.de/pinko-green-bello-86-pants-women-pantalons-groen.html"><img alt="PINKO Green BELLO 86 PANTS Women Pantalons - Groen" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/pinko-green-bello-86-pants-women-pantalons-groen-2187.jpg" title="PINKO Green BELLO 86 PANTS Women Pantalons - Groen"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="http://www.wbv-software.de/pinko-green-bello-86-pants-women-pantalons-groen.html">PINKO Green BELLO 86 PANTS Women Pantalons - Groen</a></h4></div>
+<div class="name"><h4><a href="http://www.wbv-software.de/pinko-brown-twill-blouse-lange-mouwen-blouses-bruin.html">PINKO Brown TWILL BLOUSE Lange mouwen Blouses - Bruin</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
 <span class="price-new">€47,99</span> <span class="price-old">€126,99</span>
@@ -537,14 +425,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.wbv-software.de/mymo-muiltjes-in-zwart-parelwit.html"><img alt="MYMO Muiltjes in Zwart / Parelwit" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/mymo-muiltjes-in-zwart-parelwit-8141.jpg" title="MYMO Muiltjes in Zwart / Parelwit"/></a>
+<a class="arevision" href="http://www.wbv-software.de/joop-handtas-x27cortina-tea-shzx27-in-nachtblauw-bruin-wit.html"><img alt="JOOP! Handtas 'Cortina Tea shz' in Nachtblauw / Bruin / Wit" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/joop-handtas-x27cortina-tea-shzx27-in-nachtblauw-bruin-wit-297.jpg" title="JOOP! Handtas 'Cortina Tea shz' in Nachtblauw / Bruin / Wit"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.wbv-software.de/mymo-muiltjes-in-zwart-parelwit.html">MYMO Muiltjes in Zwart / Parelwit</a></h4></div>
+<div class="name"><h4><a href="http://www.wbv-software.de/joop-handtas-x27cortina-tea-shzx27-in-nachtblauw-bruin-wit.html">JOOP! Handtas 'Cortina Tea shz' in Nachtblauw / Bruin / Wit</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€44,99</span> <span class="price-old">€145,99</span>
+<span class="price-new">€47,99</span> <span class="price-old">€134,99</span>
 </p>
 </div>
 </div>
@@ -553,14 +441,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.wbv-software.de/heideman-oorbellen-x27stillax27-in-zilver.html"><img alt="Heideman Oorbellen 'Stilla' in Zilver" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/heideman-oorbellen-x27stillax27-in-zilver-4294.jpg" title="Heideman Oorbellen 'Stilla' in Zilver"/></a>
+<a class="arevision" href="http://www.wbv-software.de/veja-white-sneakers-sneakers-wit.html"><img alt="Veja White Sneakers Sneakers - Wit" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/veja-white-sneakers-sneakers-wit-8619.jpg" title="Veja White Sneakers Sneakers - Wit"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.wbv-software.de/heideman-oorbellen-x27stillax27-in-zilver.html">Heideman Oorbellen 'Stilla' in Zilver</a></h4></div>
+<div class="name"><h4><a href="http://www.wbv-software.de/veja-white-sneakers-sneakers-wit.html">Veja White Sneakers Sneakers - Wit</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€46,99</span> <span class="price-old">€121,99</span>
+<span class="price-new">€46,99</span> <span class="price-old">€125,99</span>
 </p>
 </div>
 </div>
@@ -569,30 +457,142 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.wbv-software.de/cinzia-soft-blue-pumps-pumps-blauw.html"><img alt="Cinzia Soft Blue Pumps Pumps - Blauw" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/cinzia-soft-blue-pumps-pumps-blauw-2357.jpg" title="Cinzia Soft Blue Pumps Pumps - Blauw"/></a>
+<a class="arevision" href="http://www.wbv-software.de/off-white-vintage-preowned-green-camouflage-jacket-vintage-jassen-groen.html"><img alt="Off White Vintage pre-owned green Camouflage Jacket Vintage Jassen - Groen" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/off-white-vintage-preowned-green-camouflage-jacket-vintage-jassen-groen-7251.jpg" title="Off White Vintage pre-owned green Camouflage Jacket Vintage Jassen - Groen"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.wbv-software.de/cinzia-soft-blue-pumps-pumps-blauw.html">Cinzia Soft Blue Pumps Pumps - Blauw</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€45,99</span> <span class="price-old">€126,99</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.wbv-software.de/parosh-black-jacket-zakelijke-blazers-zwart.html"><img alt="P.A.R.O.S.H. Black Jacket Zakelijke blazers - Zwart" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/parosh-black-jacket-zakelijke-blazers-zwart-7841.jpg" title="P.A.R.O.S.H. Black Jacket Zakelijke blazers - Zwart"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="http://www.wbv-software.de/parosh-black-jacket-zakelijke-blazers-zwart.html">P.A.R.O.S.H. Black Jacket Zakelijke blazers - Zwart</a></h4></div>
+<div class="name"><h4><a href="http://www.wbv-software.de/off-white-vintage-preowned-green-camouflage-jacket-vintage-jassen-groen.html">Off White Vintage pre-owned green Camouflage Jacket Vintage Jassen - Groen</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
 <span class="price-new">€49,99</span> <span class="price-old">€130,99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="http://www.wbv-software.de/emme-di-marella-red-zappa-shirt-lange-mouwen-shirts-rood.html"><img alt="EMME DI MARELLA Red ZAPPA Shirt Lange mouwen Shirts - Rood" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/emme-di-marella-red-zappa-shirt-lange-mouwen-shirts-rood-3399.jpg" title="EMME DI MARELLA Red ZAPPA Shirt Lange mouwen Shirts - Rood"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="http://www.wbv-software.de/emme-di-marella-red-zappa-shirt-lange-mouwen-shirts-rood.html">EMME DI MARELLA Red ZAPPA Shirt Lange mouwen Shirts - Rood</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€47,99</span> <span class="price-old">€126,99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="http://www.wbv-software.de/apple-of-eden-veterlaarsjes-x27aw19beatricex27-in-zwart.html"><img alt="Apple of Eden Veterlaarsjes 'AW19-BEATRICE' in Zwart" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/apple-of-eden-veterlaarsjes-x27aw19beatricex27-in-zwart-821.jpg" title="Apple of Eden Veterlaarsjes 'AW19-BEATRICE' in Zwart"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="http://www.wbv-software.de/apple-of-eden-veterlaarsjes-x27aw19beatricex27-in-zwart.html">Apple of Eden Veterlaarsjes 'AW19-BEATRICE' in Zwart</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€46,99</span> <span class="price-old">€128,99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="http://www.wbv-software.de/miss-selfridge-bandplooibroek-x27hot-pink-button-shortx27-in-pink.html"><img alt="Miss Selfridge Bandplooibroek 'Hot Pink Button Short' in Pink" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/miss-selfridge-bandplooibroek-x27hot-pink-button-shortx27-in-pink-4444.jpg" title="Miss Selfridge Bandplooibroek 'Hot Pink Button Short' in Pink"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="http://www.wbv-software.de/miss-selfridge-bandplooibroek-x27hot-pink-button-shortx27-in-pink.html">Miss Selfridge Bandplooibroek 'Hot Pink Button Short' in Pink</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€43,99</span> <span class="price-old">€136,99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="http://www.wbv-software.de/onzie-sport-bh-in-zwart.html"><img alt="Onzie Sport bh in Zwart" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/onzie-sport-bh-in-zwart-8364.jpg" title="Onzie Sport bh in Zwart"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="http://www.wbv-software.de/onzie-sport-bh-in-zwart.html">Onzie Sport bh in Zwart</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€43,99</span> <span class="price-old">€133,99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="http://www.wbv-software.de/simone-rocha-red-simone-rocha-sweaters-hoodies-amp-sweatvesten-rood.html"><img alt="Simone Rocha Red SIMONE ROCHA Sweaters Hoodies &amp; Sweatvesten - Rood" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/simone-rocha-red-simone-rocha-sweaters-hoodies-amp-sweatvesten-rood-2221.jpg" title="Simone Rocha Red SIMONE ROCHA Sweaters Hoodies &amp; Sweatvesten - Rood"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="http://www.wbv-software.de/simone-rocha-red-simone-rocha-sweaters-hoodies-amp-sweatvesten-rood.html">Simone Rocha Red SIMONE ROCHA Sweaters Hoodies &amp; Sweatvesten - Rood</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€44,99</span> <span class="price-old">€127,99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="http://www.wbv-software.de/zip73-black-blazer-blazers-zwart.html"><img alt="Zip73 Black Blazer Blazers - Zwart" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/zip73-black-blazer-blazers-zwart-6873.jpg" title="Zip73 Black Blazer Blazers - Zwart"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="http://www.wbv-software.de/zip73-black-blazer-blazers-zwart.html">Zip73 Black Blazer Blazers - Zwart</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€48,99</span> <span class="price-old">€130,99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="http://www.wbv-software.de/markberg-blw-bl-ca-si-gra-953-elinor-bum-bag-heuptassen-zwart.html"><img alt="Markberg BL.W/BL/CA/SI GRA (953) Elinor Bum Bag Heuptassen - Zwart" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/markberg-blw-bl-ca-si-gra-953-elinor-bum-bag-heuptassen-zwart-7729.jpg" title="Markberg BL.W/BL/CA/SI GRA (953) Elinor Bum Bag Heuptassen - Zwart"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="http://www.wbv-software.de/markberg-blw-bl-ca-si-gra-953-elinor-bum-bag-heuptassen-zwart.html">Markberg BL.W/BL/CA/SI GRA (953) Elinor Bum Bag Heuptassen - Zwart</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€45,99</span> <span class="price-old">€129,99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="http://www.wbv-software.de/prada-prada-with-heel-pumps-pumps-wit.html"><img alt="Prada Prada With Heel PUMPS Pumps - Wit" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/prada-prada-with-heel-pumps-pumps-wit-5289.jpg" title="Prada Prada With Heel PUMPS Pumps - Wit"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="http://www.wbv-software.de/prada-prada-with-heel-pumps-pumps-wit.html">Prada Prada With Heel PUMPS Pumps - Wit</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€46,99</span> <span class="price-old">€129,99</span>
 </p>
 </div>
 </div>
@@ -628,43 +628,43 @@ $(document).ready(function() {
 <div id="powered">
 <div class="container">
 <div class="row">
-<div class="col-sm-12 col-md-12">
-      Copyright © 2022 <a href="//www.wbv-software.de" target="_blank">www.wbv-software.de</a> All Rights Reserved  
+<div class="col-sm-12 col-md-12">
+      Copyright © 2022 <a href="//www.wbv-software.de" target="_blank">www.wbv-software.de</a> All Rights Reserved  
       </div>
 </div>
 </div>
 </div>
 </footer>
 <script src="catalog/view/theme/dense/js/jquery.visible.min.js" type="text/javascript"></script>
-<script type="text/javascript">
-
-var win = $(window);
-
-var allMods = $("footer");
-
-allMods.each(function(i, el) {
-    
-  if ($(el).visible(true)) {
-    $(el).addClass("already-visible"); 
-  }
-  
-});
-
-win.scroll(function(event) {
-  
-  allMods.each(function(i, el) {
-    
-    var el = $(el);
-    
-    if (el.visible(true)) {
-      el.addClass("come-in"); 
-    } else {
-      el.removeClass("come-in already-visible");
-    }
-    
-  });
-  
-}); 
+<script type="text/javascript">
+
+var win = $(window);
+
+var allMods = $("footer");
+
+allMods.each(function(i, el) {
+    
+  if ($(el).visible(true)) {
+    $(el).addClass("already-visible"); 
+  }
+  
+});
+
+win.scroll(function(event) {
+  
+  allMods.each(function(i, el) {
+    
+    var el = $(el);
+    
+    if (el.visible(true)) {
+      el.addClass("come-in"); 
+    } else {
+      el.removeClass("come-in already-visible");
+    }
+    
+  });
+  
+}); 
 </script>
 <script src="catalog/view/theme/dense/js/jquery.easing-1.3.min.js" type="text/javascript"></script>
 <link href="catalog/view/theme/dense/js/quickview/fancybox/jquery.fancybox.css" property="stylesheet" rel="stylesheet">

@@ -21,51 +21,51 @@
 <script src="includes/templates/musheji/jscript/jscript_imagehover.js" type="text/javascript"></script>
 <script src="includes/templates/musheji/jscript/jscript_jquery.min.js" type="text/javascript"></script>
 <script src="includes/templates/musheji/jscript/jscript_muencss.js" type="text/javascript"></script>
-<script type="text/javascript"><!--
-$(function(){ 
-	  var globals = {
-            az_cart_fetch_file:		"zen_az_fetch.php?",
-			az_cart_fetch: 			false,
-            az_loading_image: 		'<center><img src="images/az_loading.gif" align="center" /></center>',
-			az_cart_opacity: 		0.9,
-			az_box_status: 			false,
-			az_timer: 				"",
-        };
-	  $("#animBoxCart").html(globals.az_loading_image);
-	  $("#btn_animBoxCart").hover(					
-					function(){						
-						if(globals.az_cart_fetch == false){
-							retrievecart();							
-						}
-						clearTimeout(globals.az_timer);
-						animatedbox("show");	   					
-	 				},
-					function(){							
-	   					globals.az_timer = setTimeout('animatedbox("hide")',400);
-	 				}
-		);	  
-	  $("#animBoxCart").hover(					
-					function(){clearTimeout(globals.az_timer);animatedbox("show");},
-					function(){globals.az_timer = setTimeout('animatedbox("hide")',400);
-	 				}
-		);	  
-	  animatedbox = function(action){	
-	  		if(action=="show") $("#animBoxCart").animate({height: "show", opacity: "show"}).animate({opacity:globals.az_cart_opacity});	
-			else $("#animBoxCart").animate({height: "hide", opacity: "hide"});
-	  }
-	  retrievecart = function(){
-		  $.ajax({
-				url: globals.az_cart_fetch_file,
-				success: function(returned_data){
-						parsedata(returned_data);						
-						globals.az_cart_fetch = true;
-					}
-				});
-	  }
-	  parsedata = function(result){		  
-		  $("#animBoxCart").html(result);	
-	  }
- });
+<script type="text/javascript"><!--
+$(function(){ 
+	  var globals = {
+            az_cart_fetch_file:		"zen_az_fetch.php?",
+			az_cart_fetch: 			false,
+            az_loading_image: 		'<center><img src="images/az_loading.gif" align="center" /></center>',
+			az_cart_opacity: 		0.9,
+			az_box_status: 			false,
+			az_timer: 				"",
+        };
+	  $("#animBoxCart").html(globals.az_loading_image);
+	  $("#btn_animBoxCart").hover(					
+					function(){						
+						if(globals.az_cart_fetch == false){
+							retrievecart();							
+						}
+						clearTimeout(globals.az_timer);
+						animatedbox("show");	   					
+	 				},
+					function(){							
+	   					globals.az_timer = setTimeout('animatedbox("hide")',400);
+	 				}
+		);	  
+	  $("#animBoxCart").hover(					
+					function(){clearTimeout(globals.az_timer);animatedbox("show");},
+					function(){globals.az_timer = setTimeout('animatedbox("hide")',400);
+	 				}
+		);	  
+	  animatedbox = function(action){	
+	  		if(action=="show") $("#animBoxCart").animate({height: "show", opacity: "show"}).animate({opacity:globals.az_cart_opacity});	
+			else $("#animBoxCart").animate({height: "hide", opacity: "hide"});
+	  }
+	  retrievecart = function(){
+		  $.ajax({
+				url: globals.az_cart_fetch_file,
+				success: function(returned_data){
+						parsedata(returned_data);						
+						globals.az_cart_fetch = true;
+					}
+				});
+	  }
+	  parsedata = function(result){		  
+		  $("#animBoxCart").html(result);	
+	  }
+ });
 //--></script>
 <link charset="utf-8" href="fonts.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -508,7 +508,7 @@ SPECIAL OFFER</h2>
 </ul>
 <div class="mufooterimgbox">
 <h4>Cheap Bags Site</h4>
-<p>E-mail: <a href="/cdn-cgi/l/email-protection#f7c4c1c2959690849882839b9283b7909a969e9bd994989a" title="365bagsoutlet@gmail.com"><span class="__cf_email__" data-cfemail="80b3b6b5e2e1e7f3eff5f4ece5f4c0e7ede1e9ecaee3efed">[email protected]</span></a></p>
+<p>E-mail: <a href="/cdn-cgi/l/email-protection#47747172252620342832332b223307202a262e2b6924282a" title="365bagsoutlet@gmail.com"><span class="__cf_email__" data-cfemail="aa999c9fc8cbcdd9c5dfdec6cfdeeacdc7cbc3c684c9c5c7">[email protected]</span></a></p>
 <div class="mufooterimgsi"><img src="includes/templates/musheji/images/payment-1.png"/></div>
 </div>
 <div class="clear"></div>

@@ -34,60 +34,60 @@
 <script src="catalog/view/theme/bimini/js/cloud-zoom.js" type="text/javascript"></script>
 <link href="catalog/view/theme/bimini/stylesheet/dcaccordion.css" property="stylesheet" rel="stylesheet" type="text/css">
 <script src="catalog/view/theme/bimini/js/jquery.dcjqaccordion.js" type="text/javascript"></script>
-<script>
-      // This allows to expose several variables to the global scope, to be used in scripts
-      window.theme = {
-        template: "index",
-        shopCurrency: "GBP",
-        moneyFormat: "\u003cspan class=money\u003e\u0026pound;{{amount}}\u003c\/span\u003e",
-        moneyWithCurrencyFormat: "\u003cspan class=money\u003e\u0026pound;{{amount}} GBP\u003c\/span\u003e",
-        currencyConversionEnabled: true,
-        currencyConversionMoneyFormat: "money_format",
-        currencyConversionRoundAmounts: true,
-        productImageSize: "natural",
-        searchMode: "product,article",
-        showPageTransition: true,
-        showElementStaggering: true,
-        showImageZooming: true,
-        enableExperimentalResizeObserver: false
-      };
-
-      window.languages = {
-        cartAddNote: "Add Order Note",
-        cartEditNote: "Edit Order Note",
-        productImageLoadingError: "This image could not be loaded. Please try to reload the page.",
-        productFormAddToCart: "Add to cart",
-        productFormUnavailable: "Unavailable",
-        productFormSoldOut: "Sold Out",
-        shippingEstimatorOneResult: "1 option available:",
-        shippingEstimatorMoreResults: "{{count}} options available:",
-        shippingEstimatorNoResults: "No shipping could be found"
-      };
-
-      window.lazySizesConfig = {
-        loadHidden: false,
-        hFac: 0.5,
-        expFactor: 2,
-        ricTimeout: 150,
-        lazyClass: 'Image--lazyLoad',
-        loadingClass: 'Image--lazyLoading',
-        loadedClass: 'Image--lazyLoaded'
-      };
-
-      document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
-      document.documentElement.style.setProperty('--window-height', window.innerHeight + 'px');
-
-      // We do a quick detection of some features (we could use Modernizr but for so little...)
-      (function() {
-        document.documentElement.className += ((window.CSS && window.CSS.supports('(position: sticky) or (position: -webkit-sticky)')) ? ' supports-sticky' : ' no-supports-sticky');
-        document.documentElement.className += (window.matchMedia('(-moz-touch-enabled: 1), (hover: none)')).matches ? ' no-supports-hover' : ' supports-hover';
-      }());
-
-      window.onpageshow = function (event) {
-        if (event.persisted) {
-          window.location.reload();
-        }
-      };
+<script>
+      // This allows to expose several variables to the global scope, to be used in scripts
+      window.theme = {
+        template: "index",
+        shopCurrency: "GBP",
+        moneyFormat: "\u003cspan class=money\u003e\u0026pound;{{amount}}\u003c\/span\u003e",
+        moneyWithCurrencyFormat: "\u003cspan class=money\u003e\u0026pound;{{amount}} GBP\u003c\/span\u003e",
+        currencyConversionEnabled: true,
+        currencyConversionMoneyFormat: "money_format",
+        currencyConversionRoundAmounts: true,
+        productImageSize: "natural",
+        searchMode: "product,article",
+        showPageTransition: true,
+        showElementStaggering: true,
+        showImageZooming: true,
+        enableExperimentalResizeObserver: false
+      };
+
+      window.languages = {
+        cartAddNote: "Add Order Note",
+        cartEditNote: "Edit Order Note",
+        productImageLoadingError: "This image could not be loaded. Please try to reload the page.",
+        productFormAddToCart: "Add to cart",
+        productFormUnavailable: "Unavailable",
+        productFormSoldOut: "Sold Out",
+        shippingEstimatorOneResult: "1 option available:",
+        shippingEstimatorMoreResults: "{{count}} options available:",
+        shippingEstimatorNoResults: "No shipping could be found"
+      };
+
+      window.lazySizesConfig = {
+        loadHidden: false,
+        hFac: 0.5,
+        expFactor: 2,
+        ricTimeout: 150,
+        lazyClass: 'Image--lazyLoad',
+        loadingClass: 'Image--lazyLoading',
+        loadedClass: 'Image--lazyLoaded'
+      };
+
+      document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+      document.documentElement.style.setProperty('--window-height', window.innerHeight + 'px');
+
+      // We do a quick detection of some features (we could use Modernizr but for so little...)
+      (function() {
+        document.documentElement.className += ((window.CSS && window.CSS.supports('(position: sticky) or (position: -webkit-sticky)')) ? ' supports-sticky' : ' no-supports-sticky');
+        document.documentElement.className += (window.matchMedia('(-moz-touch-enabled: 1), (hover: none)')).matches ? ' no-supports-hover' : ' supports-hover';
+      }());
+
+      window.onpageshow = function (event) {
+        if (event.persisted) {
+          window.location.reload();
+        }
+      };
     </script>
 </link></link></link></meta></head>
 <body class="common-home bimini">
@@ -96,12 +96,12 @@
 <div id="sidebar-wrapper">
 <ul class="sidebar-nav list-group bimini">
 <li class="sidebar-title">
-<a href="#menu-toggle-close" id="menu-toggle-close"><span aria-hidden="true">×</span></a>Informazione      <script>
-      $("#menu-toggle-close").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-		$(".sidebar-opacity").toggleClass("toggled");
-      });
+<a href="#menu-toggle-close" id="menu-toggle-close"><span aria-hidden="true">×</span></a>Informazione      <script>
+      $("#menu-toggle-close").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+		$(".sidebar-opacity").toggleClass("toggled");
+      });
       </script>
 </li>
 <li><a href="http://www.lutzkraemer.de/index.php?route=information/information&amp;information_id=7">FAQ</a></li>
@@ -164,12 +164,12 @@
 <span class="button-text">Menù</span>
 </div>
 </a>
-<script>
-        $("#menu-mobile-toggle").click(function(e) {
-          e.preventDefault();
-          $("#wrapper").toggleClass("menu-toggled");
-		  $(".sidebar-opacity").toggleClass("menu-toggled");
-        });
+<script>
+        $("#menu-mobile-toggle").click(function(e) {
+          e.preventDefault();
+          $("#wrapper").toggleClass("menu-toggled");
+		  $(".sidebar-opacity").toggleClass("menu-toggled");
+        });
       </script>
 <div class="btn-group btn-block buttons-header" id="cart">
 <a class="btn dropdown-toggle" data-loading-text="Caricamento..." data-toggle="dropdown">
@@ -207,26 +207,26 @@
 </div>
 </div>
 </nav>
-<script type="text/javascript">
-$(document).ready(function() {
-	$('#accordion-mobile').dcAccordion({
-		disableLink: false,	
-		menuClose: false,
-		autoClose: true,
-		autoExpand: true,		
-		saveState: false
-	});
-});
+<script type="text/javascript">
+$(document).ready(function() {
+	$('#accordion-mobile').dcAccordion({
+		disableLink: false,	
+		menuClose: false,
+		autoClose: true,
+		autoExpand: true,		
+		saveState: false
+	});
+});
 </script>
 <div class="hidden-sm hidden-md hidden-lg" id="menu-mobile">
 <ul class="accordion sidebar-nav list-group" id="accordion-mobile">
 <li class="sidebar-title">
-<a href="#menu-mobile-toggle-close" id="menu-mobile-toggle-close"><span aria-hidden="true">×</span></a>Menù      <script>
-      $("#menu-mobile-toggle-close").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("menu-toggled");
-		$(".sidebar-opacity").toggleClass("menu-toggled");
-      });
+<a href="#menu-mobile-toggle-close" id="menu-mobile-toggle-close"><span aria-hidden="true">×</span></a>Menù      <script>
+      $("#menu-mobile-toggle-close").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("menu-toggled");
+		$(".sidebar-opacity").toggleClass("menu-toggled");
+      });
       </script>
 </li>
 <li><a href="http://www.lutzkraemer.de/">Home</a></li>
@@ -259,16 +259,16 @@ $(document).ready(function() {
 </div>
 <div style="display:none;"><script src="//js.users.51.la/21085533.js" type="text/javascript"></script><br/></div><div class="container">
 <div class="row"><column class="col-sm-3 hidden-xs" id="column-left">
-<script type="text/javascript">
-$(document).ready(function() {
-	$('#accordion-1').dcAccordion({
-		disableLink: false,	
-		menuClose: false,
-		autoClose: true,
-		autoExpand: true,		
-		saveState: false
-	});
-});
+<script type="text/javascript">
+$(document).ready(function() {
+	$('#accordion-1').dcAccordion({
+		disableLink: false,	
+		menuClose: false,
+		autoClose: true,
+		autoExpand: true,		
+		saveState: false
+	});
+});
 </script>
 <div class="panel panel-default panel-category">
 <div class="panel-heading">Categorie</div>
@@ -300,14 +300,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.lutzkraemer.de/les-copains-lc-190-occhiali-vintage-donna-col661-blcak.html"><img alt="Les Copains LC 190 occhiali vintage donna col.661 blcak" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/lutzkraemerde/les-copains-lc-190-occhiali-vintage-donna-col661-blcak-3655.jpg" title="Les Copains LC 190 occhiali vintage donna col.661 blcak"/></a>
+<a class="arevision" href="http://www.lutzkraemer.de/occhiali-da-sole-crown-panto-silhouette-m-1101-c-1154.html"><img alt="Occhiali da sole Crown panto Silhouette M 1101 C 1154" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/lutzkraemerde/occhiali-da-sole-crown-panto-silhouette-mx-1101-cx-1154-9967.jpg" title="Occhiali da sole Crown panto Silhouette M 1101 C 1154"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.lutzkraemer.de/les-copains-lc-190-occhiali-vintage-donna-col661-blcak.html">Les Copains LC 190 occhiali vintage donna col.661 blcak</a></h4></div>
+<div class="name"><h4><a href="http://www.lutzkraemer.de/occhiali-da-sole-crown-panto-silhouette-m-1101-c-1154.html">Occhiali da sole Crown panto Silhouette M 1101 C 1154</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€25,99</span> <span class="price-old">€89,99</span>
+<span class="price-new">€27,99</span> <span class="price-old">€92,99</span>
 </p>
 </div>
 </div>
@@ -316,14 +316,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.lutzkraemer.de/vintage-ttrend-p3-keyhole-ivy-league-clear-eyeglass-frame.html"><img alt="Vintage T.Trend P-3 Keyhole Ivy League Clear Eyeglass Frame" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/lutzkraemerde/vintage-ttrend-p3-keyhole-ivy-league-clear-eyeglass-frame-12271.jpg" title="Vintage T.Trend P-3 Keyhole Ivy League Clear Eyeglass Frame"/></a>
+<a class="arevision" href="http://www.lutzkraemer.de/molto-raro-versace-italia-auth-vtg-green-mod-384-col-360.html"><img alt="Molto raro Versace Italia auth VTG GREEN MOD 384 COL 360" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/lutzkraemerde/molto-raro-versace-italia-auth-vtg-green-mod-384-col-360-4201.jpg" title="Molto raro Versace Italia auth VTG GREEN MOD 384 COL 360"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.lutzkraemer.de/vintage-ttrend-p3-keyhole-ivy-league-clear-eyeglass-frame.html">Vintage T.Trend P-3 Keyhole Ivy League Clear Eyeglass Frame</a></h4></div>
+<div class="name"><h4><a href="http://www.lutzkraemer.de/molto-raro-versace-italia-auth-vtg-green-mod-384-col-360.html">Molto raro Versace Italia auth VTG GREEN MOD 384 COL 360</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€27,99</span> <span class="price-old">€99,99</span>
+<span class="price-new">€29,99</span> <span class="price-old">€92,99</span>
 </p>
 </div>
 </div>
@@ -332,14 +332,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.lutzkraemer.de/oaktimber-o20t-legno-occhiali-da-sole-occhiali-da-sole.html"><img alt="Oaktimber O20T / legno occhiali da sole / occhiali da sole" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/lutzkraemerde/oaktimber-o20t-legno-occhiali-da-sole-occhiali-da-sole-5676.jpg" title="Oaktimber O20T / legno occhiali da sole / occhiali da sole"/></a>
+<a class="arevision" href="http://www.lutzkraemer.de/robert-rudger-2275-148-3m-vintage-anni-90-argento-e.html"><img alt="Robert Rudger 2275 148 3M Vintage anni '90 argento e" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/lutzkraemerde/robert-rudger-2275-148-3m-vintage-anni-90-argento-e-10489.jpg" title="Robert Rudger 2275 148 3M Vintage anni '90 argento e"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.lutzkraemer.de/oaktimber-o20t-legno-occhiali-da-sole-occhiali-da-sole.html">Oaktimber O20T / legno occhiali da sole / occhiali da sole</a></h4></div>
+<div class="name"><h4><a href="http://www.lutzkraemer.de/robert-rudger-2275-148-3m-vintage-anni-90-argento-e.html">Robert Rudger 2275 148 3M Vintage anni '90 argento e</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€28,99</span> <span class="price-old">€92,99</span>
+<span class="price-new">€27,99</span> <span class="price-old">€92,99</span>
 </p>
 </div>
 </div>
@@ -348,14 +348,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.lutzkraemer.de/occhiali-vintage-pro-design-denmark-mod-club-line-p74.html"><img alt="Occhiali vintage PRO DESIGN DENMARK mod. Club Line P74" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/lutzkraemerde/occhiali-vintage-pro-design-denmark-mod-club-line-p74-4757.jpg" title="Occhiali vintage PRO DESIGN DENMARK mod. Club Line P74"/></a>
+<a class="arevision" href="http://www.lutzkraemer.de/occhiali-da-sole-unici-in-legno-occhiali-da-sole-da-uomo.html"><img alt="Occhiali da sole unici in legno occhiali da sole da uomo" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/lutzkraemerde/occhiali-da-sole-unici-in-legno-occhiali-da-sole-da-uomo-6616.jpg" title="Occhiali da sole unici in legno occhiali da sole da uomo"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.lutzkraemer.de/occhiali-vintage-pro-design-denmark-mod-club-line-p74.html">Occhiali vintage PRO DESIGN DENMARK mod. Club Line P74</a></h4></div>
+<div class="name"><h4><a href="http://www.lutzkraemer.de/occhiali-da-sole-unici-in-legno-occhiali-da-sole-da-uomo.html">Occhiali da sole unici in legno occhiali da sole da uomo</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€29,99</span> <span class="price-old">€98,99</span>
+<span class="price-new">€30,99</span> <span class="price-old">€92,99</span>
 </p>
 </div>
 </div>
@@ -364,14 +364,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.lutzkraemer.de/blu-artico-giallo-tondo-specchio-blu-satinato-impreziosito.html"><img alt="Blu artico giallo  tondo specchio blu satinato impreziosito" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/lutzkraemerde/blu-artico-giallo-tondo-specchio-blu-satinato-impreziosito-12481.jpg" title="Blu artico giallo  tondo specchio blu satinato impreziosito"/></a>
+<a class="arevision" href="http://www.lutzkraemer.de/occhiali-da-1970-dellannata-1970-made-in-england-rare.html"><img alt="Occhiali da 1970 dell'annata 1970 Made in England : Rare" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/lutzkraemerde/occhiali-da-1970-dellannata-1970-made-in-england-rare-6700.jpg" title="Occhiali da 1970 dell'annata 1970 Made in England : Rare"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.lutzkraemer.de/blu-artico-giallo-tondo-specchio-blu-satinato-impreziosito.html">Blu artico giallo  tondo specchio blu satinato impreziosito</a></h4></div>
+<div class="name"><h4><a href="http://www.lutzkraemer.de/occhiali-da-1970-dellannata-1970-made-in-england-rare.html">Occhiali da 1970 dell'annata 1970 Made in England : Rare</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€29,99</span> <span class="price-old">€94,99</span>
+<span class="price-new">€27,99</span> <span class="price-old">€91,99</span>
 </p>
 </div>
 </div>
@@ -380,14 +380,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.lutzkraemer.de/occhiali-da-sole-vintage-60-quadrati-con-adesivi-originali-del.html"><img alt="Occhiali da sole vintage 60 quadrati con adesivi originali del" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/lutzkraemerde/occhiali-da-sole-vintage-60-quadrati-con-adesivi-originali-del-3548.jpg" title="Occhiali da sole vintage 60 quadrati con adesivi originali del"/></a>
+<a class="arevision" href="http://www.lutzkraemer.de/occhiali-da-sole-da-skateboard-colorati-per-donne-o-uomini.html"><img alt="Occhiali da sole da skateboard colorati per donne o uomini" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/lutzkraemerde/occhiali-da-sole-da-skateboard-colorati-per-donne-o-uomini-2560.jpg" title="Occhiali da sole da skateboard colorati per donne o uomini"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.lutzkraemer.de/occhiali-da-sole-vintage-60-quadrati-con-adesivi-originali-del.html">Occhiali da sole vintage 60 quadrati con adesivi originali del</a></h4></div>
+<div class="name"><h4><a href="http://www.lutzkraemer.de/occhiali-da-sole-da-skateboard-colorati-per-donne-o-uomini.html">Occhiali da sole da skateboard colorati per donne o uomini</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€25,99</span> <span class="price-old">€97,99</span>
+<span class="price-new">€29,99</span> <span class="price-old">€89,99</span>
 </p>
 </div>
 </div>
@@ -404,27 +404,11 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.lutzkraemer.de/occhiali-da-sole-isometric-wood-temple-bamboo.html"><img alt="Occhiali da sole Isometric Wood Temple Bamboo" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/lutzkraemerde/occhiali-da-sole-isometric-wood-temple-bamboo-11303.jpg" title="Occhiali da sole Isometric Wood Temple Bamboo"/></a>
+<a class="arevision" href="http://www.lutzkraemer.de/ray-ban-rb-4140-wayfarer-601-3n.html"><img alt="Ray Ban RB 4140 Wayfarer 601 3N" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/lutzkraemerde/ray-ban-rb-4140-wayfarer-601-3n-2572.jpg" title="Ray Ban RB 4140 Wayfarer 601 3N"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.lutzkraemer.de/occhiali-da-sole-isometric-wood-temple-bamboo.html">Occhiali da sole Isometric Wood Temple Bamboo</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€29,99</span> <span class="price-old">€99,99</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.lutzkraemer.de/silhouette-m-3100-c-1605-vintage-80s-oro-specchio-lenti.html"><img alt="Silhouette M 3100 C 1605 Vintage 80s oro specchio lenti" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/lutzkraemerde/silhouette-mx-3100-cx-1605-vintage-80s-oro-specchio-lenti-10745.jpg" title="Silhouette M 3100 C 1605 Vintage 80s oro specchio lenti"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="http://www.lutzkraemer.de/silhouette-m-3100-c-1605-vintage-80s-oro-specchio-lenti.html">Silhouette M 3100 C 1605 Vintage 80s oro specchio lenti</a></h4></div>
+<div class="name"><h4><a href="http://www.lutzkraemer.de/ray-ban-rb-4140-wayfarer-601-3n.html">Ray Ban RB 4140 Wayfarer 601 3N</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
 <span class="price-new">€28,99</span> <span class="price-old">€97,99</span>
@@ -436,14 +420,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.lutzkraemer.de/montature-per-occhiali-vintage-francese-fade-pastello.html"><img alt="Montature per occhiali vintage francese Fade pastello" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/lutzkraemerde/montature-per-occhiali-vintage-francese-fade-pastello-8564.jpg" title="Montature per occhiali vintage francese Fade pastello"/></a>
+<a class="arevision" href="http://www.lutzkraemer.de/faccia-blu-plaid-cotone-uomo-seta-eseguito-il-sonno-maschera.html"><img alt="Faccia blu Plaid cotone uomo / seta eseguito il sonno maschera" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/lutzkraemerde/faccia-blu-plaid-cotone-uomo-seta-eseguito-il-sonno-maschera-10969.jpg" title="Faccia blu Plaid cotone uomo / seta eseguito il sonno maschera"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.lutzkraemer.de/montature-per-occhiali-vintage-francese-fade-pastello.html">Montature per occhiali vintage francese Fade pastello</a></h4></div>
+<div class="name"><h4><a href="http://www.lutzkraemer.de/faccia-blu-plaid-cotone-uomo-seta-eseguito-il-sonno-maschera.html">Faccia blu Plaid cotone uomo / seta eseguito il sonno maschera</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€25,99</span> <span class="price-old">€94,99</span>
+<span class="price-new">€26,99</span> <span class="price-old">€96,99</span>
 </p>
 </div>
 </div>
@@ -452,14 +436,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.lutzkraemer.de/occhiali-da-vista-montaggio-ottico-alain-mikli-blu-e-giallo.html"><img alt="Occhiali da vista/montaggio ottico ALAIN MIKLI blu e giallo" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/lutzkraemerde/occhiali-da-vista-montaggio-ottico-alain-mikli-blu-e-giallo-3969.jpg" title="Occhiali da vista/montaggio ottico ALAIN MIKLI blu e giallo"/></a>
+<a class="arevision" href="http://www.lutzkraemer.de/silhouette-m-1728-20-c-1619-vintage-80s-unico-chiaro-oversize.html"><img alt="Silhouette M 1728 20 C 1619 Vintage 80s unico chiaro oversize" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/lutzkraemerde/silhouette-mx-1728-20-cx-1619-vintage-80s-unico-chiaro-oversize-9518.jpg" title="Silhouette M 1728 20 C 1619 Vintage 80s unico chiaro oversize"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.lutzkraemer.de/occhiali-da-vista-montaggio-ottico-alain-mikli-blu-e-giallo.html">Occhiali da vista/montaggio ottico ALAIN MIKLI blu e giallo</a></h4></div>
+<div class="name"><h4><a href="http://www.lutzkraemer.de/silhouette-m-1728-20-c-1619-vintage-80s-unico-chiaro-oversize.html">Silhouette M 1728 20 C 1619 Vintage 80s unico chiaro oversize</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€29,99</span> <span class="price-old">€97,99</span>
+<span class="price-new">€28,99</span> <span class="price-old">€91,99</span>
 </p>
 </div>
 </div>
@@ -468,14 +452,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.lutzkraemer.de/occhiali-vintage-di-flair-jet-set-mod-784-montatura-per.html"><img alt="Occhiali vintage di FLAIR JET SET mod. 784 montatura per" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/lutzkraemerde/occhiali-vintage-di-flair-jet-set-mod-784-montatura-per-4718.jpg" title="Occhiali vintage di FLAIR JET SET mod. 784 montatura per"/></a>
+<a class="arevision" href="http://www.lutzkraemer.de/police-mod-2274-vintage-oval-sunglasses-lenses-made-in-italy.html"><img alt="POLICE mod. 2274 vintage Oval Sunglasses lenses Made in Italy" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/lutzkraemerde/police-mod-2274-vintage-oval-sunglasses-lenses-made-in-italy-12693.jpg" title="POLICE mod. 2274 vintage Oval Sunglasses lenses Made in Italy"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.lutzkraemer.de/occhiali-vintage-di-flair-jet-set-mod-784-montatura-per.html">Occhiali vintage di FLAIR JET SET mod. 784 montatura per</a></h4></div>
+<div class="name"><h4><a href="http://www.lutzkraemer.de/police-mod-2274-vintage-oval-sunglasses-lenses-made-in-italy.html">POLICE mod. 2274 vintage Oval Sunglasses lenses Made in Italy</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€25,99</span> <span class="price-old">€95,99</span>
+<span class="price-new">€26,99</span> <span class="price-old">€98,99</span>
 </p>
 </div>
 </div>
@@ -484,14 +468,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.lutzkraemer.de/occhiali-da-sole-cateye-vintage-stilizzati-anni-90.html"><img alt="Occhiali da sole cateye vintage stilizzati anni '90." class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/lutzkraemerde/occhiali-da-sole-cateye-vintage-stilizzati-anni-90-11676.jpg" title="Occhiali da sole cateye vintage stilizzati anni '90."/></a>
+<a class="arevision" href="http://www.lutzkraemer.de/ellebi-bif-54-18-vintage-glasses-deadstock.html"><img alt="ELLEBI bif 54 18 vintage glasses DEADSTOCK" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/lutzkraemerde/ellebi-bif-54-18-vintage-glasses-deadstock-5407.jpg" title="ELLEBI bif 54 18 vintage glasses DEADSTOCK"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.lutzkraemer.de/occhiali-da-sole-cateye-vintage-stilizzati-anni-90.html">Occhiali da sole cateye vintage stilizzati anni '90.</a></h4></div>
+<div class="name"><h4><a href="http://www.lutzkraemer.de/ellebi-bif-54-18-vintage-glasses-deadstock.html">ELLEBI bif 54 18 vintage glasses DEADSTOCK</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€30,99</span> <span class="price-old">€91,99</span>
+<span class="price-new">€27,99</span> <span class="price-old">€97,99</span>
 </p>
 </div>
 </div>
@@ -500,14 +484,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.lutzkraemer.de/otto-g-g28-01-vintage-anni-90-lenti-marroni-colorate.html"><img alt="Otto G g-28 01 Vintage anni '90 lenti marroni colorate" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/lutzkraemerde/otto-g-g28-01-vintage-anni-90-lenti-marroni-colorate-9260.jpg" title="Otto G g-28 01 Vintage anni '90 lenti marroni colorate"/></a>
+<a class="arevision" href="http://www.lutzkraemer.de/mondi-di-metzler-2007-791-vintage-anni-90-oro-unico-.html"><img alt="Mondi di Metzler 2007 791 Vintage anni '90 oro unico &amp;" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/lutzkraemerde/mondi-di-metzler-2007-791-vintage-anni-90-oro-unico--9323.jpg" title="Mondi di Metzler 2007 791 Vintage anni '90 oro unico &amp;"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.lutzkraemer.de/otto-g-g28-01-vintage-anni-90-lenti-marroni-colorate.html">Otto G g-28 01 Vintage anni '90 lenti marroni colorate</a></h4></div>
+<div class="name"><h4><a href="http://www.lutzkraemer.de/mondi-di-metzler-2007-791-vintage-anni-90-oro-unico-.html">Mondi di Metzler 2007 791 Vintage anni '90 oro unico &amp;</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€30,99</span> <span class="price-old">€92,99</span>
+<span class="price-new">€28,99</span> <span class="price-old">€93,99</span>
 </p>
 </div>
 </div>
@@ -516,14 +500,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.lutzkraemer.de/occhiali-da-vista-con-magnete-corrispondente-clip-su-occhiali.html"><img alt="Occhiali da vista con magnete corrispondente clip su occhiali" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/lutzkraemerde/occhiali-da-vista-con-magnete-corrispondente-clip-su-occhiali-5589.jpg" title="Occhiali da vista con magnete corrispondente clip su occhiali"/></a>
+<a class="arevision" href="http://www.lutzkraemer.de/custodia-per-occhiali-dipinta-a-mano-di-toy-story.html"><img alt="Custodia per occhiali dipinta a mano di Toy Story" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/lutzkraemerde/custodia-per-occhiali-dipinta-a-mano-di-toy-story-1394.jpg" title="Custodia per occhiali dipinta a mano di Toy Story"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.lutzkraemer.de/occhiali-da-vista-con-magnete-corrispondente-clip-su-occhiali.html">Occhiali da vista con magnete corrispondente clip su occhiali</a></h4></div>
+<div class="name"><h4><a href="http://www.lutzkraemer.de/custodia-per-occhiali-dipinta-a-mano-di-toy-story.html">Custodia per occhiali dipinta a mano di Toy Story</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€27,99</span> <span class="price-old">€96,99</span>
+<span class="price-new">€25,99</span> <span class="price-old">€90,99</span>
 </p>
 </div>
 </div>
@@ -532,14 +516,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.lutzkraemer.de/oval-keyhole-handmade-italy-vintage-eyeglasses.html"><img alt="Oval Keyhole handmade Italy vintage eyeglasses" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/lutzkraemerde/oval-keyhole-handmade-italy-vintage-eyeglasses-5014.jpg" title="Oval Keyhole handmade Italy vintage eyeglasses"/></a>
+<a class="arevision" href="http://www.lutzkraemer.de/harry-potter-stile-edoardiano-spectacles-c1910-oro-riempito.html"><img alt="Harry Potter Stile Edoardiano Spectacles c1910 Oro riempito" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/lutzkraemerde/harry-potter-stile-edoardiano-spectacles-c1910-oro-riempito-2508.jpg" title="Harry Potter Stile Edoardiano Spectacles c1910 Oro riempito"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.lutzkraemer.de/oval-keyhole-handmade-italy-vintage-eyeglasses.html">Oval Keyhole handmade Italy vintage eyeglasses</a></h4></div>
+<div class="name"><h4><a href="http://www.lutzkraemer.de/harry-potter-stile-edoardiano-spectacles-c1910-oro-riempito.html">Harry Potter Stile Edoardiano Spectacles c1910 Oro riempito</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€30,99</span> <span class="price-old">€89,99</span>
+<span class="price-new">€27,99</span> <span class="price-old">€93,99</span>
 </p>
 </div>
 </div>
@@ -548,14 +532,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.lutzkraemer.de/occhiali-da-sole-originali-vintage-rotondo-rotondo-rosso.html"><img alt="Occhiali da sole originali Vintage Rotondo Rotondo Rosso" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/lutzkraemerde/occhiali-da-sole-originali-vintage-rotondo-rotondo-rosso-5755.jpg" title="Occhiali da sole originali Vintage Rotondo Rotondo Rosso"/></a>
+<a class="arevision" href="http://www.lutzkraemer.de/vintage-nuovo-aviatore-outdoorsman-ray-ban-nero-chrome-g15.html"><img alt="Vintage nuovo aviatore Outdoorsman Ray Ban Nero Chrome G15" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/lutzkraemerde/vintage-nuovo-aviatore-outdoorsman-ray-ban-nero-chrome-g15-3335.jpg" title="Vintage nuovo aviatore Outdoorsman Ray Ban Nero Chrome G15"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.lutzkraemer.de/occhiali-da-sole-originali-vintage-rotondo-rotondo-rosso.html">Occhiali da sole originali Vintage Rotondo Rotondo Rosso</a></h4></div>
+<div class="name"><h4><a href="http://www.lutzkraemer.de/vintage-nuovo-aviatore-outdoorsman-ray-ban-nero-chrome-g15.html">Vintage nuovo aviatore Outdoorsman Ray Ban Nero Chrome G15</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€30,99</span> <span class="price-old">€92,99</span>
+<span class="price-new">€30,99</span> <span class="price-old">€98,99</span>
 </p>
 </div>
 </div>
@@ -564,14 +548,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.lutzkraemer.de/vintage-licefa-rodier-m-170.html"><img alt="Vintage Licefa Rodier M 170" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/lutzkraemerde/vintage-licefa-rodier-mx-170-6973.jpg" title="Vintage Licefa Rodier M 170"/></a>
+<a class="arevision" href="http://www.lutzkraemer.de/zeiss-nerd-vintage-brille-occhiali-lunettes-occhiali-gafas.html"><img alt="ZEISS Nerd Vintage Brille occhiali Lunettes Occhiali Gafas" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/lutzkraemerde/zeiss-nerd-vintage-brille-occhiali-lunettes-occhiali-gafas-2045.jpg" title="ZEISS Nerd Vintage Brille occhiali Lunettes Occhiali Gafas"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.lutzkraemer.de/vintage-licefa-rodier-m-170.html">Vintage Licefa Rodier M 170</a></h4></div>
+<div class="name"><h4><a href="http://www.lutzkraemer.de/zeiss-nerd-vintage-brille-occhiali-lunettes-occhiali-gafas.html">ZEISS Nerd Vintage Brille occhiali Lunettes Occhiali Gafas</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€27,99</span> <span class="price-old">€92,99</span>
+<span class="price-new">€29,99</span> <span class="price-old">€96,99</span>
 </p>
 </div>
 </div>
@@ -580,14 +564,30 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.lutzkraemer.de/3-in-1-catena-di-occhiali-bracciale-collana.html"><img alt="3 in 1 catena di occhiali bracciale collana" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/lutzkraemerde/3-in-1-catena-di-occhiali-bracciale-collana-6242.jpg" title="3 in 1 catena di occhiali bracciale collana"/></a>
+<a class="arevision" href="http://www.lutzkraemer.de/brown-per-accadere-occhiali-da-sole-occhiali-da-vista-catena.html"><img alt="Brown per accadere occhiali da sole / occhiali da vista catena" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/lutzkraemerde/brown-per-accadere-occhiali-da-sole-occhiali-da-vista-catena-517.jpg" title="Brown per accadere occhiali da sole / occhiali da vista catena"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.lutzkraemer.de/3-in-1-catena-di-occhiali-bracciale-collana.html">3 in 1 catena di occhiali bracciale collana</a></h4></div>
+<div class="name"><h4><a href="http://www.lutzkraemer.de/brown-per-accadere-occhiali-da-sole-occhiali-da-vista-catena.html">Brown per accadere occhiali da sole / occhiali da vista catena</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€26,99</span> <span class="price-old">€93,99</span>
+<span class="price-new">€25,99</span> <span class="price-old">€96,99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="http://www.lutzkraemer.de/oversize-grandi-occhiali-da-sole-donne-moda-gafas-de-sol.html"><img alt="Oversize Grandi Occhiali da sole Donne Moda Gafas de Sol" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/lutzkraemerde/oversize-grandi-occhiali-da-sole-donne-moda-gafas-de-sol-1958.jpg" title="Oversize Grandi Occhiali da sole Donne Moda Gafas de Sol"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="http://www.lutzkraemer.de/oversize-grandi-occhiali-da-sole-donne-moda-gafas-de-sol.html">Oversize Grandi Occhiali da sole Donne Moda Gafas de Sol</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€30,99</span> <span class="price-old">€96,99</span>
 </p>
 </div>
 </div>
@@ -630,43 +630,43 @@ $(document).ready(function() {
 <div id="powered">
 <div class="container">
 <div class="row">
-<div class="col-sm-12 col-md-12">
-      Copyright © 2022 <a href="//www.lutzkraemer.de" target="_blank">www.lutzkraemer.de</a> All Rights Reserved  
+<div class="col-sm-12 col-md-12">
+      Copyright © 2022 <a href="//www.lutzkraemer.de" target="_blank">www.lutzkraemer.de</a> All Rights Reserved  
       </div>
 </div>
 </div>
 </div>
 </footer>
 <script src="catalog/view/theme/bimini/js/jquery.visible.min.js" type="text/javascript"></script>
-<script type="text/javascript">
-
-var win = $(window);
-
-var allMods = $("footer");
-
-allMods.each(function(i, el) {
-    
-  if ($(el).visible(true)) {
-    $(el).addClass("already-visible"); 
-  }
-  
-});
-
-win.scroll(function(event) {
-  
-  allMods.each(function(i, el) {
-    
-    var el = $(el);
-    
-    if (el.visible(true)) {
-      el.addClass("come-in"); 
-    } else {
-      el.removeClass("come-in already-visible");
-    }
-    
-  });
-  
-}); 
+<script type="text/javascript">
+
+var win = $(window);
+
+var allMods = $("footer");
+
+allMods.each(function(i, el) {
+    
+  if ($(el).visible(true)) {
+    $(el).addClass("already-visible"); 
+  }
+  
+});
+
+win.scroll(function(event) {
+  
+  allMods.each(function(i, el) {
+    
+    var el = $(el);
+    
+    if (el.visible(true)) {
+      el.addClass("come-in"); 
+    } else {
+      el.removeClass("come-in already-visible");
+    }
+    
+  });
+  
+}); 
 </script>
 <script src="catalog/view/theme/bimini/js/jquery.easing-1.3.min.js" type="text/javascript"></script>
 <link href="catalog/view/theme/bimini/js/quickview/fancybox/jquery.fancybox.css" property="stylesheet" rel="stylesheet">

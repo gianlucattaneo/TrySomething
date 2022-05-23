@@ -33,613 +33,613 @@
 <script src="catalog/view/theme/lollipop/js/jquery.dcjqaccordion.js" type="text/javascript"></script>
 <script src="" type="text/javascript"></script>
 <script src="catalog/view/javascript/oc_resetimg.js" type="text/javascript"></script>
-<style type="text/css">
-
-/*  Body background color and pattern  */
-body {
-	background-color: #EBEBEB;
-	background-image: url("https://www.knopf-saiten.de/image/catalog/tshirts_body_bg_1.png"); ?>;
-	background-position: top center;
-	background-repeat: repeat;
-	background-attachment: fixed;
-}
-
-/*  Headings color  */
-h1, h2, h3, h4, h5, h6, .panel-default > .panel-heading, .product-thumb h4 a, #column-left .product-thumb h4 a, #column-right .product-thumb h4 a, .table > thead, .nav-tabs > li > a:hover, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, legend, #search .form-control, .product-right-sm-info span.p-title, .product-right-sm-related .name a {color: #000000;}
-#content h1::before, #content h2::before {border-bottom: 3px solid #6FA7A6;}
-#content h1, #content h2 {padding-bottom: 25px;}
-
-/*  Body text color  */
-body, #content .tab-content p, #content .product-right-sm-info .modal-body p, .product-buy ul.pf span {color: #616161;}
-
-/*  Light text color  */
-small, #content p, .breadcrumb a, .cat-description, .product-thumb .product_box_brand a, .product-buy ul.pf li, .product-buy ul.pp, .prev-name, .next-name, .product-right-sm-info span.p-subtitle, .product-right-sm-related .product_box_brand a, .box-category-home .subcat a, #content .product-right-sm-info .modal-body h1 + p, #features .modal-body h1 + p, .cookie-message, .alert-success, .alert-info, .dropdown-highlight {color: #8D8D8D;}
-
-/*  Links color  */
-a, a:focus, .list-group a {color: #616161;}
-
-/*  Links hover color  */
-a:hover, .breadcrumb a:hover, .dropdown-highlight:hover, .dropdown-highlight:focus, .box-category-home .subcat li:hover a, .table .btn, .table .btn-primary, .table .btn-primary:hover, .table .btn-primary:focus, .list-group a.active, .list-group a.active:hover, .list-group a:hover, .category-list .image:hover, .save-percent {color: #6FA7A6;}
-
-/*  Icons color  */
-.dr-menu > div .dr-icon i, .category-list i, #menu_brands .image i, .box-manufacturers-home .image i, #search .input-group-addon .btn, .accordion li.dcjq-parent-li > a + .dcjq-icon {color: #DBDBDB;}
-.owl-carousel .owl-buttons div {color: #DBDBDB!important;}
-
-/*  Icons hover color  */
-.dr-menu.dr-menu-open > div .dr-icon i, #search .input-group-addon .btn:hover, .up-theme-modal .modal-body .close, .product-right-sm-info span.p-icon i, .alert-success i, .alert-success .close, .alert-info i, .alert-info .close, .accordion li.dcjq-parent-li > a + .dcjq-icon:hover, .up-theme-gallery-content .gallery-hover-box i, .up-theme-modal-popup .modal-body .close {color: #6FA7A6;}
-.owl-carousel .owl-buttons div:hover, .mfp-close:hover {color: #6FA7A6!important;}
-#toTop {background-color: #6FA7A6;}
-
-/*  Wrapper Frame  */
-.wrapper.framed {background-color: #FFFFFF;}
-.wrapper.full-width-border {border: 34px solid #FFFFFF;}
-
-/*  Content Column  */
-#content, #content .panel-default > .panel-heading, #content .panel, .category-list + .panel-default > .panel-heading, #search .form-control, #search .input-group-addon, #search .input-group-addon .btn, #livesearch_search_results, .modal-content, .alert-success, .alert-info, .cookie-message, .custom_box {
-	background-color: #FFFFFF;
-}
-.product-filter, .dropdown-highlight {
-	background-color: #FFFFFF;
-}
-.product-filter, .pagination-box, #content .panel-default > .panel-heading, #product-tabs, #livesearch_search_results li, .modal-footer, .list-group a, .list-group a.active, .list-group a.active:hover, .list-group a:hover, a.list-group-item.active, a.list-group-item.active:hover, a.list-group-item.active:focus, .dr-menu ul li {
-    border-top: 1px solid #F6F6F6;	
-}	
-.product-filter, .modal-header, .box-category-home .subcat li {
-    border-bottom: 1px solid #F6F6F6;	
-}
-.well, .table-bordered, .table-bordered > thead > tr > th, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > tbody > tr > td, .table-bordered > tfoot > tr > td, .contact-map, .img-thumbnail-theme {
-    border: 1px solid #F6F6F6;	
-}
-hr, legend, #search .input-group-addon {
-	border-color: #F6F6F6;
-}
-.nav-tabs > li > a:hover, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus {
-    border-top: 1px solid #6FA7A6;	
-}
-
-/*  Left Column Heading  */
-#column-left .panel-heading  {	
-	background-color: #FFFFFF;
-}
-#column-left .panel-default > .panel-heading, #column-left .panel-default > .panel-heading h2 {color: #29323B;}
-	
-#column-left .panel-default > .panel-heading, #column-left .dr-menu.dr-menu-open > .panel-heading {
-	border-bottom: 1px solid #F6F6F6;
-}
-
-/*  Left Column Box  */
-#column-left .panel, #column-left .owl-carousel {
-	background-color: #FFFFFF;
-}
-#column-left a {color: #616161;}
-#column-left a:hover {color: #6FA7A6;}
-#column-left {color: #616161;} 
-#column-left .list-group a, #column-left .list-group a.active, #column-left .list-group a.active:hover, #column-left .list-group a:hover, #column-left .dr-menu ul li {border-top: 1px solid #F6F6F6;}
-#column-left .panel, #column-left .owl-carousel.carousel-module, #column-left .owl-carousel.banner-module {border-bottom: 1px solid #F6F6F6!important;}
-#column-left {border-right: 1px solid #F6F6F6;}
-
-
-/*  Right Column Heading  */
-#column-right .panel-heading  {
-	background-color: #FFFFFF;
-}
-#column-right .panel-default > .panel-heading, #column-right .panel-default > .panel-heading h2 {color: #29323B;}
-	
-#column-right .panel-default > .panel-heading, #column-right .dr-menu.dr-menu-open > .panel-heading  {
-	border-bottom: 1px solid #F6F6F6;
-}
-
-/*  Right Column Box  */
-#column-right .panel, #column-right .owl-carousel {
-	background-color: #FFFFFF;
-}
-#column-right a {color: #616161;}
-#column-right a:hover, #column-right .dr-menu > div .dr-icon i {color: #6FA7A6;}
-#column-right {color: #616161;}
-#column-right .list-group a, #column-right .list-group a.active, #column-right .list-group a.active:hover, #column-right .list-group a:hover, #column-right .dr-menu ul li {border-top: 1px solid #F6F6F6;}
-#column-right .panel, #column-right .owl-carousel.carousel-module, #column-right .owl-carousel.banner-module {border-bottom: 1px solid #F6F6F6!important;}
-#column-right {border-left: 1px solid #F6F6F6;}
-
-
-/*  Category Box Heading  */
-#column-left .panel-default.panel-category > .panel-heading, #column-right .panel-default.panel-category > .panel-heading {
-	background-color: #FFFFFF;
-    color: #29323B;
-	
-	border-bottom: 1px solid #F6F6F6;
-}
-
-/*  Category Box Content  */
-#column-left .panel-default.panel-category, #column-right .panel-default.panel-category {
-	background-color: #FFFFFF;
-    border-bottom: 1px solid #F6F6F6!important;	
-}
-#column-left .panel-default.panel-category a.list-group-item, #column-right .panel-default.panel-category a.list-group-item, .accordion li {
-	border-top: 1px solid #F6F6F6;	
-}
-#column-left .panel-default.panel-category a, #column-right .panel-default.panel-category a {color: #616161;}
-#column-left .panel-default.panel-category a:hover, #column-right .panel-default.panel-category a:hover, #column-left .panel-default.panel-category .cat-mod-child a:hover, #column-right .panel-default.panel-category .cat-mod-child a:hover, #column-left .panel-default.panel-category a.list-group-item.active, #column-right .panel-default.panel-category a.list-group-item.active {color: #6FA7A6;}
-#column-left .panel-default.panel-category .cat-mod-child a, #column-right .panel-default.panel-category .cat-mod-child a, #column-left .accordion li ul li a.list-group-item {color: #8D8D8D;}
-
-
-/*  Filter Box Heading  */
-#column-left .panel-default.filters > .panel-heading, #column-right .panel-default.filters > .panel-heading  {
-	background-color: #FFFFFF;
-    color: #29323B;
-	
-	border-bottom: 1px solid #F6F6F6;
-}
-
-/*  Filter Box Content  */
-#column-left .panel-default.filters, #column-right .panel-default.filters {
-	background-color: #FFFFFF;
-    border-bottom: 1px solid #F6F6F6!important;
-}
-#column-left .panel-default.filters a, #column-right .panel-default.filters a {color: #29323B;}
-#column-left .panel-default.filters label, #column-right .panel-default.filters label {color: #616161;}
-#column-left .panel-default.filters label:hover, #column-right .panel-default.filters label:hover {color: #6FA7A6;}
-
-/*  Text Logo  */
-#logo h1 a, #logo-menu h1 a {color: #29323B;}
-
-/*  Top Promo Message Slider  */
-#top-custom-block-content {
-	display:none;
-}
-#top-custom-block-wrapper {
-	background-color: #29323B;
-	color: #FFFFFF;
-	background-image: url("https://www.knopf-saiten.de/image/catalog/custom/custom_bg_1.png"); ?>;
-    animation: animatedBackground 40s linear infinite;
-}
-
-/*  Layout  */
-
-
-/*  HEADER  */
-
-header {
-	background-color: #FFFFFF;
-	background-image: none;
-	background-position: top center;
-	background-repeat: repeat;
-	background-attachment: scroll;
-}
-.is-sticky #menu {
-	background-color: #F2F2F2;
-}
-.button-i {color: #6FA7A6;}
-.buttons-header:hover .button-i {color: #CC4363;}
-.buttons-header button, .buttons-header span.button-text {color: #8D8D8D;}
-.buttons-header:hover, .buttons-header:hover button, .buttons-header:hover span.button-text {color: #29323B;}
-.col-sm-8 #information-block, .col-sm-8 #contact-block, #search-block, #cart, #menu-mobile-block {
-	border-left: 1px solid #FFFFFF;
-}
-#information-block, #contact-block {
-	border-right: 1px solid #FFFFFF;
-}
-@media (max-width: 767px) {
-#search-block, #cart, #menu-mobile-block {
-	border-top: 1px solid #FFFFFF;
-}
-}
-
-/*  Top Bar  */
-#top, #open-top-custom-block {
-	background-color: #29323B;
-}
-#top, #top-links li {
-	color: #FFFFFF;
-}
-#top a, #top .btn-link, #top-links a {
-	color: #FFFFFF;
-}
-#top a:hover, #top .btn-link:hover, #top .btn-link:hover i, #top-links a:hover, #top-links a:hover i, #open-top-custom-block i {
-	color: #E9DD5A;
-}
-#open-top-custom-block {
-	border-left: 1px solid #34404A;
-}
-#open-top-custom-block.open i, #top-links i, #top .btn-link i {
-	color: #FFFFFF;
-} 
-
-#logo {text-align: left;}
-#menu-mobile-block {float: left;}
-
-/*  Fixed Header  */
-.is-sticky .navbar {
-	text-align: left;
-}
-
-/*  MAIN MENU */
-
-/*  Main Menu Bar  */
-#menu {
-	
-	background-color: #A8A8A8;
-	
-    border-top: 1px solid #F2F2F2;	
-	background-image: none;
-	background-repeat: repeat;
-}
-#menu .main-menu > li > a:hover, #menu .main-menu > li.open > a {
-	border-top: 1px solid #6FA7A6;
-}
-#menu .main-menu > li > a {
-	border-top: 1px solid transparent;
-	margin-top: -1px;
-}
-
-/*  Home Page Link  */
- 
-#menu #homepage:hover {
-	background-color: #FFFFFF;
-}	
- 
-#menu #homepage a {
-	color: #29323B;
-}	
-#menu #homepage:hover a {
-	color: #29323B;
-}
-
-/*  Categories Section  */
- 
-.menu_oc:hover, #menu_ver:hover, #menu_hor:hover  {
-	background-color: #FFFFFF;
-}
- 
-.menu_oc > a, #menu_ver > a, #menu_hor > a {
-	color: #29323B;
-}	
-.menu_oc:hover > a, #menu_ver:hover > a, #menu_hor:hover > a {
-	color: #29323B;
-}
-
-/*  Brands Section  */
- 
-#menu_brands:hover {
-	background-color: #FFFFFF;
-}
- 
-#menu_brands > a {
-	color: #29323B;
-}	
-#menu_brands:hover > a {
-	color: #29323B;
-}
-
-/*  Custom Links Section  */
- 
-.menu_links:hover {
-	background-color: #FFFFFF;
-}	
- 
-.menu_links a {
-	color: #29323B;
-}	
-.menu_links:hover a {
-	color: #29323B;
-}
-
-/*  Custom Menu Section  */
- 
-#menu_custom_menu:hover {
-	background-color: #FFFFFF;
-}
- 
-#menu_custom_menu > a {
-	color: #29323B;
-}	
-#menu_custom_menu:hover > a {
-	color: #29323B;
-}
-
-/*  Custom Blocks Section  */
- 
-.menu_custom_block:hover {
-	background-color: #FFFFFF;
-}	
- 
-.menu_custom_block > a {
-	color: #29323B;
-}	
-.menu_custom_block:hover > a {
-	color: #29323B;
-}
-
-/*  Sub-Menu  */
-#menu .dropdown-menu, #menu .dropdown-menus {
-	background-color: #FFFFFF;
-	color: #616161;
-}
-#menu .dropdown-highlight {
-	background-color: #FCFCFC;
-}
-#menu .dropdown-menus a, #menu_brands .brand-item .name {
-	color: #616161;
-}	
-#menu .dropdown-menus a:hover, #menu .dropdown-menus li a:hover, #menu #menu_hor .dropdown-menus li.sub-cat:hover > a, #menu #menu_hor .dropdown-menus li.main-cat > a:hover, #menu_brands .brand-item .name:hover {
-	color: #6FA7A6;
-}
-.menu_oc ul > li, #menu_ver ul > li, #menu_custom_menu ul > li, .menu_custom_block table ul > li, #menu .dropdown-menu li, #menu .dropdown-menus li {
-	border-bottom: 1px solid #F6F6F6;
-}
-#menu_hor .dropdown-menus ul > li ul > li {
-    border-bottom: 1px solid #F6F6F6;
-		
-}
-#menu .dropdown-menus a.see-all {
-	border-top: 1px solid #F6F6F6;
-}
-#menu .dropdown-menu, #menu .dropdown-menus {
-	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
-}
-
-/*  Main Menu Labels  */
-#menu_label1:after { background-color:#CC4363; }
-#menu_label2:after { background-color:#CC4363; }
-#menu_label3:after { background-color:#CC4363; }
-#menu_label4:after { background-color:#CC4363; }
-#menu_label5:after { background-color:#CC4363; }
-#menu_label6:after { background-color:#CC4363; }
-#menu_label7:after { background-color:#CC4363; }
-#menu_label8:after { background-color:#CC4363; }
-#menu_label9:after { background-color:#CC4363; }
-#menu_label10:after { background-color:#CC4363; }
-#menu_label11:after { background-color:#CC4363; }
-#menu_label12:after { background-color:#CC4363; }
-#menu_label13:after { background-color:#CC4363; }
-#menu_label14:after { background-color:#CC4363; }
-#menu_label15:after { background-color:#CC4363; }
- 
-#menu .cat-img img {margin-right: -30px;}
-.navbar {text-align: center;}
-
-/*  Custom Bar below Main Menu  */
-#custom-bar-wrapper {
-	background-color: #29323B;
-	color: #FFFFFF;
-	background-image: url("https://www.knopf-saiten.de/image/catalog/custom/custom_bg_1.png"); ?>;
-    animation: animatedBackground 40s linear infinite;
-}
-
-/*  Slider Controls */
-.owl-controls .owl-page span {background: #F2F2F2;}
-.owl-controls .owl-page.active span {background: #6FA7A6;}
-
-/*  Category Page  */
-.category_top_title h1 {color: #29323B;}
-
-/*  Product Box  */
-span.badge.sale {background-color: #CC4363;}
-span.badge.new {background-color: #6FA7A6;}
-.rating .fa-star {color: #CC4363;}
-.product-grid .name, #content .box-product .name, #content .box-product .product_box_brand, .product-bottom-related .name, .product-box-slider .name, .product-grid .product_box_brand, .product-box-slider .product_box_brand, .product-bottom-related-flexslider .product_box_brand, .product-bottom-related-flexslider .rating, .tab-content-products .product_box_brand, .product-grid .price, #content .box-product .price, .product-box-slider .price, .product-bottom-related .price, .product-grid .rating, #content .box-product .rating, .product-box-slider .rating, .product-grid .cart, #content .box-product .cart, .product-box-slider .cart, .product-bottom-related .cart, .product-right-sm-related .name, .product-right-sm-related .product_box_brand, .product-right-sm-related .rating, .product-right-sm-related p.price {
-	
-	text-align: left;
-	}
-
-/*  Product Page  */
-
-
-
-/*  Video Box  */
-.video_box_left #video_box_icon, .video_box_right #video_box_icon {
-    background-color: #CC4363;
-}
-.video_box_right .video_box, .video_box_left .video_box {
-    border: 4px solid #CC4363;
-}
- 
-/*  Custom Box  */
-.custom_box_left #custom_box_icon, .custom_box_right #custom_box_icon {
-    background-color: #E9DD5A;
-}
-.custom_box_right .custom_box, .custom_box_left .custom_box {
-    border: 4px solid #E9DD5A;
-}
-
-
-/*  FOOTER  */
-footer {opacity: 1;}
-
-/*  Features Block  */
-#features {
-	background-color: #FFFFFF;
-	background-image: none;
-	background-position: top center;
-	background-repeat: repeat;
-}
-#features span.f-icon.fi1 i {color: #E9DD5A;}
-#features span.f-icon.fi2 i {color: #E9DD5A;}
-#features span.f-icon.fi3 i {color: #E9DD5A;}
-#features span.f-icon.fi4 i {color: #E9DD5A;}
-#features .f-title {color: #29323B;}
-#features span.f-subtitle {color: #8D8D8D;}
-
-/*  Information, Custom Column  */
-#information {
-	color: #FFFFFF;
-	background-color: #983A50;
-	background-image: none;
-	background-position: top center;
-	background-repeat: repeat;
-}
-#information h5 {color: #FFFFFF;}
-#information a {color: #FFFFFF;}
-#information a:hover {color: #E9DD5A;}
-#information li {color: #E9DD5A;}
-
-/*  Powered by, News, Payment Images, Follow Us  */
-#powered {
-	color: #FFFFFF;
-	background-color: #983A50;
-	background-image: none;
-	background-position: top center;
-	background-repeat: repeat;
-	border-top: 1px solid #A63F56;
-}
-#powered a {color: #FFFFFF;}
-#powered a:hover, #powered i:hover {color: #E9DD5A;}
-#powered span#footer-news {color: #E9DD5A;}
-#powered #news a {color: #FFFFFF;}
-#powered #news a:hover {color: #E9DD5A;}
-#powered i {color: #FFFFFF;}
-
-/*  Bottom Custom Block  */
-#footer_custom {
-	color: #FFFFFF;
-	background-color: #983A50;
-	background-image: none;
-	background-position: top center;
-	background-repeat: repeat;
-	border-top: 1px solid #A63F56;
-}
-#footer_custom a {color: #FFFFFF;}
-#footer_custom a:hover {color: #E9DD5A;}
-
-
-/*  Product Slider on Home Page  */
-.ei-slider, .ei-slider-large li {
-	background-color: #FFFFFF;
-}
-.ei-title h2 a{color: #29323B;}
-.ei-title h3 a, .ei-title h4 a .price-old{color: #8D8D8D;}
-.ei-title h4 a{color: #29323B;}
-.ei-slider-thumbs li a{background: #DBDBDB;}
-.ei-slider-thumbs li.ei-slider-element{background: #6FA7A6;}
-
-/*  Prices */
-#content .product-thumb p.price, #cart span.price, #column-left .product-items .price, #column-right .product-items .price, .product-buy .price-reg, #content .product-right-sm-related p.price {color: #983A50;}
-.price-old, .product-thumb .price-tax {color: #8D8D8D;}
-.price-new {color: #983A50;}
-
-/*  Buttons */
-.btn-default, button.wishlist, button.compare, button.info, .pagination > li > a, .pagination > li > span, #cart .btn-default, .box-category-home .name, .box-manufacturers-home .name, input#input-quantity, input.dec, input.inc, #menu #menu_hor .dropdown-menus li.main-cat > a, #menu_brands .brand-item .name, #sidebar-wrapper-contact a.btn-default {
-	 
-	background-color: #F2F2F2;
-		color: #616161;
-	border: 3px solid #F2F2F2;
-}
-.btn-default:hover, #column-left .btn-default:hover, #column-right .btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .btn-default.disabled, .btn-default[disabled], button.wishlist:hover, button.compare:hover, button.info:hover, .pagination > li > a:hover, .pagination > li > a:focus, .pagination > li > a:active, .pagination > li > span:hover, #cart .btn-default:hover, .box-category-home .name:hover, .box-manufacturers-home .name:hover, input.dec:hover, input.inc:hover, #menu #menu_hor .dropdown-menus li.main-cat > a:hover, #menu_brands .brand-item a:hover .name, #sidebar-wrapper-contact a.btn-default:hover {
-	background-color: #6FA7A6;
-    color: #FFFFFF;
-	border: 3px solid #6FA7A6;	
-}
-
-.btn-primary, .pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus, #information a.btn-primary, #cart .btn-primary, #sidebar-wrapper-contact a.btn-primary {
-	 
-	background-color: #E9DD5A;
-		color: #616161;
-	border: 3px solid #E9DD5A;
-}
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .btn-primary.disabled, .btn-primary[disabled], #information a.btn-primary:hover, #cart .btn-primary:hover, #sidebar-wrapper-contact a.btn-primary:hover {
-	background-color: #6FA7A6;
-    color: #FFFFFF;
-	border: 3px solid #6FA7A6;	
-}
-.btn, .pagination > li > a, .pagination > li > span, .product-grid .wishlist, .product-grid .compare, .product-grid .info, .product-list .wishlist, .product-list .compare, #content .box-product .wishlist, #content .box-product .compare, #content .box-product .info, .product-box-slider-flexslider .wishlist, .product-box-slider-flexslider .compare, .product-box-slider-flexslider .info, .product-bottom-related-flexslider .wishlist, .product-bottom-related-flexslider .compare, .product-bottom-related-flexslider .info, .up-theme-gallery-content .gallery-hover-box, .up-theme-modal-popup .modal-body .close, .box-category-home .name, .box-manufacturers-home .name, #menu #menu_hor .dropdown-menus li.main-cat > a, #menu_brands .brand-item .name {
-	border-radius: 4px!important;
-}
-
-/*  Dropdowns  */
-.dropdown-menu, .dropdown-menus, .my-account-dropdown-menu li, #cart .dropdown-menu, #sidebar-wrapper, #sidebar-wrapper-contact, #menu-mobile, .prev, .next {background-color: #FFFFFF;}
-#cart span.name a, #cart span.quantity, .sidebar-nav > .sidebar-title, .sidebar-nav h5 {color: #29323B;}
-#cart .table.cart-total > tbody > tr > td, .dropdown-menu .datepicker {color: #616161;}
-#cart .table.cart-total > tbody > tr > td:first-child, #cart .dropdown-menu li p, #cart .dropdown-menu small, #cart span.price, .sidebar-nav li a, #sidebar-wrapper-contact div {color: #8D8D8D;}
-.dropdown-menu a, #top .dropdown-menu a, #top .dropdown-menu .btn-link, .prev-name, .next-name, .bootstrap-datetimepicker-widget td.old, .bootstrap-datetimepicker-widget td.new {color: #8D8D8D;}
-.dropdown-menu a:hover, #top .dropdown-menu a:hover, .my-account-dropdown-menu li.logout a:hover, #top .dropdown-menu li:hover .btn-link, .sidebar-nav li a:hover, .prev-name:hover, .next-name:hover {color: #29323B;}
-#top-links .my-account-dropdown-menu i, #cart button.item-remove, .prev-arrow i, .next-arrow i {color: #DBDBDB;}
-#top-links .my-account-dropdown-menu li a:hover i, #cart button.item-remove:hover, #menu-toggle-close span, #contact-toggle-close span, #menu-mobile-toggle-close span {color: #6FA7A6;}
-.my-account-dropdown-menu li.logout, #cart .checkout, .prev-name, .next-name {background-color: #FCFCFC;}
-#cart .table > tbody > tr > td, #cart .checkout, .prev-name, .next-name {border-top: 1px solid #F6F6F6;}
-.dropdown-menu li, .dropdown-menus li, .sidebar-nav.list-group li {border-bottom: 1px solid #F6F6F6;}
-.my-account-dropdown-menu li:nth-child(2n) {border-left: 1px solid #F6F6F6;}
-.dropdown-menu, .dropdown-menus, .modal-body #search, #livesearch_search_results, .modal-content {
-	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
-}
-.prev, .next {
-	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
-}
-
-/*  Modal  */
-.up-theme-modal .modal-content, .fancybox-overlay {
-	
-	background-color: rgba(245, 245, 245, 0);
-}
-.modal-backdrop {
-	
-	background-color: rgba(245, 245, 245, 0.95);
-}
-
-/*  Fonts  */
-
-/*  Body  */
-body, button, select, .form-control, .menu_label { 
-    font-family: Arial,Arial,Helvetica,sans-serif; 
-}
-body, button, select, .form-control, #cart .table > tbody > tr > td, #menu .dropdown-menus, #menu .dropdown-menus a, .box-category-home .subcat a { 
-	font-size: 13px;
-}
-
-/*  Small Text  */
-small, .small, label, #top, #top #currency .currency-select, #top .btn-group > .btn, .buttons-header, #cart > .btn, .btn-group > .dropdown-menu, .dropdown-menu, .dropdown-menus, #menu .dropdown-menus a.see-all, .menu_label, .breadcrumb a, .category-list > div, .product-thumb .product_box_brand a, .product-right-sm-related .product_box_brand a, .tooltip { 
-	font-size: 12px;
-}
-
-/*  Headings and Product Name  */
-h1, h2, h3, h4, h5, h6, .panel-heading, .product-right-sm-info span.p-title, #features .f-title, .nav-tabs > li > a, legend, .sidebar-nav > .sidebar-title, #menu #menu_hor .dropdown-menus li.main-cat > a, .box-category-home .name { 
-    font-weight: bold; 
-}
-h1, h2, h3, h4, h5, h6, .panel-heading, .product-right-sm-info span.p-title, #features .f-title, .nav-tabs > li > a, legend, .sidebar-nav > .sidebar-title, #menu #menu_hor .dropdown-menus li.main-cat > a, .box-category-home .name { 
-    font-family: Arial,Arial,Helvetica,sans-serif; 
-}
-h1, h2, h3, h4, h5, h6, .panel-heading, .product-right-sm-info span.p-title, #features .f-title, .nav-tabs > li > a, legend, .sidebar-nav > .sidebar-title, #menu #menu_hor .dropdown-menus li.main-cat > a, .box-category-home .name { 
-    text-transform: none;
-}
-
-/*  Price  */
-.price, .price-new, .price-old, .price-reg { 
-    font-family: Arial,Arial,Helvetica,sans-serif; 
-}
-.price, .price-new, .price-old, .price-reg { 
-    font-weight: bold; 
-}
-
-/*  Buttons  */
-.btn-default, .btn-primary, .box-manufacturers-home .name { 
-    font-family: Arial,Arial,Helvetica,sans-serif; 
-}
-.btn-default, .btn-primary, .box-manufacturers-home .name { 
-    font-size: 12px;
-    font-weight: normal; 
-}
-
-/*  Main Menu Bar  */
-#menu #homepage a, #menu .main-menu > li > a { 
-    font-family: Arial,Arial,Helvetica,sans-serif; 
-}
-#menu #homepage a, #menu .main-menu > li > a {
-	font-size: 17px;
-    font-weight: bold;
-}
-#menu #homepage a, #menu .main-menu > li > a { 
-    text-transform: none;
-}
-
-
+<style type="text/css">
+
+/*  Body background color and pattern  */
+body {
+	background-color: #EBEBEB;
+	background-image: url("https://www.knopf-saiten.de/image/catalog/tshirts_body_bg_1.png"); ?>;
+	background-position: top center;
+	background-repeat: repeat;
+	background-attachment: fixed;
+}
+
+/*  Headings color  */
+h1, h2, h3, h4, h5, h6, .panel-default > .panel-heading, .product-thumb h4 a, #column-left .product-thumb h4 a, #column-right .product-thumb h4 a, .table > thead, .nav-tabs > li > a:hover, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, legend, #search .form-control, .product-right-sm-info span.p-title, .product-right-sm-related .name a {color: #000000;}
+#content h1::before, #content h2::before {border-bottom: 3px solid #6FA7A6;}
+#content h1, #content h2 {padding-bottom: 25px;}
+
+/*  Body text color  */
+body, #content .tab-content p, #content .product-right-sm-info .modal-body p, .product-buy ul.pf span {color: #616161;}
+
+/*  Light text color  */
+small, #content p, .breadcrumb a, .cat-description, .product-thumb .product_box_brand a, .product-buy ul.pf li, .product-buy ul.pp, .prev-name, .next-name, .product-right-sm-info span.p-subtitle, .product-right-sm-related .product_box_brand a, .box-category-home .subcat a, #content .product-right-sm-info .modal-body h1 + p, #features .modal-body h1 + p, .cookie-message, .alert-success, .alert-info, .dropdown-highlight {color: #8D8D8D;}
+
+/*  Links color  */
+a, a:focus, .list-group a {color: #616161;}
+
+/*  Links hover color  */
+a:hover, .breadcrumb a:hover, .dropdown-highlight:hover, .dropdown-highlight:focus, .box-category-home .subcat li:hover a, .table .btn, .table .btn-primary, .table .btn-primary:hover, .table .btn-primary:focus, .list-group a.active, .list-group a.active:hover, .list-group a:hover, .category-list .image:hover, .save-percent {color: #6FA7A6;}
+
+/*  Icons color  */
+.dr-menu > div .dr-icon i, .category-list i, #menu_brands .image i, .box-manufacturers-home .image i, #search .input-group-addon .btn, .accordion li.dcjq-parent-li > a + .dcjq-icon {color: #DBDBDB;}
+.owl-carousel .owl-buttons div {color: #DBDBDB!important;}
+
+/*  Icons hover color  */
+.dr-menu.dr-menu-open > div .dr-icon i, #search .input-group-addon .btn:hover, .up-theme-modal .modal-body .close, .product-right-sm-info span.p-icon i, .alert-success i, .alert-success .close, .alert-info i, .alert-info .close, .accordion li.dcjq-parent-li > a + .dcjq-icon:hover, .up-theme-gallery-content .gallery-hover-box i, .up-theme-modal-popup .modal-body .close {color: #6FA7A6;}
+.owl-carousel .owl-buttons div:hover, .mfp-close:hover {color: #6FA7A6!important;}
+#toTop {background-color: #6FA7A6;}
+
+/*  Wrapper Frame  */
+.wrapper.framed {background-color: #FFFFFF;}
+.wrapper.full-width-border {border: 34px solid #FFFFFF;}
+
+/*  Content Column  */
+#content, #content .panel-default > .panel-heading, #content .panel, .category-list + .panel-default > .panel-heading, #search .form-control, #search .input-group-addon, #search .input-group-addon .btn, #livesearch_search_results, .modal-content, .alert-success, .alert-info, .cookie-message, .custom_box {
+	background-color: #FFFFFF;
+}
+.product-filter, .dropdown-highlight {
+	background-color: #FFFFFF;
+}
+.product-filter, .pagination-box, #content .panel-default > .panel-heading, #product-tabs, #livesearch_search_results li, .modal-footer, .list-group a, .list-group a.active, .list-group a.active:hover, .list-group a:hover, a.list-group-item.active, a.list-group-item.active:hover, a.list-group-item.active:focus, .dr-menu ul li {
+    border-top: 1px solid #F6F6F6;	
+}	
+.product-filter, .modal-header, .box-category-home .subcat li {
+    border-bottom: 1px solid #F6F6F6;	
+}
+.well, .table-bordered, .table-bordered > thead > tr > th, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > tbody > tr > td, .table-bordered > tfoot > tr > td, .contact-map, .img-thumbnail-theme {
+    border: 1px solid #F6F6F6;	
+}
+hr, legend, #search .input-group-addon {
+	border-color: #F6F6F6;
+}
+.nav-tabs > li > a:hover, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus {
+    border-top: 1px solid #6FA7A6;	
+}
+
+/*  Left Column Heading  */
+#column-left .panel-heading  {	
+	background-color: #FFFFFF;
+}
+#column-left .panel-default > .panel-heading, #column-left .panel-default > .panel-heading h2 {color: #29323B;}
+	
+#column-left .panel-default > .panel-heading, #column-left .dr-menu.dr-menu-open > .panel-heading {
+	border-bottom: 1px solid #F6F6F6;
+}
+
+/*  Left Column Box  */
+#column-left .panel, #column-left .owl-carousel {
+	background-color: #FFFFFF;
+}
+#column-left a {color: #616161;}
+#column-left a:hover {color: #6FA7A6;}
+#column-left {color: #616161;} 
+#column-left .list-group a, #column-left .list-group a.active, #column-left .list-group a.active:hover, #column-left .list-group a:hover, #column-left .dr-menu ul li {border-top: 1px solid #F6F6F6;}
+#column-left .panel, #column-left .owl-carousel.carousel-module, #column-left .owl-carousel.banner-module {border-bottom: 1px solid #F6F6F6!important;}
+#column-left {border-right: 1px solid #F6F6F6;}
+
+
+/*  Right Column Heading  */
+#column-right .panel-heading  {
+	background-color: #FFFFFF;
+}
+#column-right .panel-default > .panel-heading, #column-right .panel-default > .panel-heading h2 {color: #29323B;}
+	
+#column-right .panel-default > .panel-heading, #column-right .dr-menu.dr-menu-open > .panel-heading  {
+	border-bottom: 1px solid #F6F6F6;
+}
+
+/*  Right Column Box  */
+#column-right .panel, #column-right .owl-carousel {
+	background-color: #FFFFFF;
+}
+#column-right a {color: #616161;}
+#column-right a:hover, #column-right .dr-menu > div .dr-icon i {color: #6FA7A6;}
+#column-right {color: #616161;}
+#column-right .list-group a, #column-right .list-group a.active, #column-right .list-group a.active:hover, #column-right .list-group a:hover, #column-right .dr-menu ul li {border-top: 1px solid #F6F6F6;}
+#column-right .panel, #column-right .owl-carousel.carousel-module, #column-right .owl-carousel.banner-module {border-bottom: 1px solid #F6F6F6!important;}
+#column-right {border-left: 1px solid #F6F6F6;}
+
+
+/*  Category Box Heading  */
+#column-left .panel-default.panel-category > .panel-heading, #column-right .panel-default.panel-category > .panel-heading {
+	background-color: #FFFFFF;
+    color: #29323B;
+	
+	border-bottom: 1px solid #F6F6F6;
+}
+
+/*  Category Box Content  */
+#column-left .panel-default.panel-category, #column-right .panel-default.panel-category {
+	background-color: #FFFFFF;
+    border-bottom: 1px solid #F6F6F6!important;	
+}
+#column-left .panel-default.panel-category a.list-group-item, #column-right .panel-default.panel-category a.list-group-item, .accordion li {
+	border-top: 1px solid #F6F6F6;	
+}
+#column-left .panel-default.panel-category a, #column-right .panel-default.panel-category a {color: #616161;}
+#column-left .panel-default.panel-category a:hover, #column-right .panel-default.panel-category a:hover, #column-left .panel-default.panel-category .cat-mod-child a:hover, #column-right .panel-default.panel-category .cat-mod-child a:hover, #column-left .panel-default.panel-category a.list-group-item.active, #column-right .panel-default.panel-category a.list-group-item.active {color: #6FA7A6;}
+#column-left .panel-default.panel-category .cat-mod-child a, #column-right .panel-default.panel-category .cat-mod-child a, #column-left .accordion li ul li a.list-group-item {color: #8D8D8D;}
+
+
+/*  Filter Box Heading  */
+#column-left .panel-default.filters > .panel-heading, #column-right .panel-default.filters > .panel-heading  {
+	background-color: #FFFFFF;
+    color: #29323B;
+	
+	border-bottom: 1px solid #F6F6F6;
+}
+
+/*  Filter Box Content  */
+#column-left .panel-default.filters, #column-right .panel-default.filters {
+	background-color: #FFFFFF;
+    border-bottom: 1px solid #F6F6F6!important;
+}
+#column-left .panel-default.filters a, #column-right .panel-default.filters a {color: #29323B;}
+#column-left .panel-default.filters label, #column-right .panel-default.filters label {color: #616161;}
+#column-left .panel-default.filters label:hover, #column-right .panel-default.filters label:hover {color: #6FA7A6;}
+
+/*  Text Logo  */
+#logo h1 a, #logo-menu h1 a {color: #29323B;}
+
+/*  Top Promo Message Slider  */
+#top-custom-block-content {
+	display:none;
+}
+#top-custom-block-wrapper {
+	background-color: #29323B;
+	color: #FFFFFF;
+	background-image: url("https://www.knopf-saiten.de/image/catalog/custom/custom_bg_1.png"); ?>;
+    animation: animatedBackground 40s linear infinite;
+}
+
+/*  Layout  */
+
+
+/*  HEADER  */
+
+header {
+	background-color: #FFFFFF;
+	background-image: none;
+	background-position: top center;
+	background-repeat: repeat;
+	background-attachment: scroll;
+}
+.is-sticky #menu {
+	background-color: #F2F2F2;
+}
+.button-i {color: #6FA7A6;}
+.buttons-header:hover .button-i {color: #CC4363;}
+.buttons-header button, .buttons-header span.button-text {color: #8D8D8D;}
+.buttons-header:hover, .buttons-header:hover button, .buttons-header:hover span.button-text {color: #29323B;}
+.col-sm-8 #information-block, .col-sm-8 #contact-block, #search-block, #cart, #menu-mobile-block {
+	border-left: 1px solid #FFFFFF;
+}
+#information-block, #contact-block {
+	border-right: 1px solid #FFFFFF;
+}
+@media (max-width: 767px) {
+#search-block, #cart, #menu-mobile-block {
+	border-top: 1px solid #FFFFFF;
+}
+}
+
+/*  Top Bar  */
+#top, #open-top-custom-block {
+	background-color: #29323B;
+}
+#top, #top-links li {
+	color: #FFFFFF;
+}
+#top a, #top .btn-link, #top-links a {
+	color: #FFFFFF;
+}
+#top a:hover, #top .btn-link:hover, #top .btn-link:hover i, #top-links a:hover, #top-links a:hover i, #open-top-custom-block i {
+	color: #E9DD5A;
+}
+#open-top-custom-block {
+	border-left: 1px solid #34404A;
+}
+#open-top-custom-block.open i, #top-links i, #top .btn-link i {
+	color: #FFFFFF;
+} 
+
+#logo {text-align: left;}
+#menu-mobile-block {float: left;}
+
+/*  Fixed Header  */
+.is-sticky .navbar {
+	text-align: left;
+}
+
+/*  MAIN MENU */
+
+/*  Main Menu Bar  */
+#menu {
+	
+	background-color: #A8A8A8;
+	
+    border-top: 1px solid #F2F2F2;	
+	background-image: none;
+	background-repeat: repeat;
+}
+#menu .main-menu > li > a:hover, #menu .main-menu > li.open > a {
+	border-top: 1px solid #6FA7A6;
+}
+#menu .main-menu > li > a {
+	border-top: 1px solid transparent;
+	margin-top: -1px;
+}
+
+/*  Home Page Link  */
+ 
+#menu #homepage:hover {
+	background-color: #FFFFFF;
+}	
+ 
+#menu #homepage a {
+	color: #29323B;
+}	
+#menu #homepage:hover a {
+	color: #29323B;
+}
+
+/*  Categories Section  */
+ 
+.menu_oc:hover, #menu_ver:hover, #menu_hor:hover  {
+	background-color: #FFFFFF;
+}
+ 
+.menu_oc > a, #menu_ver > a, #menu_hor > a {
+	color: #29323B;
+}	
+.menu_oc:hover > a, #menu_ver:hover > a, #menu_hor:hover > a {
+	color: #29323B;
+}
+
+/*  Brands Section  */
+ 
+#menu_brands:hover {
+	background-color: #FFFFFF;
+}
+ 
+#menu_brands > a {
+	color: #29323B;
+}	
+#menu_brands:hover > a {
+	color: #29323B;
+}
+
+/*  Custom Links Section  */
+ 
+.menu_links:hover {
+	background-color: #FFFFFF;
+}	
+ 
+.menu_links a {
+	color: #29323B;
+}	
+.menu_links:hover a {
+	color: #29323B;
+}
+
+/*  Custom Menu Section  */
+ 
+#menu_custom_menu:hover {
+	background-color: #FFFFFF;
+}
+ 
+#menu_custom_menu > a {
+	color: #29323B;
+}	
+#menu_custom_menu:hover > a {
+	color: #29323B;
+}
+
+/*  Custom Blocks Section  */
+ 
+.menu_custom_block:hover {
+	background-color: #FFFFFF;
+}	
+ 
+.menu_custom_block > a {
+	color: #29323B;
+}	
+.menu_custom_block:hover > a {
+	color: #29323B;
+}
+
+/*  Sub-Menu  */
+#menu .dropdown-menu, #menu .dropdown-menus {
+	background-color: #FFFFFF;
+	color: #616161;
+}
+#menu .dropdown-highlight {
+	background-color: #FCFCFC;
+}
+#menu .dropdown-menus a, #menu_brands .brand-item .name {
+	color: #616161;
+}	
+#menu .dropdown-menus a:hover, #menu .dropdown-menus li a:hover, #menu #menu_hor .dropdown-menus li.sub-cat:hover > a, #menu #menu_hor .dropdown-menus li.main-cat > a:hover, #menu_brands .brand-item .name:hover {
+	color: #6FA7A6;
+}
+.menu_oc ul > li, #menu_ver ul > li, #menu_custom_menu ul > li, .menu_custom_block table ul > li, #menu .dropdown-menu li, #menu .dropdown-menus li {
+	border-bottom: 1px solid #F6F6F6;
+}
+#menu_hor .dropdown-menus ul > li ul > li {
+    border-bottom: 1px solid #F6F6F6;
+		
+}
+#menu .dropdown-menus a.see-all {
+	border-top: 1px solid #F6F6F6;
+}
+#menu .dropdown-menu, #menu .dropdown-menus {
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+/*  Main Menu Labels  */
+#menu_label1:after { background-color:#CC4363; }
+#menu_label2:after { background-color:#CC4363; }
+#menu_label3:after { background-color:#CC4363; }
+#menu_label4:after { background-color:#CC4363; }
+#menu_label5:after { background-color:#CC4363; }
+#menu_label6:after { background-color:#CC4363; }
+#menu_label7:after { background-color:#CC4363; }
+#menu_label8:after { background-color:#CC4363; }
+#menu_label9:after { background-color:#CC4363; }
+#menu_label10:after { background-color:#CC4363; }
+#menu_label11:after { background-color:#CC4363; }
+#menu_label12:after { background-color:#CC4363; }
+#menu_label13:after { background-color:#CC4363; }
+#menu_label14:after { background-color:#CC4363; }
+#menu_label15:after { background-color:#CC4363; }
+ 
+#menu .cat-img img {margin-right: -30px;}
+.navbar {text-align: center;}
+
+/*  Custom Bar below Main Menu  */
+#custom-bar-wrapper {
+	background-color: #29323B;
+	color: #FFFFFF;
+	background-image: url("https://www.knopf-saiten.de/image/catalog/custom/custom_bg_1.png"); ?>;
+    animation: animatedBackground 40s linear infinite;
+}
+
+/*  Slider Controls */
+.owl-controls .owl-page span {background: #F2F2F2;}
+.owl-controls .owl-page.active span {background: #6FA7A6;}
+
+/*  Category Page  */
+.category_top_title h1 {color: #29323B;}
+
+/*  Product Box  */
+span.badge.sale {background-color: #CC4363;}
+span.badge.new {background-color: #6FA7A6;}
+.rating .fa-star {color: #CC4363;}
+.product-grid .name, #content .box-product .name, #content .box-product .product_box_brand, .product-bottom-related .name, .product-box-slider .name, .product-grid .product_box_brand, .product-box-slider .product_box_brand, .product-bottom-related-flexslider .product_box_brand, .product-bottom-related-flexslider .rating, .tab-content-products .product_box_brand, .product-grid .price, #content .box-product .price, .product-box-slider .price, .product-bottom-related .price, .product-grid .rating, #content .box-product .rating, .product-box-slider .rating, .product-grid .cart, #content .box-product .cart, .product-box-slider .cart, .product-bottom-related .cart, .product-right-sm-related .name, .product-right-sm-related .product_box_brand, .product-right-sm-related .rating, .product-right-sm-related p.price {
+	
+	text-align: left;
+	}
+
+/*  Product Page  */
+
+
+
+/*  Video Box  */
+.video_box_left #video_box_icon, .video_box_right #video_box_icon {
+    background-color: #CC4363;
+}
+.video_box_right .video_box, .video_box_left .video_box {
+    border: 4px solid #CC4363;
+}
+ 
+/*  Custom Box  */
+.custom_box_left #custom_box_icon, .custom_box_right #custom_box_icon {
+    background-color: #E9DD5A;
+}
+.custom_box_right .custom_box, .custom_box_left .custom_box {
+    border: 4px solid #E9DD5A;
+}
+
+
+/*  FOOTER  */
+footer {opacity: 1;}
+
+/*  Features Block  */
+#features {
+	background-color: #FFFFFF;
+	background-image: none;
+	background-position: top center;
+	background-repeat: repeat;
+}
+#features span.f-icon.fi1 i {color: #E9DD5A;}
+#features span.f-icon.fi2 i {color: #E9DD5A;}
+#features span.f-icon.fi3 i {color: #E9DD5A;}
+#features span.f-icon.fi4 i {color: #E9DD5A;}
+#features .f-title {color: #29323B;}
+#features span.f-subtitle {color: #8D8D8D;}
+
+/*  Information, Custom Column  */
+#information {
+	color: #FFFFFF;
+	background-color: #983A50;
+	background-image: none;
+	background-position: top center;
+	background-repeat: repeat;
+}
+#information h5 {color: #FFFFFF;}
+#information a {color: #FFFFFF;}
+#information a:hover {color: #E9DD5A;}
+#information li {color: #E9DD5A;}
+
+/*  Powered by, News, Payment Images, Follow Us  */
+#powered {
+	color: #FFFFFF;
+	background-color: #983A50;
+	background-image: none;
+	background-position: top center;
+	background-repeat: repeat;
+	border-top: 1px solid #A63F56;
+}
+#powered a {color: #FFFFFF;}
+#powered a:hover, #powered i:hover {color: #E9DD5A;}
+#powered span#footer-news {color: #E9DD5A;}
+#powered #news a {color: #FFFFFF;}
+#powered #news a:hover {color: #E9DD5A;}
+#powered i {color: #FFFFFF;}
+
+/*  Bottom Custom Block  */
+#footer_custom {
+	color: #FFFFFF;
+	background-color: #983A50;
+	background-image: none;
+	background-position: top center;
+	background-repeat: repeat;
+	border-top: 1px solid #A63F56;
+}
+#footer_custom a {color: #FFFFFF;}
+#footer_custom a:hover {color: #E9DD5A;}
+
+
+/*  Product Slider on Home Page  */
+.ei-slider, .ei-slider-large li {
+	background-color: #FFFFFF;
+}
+.ei-title h2 a{color: #29323B;}
+.ei-title h3 a, .ei-title h4 a .price-old{color: #8D8D8D;}
+.ei-title h4 a{color: #29323B;}
+.ei-slider-thumbs li a{background: #DBDBDB;}
+.ei-slider-thumbs li.ei-slider-element{background: #6FA7A6;}
+
+/*  Prices */
+#content .product-thumb p.price, #cart span.price, #column-left .product-items .price, #column-right .product-items .price, .product-buy .price-reg, #content .product-right-sm-related p.price {color: #983A50;}
+.price-old, .product-thumb .price-tax {color: #8D8D8D;}
+.price-new {color: #983A50;}
+
+/*  Buttons */
+.btn-default, button.wishlist, button.compare, button.info, .pagination > li > a, .pagination > li > span, #cart .btn-default, .box-category-home .name, .box-manufacturers-home .name, input#input-quantity, input.dec, input.inc, #menu #menu_hor .dropdown-menus li.main-cat > a, #menu_brands .brand-item .name, #sidebar-wrapper-contact a.btn-default {
+	 
+	background-color: #F2F2F2;
+		color: #616161;
+	border: 3px solid #F2F2F2;
+}
+.btn-default:hover, #column-left .btn-default:hover, #column-right .btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .btn-default.disabled, .btn-default[disabled], button.wishlist:hover, button.compare:hover, button.info:hover, .pagination > li > a:hover, .pagination > li > a:focus, .pagination > li > a:active, .pagination > li > span:hover, #cart .btn-default:hover, .box-category-home .name:hover, .box-manufacturers-home .name:hover, input.dec:hover, input.inc:hover, #menu #menu_hor .dropdown-menus li.main-cat > a:hover, #menu_brands .brand-item a:hover .name, #sidebar-wrapper-contact a.btn-default:hover {
+	background-color: #6FA7A6;
+    color: #FFFFFF;
+	border: 3px solid #6FA7A6;	
+}
+
+.btn-primary, .pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus, #information a.btn-primary, #cart .btn-primary, #sidebar-wrapper-contact a.btn-primary {
+	 
+	background-color: #E9DD5A;
+		color: #616161;
+	border: 3px solid #E9DD5A;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .btn-primary.disabled, .btn-primary[disabled], #information a.btn-primary:hover, #cart .btn-primary:hover, #sidebar-wrapper-contact a.btn-primary:hover {
+	background-color: #6FA7A6;
+    color: #FFFFFF;
+	border: 3px solid #6FA7A6;	
+}
+.btn, .pagination > li > a, .pagination > li > span, .product-grid .wishlist, .product-grid .compare, .product-grid .info, .product-list .wishlist, .product-list .compare, #content .box-product .wishlist, #content .box-product .compare, #content .box-product .info, .product-box-slider-flexslider .wishlist, .product-box-slider-flexslider .compare, .product-box-slider-flexslider .info, .product-bottom-related-flexslider .wishlist, .product-bottom-related-flexslider .compare, .product-bottom-related-flexslider .info, .up-theme-gallery-content .gallery-hover-box, .up-theme-modal-popup .modal-body .close, .box-category-home .name, .box-manufacturers-home .name, #menu #menu_hor .dropdown-menus li.main-cat > a, #menu_brands .brand-item .name {
+	border-radius: 4px!important;
+}
+
+/*  Dropdowns  */
+.dropdown-menu, .dropdown-menus, .my-account-dropdown-menu li, #cart .dropdown-menu, #sidebar-wrapper, #sidebar-wrapper-contact, #menu-mobile, .prev, .next {background-color: #FFFFFF;}
+#cart span.name a, #cart span.quantity, .sidebar-nav > .sidebar-title, .sidebar-nav h5 {color: #29323B;}
+#cart .table.cart-total > tbody > tr > td, .dropdown-menu .datepicker {color: #616161;}
+#cart .table.cart-total > tbody > tr > td:first-child, #cart .dropdown-menu li p, #cart .dropdown-menu small, #cart span.price, .sidebar-nav li a, #sidebar-wrapper-contact div {color: #8D8D8D;}
+.dropdown-menu a, #top .dropdown-menu a, #top .dropdown-menu .btn-link, .prev-name, .next-name, .bootstrap-datetimepicker-widget td.old, .bootstrap-datetimepicker-widget td.new {color: #8D8D8D;}
+.dropdown-menu a:hover, #top .dropdown-menu a:hover, .my-account-dropdown-menu li.logout a:hover, #top .dropdown-menu li:hover .btn-link, .sidebar-nav li a:hover, .prev-name:hover, .next-name:hover {color: #29323B;}
+#top-links .my-account-dropdown-menu i, #cart button.item-remove, .prev-arrow i, .next-arrow i {color: #DBDBDB;}
+#top-links .my-account-dropdown-menu li a:hover i, #cart button.item-remove:hover, #menu-toggle-close span, #contact-toggle-close span, #menu-mobile-toggle-close span {color: #6FA7A6;}
+.my-account-dropdown-menu li.logout, #cart .checkout, .prev-name, .next-name {background-color: #FCFCFC;}
+#cart .table > tbody > tr > td, #cart .checkout, .prev-name, .next-name {border-top: 1px solid #F6F6F6;}
+.dropdown-menu li, .dropdown-menus li, .sidebar-nav.list-group li {border-bottom: 1px solid #F6F6F6;}
+.my-account-dropdown-menu li:nth-child(2n) {border-left: 1px solid #F6F6F6;}
+.dropdown-menu, .dropdown-menus, .modal-body #search, #livesearch_search_results, .modal-content {
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+}
+.prev, .next {
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+}
+
+/*  Modal  */
+.up-theme-modal .modal-content, .fancybox-overlay {
+	
+	background-color: rgba(245, 245, 245, 0);
+}
+.modal-backdrop {
+	
+	background-color: rgba(245, 245, 245, 0.95);
+}
+
+/*  Fonts  */
+
+/*  Body  */
+body, button, select, .form-control, .menu_label { 
+    font-family: Arial,Arial,Helvetica,sans-serif; 
+}
+body, button, select, .form-control, #cart .table > tbody > tr > td, #menu .dropdown-menus, #menu .dropdown-menus a, .box-category-home .subcat a { 
+	font-size: 13px;
+}
+
+/*  Small Text  */
+small, .small, label, #top, #top #currency .currency-select, #top .btn-group > .btn, .buttons-header, #cart > .btn, .btn-group > .dropdown-menu, .dropdown-menu, .dropdown-menus, #menu .dropdown-menus a.see-all, .menu_label, .breadcrumb a, .category-list > div, .product-thumb .product_box_brand a, .product-right-sm-related .product_box_brand a, .tooltip { 
+	font-size: 12px;
+}
+
+/*  Headings and Product Name  */
+h1, h2, h3, h4, h5, h6, .panel-heading, .product-right-sm-info span.p-title, #features .f-title, .nav-tabs > li > a, legend, .sidebar-nav > .sidebar-title, #menu #menu_hor .dropdown-menus li.main-cat > a, .box-category-home .name { 
+    font-weight: bold; 
+}
+h1, h2, h3, h4, h5, h6, .panel-heading, .product-right-sm-info span.p-title, #features .f-title, .nav-tabs > li > a, legend, .sidebar-nav > .sidebar-title, #menu #menu_hor .dropdown-menus li.main-cat > a, .box-category-home .name { 
+    font-family: Arial,Arial,Helvetica,sans-serif; 
+}
+h1, h2, h3, h4, h5, h6, .panel-heading, .product-right-sm-info span.p-title, #features .f-title, .nav-tabs > li > a, legend, .sidebar-nav > .sidebar-title, #menu #menu_hor .dropdown-menus li.main-cat > a, .box-category-home .name { 
+    text-transform: none;
+}
+
+/*  Price  */
+.price, .price-new, .price-old, .price-reg { 
+    font-family: Arial,Arial,Helvetica,sans-serif; 
+}
+.price, .price-new, .price-old, .price-reg { 
+    font-weight: bold; 
+}
+
+/*  Buttons  */
+.btn-default, .btn-primary, .box-manufacturers-home .name { 
+    font-family: Arial,Arial,Helvetica,sans-serif; 
+}
+.btn-default, .btn-primary, .box-manufacturers-home .name { 
+    font-size: 12px;
+    font-weight: normal; 
+}
+
+/*  Main Menu Bar  */
+#menu #homepage a, #menu .main-menu > li > a { 
+    font-family: Arial,Arial,Helvetica,sans-serif; 
+}
+#menu #homepage a, #menu .main-menu > li > a {
+	font-size: 17px;
+    font-weight: bold;
+}
+#menu #homepage a, #menu .main-menu > li > a { 
+    text-transform: none;
+}
+
+
 </style>
 <link href="//fonts.googleapis.com/css?family=ABeeZee:400,400i,300,700" rel="stylesheet" type="text/css">
 <link href="//fonts.googleapis.com/css?family=Dosis:400,400i,300,700" rel="stylesheet" type="text/css">
-<script>
-$(function(){
-  $.stellar({
-    horizontalScrolling: false,
-	verticalOffset: 0
-  });
-});
+<script>
+$(function(){
+  $.stellar({
+    horizontalScrolling: false,
+	verticalOffset: 0
+  });
+});
 </script>
 </link></link></link></link></link></meta></head>
 <body class="common-home">
@@ -648,12 +648,12 @@ $(function(){
 <div id="sidebar-wrapper">
 <ul class="sidebar-nav list-group">
 <li class="sidebar-title">
-<a href="#menu-toggle-close" id="menu-toggle-close"><span aria-hidden="true">×</span></a>Informationen      <script>
-      $("#menu-toggle-close").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-		$(".sidebar-opacity").toggleClass("toggled");
-      });
+<a href="#menu-toggle-close" id="menu-toggle-close"><span aria-hidden="true">×</span></a>Informationen      <script>
+      $("#menu-toggle-close").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+		$(".sidebar-opacity").toggleClass("toggled");
+      });
       </script>
 </li>
 <li><a href="http://www.knopf-saiten.de/faq">FAQ</a></li>
@@ -730,10 +730,10 @@ $(function(){
 </div>
 </div>
 </div>
-<script type="text/javascript">
-$('#modal-search').on('shown.bs.modal', function () {
-    $('#modal-search-input').focus();
-})
+<script type="text/javascript">
+$('#modal-search').on('shown.bs.modal', function () {
+    $('#modal-search-input').focus();
+})
 </script>
 </div>
 <div class="col-xs-12 col-sm-3 header-logo">
@@ -742,12 +742,12 @@ $('#modal-search').on('shown.bs.modal', function () {
 </div>
 </div>
 <div class="col-xs-12 col-sm-3">
-<script>
-        $("#menu-toggle").click(function(e) {
-          e.preventDefault();
-          $("#wrapper").toggleClass("toggled");
-		  $(".sidebar-opacity").toggleClass("toggled");
-        });
+<script>
+        $("#menu-toggle").click(function(e) {
+          e.preventDefault();
+          $("#wrapper").toggleClass("toggled");
+		  $(".sidebar-opacity").toggleClass("toggled");
+        });
       </script>
 <a class="" href="#menu-mobile-toggle" id="menu-mobile-toggle">
 <div class="buttons-header hidden-sm hidden-md hidden-lg" id="menu-mobile-block">
@@ -755,12 +755,12 @@ $('#modal-search').on('shown.bs.modal', function () {
 <span class="button-text">Speisekarte</span>
 </div>
 </a>
-<script>
-        $("#menu-mobile-toggle").click(function(e) {
-          e.preventDefault();
-          $("#wrapper").toggleClass("menu-toggled");
-		  $(".sidebar-opacity").toggleClass("menu-toggled");
-        });
+<script>
+        $("#menu-mobile-toggle").click(function(e) {
+          e.preventDefault();
+          $("#wrapper").toggleClass("menu-toggled");
+		  $(".sidebar-opacity").toggleClass("menu-toggled");
+        });
       </script>
 <div class="btn-group btn-block buttons-header" id="cart">
 <a class="btn dropdown-toggle" data-loading-text="Wird geladen..." data-toggle="dropdown">
@@ -786,17 +786,17 @@ $('#modal-search').on('shown.bs.modal', function () {
 </ul>
 </div>
 </header>
-<script>
-  $(window).load(function(){
-    $("#menu").sticky({ topSpacing: 0 });
-  });
+<script>
+  $(window).load(function(){
+    $("#menu").sticky({ topSpacing: 0 });
+  });
 </script>
 <nav class="navbar hidden-lg hidden-md" id="menu">
 <div class="container">
-<!-- 
-    <div class="navbar-header"><span id="category" class="visible-xs">Speisekarte</span>
-      <button type="button" class="btn btn-navbar navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"><i class="fa fa-bars"></i></button>
-    </div>
+<!-- 
+    <div class="navbar-header"><span id="category" class="visible-xs">Speisekarte</span>
+      <button type="button" class="btn btn-navbar navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"><i class="fa fa-bars"></i></button>
+    </div>
     -->
 <div class="collapse navbar-collapse navbar-ex1-collapse">
 <div id="logo-menu-container">
@@ -834,26 +834,26 @@ $('#modal-search').on('shown.bs.modal', function () {
 </div>
 </div>
 </nav>
-<script type="text/javascript">
-$(document).ready(function() {
-	$('#accordion-mobile').dcAccordion({
-		disableLink: false,	
-		menuClose: false,
-		autoClose: true,
-		autoExpand: true,		
-		saveState: false
-	});
-});
+<script type="text/javascript">
+$(document).ready(function() {
+	$('#accordion-mobile').dcAccordion({
+		disableLink: false,	
+		menuClose: false,
+		autoClose: true,
+		autoExpand: true,		
+		saveState: false
+	});
+});
 </script>
 <div class="hidden-sm hidden-md hidden-lg" id="menu-mobile">
 <ul class="accordion sidebar-nav list-group" id="accordion-mobile">
 <li class="sidebar-title">
-<a href="#menu-mobile-toggle-close" id="menu-mobile-toggle-close"><span aria-hidden="true">×</span></a>Speisekarte      <script>
-      $("#menu-mobile-toggle-close").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("menu-toggled");
-		$(".sidebar-opacity").toggleClass("menu-toggled");
-      });
+<a href="#menu-mobile-toggle-close" id="menu-mobile-toggle-close"><span aria-hidden="true">×</span></a>Speisekarte      <script>
+      $("#menu-mobile-toggle-close").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("menu-toggled");
+		$(".sidebar-opacity").toggleClass("menu-toggled");
+      });
       </script>
 </li>
 <li><a href="http://www.knopf-saiten.de/">Start</a></li>
@@ -883,16 +883,16 @@ $(document).ready(function() {
 </div>
 <div style="display:none;"><script src="https://js.users.51.la/21085533.js" type="text/javascript"></script><br/></div><div class="container">
 <div class="row"><column class="col-sm-3 hidden-xs" id="column-left">
-<script type="text/javascript">
-$(document).ready(function() {
-	$('#accordion-1').dcAccordion({
-		disableLink: false,	
-		menuClose: false,
-		autoClose: true,
-		autoExpand: true,		
-		saveState: false
-	});
-});
+<script type="text/javascript">
+$(document).ready(function() {
+	$('#accordion-1').dcAccordion({
+		disableLink: false,	
+		menuClose: false,
+		autoClose: true,
+		autoExpand: true,		
+		saveState: false
+	});
+});
 </script>
 <div class="panel panel-default panel-category">
 <div class="panel-heading">Kategorien</div>
@@ -921,31 +921,31 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <span class="badge-wrapper">
-<span class="badge sale">-61%</span>
+<span class="badge sale">-67%</span>
 </span>
-<button class="wishlist" data-placement="left" data-toggle="tooltip" onclick="wishlist.add('7299');" title="Zur Wunschliste hinzufügen" type="button"><i class="fa fa-heart"></i></button>
-<button class="compare" data-placement="left" data-toggle="tooltip" onclick="compare.add('7299');" title="Vergleichen Sie dieses Produkt" type="button"><i class="fa fa-gavel"></i></button>
+<button class="wishlist" data-placement="left" data-toggle="tooltip" onclick="wishlist.add('3435');" title="Zur Wunschliste hinzufügen" type="button"><i class="fa fa-heart"></i></button>
+<button class="compare" data-placement="left" data-toggle="tooltip" onclick="compare.add('3435');" title="Vergleichen Sie dieses Produkt" type="button"><i class="fa fa-gavel"></i></button>
 <div class="flybar">
 <div class="flybar-cart">
-<button class="btn btn-primary" onclick="cart.add('7299');" type="button">in den Warenkorb legen</button>
+<button class="btn btn-primary" onclick="cart.add('3435');" type="button">in den Warenkorb legen</button>
 </div>
 </div>
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.knopf-saiten.de/indicode-herren-brandon-wollmantel-kurzmantel-mit-stehkragen-warmer-wollmantel-kurzer-herrenmantel-wintermantel-winterjacke-herrenjacke-jacke-mantel-fur-manner-demitasse-4dqdl.html"><img alt="Indicode Herren Brandon Wollmantel Kurzmantel mit Stehkragen | Warmer Wollmantel kurzer Herrenmantel Wintermantel Winterjacke Herrenjacke Jacke Mantel für Männer Demitasse 4dqdl" class="img-responsive img-normal" onerror="nofindit(this)" onload="resetimg(this,'80','100')" src="image/p_image/indicode-herren-brandon-wollmantel-kurzmantel-mit-stehkragen-warmer-wollmantel-kurzer-herrenmantel-wintermantel-winterjacke-herrenjacke-jacke-mantel-fur-manner-demitasse-4dqdl-7299.jpg" title="Indicode Herren Brandon Wollmantel Kurzmantel mit Stehkragen | Warmer Wollmantel kurzer Herrenmantel Wintermantel Winterjacke Herrenjacke Jacke Mantel für Männer Demitasse 4dqdl"/></a>
+<a class="arevision" href="http://www.knopf-saiten.de/brigg-morten-herren-winterparka-xxl8xl-schwarz-psxtd.html"><img alt="Brigg Morten Herren Winterparka XXL-8XL Schwarz PsxtD" class="img-responsive img-normal" onerror="nofindit(this)" onload="resetimg(this,'80','100')" src="image/p_image/brigg-morten-herren-winterparka-xxl8xl-schwarz-psxtd-3435.jpg" title="Brigg Morten Herren Winterparka XXL-8XL Schwarz PsxtD"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.knopf-saiten.de/indicode-herren-brandon-wollmantel-kurzmantel-mit-stehkragen-warmer-wollmantel-kurzer-herrenmantel-wintermantel-winterjacke-herrenjacke-jacke-mantel-fur-manner-demitasse-4dqdl.html">Indicode Herren Brandon Wollmantel Kurzmantel mit Stehkragen | Warmer Wollmantel kurzer Herrenmantel Wintermantel Winterjacke Herrenjacke Jacke Mantel für Männer Demitasse 4dqdl</a></h4></div>
+<div class="name"><h4><a href="http://www.knopf-saiten.de/brigg-morten-herren-winterparka-xxl8xl-schwarz-psxtd.html">Brigg Morten Herren Winterparka XXL-8XL Schwarz PsxtD</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€49.99</span> <span class="price-old">€128.99</span>
+<span class="price-new">€47.99</span> <span class="price-old">€144.99</span>
 </p>
 <div class="product-list-buttons">
 <div class="list-quickview">
-<a class="btn btn-default quickview" href="http://www.knopf-saiten.de/index.php?route=product/quickview&amp;product_id=7299">Schnellansicht</a>
+<a class="btn btn-default quickview" href="http://www.knopf-saiten.de/index.php?route=product/quickview&amp;product_id=3435">Schnellansicht</a>
 </div>
 <div class="cart">
-<button class="btn btn-primary" onclick="cart.add('7299');" type="button">in den Warenkorb legen</button>
+<button class="btn btn-primary" onclick="cart.add('3435');" type="button">in den Warenkorb legen</button>
 </div>
 </div>
 </div>
@@ -955,31 +955,31 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <span class="badge-wrapper">
-<span class="badge sale">-64%</span>
+<span class="badge sale">-66%</span>
 </span>
-<button class="wishlist" data-placement="left" data-toggle="tooltip" onclick="wishlist.add('2232');" title="Zur Wunschliste hinzufügen" type="button"><i class="fa fa-heart"></i></button>
-<button class="compare" data-placement="left" data-toggle="tooltip" onclick="compare.add('2232');" title="Vergleichen Sie dieses Produkt" type="button"><i class="fa fa-gavel"></i></button>
+<button class="wishlist" data-placement="left" data-toggle="tooltip" onclick="wishlist.add('6880');" title="Zur Wunschliste hinzufügen" type="button"><i class="fa fa-heart"></i></button>
+<button class="compare" data-placement="left" data-toggle="tooltip" onclick="compare.add('6880');" title="Vergleichen Sie dieses Produkt" type="button"><i class="fa fa-gavel"></i></button>
 <div class="flybar">
 <div class="flybar-cart">
-<button class="btn btn-primary" onclick="cart.add('2232');" type="button">in den Warenkorb legen</button>
+<button class="btn btn-primary" onclick="cart.add('6880');" type="button">in den Warenkorb legen</button>
 </div>
 </div>
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.knopf-saiten.de/sebago-spinnaker-b72871-herren-schwarz-noir-marron-wt475.html"><img alt="Sebago SPINNAKER B72871 Herren Schwarz Noir Marron wt475" class="img-responsive img-normal" onerror="nofindit(this)" onload="resetimg(this,'80','100')" src="image/p_image/sebago-spinnaker-b72871-herren-schwarz-noir-marron-wt475-2232.jpg" title="Sebago SPINNAKER B72871 Herren Schwarz Noir Marron wt475"/></a>
+<a class="arevision" href="http://www.knopf-saiten.de/inmonarch-herren-white-stattliche-5-pc-weis-bestickt-smoking-anzug-txrr1003xl38-ahxca.html"><img alt="INMONARCH Herren White STATTLICHE 5 PC WEIß Bestickt Smoking Anzug TXRR1003XL38  AhxCa" class="img-responsive img-normal" onerror="nofindit(this)" onload="resetimg(this,'80','100')" src="image/p_image/inmonarch-herren-white-stattliche-5-pc-weis-bestickt-smoking-anzug-txrr1003xl38-ahxca-6880.jpg" title="INMONARCH Herren White STATTLICHE 5 PC WEIß Bestickt Smoking Anzug TXRR1003XL38  AhxCa"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.knopf-saiten.de/sebago-spinnaker-b72871-herren-schwarz-noir-marron-wt475.html">Sebago SPINNAKER B72871 Herren Schwarz Noir Marron wt475</a></h4></div>
+<div class="name"><h4><a href="http://www.knopf-saiten.de/inmonarch-herren-white-stattliche-5-pc-weis-bestickt-smoking-anzug-txrr1003xl38-ahxca.html">INMONARCH Herren White STATTLICHE 5 PC WEIß Bestickt Smoking Anzug TXRR1003XL38  AhxCa</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€50.99</span> <span class="price-old">€142.99</span>
+<span class="price-new">€48.99</span> <span class="price-old">€142.99</span>
 </p>
 <div class="product-list-buttons">
 <div class="list-quickview">
-<a class="btn btn-default quickview" href="http://www.knopf-saiten.de/index.php?route=product/quickview&amp;product_id=2232">Schnellansicht</a>
+<a class="btn btn-default quickview" href="http://www.knopf-saiten.de/index.php?route=product/quickview&amp;product_id=6880">Schnellansicht</a>
 </div>
 <div class="cart">
-<button class="btn btn-primary" onclick="cart.add('2232');" type="button">in den Warenkorb legen</button>
+<button class="btn btn-primary" onclick="cart.add('6880');" type="button">in den Warenkorb legen</button>
 </div>
 </div>
 </div>
@@ -989,99 +989,31 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <span class="badge-wrapper">
-<span class="badge sale">-62%</span>
+<span class="badge sale">-66%</span>
 </span>
-<button class="wishlist" data-placement="left" data-toggle="tooltip" onclick="wishlist.add('4509');" title="Zur Wunschliste hinzufügen" type="button"><i class="fa fa-heart"></i></button>
-<button class="compare" data-placement="left" data-toggle="tooltip" onclick="compare.add('4509');" title="Vergleichen Sie dieses Produkt" type="button"><i class="fa fa-gavel"></i></button>
+<button class="wishlist" data-placement="left" data-toggle="tooltip" onclick="wishlist.add('5746');" title="Zur Wunschliste hinzufügen" type="button"><i class="fa fa-heart"></i></button>
+<button class="compare" data-placement="left" data-toggle="tooltip" onclick="compare.add('5746');" title="Vergleichen Sie dieses Produkt" type="button"><i class="fa fa-gavel"></i></button>
 <div class="flybar">
 <div class="flybar-cart">
-<button class="btn btn-primary" onclick="cart.add('4509');" type="button">in den Warenkorb legen</button>
+<button class="btn btn-primary" onclick="cart.add('5746');" type="button">in den Warenkorb legen</button>
 </div>
 </div>
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.knopf-saiten.de/nike-herren-3-4-tight-jordan-drifit-23-alpha-black-dark-grey-v0f87.html"><img alt="Nike Herren 3/4 Tight Jordan Dri-fit 23 Alpha Black/Dark Grey V0f87" class="img-responsive img-normal" onerror="nofindit(this)" onload="resetimg(this,'80','100')" src="image/p_image/nike-herren-3-4-tight-jordan-drifit-23-alpha-black-dark-grey-v0f87-4509.jpg" title="Nike Herren 3/4 Tight Jordan Dri-fit 23 Alpha Black/Dark Grey V0f87"/></a>
+<a class="arevision" href="http://www.knopf-saiten.de/battercake-herren-unter-warmen-sche-mesh-u-atmungsaktive-hosen-konvexen-unterhose-bequeme-soft-slips-underpants-warmen-sche-nacht-warmen-sche-schwarz-kxjab.html"><img alt="Battercake _Herren Unter Wärmen Sche Mesh U Atmungsaktive Hosen Konvexen Unterhose Bequeme Soft Slips Underpants Wärmen Sche Nacht Wärmen Sche Schwarz kxJAb" class="img-responsive img-normal" onerror="nofindit(this)" onload="resetimg(this,'80','100')" src="image/p_image/battercake-herren-unter-warmen-sche-mesh-u-atmungsaktive-hosen-konvexen-unterhose-bequeme-soft-slips-underpants-warmen-sche-nacht-warmen-sche-schwarz-kxjab-5746.jpg" title="Battercake _Herren Unter Wärmen Sche Mesh U Atmungsaktive Hosen Konvexen Unterhose Bequeme Soft Slips Underpants Wärmen Sche Nacht Wärmen Sche Schwarz kxJAb"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.knopf-saiten.de/nike-herren-3-4-tight-jordan-drifit-23-alpha-black-dark-grey-v0f87.html">Nike Herren 3/4 Tight Jordan Dri-fit 23 Alpha Black/Dark Grey V0f87</a></h4></div>
+<div class="name"><h4><a href="http://www.knopf-saiten.de/battercake-herren-unter-warmen-sche-mesh-u-atmungsaktive-hosen-konvexen-unterhose-bequeme-soft-slips-underpants-warmen-sche-nacht-warmen-sche-schwarz-kxjab.html">Battercake _Herren Unter Wärmen Sche Mesh U Atmungsaktive Hosen Konvexen Unterhose Bequeme Soft Slips Underpants Wärmen Sche Nacht Wärmen Sche Schwarz kxJAb</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€50.99</span> <span class="price-old">€134.99</span>
+<span class="price-new">€48.99</span> <span class="price-old">€145.99</span>
 </p>
 <div class="product-list-buttons">
 <div class="list-quickview">
-<a class="btn btn-default quickview" href="http://www.knopf-saiten.de/index.php?route=product/quickview&amp;product_id=4509">Schnellansicht</a>
+<a class="btn btn-default quickview" href="http://www.knopf-saiten.de/index.php?route=product/quickview&amp;product_id=5746">Schnellansicht</a>
 </div>
 <div class="cart">
-<button class="btn btn-primary" onclick="cart.add('4509');" type="button">in den Warenkorb legen</button>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<span class="badge-wrapper">
-<span class="badge sale">-60%</span>
-</span>
-<button class="wishlist" data-placement="left" data-toggle="tooltip" onclick="wishlist.add('881');" title="Zur Wunschliste hinzufügen" type="button"><i class="fa fa-heart"></i></button>
-<button class="compare" data-placement="left" data-toggle="tooltip" onclick="compare.add('881');" title="Vergleichen Sie dieses Produkt" type="button"><i class="fa fa-gavel"></i></button>
-<div class="flybar">
-<div class="flybar-cart">
-<button class="btn btn-primary" onclick="cart.add('881');" type="button">in den Warenkorb legen</button>
-</div>
-</div>
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.knopf-saiten.de/gottmann-monaco-goretex-baseballcap-basecap-aus-goretex-marine-55-8tjl7.html"><img alt="Göttmann Monaco Gore-Tex Baseballcap Basecap aus Gore-Tex® Marine (55) 8Tjl7" class="img-responsive img-normal" onerror="nofindit(this)" onload="resetimg(this,'80','100')" src="image/p_image/gottmann-monaco-goretex-baseballcap-basecap-aus-goretex-marine-55-8tjl7-881.jpg" title="Göttmann Monaco Gore-Tex Baseballcap Basecap aus Gore-Tex® Marine (55) 8Tjl7"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="http://www.knopf-saiten.de/gottmann-monaco-goretex-baseballcap-basecap-aus-goretex-marine-55-8tjl7.html">Göttmann Monaco Gore-Tex Baseballcap Basecap aus Gore-Tex® Marine (55) 8Tjl7</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€49.99</span> <span class="price-old">€125.99</span>
-</p>
-<div class="product-list-buttons">
-<div class="list-quickview">
-<a class="btn btn-default quickview" href="http://www.knopf-saiten.de/index.php?route=product/quickview&amp;product_id=881">Schnellansicht</a>
-</div>
-<div class="cart">
-<button class="btn btn-primary" onclick="cart.add('881');" type="button">in den Warenkorb legen</button>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<span class="badge-wrapper">
-<span class="badge sale">-63%</span>
-</span>
-<button class="wishlist" data-placement="left" data-toggle="tooltip" onclick="wishlist.add('3484');" title="Zur Wunschliste hinzufügen" type="button"><i class="fa fa-heart"></i></button>
-<button class="compare" data-placement="left" data-toggle="tooltip" onclick="compare.add('3484');" title="Vergleichen Sie dieses Produkt" type="button"><i class="fa fa-gavel"></i></button>
-<div class="flybar">
-<div class="flybar-cart">
-<button class="btn btn-primary" onclick="cart.add('3484');" type="button">in den Warenkorb legen</button>
-</div>
-</div>
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.knopf-saiten.de/reell-pant-flex-tapered-chino-artikelnr1110004-01001-olive-1fcll.html"><img alt="Reell Pant Flex Tapered Chino Artikel-Nr.1110-004 - 01-001 Olive 1FCLL" class="img-responsive img-normal" onerror="nofindit(this)" onload="resetimg(this,'80','100')" src="image/p_image/reell-pant-flex-tapered-chino-artikelnr1110004-01001-olive-1fcll-3484.jpg" title="Reell Pant Flex Tapered Chino Artikel-Nr.1110-004 - 01-001 Olive 1FCLL"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="http://www.knopf-saiten.de/reell-pant-flex-tapered-chino-artikelnr1110004-01001-olive-1fcll.html">Reell Pant Flex Tapered Chino Artikel-Nr.1110-004 - 01-001 Olive 1FCLL</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€47.99</span> <span class="price-old">€130.99</span>
-</p>
-<div class="product-list-buttons">
-<div class="list-quickview">
-<a class="btn btn-default quickview" href="http://www.knopf-saiten.de/index.php?route=product/quickview&amp;product_id=3484">Schnellansicht</a>
-</div>
-<div class="cart">
-<button class="btn btn-primary" onclick="cart.add('3484');" type="button">in den Warenkorb legen</button>
+<button class="btn btn-primary" onclick="cart.add('5746');" type="button">in den Warenkorb legen</button>
 </div>
 </div>
 </div>
@@ -1093,29 +1025,97 @@ $(document).ready(function() {
 <span class="badge-wrapper">
 <span class="badge sale">-65%</span>
 </span>
-<button class="wishlist" data-placement="left" data-toggle="tooltip" onclick="wishlist.add('5971');" title="Zur Wunschliste hinzufügen" type="button"><i class="fa fa-heart"></i></button>
-<button class="compare" data-placement="left" data-toggle="tooltip" onclick="compare.add('5971');" title="Vergleichen Sie dieses Produkt" type="button"><i class="fa fa-gavel"></i></button>
+<button class="wishlist" data-placement="left" data-toggle="tooltip" onclick="wishlist.add('5992');" title="Zur Wunschliste hinzufügen" type="button"><i class="fa fa-heart"></i></button>
+<button class="compare" data-placement="left" data-toggle="tooltip" onclick="compare.add('5992');" title="Vergleichen Sie dieses Produkt" type="button"><i class="fa fa-gavel"></i></button>
 <div class="flybar">
 <div class="flybar-cart">
-<button class="btn btn-primary" onclick="cart.add('5971');" type="button">in den Warenkorb legen</button>
+<button class="btn btn-primary" onclick="cart.add('5992');" type="button">in den Warenkorb legen</button>
 </div>
 </div>
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.knopf-saiten.de/camel-active-herren-loose-fit-jeans-yellow-18-hyabb.html"><img alt="camel active Herren Loose Fit Jeans Yellow 18 HyaBB" class="img-responsive img-normal" onerror="nofindit(this)" onload="resetimg(this,'80','100')" src="image/p_image/camel-active-herren-loose-fit-jeans-yellow-18-hyabb-5971.jpg" title="camel active Herren Loose Fit Jeans Yellow 18 HyaBB"/></a>
+<a class="arevision" href="http://www.knopf-saiten.de/herren-hosen-jogger-outdoor-jogginghose-chino-freizeithose-sport-fashion-trainings-hose-cargohose-manner-nner-grau-g8gff.html"><img alt="Herren Hosen Jogger Outdoor Jogginghose Chino Freizeithose Sport Fashion Trainings Hose Cargohose Männer Nner Grau G8Gff" class="img-responsive img-normal" onerror="nofindit(this)" onload="resetimg(this,'80','100')" src="image/p_image/herren-hosen-jogger-outdoor-jogginghose-chino-freizeithose-sport-fashion-trainings-hose-cargohose-manner-nner-grau-g8gff-5992.jpg" title="Herren Hosen Jogger Outdoor Jogginghose Chino Freizeithose Sport Fashion Trainings Hose Cargohose Männer Nner Grau G8Gff"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.knopf-saiten.de/camel-active-herren-loose-fit-jeans-yellow-18-hyabb.html">camel active Herren Loose Fit Jeans Yellow 18 HyaBB</a></h4></div>
+<div class="name"><h4><a href="http://www.knopf-saiten.de/herren-hosen-jogger-outdoor-jogginghose-chino-freizeithose-sport-fashion-trainings-hose-cargohose-manner-nner-grau-g8gff.html">Herren Hosen Jogger Outdoor Jogginghose Chino Freizeithose Sport Fashion Trainings Hose Cargohose Männer Nner Grau G8Gff</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€50.99</span> <span class="price-old">€143.99</span>
+<span class="price-new">€48.99</span> <span class="price-old">€140.99</span>
 </p>
 <div class="product-list-buttons">
 <div class="list-quickview">
-<a class="btn btn-default quickview" href="http://www.knopf-saiten.de/index.php?route=product/quickview&amp;product_id=5971">Schnellansicht</a>
+<a class="btn btn-default quickview" href="http://www.knopf-saiten.de/index.php?route=product/quickview&amp;product_id=5992">Schnellansicht</a>
 </div>
 <div class="cart">
-<button class="btn btn-primary" onclick="cart.add('5971');" type="button">in den Warenkorb legen</button>
+<button class="btn btn-primary" onclick="cart.add('5992');" type="button">in den Warenkorb legen</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<span class="badge-wrapper">
+<span class="badge sale">-61%</span>
+</span>
+<button class="wishlist" data-placement="left" data-toggle="tooltip" onclick="wishlist.add('6711');" title="Zur Wunschliste hinzufügen" type="button"><i class="fa fa-heart"></i></button>
+<button class="compare" data-placement="left" data-toggle="tooltip" onclick="compare.add('6711');" title="Vergleichen Sie dieses Produkt" type="button"><i class="fa fa-gavel"></i></button>
+<div class="flybar">
+<div class="flybar-cart">
+<button class="btn btn-primary" onclick="cart.add('6711');" type="button">in den Warenkorb legen</button>
+</div>
+</div>
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="http://www.knopf-saiten.de/exemplar-herren-blouson-echte-gesteppte-lederjacke-aus-lammfell-schwarz-kl304-schwarz-s6p8h.html"><img alt="Exemplar Herren Blouson Echte Gesteppte Lederjacke aus Lammfell Schwarz KL304 Schwarz s6p8H" class="img-responsive img-normal" onerror="nofindit(this)" onload="resetimg(this,'80','100')" src="image/p_image/exemplar-herren-blouson-echte-gesteppte-lederjacke-aus-lammfell-schwarz-kl304-schwarz-s6p8h-6711.jpg" title="Exemplar Herren Blouson Echte Gesteppte Lederjacke aus Lammfell Schwarz KL304 Schwarz s6p8H"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="http://www.knopf-saiten.de/exemplar-herren-blouson-echte-gesteppte-lederjacke-aus-lammfell-schwarz-kl304-schwarz-s6p8h.html">Exemplar Herren Blouson Echte Gesteppte Lederjacke aus Lammfell Schwarz KL304 Schwarz s6p8H</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€49.99</span> <span class="price-old">€127.99</span>
+</p>
+<div class="product-list-buttons">
+<div class="list-quickview">
+<a class="btn btn-default quickview" href="http://www.knopf-saiten.de/index.php?route=product/quickview&amp;product_id=6711">Schnellansicht</a>
+</div>
+<div class="cart">
+<button class="btn btn-primary" onclick="cart.add('6711');" type="button">in den Warenkorb legen</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<span class="badge-wrapper">
+<span class="badge sale">-64%</span>
+</span>
+<button class="wishlist" data-placement="left" data-toggle="tooltip" onclick="wishlist.add('1415');" title="Zur Wunschliste hinzufügen" type="button"><i class="fa fa-heart"></i></button>
+<button class="compare" data-placement="left" data-toggle="tooltip" onclick="compare.add('1415');" title="Vergleichen Sie dieses Produkt" type="button"><i class="fa fa-gavel"></i></button>
+<div class="flybar">
+<div class="flybar-cart">
+<button class="btn btn-primary" onclick="cart.add('1415');" type="button">in den Warenkorb legen</button>
+</div>
+</div>
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="http://www.knopf-saiten.de/brandit-herren-windbreaker-jacke-mehrfarbig-urban-15-7azjd.html"><img alt="Brandit Herren Windbreaker Jacke Mehrfarbig (Urban 15) 7AzjD" class="img-responsive img-normal" onerror="nofindit(this)" onload="resetimg(this,'80','100')" src="image/p_image/brandit-herren-windbreaker-jacke-mehrfarbig-urban-15-7azjd-1415.jpg" title="Brandit Herren Windbreaker Jacke Mehrfarbig (Urban 15) 7AzjD"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="http://www.knopf-saiten.de/brandit-herren-windbreaker-jacke-mehrfarbig-urban-15-7azjd.html">Brandit Herren Windbreaker Jacke Mehrfarbig (Urban 15) 7AzjD</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€50.99</span> <span class="price-old">€142.99</span>
+</p>
+<div class="product-list-buttons">
+<div class="list-quickview">
+<a class="btn btn-default quickview" href="http://www.knopf-saiten.de/index.php?route=product/quickview&amp;product_id=1415">Schnellansicht</a>
+</div>
+<div class="cart">
+<button class="btn btn-primary" onclick="cart.add('1415');" type="button">in den Warenkorb legen</button>
 </div>
 </div>
 </div>
@@ -1133,31 +1133,31 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <span class="badge-wrapper">
-<span class="badge sale">-65%</span>
+<span class="badge sale">-62%</span>
 </span>
-<button class="wishlist" data-placement="left" data-toggle="tooltip" onclick="wishlist.add('2353');" title="Zur Wunschliste hinzufügen" type="button"><i class="fa fa-heart"></i></button>
-<button class="compare" data-placement="left" data-toggle="tooltip" onclick="compare.add('2353');" title="Vergleichen Sie dieses Produkt" type="button"><i class="fa fa-gavel"></i></button>
+<button class="wishlist" data-placement="left" data-toggle="tooltip" onclick="wishlist.add('2087');" title="Zur Wunschliste hinzufügen" type="button"><i class="fa fa-heart"></i></button>
+<button class="compare" data-placement="left" data-toggle="tooltip" onclick="compare.add('2087');" title="Vergleichen Sie dieses Produkt" type="button"><i class="fa fa-gavel"></i></button>
 <div class="flybar">
 <div class="flybar-cart">
-<button class="btn btn-primary" onclick="cart.add('2353');" type="button">in den Warenkorb legen</button>
+<button class="btn btn-primary" onclick="cart.add('2087');" type="button">in den Warenkorb legen</button>
 </div>
 </div>
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.knopf-saiten.de/ricano-5134-herren-lederjacke-modern-fit-mit-fellfutterung-und-fellkragen-lamm-nappa-echtleder-schwarz-schwarz-9oewi.html"><img alt="RICANO 5134, Herren Lederjacke (Modern Fit) mit Fellfütterung und Fellkragen, Lamm Nappa Echtleder (Schwarz) Schwarz 9Oewi" class="img-responsive img-normal" onerror="nofindit(this)" onload="resetimg(this,'200','200')" src="image/p_image/ricano-5134-herren-lederjacke-modern-fit-mit-fellfutterung-und-fellkragen-lamm-nappa-echtleder-schwarz-schwarz-9oewi-2353.jpg" title="RICANO 5134, Herren Lederjacke (Modern Fit) mit Fellfütterung und Fellkragen, Lamm Nappa Echtleder (Schwarz) Schwarz 9Oewi"/></a>
+<a class="arevision" href="http://www.knopf-saiten.de/geographical-norway-herren-parka-airline-outdoor-winterparka-blau-navyblue-bliac.html"><img alt="Geographical Norway Herren Parka Airline Outdoor Winterparka Blau (Navyblue) BLiAc" class="img-responsive img-normal" onerror="nofindit(this)" onload="resetimg(this,'200','200')" src="image/p_image/geographical-norway-herren-parka-airline-outdoor-winterparka-blau-navyblue-bliac-2087.jpg" title="Geographical Norway Herren Parka Airline Outdoor Winterparka Blau (Navyblue) BLiAc"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.knopf-saiten.de/ricano-5134-herren-lederjacke-modern-fit-mit-fellfutterung-und-fellkragen-lamm-nappa-echtleder-schwarz-schwarz-9oewi.html">RICANO 5134, Herren Lederjacke (Modern Fit) mit Fellfütterung und Fellkragen, Lamm Nappa Echtleder (Schwarz) Schwarz 9Oewi</a></h4></div>
+<div class="name"><h4><a href="http://www.knopf-saiten.de/geographical-norway-herren-parka-airline-outdoor-winterparka-blau-navyblue-bliac.html">Geographical Norway Herren Parka Airline Outdoor Winterparka Blau (Navyblue) BLiAc</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€50.99</span> <span class="price-old">€146.99</span>
+<span class="price-new">€50.99</span> <span class="price-old">€133.99</span>
 </p>
 <div class="product-list-buttons">
 <div class="list-quickview">
-<a class="btn btn-default quickview" href="http://www.knopf-saiten.de/index.php?route=product/quickview&amp;product_id=2353">Schnellansicht</a>
+<a class="btn btn-default quickview" href="http://www.knopf-saiten.de/index.php?route=product/quickview&amp;product_id=2087">Schnellansicht</a>
 </div>
 <div class="cart">
-<button class="btn btn-primary" onclick="cart.add('2353');" type="button">in den Warenkorb legen</button>
+<button class="btn btn-primary" onclick="cart.add('2087');" type="button">in den Warenkorb legen</button>
 </div>
 </div>
 </div>
@@ -1167,31 +1167,65 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <span class="badge-wrapper">
-<span class="badge sale">-66%</span>
+<span class="badge sale">-62%</span>
 </span>
-<button class="wishlist" data-placement="left" data-toggle="tooltip" onclick="wishlist.add('817');" title="Zur Wunschliste hinzufügen" type="button"><i class="fa fa-heart"></i></button>
-<button class="compare" data-placement="left" data-toggle="tooltip" onclick="compare.add('817');" title="Vergleichen Sie dieses Produkt" type="button"><i class="fa fa-gavel"></i></button>
+<button class="wishlist" data-placement="left" data-toggle="tooltip" onclick="wishlist.add('6136');" title="Zur Wunschliste hinzufügen" type="button"><i class="fa fa-heart"></i></button>
+<button class="compare" data-placement="left" data-toggle="tooltip" onclick="compare.add('6136');" title="Vergleichen Sie dieses Produkt" type="button"><i class="fa fa-gavel"></i></button>
 <div class="flybar">
 <div class="flybar-cart">
-<button class="btn btn-primary" onclick="cart.add('817');" type="button">in den Warenkorb legen</button>
+<button class="btn btn-primary" onclick="cart.add('6136');" type="button">in den Warenkorb legen</button>
 </div>
 </div>
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.knopf-saiten.de/jako-herren-kapuzenjacke-competition-20-rot-schwarz-hh06e.html"><img alt="JAKO Herren Kapuzenjacke Competition 2.0 rot/schwarz hh06E" class="img-responsive img-normal" onerror="nofindit(this)" onload="resetimg(this,'200','200')" src="image/p_image/jako-herren-kapuzenjacke-competition-20-rot-schwarz-hh06e-817.jpg" title="JAKO Herren Kapuzenjacke Competition 2.0 rot/schwarz hh06E"/></a>
+<a class="arevision" href="http://www.knopf-saiten.de/falke-city-herren-kniestrumpf-airport-3er-pack-scarlet-uovpg.html"><img alt="FALKE City Herren Kniestrumpf Airport 3er Pack Scarlet UOvPg" class="img-responsive img-normal" onerror="nofindit(this)" onload="resetimg(this,'200','200')" src="image/p_image/falke-city-herren-kniestrumpf-airport-3er-pack-scarlet-uovpg-6136.jpg" title="FALKE City Herren Kniestrumpf Airport 3er Pack Scarlet UOvPg"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.knopf-saiten.de/jako-herren-kapuzenjacke-competition-20-rot-schwarz-hh06e.html">JAKO Herren Kapuzenjacke Competition 2.0 rot/schwarz hh06E</a></h4></div>
+<div class="name"><h4><a href="http://www.knopf-saiten.de/falke-city-herren-kniestrumpf-airport-3er-pack-scarlet-uovpg.html">FALKE City Herren Kniestrumpf Airport 3er Pack Scarlet UOvPg</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€48.99</span> <span class="price-old">€144.99</span>
+<span class="price-new">€49.99</span> <span class="price-old">€131.99</span>
 </p>
 <div class="product-list-buttons">
 <div class="list-quickview">
-<a class="btn btn-default quickview" href="http://www.knopf-saiten.de/index.php?route=product/quickview&amp;product_id=817">Schnellansicht</a>
+<a class="btn btn-default quickview" href="http://www.knopf-saiten.de/index.php?route=product/quickview&amp;product_id=6136">Schnellansicht</a>
 </div>
 <div class="cart">
-<button class="btn btn-primary" onclick="cart.add('817');" type="button">in den Warenkorb legen</button>
+<button class="btn btn-primary" onclick="cart.add('6136');" type="button">in den Warenkorb legen</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<span class="badge-wrapper">
+<span class="badge sale">-68%</span>
+</span>
+<button class="wishlist" data-placement="left" data-toggle="tooltip" onclick="wishlist.add('6299');" title="Zur Wunschliste hinzufügen" type="button"><i class="fa fa-heart"></i></button>
+<button class="compare" data-placement="left" data-toggle="tooltip" onclick="compare.add('6299');" title="Vergleichen Sie dieses Produkt" type="button"><i class="fa fa-gavel"></i></button>
+<div class="flybar">
+<div class="flybar-cart">
+<button class="btn btn-primary" onclick="cart.add('6299');" type="button">in den Warenkorb legen</button>
+</div>
+</div>
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="http://www.knopf-saiten.de/mufflon-conner-t-men-forrest-ddqch.html"><img alt="Mufflon Conner T Men forrest dDqCH" class="img-responsive img-normal" onerror="nofindit(this)" onload="resetimg(this,'200','200')" src="image/p_image/mufflon-conner-t-men-forrest-ddqch-6299.jpg" title="Mufflon Conner T Men forrest dDqCH"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="http://www.knopf-saiten.de/mufflon-conner-t-men-forrest-ddqch.html">Mufflon Conner T Men forrest dDqCH</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€46.99</span> <span class="price-old">€146.99</span>
+</p>
+<div class="product-list-buttons">
+<div class="list-quickview">
+<a class="btn btn-default quickview" href="http://www.knopf-saiten.de/index.php?route=product/quickview&amp;product_id=6299">Schnellansicht</a>
+</div>
+<div class="cart">
+<button class="btn btn-primary" onclick="cart.add('6299');" type="button">in den Warenkorb legen</button>
 </div>
 </div>
 </div>
@@ -1203,63 +1237,29 @@ $(document).ready(function() {
 <span class="badge-wrapper">
 <span class="badge sale">-65%</span>
 </span>
-<button class="wishlist" data-placement="left" data-toggle="tooltip" onclick="wishlist.add('663');" title="Zur Wunschliste hinzufügen" type="button"><i class="fa fa-heart"></i></button>
-<button class="compare" data-placement="left" data-toggle="tooltip" onclick="compare.add('663');" title="Vergleichen Sie dieses Produkt" type="button"><i class="fa fa-gavel"></i></button>
+<button class="wishlist" data-placement="left" data-toggle="tooltip" onclick="wishlist.add('2877');" title="Zur Wunschliste hinzufügen" type="button"><i class="fa fa-heart"></i></button>
+<button class="compare" data-placement="left" data-toggle="tooltip" onclick="compare.add('2877');" title="Vergleichen Sie dieses Produkt" type="button"><i class="fa fa-gavel"></i></button>
 <div class="flybar">
 <div class="flybar-cart">
-<button class="btn btn-primary" onclick="cart.add('663');" type="button">in den Warenkorb legen</button>
+<button class="btn btn-primary" onclick="cart.add('2877');" type="button">in den Warenkorb legen</button>
 </div>
 </div>
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.knopf-saiten.de/urban-classics-herren-hooded-camo-puffer-jacket-jacke-mehrfarbig-rustica-01456-l-fvmeh.html"><img alt="Urban Classics Herren Hooded Camo Puffer Jacket Jacke, Mehrfarbig (Rustica 01456), L  FVMEh" class="img-responsive img-normal" onerror="nofindit(this)" onload="resetimg(this,'200','200')" src="image/p_image/urban-classics-herren-hooded-camo-puffer-jacket-jacke-mehrfarbig-rustica-01456-l-fvmeh-663.jpg" title="Urban Classics Herren Hooded Camo Puffer Jacket Jacke, Mehrfarbig (Rustica 01456), L  FVMEh"/></a>
+<a class="arevision" href="http://www.knopf-saiten.de/maloja-herren-colturam-hose-grun-forest-glade-8283-u8uni.html"><img alt="Maloja Herren Colturam. Hose Grün (Forest Glade 8283) u8unI" class="img-responsive img-normal" onerror="nofindit(this)" onload="resetimg(this,'200','200')" src="image/p_image/maloja-herren-colturam-hose-grun-forest-glade-8283-u8uni-2877.jpg" title="Maloja Herren Colturam. Hose Grün (Forest Glade 8283) u8unI"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.knopf-saiten.de/urban-classics-herren-hooded-camo-puffer-jacket-jacke-mehrfarbig-rustica-01456-l-fvmeh.html">Urban Classics Herren Hooded Camo Puffer Jacket Jacke, Mehrfarbig (Rustica 01456), L  FVMEh</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€47.99</span> <span class="price-old">€135.99</span>
-</p>
-<div class="product-list-buttons">
-<div class="list-quickview">
-<a class="btn btn-default quickview" href="http://www.knopf-saiten.de/index.php?route=product/quickview&amp;product_id=663">Schnellansicht</a>
-</div>
-<div class="cart">
-<button class="btn btn-primary" onclick="cart.add('663');" type="button">in den Warenkorb legen</button>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<span class="badge-wrapper">
-<span class="badge sale">-65%</span>
-</span>
-<button class="wishlist" data-placement="left" data-toggle="tooltip" onclick="wishlist.add('1998');" title="Zur Wunschliste hinzufügen" type="button"><i class="fa fa-heart"></i></button>
-<button class="compare" data-placement="left" data-toggle="tooltip" onclick="compare.add('1998');" title="Vergleichen Sie dieses Produkt" type="button"><i class="fa fa-gavel"></i></button>
-<div class="flybar">
-<div class="flybar-cart">
-<button class="btn btn-primary" onclick="cart.add('1998');" type="button">in den Warenkorb legen</button>
-</div>
-</div>
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.knopf-saiten.de/schott-nyc-herren-lcjoe-lederjacke-schwarz-black-gevbr.html"><img alt="Schott NYC Herren Lcjoe Lederjacke Schwarz (Black) gEVBR" class="img-responsive img-normal" onerror="nofindit(this)" onload="resetimg(this,'200','200')" src="image/p_image/schott-nyc-herren-lcjoe-lederjacke-schwarz-black-gevbr-1998.jpg" title="Schott NYC Herren Lcjoe Lederjacke Schwarz (Black) gEVBR"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="http://www.knopf-saiten.de/schott-nyc-herren-lcjoe-lederjacke-schwarz-black-gevbr.html">Schott NYC Herren Lcjoe Lederjacke Schwarz (Black) gEVBR</a></h4></div>
+<div class="name"><h4><a href="http://www.knopf-saiten.de/maloja-herren-colturam-hose-grun-forest-glade-8283-u8uni.html">Maloja Herren Colturam. Hose Grün (Forest Glade 8283) u8unI</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
 <span class="price-new">€48.99</span> <span class="price-old">€138.99</span>
 </p>
 <div class="product-list-buttons">
 <div class="list-quickview">
-<a class="btn btn-default quickview" href="http://www.knopf-saiten.de/index.php?route=product/quickview&amp;product_id=1998">Schnellansicht</a>
+<a class="btn btn-default quickview" href="http://www.knopf-saiten.de/index.php?route=product/quickview&amp;product_id=2877">Schnellansicht</a>
 </div>
 <div class="cart">
-<button class="btn btn-primary" onclick="cart.add('1998');" type="button">in den Warenkorb legen</button>
+<button class="btn btn-primary" onclick="cart.add('2877');" type="button">in den Warenkorb legen</button>
 </div>
 </div>
 </div>
@@ -1269,31 +1269,99 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <span class="badge-wrapper">
-<span class="badge sale">-60%</span>
+<span class="badge sale">-62%</span>
 </span>
-<button class="wishlist" data-placement="left" data-toggle="tooltip" onclick="wishlist.add('5152');" title="Zur Wunschliste hinzufügen" type="button"><i class="fa fa-heart"></i></button>
-<button class="compare" data-placement="left" data-toggle="tooltip" onclick="compare.add('5152');" title="Vergleichen Sie dieses Produkt" type="button"><i class="fa fa-gavel"></i></button>
+<button class="wishlist" data-placement="left" data-toggle="tooltip" onclick="wishlist.add('3828');" title="Zur Wunschliste hinzufügen" type="button"><i class="fa fa-heart"></i></button>
+<button class="compare" data-placement="left" data-toggle="tooltip" onclick="compare.add('3828');" title="Vergleichen Sie dieses Produkt" type="button"><i class="fa fa-gavel"></i></button>
 <div class="flybar">
 <div class="flybar-cart">
-<button class="btn btn-primary" onclick="cart.add('5152');" type="button">in den Warenkorb legen</button>
+<button class="btn btn-primary" onclick="cart.add('3828');" type="button">in den Warenkorb legen</button>
 </div>
 </div>
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.knopf-saiten.de/fjallraven-herren-raven-jacket-softshelljacken-limestone-qf7nq.html"><img alt="FJÄLLRÄVEN Herren Räven Jacket Softshelljacken Limestone Qf7NQ" class="img-responsive img-normal" onerror="nofindit(this)" onload="resetimg(this,'200','200')" src="image/p_image/fjallraven-herren-raven-jacket-softshelljacken-limestone-qf7nq-5152.jpg" title="FJÄLLRÄVEN Herren Räven Jacket Softshelljacken Limestone Qf7NQ"/></a>
+<a class="arevision" href="http://www.knopf-saiten.de/swims-herren-breeze-tennis-knit-sneakers-schwarz-weis-jbeme.html"><img alt="SWIMS Herren Breeze Tennis Knit Sneakers Schwarz Weiß jBeme" class="img-responsive img-normal" onerror="nofindit(this)" onload="resetimg(this,'200','200')" src="image/p_image/swims-herren-breeze-tennis-knit-sneakers-schwarz-weis-jbeme-3828.jpg" title="SWIMS Herren Breeze Tennis Knit Sneakers Schwarz Weiß jBeme"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.knopf-saiten.de/fjallraven-herren-raven-jacket-softshelljacken-limestone-qf7nq.html">FJÄLLRÄVEN Herren Räven Jacket Softshelljacken Limestone Qf7NQ</a></h4></div>
+<div class="name"><h4><a href="http://www.knopf-saiten.de/swims-herren-breeze-tennis-knit-sneakers-schwarz-weis-jbeme.html">SWIMS Herren Breeze Tennis Knit Sneakers Schwarz Weiß jBeme</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€48.99</span> <span class="price-old">€122.99</span>
+<span class="price-new">€48.99</span> <span class="price-old">€128.99</span>
 </p>
 <div class="product-list-buttons">
 <div class="list-quickview">
-<a class="btn btn-default quickview" href="http://www.knopf-saiten.de/index.php?route=product/quickview&amp;product_id=5152">Schnellansicht</a>
+<a class="btn btn-default quickview" href="http://www.knopf-saiten.de/index.php?route=product/quickview&amp;product_id=3828">Schnellansicht</a>
 </div>
 <div class="cart">
-<button class="btn btn-primary" onclick="cart.add('5152');" type="button">in den Warenkorb legen</button>
+<button class="btn btn-primary" onclick="cart.add('3828');" type="button">in den Warenkorb legen</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<span class="badge-wrapper">
+<span class="badge sale">-64%</span>
+</span>
+<button class="wishlist" data-placement="left" data-toggle="tooltip" onclick="wishlist.add('3079');" title="Zur Wunschliste hinzufügen" type="button"><i class="fa fa-heart"></i></button>
+<button class="compare" data-placement="left" data-toggle="tooltip" onclick="compare.add('3079');" title="Vergleichen Sie dieses Produkt" type="button"><i class="fa fa-gavel"></i></button>
+<div class="flybar">
+<div class="flybar-cart">
+<button class="btn btn-primary" onclick="cart.add('3079');" type="button">in den Warenkorb legen</button>
+</div>
+</div>
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="http://www.knopf-saiten.de/alberto-herren-hose-stone-ceramica-modernfit-dark-blue-anthrazit-qp7uu.html"><img alt="ALBERTO Herren Hose Stone - Ceramica Modern-Fit Dark Blue Anthrazit QP7uU" class="img-responsive img-normal" onerror="nofindit(this)" onload="resetimg(this,'200','200')" src="image/p_image/alberto-herren-hose-stone-ceramica-modernfit-dark-blue-anthrazit-qp7uu-3079.jpg" title="ALBERTO Herren Hose Stone - Ceramica Modern-Fit Dark Blue Anthrazit QP7uU"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="http://www.knopf-saiten.de/alberto-herren-hose-stone-ceramica-modernfit-dark-blue-anthrazit-qp7uu.html">ALBERTO Herren Hose Stone - Ceramica Modern-Fit Dark Blue Anthrazit QP7uU</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€46.99</span> <span class="price-old">€130.99</span>
+</p>
+<div class="product-list-buttons">
+<div class="list-quickview">
+<a class="btn btn-default quickview" href="http://www.knopf-saiten.de/index.php?route=product/quickview&amp;product_id=3079">Schnellansicht</a>
+</div>
+<div class="cart">
+<button class="btn btn-primary" onclick="cart.add('3079');" type="button">in den Warenkorb legen</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<span class="badge-wrapper">
+<span class="badge sale">-63%</span>
+</span>
+<button class="wishlist" data-placement="left" data-toggle="tooltip" onclick="wishlist.add('3411');" title="Zur Wunschliste hinzufügen" type="button"><i class="fa fa-heart"></i></button>
+<button class="compare" data-placement="left" data-toggle="tooltip" onclick="compare.add('3411');" title="Vergleichen Sie dieses Produkt" type="button"><i class="fa fa-gavel"></i></button>
+<div class="flybar">
+<div class="flybar-cart">
+<button class="btn btn-primary" onclick="cart.add('3411');" type="button">in den Warenkorb legen</button>
+</div>
+</div>
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="http://www.knopf-saiten.de/salewa-herren-puez-hybrid-pl-m-fz-fleecejacken-classic-green-melange-0910-spaln.html"><img alt="Salewa Herren Puez Hybrid Pl M Fz Fleecejacken Classic Green Melange/0910 spAlN" class="img-responsive img-normal" onerror="nofindit(this)" onload="resetimg(this,'200','200')" src="image/p_image/salewa-herren-puez-hybrid-pl-mx-fz-fleecejacken-classic-green-melange-0910-spaln-3411.jpg" title="Salewa Herren Puez Hybrid Pl M Fz Fleecejacken Classic Green Melange/0910 spAlN"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="http://www.knopf-saiten.de/salewa-herren-puez-hybrid-pl-m-fz-fleecejacken-classic-green-melange-0910-spaln.html">Salewa Herren Puez Hybrid Pl M Fz Fleecejacken Classic Green Melange/0910 spAlN</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€47.99</span> <span class="price-old">€130.99</span>
+</p>
+<div class="product-list-buttons">
+<div class="list-quickview">
+<a class="btn btn-default quickview" href="http://www.knopf-saiten.de/index.php?route=product/quickview&amp;product_id=3411">Schnellansicht</a>
+</div>
+<div class="cart">
+<button class="btn btn-primary" onclick="cart.add('3411');" type="button">in den Warenkorb legen</button>
 </div>
 </div>
 </div>
@@ -1305,29 +1373,29 @@ $(document).ready(function() {
 <span class="badge-wrapper">
 <span class="badge sale">-61%</span>
 </span>
-<button class="wishlist" data-placement="left" data-toggle="tooltip" onclick="wishlist.add('2428');" title="Zur Wunschliste hinzufügen" type="button"><i class="fa fa-heart"></i></button>
-<button class="compare" data-placement="left" data-toggle="tooltip" onclick="compare.add('2428');" title="Vergleichen Sie dieses Produkt" type="button"><i class="fa fa-gavel"></i></button>
+<button class="wishlist" data-placement="left" data-toggle="tooltip" onclick="wishlist.add('5559');" title="Zur Wunschliste hinzufügen" type="button"><i class="fa fa-heart"></i></button>
+<button class="compare" data-placement="left" data-toggle="tooltip" onclick="compare.add('5559');" title="Vergleichen Sie dieses Produkt" type="button"><i class="fa fa-gavel"></i></button>
 <div class="flybar">
 <div class="flybar-cart">
-<button class="btn btn-primary" onclick="cart.add('2428');" type="button">in den Warenkorb legen</button>
+<button class="btn btn-primary" onclick="cart.add('5559');" type="button">in den Warenkorb legen</button>
 </div>
 </div>
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.knopf-saiten.de/revant-ersatzglaser-fur-adidas-evil-eye-pro-l-a126-kompatibel-mit-fur-adidas-evil-eye-pro-l-a126-eisblau-mirrorshield-nicht-polarisiert-ko4xz.html"><img alt="Revant Ersatzgläser für Adidas Evil Eye Pro L A126 - Kompatibel mit für Adidas Evil Eye Pro L A126 Eisblau Mirrorshield - Nicht Polarisiert KO4xZ" class="img-responsive img-normal" onerror="nofindit(this)" onload="resetimg(this,'200','200')" src="image/p_image/revant-ersatzglaser-fur-adidas-evil-eye-pro-l-a126-kompatibel-mit-fur-adidas-evil-eye-pro-l-a126-eisblau-mirrorshield-nicht-polarisiert-ko4xz-2428.jpg" title="Revant Ersatzgläser für Adidas Evil Eye Pro L A126 - Kompatibel mit für Adidas Evil Eye Pro L A126 Eisblau Mirrorshield - Nicht Polarisiert KO4xZ"/></a>
+<a class="arevision" href="http://www.knopf-saiten.de/alife-and-kickin-sarahak-b-sweat-damen-sweater-grau-meliert-35bfa.html"><img alt="ALIFE and Kickin SarahAK B Sweat Damen Sweater Grau Meliert 35bFA" class="img-responsive img-normal" onerror="nofindit(this)" onload="resetimg(this,'200','200')" src="image/p_image/alife-and-kickin-sarahak-b-sweat-damen-sweater-grau-meliert-35bfa-5559.jpg" title="ALIFE and Kickin SarahAK B Sweat Damen Sweater Grau Meliert 35bFA"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.knopf-saiten.de/revant-ersatzglaser-fur-adidas-evil-eye-pro-l-a126-kompatibel-mit-fur-adidas-evil-eye-pro-l-a126-eisblau-mirrorshield-nicht-polarisiert-ko4xz.html">Revant Ersatzgläser für Adidas Evil Eye Pro L A126 - Kompatibel mit für Adidas Evil Eye Pro L A126 Eisblau Mirrorshield - Nicht Polarisiert KO4xZ</a></h4></div>
+<div class="name"><h4><a href="http://www.knopf-saiten.de/alife-and-kickin-sarahak-b-sweat-damen-sweater-grau-meliert-35bfa.html">ALIFE and Kickin SarahAK B Sweat Damen Sweater Grau Meliert 35bFA</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€47.99</span> <span class="price-old">€121.99</span>
+<span class="price-new">€47.99</span> <span class="price-old">€122.99</span>
 </p>
 <div class="product-list-buttons">
 <div class="list-quickview">
-<a class="btn btn-default quickview" href="http://www.knopf-saiten.de/index.php?route=product/quickview&amp;product_id=2428">Schnellansicht</a>
+<a class="btn btn-default quickview" href="http://www.knopf-saiten.de/index.php?route=product/quickview&amp;product_id=5559">Schnellansicht</a>
 </div>
 <div class="cart">
-<button class="btn btn-primary" onclick="cart.add('2428');" type="button">in den Warenkorb legen</button>
+<button class="btn btn-primary" onclick="cart.add('5559');" type="button">in den Warenkorb legen</button>
 </div>
 </div>
 </div>
@@ -1339,29 +1407,97 @@ $(document).ready(function() {
 <span class="badge-wrapper">
 <span class="badge sale">-66%</span>
 </span>
-<button class="wishlist" data-placement="left" data-toggle="tooltip" onclick="wishlist.add('4949');" title="Zur Wunschliste hinzufügen" type="button"><i class="fa fa-heart"></i></button>
-<button class="compare" data-placement="left" data-toggle="tooltip" onclick="compare.add('4949');" title="Vergleichen Sie dieses Produkt" type="button"><i class="fa fa-gavel"></i></button>
+<button class="wishlist" data-placement="left" data-toggle="tooltip" onclick="wishlist.add('6338');" title="Zur Wunschliste hinzufügen" type="button"><i class="fa fa-heart"></i></button>
+<button class="compare" data-placement="left" data-toggle="tooltip" onclick="compare.add('6338');" title="Vergleichen Sie dieses Produkt" type="button"><i class="fa fa-gavel"></i></button>
 <div class="flybar">
 <div class="flybar-cart">
-<button class="btn btn-primary" onclick="cart.add('4949');" type="button">in den Warenkorb legen</button>
+<button class="btn btn-primary" onclick="cart.add('6338');" type="button">in den Warenkorb legen</button>
 </div>
 </div>
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.knopf-saiten.de/paige-herren-federal-transcend-slim-leg-jeans-vintage-sahara-sand-m6d3l.html"><img alt="Paige Herren Federal Transcend Slim Leg Jeans Vintage Sahara Sand M6D3l" class="img-responsive img-normal" onerror="nofindit(this)" onload="resetimg(this,'200','200')" src="image/p_image/paige-herren-federal-transcend-slim-leg-jeans-vintage-sahara-sand-m6d3l-4949.jpg" title="Paige Herren Federal Transcend Slim Leg Jeans Vintage Sahara Sand M6D3l"/></a>
+<a class="arevision" href="http://www.knopf-saiten.de/lucrin-reisebrieftasche-fur-funf-kreditkarten-rot-genarbtes-leder-hellbraun-1f7ws.html"><img alt="Lucrin - Reisebrieftasche für fünf Kreditkarten - Rot - Genarbtes Leder Hellbraun 1f7Ws" class="img-responsive img-normal" onerror="nofindit(this)" onload="resetimg(this,'200','200')" src="image/p_image/lucrin-reisebrieftasche-fur-funf-kreditkarten-rot-genarbtes-leder-hellbraun-1f7ws-6338.jpg" title="Lucrin - Reisebrieftasche für fünf Kreditkarten - Rot - Genarbtes Leder Hellbraun 1f7Ws"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.knopf-saiten.de/paige-herren-federal-transcend-slim-leg-jeans-vintage-sahara-sand-m6d3l.html">Paige Herren Federal Transcend Slim Leg Jeans Vintage Sahara Sand M6D3l</a></h4></div>
+<div class="name"><h4><a href="http://www.knopf-saiten.de/lucrin-reisebrieftasche-fur-funf-kreditkarten-rot-genarbtes-leder-hellbraun-1f7ws.html">Lucrin - Reisebrieftasche für fünf Kreditkarten - Rot - Genarbtes Leder Hellbraun 1f7Ws</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
 <span class="price-new">€46.99</span> <span class="price-old">€137.99</span>
 </p>
 <div class="product-list-buttons">
 <div class="list-quickview">
-<a class="btn btn-default quickview" href="http://www.knopf-saiten.de/index.php?route=product/quickview&amp;product_id=4949">Schnellansicht</a>
+<a class="btn btn-default quickview" href="http://www.knopf-saiten.de/index.php?route=product/quickview&amp;product_id=6338">Schnellansicht</a>
 </div>
 <div class="cart">
-<button class="btn btn-primary" onclick="cart.add('4949');" type="button">in den Warenkorb legen</button>
+<button class="btn btn-primary" onclick="cart.add('6338');" type="button">in den Warenkorb legen</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<span class="badge-wrapper">
+<span class="badge sale">-68%</span>
+</span>
+<button class="wishlist" data-placement="left" data-toggle="tooltip" onclick="wishlist.add('3059');" title="Zur Wunschliste hinzufügen" type="button"><i class="fa fa-heart"></i></button>
+<button class="compare" data-placement="left" data-toggle="tooltip" onclick="compare.add('3059');" title="Vergleichen Sie dieses Produkt" type="button"><i class="fa fa-gavel"></i></button>
+<div class="flybar">
+<div class="flybar-cart">
+<button class="btn btn-primary" onclick="cart.add('3059');" type="button">in den Warenkorb legen</button>
+</div>
+</div>
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="http://www.knopf-saiten.de/volcom-herren-hose-vorta-tapered-blau-faded-vintage-zx8ds.html"><img alt="Volcom Herren Hose Vorta Tapered Blau (Faded Vintage) zX8dS" class="img-responsive img-normal" onerror="nofindit(this)" onload="resetimg(this,'200','200')" src="image/p_image/volcom-herren-hose-vorta-tapered-blau-faded-vintage-zx8ds-3059.jpg" title="Volcom Herren Hose Vorta Tapered Blau (Faded Vintage) zX8dS"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="http://www.knopf-saiten.de/volcom-herren-hose-vorta-tapered-blau-faded-vintage-zx8ds.html">Volcom Herren Hose Vorta Tapered Blau (Faded Vintage) zX8dS</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€46.99</span> <span class="price-old">€148.99</span>
+</p>
+<div class="product-list-buttons">
+<div class="list-quickview">
+<a class="btn btn-default quickview" href="http://www.knopf-saiten.de/index.php?route=product/quickview&amp;product_id=3059">Schnellansicht</a>
+</div>
+<div class="cart">
+<button class="btn btn-primary" onclick="cart.add('3059');" type="button">in den Warenkorb legen</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<span class="badge-wrapper">
+<span class="badge sale">-66%</span>
+</span>
+<button class="wishlist" data-placement="left" data-toggle="tooltip" onclick="wishlist.add('895');" title="Zur Wunschliste hinzufügen" type="button"><i class="fa fa-heart"></i></button>
+<button class="compare" data-placement="left" data-toggle="tooltip" onclick="compare.add('895');" title="Vergleichen Sie dieses Produkt" type="button"><i class="fa fa-gavel"></i></button>
+<div class="flybar">
+<div class="flybar-cart">
+<button class="btn btn-primary" onclick="cart.add('895');" type="button">in den Warenkorb legen</button>
+</div>
+</div>
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="http://www.knopf-saiten.de/gore-wear-r3-lange-herren-regenhose-goretex-dynamic-cyan-sawkr.html"><img alt="GORE Wear R3 Lange Herren Regenhose GORE-TEX dynamic cyan SaWkR" class="img-responsive img-normal" onerror="nofindit(this)" onload="resetimg(this,'200','200')" src="image/p_image/gore-wear-r3-lange-herren-regenhose-goretex-dynamic-cyan-sawkr-895.jpg" title="GORE Wear R3 Lange Herren Regenhose GORE-TEX dynamic cyan SaWkR"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="http://www.knopf-saiten.de/gore-wear-r3-lange-herren-regenhose-goretex-dynamic-cyan-sawkr.html">GORE Wear R3 Lange Herren Regenhose GORE-TEX dynamic cyan SaWkR</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€47.99</span> <span class="price-old">€139.99</span>
+</p>
+<div class="product-list-buttons">
+<div class="list-quickview">
+<a class="btn btn-default quickview" href="http://www.knopf-saiten.de/index.php?route=product/quickview&amp;product_id=895">Schnellansicht</a>
+</div>
+<div class="cart">
+<button class="btn btn-primary" onclick="cart.add('895');" type="button">in den Warenkorb legen</button>
 </div>
 </div>
 </div>
@@ -1373,165 +1509,29 @@ $(document).ready(function() {
 <span class="badge-wrapper">
 <span class="badge sale">-63%</span>
 </span>
-<button class="wishlist" data-placement="left" data-toggle="tooltip" onclick="wishlist.add('5163');" title="Zur Wunschliste hinzufügen" type="button"><i class="fa fa-heart"></i></button>
-<button class="compare" data-placement="left" data-toggle="tooltip" onclick="compare.add('5163');" title="Vergleichen Sie dieses Produkt" type="button"><i class="fa fa-gavel"></i></button>
+<button class="wishlist" data-placement="left" data-toggle="tooltip" onclick="wishlist.add('5338');" title="Zur Wunschliste hinzufügen" type="button"><i class="fa fa-heart"></i></button>
+<button class="compare" data-placement="left" data-toggle="tooltip" onclick="compare.add('5338');" title="Vergleichen Sie dieses Produkt" type="button"><i class="fa fa-gavel"></i></button>
 <div class="flybar">
 <div class="flybar-cart">
-<button class="btn btn-primary" onclick="cart.add('5163');" type="button">in den Warenkorb legen</button>
+<button class="btn btn-primary" onclick="cart.add('5338');" type="button">in den Warenkorb legen</button>
 </div>
 </div>
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.knopf-saiten.de/jp-1880-herren-grose-grosen-bis-7xl-herrenbademantel-morgenmantel-baumwollfrottee-gurtel-taschen-knielang-schalkragen-702388-grun-waldgrun-70238840-atnio.html"><img alt="JP 1880 Herren große Größen bis 7XL, Herren-Bademantel, Morgenmantel, Baumwoll-Frottee, Gürtel &amp; Taschen, Knielang, Schalkragen 702388 Grün (Waldgrün 70238840) AtniO" class="img-responsive img-normal" onerror="nofindit(this)" onload="resetimg(this,'200','200')" src="image/p_image/jp-1880-herren-grose-grosen-bis-7xl-herrenbademantel-morgenmantel-baumwollfrottee-gurtel-taschen-knielang-schalkragen-702388-grun-waldgrun-70238840-atnio-5163.jpg" title="JP 1880 Herren große Größen bis 7XL, Herren-Bademantel, Morgenmantel, Baumwoll-Frottee, Gürtel &amp; Taschen, Knielang, Schalkragen 702388 Grün (Waldgrün 70238840) AtniO"/></a>
+<a class="arevision" href="http://www.knopf-saiten.de/merrell-herren-ontario-mid-waterproof-wanderschuh-beige-af74o.html"><img alt="Merrell Herren Ontario Mid Waterproof Wanderschuh Beige aF74O" class="img-responsive img-normal" onerror="nofindit(this)" onload="resetimg(this,'200','200')" src="image/p_image/merrell-herren-ontario-mid-waterproof-wanderschuh-beige-af74o-5338.jpg" title="Merrell Herren Ontario Mid Waterproof Wanderschuh Beige aF74O"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.knopf-saiten.de/jp-1880-herren-grose-grosen-bis-7xl-herrenbademantel-morgenmantel-baumwollfrottee-gurtel-taschen-knielang-schalkragen-702388-grun-waldgrun-70238840-atnio.html">JP 1880 Herren große Größen bis 7XL, Herren-Bademantel, Morgenmantel, Baumwoll-Frottee, Gürtel &amp; Taschen, Knielang, Schalkragen 702388 Grün (Waldgrün 70238840) AtniO</a></h4></div>
+<div class="name"><h4><a href="http://www.knopf-saiten.de/merrell-herren-ontario-mid-waterproof-wanderschuh-beige-af74o.html">Merrell Herren Ontario Mid Waterproof Wanderschuh Beige aF74O</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€48.99</span> <span class="price-old">€132.99</span>
+<span class="price-new">€50.99</span> <span class="price-old">€137.99</span>
 </p>
 <div class="product-list-buttons">
 <div class="list-quickview">
-<a class="btn btn-default quickview" href="http://www.knopf-saiten.de/index.php?route=product/quickview&amp;product_id=5163">Schnellansicht</a>
+<a class="btn btn-default quickview" href="http://www.knopf-saiten.de/index.php?route=product/quickview&amp;product_id=5338">Schnellansicht</a>
 </div>
 <div class="cart">
-<button class="btn btn-primary" onclick="cart.add('5163');" type="button">in den Warenkorb legen</button>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<span class="badge-wrapper">
-<span class="badge sale">-67%</span>
-</span>
-<button class="wishlist" data-placement="left" data-toggle="tooltip" onclick="wishlist.add('6419');" title="Zur Wunschliste hinzufügen" type="button"><i class="fa fa-heart"></i></button>
-<button class="compare" data-placement="left" data-toggle="tooltip" onclick="compare.add('6419');" title="Vergleichen Sie dieses Produkt" type="button"><i class="fa fa-gavel"></i></button>
-<div class="flybar">
-<div class="flybar-cart">
-<button class="btn btn-primary" onclick="cart.add('6419');" type="button">in den Warenkorb legen</button>
-</div>
-</div>
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.knopf-saiten.de/hackett-herren-fenton-outdoor-weste-blau-navy-595-kqjos.html"><img alt="Hackett Herren Fenton Outdoor Weste Blau (Navy 595) KQjoS" class="img-responsive img-normal" onerror="nofindit(this)" onload="resetimg(this,'200','200')" src="image/p_image/hackett-herren-fenton-outdoor-weste-blau-navy-595-kqjos-6419.jpg" title="Hackett Herren Fenton Outdoor Weste Blau (Navy 595) KQjoS"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="http://www.knopf-saiten.de/hackett-herren-fenton-outdoor-weste-blau-navy-595-kqjos.html">Hackett Herren Fenton Outdoor Weste Blau (Navy 595) KQjoS</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€47.99</span> <span class="price-old">€143.99</span>
-</p>
-<div class="product-list-buttons">
-<div class="list-quickview">
-<a class="btn btn-default quickview" href="http://www.knopf-saiten.de/index.php?route=product/quickview&amp;product_id=6419">Schnellansicht</a>
-</div>
-<div class="cart">
-<button class="btn btn-primary" onclick="cart.add('6419');" type="button">in den Warenkorb legen</button>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<span class="badge-wrapper">
-<span class="badge sale">-61%</span>
-</span>
-<button class="wishlist" data-placement="left" data-toggle="tooltip" onclick="wishlist.add('797');" title="Zur Wunschliste hinzufügen" type="button"><i class="fa fa-heart"></i></button>
-<button class="compare" data-placement="left" data-toggle="tooltip" onclick="compare.add('797');" title="Vergleichen Sie dieses Produkt" type="button"><i class="fa fa-gavel"></i></button>
-<div class="flybar">
-<div class="flybar-cart">
-<button class="btn btn-primary" onclick="cart.add('797');" type="button">in den Warenkorb legen</button>
-</div>
-</div>
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.knopf-saiten.de/blauer-usa-herren-giubbini-corti-imbottito-ovatta-steppjacke-449-mandarino-gp1pc.html"><img alt="Blauer USA Herren Giubbini Corti Imbottito Ovatta Steppjacke 449 Mandarino Gp1pC" class="img-responsive img-normal" onerror="nofindit(this)" onload="resetimg(this,'200','200')" src="image/p_image/blauer-usa-herren-giubbini-corti-imbottito-ovatta-steppjacke-449-mandarino-gp1pc-797.jpg" title="Blauer USA Herren Giubbini Corti Imbottito Ovatta Steppjacke 449 Mandarino Gp1pC"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="http://www.knopf-saiten.de/blauer-usa-herren-giubbini-corti-imbottito-ovatta-steppjacke-449-mandarino-gp1pc.html">Blauer USA Herren Giubbini Corti Imbottito Ovatta Steppjacke 449 Mandarino Gp1pC</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€47.99</span> <span class="price-old">€121.99</span>
-</p>
-<div class="product-list-buttons">
-<div class="list-quickview">
-<a class="btn btn-default quickview" href="http://www.knopf-saiten.de/index.php?route=product/quickview&amp;product_id=797">Schnellansicht</a>
-</div>
-<div class="cart">
-<button class="btn btn-primary" onclick="cart.add('797');" type="button">in den Warenkorb legen</button>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<span class="badge-wrapper">
-<span class="badge sale">-63%</span>
-</span>
-<button class="wishlist" data-placement="left" data-toggle="tooltip" onclick="wishlist.add('6229');" title="Zur Wunschliste hinzufügen" type="button"><i class="fa fa-heart"></i></button>
-<button class="compare" data-placement="left" data-toggle="tooltip" onclick="compare.add('6229');" title="Vergleichen Sie dieses Produkt" type="button"><i class="fa fa-gavel"></i></button>
-<div class="flybar">
-<div class="flybar-cart">
-<button class="btn btn-primary" onclick="cart.add('6229');" type="button">in den Warenkorb legen</button>
-</div>
-</div>
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.knopf-saiten.de/trespass-herren-uttp48151-weste-bunt-one-size-4gvff.html"><img alt="Trespass Herren UTTP4815_1 Weste, bunt, One size  4gvFf" class="img-responsive img-normal" onerror="nofindit(this)" onload="resetimg(this,'200','200')" src="image/p_image/trespass-herren-uttp48151-weste-bunt-one-size-4gvff-6229.jpg" title="Trespass Herren UTTP4815_1 Weste, bunt, One size  4gvFf"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="http://www.knopf-saiten.de/trespass-herren-uttp48151-weste-bunt-one-size-4gvff.html">Trespass Herren UTTP4815_1 Weste, bunt, One size  4gvFf</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€48.99</span> <span class="price-old">€132.99</span>
-</p>
-<div class="product-list-buttons">
-<div class="list-quickview">
-<a class="btn btn-default quickview" href="http://www.knopf-saiten.de/index.php?route=product/quickview&amp;product_id=6229">Schnellansicht</a>
-</div>
-<div class="cart">
-<button class="btn btn-primary" onclick="cart.add('6229');" type="button">in den Warenkorb legen</button>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<span class="badge-wrapper">
-<span class="badge sale">-63%</span>
-</span>
-<button class="wishlist" data-placement="left" data-toggle="tooltip" onclick="wishlist.add('6051');" title="Zur Wunschliste hinzufügen" type="button"><i class="fa fa-heart"></i></button>
-<button class="compare" data-placement="left" data-toggle="tooltip" onclick="compare.add('6051');" title="Vergleichen Sie dieses Produkt" type="button"><i class="fa fa-gavel"></i></button>
-<div class="flybar">
-<div class="flybar-cart">
-<button class="btn btn-primary" onclick="cart.add('6051');" type="button">in den Warenkorb legen</button>
-</div>
-</div>
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.knopf-saiten.de/olymp-no-six-super-slim-hemd-langarm-stretch-bugelleicht-dunkelblau-dunkelblau-5svgj.html"><img alt="OLYMP No. Six Super Slim Hemd Langarm Stretch Bügelleicht Dunkelblau Dunkelblau 5SVGJ" class="img-responsive img-normal" onerror="nofindit(this)" onload="resetimg(this,'200','200')" src="image/p_image/olymp-no-six-super-slim-hemd-langarm-stretch-bugelleicht-dunkelblau-dunkelblau-5svgj-6051.jpg" title="OLYMP No. Six Super Slim Hemd Langarm Stretch Bügelleicht Dunkelblau Dunkelblau 5SVGJ"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="http://www.knopf-saiten.de/olymp-no-six-super-slim-hemd-langarm-stretch-bugelleicht-dunkelblau-dunkelblau-5svgj.html">OLYMP No. Six Super Slim Hemd Langarm Stretch Bügelleicht Dunkelblau Dunkelblau 5SVGJ</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€46.99</span> <span class="price-old">€125.99</span>
-</p>
-<div class="product-list-buttons">
-<div class="list-quickview">
-<a class="btn btn-default quickview" href="http://www.knopf-saiten.de/index.php?route=product/quickview&amp;product_id=6051">Schnellansicht</a>
-</div>
-<div class="cart">
-<button class="btn btn-primary" onclick="cart.add('6051');" type="button">in den Warenkorb legen</button>
+<button class="btn btn-primary" onclick="cart.add('5338');" type="button">in den Warenkorb legen</button>
 </div>
 </div>
 </div>
@@ -1543,203 +1543,203 @@ $(document).ready(function() {
 </div>
 </div>
 </div>
-<script async="true" type="text/javascript">
-(function() {
-  var host = window.location.hostname;
-  // var element = document.createElement('script');
-  // var firstScript = document.getElementsByTagName('script')[0];
-  // var url = 'https://quantcast.mgr.consensu.org'
-  //   .concat('/choice/', '3aud4J6uA4Z6Y', '/', host, '/choice.js?timestamp=', Date.now())
-  var uspTries = 0;
-  var uspTriesLimit = 3;
-  // element.async = true;
-  // element.type = 'text/javascript';
-  // element.src = url;
-
-  // firstScript.parentNode.insertBefore(element, firstScript);
-
-  function makeStub() {
-    var TCF_LOCATOR_NAME = '__tcfapiLocator';
-    var queue = [];
-    var win = window;
-    var cmpFrame;
-
-    function addFrame() {
-      var doc = win.document;
-      var otherCMP = !!(win.frames[TCF_LOCATOR_NAME]);
-
-      if (!otherCMP) {
-        if (doc.body) {
-          var iframe = doc.createElement('iframe');
-
-          iframe.style.cssText = 'display:none';
-          iframe.name = TCF_LOCATOR_NAME;
-          doc.body.appendChild(iframe);
-        } else {
-          setTimeout(addFrame, 5);
-        }
-      }
-      return !otherCMP;
-    }
-
-    function tcfAPIHandler() {
-      var gdprApplies;
-      var args = arguments;
-
-      if (!args.length) {
-        return queue;
-      } else if (args[0] === 'setGdprApplies') {
-        if (
-          args.length > 3 &&
-          args[2] === 2 &&
-          typeof args[3] === 'boolean'
-        ) {
-          gdprApplies = args[3];
-          if (typeof args[2] === 'function') {
-            args[2]('set', true);
-          }
-        }
-      } else if (args[0] === 'ping') {
-        var retr = {
-          gdprApplies: gdprApplies,
-          cmpLoaded: false,
-          cmpStatus: 'stub'
-        };
-
-        if (typeof args[2] === 'function') {
-          args[2](retr);
-        }
-      } else {
-        queue.push(args);
-      }
-    }
-
-    function postMessageEventHandler(event) {
-      var msgIsString = typeof event.data === 'string';
-      var json = {};
-
-      try {
-        if (msgIsString) {
-          json = JSON.parse(event.data);
-        } else {
-          json = event.data;
-        }
-      } catch (ignore) {}
-
-      var payload = json.__tcfapiCall;
-
-      if (payload) {
-        window.__tcfapi(
-          payload.command,
-          payload.version,
-          function(retValue, success) {
-            var returnMsg = {
-              __tcfapiReturn: {
-                returnValue: retValue,
-                success: success,
-                callId: payload.callId
-              }
-            };
-            if (msgIsString) {
-              returnMsg = JSON.stringify(returnMsg);
-            }
-            event.source.postMessage(returnMsg, '*');
-          },
-          payload.parameter
-        );
-      }
-    }
-
-    while (win) {
-      try {
-        if (win.frames[TCF_LOCATOR_NAME]) {
-          cmpFrame = win;
-          break;
-        }
-      } catch (ignore) {}
-
-      if (win === window.top) {
-        break;
-      }
-      win = win.parent;
-    }
-    if (!cmpFrame) {
-      addFrame();
-      win.__tcfapi = tcfAPIHandler;
-      win.addEventListener('message', postMessageEventHandler, false);
-    }
-  };
-
-  // 📋 8/15 TODO: Not really a todo, but these couple of lines
-  // are sometimes finnicky.
-  if (typeof module !== 'undefined') {
-    module.exports = makeStub;
-  } else {
-    makeStub();
-  }
-
-  var uspStubFunction = function() {
-    var arg = arguments;
-    if (typeof window.__uspapi !== uspStubFunction) {
-      setTimeout(function() {
-        if (typeof window.__uspapi !== 'undefined') {
-          window.__uspapi.apply(window.__uspapi, arg);
-        }
-      }, 500);
-    }
-  };
-
-  var checkIfUspIsReady = function() {
-    uspTries++;
-    if (window.__uspapi === uspStubFunction && uspTries < uspTriesLimit) {
-      console.warn('USP is not accessible');
-    } else {
-      clearInterval(uspInterval);
-    }
-  };
-
-  if (typeof window.__uspapi === 'undefined') {
-    window.__uspapi = uspStubFunction;
-    var uspInterval = setInterval(checkIfUspIsReady, 6000);
-  }
-})();
+<script async="true" type="text/javascript">
+(function() {
+  var host = window.location.hostname;
+  // var element = document.createElement('script');
+  // var firstScript = document.getElementsByTagName('script')[0];
+  // var url = 'https://quantcast.mgr.consensu.org'
+  //   .concat('/choice/', '3aud4J6uA4Z6Y', '/', host, '/choice.js?timestamp=', Date.now())
+  var uspTries = 0;
+  var uspTriesLimit = 3;
+  // element.async = true;
+  // element.type = 'text/javascript';
+  // element.src = url;
+
+  // firstScript.parentNode.insertBefore(element, firstScript);
+
+  function makeStub() {
+    var TCF_LOCATOR_NAME = '__tcfapiLocator';
+    var queue = [];
+    var win = window;
+    var cmpFrame;
+
+    function addFrame() {
+      var doc = win.document;
+      var otherCMP = !!(win.frames[TCF_LOCATOR_NAME]);
+
+      if (!otherCMP) {
+        if (doc.body) {
+          var iframe = doc.createElement('iframe');
+
+          iframe.style.cssText = 'display:none';
+          iframe.name = TCF_LOCATOR_NAME;
+          doc.body.appendChild(iframe);
+        } else {
+          setTimeout(addFrame, 5);
+        }
+      }
+      return !otherCMP;
+    }
+
+    function tcfAPIHandler() {
+      var gdprApplies;
+      var args = arguments;
+
+      if (!args.length) {
+        return queue;
+      } else if (args[0] === 'setGdprApplies') {
+        if (
+          args.length > 3 &&
+          args[2] === 2 &&
+          typeof args[3] === 'boolean'
+        ) {
+          gdprApplies = args[3];
+          if (typeof args[2] === 'function') {
+            args[2]('set', true);
+          }
+        }
+      } else if (args[0] === 'ping') {
+        var retr = {
+          gdprApplies: gdprApplies,
+          cmpLoaded: false,
+          cmpStatus: 'stub'
+        };
+
+        if (typeof args[2] === 'function') {
+          args[2](retr);
+        }
+      } else {
+        queue.push(args);
+      }
+    }
+
+    function postMessageEventHandler(event) {
+      var msgIsString = typeof event.data === 'string';
+      var json = {};
+
+      try {
+        if (msgIsString) {
+          json = JSON.parse(event.data);
+        } else {
+          json = event.data;
+        }
+      } catch (ignore) {}
+
+      var payload = json.__tcfapiCall;
+
+      if (payload) {
+        window.__tcfapi(
+          payload.command,
+          payload.version,
+          function(retValue, success) {
+            var returnMsg = {
+              __tcfapiReturn: {
+                returnValue: retValue,
+                success: success,
+                callId: payload.callId
+              }
+            };
+            if (msgIsString) {
+              returnMsg = JSON.stringify(returnMsg);
+            }
+            event.source.postMessage(returnMsg, '*');
+          },
+          payload.parameter
+        );
+      }
+    }
+
+    while (win) {
+      try {
+        if (win.frames[TCF_LOCATOR_NAME]) {
+          cmpFrame = win;
+          break;
+        }
+      } catch (ignore) {}
+
+      if (win === window.top) {
+        break;
+      }
+      win = win.parent;
+    }
+    if (!cmpFrame) {
+      addFrame();
+      win.__tcfapi = tcfAPIHandler;
+      win.addEventListener('message', postMessageEventHandler, false);
+    }
+  };
+
+  // 📋 8/15 TODO: Not really a todo, but these couple of lines
+  // are sometimes finnicky.
+  if (typeof module !== 'undefined') {
+    module.exports = makeStub;
+  } else {
+    makeStub();
+  }
+
+  var uspStubFunction = function() {
+    var arg = arguments;
+    if (typeof window.__uspapi !== uspStubFunction) {
+      setTimeout(function() {
+        if (typeof window.__uspapi !== 'undefined') {
+          window.__uspapi.apply(window.__uspapi, arg);
+        }
+      }, 500);
+    }
+  };
+
+  var checkIfUspIsReady = function() {
+    uspTries++;
+    if (window.__uspapi === uspStubFunction && uspTries < uspTriesLimit) {
+      console.warn('USP is not accessible');
+    } else {
+      clearInterval(uspInterval);
+    }
+  };
+
+  if (typeof window.__uspapi === 'undefined') {
+    window.__uspapi = uspStubFunction;
+    var uspInterval = setInterval(checkIfUspIsReady, 6000);
+  }
+})();
 </script>
 <script src="catalog/view/theme/lollipop/js/jquery.visible.min.js" type="text/javascript"></script>
-<script type="text/javascript">
-
-var win = $(window);
-
-var allMods = $("footer");
-
-allMods.each(function(i, el) {
-    
-  if ($(el).visible(true)) {
-    $(el).addClass("already-visible"); 
-  }
-  
-});
-
-win.scroll(function(event) {
-  
-  allMods.each(function(i, el) {
-    
-    var el = $(el);
-    
-    if (el.visible(true)) {
-      el.addClass("come-in"); 
-    } else {
-      el.removeClass("come-in already-visible");
-    }
-    
-  });
-  
-}); 
+<script type="text/javascript">
+
+var win = $(window);
+
+var allMods = $("footer");
+
+allMods.each(function(i, el) {
+    
+  if ($(el).visible(true)) {
+    $(el).addClass("already-visible"); 
+  }
+  
+});
+
+win.scroll(function(event) {
+  
+  allMods.each(function(i, el) {
+    
+    var el = $(el);
+    
+    if (el.visible(true)) {
+      el.addClass("come-in"); 
+    } else {
+      el.removeClass("come-in already-visible");
+    }
+    
+  });
+  
+}); 
 </script>
 <script src="catalog/view/theme/lollipop/js/tickerme.js" type="text/javascript"></script>
-<script type="text/javascript">
-$(function(){
-	$('#ticker').tickerme();
-});
+<script type="text/javascript">
+$(function(){
+	$('#ticker').tickerme();
+});
 </script>
 <script src="catalog/view/theme/lollipop/js/jquery.easing-1.3.min.js" type="text/javascript"></script>
 <script src="catalog/view/theme/lollipop/js/jquery.sticky.js" type="text/javascript"></script>
@@ -1747,10 +1747,10 @@ $(function(){
 <script src="catalog/view/theme/lollipop/js/livesearch.js" type="text/javascript"></script>
 <link href="catalog/view/theme/lollipop/stylesheet/ui.totop.css" property="stylesheet" rel="stylesheet" type="text/css"/>
 <script src="catalog/view/theme/lollipop/js/jquery.ui.totop.js" type="text/javascript"></script>
-<script type="text/javascript">
-	jQuery(document).ready(function() {	
-		$().UItoTop({ easingType: 'easeOutQuart' });	
-	});
+<script type="text/javascript">
+	jQuery(document).ready(function() {	
+		$().UItoTop({ easingType: 'easeOutQuart' });	
+	});
 </script>
 <script src="catalog/view/theme/lollipop/js/quickview/quickview.js" type="text/javascript"></script>
 <link href="catalog/view/theme/lollipop/js/quickview/fancybox/jquery.fancybox.css" property="stylesheet" rel="stylesheet"/>
@@ -1794,8 +1794,8 @@ $(function(){
 <div id="powered">
 <div class="container">
 <div class="row">
-<div class="col-sm-12">
-      Copyright © 2022 <a href="//www.knopf-saiten.de" target="_blank">www.knopf-saiten.de</a> All Rights Reserved  
+<div class="col-sm-12">
+      Copyright © 2022 <a href="//www.knopf-saiten.de" target="_blank">www.knopf-saiten.de</a> All Rights Reserved  
       </div>
 </div>
 </div>

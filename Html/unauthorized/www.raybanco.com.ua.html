@@ -28,69 +28,69 @@
 <!--
 <script type="text/javascript" src="http://vk.com/js/api/share.js?90" charset="windows-1251"></script>
 -->
-<script>
-function preventSelection(element){
-  var preventSelection = false;
-
-  function addHandler(element, event, handler){
-    if (element.attachEvent) 
-      element.attachEvent('on' + event, handler);
-    else 
-      if (element.addEventListener) 
-        element.addEventListener(event, handler, false);
-  }
-  function removeSelection(){
-    if (window.getSelection) { window.getSelection().removeAllRanges(); }
-    else if (document.selection && document.selection.clear)
-      document.selection.clear();
-  }
-  function killCtrlA(event){
-    var event = event || window.event;
-    var sender = event.target || event.srcElement;
-
-    if (sender.tagName.match(/INPUT|TEXTAREA/i))
-      return;
-
-    var key = event.keyCode || event.which;
-    if (event.ctrlKey && key == 'A'.charCodeAt(0))  // 'A'.charCodeAt(0) можно заменить на 65
-    {
-      removeSelection();
-
-      if (event.preventDefault) 
-        event.preventDefault();
-      else
-        event.returnValue = false;
-    }
-  }
-
-  // не даем выделять текст мышкой
-  addHandler(element, 'mousemove', function(){
-    if(preventSelection)
-      removeSelection();
-  });
-  addHandler(element, 'mousedown', function(event){
-    var event = event || window.event;
-    var sender = event.target || event.srcElement;
-    preventSelection = !sender.tagName.match(/INPUT|TEXTAREA/i);
-  });
-
-  // борем dblclick
-  // если вешать функцию не на событие dblclick, можно избежать
-  // временное выделение текста в некоторых браузерах
-  addHandler(element, 'mouseup', function(){
-    if (preventSelection)
-      removeSelection();
-    preventSelection = false;
-  });
-
-  // борем ctrl+A
-  // скорей всего это и не надо, к тому же есть подозрение
-  // что в случае все же такой необходимости функцию нужно 
-  // вешать один раз и на document, а не на элемент
-  addHandler(element, 'keydown', killCtrlA);
-  addHandler(element, 'keyup', killCtrlA);
-}
-preventSelection(document);
+<script>
+function preventSelection(element){
+  var preventSelection = false;
+
+  function addHandler(element, event, handler){
+    if (element.attachEvent) 
+      element.attachEvent('on' + event, handler);
+    else 
+      if (element.addEventListener) 
+        element.addEventListener(event, handler, false);
+  }
+  function removeSelection(){
+    if (window.getSelection) { window.getSelection().removeAllRanges(); }
+    else if (document.selection && document.selection.clear)
+      document.selection.clear();
+  }
+  function killCtrlA(event){
+    var event = event || window.event;
+    var sender = event.target || event.srcElement;
+
+    if (sender.tagName.match(/INPUT|TEXTAREA/i))
+      return;
+
+    var key = event.keyCode || event.which;
+    if (event.ctrlKey && key == 'A'.charCodeAt(0))  // 'A'.charCodeAt(0) можно заменить на 65
+    {
+      removeSelection();
+
+      if (event.preventDefault) 
+        event.preventDefault();
+      else
+        event.returnValue = false;
+    }
+  }
+
+  // не даем выделять текст мышкой
+  addHandler(element, 'mousemove', function(){
+    if(preventSelection)
+      removeSelection();
+  });
+  addHandler(element, 'mousedown', function(event){
+    var event = event || window.event;
+    var sender = event.target || event.srcElement;
+    preventSelection = !sender.tagName.match(/INPUT|TEXTAREA/i);
+  });
+
+  // борем dblclick
+  // если вешать функцию не на событие dblclick, можно избежать
+  // временное выделение текста в некоторых браузерах
+  addHandler(element, 'mouseup', function(){
+    if (preventSelection)
+      removeSelection();
+    preventSelection = false;
+  });
+
+  // борем ctrl+A
+  // скорей всего это и не надо, к тому же есть подозрение
+  // что в случае все же такой необходимости функцию нужно 
+  // вешать один раз и на document, а не на элемент
+  addHandler(element, 'keydown', killCtrlA);
+  addHandler(element, 'keyup', killCtrlA);
+}
+preventSelection(document);
 </script>
 <!-- <script type="text/javascript" src="http://userapi.com/js/api/openapi.js?49"></script> -->
 <!--[if gte IE 9]>
@@ -163,73 +163,73 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <div class="seo_text_block" id="site_text">
 <div style="font-size:small;font-family:tahoma, sans-serif;text-align:justify;color:#666666">
 <p><br/></p><p><strong style="font-size:medium;color:#333333"><br/></strong></p><p><strong style="font-size:small;color:#333333"></strong></p><span style="font-size:small;color:#333333"><h1 6f43ee2a="" assets="" class="&lt;img src=" height="100" http:="" images="" pixel.gif"="" raybanco.com.ua="" rel="media21741009410470724" style="font-weight:normal;font-size:medium" title="" width="150"></h1><h1 6f43ee2a="" assets="" class="&lt;img src=" height="480" http:="" images="" pixel.gif"="" raybanco.com.ua="" rel="media3451365593687301" style="color: rgb(51, 51, 51); font-size: x-large;" title="http://raybanco.com.ua/storage/авиатор2-min.jpg" width="150">Солнцезащитные очки Ray Ban в Киеве: заботливый уход, стильный образ и безупречное исполнение.</h1></span>
-<p>Одри Хепберн и Майкл Джексон,
-Уилл Смит и Мадонна, Клинт Иствуд и Кэти Перри - список знаменитостей, отдающих
-предпочтение очкам Ray-Ban, можно продолжать бесконечно, ведь этот бренд по
+<p>Одри Хепберн и Майкл Джексон,
+Уилл Смит и Мадонна, Клинт Иствуд и Кэти Перри - список знаменитостей, отдающих
+предпочтение очкам Ray-Ban, можно продолжать бесконечно, ведь этот бренд по
 праву считается самым успешным производителем очков во всем мире. </p><p><br/></p>
-<h2><strong style="font-size:medium;color:#333333">Где купить очки рей бен: красивые, стильные,
+<h2><strong style="font-size:medium;color:#333333">Где купить очки рей бен: красивые, стильные,
 функциональные аксессуары в Киеве</strong></h2>
-<p>От солнца нет спасения? Срочно защитите глаза! С
-этим давно и успешно справляются очки рей бен. Их любят во всем мире. И не
-только кумиры публики щеголяют в них! За что ценят они продукцию самого
+<p>От солнца нет спасения? Срочно защитите глаза! С
+этим давно и успешно справляются очки рей бен. Их любят во всем мире. И не
+только кумиры публики щеголяют в них! За что ценят они продукцию самого
 раскупаемого бренда? Чем она хороша? </p>
 <p><strong><img src="http://raybanco.com.ua/storage/1клубмастер-min-min.jpg" style="width:1000px;height:524px"/><br/></strong></p>
-<p><br/></p><h2><strong><span style="color:#333333;font-size:medium">Немного
+<p><br/></p><h2><strong><span style="color:#333333;font-size:medium">Немного
 истории</span></strong> </h2>
-<p>Модники давно вписали
-практичный аксессуар в список must-have. Ведь компания почти
-100 лет назад начала баловать своих фанатов стильными функциональными
+<p>Модники давно вписали
+практичный аксессуар в список must-have. Ведь компания почти
+100 лет назад начала баловать своих фанатов стильными функциональными
 новинками. </p>
-<p>«Выстрелив»
-в 1937 г. очками для американских летчиков<strong> </strong>raybanaviator, бренд пережил сложные
+<p>«Выстрелив»
+в 1937 г. очками для американских летчиков<strong> </strong>raybanaviator, бренд пережил сложные
 периоды, вплоть до полузабвения в 80-х.</p>
-<p>Следующий
+<p>Следующий
 виток развития в жизни будущего фаворита начался после слияния с Luxottica.</p><p><br/></p>
-<p>И тому,
+<p>И тому,
 что продукция перекочевала на другие континенты, несомненно, способствовали:</p>
-<p>1.     постоянное
+<p>1.     постоянное
 переосмысливание классической модели;</p>
-<p>2.     бесконечные
+<p>2.     бесконечные
 инновации;</p>
-<p>3.     производство
+<p>3.     производство
 разнообразных по цвету и моделям линз и оправ для культовых очков;</p>
-<p>4.     создание
+<p>4.     создание
 креативных линий;</p>
-<p>5.     удешевление
+<p>5.     удешевление
 фирменных изделий и т. д.</p>
 <p> </p>
-<h2><strong><span style="color:#333333;font-size:medium">Линейки
+<h2><strong><span style="color:#333333;font-size:medium">Линейки
 брендовых солнцезащитных очков</span></strong></h2>
-<p>Сегодня модельный ряд разнообразен. Ведь изготовитель по-прежнему
-удовлетворяет потребности не только представителей богемы, вип-персон и тех,
-кто предпочитает шик и стиль, шарм. Брендовые солнцезащитные очки ray ban, популярны среди политиков, интеллектуалов и всех,
+<p>Сегодня модельный ряд разнообразен. Ведь изготовитель по-прежнему
+удовлетворяет потребности не только представителей богемы, вип-персон и тех,
+кто предпочитает шик и стиль, шарм. Брендовые солнцезащитные очки ray ban, популярны среди политиков, интеллектуалов и всех,
 кто ценит в вещах функциональность и комфорт. </p>
-<p><strong>Авиатор
-(</strong><strong>aviator</strong><strong>)</strong>. Именно с этой культовой
-каплеобразной модели для штатовских пилотов и началась история успеха Ray-Ban.
-Этот защитный атрибут, обретший со временем новый дизайн, и сейчас востребован
+<p><strong>Авиатор
+(</strong><strong>aviator</strong><strong>)</strong>. Именно с этой культовой
+каплеобразной модели для штатовских пилотов и началась история успеха Ray-Ban.
+Этот защитный атрибут, обретший со временем новый дизайн, и сейчас востребован
 среди гражданских.</p>
-<p><strong>Путник (wayfarer)</strong>. Эта модель контрастировала с военизированными
-«Авиаторами». Очки со скромным названием покорили сердца и мужчин, и женщин. С
+<p><strong>Путник (wayfarer)</strong>. Эта модель контрастировала с военизированными
+«Авиаторами». Очки со скромным названием покорили сердца и мужчин, и женщин. С
 тех пор американцы и европейцы стали разбираться в тонкостях солнцезащитной оптики.</p>
-<p>Линейки марки со временем пополнялись новыми креативными
-коллекциями изделий, которые можно хранить и без футляра, столь они прочны.
-Востребованными остаются оправы rayban clubmaster, Cat
+<p>Линейки марки со временем пополнялись новыми креативными
+коллекциями изделий, которые можно хранить и без футляра, столь они прочны.
+Востребованными остаются оправы rayban clubmaster, Cat
 Eye и др.<strong></strong></p><p><br/></p>
-<h2 style="color:#333333;font-size:medium"><strong>Кто
+<h2 style="color:#333333;font-size:medium"><strong>Кто
 носит</strong> <strong>солнцезащитные очки</strong></h2>
 <p margin-bottom:0cm;margin-bottom:.0001pt;line-height:normal;background:white""="" style="text-align: justify;"><img src="http://raybanco.com.ua/storage/2Лобода-min.jpg" style="width:1000px;height:750px"/><br/></p>
 <p margin-bottom:0cm;margin-bottom:.0001pt;line-height:normal;background:white""="" style=""> </p>
-<p margin-bottom:0cm;margin-bottom:.0001pt;line-height:normal;background:white""="" style="">В арсенале
-любого современного, уверенного в себе и в своем будущем человека должны быть
-классические очки ray ban wayfarer и др. Кстати, первыми нести в массы культ очков стали звезды
-кино. Им надо было не просто скрыться от посторонних взглядов, спрятать
+<p margin-bottom:0cm;margin-bottom:.0001pt;line-height:normal;background:white""="" style="">В арсенале
+любого современного, уверенного в себе и в своем будущем человека должны быть
+классические очки ray ban wayfarer и др. Кстати, первыми нести в массы культ очков стали звезды
+кино. Им надо было не просто скрыться от посторонних взглядов, спрятать
 покрасневшие от съемок глаза.</p>
-<p margin-bottom:0cm;margin-bottom:.0001pt;line-height:normal;background:white""="" style="">В очках они появляются на экране, позируют на страницах
-глянцевых журналов, красуются на красных дорожках. Среди зарубежных
+<p margin-bottom:0cm;margin-bottom:.0001pt;line-height:normal;background:white""="" style="">В очках они появляются на экране, позируют на страницах
+глянцевых журналов, красуются на красных дорожках. Среди зарубежных
 знаменитостей с марочными очками не расстаются:</p>
-<p>1.     Брюс Уиллис, вернувший компанию на вершину славы своим
-появлением в культовых очках в сериале “Moonlighting” ,
+<p>1.     Брюс Уиллис, вернувший компанию на вершину славы своим
+появлением в культовых очках в сериале “Moonlighting” ,
 </p>
 <p>2.     Джонни Марр, </p>
 <p>3.     Джонни Деп, </p>
@@ -239,60 +239,60 @@ Eye и др.<strong></strong></p><p><br/></p>
 <p>7.     Lady Gaga, </p>
 <p>8.     Джулия Робертс, </p>
 <p>9.     Дженифер Энистон и другие представители мира музыкального и модельного бизнеса и других сфер.   </p>
-<p margin-bottom:0cm;margin-bottom:.0001pt;line-height:normal;background:white""="" style="">Аудитория фанатов rayban официальным сайтом интересуется все<strong> </strong>активнее.
-Тем более что она пополняется регулярно знаменитыми политиками, спортсменами,
+<p margin-bottom:0cm;margin-bottom:.0001pt;line-height:normal;background:white""="" style="">Аудитория фанатов rayban официальным сайтом интересуется все<strong> </strong>активнее.
+Тем более что она пополняется регулярно знаменитыми политиками, спортсменами,
 бизнесменами, эстрадными исполнителями и пр.</p>
-<p>Не одной парой стильных «авиаторов» и «вайфаеров» добавили
-изюминку в свой сценический образ и украинские знаменитости. Выбрав модные и удобные аксессуары с логотипом RB для защиты от солнца и вспышек фотокамер, давно
+<p>Не одной парой стильных «авиаторов» и «вайфаеров» добавили
+изюминку в свой сценический образ и украинские знаменитости. Выбрав модные и удобные аксессуары с логотипом RB для защиты от солнца и вспышек фотокамер, давно
 оценили очки rayban киев: </p>
 <p>·      любительница экстравагантного стиля певица Джамала, </p>
 <p>·      Ани Лорак, которая любит выглядеть cool и sexy, </p>
 <p>·      одна из самых известных украинских блондинок Вера Брежнева, </p>
-<p>·      Светлана Лобода, которая практически не снимает их на улице и во
+<p>·      Светлана Лобода, которая практически не снимает их на улице и во
 время интервью, и многие другие селебрети, предпочитающие rayban купить киев. </p><p><br/></p>
-<h2><strong><span style="color:#333333;font-size:medium">Чем
+<h2><strong><span style="color:#333333;font-size:medium">Чем
 покоряют очки, за что ими восхищается Украина</span></strong></h2>
-<p>Торговая марка с вековой историей и океаном фанатов,
-преобразив когда-то до неузнаваемости обычную вещь, пренебрегла всеми
-стереотипами по отношению к подобным аксессуарам. И счастливые обладатели,
-разгуливая в очках ray ban цена которых вполне подъемна, оценят
+<p>Торговая марка с вековой историей и океаном фанатов,
+преобразив когда-то до неузнаваемости обычную вещь, пренебрегла всеми
+стереотипами по отношению к подобным аксессуарам. И счастливые обладатели,
+разгуливая в очках ray ban цена которых вполне подъемна, оценят
 такие конкурентные преимущества:<strong></strong></p>
-<p>1.     высочайшее
-качество: очки, изготовленные из качественного сырья (настоящее
-стекло,
-легкий глянцевый гипоаллергенный пропионат, металл и пр.) с соблюдением
+<p>1.     высочайшее
+качество: очки, изготовленные из качественного сырья (настоящее
+стекло,
+легкий глянцевый гипоаллергенный пропионат, металл и пр.) с соблюдением
 традиций и деталей, надежно защищают глаза от ультрафиолета;</p>
-<p>2.     особенный
-неповторимый стиль и дизайн продукции законодателей моды: все это отвечает требованиям
+<p>2.     особенный
+неповторимый стиль и дизайн продукции законодателей моды: все это отвечает требованиям
 новый веяний в оптике;</p>
-<p>3.     показатель
-статуса и вкуса владельца: беспрецедентный выбор и дизайнерские решения успешно
+<p>3.     показатель
+статуса и вкуса владельца: беспрецедентный выбор и дизайнерские решения успешно
 подчеркивают индивидуальность в образе;</p>
-<p>4.     всесезонность:
+<p>4.     всесезонность:
 аксессуар дополнит образ в любое время года.</p><p><br/></p>
 <h2 style="color:#333333"><span style="font-size:medium">Где купить оригинал</span> <span style="font-size:medium"><br/></span>
 </h2>
-<p>Это раньше купить очки рей бен оригинал можно было только по знакомству или выстояв длинную
-очередь. Т.к. они были огромным дефицитом. Сегодня любую модель легко
-купить в Украине. Не надо за ними ходить в магазин и стоять в очереди. Мы
+<p>Это раньше купить очки рей бен оригинал можно было только по знакомству или выстояв длинную
+очередь. Т.к. они были огромным дефицитом. Сегодня любую модель легко
+купить в Украине. Не надо за ними ходить в магазин и стоять в очереди. Мы
 поможем вам безе переплат!<strong></strong></p>
-<p>Хотите себя побаловать или сделать подарок близким и
-любимым? Купите элитный товар в интернет-магазине raybanco.com.ua
+<p>Хотите себя побаловать или сделать подарок близким и
+любимым? Купите элитный товар в интернет-магазине raybanco.com.ua
 в Киеве. Загляните на rayban официальный сайт. Вас здесь ждут сюрпризы. <strong></strong></p><p><br/></p>
 <h2><strong style="font-size:medium;color:#333333">Цена вопроса</strong><strong></strong></h2>
 <p style="text-align:justify"><img src="http://raybanco.com.ua/storage/2авиатор-min.jpg" style="width:1000px;height:496px"/><br/></p>
-<p>Вас, любующихся своими кумирами
-или знакомыми, щеголяющими в брендовых очках, вряд ли смутит цена. Но
+<p>Вас, любующихся своими кумирами
+или знакомыми, щеголяющими в брендовых очках, вряд ли смутит цена. Но
 доступна ли она, и кому доступна - только ли состоятельным людям? </p>
-<p>Во-первых, стоимость зависит от вашего решения – купить
-оригинал ray ban украина или обзавестись качественными
+<p>Во-первых, стоимость зависит от вашего решения – купить
+оригинал ray ban украина или обзавестись качественными
 репликами, моделями, близкими по всем параметрам к оригиналу.</p>
-<p>Во-вторых, вас ждет привлекательная ценовая политика.
+<p>Во-вторых, вас ждет привлекательная ценовая политика.
 Приобретите у нас скидочные карты. Участвуйте в акциях! </p>
-<p>И даже если вы - человек со среднестатистическим бюджетом, то
-сможете позволить себе очки рей бен купить и
-наслаждаться покупками. Защищая
-глаза от ярких солнечных лучей с помощью этого аксессуара, вы сделаете
+<p>И даже если вы - человек со среднестатистическим бюджетом, то
+сможете позволить себе очки рей бен купить и
+наслаждаться покупками. Защищая
+глаза от ярких солнечных лучей с помощью этого аксессуара, вы сделаете
 свой образ еще элегантнее и стильнее.</p></div>
 </div>
 <!--    КОНЕЦ ГРЕБАННЫЙ СЕО ТЕКСТ-->
@@ -410,16 +410,16 @@ Eye и др.<strong></strong></p><p><br/></p>
 <script id="sort_views_script_cnt" type="text/html">
                     <div class="sort">
                         
-                        <div class="sort_head">
-    <div class="gandalf_wrap">
-                Отсортировать по:
-    </div>
-    <div class="sort_drop">
-        <a href="/?limit=40&sort=shopwindow.desc-sname#glasses" class=""><span>популярности</span></a>
-                    <a href="/?limit=40&sort=price-sname#glasses"><span>цене</span></a>
-                <a href="/?limit=40#glasses" class="active"><span>имени</span></a>
-        <a href="/?limit=40&sort=novelty.desc-sname#glasses" class=""><span>новизне</span></a>
-    </div>
+                        <div class="sort_head">
+    <div class="gandalf_wrap">
+                Отсортировать по:
+    </div>
+    <div class="sort_drop">
+        <a href="/?limit=40&sort=shopwindow.desc-sname#glasses" class=""><span>популярности</span></a>
+                    <a href="/?limit=40&sort=price-sname#glasses"><span>цене</span></a>
+                <a href="/?limit=40#glasses" class="active"><span>имени</span></a>
+        <a href="/?limit=40&sort=novelty.desc-sname#glasses" class=""><span>новизне</span></a>
+    </div>
 </div>                    </div>
 
                     <div class="view">

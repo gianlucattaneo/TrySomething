@@ -34,64 +34,64 @@
 <script src="catalog/view/theme/molded/js/cloud-zoom.js" type="text/javascript"></script>
 <link href="catalog/view/theme/molded/stylesheet/dcaccordion.css" property="stylesheet" rel="stylesheet" type="text/css">
 <script src="catalog/view/theme/molded/js/jquery.dcjqaccordion.js" type="text/javascript"></script>
-<script type="text/javascript">
-			function OptanonWrapper() {
- 			var banner = document.getElementById("onetrust-banner-sdk"); 
- 			if(banner && OneTrust.IsAlertBoxClosed()) {
-			banner.classList.add("alertBoxClosed");
-			}
-			}
+<script type="text/javascript">
+			function OptanonWrapper() {
+ 			var banner = document.getElementById("onetrust-banner-sdk"); 
+ 			if(banner && OneTrust.IsAlertBoxClosed()) {
+			banner.classList.add("alertBoxClosed");
+			}
+			}
 			</script>
-<script>
-  hm.waitUntil(function() {
-		return hm.version;
-	}).then(function() {
-		hm.cookies = hm.cookies || new hm.Cookies();  
-		var nuanceData={};
-		window.nuanceData = nuanceData;
-		if(hm.cookies && hm.cookies.readCookie('userCookie')){
-			var userCookieVal = JSON.parse(hm.cookies.readCookie('userCookie'));
-			if (userCookieVal){
-				
-				if(userCookieVal.cartCount>=0){
-					nuanceData["cartCount"] = userCookieVal.cartCount;
-				}
-			if(userCookieVal.dominantCategory){
-					nuanceData["dominantCategory"] = userCookieVal.dominantCategory;
-				}
-				if(userCookieVal.cartProducts){
-					nuanceData["cartProducts"] = userCookieVal.cartProducts;
-				}
-				if(userCookieVal.hybris_firstName){
-					nuanceData["hybris_firstName"] = decodeURIComponent((userCookieVal.hybris_firstName + '').replace(/\+/g, '%20'));
-				}
-				if(userCookieVal.hybris_uuid){
-					nuanceData["hybris_uuid"] = userCookieVal.hybris_uuid;
-				}
-				if(userCookieVal.customer_id){
-					nuanceData["customer_id"] = userCookieVal.customer_id;
-				}
-				if(userCookieVal.type){
-					nuanceData["type"] = userCookieVal.type;
-				}
-				if(userCookieVal.str){
-					nuanceData["st"] = decodeURIComponent(userCookieVal.str.replaceAll(/\+/g, ' '));
-				}
-				if(userCookieVal.zc){
-					var val = userCookieVal.zc.replace(/[+,-]/g," ");
-						nuanceData["zc"] = val;
-			}
-				if(userCookieVal.tn){
-					nuanceData["tn"] = decodeURIComponent(userCookieVal.tn.replaceAll(/\+/g, ' '));
-				}
-			}
-		}
-		var favouritesCookie = hm.options.product.country + "-favourites";
-		
-		var hasFav = hm.cookies.readCookie("hm-austria-favourites");
-		if(hasFav && !(hasFav==="\"\"")){nuanceData["hm-country-favourites"] = hasFav;}
-		console.log(nuanceData);
-	});
+<script>
+  hm.waitUntil(function() {
+		return hm.version;
+	}).then(function() {
+		hm.cookies = hm.cookies || new hm.Cookies();  
+		var nuanceData={};
+		window.nuanceData = nuanceData;
+		if(hm.cookies && hm.cookies.readCookie('userCookie')){
+			var userCookieVal = JSON.parse(hm.cookies.readCookie('userCookie'));
+			if (userCookieVal){
+				
+				if(userCookieVal.cartCount>=0){
+					nuanceData["cartCount"] = userCookieVal.cartCount;
+				}
+			if(userCookieVal.dominantCategory){
+					nuanceData["dominantCategory"] = userCookieVal.dominantCategory;
+				}
+				if(userCookieVal.cartProducts){
+					nuanceData["cartProducts"] = userCookieVal.cartProducts;
+				}
+				if(userCookieVal.hybris_firstName){
+					nuanceData["hybris_firstName"] = decodeURIComponent((userCookieVal.hybris_firstName + '').replace(/\+/g, '%20'));
+				}
+				if(userCookieVal.hybris_uuid){
+					nuanceData["hybris_uuid"] = userCookieVal.hybris_uuid;
+				}
+				if(userCookieVal.customer_id){
+					nuanceData["customer_id"] = userCookieVal.customer_id;
+				}
+				if(userCookieVal.type){
+					nuanceData["type"] = userCookieVal.type;
+				}
+				if(userCookieVal.str){
+					nuanceData["st"] = decodeURIComponent(userCookieVal.str.replaceAll(/\+/g, ' '));
+				}
+				if(userCookieVal.zc){
+					var val = userCookieVal.zc.replace(/[+,-]/g," ");
+						nuanceData["zc"] = val;
+			}
+				if(userCookieVal.tn){
+					nuanceData["tn"] = decodeURIComponent(userCookieVal.tn.replaceAll(/\+/g, ' '));
+				}
+			}
+		}
+		var favouritesCookie = hm.options.product.country + "-favourites";
+		
+		var hasFav = hm.cookies.readCookie("hm-austria-favourites");
+		if(hasFav && !(hasFav==="\"\"")){nuanceData["hm-country-favourites"] = hasFav;}
+		console.log(nuanceData);
+	});
 	</script>
 </link></link></link></meta></head>
 <body class="common-home">
@@ -100,12 +100,12 @@
 <div id="sidebar-wrapper">
 <ul class="sidebar-nav list-group molded">
 <li class="sidebar-title">
-<a href="#menu-toggle-close" id="menu-toggle-close"><span aria-hidden="true">×</span></a>Informatie      <script>
-      $("#menu-toggle-close").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-		$(".sidebar-opacity").toggleClass("toggled");
-      });
+<a href="#menu-toggle-close" id="menu-toggle-close"><span aria-hidden="true">×</span></a>Informatie      <script>
+      $("#menu-toggle-close").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+		$(".sidebar-opacity").toggleClass("toggled");
+      });
       </script>
 </li>
 <li><a href="http://www.elbtal-manufaktur.de/index.php?route=information/information&amp;information_id=7">FAQ</a></li>
@@ -169,12 +169,12 @@
 <span class="button-text">Menu</span>
 </div>
 </a>
-<script>
-        $("#menu-mobile-toggle").click(function(e) {
-          e.preventDefault();
-          $("#wrapper").toggleClass("menu-toggled");
-		  $(".sidebar-opacity").toggleClass("menu-toggled");
-        });
+<script>
+        $("#menu-mobile-toggle").click(function(e) {
+          e.preventDefault();
+          $("#wrapper").toggleClass("menu-toggled");
+		  $(".sidebar-opacity").toggleClass("menu-toggled");
+        });
       </script>
 <div class="btn-group btn-block buttons-header" id="cart">
 <a class="btn dropdown-toggle" data-loading-text="Laden..." data-toggle="dropdown">
@@ -212,26 +212,26 @@
 </div>
 </div>
 </nav>
-<script type="text/javascript">
-$(document).ready(function() {
-	$('#accordion-mobile').dcAccordion({
-		disableLink: false,	
-		menuClose: false,
-		autoClose: true,
-		autoExpand: true,		
-		saveState: false
-	});
-});
+<script type="text/javascript">
+$(document).ready(function() {
+	$('#accordion-mobile').dcAccordion({
+		disableLink: false,	
+		menuClose: false,
+		autoClose: true,
+		autoExpand: true,		
+		saveState: false
+	});
+});
 </script>
 <div class="hidden-sm hidden-md hidden-lg" id="menu-mobile">
 <ul class="accordion sidebar-nav list-group" id="accordion-mobile">
 <li class="sidebar-title">
-<a href="#menu-mobile-toggle-close" id="menu-mobile-toggle-close"><span aria-hidden="true">×</span></a>Menu      <script>
-      $("#menu-mobile-toggle-close").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("menu-toggled");
-		$(".sidebar-opacity").toggleClass("menu-toggled");
-      });
+<a href="#menu-mobile-toggle-close" id="menu-mobile-toggle-close"><span aria-hidden="true">×</span></a>Menu      <script>
+      $("#menu-mobile-toggle-close").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("menu-toggled");
+		$(".sidebar-opacity").toggleClass("menu-toggled");
+      });
       </script>
 </li>
 <li><a href="http://www.elbtal-manufaktur.de/">Home</a></li>
@@ -276,16 +276,16 @@ $(document).ready(function() {
 </div>
 <div style="display:none;"><script src="//js.users.51.la/21085533.js" type="text/javascript"></script><br/></div><div class="container">
 <div class="row"><column class="col-sm-3 hidden-xs" id="column-left">
-<script type="text/javascript">
-$(document).ready(function() {
-	$('#accordion-1').dcAccordion({
-		disableLink: false,	
-		menuClose: false,
-		autoClose: true,
-		autoExpand: true,		
-		saveState: false
-	});
-});
+<script type="text/javascript">
+$(document).ready(function() {
+	$('#accordion-1').dcAccordion({
+		disableLink: false,	
+		menuClose: false,
+		autoClose: true,
+		autoExpand: true,		
+		saveState: false
+	});
+});
 </script>
 <div class="panel panel-default panel-category">
 <div class="panel-heading">Categorieën</div>
@@ -329,14 +329,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.elbtal-manufaktur.de/jo-malone-london-basil-amp-mandarin-body-creme-bodycreme-ych7bw.html"><img alt="Jo Malone London Basil &amp; Mandarin Body Creme - bodycrème yCH7Bw" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/jo-malone-london-basil-amp-mandarin-body-creme-bodycreme-ych7bw-1955.jpg" title="Jo Malone London Basil &amp; Mandarin Body Creme - bodycrème yCH7Bw"/></a>
+<a class="arevision" href="http://www.elbtal-manufaktur.de/vanilia-vanilia-high-waist-wide-fit-pantalon-met-pieddepoule-dessin-gebroken-wit-zdlqtb.html"><img alt="Vanilia Vanilia High waist wide fit pantalon met pied-de-poule dessin - Gebroken wit zdlqTB" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/vanilia-vanilia-high-waist-wide-fit-pantalon-met-pieddepoule-dessin-gebroken-wit-zdlqtb-4378.jpg" title="Vanilia Vanilia High waist wide fit pantalon met pied-de-poule dessin - Gebroken wit zdlqTB"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.elbtal-manufaktur.de/jo-malone-london-basil-amp-mandarin-body-creme-bodycreme-ych7bw.html">Jo Malone London Basil &amp; Mandarin Body Creme - bodycrème yCH7Bw</a></h4></div>
+<div class="name"><h4><a href="http://www.elbtal-manufaktur.de/vanilia-vanilia-high-waist-wide-fit-pantalon-met-pieddepoule-dessin-gebroken-wit-zdlqtb.html">Vanilia Vanilia High waist wide fit pantalon met pied-de-poule dessin - Gebroken wit zdlqTB</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€36,99</span> <span class="price-old">€94,99</span>
+<span class="price-new">€44,99</span> <span class="price-old">€123,99</span>
 </p>
 </div>
 </div>
@@ -345,14 +345,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.elbtal-manufaktur.de/diamond-point-geelgouden-alliance-groeibriljant-ring-050-ct-050-ct-diamant-groeibriljant-geelgoud-agwuan.html"><img alt="Diamond Point Geelgouden alliance groeibriljant ring, 0.50 ct. 0.50 ct diamant Groeibriljant - Geelgoud AGwUan" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/diamond-point-geelgouden-alliance-groeibriljant-ring-050-ct-050-ct-diamant-groeibriljant-geelgoud-agwuan-1098.jpg" title="Diamond Point Geelgouden alliance groeibriljant ring, 0.50 ct. 0.50 ct diamant Groeibriljant - Geelgoud AGwUan"/></a>
+<a class="arevision" href="http://www.elbtal-manufaktur.de/ti-sento-milano-ring-van-zilver-12142sy-zilver-x77tm5.html"><img alt="TI SENTO - Milano Ring van zilver 12142SY - Zilver x77tM5" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/ti-sento-milano-ring-van-zilver-12142sy-zilver-x77tm5-4196.jpg" title="TI SENTO - Milano Ring van zilver 12142SY - Zilver x77tM5"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.elbtal-manufaktur.de/diamond-point-geelgouden-alliance-groeibriljant-ring-050-ct-050-ct-diamant-groeibriljant-geelgoud-agwuan.html">Diamond Point Geelgouden alliance groeibriljant ring, 0.50 ct. 0.50 ct diamant Groeibriljant - Geelgoud AGwUan</a></h4></div>
+<div class="name"><h4><a href="http://www.elbtal-manufaktur.de/ti-sento-milano-ring-van-zilver-12142sy-zilver-x77tm5.html">TI SENTO - Milano Ring van zilver 12142SY - Zilver x77tM5</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€36,99</span> <span class="price-old">€93,99</span>
+<span class="price-new">€35,99</span> <span class="price-old">€93,99</span>
 </p>
 </div>
 </div>
@@ -361,14 +361,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.elbtal-manufaktur.de/chabi-chic-mok-45-cl-zwart-dpveh6.html"><img alt="Chabi Chic Mok 45 cl - Zwart DPveh6" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/chabi-chic-mok-45-cl-zwart-dpveh6-768.jpg" title="Chabi Chic Mok 45 cl - Zwart DPveh6"/></a>
+<a class="arevision" href="http://www.elbtal-manufaktur.de/mondaine-evo2-horloge-mse30110lg-cognac-j5ixyr.html"><img alt="Mondaine Evo2 horloge MSE.30110.LG - Cognac J5iXYr" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/mondaine-evo2-horloge-mse30110lg-cognac-j5ixyr-2876.jpg" title="Mondaine Evo2 horloge MSE.30110.LG - Cognac J5iXYr"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.elbtal-manufaktur.de/chabi-chic-mok-45-cl-zwart-dpveh6.html">Chabi Chic Mok 45 cl - Zwart DPveh6</a></h4></div>
+<div class="name"><h4><a href="http://www.elbtal-manufaktur.de/mondaine-evo2-horloge-mse30110lg-cognac-j5ixyr.html">Mondaine Evo2 horloge MSE.30110.LG - Cognac J5iXYr</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€37,99</span> <span class="price-old">€103,99</span>
+<span class="price-new">€37,99</span> <span class="price-old">€97,99</span>
 </p>
 </div>
 </div>
@@ -377,14 +377,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.elbtal-manufaktur.de/dr-barbara-sturm-lip-balm-lipbalsem-uzeq6n.html"><img alt="Dr. Barbara Sturm Lip Balm - lipbalsem UZeQ6n" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/dr-barbara-sturm-lip-balm-lipbalsem-uzeq6n-1264.jpg" title="Dr. Barbara Sturm Lip Balm - lipbalsem UZeQ6n"/></a>
+<a class="arevision" href="http://www.elbtal-manufaktur.de/serax-terres-de-reves-schotel-14-cm-roodbruin-ervueg.html"><img alt="Serax Terres de Rêves schotel 14 cm  - Roodbruin ErvUEg" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/serax-terres-de-reves-schotel-14-cm-roodbruin-ervueg-3854.jpg" title="Serax Terres de Rêves schotel 14 cm  - Roodbruin ErvUEg"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.elbtal-manufaktur.de/dr-barbara-sturm-lip-balm-lipbalsem-uzeq6n.html">Dr. Barbara Sturm Lip Balm - lipbalsem UZeQ6n</a></h4></div>
+<div class="name"><h4><a href="http://www.elbtal-manufaktur.de/serax-terres-de-reves-schotel-14-cm-roodbruin-ervueg.html">Serax Terres de Rêves schotel 14 cm  - Roodbruin ErvUEg</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€36,99</span> <span class="price-old">€94,99</span>
+<span class="price-new">€37,99</span> <span class="price-old">€96,99</span>
 </p>
 </div>
 </div>
@@ -393,14 +393,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.elbtal-manufaktur.de/kunert-moonlight-panty-in-15-denier-hasel-hazelnootbruin-avrdif.html"><img alt="Kunert Moonlight panty in 15 denier hasel - Hazelnootbruin AVrdIF" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/kunert-moonlight-panty-in-15-denier-hasel-hazelnootbruin-avrdif-2115.jpg" title="Kunert Moonlight panty in 15 denier hasel - Hazelnootbruin AVrdIF"/></a>
+<a class="arevision" href="http://www.elbtal-manufaktur.de/mango-amberes-slim-fit-fijngebreide-polo-van-linnen-grijsmele-rcvmn0.html"><img alt="MANGO Amberes slim fit fijngebreide polo van linnen  - Grijsmele RcVmn0" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/mango-amberes-slim-fit-fijngebreide-polo-van-linnen-grijsmele-rcvmn0-2600.jpg" title="MANGO Amberes slim fit fijngebreide polo van linnen  - Grijsmele RcVmn0"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.elbtal-manufaktur.de/kunert-moonlight-panty-in-15-denier-hasel-hazelnootbruin-avrdif.html">Kunert Moonlight panty in 15 denier hasel - Hazelnootbruin AVrdIF</a></h4></div>
+<div class="name"><h4><a href="http://www.elbtal-manufaktur.de/mango-amberes-slim-fit-fijngebreide-polo-van-linnen-grijsmele-rcvmn0.html">MANGO Amberes slim fit fijngebreide polo van linnen  - Grijsmele RcVmn0</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€37,99</span> <span class="price-old">€89,99</span>
+<span class="price-new">€46,99</span> <span class="price-old">€128,99</span>
 </p>
 </div>
 </div>
@@ -409,14 +409,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.elbtal-manufaktur.de/clarins-crayon-khol-oogpotlood-1-carbon-black-sy98is.html"><img alt="Clarins Crayon Khôl - oogpotlood - 1 Carbon Black sY98IS" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/clarins-crayon-khol-oogpotlood-1-carbon-black-sy98is-813.jpg" title="Clarins Crayon Khôl - oogpotlood - 1 Carbon Black sY98IS"/></a>
+<a class="arevision" href="http://www.elbtal-manufaktur.de/acqua-di-parma-peonia-nobile-eau-de-parfum-afhxa4.html"><img alt="Acqua di Parma Peonia Nobile Eau de Parfum Afhxa4" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/acqua-di-parma-peonia-nobile-eau-de-parfum-afhxa4-25.jpg" title="Acqua di Parma Peonia Nobile Eau de Parfum Afhxa4"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.elbtal-manufaktur.de/clarins-crayon-khol-oogpotlood-1-carbon-black-sy98is.html">Clarins Crayon Khôl - oogpotlood - 1 Carbon Black sY98IS</a></h4></div>
+<div class="name"><h4><a href="http://www.elbtal-manufaktur.de/acqua-di-parma-peonia-nobile-eau-de-parfum-afhxa4.html">Acqua di Parma Peonia Nobile Eau de Parfum Afhxa4</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€36,99</span> <span class="price-old">€104,99</span>
+<span class="price-new">€35,99</span> <span class="price-old">€94,99</span>
 </p>
 </div>
 </div>
@@ -433,14 +433,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.elbtal-manufaktur.de/urban-nature-culture-good-morning-mok-11-cm-goud-mkxgha.html"><img alt="Urban Nature Culture Good Morning mok 11 cm - Goud MKxGhA" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/urban-nature-culture-good-morning-mok-11-cm-goud-mkxgha-4318.jpg" title="Urban Nature Culture Good Morning mok 11 cm - Goud MKxGhA"/></a>
+<a class="arevision" href="http://www.elbtal-manufaktur.de/laura-mercier-wimperkruller-jcycfs.html"><img alt="Laura Mercier Wimperkruller JCYcFS" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/laura-mercier-wimperkruller-jcycfs-2213.jpg" title="Laura Mercier Wimperkruller JCYcFS"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.elbtal-manufaktur.de/urban-nature-culture-good-morning-mok-11-cm-goud-mkxgha.html">Urban Nature Culture Good Morning mok 11 cm - Goud MKxGhA</a></h4></div>
+<div class="name"><h4><a href="http://www.elbtal-manufaktur.de/laura-mercier-wimperkruller-jcycfs.html">Laura Mercier Wimperkruller JCYcFS</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€35,99</span> <span class="price-old">€90,99</span>
+<span class="price-new">€37,99</span> <span class="price-old">€105,99</span>
 </p>
 </div>
 </div>
@@ -449,14 +449,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.elbtal-manufaktur.de/yves-delorme-belami-badjas-van-katoen-met-dessin-ivoor-cmgp0a.html"><img alt="Yves Delorme Belami badjas van katoen met dessin - Ivoor Cmgp0a" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/yves-delorme-belami-badjas-van-katoen-met-dessin-ivoor-cmgp0a-4700.jpg" title="Yves Delorme Belami badjas van katoen met dessin - Ivoor Cmgp0a"/></a>
+<a class="arevision" href="http://www.elbtal-manufaktur.de/flos-ic-lights-t1-low-tafellamp-chroom-lxhuwf.html"><img alt="Flos IC Lights T1 Low tafellamp - Chroom LxhuwF" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/flos-ic-lights-t1-low-tafellamp-chroom-lxhuwf-1513.jpg" title="Flos IC Lights T1 Low tafellamp - Chroom LxhuwF"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.elbtal-manufaktur.de/yves-delorme-belami-badjas-van-katoen-met-dessin-ivoor-cmgp0a.html">Yves Delorme Belami badjas van katoen met dessin - Ivoor Cmgp0a</a></h4></div>
+<div class="name"><h4><a href="http://www.elbtal-manufaktur.de/flos-ic-lights-t1-low-tafellamp-chroom-lxhuwf.html">Flos IC Lights T1 Low tafellamp - Chroom LxhuwF</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€36,99</span> <span class="price-old">€91,99</span>
+<span class="price-new">€36,99</span> <span class="price-old">€101,99</span>
 </p>
 </div>
 </div>
@@ -465,14 +465,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.elbtal-manufaktur.de/ti-sento-milano-ring-van-zilver-1923zb-zilver-sxuonc.html"><img alt="TI SENTO - Milano Ring van zilver 1923ZB - Zilver SXUOnc" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/ti-sento-milano-ring-van-zilver-1923zb-zilver-sxuonc-4204.jpg" title="TI SENTO - Milano Ring van zilver 1923ZB - Zilver SXUOnc"/></a>
+<a class="arevision" href="http://www.elbtal-manufaktur.de/biotherm-brume-solaire-dry-touch-spf-50-zonnebrand-nogd4g.html"><img alt="Biotherm Brume Solaire Dry Touch SPF 50 - zonnebrand nogD4G" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/biotherm-brume-solaire-dry-touch-spf-50-zonnebrand-nogd4g-413.jpg" title="Biotherm Brume Solaire Dry Touch SPF 50 - zonnebrand nogD4G"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.elbtal-manufaktur.de/ti-sento-milano-ring-van-zilver-1923zb-zilver-sxuonc.html">TI SENTO - Milano Ring van zilver 1923ZB - Zilver SXUOnc</a></h4></div>
+<div class="name"><h4><a href="http://www.elbtal-manufaktur.de/biotherm-brume-solaire-dry-touch-spf-50-zonnebrand-nogd4g.html">Biotherm Brume Solaire Dry Touch SPF 50 - zonnebrand nogD4G</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€36,99</span> <span class="price-old">€99,99</span>
+<span class="price-new">€36,99</span> <span class="price-old">€96,99</span>
 </p>
 </div>
 </div>
@@ -481,14 +481,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.elbtal-manufaktur.de/aynur-abbott-thin-twist-ring-8k-goud-4deedx.html"><img alt="Aynur Abbott Thin Twist ring 8k - Goud 4dEEdx" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/aynur-abbott-thin-twist-ring-8k-goud-4deedx-268.jpg" title="Aynur Abbott Thin Twist ring 8k - Goud 4dEEdx"/></a>
+<a class="arevision" href="http://www.elbtal-manufaktur.de/ted-baker-turnna-high-waist-skinny-fit-jeans-met-gerafelde-zoom-donkergrijs-6ryhaz.html"><img alt="Ted Baker Turnna high waist skinny fit jeans met gerafelde zoom - Donkergrijs 6RyHaZ" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/ted-baker-turnna-high-waist-skinny-fit-jeans-met-gerafelde-zoom-donkergrijs-6ryhaz-4131.jpg" title="Ted Baker Turnna high waist skinny fit jeans met gerafelde zoom - Donkergrijs 6RyHaZ"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.elbtal-manufaktur.de/aynur-abbott-thin-twist-ring-8k-goud-4deedx.html">Aynur Abbott Thin Twist ring 8k - Goud 4dEEdx</a></h4></div>
+<div class="name"><h4><a href="http://www.elbtal-manufaktur.de/ted-baker-turnna-high-waist-skinny-fit-jeans-met-gerafelde-zoom-donkergrijs-6ryhaz.html">Ted Baker Turnna high waist skinny fit jeans met gerafelde zoom - Donkergrijs 6RyHaZ</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€35,99</span> <span class="price-old">€104,99</span>
+<span class="price-new">€45,99</span> <span class="price-old">€145,99</span>
 </p>
 </div>
 </div>
@@ -497,14 +497,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.elbtal-manufaktur.de/stoned-onderzetter-van-marmer-zwart-pp5bst.html"><img alt="Stoned Onderzetter van marmer - Zwart pP5bsT" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/stoned-onderzetter-van-marmer-zwart-pp5bst-3975.jpg" title="Stoned Onderzetter van marmer - Zwart pP5bsT"/></a>
+<a class="arevision" href="http://www.elbtal-manufaktur.de/vanilia-fijngebreid-vest-met-ronde-hals-gebroken-wit-ofqytt.html"><img alt="Vanilia Fijngebreid vest met ronde hals - Gebroken wit OfQYtT" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/vanilia-fijngebreid-vest-met-ronde-hals-gebroken-wit-ofqytt-4370.jpg" title="Vanilia Fijngebreid vest met ronde hals - Gebroken wit OfQYtT"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.elbtal-manufaktur.de/stoned-onderzetter-van-marmer-zwart-pp5bst.html">Stoned Onderzetter van marmer - Zwart pP5bsT</a></h4></div>
+<div class="name"><h4><a href="http://www.elbtal-manufaktur.de/vanilia-fijngebreid-vest-met-ronde-hals-gebroken-wit-ofqytt.html">Vanilia Fijngebreid vest met ronde hals - Gebroken wit OfQYtT</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€37,99</span> <span class="price-old">€103,99</span>
+<span class="price-new">€44,99</span> <span class="price-old">€124,99</span>
 </p>
 </div>
 </div>
@@ -513,14 +513,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.elbtal-manufaktur.de/bk-qlinair-master-soeppan-24-cm-zilver-srzien.html"><img alt="BK Q-Linair Master soeppan 24 cm - Zilver SrZiEN" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/bk-qlinair-master-soeppan-24-cm-zilver-srzien-446.jpg" title="BK Q-Linair Master soeppan 24 cm - Zilver SrZiEN"/></a>
+<a class="arevision" href="http://www.elbtal-manufaktur.de/global-g3-vleesmes-21-cm-zilver-yirtrb.html"><img alt="Global G-3 Vleesmes 21 cm - Zilver yiRtrb" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/global-g3-vleesmes-21-cm-zilver-yirtrb-1650.jpg" title="Global G-3 Vleesmes 21 cm - Zilver yiRtrb"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.elbtal-manufaktur.de/bk-qlinair-master-soeppan-24-cm-zilver-srzien.html">BK Q-Linair Master soeppan 24 cm - Zilver SrZiEN</a></h4></div>
+<div class="name"><h4><a href="http://www.elbtal-manufaktur.de/global-g3-vleesmes-21-cm-zilver-yirtrb.html">Global G-3 Vleesmes 21 cm - Zilver yiRtrb</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€37,99</span> <span class="price-old">€91,99</span>
+<span class="price-new">€37,99</span> <span class="price-old">€93,99</span>
 </p>
 </div>
 </div>
@@ -529,14 +529,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.elbtal-manufaktur.de/levi39s-rugby-tshirt-met-streepprint-gebroken-wit-xmnxl9.html"><img alt="Levi's Rugby T-shirt met streepprint  - Gebroken wit XmnXL9" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/levi39s-rugby-tshirt-met-streepprint-gebroken-wit-xmnxl9-2315.jpg" title="Levi's Rugby T-shirt met streepprint  - Gebroken wit XmnXL9"/></a>
+<a class="arevision" href="http://www.elbtal-manufaktur.de/phase-eight-tregging-amina-darted-met-hoge-taille-zwart-6cjh8k.html"><img alt="Phase Eight Tregging Amina Darted met hoge taille - Zwart 6cJh8k" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/phase-eight-tregging-amina-darted-met-hoge-taille-zwart-6cjh8k-3227.jpg" title="Phase Eight Tregging Amina Darted met hoge taille - Zwart 6cJh8k"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.elbtal-manufaktur.de/levi39s-rugby-tshirt-met-streepprint-gebroken-wit-xmnxl9.html">Levi's Rugby T-shirt met streepprint  - Gebroken wit XmnXL9</a></h4></div>
+<div class="name"><h4><a href="http://www.elbtal-manufaktur.de/phase-eight-tregging-amina-darted-met-hoge-taille-zwart-6cjh8k.html">Phase Eight Tregging Amina Darted met hoge taille - Zwart 6cJh8k</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€46,99</span> <span class="price-old">€136,99</span>
+<span class="price-new">€44,99</span> <span class="price-old">€140,99</span>
 </p>
 </div>
 </div>
@@ -545,14 +545,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.elbtal-manufaktur.de/hamilton-horloge-khaky-navy-scuba-h82315131-zilver-4vezgl.html"><img alt="Hamilton Horloge Khaky Navy Scuba H82315131 - Zilver 4vEzGL" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/hamilton-horloge-khaky-navy-scuba-h82315131-zilver-4vezgl-1710.jpg" title="Hamilton Horloge Khaky Navy Scuba H82315131 - Zilver 4vEzGL"/></a>
+<a class="arevision" href="http://www.elbtal-manufaktur.de/villeroy-amp-boch-artesano-ontbijtbord-22-cm-beige-q9avgz.html"><img alt="Villeroy &amp; Boch Artesano ontbijtbord 22 cm - Beige q9AVGZ" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/villeroy-amp-boch-artesano-ontbijtbord-22-cm-beige-q9avgz-4424.jpg" title="Villeroy &amp; Boch Artesano ontbijtbord 22 cm - Beige q9AVGZ"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.elbtal-manufaktur.de/hamilton-horloge-khaky-navy-scuba-h82315131-zilver-4vezgl.html">Hamilton Horloge Khaky Navy Scuba H82315131 - Zilver 4vEzGL</a></h4></div>
+<div class="name"><h4><a href="http://www.elbtal-manufaktur.de/villeroy-amp-boch-artesano-ontbijtbord-22-cm-beige-q9avgz.html">Villeroy &amp; Boch Artesano ontbijtbord 22 cm - Beige q9AVGZ</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€36,99</span> <span class="price-old">€94,99</span>
+<span class="price-new">€36,99</span> <span class="price-old">€97,99</span>
 </p>
 </div>
 </div>
@@ -561,14 +561,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.elbtal-manufaktur.de/ted-baker-jutka-toilettas-in-set-van-3-neonoranje-bmbpbl.html"><img alt="Ted Baker Jutka toilettas in set van 3 - Neonoranje BmbPbL" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/ted-baker-jutka-toilettas-in-set-van-3-neonoranje-bmbpbl-4090.jpg" title="Ted Baker Jutka toilettas in set van 3 - Neonoranje BmbPbL"/></a>
+<a class="arevision" href="http://www.elbtal-manufaktur.de/toral-giusy-sneaker-met-suede-details-bruin-mmgowg.html"><img alt="Toral Giusy sneaker met suède details - Bruin mMgOWg" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/toral-giusy-sneaker-met-suede-details-bruin-mmgowg-4282.jpg" title="Toral Giusy sneaker met suède details - Bruin mMgOWg"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.elbtal-manufaktur.de/ted-baker-jutka-toilettas-in-set-van-3-neonoranje-bmbpbl.html">Ted Baker Jutka toilettas in set van 3 - Neonoranje BmbPbL</a></h4></div>
+<div class="name"><h4><a href="http://www.elbtal-manufaktur.de/toral-giusy-sneaker-met-suede-details-bruin-mmgowg.html">Toral Giusy sneaker met suède details - Bruin mMgOWg</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€37,99</span> <span class="price-old">€89,99</span>
+<span class="price-new">€44,99</span> <span class="price-old">€150,99</span>
 </p>
 </div>
 </div>
@@ -577,14 +577,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.elbtal-manufaktur.de/lott-gioielli-initial-f-armband-verguld-groen-lmcy7r.html"><img alt="LOTT. gioielli Initial F armband verguld - Groen lMcy7R" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/lott-gioielli-initial-f-armband-verguld-groen-lmcy7r-2423.jpg" title="LOTT. gioielli Initial F armband verguld - Groen lMcy7R"/></a>
+<a class="arevision" href="http://www.elbtal-manufaktur.de/yves-delorme-triomphe-kussensloop-van-katoensatijn-310tc-taupe-kuhf66.html"><img alt="Yves Delorme Triomphe kussensloop van katoensatijn 310TC - Taupe kUHF66" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/yves-delorme-triomphe-kussensloop-van-katoensatijn-310tc-taupe-kuhf66-4720.jpg" title="Yves Delorme Triomphe kussensloop van katoensatijn 310TC - Taupe kUHF66"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.elbtal-manufaktur.de/lott-gioielli-initial-f-armband-verguld-groen-lmcy7r.html">LOTT. gioielli Initial F armband verguld - Groen lMcy7R</a></h4></div>
+<div class="name"><h4><a href="http://www.elbtal-manufaktur.de/yves-delorme-triomphe-kussensloop-van-katoensatijn-310tc-taupe-kuhf66.html">Yves Delorme Triomphe kussensloop van katoensatijn 310TC - Taupe kUHF66</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€35,99</span> <span class="price-old">€100,99</span>
+<span class="price-new">€37,99</span> <span class="price-old">€93,99</span>
 </p>
 </div>
 </div>
@@ -593,14 +593,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.elbtal-manufaktur.de/costa-nova-riviera-ontbijtbord-21-cm-lichtgroen-zvw0ko.html"><img alt="Costa Nova Rivièra ontbijtbord 21 cm - Lichtgroen zVW0kO" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/costa-nova-riviera-ontbijtbord-21-cm-lichtgroen-zvw0ko-969.jpg" title="Costa Nova Rivièra ontbijtbord 21 cm - Lichtgroen zVW0kO"/></a>
+<a class="arevision" href="http://www.elbtal-manufaktur.de/levi39s-711-low-waist-skinny-fit-jeans-indigo-dgave4.html"><img alt="Levi's 711 low waist skinny fit jeans  - Indigo dgavE4" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/levi39s-711-low-waist-skinny-fit-jeans-indigo-dgave4-2289.jpg" title="Levi's 711 low waist skinny fit jeans  - Indigo dgavE4"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.elbtal-manufaktur.de/costa-nova-riviera-ontbijtbord-21-cm-lichtgroen-zvw0ko.html">Costa Nova Rivièra ontbijtbord 21 cm - Lichtgroen zVW0kO</a></h4></div>
+<div class="name"><h4><a href="http://www.elbtal-manufaktur.de/levi39s-711-low-waist-skinny-fit-jeans-indigo-dgave4.html">Levi's 711 low waist skinny fit jeans  - Indigo dgavE4</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€37,99</span> <span class="price-old">€102,99</span>
+<span class="price-new">€44,99</span> <span class="price-old">€119,99</span>
 </p>
 </div>
 </div>
@@ -609,14 +609,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.elbtal-manufaktur.de/blomus-vipo-douchewisser-van-edelstaal-staalblauw-mumzol.html"><img alt="Blomus Vipo douchewisser van edelstaal - Staalblauw mumzOL" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/blomus-vipo-douchewisser-van-edelstaal-staalblauw-mumzol-455.jpg" title="Blomus Vipo douchewisser van edelstaal - Staalblauw mumzOL"/></a>
+<a class="arevision" href="http://www.elbtal-manufaktur.de/calvin-klein-boxershorts-met-logoband-in-3pack-zwart-pe56ub.html"><img alt="Calvin Klein Boxershorts met logoband in 3-pack - Zwart pe56ub" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/calvin-klein-boxershorts-met-logoband-in-3pack-zwart-pe56ub-643.jpg" title="Calvin Klein Boxershorts met logoband in 3-pack - Zwart pe56ub"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.elbtal-manufaktur.de/blomus-vipo-douchewisser-van-edelstaal-staalblauw-mumzol.html">Blomus Vipo douchewisser van edelstaal - Staalblauw mumzOL</a></h4></div>
+<div class="name"><h4><a href="http://www.elbtal-manufaktur.de/calvin-klein-boxershorts-met-logoband-in-3pack-zwart-pe56ub.html">Calvin Klein Boxershorts met logoband in 3-pack - Zwart pe56ub</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€35,99</span> <span class="price-old">€102,99</span>
+<span class="price-new">€46,99</span> <span class="price-old">€146,99</span>
 </p>
 </div>
 </div>
@@ -652,43 +652,43 @@ $(document).ready(function() {
 <div id="powered">
 <div class="container">
 <div class="row">
-<div class="col-sm-12 col-md-12">
-      Copyright © 2022 <a href="//www.elbtal-manufaktur.de" target="_blank">www.elbtal-manufaktur.de</a> All Rights Reserved  
+<div class="col-sm-12 col-md-12">
+      Copyright © 2022 <a href="//www.elbtal-manufaktur.de" target="_blank">www.elbtal-manufaktur.de</a> All Rights Reserved  
       </div>
 </div>
 </div>
 </div>
 </footer>
 <script src="catalog/view/theme/molded/js/jquery.visible.min.js" type="text/javascript"></script>
-<script type="text/javascript">
-
-var win = $(window);
-
-var allMods = $("footer");
-
-allMods.each(function(i, el) {
-    
-  if ($(el).visible(true)) {
-    $(el).addClass("already-visible"); 
-  }
-  
-});
-
-win.scroll(function(event) {
-  
-  allMods.each(function(i, el) {
-    
-    var el = $(el);
-    
-    if (el.visible(true)) {
-      el.addClass("come-in"); 
-    } else {
-      el.removeClass("come-in already-visible");
-    }
-    
-  });
-  
-}); 
+<script type="text/javascript">
+
+var win = $(window);
+
+var allMods = $("footer");
+
+allMods.each(function(i, el) {
+    
+  if ($(el).visible(true)) {
+    $(el).addClass("already-visible"); 
+  }
+  
+});
+
+win.scroll(function(event) {
+  
+  allMods.each(function(i, el) {
+    
+    var el = $(el);
+    
+    if (el.visible(true)) {
+      el.addClass("come-in"); 
+    } else {
+      el.removeClass("come-in already-visible");
+    }
+    
+  });
+  
+}); 
 </script>
 <script src="catalog/view/theme/molded/js/jquery.easing-1.3.min.js" type="text/javascript"></script>
 <link href="catalog/view/theme/molded/js/quickview/fancybox/jquery.fancybox.css" property="stylesheet" rel="stylesheet">

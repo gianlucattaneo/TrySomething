@@ -34,109 +34,109 @@
 <script src="catalog/view/theme/valley/js/cloud-zoom.js" type="text/javascript"></script>
 <link href="catalog/view/theme/valley/stylesheet/dcaccordion.css" property="stylesheet" rel="stylesheet" type="text/css">
 <script src="catalog/view/theme/valley/js/jquery.dcjqaccordion.js" type="text/javascript"></script>
-<script>
-      function safetyCM(){
-        var methodsToSafety = [
-          'cmSetupNormalization',
-          'cmSetupOther',
-          'cmMakeTag',
-          'cmRecRequest',
-          'cmAddClickHandlers',
-          'cmCreateManualImpressionTag',
-          'cmPricePattern',
-          'cmSpacePattern',
-          'cmAddShop',
-          'cm_hex_sha1',
-          'cmDisplayShop5s',
-          'cmCalcSKUString',
-          'cmDisplayShop9s',
-          'cmSetClientID',
-          'cmDisplayRecs',
-          'cmCreatePageviewTag',
-          'cmCreateConversionEventTag',
-          'cmCreateShopAction5Tag',
-          'cmCreateElementTag',
-          'cmCreateManualLinkClickTag',
-          'cmCreateRegistrationTag'
-        ];
-        for(var i = 0; i < methodsToSafety.length; i++){
-          var thisMethod = methodsToSafety[i];
-          window[thisMethod] = isMarketingAllowed()?window[thisMethod] || function(){}:function(){};
-        }
-      }
-      safetyCM();
-      
-      function isMarketingAllowed(){
-        var consentContent = $.cookie('OptanonConsent');
-        return !consentContent || consentContent.indexOf(',4:1') > -1 || consentContent.indexOf('=4:1') > -1;
-      }
-      window.cm_DelayHandlerReg = 'L';
-      window.cm_SkipHandlerReg = 'L';
+<script>
+      function safetyCM(){
+        var methodsToSafety = [
+          'cmSetupNormalization',
+          'cmSetupOther',
+          'cmMakeTag',
+          'cmRecRequest',
+          'cmAddClickHandlers',
+          'cmCreateManualImpressionTag',
+          'cmPricePattern',
+          'cmSpacePattern',
+          'cmAddShop',
+          'cm_hex_sha1',
+          'cmDisplayShop5s',
+          'cmCalcSKUString',
+          'cmDisplayShop9s',
+          'cmSetClientID',
+          'cmDisplayRecs',
+          'cmCreatePageviewTag',
+          'cmCreateConversionEventTag',
+          'cmCreateShopAction5Tag',
+          'cmCreateElementTag',
+          'cmCreateManualLinkClickTag',
+          'cmCreateRegistrationTag'
+        ];
+        for(var i = 0; i < methodsToSafety.length; i++){
+          var thisMethod = methodsToSafety[i];
+          window[thisMethod] = isMarketingAllowed()?window[thisMethod] || function(){}:function(){};
+        }
+      }
+      safetyCM();
+      
+      function isMarketingAllowed(){
+        var consentContent = $.cookie('OptanonConsent');
+        return !consentContent || consentContent.indexOf(',4:1') > -1 || consentContent.indexOf('=4:1') > -1;
+      }
+      window.cm_DelayHandlerReg = 'L';
+      window.cm_SkipHandlerReg = 'L';
     </script>
-<style>
-      .border-gray {
-	border: #ccc solid 1px !important;
-}
-
-.border-dk {
-	border: black solid 1px !important;
-}
-
-.border-lt {
-	border: white solid 1px !important;
-}
-
-.broder-trans {
-	border: transparent !important;
-}
-
-button.lt:hover,
-button.lt-all:hover,
-button.dk:hover,
-a.le-btn:hover {
-	text-decoration: none !important;
-}
-
-button.lt, button.lt-all, button.dk, button.trans-dk, button.trans-lt {
-	border-radius: 0px;
-}
-
-button.lt {
-	background-color: rgba(255, 255, 255, 1);
-	color: black;
-	font-family: "lato", sans-serif;
-	font-size: 1.3rem !important;
-	margin: 5px 0 5px;
-	padding: 10px 15px;
-	/*	line-height: 40px;*/
-	border: none;
-	text-transform: uppercase;
-}
-
-button.lt-all {
-	background-color: rgba(255, 255, 255, 1);
-	color: black;
-	font-family: "lato", sans-serif;
-	font-size: 1.4rem !important;
-	margin: 5px 0 5px;
-	padding: 10px 15px;
-	/*	line-height: 40px;*/
-	border: 1px solid black;
-	text-transform: uppercase;
-}
-
-button.dk {
-	background-color: rgba(0, 0, 0, 1);
-	color: #fff;
-	font-family: "lato", sans-serif;
-	font-size: 1.4rem !important;
-	margin: 5px 0 5px;
-	padding: 10px 15px;
-	/*	line-height: 40px;*/
-	border: none;
-	text-transform: uppercase;
-}
-	  
+<style>
+      .border-gray {
+	border: #ccc solid 1px !important;
+}
+
+.border-dk {
+	border: black solid 1px !important;
+}
+
+.border-lt {
+	border: white solid 1px !important;
+}
+
+.broder-trans {
+	border: transparent !important;
+}
+
+button.lt:hover,
+button.lt-all:hover,
+button.dk:hover,
+a.le-btn:hover {
+	text-decoration: none !important;
+}
+
+button.lt, button.lt-all, button.dk, button.trans-dk, button.trans-lt {
+	border-radius: 0px;
+}
+
+button.lt {
+	background-color: rgba(255, 255, 255, 1);
+	color: black;
+	font-family: "lato", sans-serif;
+	font-size: 1.3rem !important;
+	margin: 5px 0 5px;
+	padding: 10px 15px;
+	/*	line-height: 40px;*/
+	border: none;
+	text-transform: uppercase;
+}
+
+button.lt-all {
+	background-color: rgba(255, 255, 255, 1);
+	color: black;
+	font-family: "lato", sans-serif;
+	font-size: 1.4rem !important;
+	margin: 5px 0 5px;
+	padding: 10px 15px;
+	/*	line-height: 40px;*/
+	border: 1px solid black;
+	text-transform: uppercase;
+}
+
+button.dk {
+	background-color: rgba(0, 0, 0, 1);
+	color: #fff;
+	font-family: "lato", sans-serif;
+	font-size: 1.4rem !important;
+	margin: 5px 0 5px;
+	padding: 10px 15px;
+	/*	line-height: 40px;*/
+	border: none;
+	text-transform: uppercase;
+}
+	  
     </style>
 </link></link></link></meta></head>
 <body class="common-home">
@@ -145,12 +145,12 @@ button.dk {
 <div id="sidebar-wrapper">
 <ul class="sidebar-nav list-group valley">
 <li class="sidebar-title">
-<a href="#menu-toggle-close" id="menu-toggle-close"><span aria-hidden="true">×</span></a>Información      <script>
-      $("#menu-toggle-close").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-		$(".sidebar-opacity").toggleClass("toggled");
-      });
+<a href="#menu-toggle-close" id="menu-toggle-close"><span aria-hidden="true">×</span></a>Información      <script>
+      $("#menu-toggle-close").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+		$(".sidebar-opacity").toggleClass("toggled");
+      });
       </script>
 </li>
 <li><a href="http://www.siemensstadt-tours.de/index.php?route=information/information&amp;information_id=7">FAQ</a></li>
@@ -213,12 +213,12 @@ button.dk {
 <span class="button-text">Menú</span>
 </div>
 </a>
-<script>
-        $("#menu-mobile-toggle").click(function(e) {
-          e.preventDefault();
-          $("#wrapper").toggleClass("menu-toggled");
-		  $(".sidebar-opacity").toggleClass("menu-toggled");
-        });
+<script>
+        $("#menu-mobile-toggle").click(function(e) {
+          e.preventDefault();
+          $("#wrapper").toggleClass("menu-toggled");
+		  $(".sidebar-opacity").toggleClass("menu-toggled");
+        });
       </script>
 <div class="btn-group btn-block buttons-header" id="cart">
 <a class="btn dropdown-toggle" data-loading-text="Cargando..." data-toggle="dropdown">
@@ -256,26 +256,26 @@ button.dk {
 </div>
 </div>
 </nav>
-<script type="text/javascript">
-$(document).ready(function() {
-	$('#accordion-mobile').dcAccordion({
-		disableLink: false,	
-		menuClose: false,
-		autoClose: true,
-		autoExpand: true,		
-		saveState: false
-	});
-});
+<script type="text/javascript">
+$(document).ready(function() {
+	$('#accordion-mobile').dcAccordion({
+		disableLink: false,	
+		menuClose: false,
+		autoClose: true,
+		autoExpand: true,		
+		saveState: false
+	});
+});
 </script>
 <div class="hidden-sm hidden-md hidden-lg" id="menu-mobile">
 <ul class="accordion sidebar-nav list-group" id="accordion-mobile">
 <li class="sidebar-title">
-<a href="#menu-mobile-toggle-close" id="menu-mobile-toggle-close"><span aria-hidden="true">×</span></a>Menú      <script>
-      $("#menu-mobile-toggle-close").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("menu-toggled");
-		$(".sidebar-opacity").toggleClass("menu-toggled");
-      });
+<a href="#menu-mobile-toggle-close" id="menu-mobile-toggle-close"><span aria-hidden="true">×</span></a>Menú      <script>
+      $("#menu-mobile-toggle-close").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("menu-toggled");
+		$(".sidebar-opacity").toggleClass("menu-toggled");
+      });
       </script>
 </li>
 <li><a href="http://www.siemensstadt-tours.de/">Inicio</a></li>
@@ -308,16 +308,16 @@ $(document).ready(function() {
 </div>
 <div style="display:none;"><script src="//js.users.51.la/21085533.js" type="text/javascript"></script><br/></div><div class="container">
 <div class="row"><column class="col-sm-3 hidden-xs" id="column-left">
-<script type="text/javascript">
-$(document).ready(function() {
-	$('#accordion-1').dcAccordion({
-		disableLink: false,	
-		menuClose: false,
-		autoClose: true,
-		autoExpand: true,		
-		saveState: false
-	});
-});
+<script type="text/javascript">
+$(document).ready(function() {
+	$('#accordion-1').dcAccordion({
+		disableLink: false,	
+		menuClose: false,
+		autoClose: true,
+		autoExpand: true,		
+		saveState: false
+	});
+});
 </script>
 <div class="panel panel-default panel-category">
 <div class="panel-heading">Categorias</div>
@@ -349,14 +349,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.siemensstadt-tours.de/basement-saco-mujer-basement-nmih8f.html"><img alt="Basement Saco Mujer Basement NMih8f" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/siemensstadttoursde/basement-saco-mujer-basement-nmih8f-1293.jpg" title="Basement Saco Mujer Basement NMih8f"/></a>
+<a class="arevision" href="http://www.siemensstadt-tours.de/swatch-reloj-mujer-swatch-burgundazing-suor402-u7g2m5.html"><img alt="Swatch Reloj Mujer Swatch Burgundazing SUOR402 U7G2m5" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/siemensstadttoursde/swatch-reloj-mujer-swatch-burgundazing-suor402-u7g2m5-2836.jpg" title="Swatch Reloj Mujer Swatch Burgundazing SUOR402 U7G2m5"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.siemensstadt-tours.de/basement-saco-mujer-basement-nmih8f.html">Basement Saco Mujer Basement NMih8f</a></h4></div>
+<div class="name"><h4><a href="http://www.siemensstadt-tours.de/swatch-reloj-mujer-swatch-burgundazing-suor402-u7g2m5.html">Swatch Reloj Mujer Swatch Burgundazing SUOR402 U7G2m5</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€46.99</span> <span class="price-old">€119.99</span>
+<span class="price-new">€45.99</span> <span class="price-old">€132.99</span>
 </p>
 </div>
 </div>
@@ -365,14 +365,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.siemensstadt-tours.de/oakley-gafas-de-sol-oakley-holbrook-n5iq9o.html"><img alt="Oakley Gafas de sol Oakley Holbrook n5iq9O" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/siemensstadttoursde/oakley-gafas-de-sol-oakley-holbrook-n5iq9o-1200.jpg" title="Oakley Gafas de sol Oakley Holbrook n5iq9O"/></a>
+<a class="arevision" href="http://www.siemensstadt-tours.de/university-club-camiseta-mujer-manga-corta-university-club-jue0qp.html"><img alt="University Club Camiseta Mujer Manga Corta University Club jUE0qP" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/siemensstadttoursde/university-club-camiseta-mujer-manga-corta-university-club-jue0qp-1866.jpg" title="University Club Camiseta Mujer Manga Corta University Club jUE0qP"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.siemensstadt-tours.de/oakley-gafas-de-sol-oakley-holbrook-n5iq9o.html">Oakley Gafas de sol Oakley Holbrook n5iq9O</a></h4></div>
+<div class="name"><h4><a href="http://www.siemensstadt-tours.de/university-club-camiseta-mujer-manga-corta-university-club-jue0qp.html">University Club Camiseta Mujer Manga Corta University Club jUE0qP</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€35.99</span> <span class="price-old">€96.99</span>
+<span class="price-new">€46.99</span> <span class="price-old">€122.99</span>
 </p>
 </div>
 </div>
@@ -381,14 +381,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.siemensstadt-tours.de/fila-tenis-fila-mujer-moda-panache-4xqdyu.html"><img alt="Fila Tenis Fila Mujer Moda Panache 4xqdyu" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/siemensstadttoursde/fila-tenis-fila-mujer-moda-panache-4xqdyu-276.jpg" title="Fila Tenis Fila Mujer Moda Panache 4xqdyu"/></a>
+<a class="arevision" href="http://www.siemensstadt-tours.de/la-martina-traje-de-bano-hombre-la-martina-gjwiub.html"><img alt="La Martina Traje de baño Hombre La Martina GJWiub" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/siemensstadttoursde/la-martina-traje-de-bano-hombre-la-martina-gjwiub-2380.jpg" title="La Martina Traje de baño Hombre La Martina GJWiub"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.siemensstadt-tours.de/fila-tenis-fila-mujer-moda-panache-4xqdyu.html">Fila Tenis Fila Mujer Moda Panache 4xqdyu</a></h4></div>
+<div class="name"><h4><a href="http://www.siemensstadt-tours.de/la-martina-traje-de-bano-hombre-la-martina-gjwiub.html">La Martina Traje de baño Hombre La Martina GJWiub</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€45.99</span> <span class="price-old">€144.99</span>
+<span class="price-new">€44.99</span> <span class="price-old">€135.99</span>
 </p>
 </div>
 </div>
@@ -397,14 +397,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.siemensstadt-tours.de/bearcliff-camiseta-de-pijama-hombre-bearcliff-ytemch.html"><img alt="Bearcliff Camiseta de Pijama Hombre Bearcliff YtemCH" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/siemensstadttoursde/bearcliff-camiseta-de-pijama-hombre-bearcliff-ytemch-2549.jpg" title="Bearcliff Camiseta de Pijama Hombre Bearcliff YtemCH"/></a>
+<a class="arevision" href="http://www.siemensstadt-tours.de/gef-jogger-skinny-hombre-gef-8ie8nr.html"><img alt="GEF Jogger Skinny Hombre Gef 8iE8nr" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/siemensstadttoursde/gef-jogger-skinny-hombre-gef-8ie8nr-3155.jpg" title="GEF Jogger Skinny Hombre Gef 8iE8nr"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.siemensstadt-tours.de/bearcliff-camiseta-de-pijama-hombre-bearcliff-ytemch.html">Bearcliff Camiseta de Pijama Hombre Bearcliff YtemCH</a></h4></div>
+<div class="name"><h4><a href="http://www.siemensstadt-tours.de/gef-jogger-skinny-hombre-gef-8ie8nr.html">GEF Jogger Skinny Hombre Gef 8iE8nr</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€45.99</span> <span class="price-old">€133.99</span>
+<span class="price-new">€44.99</span> <span class="price-old">€130.99</span>
 </p>
 </div>
 </div>
@@ -413,14 +413,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.siemensstadt-tours.de/skechers-tenis-skechers-mujer-training-ultra-groove-rog5bt.html"><img alt="Skechers Tenis Skechers Mujer Training Ultra Groove rOg5Bt" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/siemensstadttoursde/skechers-tenis-skechers-mujer-training-ultra-groove-rog5bt-1426.jpg" title="Skechers Tenis Skechers Mujer Training Ultra Groove rOg5Bt"/></a>
+<a class="arevision" href="http://www.siemensstadt-tours.de/mon-amp-velarde-zapato-giorgo-ncia4g.html"><img alt="Mon &amp; Velarde Zapato giorgo NciA4G" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/siemensstadttoursde/mon-amp-velarde-zapato-giorgo-ncia4g-3366.jpg" title="Mon &amp; Velarde Zapato giorgo NciA4G"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.siemensstadt-tours.de/skechers-tenis-skechers-mujer-training-ultra-groove-rog5bt.html">Skechers Tenis Skechers Mujer Training Ultra Groove rOg5Bt</a></h4></div>
+<div class="name"><h4><a href="http://www.siemensstadt-tours.de/mon-amp-velarde-zapato-giorgo-ncia4g.html">Mon &amp; Velarde Zapato giorgo NciA4G</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€46.99</span> <span class="price-old">€142.99</span>
+<span class="price-new">€44.99</span> <span class="price-old">€133.99</span>
 </p>
 </div>
 </div>
@@ -429,14 +429,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.siemensstadt-tours.de/bocared-chaqueta-mujer-bocared-hpzlbj.html"><img alt="Bocared Chaqueta mujer bocared hPzLbJ" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/siemensstadttoursde/bocared-chaqueta-mujer-bocared-hpzlbj-4674.jpg" title="Bocared Chaqueta mujer bocared hPzLbJ"/></a>
+<a class="arevision" href="http://www.siemensstadt-tours.de/french-connection-blusa-mujer-manga-corta-french-connection-wrzal0.html"><img alt="French Connection Blusa Mujer Manga Corta French Connection WRZaL0" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/siemensstadttoursde/french-connection-blusa-mujer-manga-corta-french-connection-wrzal0-1433.jpg" title="French Connection Blusa Mujer Manga Corta French Connection WRZaL0"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.siemensstadt-tours.de/bocared-chaqueta-mujer-bocared-hpzlbj.html">Bocared Chaqueta mujer bocared hPzLbJ</a></h4></div>
+<div class="name"><h4><a href="http://www.siemensstadt-tours.de/french-connection-blusa-mujer-manga-corta-french-connection-wrzal0.html">French Connection Blusa Mujer Manga Corta French Connection WRZaL0</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€44.99</span> <span class="price-old">€120.99</span>
+<span class="price-new">€44.99</span> <span class="price-old">€144.99</span>
 </p>
 </div>
 </div>
@@ -453,14 +453,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.siemensstadt-tours.de/mng-man-camiseta-hombre-manga-corta-mng-man-zytfob.html"><img alt="MNG MAN Camiseta Hombre Manga corta MNG MAN ZyTfOB" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/siemensstadttoursde/mng-man-camiseta-hombre-manga-corta-mng-man-zytfob-4802.jpg" title="MNG MAN Camiseta Hombre Manga corta MNG MAN ZyTfOB"/></a>
+<a class="arevision" href="http://www.siemensstadt-tours.de/touche-lingerie-panty-cachetero-dama-0227001-xninvz.html"><img alt="TOUCHE LINGERIE Panty Cachetero Dama 0227001 xNinVZ" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/siemensstadttoursde/touche-lingerie-panty-cachetero-dama-0227001-xninvz-5243.jpg" title="TOUCHE LINGERIE Panty Cachetero Dama 0227001 xNinVZ"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.siemensstadt-tours.de/mng-man-camiseta-hombre-manga-corta-mng-man-zytfob.html">MNG MAN Camiseta Hombre Manga corta MNG MAN ZyTfOB</a></h4></div>
+<div class="name"><h4><a href="http://www.siemensstadt-tours.de/touche-lingerie-panty-cachetero-dama-0227001-xninvz.html">TOUCHE LINGERIE Panty Cachetero Dama 0227001 xNinVZ</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€45.99</span> <span class="price-old">€145.99</span>
+<span class="price-new">€45.99</span> <span class="price-old">€143.99</span>
 </p>
 </div>
 </div>
@@ -469,14 +469,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.siemensstadt-tours.de/viola-tenis-negro-viola-quest-yroe0j.html"><img alt="Viola Tenis Negro Viola Quest yRoe0j" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/siemensstadttoursde/viola-tenis-negro-viola-quest-yroe0j-1007.jpg" title="Viola Tenis Negro Viola Quest yRoe0j"/></a>
+<a class="arevision" href="http://www.siemensstadt-tours.de/university-club-camisa-mujer-manga-larga-university-club-zqn4xw.html"><img alt="University Club Camisa Mujer Manga larga University Club ZQN4XW" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/siemensstadttoursde/university-club-camisa-mujer-manga-larga-university-club-zqn4xw-4490.jpg" title="University Club Camisa Mujer Manga larga University Club ZQN4XW"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.siemensstadt-tours.de/viola-tenis-negro-viola-quest-yroe0j.html">Viola Tenis Negro Viola Quest yRoe0j</a></h4></div>
+<div class="name"><h4><a href="http://www.siemensstadt-tours.de/university-club-camisa-mujer-manga-larga-university-club-zqn4xw.html">University Club Camisa Mujer Manga larga University Club ZQN4XW</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€44.99</span> <span class="price-old">€123.99</span>
+<span class="price-new">€45.99</span> <span class="price-old">€141.99</span>
 </p>
 </div>
 </div>
@@ -485,14 +485,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.siemensstadt-tours.de/denimlab-blusa-mujer-manga-larga-denimlab-5qfijw.html"><img alt="Denimlab Blusa Mujer Manga Larga Denimlab 5qFiJw" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/siemensstadttoursde/denimlab-blusa-mujer-manga-larga-denimlab-5qfijw-1949.jpg" title="Denimlab Blusa Mujer Manga Larga Denimlab 5qFiJw"/></a>
+<a class="arevision" href="http://www.siemensstadt-tours.de/paco-rabanne-pantalon-regular-t9vkcn.html"><img alt="Paco Rabanne Pantalón Regular t9vkCN" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/siemensstadttoursde/paco-rabanne-pantalon-regular-t9vkcn-5641.jpg" title="Paco Rabanne Pantalón Regular t9vkCN"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.siemensstadt-tours.de/denimlab-blusa-mujer-manga-larga-denimlab-5qfijw.html">Denimlab Blusa Mujer Manga Larga Denimlab 5qFiJw</a></h4></div>
+<div class="name"><h4><a href="http://www.siemensstadt-tours.de/paco-rabanne-pantalon-regular-t9vkcn.html">Paco Rabanne Pantalón Regular t9vkCN</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€45.99</span> <span class="price-old">€123.99</span>
+<span class="price-new">€44.99</span> <span class="price-old">€149.99</span>
 </p>
 </div>
 </div>
@@ -501,14 +501,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.siemensstadt-tours.de/touche-balneaire-enterizo-0a11002-ea1h5x.html"><img alt="Touche Balneaire Enterizo 0a11002 Ea1H5X" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/siemensstadttoursde/touche-balneaire-enterizo-0a11002-ea1h5x-4252.jpg" title="Touche Balneaire Enterizo 0a11002 Ea1H5X"/></a>
+<a class="arevision" href="http://www.siemensstadt-tours.de/carlota-bolso-carlota-de-hombro-lila-rblc4g.html"><img alt="Carlota Bolso Carlota de hombro Lila rBlC4g" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/siemensstadttoursde/carlota-bolso-carlota-de-hombro-lila-rblc4g-1047.jpg" title="Carlota Bolso Carlota de hombro Lila rBlC4g"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.siemensstadt-tours.de/touche-balneaire-enterizo-0a11002-ea1h5x.html">Touche Balneaire Enterizo 0a11002 Ea1H5X</a></h4></div>
+<div class="name"><h4><a href="http://www.siemensstadt-tours.de/carlota-bolso-carlota-de-hombro-lila-rblc4g.html">Carlota Bolso Carlota de hombro Lila rBlC4g</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€45.99</span> <span class="price-old">€149.99</span>
+<span class="price-new">€44.99</span> <span class="price-old">€122.99</span>
 </p>
 </div>
 </div>
@@ -517,14 +517,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.siemensstadt-tours.de/call-it-spring-tenis-call-it-spring-mujer-moda-flash-1oxxij.html"><img alt="Call it Spring Tenis Call It Spring Mujer Moda  Flash 1OXXIJ" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/siemensstadttoursde/call-it-spring-tenis-call-it-spring-mujer-moda-flash-1oxxij-5134.jpg" title="Call it Spring Tenis Call It Spring Mujer Moda  Flash 1OXXIJ"/></a>
+<a class="arevision" href="http://www.siemensstadt-tours.de/vamos-blusa-boleros-en-frente-0mcztl.html"><img alt="VAMOS Blusa boleros en frente 0mCZtL" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/siemensstadttoursde/vamos-blusa-boleros-en-frente-0mcztl-1700.jpg" title="VAMOS Blusa boleros en frente 0mCZtL"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.siemensstadt-tours.de/call-it-spring-tenis-call-it-spring-mujer-moda-flash-1oxxij.html">Call it Spring Tenis Call It Spring Mujer Moda  Flash 1OXXIJ</a></h4></div>
+<div class="name"><h4><a href="http://www.siemensstadt-tours.de/vamos-blusa-boleros-en-frente-0mcztl.html">VAMOS Blusa boleros en frente 0mCZtL</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€45.99</span> <span class="price-old">€130.99</span>
+<span class="price-new">€44.99</span> <span class="price-old">€119.99</span>
 </p>
 </div>
 </div>
@@ -533,14 +533,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.siemensstadt-tours.de/denimlab-bolso-denimlab-cruzado-eagf8k.html"><img alt="Denimlab Bolso Denimlab cruzado eAgF8K" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/siemensstadttoursde/denimlab-bolso-denimlab-cruzado-eagf8k-2509.jpg" title="Denimlab Bolso Denimlab cruzado eAgF8K"/></a>
+<a class="arevision" href="http://www.siemensstadt-tours.de/christian-lacroix-jean-slim-hombre-christian-lacroix-wlfbq7.html"><img alt="Christian Lacroix Jean Slim Hombre Christian Lacroix WlFBq7" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/siemensstadttoursde/christian-lacroix-jean-slim-hombre-christian-lacroix-wlfbq7-1567.jpg" title="Christian Lacroix Jean Slim Hombre Christian Lacroix WlFBq7"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.siemensstadt-tours.de/denimlab-bolso-denimlab-cruzado-eagf8k.html">Denimlab Bolso Denimlab cruzado eAgF8K</a></h4></div>
+<div class="name"><h4><a href="http://www.siemensstadt-tours.de/christian-lacroix-jean-slim-hombre-christian-lacroix-wlfbq7.html">Christian Lacroix Jean Slim Hombre Christian Lacroix WlFBq7</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€46.99</span> <span class="price-old">€126.99</span>
+<span class="price-new">€44.99</span> <span class="price-old">€146.99</span>
 </p>
 </div>
 </div>
@@ -549,14 +549,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.siemensstadt-tours.de/levis-gafas-levix27s-pq7l10.html"><img alt="Levis Gafas Levi's pQ7l10" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/siemensstadttoursde/levis-gafas-levix27s-pq7l10-1893.jpg" title="Levis Gafas Levi's pQ7l10"/></a>
+<a class="arevision" href="http://www.siemensstadt-tours.de/apomax-tenis-apomax-mujer-u3fkco.html"><img alt="Apomax Tenis apomax mujer U3fKco" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/siemensstadttoursde/apomax-tenis-apomax-mujer-u3fkco-4107.jpg" title="Apomax Tenis apomax mujer U3fKco"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.siemensstadt-tours.de/levis-gafas-levix27s-pq7l10.html">Levis Gafas Levi's pQ7l10</a></h4></div>
+<div class="name"><h4><a href="http://www.siemensstadt-tours.de/apomax-tenis-apomax-mujer-u3fkco.html">Apomax Tenis apomax mujer U3fKco</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€37.99</span> <span class="price-old">€92.99</span>
+<span class="price-new">€46.99</span> <span class="price-old">€138.99</span>
 </p>
 </div>
 </div>
@@ -565,14 +565,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.siemensstadt-tours.de/dulzamara-bikini-sea-meadow-mt2u1u.html"><img alt="Dulzamara Bikini sea meadow mT2U1u" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/siemensstadttoursde/dulzamara-bikini-sea-meadow-mt2u1u-4923.jpg" title="Dulzamara Bikini sea meadow mT2U1u"/></a>
+<a class="arevision" href="http://www.siemensstadt-tours.de/rayban-gafas-de-sol-rayban-round-flat-lenses-skrpxp.html"><img alt="Ray-Ban Gafas de sol Ray-Ban Round Flat Lenses SkRPxp" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/siemensstadttoursde/rayban-gafas-de-sol-rayban-round-flat-lenses-skrpxp-4440.jpg" title="Ray-Ban Gafas de sol Ray-Ban Round Flat Lenses SkRPxp"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.siemensstadt-tours.de/dulzamara-bikini-sea-meadow-mt2u1u.html">Dulzamara Bikini sea meadow mT2U1u</a></h4></div>
+<div class="name"><h4><a href="http://www.siemensstadt-tours.de/rayban-gafas-de-sol-rayban-round-flat-lenses-skrpxp.html">Ray-Ban Gafas de sol Ray-Ban Round Flat Lenses SkRPxp</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€44.99</span> <span class="price-old">€120.99</span>
+<span class="price-new">€35.99</span> <span class="price-old">€98.99</span>
 </p>
 </div>
 </div>
@@ -581,14 +581,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.siemensstadt-tours.de/invicta-reloj-hombre-invicta-23867-fbwqqq.html"><img alt="Invicta Reloj Hombre Invicta 23867 FbWQQQ" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/siemensstadttoursde/invicta-reloj-hombre-invicta-23867-fbwqqq-1287.jpg" title="Invicta Reloj Hombre Invicta 23867 FbWQQQ"/></a>
+<a class="arevision" href="http://www.siemensstadt-tours.de/basement-sweater-hombre-basement-paixjh.html"><img alt="Basement Sweater Hombre Basement PaIXJh" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/siemensstadttoursde/basement-sweater-hombre-basement-paixjh-135.jpg" title="Basement Sweater Hombre Basement PaIXJh"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.siemensstadt-tours.de/invicta-reloj-hombre-invicta-23867-fbwqqq.html">Invicta Reloj Hombre Invicta 23867 FbWQQQ</a></h4></div>
+<div class="name"><h4><a href="http://www.siemensstadt-tours.de/basement-sweater-hombre-basement-paixjh.html">Basement Sweater Hombre Basement PaIXJh</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€44.99</span> <span class="price-old">€133.99</span>
+<span class="price-new">€44.99</span> <span class="price-old">€147.99</span>
 </p>
 </div>
 </div>
@@ -597,14 +597,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.siemensstadt-tours.de/adidas-originals-tenis-adidas-originals-mujer-moda-continental-vulc-jnp3bg.html"><img alt="Adidas Originals Tenis Adidas Originals Mujer Moda Continental Vulc JNP3bG" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/siemensstadttoursde/adidas-originals-tenis-adidas-originals-mujer-moda-continental-vulc-jnp3bg-1201.jpg" title="Adidas Originals Tenis Adidas Originals Mujer Moda Continental Vulc JNP3bG"/></a>
+<a class="arevision" href="http://www.siemensstadt-tours.de/university-club-chaqueta-hombre-university-club-uiaskg.html"><img alt="University Club Chaqueta Hombre University Club UIaSKG" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/siemensstadttoursde/university-club-chaqueta-hombre-university-club-uiaskg-1320.jpg" title="University Club Chaqueta Hombre University Club UIaSKG"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.siemensstadt-tours.de/adidas-originals-tenis-adidas-originals-mujer-moda-continental-vulc-jnp3bg.html">Adidas Originals Tenis Adidas Originals Mujer Moda Continental Vulc JNP3bG</a></h4></div>
+<div class="name"><h4><a href="http://www.siemensstadt-tours.de/university-club-chaqueta-hombre-university-club-uiaskg.html">University Club Chaqueta Hombre University Club UIaSKG</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€45.99</span> <span class="price-old">€142.99</span>
+<span class="price-new">€45.99</span> <span class="price-old">€127.99</span>
 </p>
 </div>
 </div>
@@ -613,14 +613,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.siemensstadt-tours.de/fila-tenis-fila-hombre-moda-disruptor-ii-fhhb9j.html"><img alt="Fila Tenis Fila Hombre Moda Disruptor Ii Fhhb9j" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/siemensstadttoursde/fila-tenis-fila-hombre-moda-disruptor-ii-fhhb9j-1911.jpg" title="Fila Tenis Fila Hombre Moda Disruptor Ii Fhhb9j"/></a>
+<a class="arevision" href="http://www.siemensstadt-tours.de/san-polos-bota-casual-3359-udzbet.html"><img alt="San Polos Bota casual 3359 udzBet" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/siemensstadttoursde/san-polos-bota-casual-3359-udzbet-3591.jpg" title="San Polos Bota casual 3359 udzBet"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.siemensstadt-tours.de/fila-tenis-fila-hombre-moda-disruptor-ii-fhhb9j.html">Fila Tenis Fila Hombre Moda Disruptor Ii Fhhb9j</a></h4></div>
+<div class="name"><h4><a href="http://www.siemensstadt-tours.de/san-polos-bota-casual-3359-udzbet.html">San Polos Bota casual 3359 udzBet</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€44.99</span> <span class="price-old">€145.99</span>
+<span class="price-new">€45.99</span> <span class="price-old">€131.99</span>
 </p>
 </div>
 </div>
@@ -629,14 +629,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.siemensstadt-tours.de/croydon-zapatos-casuales-ba18026-ekr0q1.html"><img alt="Croydon Zapatos casuales BA18026 EKr0Q1" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/siemensstadttoursde/croydon-zapatos-casuales-ba18026-ekr0q1-751.jpg" title="Croydon Zapatos casuales BA18026 EKr0Q1"/></a>
+<a class="arevision" href="http://www.siemensstadt-tours.de/newboat-sweater-hombre-newboat-uzk6av.html"><img alt="Newboat Sweater Hombre Newboat uZK6Av" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/siemensstadttoursde/newboat-sweater-hombre-newboat-uzk6av-2766.jpg" title="Newboat Sweater Hombre Newboat uZK6Av"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.siemensstadt-tours.de/croydon-zapatos-casuales-ba18026-ekr0q1.html">Croydon Zapatos casuales BA18026 EKr0Q1</a></h4></div>
+<div class="name"><h4><a href="http://www.siemensstadt-tours.de/newboat-sweater-hombre-newboat-uzk6av.html">Newboat Sweater Hombre Newboat uZK6Av</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€46.99</span> <span class="price-old">€133.99</span>
+<span class="price-new">€45.99</span> <span class="price-old">€119.99</span>
 </p>
 </div>
 </div>
@@ -672,43 +672,43 @@ $(document).ready(function() {
 <div id="powered">
 <div class="container">
 <div class="row">
-<div class="col-sm-12 col-md-12">
-      Copyright © 2022 <a href="//www.siemensstadt-tours.de" target="_blank">www.siemensstadt-tours.de</a> All Rights Reserved  
+<div class="col-sm-12 col-md-12">
+      Copyright © 2022 <a href="//www.siemensstadt-tours.de" target="_blank">www.siemensstadt-tours.de</a> All Rights Reserved  
       </div>
 </div>
 </div>
 </div>
 </footer>
 <script src="catalog/view/theme/valley/js/jquery.visible.min.js" type="text/javascript"></script>
-<script type="text/javascript">
-
-var win = $(window);
-
-var allMods = $("footer");
-
-allMods.each(function(i, el) {
-    
-  if ($(el).visible(true)) {
-    $(el).addClass("already-visible"); 
-  }
-  
-});
-
-win.scroll(function(event) {
-  
-  allMods.each(function(i, el) {
-    
-    var el = $(el);
-    
-    if (el.visible(true)) {
-      el.addClass("come-in"); 
-    } else {
-      el.removeClass("come-in already-visible");
-    }
-    
-  });
-  
-}); 
+<script type="text/javascript">
+
+var win = $(window);
+
+var allMods = $("footer");
+
+allMods.each(function(i, el) {
+    
+  if ($(el).visible(true)) {
+    $(el).addClass("already-visible"); 
+  }
+  
+});
+
+win.scroll(function(event) {
+  
+  allMods.each(function(i, el) {
+    
+    var el = $(el);
+    
+    if (el.visible(true)) {
+      el.addClass("come-in"); 
+    } else {
+      el.removeClass("come-in already-visible");
+    }
+    
+  });
+  
+}); 
 </script>
 <script src="catalog/view/theme/valley/js/jquery.easing-1.3.min.js" type="text/javascript"></script>
 <link href="catalog/view/theme/valley/js/quickview/fancybox/jquery.fancybox.css" property="stylesheet" rel="stylesheet">

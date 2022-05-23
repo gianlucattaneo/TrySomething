@@ -104,13 +104,13 @@ Shopify.routes.root = "/";</script>
     window.addEventListener('load', asyncLoad, false);
   }
 })();</script>
-<script id="__st">var __st={"a":28078986,"offset":-14400,"reqid":"1baa395a-7427-4b47-94f4-7abd9bee55fb","pageurl":"designeroptics.com\/","u":"9b23a996abc0","p":"home"};</script>
+<script id="__st">var __st={"a":28078986,"offset":-14400,"reqid":"b9e0784f-7a8a-42ac-85a3-b00d5d6cbd7e","pageurl":"designeroptics.com\/","u":"4edaeb0b4df7","p":"home"};</script>
 <script>window.ShopifyPaypalV4VisibilityTracking = true;</script>
 <script>!function(o){o.addEventListener("DOMContentLoaded",function(){window.Shopify=window.Shopify||{},window.Shopify.recaptchaV3=window.Shopify.recaptchaV3||{siteKey:"6LcCR2cUAAAAANS1Gpq_mDIJ2pQuJphsSQaUEuc9"};var t=['form[action*="/contact"] input[name="form_type"][value="contact"]','form[action*="/comments"] input[name="form_type"][value="new_comment"]','form[action*="/account"] input[name="form_type"][value="customer_login"]','form[action*="/account"] input[name="form_type"][value="recover_customer_password"]','form[action*="/account"] input[name="form_type"][value="create_customer"]','form[action*="/contact"] input[name="form_type"][value="customer"]'].join(",");function n(e){e=e.target;null==e||null!=(e=function e(t,n){if(null==t.parentElement)return null;if("FORM"!=t.parentElement.tagName)return e(t.parentElement,n);for(var o=t.parentElement.action,r=0;r<n.length;r++)if(-1!==o.indexOf(n[r]))return t.parentElement;return null}(e,["/contact","/comments","/account"]))&&null!=e.querySelector(t)&&((e=o.createElement("script")).setAttribute("src","https://cdn.shopify.com/shopifycloud/storefront-recaptcha-v3/v0.6/index.js"),o.body.appendChild(e),o.removeEventListener("focus",n,!0),o.removeEventListener("change",n,!0),o.removeEventListener("click",n,!0))}o.addEventListener("click",n,!0),o.addEventListener("change",n,!0),o.addEventListener("focus",n,!0)})}(document);</script>
 <script crossorigin="anonymous" data-source-attribution="shopify.loadfeatures" defer="defer" integrity="sha256-N6F6ZjvOAMPhcD0kfZWNQQgx6eXaxFfh6aqfN0geLrU=" src="//cdn.shopify.com/shopifycloud/shopify/assets/storefront/load_feature-37a17a663bce00c3e1703d247d958d410831e9e5dac457e1e9aa9f37481e2eb5.js"></script>
 <script crossorigin="anonymous" data-source-attribution="shopify.dynamic-checkout" defer="defer" integrity="sha256-h+g5mYiIAULyxidxudjy/2wpCz/3Rd1CbrDf4NudHa4=" src="//cdn.shopify.com/shopifycloud/shopify/assets/storefront/features-87e8399988880142f2c62771b9d8f2ff6c290b3ff745dd426eb0dfe0db9d1dae.js"></script>
-<link href="//cdn.shopify.com/s/files/1/2807/8986/t/144/compiled_assets/styles.css?31779" media="screen" rel="stylesheet"/>
-<script data-sections="rb-shop-by" defer="defer" id="sections-script" src="//cdn.shopify.com/s/files/1/2807/8986/t/144/compiled_assets/scripts.js?31779"></script>
+<link href="//cdn.shopify.com/s/files/1/2807/8986/t/144/compiled_assets/styles.css?31912" media="screen" rel="stylesheet"/>
+<script data-sections="rb-shop-by" defer="defer" id="sections-script" src="//cdn.shopify.com/s/files/1/2807/8986/t/144/compiled_assets/scripts.js?31912"></script>
 <style id="shopify-dynamic-checkout-cart">@media screen and (min-width: 750px) {
   #dynamic-checkout-cart {
     min-height: 50px;
@@ -710,164 +710,164 @@ html {
       }
     </script>
 <!-- Cart Page Shipping Insurance adding issue fix end -->
-<script>
-
-    if (!Array.prototype.find) {
-        Object.defineProperty(Array.prototype, 'find', {
-            value: function (predicate) {
-                if (this == null) {
-                    throw TypeError('"this" is null or not defined');
-                }
-
-                var o = Object(this);
-
-                var len = o.length >>> 0;
-
-                if (typeof predicate !== 'function') {
-                    throw TypeError('predicate must be a function');
-                }
-
-                var thisArg = arguments[1];
-
-                var k = 0;
-
-                while (k < len) {
-                    var kValue = o[k];
-                    if (predicate.call(thisArg, kValue, k, o)) {
-                        return kValue;
-                    }
-                    k++;
-                }
-
-                return undefined;
-            },
-            configurable: true,
-            writable: true
-        });
-    }
-
-    if (typeof window.TranslationLab === 'undefined') {
-        window.TranslationLab = {};
-    }
-
-    if (typeof TranslationLab.Helpers === 'undefined') {
-        TranslationLab.Helpers = {};
-    }
-
-    TranslationLab.Helpers.getSavedLocale = function (langList) {
-        var savedLocale = localStorage.getItem('translation-lab-lang');
-        var sl = savedLocale ? langList.find(x => x.iso_code.toLowerCase() === savedLocale.toLowerCase()) : null;
-        return sl ? sl.iso_code : null;
-    }
-
-    TranslationLab.Helpers.getBrowserLocale = function (langList) {
-        var browserLocale = navigator.language;
-        if (browserLocale) {
-            var localeParts = browserLocale.split('-');
-            var bl = localeParts[0] ? langList.find(x => x.iso_code.toLowerCase().startsWith(localeParts[0])) : null;
-            return bl ? bl.iso_code : null;
-        } else {
-            return null;
-        }
-    }
-
-    TranslationLab.Helpers.buildRedirectUrl = function (redirectLanguage, currentLocale, shopDomain, useInternationalDomains) {
-
-        if (!redirectLanguage)
-            return null;
-
-        if (!currentLocale)
-            return null;
-
-        var redirectLocaleLower = redirectLanguage.iso_code.toLowerCase();
-        var currentLocaleLower = currentLocale.toLowerCase();
-
-        if (currentLocaleLower === redirectLocaleLower)
-            return null;
-
-        var pathnameWithLocale = window.location.pathname;
-        var queryString = window.location.search || '';
-
-        var currentLocaleRegEx = new RegExp('^\/' + currentLocaleLower, "ig");
-        var pathname = pathnameWithLocale.replace(currentLocaleRegEx, '');
-
-        if (useInternationalDomains)
-            return 'https://' + redirectLanguage.domain + pathname + queryString;
-
-        if (redirectLanguage.root_url === '/')
-            return 'https://' + shopDomain + pathname + queryString;
-
-        return 'https://' + shopDomain + redirectLanguage.root_url + pathname + queryString;
-    }
-
-    if (typeof TranslationLab.BrowserLanguageDetection === 'undefined') {
-        TranslationLab.BrowserLanguageDetection = {};
-    }
-
-    TranslationLab.BrowserLanguageDetection.configure = function (currentLocale, shopDomain, useInternationalDomains, languageList) {
-
-        function getRedirectLanguage(languageList) {
-            var savedLocale = TranslationLab.Helpers.getSavedLocale(languageList);
-            var browserLocale = TranslationLab.Helpers.getBrowserLocale(languageList);
-            var preferredLocale = null;
-
-            var redirectLocale = null;
-
-            if (savedLocale) {
-                redirectLocale = savedLocale;
-            } else if (preferredLocale) {
-                redirectLocale = preferredLocale;
-            } else if (browserLocale) {
-                redirectLocale = browserLocale;
-            }
-
-            if (!redirectLocale)
-                return null;
-
-            return languageList.find(function (x) { return x.iso_code.toLowerCase() === redirectLocale.toLowerCase(); });
-        }
-
-        if (window.Shopify && window.Shopify.designMode)
-            return;
-
-        var botPatterns = "(bot|Googlebot\/|Googlebot-Mobile|Googlebot-Image|Googlebot-News|Googlebot-Video|AdsBot-Google([^-]|$)|AdsBot-Google-Mobile|Feedfetcher-Google|Mediapartners-Google|APIs-Google|Page|Speed|Insights|Lighthouse|bingbot|Slurp|exabot|ia_archiver|YandexBot|YandexImages|YandexAccessibilityBot|YandexMobileBot|YandexMetrika|YandexTurbo|YandexImageResizer|YandexVideo|YandexAdNet|YandexBlogs|YandexCalendar|YandexDirect|YandexFavicons|YaDirectFetcher|YandexForDomain|YandexMarket|YandexMedia|YandexMobileScreenShotBot|YandexNews|YandexOntoDB|YandexPagechecker|YandexPartner|YandexRCA|YandexSearchShop|YandexSitelinks|YandexSpravBot|YandexTracker|YandexVertis|YandexVerticals|YandexWebmaster|YandexScreenshotBot|Baiduspider|facebookexternalhit|Sogou|DuckDuckBot|BUbiNG|crawler4j|S[eE][mM]rushBot|Google-Adwords-Instant|BingPreview\/|Bark[rR]owler|DuckDuckGo-Favicons-Bot|AppEngine-Google|Google Web Preview|acapbot|Baidu-YunGuanCe|Feedly|Feedspot|google-xrawler|Google-Structured-Data-Testing-Tool|Google-PhysicalWeb|Google Favicon|Google-Site-Verification|Gwene|SentiBot|FreshRSS)";
-        var userAgentRegex = new RegExp(botPatterns, 'i');
-        if (userAgentRegex.test(navigator.userAgent))
-            return;
-
-        var redirectLanguage = getRedirectLanguage(languageList);
-
-        var redirectUrl = TranslationLab.Helpers.buildRedirectUrl(redirectLanguage, currentLocale, shopDomain, useInternationalDomains);
-
-        redirectUrl && window.location.assign(redirectUrl);
-    }
-
+<script>
+
+    if (!Array.prototype.find) {
+        Object.defineProperty(Array.prototype, 'find', {
+            value: function (predicate) {
+                if (this == null) {
+                    throw TypeError('"this" is null or not defined');
+                }
+
+                var o = Object(this);
+
+                var len = o.length >>> 0;
+
+                if (typeof predicate !== 'function') {
+                    throw TypeError('predicate must be a function');
+                }
+
+                var thisArg = arguments[1];
+
+                var k = 0;
+
+                while (k < len) {
+                    var kValue = o[k];
+                    if (predicate.call(thisArg, kValue, k, o)) {
+                        return kValue;
+                    }
+                    k++;
+                }
+
+                return undefined;
+            },
+            configurable: true,
+            writable: true
+        });
+    }
+
+    if (typeof window.TranslationLab === 'undefined') {
+        window.TranslationLab = {};
+    }
+
+    if (typeof TranslationLab.Helpers === 'undefined') {
+        TranslationLab.Helpers = {};
+    }
+
+    TranslationLab.Helpers.getSavedLocale = function (langList) {
+        var savedLocale = localStorage.getItem('translation-lab-lang');
+        var sl = savedLocale ? langList.find(x => x.iso_code.toLowerCase() === savedLocale.toLowerCase()) : null;
+        return sl ? sl.iso_code : null;
+    }
+
+    TranslationLab.Helpers.getBrowserLocale = function (langList) {
+        var browserLocale = navigator.language;
+        if (browserLocale) {
+            var localeParts = browserLocale.split('-');
+            var bl = localeParts[0] ? langList.find(x => x.iso_code.toLowerCase().startsWith(localeParts[0])) : null;
+            return bl ? bl.iso_code : null;
+        } else {
+            return null;
+        }
+    }
+
+    TranslationLab.Helpers.buildRedirectUrl = function (redirectLanguage, currentLocale, shopDomain, useInternationalDomains) {
+
+        if (!redirectLanguage)
+            return null;
+
+        if (!currentLocale)
+            return null;
+
+        var redirectLocaleLower = redirectLanguage.iso_code.toLowerCase();
+        var currentLocaleLower = currentLocale.toLowerCase();
+
+        if (currentLocaleLower === redirectLocaleLower)
+            return null;
+
+        var pathnameWithLocale = window.location.pathname;
+        var queryString = window.location.search || '';
+
+        var currentLocaleRegEx = new RegExp('^\/' + currentLocaleLower, "ig");
+        var pathname = pathnameWithLocale.replace(currentLocaleRegEx, '');
+
+        if (useInternationalDomains)
+            return 'https://' + redirectLanguage.domain + pathname + queryString;
+
+        if (redirectLanguage.root_url === '/')
+            return 'https://' + shopDomain + pathname + queryString;
+
+        return 'https://' + shopDomain + redirectLanguage.root_url + pathname + queryString;
+    }
+
+    if (typeof TranslationLab.BrowserLanguageDetection === 'undefined') {
+        TranslationLab.BrowserLanguageDetection = {};
+    }
+
+    TranslationLab.BrowserLanguageDetection.configure = function (currentLocale, shopDomain, useInternationalDomains, languageList) {
+
+        function getRedirectLanguage(languageList) {
+            var savedLocale = TranslationLab.Helpers.getSavedLocale(languageList);
+            var browserLocale = TranslationLab.Helpers.getBrowserLocale(languageList);
+            var preferredLocale = null;
+
+            var redirectLocale = null;
+
+            if (savedLocale) {
+                redirectLocale = savedLocale;
+            } else if (preferredLocale) {
+                redirectLocale = preferredLocale;
+            } else if (browserLocale) {
+                redirectLocale = browserLocale;
+            }
+
+            if (!redirectLocale)
+                return null;
+
+            return languageList.find(function (x) { return x.iso_code.toLowerCase() === redirectLocale.toLowerCase(); });
+        }
+
+        if (window.Shopify && window.Shopify.designMode)
+            return;
+
+        var botPatterns = "(bot|Googlebot\/|Googlebot-Mobile|Googlebot-Image|Googlebot-News|Googlebot-Video|AdsBot-Google([^-]|$)|AdsBot-Google-Mobile|Feedfetcher-Google|Mediapartners-Google|APIs-Google|Page|Speed|Insights|Lighthouse|bingbot|Slurp|exabot|ia_archiver|YandexBot|YandexImages|YandexAccessibilityBot|YandexMobileBot|YandexMetrika|YandexTurbo|YandexImageResizer|YandexVideo|YandexAdNet|YandexBlogs|YandexCalendar|YandexDirect|YandexFavicons|YaDirectFetcher|YandexForDomain|YandexMarket|YandexMedia|YandexMobileScreenShotBot|YandexNews|YandexOntoDB|YandexPagechecker|YandexPartner|YandexRCA|YandexSearchShop|YandexSitelinks|YandexSpravBot|YandexTracker|YandexVertis|YandexVerticals|YandexWebmaster|YandexScreenshotBot|Baiduspider|facebookexternalhit|Sogou|DuckDuckBot|BUbiNG|crawler4j|S[eE][mM]rushBot|Google-Adwords-Instant|BingPreview\/|Bark[rR]owler|DuckDuckGo-Favicons-Bot|AppEngine-Google|Google Web Preview|acapbot|Baidu-YunGuanCe|Feedly|Feedspot|google-xrawler|Google-Structured-Data-Testing-Tool|Google-PhysicalWeb|Google Favicon|Google-Site-Verification|Gwene|SentiBot|FreshRSS)";
+        var userAgentRegex = new RegExp(botPatterns, 'i');
+        if (userAgentRegex.test(navigator.userAgent))
+            return;
+
+        var redirectLanguage = getRedirectLanguage(languageList);
+
+        var redirectUrl = TranslationLab.Helpers.buildRedirectUrl(redirectLanguage, currentLocale, shopDomain, useInternationalDomains);
+
+        redirectUrl && window.location.assign(redirectUrl);
+    }
+
 </script>
-<script>
-    (function () {
-
-        var useInternationalDomains = false;
-
-        var shopDomain = window.Shopify && window.Shopify.designMode
-            ? 'designeroptics-com.myshopify.com'
-            : 'designeroptics.com';
-
-        var currentLocale = 'en';
-
-        var languageListJson = '[{\
-"name": "English",\
-"endonym_name": "English",\
-"iso_code": "en",\
-"primary": true,\
-"flag": "//cdn.shopify.com/s/files/1/2807/8986/t/144/assets/en.png?31779",\
-"domain": null,\
-"root_url": "\/"\
-}]';
-        var languageList = JSON.parse(languageListJson);
-
-        TranslationLab.BrowserLanguageDetection.configure(currentLocale, shopDomain, useInternationalDomains, languageList);
-
-    })();
+<script>
+    (function () {
+
+        var useInternationalDomains = false;
+
+        var shopDomain = window.Shopify && window.Shopify.designMode
+            ? 'designeroptics-com.myshopify.com'
+            : 'designeroptics.com';
+
+        var currentLocale = 'en';
+
+        var languageListJson = '[{\
+"name": "English",\
+"endonym_name": "English",\
+"iso_code": "en",\
+"primary": true,\
+"flag": "//cdn.shopify.com/s/files/1/2807/8986/t/144/assets/en.png?31912",\
+"domain": null,\
+"root_url": "\/"\
+}]';
+        var languageList = JSON.parse(languageListJson);
+
+        TranslationLab.BrowserLanguageDetection.configure(currentLocale, shopDomain, useInternationalDomains, languageList);
+
+    })();
 </script>
 <!-- BEGIN app block: shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507 -->
 <script async="" src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=V75pxh"></script>
@@ -1016,7 +1016,7 @@ for (var attr in meta) {
     first.parentNode.insertBefore(script, first);
   };
   trekkie.load(
-    {"Trekkie":{"appName":"storefront","development":false,"defaultAttributes":{"shopId":28078986,"isMerchantRequest":null,"themeId":127772950677,"themeCityHash":"16023586832191512022","contentLanguage":"en","currency":"USD"},"isServerSideCookieWritingEnabled":true},"Google Analytics":{"trackingId":"UA-30401200-5","domain":"auto","siteSpeedSampleRate":"10","enhancedEcommerce":true,"doubleClick":true,"includeSearch":true},"Facebook Pixel":{"pixelIds":["1495659110724135"],"agent":"plshopify1.2"},"Session Attribution":{},"S2S":{"emitV4CheckoutEvent":true,"facebookCapiEnabled":true,"facebookAppPixelId":"1495659110724135","source":"trekkie-storefront-renderer"}}
+    {"Trekkie":{"appName":"storefront","development":false,"defaultAttributes":{"shopId":28078986,"isMerchantRequest":null,"themeId":127772950677,"themeCityHash":"5455717675518395660","contentLanguage":"en","currency":"USD"},"isServerSideCookieWritingEnabled":true},"Google Analytics":{"trackingId":"UA-30401200-5","domain":"auto","siteSpeedSampleRate":"10","enhancedEcommerce":true,"doubleClick":true,"includeSearch":true},"Facebook Pixel":{"pixelIds":["1495659110724135"],"agent":"plshopify1.2"},"Session Attribution":{},"S2S":{"emitV4CheckoutEvent":true,"facebookCapiEnabled":true,"facebookAppPixelId":"1495659110724135","source":"trekkie-storefront-renderer"}}
   );
 
   var loaded = false;
@@ -4807,8 +4807,8 @@ var SOCIAL_LOGIN_CUSTOMER_LOGGED_IN = false;
       money_format: '<span class="money">&#36;{{amount}}</span>'
     },
     general: {
-      file_url: "//cdn.shopify.com/s/files/1/2807/8986/files/?31779",
-      asset_url: "//cdn.shopify.com/s/files/1/2807/8986/t/144/assets/boost-pfs.js?31779",
+      file_url: "//cdn.shopify.com/s/files/1/2807/8986/files/?31912",
+      asset_url: "//cdn.shopify.com/s/files/1/2807/8986/t/144/assets/boost-pfs.js?31912",
       collection_id: 0,
       collection_handle: "",
       
@@ -4885,8 +4885,8 @@ var SOCIAL_LOGIN_CUSTOMER_LOGGED_IN = false;
     "url": "https://designeroptics.com",
     "description": "Shop Designer Sunglasses and Designer Eyeglasses, Prescription Sunglasses and Prescription Eyeglasses, Readers, Protective Glasses, Contact Lenses, Some of the brands we carry Ray Ban Eyeglasses and sunglasses, Prada, Gucci, Versace Sunglasses, Costa Del Mar, Burberry Eyewear, Michael Kors, Tiffany, and many more,",
     "telephone": "718-412-0407",
-    "logo": "https:\/\/cdn.shopify.com\/s\/files\/1\/2807\/8986\/t\/144\/assets\/logo_small.png?31779",
-    "image": "https:\/\/cdn.shopify.com\/s\/files\/1\/2807\/8986\/t\/144\/assets\/logo_small.png?31779",
+    "logo": "https:\/\/cdn.shopify.com\/s\/files\/1\/2807\/8986\/t\/144\/assets\/logo_small.png?31912",
+    "image": "https:\/\/cdn.shopify.com\/s\/files\/1\/2807\/8986\/t\/144\/assets\/logo_small.png?31912",
     "sameAs": ["https:\/\/www.facebook.com\/DesignerOpticscom","https:\/\/www.pinterest.com\/designeroptics\/designer-optics","https:\/\/www.instagram.com\/designer_optics","http:\/\/www.youtube.com\/c\/designeroptics1","https:\/\/twitter.com\/DesignerOptics1"],
     "address": {
         "@type": "PostalAddress",
@@ -4929,5 +4929,7 @@ var SOCIAL_LOGIN_CUSTOMER_LOGGED_IN = false;
 		} } }
 		window.onload = initImgDefer;
 	</script>
+<!--Gorgias Chat Widget Start--><script id="gorgias-chat-widget-install-v2" src="https://config.gorgias.chat/gorgias-chat-bundle-loader.js?applicationId=154"></script>
+<script id="gorgias-chat-shopify-install">!function(_){_.SHOPIFY_PERMANENT_DOMAIN="designeroptics-com.myshopify.com",_.SHOPIFY_CUSTOMER_ID="",_.SHOPIFY_CUSTOMER_EMAIL=""}(window||{});</script><!--Gorgias Chat Widget End-->
 </body>
 </html>

@@ -29,18 +29,18 @@
 <link href="/css/fontello.css" rel="stylesheet"/>
 <!-- Favicon and touch icons  -->
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-<!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
-<script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?df6c64d2fdea9b1bd51656013bd4549e";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?df6c64d2fdea9b1bd51656013bd4549e";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
 </script>
 </link></link></meta></head>
 <body>
@@ -389,36 +389,36 @@ var _hmt = _hmt || [];
 <!-- Content Main -->
 <div class="main-content">
 <div>
-<style type="text/css">
-    .wel-blk h5 {
-        content: '';
-        position: absolute;
-        left: 0px;
-        top: 0px;
-        right: 0px;
-        width: 12px;
-        height: 12px;
-        /* background: #ee3334; */
-        margin: auto;
-        border-radius: 100%;
-        border: 2px solid #fff;
-    }
-
-    .produceHead ul {
-        list-style: none;
-        /*float: left;*/
-        width: 100%;
-        /*padding: 10px;*/
-    }
-
-    .produceHead li {
-        display: inline-block;
-        padding: 8px 10px;
-    }
-
-        .produceHead li a {
-            color: red;
-        }
+<style type="text/css">
+    .wel-blk h5 {
+        content: '';
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        right: 0px;
+        width: 12px;
+        height: 12px;
+        /* background: #ee3334; */
+        margin: auto;
+        border-radius: 100%;
+        border: 2px solid #fff;
+    }
+
+    .produceHead ul {
+        list-style: none;
+        /*float: left;*/
+        width: 100%;
+        /*padding: 10px;*/
+    }
+
+    .produceHead li {
+        display: inline-block;
+        padding: 8px 10px;
+    }
+
+        .produceHead li a {
+            color: red;
+        }
 </style>
 <!-- Banner -->
 <section class="banner-wrapper">
@@ -1654,10 +1654,10 @@ var _hmt = _hmt || [];
 </div>
 </section>
 <script src="/js/jquery.min.js"></script>
-<script type="text/javascript">
-    var bannerCarousel = function () {
+<script type="text/javascript">
+    var bannerCarousel = function () {
         var owl = $('#owl-banner');
-        owl.owlCarousel({
+        owl.owlCarousel({
             loop: true,
             items: 1,
             nav: true,
@@ -1666,14 +1666,14 @@ var _hmt = _hmt || [];
             autoplayTimeOut: 5000, //5sec
             navText: ['<i class="icon-left-chevron"></i>', '<i class="icon-right-chevron"></i>'], //we will be using font awesome icon here
             responsiveClass: true,
-            responsive: {
-                0: {
-                    nav: false
+            responsive: {
+                0: {
+                    nav: false
                 },
-                768: {
-                    nav: true
-                },
-            }
+                768: {
+                    nav: true
+                },
+            }
         });
 
         owl.on("changed.owl.carousel", function (event) {
@@ -1687,13 +1687,13 @@ var _hmt = _hmt || [];
             $('p').removeClass('animated fadeInUp');
             $('.owl-item').not('.cloned').eq(item).find('p').addClass('animated fadeInUp');
             $('.sp-btn').removeClass('animated flipInX');
-            $('.owl-item').not('.cloned').eq(item).find('.sp-btn').addClass('animated flipInX');
-        });
-    };
-
-    $(function () {
-        bannerCarousel();
-    })
+            $('.owl-item').not('.cloned').eq(item).find('.sp-btn').addClass('animated flipInX');
+        });
+    };
+
+    $(function () {
+        bannerCarousel();
+    })
 </script>
 </div>
 <!-- Footer area -->
@@ -1706,9 +1706,9 @@ var _hmt = _hmt || [];
 <a href="/">
 <img src="/Images/logo2.png"/></a>
 </div>
-<p>
-                                Copyright © 2018 by 名潮網<br/>
-                                All Rights Reserved.
+<p>
+                                Copyright © 2018 by 名潮網<br/>
+                                All Rights Reserved.
                             </p>
 </div>
 <div class="col-12 col-md-12 col-lg-9">
@@ -1779,41 +1779,41 @@ var _hmt = _hmt || [];
 <script src="/js/jquery-ui.js"></script>
 <!-- custom sripts -->
 <script src="/js/custom.js"></script>
-<script type="text/javascript">
-
-        function LayoutDelete(id, obj) {
-            $.post('/MyHome/DeleteCart', { id: id }, function (result) {
-                if (result) {
-                    //$(obj).parent().parent().remove();
-                    window.location.reload();
-                }
-            })
-        }
-
-        $(function () {
-            $("#dropdownMenu2").click(function () {
-                $("#carttoggle").hide();
-                $(".search-container").find(".icon-close").attr("class", "icon-search")
-                $(".search-content").hide();
-            })
-
-            $("#dropdownMenu3").click(function () {
-                $("#top").hide();
-                $(".search-container").find(".icon-close").attr("class", "icon-search")
-                $(".search-content").hide();
-
-            })
-
-
-            $(".icon-search").click(function () {
-                $("#carttoggle").hide();
-                $("#top").hide();
-            })
-
-
-        })
-
-
+<script type="text/javascript">
+
+        function LayoutDelete(id, obj) {
+            $.post('/MyHome/DeleteCart', { id: id }, function (result) {
+                if (result) {
+                    //$(obj).parent().parent().remove();
+                    window.location.reload();
+                }
+            })
+        }
+
+        $(function () {
+            $("#dropdownMenu2").click(function () {
+                $("#carttoggle").hide();
+                $(".search-container").find(".icon-close").attr("class", "icon-search")
+                $(".search-content").hide();
+            })
+
+            $("#dropdownMenu3").click(function () {
+                $("#top").hide();
+                $(".search-container").find(".icon-close").attr("class", "icon-search")
+                $(".search-content").hide();
+
+            })
+
+
+            $(".icon-search").click(function () {
+                $("#carttoggle").hide();
+                $("#top").hide();
+            })
+
+
+        })
+
+
     </script>
 <div style="position: fixed; bottom: 0; display: none;">
 <script src="https://s13.cnzz.com/z_stat.php?id=1262159089&amp;web_id=1262159089" type="text/javascript"></script>

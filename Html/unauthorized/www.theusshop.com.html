@@ -113,39 +113,39 @@ fbq('track', 'PageView', {
 </script>
 <noscript><img height="1" src="https://www.facebook.com/tr?id=1204323969586815&amp;ev=PageView&amp;noscript=1&amp;cd[source]=magento&amp;cd[version]=1.9.3.7&amp;cd[pluginVersion]=2.3.1&amp;a=exmagento-1.9.3.7-2.3.1" style="display:none" width="1"/></noscript>
 <!-- End Facebook Pixel Code -->
-<script type="text/javascript">
-	jQuery(function($){
-		var scrolled = false;
-		$(window).scroll(function(){
-			    if(140<$(window).scrollTop() && !scrolled){
-                    if(!$('.header-container .menu-wrapper .mini-cart').length && !$('.header-container .menu-wrapper .sticky-logo').length){
-				    $('.header-container').addClass("sticky-header");
-				    var minicart = $('.header-container .mini-cart').html();
-				    $('.header-container .menu-wrapper').append('<div class="mini-cart">'+minicart+'</div>');
-                				    $('.header-container .header-wrapper > div').each(function(){
-					    if($(this).hasClass("container")){
-						    $(this).addClass("already");
-					    } else {
-						    $(this).addClass("container");
-					    }
-				    });
-				    scrolled = true;
-                    }
-			    }
-			    if(140>=$(window).scrollTop() && scrolled){
-				    $('.header-container').removeClass("sticky-header");
-				    $('.header-container .menu-wrapper .mini-cart').remove();
-                				    scrolled = false;
-				    $('.header-container .header-wrapper > div').each(function(){
-					    if($(this).hasClass("already")){
-						    $(this).removeClass("already");
-					    } else {
-						    $(this).removeClass("container");
-					    }
-				    });
-			    }
-		});
-	});
+<script type="text/javascript">
+	jQuery(function($){
+		var scrolled = false;
+		$(window).scroll(function(){
+			    if(140<$(window).scrollTop() && !scrolled){
+                    if(!$('.header-container .menu-wrapper .mini-cart').length && !$('.header-container .menu-wrapper .sticky-logo').length){
+				    $('.header-container').addClass("sticky-header");
+				    var minicart = $('.header-container .mini-cart').html();
+				    $('.header-container .menu-wrapper').append('<div class="mini-cart">'+minicart+'</div>');
+                				    $('.header-container .header-wrapper > div').each(function(){
+					    if($(this).hasClass("container")){
+						    $(this).addClass("already");
+					    } else {
+						    $(this).addClass("container");
+					    }
+				    });
+				    scrolled = true;
+                    }
+			    }
+			    if(140>=$(window).scrollTop() && scrolled){
+				    $('.header-container').removeClass("sticky-header");
+				    $('.header-container .menu-wrapper .mini-cart').remove();
+                				    scrolled = false;
+				    $('.header-container .header-wrapper > div').each(function(){
+					    if($(this).hasClass("already")){
+						    $(this).removeClass("already");
+					    } else {
+						    $(this).removeClass("container");
+					    }
+				    });
+			    }
+		});
+	});
 </script><script type="text/javascript">//<![CDATA[
         var Translator = new Translate({"Please select an option.":"\u0e01\u0e23\u0e38\u0e13\u0e32\u0e40\u0e25\u0e37\u0e2d\u0e01\u0e15\u0e31\u0e27\u0e40\u0e25\u0e37\u0e2d\u0e01.","This is a required field.":"\u0e1f\u0e34\u0e25\u0e14\u0e4c\u0e19\u0e35\u0e49\u0e08\u0e33\u0e40\u0e1b\u0e47\u0e19","Please enter a valid number in this field.":"\u0e01\u0e23\u0e38\u0e13\u0e32\u0e43\u0e2a\u0e48\u0e15\u0e31\u0e27\u0e40\u0e25\u0e02\u0e17\u0e35\u0e48\u0e16\u0e39\u0e01\u0e15\u0e49\u0e2d\u0e07\u0e43\u0e19\u0e1f\u0e34\u0e25\u0e14\u0e4c\u0e19\u0e35\u0e49","Please use only letters (a-z), numbers (0-9) or underscore(_) in this field, first character should be a letter.":"\u0e01\u0e23\u0e38\u0e13\u0e32\u0e43\u0e0a\u0e49\u0e40\u0e09\u0e1e\u0e32\u0e30\u0e15\u0e31\u0e27\u0e2d\u0e31\u0e01\u0e29\u0e23 (a-z), \u0e15\u0e31\u0e27\u0e40\u0e25\u0e02 (0-9) \u0e2b\u0e23\u0e37\u0e2d\u0e02\u0e35\u0e14\u0e25\u0e48\u0e32\u0e07 (_) \u0e43\u0e19\u0e1f\u0e34\u0e25\u0e14\u0e4c\u0e19\u0e35\u0e49 \u0e42\u0e14\u0e22\u0e15\u0e31\u0e27\u0e41\u0e23\u0e01\u0e2a\u0e38\u0e14\u0e08\u0e30\u0e15\u0e49\u0e2d\u0e07\u0e40\u0e1b\u0e47\u0e19\u0e15\u0e31\u0e27\u0e2d\u0e31\u0e01\u0e29\u0e23","Please enter a valid phone number. For example (123) 456-7890 or 123-456-7890.":"\u0e01\u0e23\u0e38\u0e13\u0e32\u0e43\u0e2a\u0e48\u0e2b\u0e21\u0e32\u0e22\u0e40\u0e25\u0e02\u0e42\u0e17\u0e23\u0e28\u0e31\u0e1e\u0e17\u0e4c\u0e17\u0e35\u0e48\u0e16\u0e39\u0e01\u0e15\u0e49\u0e2d\u0e07 \u0e15\u0e31\u0e27\u0e2d\u0e22\u0e48\u0e32\u0e07\u0e40\u0e0a\u0e48\u0e19 (123) 456-7890 \u0e2b\u0e23\u0e37\u0e2d 123-456-7890","Please enter a valid date.":"\u0e01\u0e23\u0e38\u0e13\u0e32\u0e43\u0e2a\u0e48\u0e27\u0e31\u0e19\u0e17\u0e35\u0e48\u0e17\u0e35\u0e48\u0e16\u0e39\u0e01\u0e15\u0e49\u0e2d\u0e07","Please enter a valid email address. For example johndoe@domain.com.":"\u0e01\u0e23\u0e38\u0e13\u0e32\u0e43\u0e2a\u0e48\u0e2d\u0e35\u0e40\u0e21\u0e25\u0e4c\u0e17\u0e35\u0e48\u0e16\u0e39\u0e01\u0e15\u0e49\u0e2d\u0e07 \u0e15\u0e31\u0e27\u0e2d\u0e22\u0e48\u0e32\u0e07\u0e40\u0e0a\u0e48\u0e19 johndoe@domain.com.","Please make sure your passwords match.":"\u0e42\u0e1b\u0e23\u0e14\u0e15\u0e23\u0e27\u0e08\u0e2a\u0e2d\u0e1a\u0e43\u0e2b\u0e49\u0e41\u0e19\u0e48\u0e43\u0e08\u0e27\u0e48\u0e32\u0e23\u0e2b\u0e31\u0e2a\u0e1c\u0e48\u0e32\u0e19\u0e02\u0e2d\u0e07\u0e04\u0e38\u0e13\u0e15\u0e23\u0e07\u0e01\u0e31\u0e19","Please enter a valid URL. For example http:\/\/www.example.com or www.example.com":"\u0e01\u0e23\u0e38\u0e13\u0e32\u0e43\u0e2a\u0e48 URL \u0e17\u0e35\u0e48\u0e16\u0e39\u0e01\u0e15\u0e49\u0e2d\u0e07 \u0e15\u0e31\u0e27\u0e2d\u0e22\u0e48\u0e32\u0e07\u0e40\u0e0a\u0e48\u0e19 http:\/\/www.example.com \u0e2b\u0e23\u0e37\u0e2d www.example.com","Please enter a valid social security number. For example 123-45-6789.":"\u0e01\u0e23\u0e38\u0e13\u0e32\u0e43\u0e2a\u0e48\u0e2b\u0e21\u0e32\u0e22\u0e40\u0e25\u0e02\u0e1b\u0e23\u0e30\u0e01\u0e31\u0e19\u0e2a\u0e31\u0e07\u0e04\u0e21\u0e17\u0e35\u0e48\u0e16\u0e39\u0e01\u0e15\u0e49\u0e2d\u0e07 \u0e15\u0e31\u0e27\u0e2d\u0e22\u0e48\u0e32\u0e07\u0e40\u0e0a\u0e48\u0e19 123-45-6789","Please enter a valid zip code. For example 90602 or 90602-1234.":"\u0e01\u0e23\u0e38\u0e13\u0e32\u0e43\u0e2a\u0e48\u0e23\u0e2b\u0e31\u0e2a\u0e44\u0e1b\u0e23\u0e29\u0e13\u0e35\u0e22\u0e4c\u0e17\u0e35\u0e48\u0e16\u0e39\u0e01\u0e15\u0e49\u0e2d\u0e07 \u0e15\u0e31\u0e27\u0e2d\u0e22\u0e48\u0e32\u0e07\u0e40\u0e0a\u0e48\u0e19 90602 \u0e2b\u0e23\u0e37\u0e2d 90602-1234","Please enter a valid zip code.":"\u0e01\u0e23\u0e38\u0e13\u0e32\u0e43\u0e2a\u0e48\u0e23\u0e2b\u0e31\u0e2a\u0e44\u0e1b\u0e23\u0e29\u0e13\u0e35\u0e22\u0e4c\u0e17\u0e35\u0e48\u0e16\u0e39\u0e01\u0e15\u0e49\u0e2d\u0e07","Please use this date format: dd\/mm\/yyyy. For example 17\/03\/2006 for the 17th of March, 2006.":"\u0e01\u0e23\u0e38\u0e13\u0e32\u0e43\u0e0a\u0e49\u0e23\u0e39\u0e1b\u0e41\u0e1a\u0e1a\u0e27\u0e31\u0e19\u0e17\u0e35\u0e48\u0e19\u0e35\u0e49: dd\/mm\/yyyy \u0e15\u0e31\u0e27\u0e2d\u0e22\u0e48\u0e32\u0e07\u0e40\u0e0a\u0e48\u0e19 17\/03\/2006 \u0e2a\u0e33\u0e2b\u0e23\u0e31\u0e1a\u0e27\u0e31\u0e19\u0e17\u0e35\u0e48 17 \u0e21\u0e35\u0e19\u0e32\u0e04\u0e21 2006","Please enter a valid $ amount. For example $100.00.":"\u0e01\u0e23\u0e38\u0e13\u0e32\u0e43\u0e2a\u0e48\u0e08\u0e33\u0e19\u0e27\u0e19\u0e40\u0e07\u0e34\u0e19 $ \u0e17\u0e35\u0e48\u0e16\u0e39\u0e01\u0e15\u0e49\u0e2d\u0e07 \u0e15\u0e31\u0e27\u0e2d\u0e22\u0e48\u0e32\u0e07\u0e40\u0e0a\u0e48\u0e19 $100.00","Please select one of the above options.":"\u0e01\u0e23\u0e38\u0e13\u0e32\u0e40\u0e25\u0e37\u0e2d\u0e01\u0e15\u0e31\u0e27\u0e40\u0e25\u0e37\u0e2d\u0e01\u0e43\u0e14\u0e15\u0e31\u0e27\u0e40\u0e25\u0e37\u0e2d\u0e01\u0e2b\u0e19\u0e36\u0e48\u0e07\u0e14\u0e49\u0e32\u0e19\u0e1a\u0e19","Please select one of the options.":"\u0e01\u0e23\u0e38\u0e13\u0e32\u0e40\u0e25\u0e37\u0e2d\u0e01\u0e15\u0e31\u0e27\u0e40\u0e25\u0e37\u0e2d\u0e01\u0e43\u0e14\u0e15\u0e31\u0e27\u0e40\u0e25\u0e37\u0e2d\u0e01\u0e2b\u0e19\u0e36\u0e48\u0e07","Please select State\/Province.":"\u0e01\u0e23\u0e38\u0e13\u0e32\u0e40\u0e25\u0e37\u0e2d\u0e01 \u0e23\u0e31\u0e10\/\u0e08\u0e31\u0e07\u0e2b\u0e27\u0e31\u0e14","Please enter a number greater than 0 in this field.":"\u0e01\u0e23\u0e38\u0e13\u0e32\u0e43\u0e2a\u0e48\u0e15\u0e31\u0e27\u0e40\u0e25\u0e02\u0e17\u0e35\u0e48\u0e04\u0e48\u0e32\u0e21\u0e32\u0e01\u0e01\u0e27\u0e48\u0e32 0 \u0e43\u0e19\u0e1f\u0e34\u0e25\u0e14\u0e4c\u0e19\u0e35\u0e49","Please enter a valid credit card number.":"\u0e01\u0e23\u0e38\u0e13\u0e32\u0e43\u0e2a\u0e48\u0e40\u0e25\u0e02\u0e1a\u0e31\u0e15\u0e23\u0e40\u0e04\u0e23\u0e14\u0e34\u0e15\u0e17\u0e35\u0e48\u0e16\u0e39\u0e01\u0e15\u0e49\u0e2d\u0e07","Please wait, loading...":"\u0e01\u0e33\u0e25\u0e31\u0e07\u0e42\u0e2b\u0e25\u0e14 \u0e42\u0e1b\u0e23\u0e14\u0e23\u0e2d\u0e2a\u0e31\u0e01\u0e04\u0e23\u0e39\u0e48...","Complete":"\u0e2a\u0e33\u0e40\u0e23\u0e47\u0e08","Add to Cart":"\u0e40\u0e1e\u0e34\u0e48\u0e21\u0e43\u0e19\u0e23\u0e16\u0e40\u0e02\u0e47\u0e19","In Stock":"\u0e1e\u0e23\u0e49\u0e2d\u0e21\u0e2a\u0e48\u0e07","Out of Stock":"\u0e2a\u0e34\u0e19\u0e04\u0e49\u0e32\u0e2b\u0e21\u0e14\u0e04\u0e25\u0e31\u0e07\u0e2a\u0e34\u0e19\u0e04\u0e49\u0e32"});
         //]]></script><meta content="Tdxv6KPgTFk8sf8rJrOR6HLRZ9pypRuaemUHvJNo-CM" name="google-site-verification"/>
@@ -353,15 +353,15 @@ if (typeof dailydealTimeCountersCategory == 'undefined') {
 </div>
 </div>
 </div>
-<script type="text/javascript">
-var SW_MENU_POPUP_WIDTH = 0;
-jQuery(function($){
-    $(document).ready(function(){
-        $('.main-nav .menu').et_menu({
-            type: "default",
-            delayTime: 0        });
-    });
-});
+<script type="text/javascript">
+var SW_MENU_POPUP_WIDTH = 0;
+jQuery(function($){
+    $(document).ready(function(){
+        $('.main-nav .menu').et_menu({
+            type: "default",
+            delayTime: 0        });
+    });
+});
 </script></div>
 <div class="mobile-nav side-block container">
 <div class="menu-all-pages-container">
@@ -419,13 +419,13 @@ jQuery(function($){
 <div class="owl-carousel owl-theme owl-middle-narrow owl-banner-carousel" id="banner-slider-demo-10">
 <div class="item"><a href="https://www.theusshop.com/watches/nixon" target="_self" title="นาฬิกา nixon"><img alt="nixon banner" data-height-amp="641" data-width-amp="1200" layout="responsive" src="https://www.theusshop.com/media/wysiwyg/porto/homepage/slider/10/nixon-banner.jpg"/></a></div>
 </div>
-<script type="text/javascript">// <![CDATA[
-jQuery(function($){
-        $("#banner-slider-demo-10").owlCarousel({autoPlay:true,lazyLoad:true,stopOnHover: true,pagination: false, autoPlay: true,navigation: true,navigationText:["<i class='icon-chevron-left'></i>","<i class='icon-chevron-right'></i>"],slideSpeed : 500,paginationSpeed : 500,singleItem:true,transitionStyle:"fade"});
-    });
+<script type="text/javascript">// <![CDATA[
+jQuery(function($){
+        $("#banner-slider-demo-10").owlCarousel({autoPlay:true,lazyLoad:true,stopOnHover: true,pagination: false, autoPlay: true,navigation: true,navigationText:["<i class='icon-chevron-left'></i>","<i class='icon-chevron-right'></i>"],slideSpeed : 500,paginationSpeed : 500,singleItem:true,transitionStyle:"fade"});
+    });
 // ]]></script>
-<style type="text/css"><!--
-.header-container .header-wrapper{margin-bottom:0 !important;}
+<style type="text/css"><!--
+.header-container .header-wrapper{margin-bottom:0 !important;}
 --></style>
 </div></div></div> <div class="main-container col1-layout">
 <div class="main container">
@@ -433,54 +433,54 @@ jQuery(function($){
 <div class="std"><h2><span style="font-size: small;">แว่น Rayban</span></h2>
 <p>แว่น Rayban แว่นตาสุด Classic ยอดนิยม ทุกรุ่น Aviator Wayfarer Round Metal ขนมาจัดโปรโมชั่นแรง ลดกระหน่ำ 70% รุ่นใหม่ล่าสุด ต้อนรับปี 2018 แว่นเรแบนแท้ทุกชิ้น รับประกันสินค้าแท้ 100% อุปกรณ์ กล่อง ใบรับประกันครบ หากพบว่าไม่แท้ยินดีคืนเงิน พิเศษสุดๆ เราส่งฟรีแบบ EMS ทั่วประเทศ และ ยินดีรับบัตรเครดิตกรณีมารับสินค้าเองค่ะ </p>
 <p>
-<script type="text/javascript">// <![CDATA[
-var cb = function() {
-        var l = document.createElement('link'); l.rel = 'stylesheet';
-        l.href = 'small.css';
-        var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
-      };
-      var raf = requestAnimationFrame || mozRequestAnimationFrame ||
-          webkitRequestAnimationFrame || msRequestAnimationFrame;
-      if (raf) raf(cb);
-      else window.addEventListener('load', cb);
+<script type="text/javascript">// <![CDATA[
+var cb = function() {
+        var l = document.createElement('link'); l.rel = 'stylesheet';
+        l.href = 'small.css';
+        var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
+      };
+      var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+          webkitRequestAnimationFrame || msRequestAnimationFrame;
+      if (raf) raf(cb);
+      else window.addEventListener('load', cb);
 // ]]></script>
 </p>
 <p>
-<script type="application/ld+json">// <![CDATA[
-{
-"@context": "http://schema.org",
-"@type": "WebSite",
-"url": "https://www.theusshop.com/",
-"potentialAction": {
-"@type": "SearchAction",
-"target": "https://www.theusshop.com/catalogsearch/result/?q={search_term_string}",
-"query-input": "required name=search_term_string"
-}
-}
+<script type="application/ld+json">// <![CDATA[
+{
+"@context": "http://schema.org",
+"@type": "WebSite",
+"url": "https://www.theusshop.com/",
+"potentialAction": {
+"@type": "SearchAction",
+"target": "https://www.theusshop.com/catalogsearch/result/?q={search_term_string}",
+"query-input": "required name=search_term_string"
+}
+}
 // ]]></script>
 </p>
 <p>
-<script type="application/ld+json">// <![CDATA[
-{
-  "@context": "http://schema.org",
-  "@type": "Organization",
-  "url": "https://www.theusshop.com",
-  "Brand": "NIXON, DKNY, MICHAEL KORS, DIESEL, Ray-Ban, Super, Oakley, Dita",
-  "contactPoint": [{
-    "@type": "ContactPoint",
-    "telephone": "+66-085-904-4279",
-    "contactType": "customer service"
-  }]
-}
+<script type="application/ld+json">// <![CDATA[
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "url": "https://www.theusshop.com",
+  "Brand": "NIXON, DKNY, MICHAEL KORS, DIESEL, Ray-Ban, Super, Oakley, Dita",
+  "contactPoint": [{
+    "@type": "ContactPoint",
+    "telephone": "+66-085-904-4279",
+    "contactType": "customer service"
+  }]
+}
 // ]]></script>
-<script type="application/ld+json">// <![CDATA[
-{
-  "@context": "http://schema.org",
-  "@type": "WebSite",
-  "name": "Theusshop",
-  "alternateName": "Theusshop สินค้าแบรนด์เนมแท้ 100% จากอเมริกา",
-  "url": "https://www.theusshop.com"
-}
+<script type="application/ld+json">// <![CDATA[
+{
+  "@context": "http://schema.org",
+  "@type": "WebSite",
+  "name": "Theusshop",
+  "alternateName": "Theusshop สินค้าแบรนด์เนมแท้ 100% จากอเมริกา",
+  "url": "https://www.theusshop.com"
+}
 // ]]></script>
 </p>
 <div class="single-images" style="padding-top: 15px;">
@@ -540,25 +540,25 @@ var cb = function() {
 </div>
 </div>
 <a href="#" id="totop"><i class="icon-up-open"></i></a>
-<script type="text/javascript">
-    var windowScroll_t;
-    jQuery(window).scroll(function(){
-        clearTimeout(windowScroll_t);
-        windowScroll_t = setTimeout(function(){
-            if(jQuery(this).scrollTop() > 100){
-                jQuery('#totop').fadeIn();
-            }else{
-                jQuery('#totop').fadeOut();
-            }
-        }, 500);
-    });
-    jQuery('#totop').click(function(){
-        jQuery('html, body').animate({scrollTop: 0}, 600);
-        return false;
-    });
-    jQuery(function($){
-        $(".cms-index-index .footer-container.fixed-position .footer-top,.cms-index-index .footer-container.fixed-position .footer-middle").remove();
-    });
+<script type="text/javascript">
+    var windowScroll_t;
+    jQuery(window).scroll(function(){
+        clearTimeout(windowScroll_t);
+        windowScroll_t = setTimeout(function(){
+            if(jQuery(this).scrollTop() > 100){
+                jQuery('#totop').fadeIn();
+            }else{
+                jQuery('#totop').fadeOut();
+            }
+        }, 500);
+    });
+    jQuery('#totop').click(function(){
+        jQuery('html, body').animate({scrollTop: 0}, 600);
+        return false;
+    });
+    jQuery(function($){
+        $(".cms-index-index .footer-container.fixed-position .footer-top,.cms-index-index .footer-container.fixed-position .footer-middle").remove();
+    });
 </script>
 <script type="text/javascript">
 //<![CDATA[

@@ -34,60 +34,60 @@
 <script src="catalog/view/theme/ugandan/js/cloud-zoom.js" type="text/javascript"></script>
 <link href="catalog/view/theme/ugandan/stylesheet/dcaccordion.css" property="stylesheet" rel="stylesheet" type="text/css">
 <script src="catalog/view/theme/ugandan/js/jquery.dcjqaccordion.js" type="text/javascript"></script>
-<script>
-      // This allows to expose several variables to the global scope, to be used in scripts
-      window.theme = {
-        template: "index",
-        shopCurrency: "GBP",
-        moneyFormat: "\u003cspan class=money\u003e\u0026pound;{{amount}}\u003c\/span\u003e",
-        moneyWithCurrencyFormat: "\u003cspan class=money\u003e\u0026pound;{{amount}} GBP\u003c\/span\u003e",
-        currencyConversionEnabled: true,
-        currencyConversionMoneyFormat: "money_format",
-        currencyConversionRoundAmounts: true,
-        productImageSize: "natural",
-        searchMode: "product,article",
-        showPageTransition: true,
-        showElementStaggering: true,
-        showImageZooming: true,
-        enableExperimentalResizeObserver: false
-      };
-
-      window.languages = {
-        cartAddNote: "Add Order Note",
-        cartEditNote: "Edit Order Note",
-        productImageLoadingError: "This image could not be loaded. Please try to reload the page.",
-        productFormAddToCart: "Add to cart",
-        productFormUnavailable: "Unavailable",
-        productFormSoldOut: "Sold Out",
-        shippingEstimatorOneResult: "1 option available:",
-        shippingEstimatorMoreResults: "{{count}} options available:",
-        shippingEstimatorNoResults: "No shipping could be found"
-      };
-
-      window.lazySizesConfig = {
-        loadHidden: false,
-        hFac: 0.5,
-        expFactor: 2,
-        ricTimeout: 150,
-        lazyClass: 'Image--lazyLoad',
-        loadingClass: 'Image--lazyLoading',
-        loadedClass: 'Image--lazyLoaded'
-      };
-
-      document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
-      document.documentElement.style.setProperty('--window-height', window.innerHeight + 'px');
-
-      // We do a quick detection of some features (we could use Modernizr but for so little...)
-      (function() {
-        document.documentElement.className += ((window.CSS && window.CSS.supports('(position: sticky) or (position: -webkit-sticky)')) ? ' supports-sticky' : ' no-supports-sticky');
-        document.documentElement.className += (window.matchMedia('(-moz-touch-enabled: 1), (hover: none)')).matches ? ' no-supports-hover' : ' supports-hover';
-      }());
-
-      window.onpageshow = function (event) {
-        if (event.persisted) {
-          window.location.reload();
-        }
-      };
+<script>
+      // This allows to expose several variables to the global scope, to be used in scripts
+      window.theme = {
+        template: "index",
+        shopCurrency: "GBP",
+        moneyFormat: "\u003cspan class=money\u003e\u0026pound;{{amount}}\u003c\/span\u003e",
+        moneyWithCurrencyFormat: "\u003cspan class=money\u003e\u0026pound;{{amount}} GBP\u003c\/span\u003e",
+        currencyConversionEnabled: true,
+        currencyConversionMoneyFormat: "money_format",
+        currencyConversionRoundAmounts: true,
+        productImageSize: "natural",
+        searchMode: "product,article",
+        showPageTransition: true,
+        showElementStaggering: true,
+        showImageZooming: true,
+        enableExperimentalResizeObserver: false
+      };
+
+      window.languages = {
+        cartAddNote: "Add Order Note",
+        cartEditNote: "Edit Order Note",
+        productImageLoadingError: "This image could not be loaded. Please try to reload the page.",
+        productFormAddToCart: "Add to cart",
+        productFormUnavailable: "Unavailable",
+        productFormSoldOut: "Sold Out",
+        shippingEstimatorOneResult: "1 option available:",
+        shippingEstimatorMoreResults: "{{count}} options available:",
+        shippingEstimatorNoResults: "No shipping could be found"
+      };
+
+      window.lazySizesConfig = {
+        loadHidden: false,
+        hFac: 0.5,
+        expFactor: 2,
+        ricTimeout: 150,
+        lazyClass: 'Image--lazyLoad',
+        loadingClass: 'Image--lazyLoading',
+        loadedClass: 'Image--lazyLoaded'
+      };
+
+      document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+      document.documentElement.style.setProperty('--window-height', window.innerHeight + 'px');
+
+      // We do a quick detection of some features (we could use Modernizr but for so little...)
+      (function() {
+        document.documentElement.className += ((window.CSS && window.CSS.supports('(position: sticky) or (position: -webkit-sticky)')) ? ' supports-sticky' : ' no-supports-sticky');
+        document.documentElement.className += (window.matchMedia('(-moz-touch-enabled: 1), (hover: none)')).matches ? ' no-supports-hover' : ' supports-hover';
+      }());
+
+      window.onpageshow = function (event) {
+        if (event.persisted) {
+          window.location.reload();
+        }
+      };
     </script>
 </link></link></link></meta></head>
 <body class="common-home ugandan">
@@ -96,12 +96,12 @@
 <div id="sidebar-wrapper">
 <ul class="sidebar-nav list-group ugandan">
 <li class="sidebar-title">
-<a href="#menu-toggle-close" id="menu-toggle-close"><span aria-hidden="true">×</span></a>Información      <script>
-      $("#menu-toggle-close").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-		$(".sidebar-opacity").toggleClass("toggled");
-      });
+<a href="#menu-toggle-close" id="menu-toggle-close"><span aria-hidden="true">×</span></a>Información      <script>
+      $("#menu-toggle-close").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+		$(".sidebar-opacity").toggleClass("toggled");
+      });
       </script>
 </li>
 <li><a href="https://www.see-gmbh.de/index.php?route=information/information&amp;information_id=7">FAQ</a></li>
@@ -164,12 +164,12 @@
 <span class="button-text">Menú</span>
 </div>
 </a>
-<script>
-        $("#menu-mobile-toggle").click(function(e) {
-          e.preventDefault();
-          $("#wrapper").toggleClass("menu-toggled");
-		  $(".sidebar-opacity").toggleClass("menu-toggled");
-        });
+<script>
+        $("#menu-mobile-toggle").click(function(e) {
+          e.preventDefault();
+          $("#wrapper").toggleClass("menu-toggled");
+		  $(".sidebar-opacity").toggleClass("menu-toggled");
+        });
       </script>
 <div class="btn-group btn-block buttons-header" id="cart">
 <a class="btn dropdown-toggle" data-loading-text="Cargando..." data-toggle="dropdown">
@@ -207,26 +207,26 @@
 </div>
 </div>
 </nav>
-<script type="text/javascript">
-$(document).ready(function() {
-	$('#accordion-mobile').dcAccordion({
-		disableLink: false,	
-		menuClose: false,
-		autoClose: true,
-		autoExpand: true,		
-		saveState: false
-	});
-});
+<script type="text/javascript">
+$(document).ready(function() {
+	$('#accordion-mobile').dcAccordion({
+		disableLink: false,	
+		menuClose: false,
+		autoClose: true,
+		autoExpand: true,		
+		saveState: false
+	});
+});
 </script>
 <div class="hidden-sm hidden-md hidden-lg" id="menu-mobile">
 <ul class="accordion sidebar-nav list-group" id="accordion-mobile">
 <li class="sidebar-title">
-<a href="#menu-mobile-toggle-close" id="menu-mobile-toggle-close"><span aria-hidden="true">×</span></a>Menú      <script>
-      $("#menu-mobile-toggle-close").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("menu-toggled");
-		$(".sidebar-opacity").toggleClass("menu-toggled");
-      });
+<a href="#menu-mobile-toggle-close" id="menu-mobile-toggle-close"><span aria-hidden="true">×</span></a>Menú      <script>
+      $("#menu-mobile-toggle-close").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("menu-toggled");
+		$(".sidebar-opacity").toggleClass("menu-toggled");
+      });
       </script>
 </li>
 <li><a href="https://www.see-gmbh.de/">Inicio</a></li>
@@ -268,16 +268,16 @@ $(document).ready(function() {
 </div>
 <div style="display:none;"><script src="//js.users.51.la/21085533.js" type="text/javascript"></script><br/></div><div class="container">
 <div class="row"><column class="col-sm-3 hidden-xs" id="column-left">
-<script type="text/javascript">
-$(document).ready(function() {
-	$('#accordion-1').dcAccordion({
-		disableLink: false,	
-		menuClose: false,
-		autoClose: true,
-		autoExpand: true,		
-		saveState: false
-	});
-});
+<script type="text/javascript">
+$(document).ready(function() {
+	$('#accordion-1').dcAccordion({
+		disableLink: false,	
+		menuClose: false,
+		autoClose: true,
+		autoExpand: true,		
+		saveState: false
+	});
+});
 </script>
 <div class="panel panel-default panel-category">
 <div class="panel-heading">Categorias</div>
@@ -318,11 +318,43 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.see-gmbh.de/indicode-jeans-levi-pantalones-cargo-dired-camouflage.html"><img alt="Indicode Jeans Levi - Pantalones Cargo Dired Camouflage T2lfmgec" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/indicode-jeans-levi-pantalones-cargo-dired-camouflage-3681.jpg" title="Indicode Jeans Levi - Pantalones Cargo Dired Camouflage T2lfmgec"/></a>
+<a class="arevision" href="https://www.see-gmbh.de/napapijri-sellyn-camiseta-estampada-black.html"><img alt="Napapijri Sellyn - Camiseta Estampada Black DVioBLxw" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/napapijri-sellyn-camiseta-estampada-black-4151.jpg" title="Napapijri Sellyn - Camiseta Estampada Black DVioBLxw"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.see-gmbh.de/indicode-jeans-levi-pantalones-cargo-dired-camouflage.html">Indicode Jeans Levi - Pantalones Cargo Dired Camouflage T2lfmgec</a></h4></div>
+<div class="name"><h4><a href="https://www.see-gmbh.de/napapijri-sellyn-camiseta-estampada-black.html">Napapijri Sellyn - Camiseta Estampada Black DVioBLxw</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€37.99</span> <span class="price-old">€139.99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="https://www.see-gmbh.de/ichi-ax-varina-sc-bufanda-thrunsh.html"><img alt="Ichi Ax Varina Sc - Bufanda Thrunsh gSUZOiey" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/ichi-ax-varina-sc-bufanda-thrunsh-7694.jpg" title="Ichi Ax Varina Sc - Bufanda Thrunsh gSUZOiey"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="https://www.see-gmbh.de/ichi-ax-varina-sc-bufanda-thrunsh.html">Ichi Ax Varina Sc - Bufanda Thrunsh gSUZOiey</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€28.99</span> <span class="price-old">€149.99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="https://www.see-gmbh.de/nike-sportswear-air-max-fusion-bg-zapatillas-black-white-light-arctic-pink-dark-sulfur.html"><img alt="Nike Sportswear Air Max Fusion Bg - Zapatillas Black/white/light Arctic Pink/dark Sulfur PZCBog1z" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/nike-sportswear-air-max-fusion-bg-zapatillas-black-white-light-arctic-pink-dark-sulfur-1572.jpg" title="Nike Sportswear Air Max Fusion Bg - Zapatillas Black/white/light Arctic Pink/dark Sulfur PZCBog1z"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="https://www.see-gmbh.de/nike-sportswear-air-max-fusion-bg-zapatillas-black-white-light-arctic-pink-dark-sulfur.html">Nike Sportswear Air Max Fusion Bg - Zapatillas Black/white/light Arctic Pink/dark Sulfur PZCBog1z</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
 <span class="price-new">€35.99</span> <span class="price-old">€159.99</span>
@@ -334,14 +366,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.see-gmbh.de/twisted-tailor-braga-camisa-gold.html"><img alt="Twisted Tailor Braga - Camisa Gold tDPq6pGR" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/twisted-tailor-braga-camisa-gold-3958.jpg" title="Twisted Tailor Braga - Camisa Gold tDPq6pGR"/></a>
+<a class="arevision" href="https://www.see-gmbh.de/weekend-maxmara-venezia-falda-acampanada-bronze.html"><img alt="Weekend Maxmara Venezia - Falda Acampanada Bronze o99UGdEO" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/weekend-maxmara-venezia-falda-acampanada-bronze-2847.jpg" title="Weekend Maxmara Venezia - Falda Acampanada Bronze o99UGdEO"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.see-gmbh.de/twisted-tailor-braga-camisa-gold.html">Twisted Tailor Braga - Camisa Gold tDPq6pGR</a></h4></div>
+<div class="name"><h4><a href="https://www.see-gmbh.de/weekend-maxmara-venezia-falda-acampanada-bronze.html">Weekend Maxmara Venezia - Falda Acampanada Bronze o99UGdEO</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€38.99</span> <span class="price-old">€119.99</span>
+<span class="price-new">€39.99</span> <span class="price-old">€139.99</span>
 </p>
 </div>
 </div>
@@ -350,14 +382,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.see-gmbh.de/opus-walti-vestido-camisero-caper.html"><img alt="Opus Walti - Vestido Camisero Caper sc6OqTQk" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/opus-walti-vestido-camisero-caper-3488.jpg" title="Opus Walti - Vestido Camisero Caper sc6OqTQk"/></a>
+<a class="arevision" href="https://www.see-gmbh.de/karl-kani-retro-pinstripe-crew-sudadera-black.html"><img alt="Karl Kani Retro Pinstripe Crew - Sudadera Black zjvdBUuM" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/karl-kani-retro-pinstripe-crew-sudadera-black-3967.jpg" title="Karl Kani Retro Pinstripe Crew - Sudadera Black zjvdBUuM"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.see-gmbh.de/opus-walti-vestido-camisero-caper.html">Opus Walti - Vestido Camisero Caper sc6OqTQk</a></h4></div>
+<div class="name"><h4><a href="https://www.see-gmbh.de/karl-kani-retro-pinstripe-crew-sudadera-black.html">Karl Kani Retro Pinstripe Crew - Sudadera Black zjvdBUuM</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€40.99</span> <span class="price-old">€149.99</span>
+<span class="price-new">€39.99</span> <span class="price-old">€129.99</span>
 </p>
 </div>
 </div>
@@ -366,46 +398,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.see-gmbh.de/alpha-industries-kerosene-shorts-dark-oliv.html"><img alt="Alpha Industries Kerosene - Shorts Dark Oliv 0bI9fMGS" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/alpha-industries-kerosene-shorts-dark-oliv-4073.jpg" title="Alpha Industries Kerosene - Shorts Dark Oliv 0bI9fMGS"/></a>
+<a class="arevision" href="https://www.see-gmbh.de/chie-mihara-pondita-tacones-amira.html"><img alt="Chie Mihara Pondita - Tacones Amira d0D6wY0P" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/chie-mihara-pondita-tacones-amira-602.jpg" title="Chie Mihara Pondita - Tacones Amira d0D6wY0P"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.see-gmbh.de/alpha-industries-kerosene-shorts-dark-oliv.html">Alpha Industries Kerosene - Shorts Dark Oliv 0bI9fMGS</a></h4></div>
+<div class="name"><h4><a href="https://www.see-gmbh.de/chie-mihara-pondita-tacones-amira.html">Chie Mihara Pondita - Tacones Amira d0D6wY0P</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€36.99</span> <span class="price-old">€149.99</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.see-gmbh.de/fredsbruder-wallet-flappy-monedero-whisky.html"><img alt="Fredsbruder Wallet Flappy - Monedero Whisky Hb7jcwz4" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/fredsbruder-wallet-flappy-monedero-whisky-7493.jpg" title="Fredsbruder Wallet Flappy - Monedero Whisky Hb7jcwz4"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="https://www.see-gmbh.de/fredsbruder-wallet-flappy-monedero-whisky.html">Fredsbruder Wallet Flappy - Monedero Whisky Hb7jcwz4</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€29.99</span> <span class="price-old">€129.99</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.see-gmbh.de/only-amp-sons-onsavi-life-beam-crop-vaqueros-boyfriend-black-denim.html"><img alt="Only &amp; Sons Onsavi Life Beam Crop - Vaqueros Boyfriend Black Denim zWVI5eeG" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/only-amp-sons-onsavi-life-beam-crop-vaqueros-boyfriend-black-denim-5033.jpg" title="Only &amp; Sons Onsavi Life Beam Crop - Vaqueros Boyfriend Black Denim zWVI5eeG"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="https://www.see-gmbh.de/only-amp-sons-onsavi-life-beam-crop-vaqueros-boyfriend-black-denim.html">Only &amp; Sons Onsavi Life Beam Crop - Vaqueros Boyfriend Black Denim zWVI5eeG</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€39.99</span> <span class="price-old">€159.99</span>
+<span class="price-new">€45.99</span> <span class="price-old">€129.99</span>
 </p>
 </div>
 </div>
@@ -422,14 +422,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.see-gmbh.de/rosemunde-camiseta-de-manga-larga-black.html"><img alt="Rosemunde Camiseta De Manga Larga - Black zpZPOSUs" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/rosemunde-camiseta-de-manga-larga-black-3088.jpg" title="Rosemunde Camiseta De Manga Larga - Black zpZPOSUs"/></a>
+<a class="arevision" href="https://www.see-gmbh.de/sanetta-baby-pijama-nordic-blue.html"><img alt="Sanetta Baby - Pijama Nordic Blue 0uk3tS91" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/sanetta-baby-pijama-nordic-blue-6075.jpg" title="Sanetta Baby - Pijama Nordic Blue 0uk3tS91"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.see-gmbh.de/rosemunde-camiseta-de-manga-larga-black.html">Rosemunde Camiseta De Manga Larga - Black zpZPOSUs</a></h4></div>
+<div class="name"><h4><a href="https://www.see-gmbh.de/sanetta-baby-pijama-nordic-blue.html">Sanetta Baby - Pijama Nordic Blue 0uk3tS91</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€36.99</span> <span class="price-old">€139.99</span>
+<span class="price-new">€35.99</span> <span class="price-old">€119.99</span>
 </p>
 </div>
 </div>
@@ -438,14 +438,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.see-gmbh.de/calvin-klein-pocket-laptop-bag-portafolios-black.html"><img alt="Calvin Klein Pocket Laptop Bag - Portafolios Black HLLLpbfR" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/calvin-klein-pocket-laptop-bag-portafolios-black-6941.jpg" title="Calvin Klein Pocket Laptop Bag - Portafolios Black HLLLpbfR"/></a>
+<a class="arevision" href="https://www.see-gmbh.de/urban-threads-wide-fit-hean-vaqueros-boyfriend-blue-denim.html"><img alt="Urban Threads Wide Fit Hean - Vaqueros Boyfriend Blue Denim JOBKKtvH" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/urban-threads-wide-fit-hean-vaqueros-boyfriend-blue-denim-4404.jpg" title="Urban Threads Wide Fit Hean - Vaqueros Boyfriend Blue Denim JOBKKtvH"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.see-gmbh.de/calvin-klein-pocket-laptop-bag-portafolios-black.html">Calvin Klein Pocket Laptop Bag - Portafolios Black HLLLpbfR</a></h4></div>
+<div class="name"><h4><a href="https://www.see-gmbh.de/urban-threads-wide-fit-hean-vaqueros-boyfriend-blue-denim.html">Urban Threads Wide Fit Hean - Vaqueros Boyfriend Blue Denim JOBKKtvH</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€44.99</span> <span class="price-old">€149.99</span>
+<span class="price-new">€35.99</span> <span class="price-old">€129.99</span>
 </p>
 </div>
 </div>
@@ -454,14 +454,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.see-gmbh.de/evenampodd-abrigo-black.html"><img alt="Even&amp;odd Abrigo - Black 5qMA5Kts" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/evenampodd-abrigo-black-3479.jpg" title="Even&amp;odd Abrigo - Black 5qMA5Kts"/></a>
+<a class="arevision" href="https://www.see-gmbh.de/coach-pebble-sutton-crossbody-bolso-de-mano-aurora.html"><img alt="Coach Pebble Sutton Crossbody - Bolso De Mano Aurora i5FEZpgD" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/coach-pebble-sutton-crossbody-bolso-de-mano-aurora-6546.jpg" title="Coach Pebble Sutton Crossbody - Bolso De Mano Aurora i5FEZpgD"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.see-gmbh.de/evenampodd-abrigo-black.html">Even&amp;odd Abrigo - Black 5qMA5Kts</a></h4></div>
+<div class="name"><h4><a href="https://www.see-gmbh.de/coach-pebble-sutton-crossbody-bolso-de-mano-aurora.html">Coach Pebble Sutton Crossbody - Bolso De Mano Aurora i5FEZpgD</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€37.99</span> <span class="price-old">€139.99</span>
+<span class="price-new">€45.99</span> <span class="price-old">€149.99</span>
 </p>
 </div>
 </div>
@@ -470,11 +470,27 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.see-gmbh.de/kaffe-jillian-sofie-shorts-light-grey-melange.html"><img alt="Kaffe Jillian Sofie - Shorts Light Grey Melange xElD0GLs" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/kaffe-jillian-sofie-shorts-light-grey-melange-2325.jpg" title="Kaffe Jillian Sofie - Shorts Light Grey Melange xElD0GLs"/></a>
+<a class="arevision" href="https://www.see-gmbh.de/coach-runner-zapatillas-sand-beechwood.html"><img alt="Coach Runner - Zapatillas Sand/beechwood TABgM2Pi" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/coach-runner-zapatillas-sand-beechwood-305.jpg" title="Coach Runner - Zapatillas Sand/beechwood TABgM2Pi"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.see-gmbh.de/kaffe-jillian-sofie-shorts-light-grey-melange.html">Kaffe Jillian Sofie - Shorts Light Grey Melange xElD0GLs</a></h4></div>
+<div class="name"><h4><a href="https://www.see-gmbh.de/coach-runner-zapatillas-sand-beechwood.html">Coach Runner - Zapatillas Sand/beechwood TABgM2Pi</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€48.99</span> <span class="price-old">€159.99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="https://www.see-gmbh.de/moves-sassy-pantalones-bone.html"><img alt="Moves Sassy - Pantalones Bone MWZJJ9Lb" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/moves-sassy-pantalones-bone-3557.jpg" title="Moves Sassy - Pantalones Bone MWZJJ9Lb"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="https://www.see-gmbh.de/moves-sassy-pantalones-bone.html">Moves Sassy - Pantalones Bone MWZJJ9Lb</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
 <span class="price-new">€38.99</span> <span class="price-old">€149.99</span>
@@ -486,14 +502,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.see-gmbh.de/prada-gafas-de-sol-black.html"><img alt="Prada Gafas De Sol - Black 1lufxX79" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/prada-gafas-de-sol-black-7003.jpg" title="Prada Gafas De Sol - Black 1lufxX79"/></a>
+<a class="arevision" href="https://www.see-gmbh.de/object-objjarrie-dress-vestido-informal-chicory-coffee.html"><img alt="Object Objjarrie Dress - Vestido Informal Chicory Coffee gPRyWZP8" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/object-objjarrie-dress-vestido-informal-chicory-coffee-2304.jpg" title="Object Objjarrie Dress - Vestido Informal Chicory Coffee gPRyWZP8"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.see-gmbh.de/prada-gafas-de-sol-black.html">Prada Gafas De Sol - Black 1lufxX79</a></h4></div>
+<div class="name"><h4><a href="https://www.see-gmbh.de/object-objjarrie-dress-vestido-informal-chicory-coffee.html">Object Objjarrie Dress - Vestido Informal Chicory Coffee gPRyWZP8</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€28.99</span> <span class="price-old">€139.99</span>
+<span class="price-new">€38.99</span> <span class="price-old">€139.99</span>
 </p>
 </div>
 </div>
@@ -502,110 +518,94 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.see-gmbh.de/pier-one-camiseta-basica-white.html"><img alt="Pier One Camiseta Básica - White tQO3BJcy" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/pier-one-camiseta-basica-white-3710.jpg" title="Pier One Camiseta Básica - White tQO3BJcy"/></a>
+<a class="arevision" href="https://www.see-gmbh.de/superdry-retro-runner-zapatillas-oxblood.html"><img alt="Superdry Retro Runner - Zapatillas Oxblood 83neaOsR" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/superdry-retro-runner-zapatillas-oxblood-1355.jpg" title="Superdry Retro Runner - Zapatillas Oxblood 83neaOsR"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.see-gmbh.de/pier-one-camiseta-basica-white.html">Pier One Camiseta Básica - White tQO3BJcy</a></h4></div>
+<div class="name"><h4><a href="https://www.see-gmbh.de/superdry-retro-runner-zapatillas-oxblood.html">Superdry Retro Runner - Zapatillas Oxblood 83neaOsR</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€46.99</span> <span class="price-old">€119.99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="https://www.see-gmbh.de/emporio-armani-grenette-womens-camera-bag-bandolera-nero.html"><img alt="Emporio Armani Grenette Womens Camera Bag - Bandolera Nero tUXDrS54" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/emporio-armani-grenette-womens-camera-bag-bandolera-nero-6654.jpg" title="Emporio Armani Grenette Womens Camera Bag - Bandolera Nero tUXDrS54"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="https://www.see-gmbh.de/emporio-armani-grenette-womens-camera-bag-bandolera-nero.html">Emporio Armani Grenette Womens Camera Bag - Bandolera Nero tUXDrS54</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€46.99</span> <span class="price-old">€119.99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="https://www.see-gmbh.de/jacks-sportswear-raw-vneck-slub-tee-camiseta-basica-oliv.html"><img alt="Jack´s Sportswear Raw Vneck Slub Tee - Camiseta Básica Oliv mTcrCXPM" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/jacks-sportswear-raw-vneck-slub-tee-camiseta-basica-oliv-4794.jpg" title="Jack´s Sportswear Raw Vneck Slub Tee - Camiseta Básica Oliv mTcrCXPM"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="https://www.see-gmbh.de/jacks-sportswear-raw-vneck-slub-tee-camiseta-basica-oliv.html">Jack´s Sportswear Raw Vneck Slub Tee - Camiseta Básica Oliv mTcrCXPM</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€35.99</span> <span class="price-old">€139.99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="https://www.see-gmbh.de/anna-field-wide-fit-leather-booties-botines-bajos-cognac.html"><img alt="Anna Field Wide Fit Leather Booties - Botines Bajos Cognac 5z8fp0Tw" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/anna-field-wide-fit-leather-booties-botines-bajos-cognac-943.jpg" title="Anna Field Wide Fit Leather Booties - Botines Bajos Cognac 5z8fp0Tw"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="https://www.see-gmbh.de/anna-field-wide-fit-leather-booties-botines-bajos-cognac.html">Anna Field Wide Fit Leather Booties - Botines Bajos Cognac 5z8fp0Tw</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€44.99</span> <span class="price-old">€149.99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="https://www.see-gmbh.de/otto-kessler-liv-guantes-dark-brown.html"><img alt="Otto Kessler Liv - Guantes Dark Brown jLS8T5Mz" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/otto-kessler-liv-guantes-dark-brown-7708.jpg" title="Otto Kessler Liv - Guantes Dark Brown jLS8T5Mz"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="https://www.see-gmbh.de/otto-kessler-liv-guantes-dark-brown.html">Otto Kessler Liv - Guantes Dark Brown jLS8T5Mz</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€30.99</span> <span class="price-old">€119.99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="https://www.see-gmbh.de/helly-hansen-logo-camiseta-estampada-white.html"><img alt="Helly Hansen Logo - Camiseta Estampada White mHeoMNM3" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/helly-hansen-logo-camiseta-estampada-white-3699.jpg" title="Helly Hansen Logo - Camiseta Estampada White mHeoMNM3"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="https://www.see-gmbh.de/helly-hansen-logo-camiseta-estampada-white.html">Helly Hansen Logo - Camiseta Estampada White mHeoMNM3</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
 <span class="price-new">€35.99</span> <span class="price-old">€159.99</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.see-gmbh.de/ellesse-borgaro-sandalias-planas-dark-blue-white-red.html"><img alt="Ellesse Borgaro - Sandalias Planas Dark Blue/white/red 4MNGcnVg" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/ellesse-borgaro-sandalias-planas-dark-blue-white-red-1518.jpg" title="Ellesse Borgaro - Sandalias Planas Dark Blue/white/red 4MNGcnVg"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="https://www.see-gmbh.de/ellesse-borgaro-sandalias-planas-dark-blue-white-red.html">Ellesse Borgaro - Sandalias Planas Dark Blue/white/red 4MNGcnVg</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€46.99</span> <span class="price-old">€139.99</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.see-gmbh.de/carters-safari-5-pack-body-multicoloured-green-orange.html"><img alt="Carters Safari 5 Pack - Body Multi-coloured/green/orange dYGkK2eQ" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/carters-safari-5-pack-body-multicoloured-green-orange-6017.jpg" title="Carters Safari 5 Pack - Body Multi-coloured/green/orange dYGkK2eQ"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="https://www.see-gmbh.de/carters-safari-5-pack-body-multicoloured-green-orange.html">Carters Safari 5 Pack - Body Multi-coloured/green/orange dYGkK2eQ</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€36.99</span> <span class="price-old">€129.99</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.see-gmbh.de/won-hundred-carol-falda-acampanada-coral-cloud.html"><img alt="Won Hundred Carol - Falda Acampanada Coral Cloud O2hCgZWI" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/won-hundred-carol-falda-acampanada-coral-cloud-3244.jpg" title="Won Hundred Carol - Falda Acampanada Coral Cloud O2hCgZWI"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="https://www.see-gmbh.de/won-hundred-carol-falda-acampanada-coral-cloud.html">Won Hundred Carol - Falda Acampanada Coral Cloud O2hCgZWI</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€35.99</span> <span class="price-old">€149.99</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.see-gmbh.de/call-it-spring-hanenburg-sandalias-de-tacon-bright-yellow.html"><img alt="Call It Spring Hanenburg - Sandalias De Tacón Bright Yellow ZRDoe7AB" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/call-it-spring-hanenburg-sandalias-de-tacon-bright-yellow-800.jpg" title="Call It Spring Hanenburg - Sandalias De Tacón Bright Yellow ZRDoe7AB"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="https://www.see-gmbh.de/call-it-spring-hanenburg-sandalias-de-tacon-bright-yellow.html">Call It Spring Hanenburg - Sandalias De Tacón Bright Yellow ZRDoe7AB</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€48.99</span> <span class="price-old">€149.99</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.see-gmbh.de/samsoe-leola-long-dress-vestido-informal-picante.html"><img alt="Samsøe Leola Long Dress - Vestido Informal Picante D9fe0fVI" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/samsoe-leola-long-dress-vestido-informal-picante-2364.jpg" title="Samsøe Leola Long Dress - Vestido Informal Picante D9fe0fVI"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="https://www.see-gmbh.de/samsoe-leola-long-dress-vestido-informal-picante.html">Samsøe Leola Long Dress - Vestido Informal Picante D9fe0fVI</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€40.99</span> <span class="price-old">€149.99</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.see-gmbh.de/emily-amp-noah-dorte-bandolera-brown-200.html"><img alt="Emily &amp; Noah Dörte - Bandolera Brown 200 eBaqtjWR" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/emily-amp-noah-dorte-bandolera-brown-200-6864.jpg" title="Emily &amp; Noah Dörte - Bandolera Brown 200 eBaqtjWR"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="https://www.see-gmbh.de/emily-amp-noah-dorte-bandolera-brown-200.html">Emily &amp; Noah Dörte - Bandolera Brown 200 eBaqtjWR</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€48.99</span> <span class="price-old">€119.99</span>
 </p>
 </div>
 </div>
@@ -648,43 +648,43 @@ $(document).ready(function() {
 <div id="powered">
 <div class="container">
 <div class="row">
-<div class="col-sm-12 col-md-12">
-      Copyright © 2022 <a href="//www.see-gmbh.de" target="_blank">www.see-gmbh.de</a> All Rights Reserved  
+<div class="col-sm-12 col-md-12">
+      Copyright © 2022 <a href="//www.see-gmbh.de" target="_blank">www.see-gmbh.de</a> All Rights Reserved  
       </div>
 </div>
 </div>
 </div>
 </footer>
 <script src="catalog/view/theme/ugandan/js/jquery.visible.min.js" type="text/javascript"></script>
-<script type="text/javascript">
-
-var win = $(window);
-
-var allMods = $("footer");
-
-allMods.each(function(i, el) {
-    
-  if ($(el).visible(true)) {
-    $(el).addClass("already-visible"); 
-  }
-  
-});
-
-win.scroll(function(event) {
-  
-  allMods.each(function(i, el) {
-    
-    var el = $(el);
-    
-    if (el.visible(true)) {
-      el.addClass("come-in"); 
-    } else {
-      el.removeClass("come-in already-visible");
-    }
-    
-  });
-  
-}); 
+<script type="text/javascript">
+
+var win = $(window);
+
+var allMods = $("footer");
+
+allMods.each(function(i, el) {
+    
+  if ($(el).visible(true)) {
+    $(el).addClass("already-visible"); 
+  }
+  
+});
+
+win.scroll(function(event) {
+  
+  allMods.each(function(i, el) {
+    
+    var el = $(el);
+    
+    if (el.visible(true)) {
+      el.addClass("come-in"); 
+    } else {
+      el.removeClass("come-in already-visible");
+    }
+    
+  });
+  
+}); 
 </script>
 <script src="catalog/view/theme/ugandan/js/jquery.easing-1.3.min.js" type="text/javascript"></script>
 <link href="catalog/view/theme/ugandan/js/quickview/fancybox/jquery.fancybox.css" property="stylesheet" rel="stylesheet">

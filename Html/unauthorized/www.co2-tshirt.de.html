@@ -34,60 +34,60 @@
 <script src="catalog/view/theme/catholic/js/cloud-zoom.js" type="text/javascript"></script>
 <link href="catalog/view/theme/catholic/stylesheet/dcaccordion.css" property="stylesheet" rel="stylesheet" type="text/css">
 <script src="catalog/view/theme/catholic/js/jquery.dcjqaccordion.js" type="text/javascript"></script>
-<script>
-      // This allows to expose several variables to the global scope, to be used in scripts
-      window.theme = {
-        template: "index",
-        shopCurrency: "GBP",
-        moneyFormat: "\u003cspan class=money\u003e\u0026pound;{{amount}}\u003c\/span\u003e",
-        moneyWithCurrencyFormat: "\u003cspan class=money\u003e\u0026pound;{{amount}} GBP\u003c\/span\u003e",
-        currencyConversionEnabled: true,
-        currencyConversionMoneyFormat: "money_format",
-        currencyConversionRoundAmounts: true,
-        productImageSize: "natural",
-        searchMode: "product,article",
-        showPageTransition: true,
-        showElementStaggering: true,
-        showImageZooming: true,
-        enableExperimentalResizeObserver: false
-      };
-
-      window.languages = {
-        cartAddNote: "Add Order Note",
-        cartEditNote: "Edit Order Note",
-        productImageLoadingError: "This image could not be loaded. Please try to reload the page.",
-        productFormAddToCart: "Add to cart",
-        productFormUnavailable: "Unavailable",
-        productFormSoldOut: "Sold Out",
-        shippingEstimatorOneResult: "1 option available:",
-        shippingEstimatorMoreResults: "{{count}} options available:",
-        shippingEstimatorNoResults: "No shipping could be found"
-      };
-
-      window.lazySizesConfig = {
-        loadHidden: false,
-        hFac: 0.5,
-        expFactor: 2,
-        ricTimeout: 150,
-        lazyClass: 'Image--lazyLoad',
-        loadingClass: 'Image--lazyLoading',
-        loadedClass: 'Image--lazyLoaded'
-      };
-
-      document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
-      document.documentElement.style.setProperty('--window-height', window.innerHeight + 'px');
-
-      // We do a quick detection of some features (we could use Modernizr but for so little...)
-      (function() {
-        document.documentElement.className += ((window.CSS && window.CSS.supports('(position: sticky) or (position: -webkit-sticky)')) ? ' supports-sticky' : ' no-supports-sticky');
-        document.documentElement.className += (window.matchMedia('(-moz-touch-enabled: 1), (hover: none)')).matches ? ' no-supports-hover' : ' supports-hover';
-      }());
-
-      window.onpageshow = function (event) {
-        if (event.persisted) {
-          window.location.reload();
-        }
-      };
+<script>
+      // This allows to expose several variables to the global scope, to be used in scripts
+      window.theme = {
+        template: "index",
+        shopCurrency: "GBP",
+        moneyFormat: "\u003cspan class=money\u003e\u0026pound;{{amount}}\u003c\/span\u003e",
+        moneyWithCurrencyFormat: "\u003cspan class=money\u003e\u0026pound;{{amount}} GBP\u003c\/span\u003e",
+        currencyConversionEnabled: true,
+        currencyConversionMoneyFormat: "money_format",
+        currencyConversionRoundAmounts: true,
+        productImageSize: "natural",
+        searchMode: "product,article",
+        showPageTransition: true,
+        showElementStaggering: true,
+        showImageZooming: true,
+        enableExperimentalResizeObserver: false
+      };
+
+      window.languages = {
+        cartAddNote: "Add Order Note",
+        cartEditNote: "Edit Order Note",
+        productImageLoadingError: "This image could not be loaded. Please try to reload the page.",
+        productFormAddToCart: "Add to cart",
+        productFormUnavailable: "Unavailable",
+        productFormSoldOut: "Sold Out",
+        shippingEstimatorOneResult: "1 option available:",
+        shippingEstimatorMoreResults: "{{count}} options available:",
+        shippingEstimatorNoResults: "No shipping could be found"
+      };
+
+      window.lazySizesConfig = {
+        loadHidden: false,
+        hFac: 0.5,
+        expFactor: 2,
+        ricTimeout: 150,
+        lazyClass: 'Image--lazyLoad',
+        loadingClass: 'Image--lazyLoading',
+        loadedClass: 'Image--lazyLoaded'
+      };
+
+      document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+      document.documentElement.style.setProperty('--window-height', window.innerHeight + 'px');
+
+      // We do a quick detection of some features (we could use Modernizr but for so little...)
+      (function() {
+        document.documentElement.className += ((window.CSS && window.CSS.supports('(position: sticky) or (position: -webkit-sticky)')) ? ' supports-sticky' : ' no-supports-sticky');
+        document.documentElement.className += (window.matchMedia('(-moz-touch-enabled: 1), (hover: none)')).matches ? ' no-supports-hover' : ' supports-hover';
+      }());
+
+      window.onpageshow = function (event) {
+        if (event.persisted) {
+          window.location.reload();
+        }
+      };
     </script>
 </link></link></link></meta></head>
 <body class="common-home catholic">
@@ -96,12 +96,12 @@
 <div id="sidebar-wrapper">
 <ul class="sidebar-nav list-group catholic">
 <li class="sidebar-title">
-<a href="#menu-toggle-close" id="menu-toggle-close"><span aria-hidden="true">×</span></a>Informatie      <script>
-      $("#menu-toggle-close").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-		$(".sidebar-opacity").toggleClass("toggled");
-      });
+<a href="#menu-toggle-close" id="menu-toggle-close"><span aria-hidden="true">×</span></a>Informatie      <script>
+      $("#menu-toggle-close").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+		$(".sidebar-opacity").toggleClass("toggled");
+      });
       </script>
 </li>
 <li><a href="https://www.co2-tshirt.de/index.php?route=information/information&amp;information_id=7">FAQ</a></li>
@@ -164,12 +164,12 @@
 <span class="button-text">Menu</span>
 </div>
 </a>
-<script>
-        $("#menu-mobile-toggle").click(function(e) {
-          e.preventDefault();
-          $("#wrapper").toggleClass("menu-toggled");
-		  $(".sidebar-opacity").toggleClass("menu-toggled");
-        });
+<script>
+        $("#menu-mobile-toggle").click(function(e) {
+          e.preventDefault();
+          $("#wrapper").toggleClass("menu-toggled");
+		  $(".sidebar-opacity").toggleClass("menu-toggled");
+        });
       </script>
 <div class="btn-group btn-block buttons-header" id="cart">
 <a class="btn dropdown-toggle" data-loading-text="Laden..." data-toggle="dropdown">
@@ -207,26 +207,26 @@
 </div>
 </div>
 </nav>
-<script type="text/javascript">
-$(document).ready(function() {
-	$('#accordion-mobile').dcAccordion({
-		disableLink: false,	
-		menuClose: false,
-		autoClose: true,
-		autoExpand: true,		
-		saveState: false
-	});
-});
+<script type="text/javascript">
+$(document).ready(function() {
+	$('#accordion-mobile').dcAccordion({
+		disableLink: false,	
+		menuClose: false,
+		autoClose: true,
+		autoExpand: true,		
+		saveState: false
+	});
+});
 </script>
 <div class="hidden-sm hidden-md hidden-lg" id="menu-mobile">
 <ul class="accordion sidebar-nav list-group" id="accordion-mobile">
 <li class="sidebar-title">
-<a href="#menu-mobile-toggle-close" id="menu-mobile-toggle-close"><span aria-hidden="true">×</span></a>Menu      <script>
-      $("#menu-mobile-toggle-close").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("menu-toggled");
-		$(".sidebar-opacity").toggleClass("menu-toggled");
-      });
+<a href="#menu-mobile-toggle-close" id="menu-mobile-toggle-close"><span aria-hidden="true">×</span></a>Menu      <script>
+      $("#menu-mobile-toggle-close").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("menu-toggled");
+		$(".sidebar-opacity").toggleClass("menu-toggled");
+      });
       </script>
 </li>
 <li><a href="https://www.co2-tshirt.de/">Home</a></li>
@@ -262,16 +262,16 @@ $(document).ready(function() {
 </div>
 <div style="display:none;"><script src="//js.users.51.la/21085533.js" type="text/javascript"></script><br/></div><div class="container">
 <div class="row"><column class="col-sm-3 hidden-xs" id="column-left">
-<script type="text/javascript">
-$(document).ready(function() {
-	$('#accordion-1').dcAccordion({
-		disableLink: false,	
-		menuClose: false,
-		autoClose: true,
-		autoExpand: true,		
-		saveState: false
-	});
-});
+<script type="text/javascript">
+$(document).ready(function() {
+	$('#accordion-1').dcAccordion({
+		disableLink: false,	
+		menuClose: false,
+		autoClose: true,
+		autoExpand: true,		
+		saveState: false
+	});
+});
 </script>
 <div class="panel panel-default panel-category">
 <div class="panel-heading">Categorieën</div>
@@ -306,14 +306,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.co2-tshirt.de/barefoot-leguano-of-barefoot-leguano-ballerina-net-zo.html"><img alt="barefoot leguano® of barefoot leguano® ballerina Net zo fsq5O1u0" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/barefoot-leguano-of-barefoot-leguano-ballerina-net-zo-6518.jpg" title="barefoot leguano® of barefoot leguano® ballerina Net zo fsq5O1u0"/></a>
+<a class="arevision" href="https://www.co2-tshirt.de/ecco-zwart-lederen-laarzen-met-riempjes-mt-38-new-in.html"><img alt="Ecco Zwart lederen laarzen met riempjes Mt 38 | NEW IN 6IQxyUAe" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/ecco-zwart-lederen-laarzen-met-riempjes-mt-38-new-in-4674.jpg" title="Ecco Zwart lederen laarzen met riempjes Mt 38 | NEW IN 6IQxyUAe"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.co2-tshirt.de/barefoot-leguano-of-barefoot-leguano-ballerina-net-zo.html">barefoot leguano® of barefoot leguano® ballerina Net zo fsq5O1u0</a></h4></div>
+<div class="name"><h4><a href="https://www.co2-tshirt.de/ecco-zwart-lederen-laarzen-met-riempjes-mt-38-new-in.html">Ecco Zwart lederen laarzen met riempjes Mt 38 | NEW IN 6IQxyUAe</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€45,00</span> <span class="price-old">€134,00</span>
+<span class="price-new">€44,00</span> <span class="price-old">€144,00</span>
 </p>
 </div>
 </div>
@@ -322,14 +322,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.co2-tshirt.de/y-3-schoenen-adidas-nederland.html"><img alt="Y 3 Schoenen | adidas Nederland fNcpAfCg" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/y-3-schoenen-adidas-nederland-5901.jpg" title="Y 3 Schoenen | adidas Nederland fNcpAfCg"/></a>
+<a class="arevision" href="https://www.co2-tshirt.de/fila-dames-schoenen-fila-sneakers-wit-41.html"><img alt="FILA Dames schoenen FILA Sneakers wit 41 8zefKYy6" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/fila-dames-schoenen-fila-sneakers-wit-41-780.jpg" title="FILA Dames schoenen FILA Sneakers wit 41 8zefKYy6"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.co2-tshirt.de/y-3-schoenen-adidas-nederland.html">Y 3 Schoenen | adidas Nederland fNcpAfCg</a></h4></div>
+<div class="name"><h4><a href="https://www.co2-tshirt.de/fila-dames-schoenen-fila-sneakers-wit-41.html">FILA Dames schoenen FILA Sneakers wit 41 8zefKYy6</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€46,00</span> <span class="price-old">€141,00</span>
+<span class="price-new">€45,00</span> <span class="price-old">€148,00</span>
 </p>
 </div>
 </div>
@@ -338,14 +338,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.co2-tshirt.de/adidas-womens-i-5923-runner-lace-up-sneakers-adidas.html"><img alt="Adidas Women's I 5923 Runner Lace Up Sneakers | Adidas PTSeZVuR" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/adidas-womens-i-5923-runner-lace-up-sneakers-adidas-572.jpg" title="Adidas Women's I 5923 Runner Lace Up Sneakers | Adidas PTSeZVuR"/></a>
+<a class="arevision" href="https://www.co2-tshirt.de/adidas-predator-193-fg-voetbalschoenen-zwart-perrysport.html"><img alt="ADIDAS PREDATOR 19.3 FG VOETBALSCHOENEN ZWART | Perrysport z7lkmpj3" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/adidas-predator-193-fg-voetbalschoenen-zwart-perrysport-730.jpg" title="ADIDAS PREDATOR 19.3 FG VOETBALSCHOENEN ZWART | Perrysport z7lkmpj3"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.co2-tshirt.de/adidas-womens-i-5923-runner-lace-up-sneakers-adidas.html">Adidas Women's I 5923 Runner Lace Up Sneakers | Adidas PTSeZVuR</a></h4></div>
+<div class="name"><h4><a href="https://www.co2-tshirt.de/adidas-predator-193-fg-voetbalschoenen-zwart-perrysport.html">ADIDAS PREDATOR 19.3 FG VOETBALSCHOENEN ZWART | Perrysport z7lkmpj3</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€46,00</span> <span class="price-old">€122,00</span>
+<span class="price-new">€45,00</span> <span class="price-old">€122,00</span>
 </p>
 </div>
 </div>
@@ -354,14 +354,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.co2-tshirt.de/kopen-goedkoop-2019-tinhifi-tin-audio-t3-in-ear-oortelefoon.html"><img alt="Kopen Goedkoop 2019 TinHIFI Tin Audio T3 In Ear Oortelefoon rLBN3Zag" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/kopen-goedkoop-2019-tinhifi-tin-audio-t3-in-ear-oortelefoon-8502.jpg" title="Kopen Goedkoop 2019 TinHIFI Tin Audio T3 In Ear Oortelefoon rLBN3Zag"/></a>
+<a class="arevision" href="https://www.co2-tshirt.de/sika-19221-fusion-schoen-s1-zwart-maat-36-toolmax.html"><img alt="SIKA 19221 Fusion Schoen S1 Zwart Maat 36 | Toolmax ZbuaqLut" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/sika-19221-fusion-schoen-s1-zwart-maat-36-toolmax-28.jpg" title="SIKA 19221 Fusion Schoen S1 Zwart Maat 36 | Toolmax ZbuaqLut"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.co2-tshirt.de/kopen-goedkoop-2019-tinhifi-tin-audio-t3-in-ear-oortelefoon.html">Kopen Goedkoop 2019 TinHIFI Tin Audio T3 In Ear Oortelefoon rLBN3Zag</a></h4></div>
+<div class="name"><h4><a href="https://www.co2-tshirt.de/sika-19221-fusion-schoen-s1-zwart-maat-36-toolmax.html">SIKA 19221 Fusion Schoen S1 Zwart Maat 36 | Toolmax ZbuaqLut</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€45,00</span> <span class="price-old">€149,00</span>
+<span class="price-new">€45,00</span> <span class="price-old">€133,00</span>
 </p>
 </div>
 </div>
@@ -370,14 +370,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.co2-tshirt.de/lage-casual-schoen-rieker.html"><img alt="Lage Casual Schoen Rieker QR1UjCAf" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/lage-casual-schoen-rieker-4493.jpg" title="Lage Casual Schoen Rieker QR1UjCAf"/></a>
+<a class="arevision" href="https://www.co2-tshirt.de/22-beste-afbeeldingen-van-i-love-shoes-in-2019-schoenen.html"><img alt="22 beste afbeeldingen van I love shoes! in 2019 Schoenen PegG8juT" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/22-beste-afbeeldingen-van-i-love-shoes-in-2019-schoenen-10622.jpg" title="22 beste afbeeldingen van I love shoes! in 2019 Schoenen PegG8juT"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.co2-tshirt.de/lage-casual-schoen-rieker.html">Lage Casual Schoen Rieker QR1UjCAf</a></h4></div>
+<div class="name"><h4><a href="https://www.co2-tshirt.de/22-beste-afbeeldingen-van-i-love-shoes-in-2019-schoenen.html">22 beste afbeeldingen van I love shoes! in 2019 Schoenen PegG8juT</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€47,00</span> <span class="price-old">€120,00</span>
+<span class="price-new">€45,00</span> <span class="price-old">€123,00</span>
 </p>
 </div>
 </div>
@@ -386,14 +386,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.co2-tshirt.de/ecco-sneakers-zwart-dames-sneakers-ecco-crisp-ii-sneakers.html"><img alt="ecco sneakers zwart, Dames Sneakers ecco CRISP II Sneakers OYU6vh1I" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/ecco-sneakers-zwart-dames-sneakers-ecco-crisp-ii-sneakers-10023.jpg" title="ecco sneakers zwart, Dames Sneakers ecco CRISP II Sneakers OYU6vh1I"/></a>
+<a class="arevision" href="https://www.co2-tshirt.de/nike-sustainability-rating-good-on-you.html"><img alt="Nike Sustainability Rating Good On You zdAJzhul" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="" title="Nike Sustainability Rating Good On You zdAJzhul"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.co2-tshirt.de/ecco-sneakers-zwart-dames-sneakers-ecco-crisp-ii-sneakers.html">ecco sneakers zwart, Dames Sneakers ecco CRISP II Sneakers OYU6vh1I</a></h4></div>
+<div class="name"><h4><a href="https://www.co2-tshirt.de/nike-sustainability-rating-good-on-you.html">Nike Sustainability Rating Good On You zdAJzhul</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€45,00</span> <span class="price-old">€146,00</span>
+<span class="price-new">€46,00</span> <span class="price-old">€125,00</span>
 </p>
 </div>
 </div>
@@ -410,14 +410,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.co2-tshirt.de/raven-niet-zomaar-een-sneaker-idenza-inspiratieblog.html"><img alt="RAVEN: niet zomaar een sneaker.. Idenza Inspiratieblog 4BMuOOoH" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/raven-niet-zomaar-een-sneaker-idenza-inspiratieblog-6780.jpg" title="RAVEN: niet zomaar een sneaker.. Idenza Inspiratieblog 4BMuOOoH"/></a>
+<a class="arevision" href="https://www.co2-tshirt.de/michael-kors-schoenen-collectie-pre-summer-2017.html"><img alt="Michael Kors schoenen collectie pré summer 2017! YKK3wxiL" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/michael-kors-schoenen-collectie-pre-summer-2017-6715.jpg" title="Michael Kors schoenen collectie pré summer 2017! YKK3wxiL"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.co2-tshirt.de/raven-niet-zomaar-een-sneaker-idenza-inspiratieblog.html">RAVEN: niet zomaar een sneaker.. Idenza Inspiratieblog 4BMuOOoH</a></h4></div>
+<div class="name"><h4><a href="https://www.co2-tshirt.de/michael-kors-schoenen-collectie-pre-summer-2017.html">Michael Kors schoenen collectie pré summer 2017! YKK3wxiL</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€45,00</span> <span class="price-old">€131,00</span>
+<span class="price-new">€46,00</span> <span class="price-old">€140,00</span>
 </p>
 </div>
 </div>
@@ -426,43 +426,11 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.co2-tshirt.de/glorious-her-goede-kopen-hot-luxe-merk-mannen-kleding.html"><img alt="glorious her: Goede Kopen Hot Luxe Merk Mannen Kleding kbWZXs78" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/glorious-her-goede-kopen-hot-luxe-merk-mannen-kleding-735.jpg" title="glorious her: Goede Kopen Hot Luxe Merk Mannen Kleding kbWZXs78"/></a>
+<a class="arevision" href="https://www.co2-tshirt.de/bugatti-melchiore-veterschoenen-blauw-maat-48.html"><img alt="Bugatti Melchiore veterschoenen blauw Maat 48 NChqZ660" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/bugatti-melchiore-veterschoenen-blauw-maat-48-10971.jpg" title="Bugatti Melchiore veterschoenen blauw Maat 48 NChqZ660"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.co2-tshirt.de/glorious-her-goede-kopen-hot-luxe-merk-mannen-kleding.html">glorious her: Goede Kopen Hot Luxe Merk Mannen Kleding kbWZXs78</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€46,00</span> <span class="price-old">€147,00</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.co2-tshirt.de/flr-f55-fietsschoenen-mtb-man-racing-fiets-sneakers-mtb.html"><img alt="FLR F55 fietsschoenen mtb man racing fiets sneakers MTB sOi2MFk3" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/flr-f55-fietsschoenen-mtb-man-racing-fiets-sneakers-mtb-8986.jpg" title="FLR F55 fietsschoenen mtb man racing fiets sneakers MTB sOi2MFk3"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="https://www.co2-tshirt.de/flr-f55-fietsschoenen-mtb-man-racing-fiets-sneakers-mtb.html">FLR F55 fietsschoenen mtb man racing fiets sneakers MTB sOi2MFk3</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€46,00</span> <span class="price-old">€129,00</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.co2-tshirt.de/bunnies-jr-babyschoenen-en-kinderschoenen.html"><img alt="Bunnies JR babyschoenen en kinderschoenen ga02RaPP" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/bunnies-jr-babyschoenen-en-kinderschoenen-482.jpg" title="Bunnies JR babyschoenen en kinderschoenen ga02RaPP"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="https://www.co2-tshirt.de/bunnies-jr-babyschoenen-en-kinderschoenen.html">Bunnies JR babyschoenen en kinderschoenen ga02RaPP</a></h4></div>
+<div class="name"><h4><a href="https://www.co2-tshirt.de/bugatti-melchiore-veterschoenen-blauw-maat-48.html">Bugatti Melchiore veterschoenen blauw Maat 48 NChqZ660</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
 <span class="price-new">€45,00</span> <span class="price-old">€126,00</span>
@@ -474,14 +442,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.co2-tshirt.de/launch-nike-zoomx-vaporfly-next-runners-lab-nieuws.html"><img alt="Launch | Nike ZoomX Vaporfly NEXT% runners' lab nieuws wNDmjnVr" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/launch-nike-zoomx-vaporfly-next-runners-lab-nieuws-591.jpg" title="Launch | Nike ZoomX Vaporfly NEXT% runners' lab nieuws wNDmjnVr"/></a>
+<a class="arevision" href="https://www.co2-tshirt.de/custom-nike-air-max-black-and-white-ombre-270s-schoenen.html"><img alt="CUSTOM NIKE AIR MAX BLACK AND WHITE OMBRE 270's Schoenen KJrPNi8r" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/custom-nike-air-max-black-and-white-ombre-270s-schoenen-1184.jpg" title="CUSTOM NIKE AIR MAX BLACK AND WHITE OMBRE 270's Schoenen KJrPNi8r"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.co2-tshirt.de/launch-nike-zoomx-vaporfly-next-runners-lab-nieuws.html">Launch | Nike ZoomX Vaporfly NEXT% runners' lab nieuws wNDmjnVr</a></h4></div>
+<div class="name"><h4><a href="https://www.co2-tshirt.de/custom-nike-air-max-black-and-white-ombre-270s-schoenen.html">CUSTOM NIKE AIR MAX BLACK AND WHITE OMBRE 270's Schoenen KJrPNi8r</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€45,00</span> <span class="price-old">€134,00</span>
+<span class="price-new">€46,00</span> <span class="price-old">€126,00</span>
 </p>
 </div>
 </div>
@@ -490,27 +458,11 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.co2-tshirt.de/ecco-dames-sandalen-goedkoop-outlet-nederland-online.html"><img alt="Ecco Dames Sandalen Goedkoop Outlet Nederland Online rjs2QtDq" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/ecco-dames-sandalen-goedkoop-outlet-nederland-online-114.jpg" title="Ecco Dames Sandalen Goedkoop Outlet Nederland Online rjs2QtDq"/></a>
+<a class="arevision" href="https://www.co2-tshirt.de/vty-kinderen-blauwe-sneaker-klittenband-maat-33.html"><img alt="Vty Kinderen Blauwe sneaker klittenband Maat 33 lnOoZcMW" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/vty-kinderen-blauwe-sneaker-klittenband-maat-33-5518.jpg" title="Vty Kinderen Blauwe sneaker klittenband Maat 33 lnOoZcMW"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.co2-tshirt.de/ecco-dames-sandalen-goedkoop-outlet-nederland-online.html">Ecco Dames Sandalen Goedkoop Outlet Nederland Online rjs2QtDq</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€46,00</span> <span class="price-old">€141,00</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.co2-tshirt.de/sneakers-sneakers-mode-witte-gympen-schoenen.html"><img alt="Sneakers | Sneakers mode, Witte gympen, Schoenen 2e2TgDxO" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/sneakers-sneakers-mode-witte-gympen-schoenen-7096.jpg" title="Sneakers | Sneakers mode, Witte gympen, Schoenen 2e2TgDxO"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="https://www.co2-tshirt.de/sneakers-sneakers-mode-witte-gympen-schoenen.html">Sneakers | Sneakers mode, Witte gympen, Schoenen 2e2TgDxO</a></h4></div>
+<div class="name"><h4><a href="https://www.co2-tshirt.de/vty-kinderen-blauwe-sneaker-klittenband-maat-33.html">Vty Kinderen Blauwe sneaker klittenband Maat 33 lnOoZcMW</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
 <span class="price-new">€46,00</span> <span class="price-old">€127,00</span>
@@ -522,14 +474,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.co2-tshirt.de/zo-verwijder-je-makkelijk-vlekken-uit-suede-schoenen.html"><img alt="Zo verwijder je makkelijk vlekken uit suède schoenen 5LgBlfDe" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/zo-verwijder-je-makkelijk-vlekken-uit-suede-schoenen-4172.png" title="Zo verwijder je makkelijk vlekken uit suède schoenen 5LgBlfDe"/></a>
+<a class="arevision" href="https://www.co2-tshirt.de/dames-schoenen-nike-nl.html"><img alt="Dames Schoenen. Nike NL OPaGc5Fc" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/dames-schoenen-nike-nl-7509.jpg" title="Dames Schoenen. Nike NL OPaGc5Fc"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.co2-tshirt.de/zo-verwijder-je-makkelijk-vlekken-uit-suede-schoenen.html">Zo verwijder je makkelijk vlekken uit suède schoenen 5LgBlfDe</a></h4></div>
+<div class="name"><h4><a href="https://www.co2-tshirt.de/dames-schoenen-nike-nl.html">Dames Schoenen. Nike NL OPaGc5Fc</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€45,00</span> <span class="price-old">€129,00</span>
+<span class="price-new">€46,00</span> <span class="price-old">€137,00</span>
 </p>
 </div>
 </div>
@@ -538,14 +490,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.co2-tshirt.de/hippe-ninni-vi-schoenen-ninni-vi-laarsjes-en-sneakers.html"><img alt="Hippe Ninni Vi schoenen Ninni Vi laarsjes en sneakers lntcceBH" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/hippe-ninni-vi-schoenen-ninni-vi-laarsjes-en-sneakers-6131.jpg" title="Hippe Ninni Vi schoenen Ninni Vi laarsjes en sneakers lntcceBH"/></a>
+<a class="arevision" href="https://www.co2-tshirt.de/nike-womens-shoes-air-max-90-premium-suede-navywhite.html"><img alt="Nike Womens Shoes Air Max 90 Premium Suede NavyWhite 4DD3MJ5V" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/nike-womens-shoes-air-max-90-premium-suede-navywhite-6299.jpg" title="Nike Womens Shoes Air Max 90 Premium Suede NavyWhite 4DD3MJ5V"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.co2-tshirt.de/hippe-ninni-vi-schoenen-ninni-vi-laarsjes-en-sneakers.html">Hippe Ninni Vi schoenen Ninni Vi laarsjes en sneakers lntcceBH</a></h4></div>
+<div class="name"><h4><a href="https://www.co2-tshirt.de/nike-womens-shoes-air-max-90-premium-suede-navywhite.html">Nike Womens Shoes Air Max 90 Premium Suede NavyWhite 4DD3MJ5V</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€45,00</span> <span class="price-old">€145,00</span>
+<span class="price-new">€46,00</span> <span class="price-old">€148,00</span>
 </p>
 </div>
 </div>
@@ -554,14 +506,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.co2-tshirt.de/adidas-nmd-hu-pharrell-solar-pack-mother-human-race-shoes.html"><img alt="adidas NMD Hu Pharrell Solar Pack Mother | Human race shoes jTmz2E2P" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/adidas-nmd-hu-pharrell-solar-pack-mother-human-race-shoes-6117.jpg" title="adidas NMD Hu Pharrell Solar Pack Mother | Human race shoes jTmz2E2P"/></a>
+<a class="arevision" href="https://www.co2-tshirt.de/witte-sneakers-cedar-low.html"><img alt="Witte Sneakers Cedar Low LsrIVvqN" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/witte-sneakers-cedar-low-9695.jpg" title="Witte Sneakers Cedar Low LsrIVvqN"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.co2-tshirt.de/adidas-nmd-hu-pharrell-solar-pack-mother-human-race-shoes.html">adidas NMD Hu Pharrell Solar Pack Mother | Human race shoes jTmz2E2P</a></h4></div>
+<div class="name"><h4><a href="https://www.co2-tshirt.de/witte-sneakers-cedar-low.html">Witte Sneakers Cedar Low LsrIVvqN</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€45,00</span> <span class="price-old">€145,00</span>
+<span class="price-new">€46,00</span> <span class="price-old">€143,00</span>
 </p>
 </div>
 </div>
@@ -570,14 +522,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.co2-tshirt.de/nike-le-bron-16-sb-basketbal-dames-sneakers-witblauw.html"><img alt="Nike Le Bron 16 sb basketbal dames sneakers witblauw uqlI5FGu" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/nike-le-bron-16-sb-basketbal-dames-sneakers-witblauw-3965.jpg" title="Nike Le Bron 16 sb basketbal dames sneakers witblauw uqlI5FGu"/></a>
+<a class="arevision" href="https://www.co2-tshirt.de/hot-nieuwe-2018-dames-ecco-incise-enchant-leer-rubber.html"><img alt="Hot Nieuwe 2018 Dames Ecco Incise Enchant Leer Rubber cDsH1zYw" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/hot-nieuwe-2018-dames-ecco-incise-enchant-leer-rubber-7714.jpg" title="Hot Nieuwe 2018 Dames Ecco Incise Enchant Leer Rubber cDsH1zYw"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.co2-tshirt.de/nike-le-bron-16-sb-basketbal-dames-sneakers-witblauw.html">Nike Le Bron 16 sb basketbal dames sneakers witblauw uqlI5FGu</a></h4></div>
+<div class="name"><h4><a href="https://www.co2-tshirt.de/hot-nieuwe-2018-dames-ecco-incise-enchant-leer-rubber.html">Hot Nieuwe 2018 Dames Ecco Incise Enchant Leer Rubber cDsH1zYw</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€45,00</span> <span class="price-old">€123,00</span>
+<span class="price-new">€46,00</span> <span class="price-old">€126,00</span>
 </p>
 </div>
 </div>
@@ -586,14 +538,62 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.co2-tshirt.de/solar-sneaker-wit-dikke-zool.html"><img alt="Solar Sneaker wit dikke zool BS3VsXcq" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/solar-sneaker-wit-dikke-zool-2505.jpg" title="Solar Sneaker wit dikke zool BS3VsXcq"/></a>
+<a class="arevision" href="https://www.co2-tshirt.de/nike-air-zoom-alphafly-next-the-record-breaking-running.html"><img alt="NIKE AIR ZOOM ALPHAFLY NEXT% THE RECORD BREAKING RUNNING Kp3Kf5kS" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/nike-air-zoom-alphafly-next-the-record-breaking-running-9638.jpg" title="NIKE AIR ZOOM ALPHAFLY NEXT% THE RECORD BREAKING RUNNING Kp3Kf5kS"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.co2-tshirt.de/solar-sneaker-wit-dikke-zool.html">Solar Sneaker wit dikke zool BS3VsXcq</a></h4></div>
+<div class="name"><h4><a href="https://www.co2-tshirt.de/nike-air-zoom-alphafly-next-the-record-breaking-running.html">NIKE AIR ZOOM ALPHAFLY NEXT% THE RECORD BREAKING RUNNING Kp3Kf5kS</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€46,00</span> <span class="price-old">€142,00</span>
+<span class="price-new">€46,00</span> <span class="price-old">€123,00</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="https://www.co2-tshirt.de/adidas-f10-trx-fg-voetbalschoene-laagste-prijs-vergelijk.html"><img alt="Adidas F10 TRX FG Voetbalschoene laagste prijs? Vergelijk medZjBXj" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/adidas-f10-trx-fg-voetbalschoene-laagste-prijs-vergelijk-5805.jpg" title="Adidas F10 TRX FG Voetbalschoene laagste prijs? Vergelijk medZjBXj"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="https://www.co2-tshirt.de/adidas-f10-trx-fg-voetbalschoene-laagste-prijs-vergelijk.html">Adidas F10 TRX FG Voetbalschoene laagste prijs? Vergelijk medZjBXj</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€46,00</span> <span class="price-old">€144,00</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="https://www.co2-tshirt.de/adidas-hoops-20-sneakers-wit-dames.html"><img alt="Adidas Hoops 2.0 sneakers wit dames kPtXeH4r" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/adidas-hoops-20-sneakers-wit-dames-11255.jpg" title="Adidas Hoops 2.0 sneakers wit dames kPtXeH4r"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="https://www.co2-tshirt.de/adidas-hoops-20-sneakers-wit-dames.html">Adidas Hoops 2.0 sneakers wit dames kPtXeH4r</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€45,00</span> <span class="price-old">€140,00</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="https://www.co2-tshirt.de/onze-winkels-in-noord-holland-meijerink-schoenen.html"><img alt="Onze winkels in Noord Holland | Meijerink Schoenen dH2sG0rR" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/onze-winkels-in-noord-holland-meijerink-schoenen-10490.jpg" title="Onze winkels in Noord Holland | Meijerink Schoenen dH2sG0rR"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="https://www.co2-tshirt.de/onze-winkels-in-noord-holland-meijerink-schoenen.html">Onze winkels in Noord Holland | Meijerink Schoenen dH2sG0rR</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€45,00</span> <span class="price-old">€140,00</span>
 </p>
 </div>
 </div>
@@ -630,43 +630,43 @@ $(document).ready(function() {
 <div id="powered">
 <div class="container">
 <div class="row">
-<div class="col-sm-12 col-md-12">
-      Copyright © 2022 <a href="//www.co2-tshirt.de" target="_blank">www.co2-tshirt.de</a> All Rights Reserved  
+<div class="col-sm-12 col-md-12">
+      Copyright © 2022 <a href="//www.co2-tshirt.de" target="_blank">www.co2-tshirt.de</a> All Rights Reserved  
       </div>
 </div>
 </div>
 </div>
 </footer>
 <script src="catalog/view/theme/catholic/js/jquery.visible.min.js" type="text/javascript"></script>
-<script type="text/javascript">
-
-var win = $(window);
-
-var allMods = $("footer");
-
-allMods.each(function(i, el) {
-    
-  if ($(el).visible(true)) {
-    $(el).addClass("already-visible"); 
-  }
-  
-});
-
-win.scroll(function(event) {
-  
-  allMods.each(function(i, el) {
-    
-    var el = $(el);
-    
-    if (el.visible(true)) {
-      el.addClass("come-in"); 
-    } else {
-      el.removeClass("come-in already-visible");
-    }
-    
-  });
-  
-}); 
+<script type="text/javascript">
+
+var win = $(window);
+
+var allMods = $("footer");
+
+allMods.each(function(i, el) {
+    
+  if ($(el).visible(true)) {
+    $(el).addClass("already-visible"); 
+  }
+  
+});
+
+win.scroll(function(event) {
+  
+  allMods.each(function(i, el) {
+    
+    var el = $(el);
+    
+    if (el.visible(true)) {
+      el.addClass("come-in"); 
+    } else {
+      el.removeClass("come-in already-visible");
+    }
+    
+  });
+  
+}); 
 </script>
 <script src="catalog/view/theme/catholic/js/jquery.easing-1.3.min.js" type="text/javascript"></script>
 <link href="catalog/view/theme/catholic/js/quickview/fancybox/jquery.fancybox.css" property="stylesheet" rel="stylesheet">

@@ -34,83 +34,83 @@
 <script src="catalog/view/theme/gobbling/js/cloud-zoom.js" type="text/javascript"></script>
 <link href="catalog/view/theme/gobbling/stylesheet/dcaccordion.css" property="stylesheet" rel="stylesheet" type="text/css">
 <script src="catalog/view/theme/gobbling/js/jquery.dcjqaccordion.js" type="text/javascript"></script>
-<script type="text/javascript">
-      // Set default flag for the header bag feature and make sure they are booleans
-      var bagPeekFeature = "true" === 'true';
-      var courtesyNavFeature = "true" === 'true';
-      var expressInsider = "true" === 'true';
-      var mentionMe = "true" === 'true';
-      var captcha = "true" === 'true';
-      var alwaysCaptcha = "true" === 'true';
-      var profileComplete = "false" === 'true';
-      var freeShippingAndReturns = "true" === 'true';
-      var memberWallet = "true" === 'true';
-      var newTiers = "false" === 'true';
-      var EccHolderFlag = "false" === 'true';
-
-      window['FLAGS'] = { "BagPeek": bagPeekFeature, "CourtesyNav": courtesyNavFeature, "ExpressInsider": expressInsider, "MentionMe": mentionMe, "Captcha": captcha, "AlwaysCaptcha": alwaysCaptcha, "ProfileComplete": profileComplete,
-      "FreeShippingAndReturns": freeShippingAndReturns, "MemberWallet": memberWallet,
-      "NewTiers": newTiers, "EccHolderFlag": EccHolderFlag };
-
-      // Eva Script
-      !function(n,t){"object"==typeof exports&&"undefined"!=typeof module?module.exports=t():"function"==typeof define&&define.amd?define(t):n.Eva=t()}(this,function(){"use strict";var n=function(){var n=[];return this.get=function(t){for(var i=n.length;i--;)if(n[i].key===t)return n[i].value;return null}.bind(this),this.find=function(t){for(var i=n.length;i--;)if(n[i].key===t)return n[i];return null},this.set=function(t,i){var e=this.find(t);return e?e.value=i:n.push({key:t,value:i}),e?e.value:n[n.length-1].value}.bind(this),function(){return this}.call(this)},t=function(n){return function(n){if(window.Eva){var t=n.campaign,i=n.experience;(function(n){return n?"string"==typeof n||(console.error("Target `campaign` property should be a valid String."),!1):(console.error("Missing `campaign` property from Target campaign."),!1)})(t)&&function(n){return n?n instanceof Object&&n.constructor===Object||(console.error("Target `experience` property should be a valid JavaScript Object."),!1):(console.error("Missing `experience` property and date from Target campaign."),!1)}(i)&&window.Eva.campaign(t,i)}}.call(this,n)},i=function(n,t,i){var e={active:!1,data:null,listeners:[],name:null,scope:window},r=function(){this.active=!0,this.data=arguments,window.isDebugMode&&console.log("EVA.trigger",this);for(var n=this.listeners.pop();n;)"function"==typeof n&&n.apply(this.scope,arguments),n=this.listeners.pop()};return this.add=function(n){return"function"==typeof n&&e.listeners.push(n),this},this.data=function(){return e.data},this.isActive=function(){return e.active},function(n,t,i){return e.name=n,t&&(e.scope=t),this.add(i),e.scope.addEventListener&&e.scope.addEventListener(n,r.bind(e)),this}.call(this,n,t,i)};return new function(){window.Hash=n,window.Audience=t;var e=new Hash,r={},s={},o=function(n){var t=e.get(n);return t||e.set(n,{})},a=i;return this.listen=function(n,t,i){i=i||window;var e=o(i);if(e[n]){var r=e[n];r.isActive()?"function"==typeof t&&t.apply(i,r.data()):r.add(t)}else e[n]=new a(n,i,t)}.bind(this),this.signal=function(n,t,i){this.trigger.call(this,n,t,i)}.bind(this),this.trigger=function(n,t,i){t=t||window;o(t)[n]||this.capture(n,t),t.dispatchEvent(new CustomEvent(n,{detail:i})),window.isDebugMode&&console.log("EVA.signal",i)}.bind(this),this.capture=function(n,t){t=t||window;var i=o(t);i[n]||(i[n]=new a(n,t))}.bind(this),this.subscribe=function(n,t){r[n]||(r[n]=[]),t&&r[n].push(t)},this.unsubscribe=function(n,t){if(r[n])for(var i=r[n],e=i.length;e--;)i[e]===t&&array.splice(e,1)},this.publish=function(n,t){var i=r[n];if(i)for(var e=i.length;e--;)i[e](t)},this.campaign=function(n,t){s[n]=t,this.publish("audience",{name:n,experience:t})},this.campaigns=function(){return s},function(){return this}.call(this)}});
+<script type="text/javascript">
+      // Set default flag for the header bag feature and make sure they are booleans
+      var bagPeekFeature = "true" === 'true';
+      var courtesyNavFeature = "true" === 'true';
+      var expressInsider = "true" === 'true';
+      var mentionMe = "true" === 'true';
+      var captcha = "true" === 'true';
+      var alwaysCaptcha = "true" === 'true';
+      var profileComplete = "false" === 'true';
+      var freeShippingAndReturns = "true" === 'true';
+      var memberWallet = "true" === 'true';
+      var newTiers = "false" === 'true';
+      var EccHolderFlag = "false" === 'true';
+
+      window['FLAGS'] = { "BagPeek": bagPeekFeature, "CourtesyNav": courtesyNavFeature, "ExpressInsider": expressInsider, "MentionMe": mentionMe, "Captcha": captcha, "AlwaysCaptcha": alwaysCaptcha, "ProfileComplete": profileComplete,
+      "FreeShippingAndReturns": freeShippingAndReturns, "MemberWallet": memberWallet,
+      "NewTiers": newTiers, "EccHolderFlag": EccHolderFlag };
+
+      // Eva Script
+      !function(n,t){"object"==typeof exports&&"undefined"!=typeof module?module.exports=t():"function"==typeof define&&define.amd?define(t):n.Eva=t()}(this,function(){"use strict";var n=function(){var n=[];return this.get=function(t){for(var i=n.length;i--;)if(n[i].key===t)return n[i].value;return null}.bind(this),this.find=function(t){for(var i=n.length;i--;)if(n[i].key===t)return n[i];return null},this.set=function(t,i){var e=this.find(t);return e?e.value=i:n.push({key:t,value:i}),e?e.value:n[n.length-1].value}.bind(this),function(){return this}.call(this)},t=function(n){return function(n){if(window.Eva){var t=n.campaign,i=n.experience;(function(n){return n?"string"==typeof n||(console.error("Target `campaign` property should be a valid String."),!1):(console.error("Missing `campaign` property from Target campaign."),!1)})(t)&&function(n){return n?n instanceof Object&&n.constructor===Object||(console.error("Target `experience` property should be a valid JavaScript Object."),!1):(console.error("Missing `experience` property and date from Target campaign."),!1)}(i)&&window.Eva.campaign(t,i)}}.call(this,n)},i=function(n,t,i){var e={active:!1,data:null,listeners:[],name:null,scope:window},r=function(){this.active=!0,this.data=arguments,window.isDebugMode&&console.log("EVA.trigger",this);for(var n=this.listeners.pop();n;)"function"==typeof n&&n.apply(this.scope,arguments),n=this.listeners.pop()};return this.add=function(n){return"function"==typeof n&&e.listeners.push(n),this},this.data=function(){return e.data},this.isActive=function(){return e.active},function(n,t,i){return e.name=n,t&&(e.scope=t),this.add(i),e.scope.addEventListener&&e.scope.addEventListener(n,r.bind(e)),this}.call(this,n,t,i)};return new function(){window.Hash=n,window.Audience=t;var e=new Hash,r={},s={},o=function(n){var t=e.get(n);return t||e.set(n,{})},a=i;return this.listen=function(n,t,i){i=i||window;var e=o(i);if(e[n]){var r=e[n];r.isActive()?"function"==typeof t&&t.apply(i,r.data()):r.add(t)}else e[n]=new a(n,i,t)}.bind(this),this.signal=function(n,t,i){this.trigger.call(this,n,t,i)}.bind(this),this.trigger=function(n,t,i){t=t||window;o(t)[n]||this.capture(n,t),t.dispatchEvent(new CustomEvent(n,{detail:i})),window.isDebugMode&&console.log("EVA.signal",i)}.bind(this),this.capture=function(n,t){t=t||window;var i=o(t);i[n]||(i[n]=new a(n,t))}.bind(this),this.subscribe=function(n,t){r[n]||(r[n]=[]),t&&r[n].push(t)},this.unsubscribe=function(n,t){if(r[n])for(var i=r[n],e=i.length;e--;)i[e]===t&&array.splice(e,1)},this.publish=function(n,t){var i=r[n];if(i)for(var e=i.length;e--;)i[e](t)},this.campaign=function(n,t){s[n]=t,this.publish("audience",{name:n,experience:t})},this.campaigns=function(){return s},function(){return this}.call(this)}});
 	  </script>
-<style>
-        .calltoaction .btn-plaintext.btn-white:hover {
-    text-decoration: underline !important;
-    color: #fff !important;
-}
-
-.calltoaction .btn-plaintext.btn-white:hover:after {
-    border-left-color: #fff !important;
-}
-
-.calltoaction .btn-plaintext.btn-black:hover {
-	text-decoration: underline !important;
-	color: #000 !important;
-}
-
-.calltoaction .btn-plaintext.btn-black:hover:after {
-    border-left-color: #000 !important;
-} .twocolumncomponentlayout .twocolumn-right {
-    float: left;
-    width: 45.83333%;
-    padding-left: 1rem !important;
-} .product-category-wrapper-desktop 
-.product-messaging {
-display: none;
-visibility: hidden;
-}
-
-.product-category-mobile .product .online-exclusive-message, .product-category-mobile .product .petite-message {
-display: none;
-visibility: hidden;
-} .raven-new-product-tag {
-    position: absolute;
-    bottom: 0;
-    background: white;
-    left: 0;
-    font-weight: 600;
-    font-size: 1.1rem;
-    padding: 6px 10px;
-    letter-spacing: 1px;
-}
-
-a.express-view.mask {
-    display: inline-block !important;
-    background-color: transparent !important;
-    bottom: -1px !important;
-}
-
-.product-category-wrapper-desktop .product-category-desktop .products .product .image-container {
-   margin-bottom: 10px;
-   font-size: 0;
-} .grid__col-8 {
-    width: 66.34% !important;
-}
- .tilecomponent picture, .tilecomponent video {
-display: block !important;
-} 
+<style>
+        .calltoaction .btn-plaintext.btn-white:hover {
+    text-decoration: underline !important;
+    color: #fff !important;
+}
+
+.calltoaction .btn-plaintext.btn-white:hover:after {
+    border-left-color: #fff !important;
+}
+
+.calltoaction .btn-plaintext.btn-black:hover {
+	text-decoration: underline !important;
+	color: #000 !important;
+}
+
+.calltoaction .btn-plaintext.btn-black:hover:after {
+    border-left-color: #000 !important;
+} .twocolumncomponentlayout .twocolumn-right {
+    float: left;
+    width: 45.83333%;
+    padding-left: 1rem !important;
+} .product-category-wrapper-desktop 
+.product-messaging {
+display: none;
+visibility: hidden;
+}
+
+.product-category-mobile .product .online-exclusive-message, .product-category-mobile .product .petite-message {
+display: none;
+visibility: hidden;
+} .raven-new-product-tag {
+    position: absolute;
+    bottom: 0;
+    background: white;
+    left: 0;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 6px 10px;
+    letter-spacing: 1px;
+}
+
+a.express-view.mask {
+    display: inline-block !important;
+    background-color: transparent !important;
+    bottom: -1px !important;
+}
+
+.product-category-wrapper-desktop .product-category-desktop .products .product .image-container {
+   margin-bottom: 10px;
+   font-size: 0;
+} .grid__col-8 {
+    width: 66.34% !important;
+}
+ .tilecomponent picture, .tilecomponent video {
+display: block !important;
+} 
     </style>
 </link></link></link></meta></head>
 <body class="common-home">
@@ -119,12 +119,12 @@ display: block !important;
 <div id="sidebar-wrapper">
 <ul class="sidebar-nav list-group gobbling">
 <li class="sidebar-title">
-<a href="#menu-toggle-close" id="menu-toggle-close"><span aria-hidden="true">×</span></a>Informazione      <script>
-      $("#menu-toggle-close").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-		$(".sidebar-opacity").toggleClass("toggled");
-      });
+<a href="#menu-toggle-close" id="menu-toggle-close"><span aria-hidden="true">×</span></a>Informazione      <script>
+      $("#menu-toggle-close").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+		$(".sidebar-opacity").toggleClass("toggled");
+      });
       </script>
 </li>
 <li><a href="http://www.fasten-saarland.de/index.php?route=information/information&amp;information_id=7">FAQ</a></li>
@@ -187,12 +187,12 @@ display: block !important;
 <span class="button-text">Menù</span>
 </div>
 </a>
-<script>
-        $("#menu-mobile-toggle").click(function(e) {
-          e.preventDefault();
-          $("#wrapper").toggleClass("menu-toggled");
-		  $(".sidebar-opacity").toggleClass("menu-toggled");
-        });
+<script>
+        $("#menu-mobile-toggle").click(function(e) {
+          e.preventDefault();
+          $("#wrapper").toggleClass("menu-toggled");
+		  $(".sidebar-opacity").toggleClass("menu-toggled");
+        });
       </script>
 <div class="btn-group btn-block buttons-header" id="cart">
 <a class="btn dropdown-toggle" data-loading-text="Caricamento..." data-toggle="dropdown">
@@ -230,26 +230,26 @@ display: block !important;
 </div>
 </div>
 </nav>
-<script type="text/javascript">
-$(document).ready(function() {
-	$('#accordion-mobile').dcAccordion({
-		disableLink: false,	
-		menuClose: false,
-		autoClose: true,
-		autoExpand: true,		
-		saveState: false
-	});
-});
+<script type="text/javascript">
+$(document).ready(function() {
+	$('#accordion-mobile').dcAccordion({
+		disableLink: false,	
+		menuClose: false,
+		autoClose: true,
+		autoExpand: true,		
+		saveState: false
+	});
+});
 </script>
 <div class="hidden-sm hidden-md hidden-lg" id="menu-mobile">
 <ul class="accordion sidebar-nav list-group" id="accordion-mobile">
 <li class="sidebar-title">
-<a href="#menu-mobile-toggle-close" id="menu-mobile-toggle-close"><span aria-hidden="true">×</span></a>Menù      <script>
-      $("#menu-mobile-toggle-close").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("menu-toggled");
-		$(".sidebar-opacity").toggleClass("menu-toggled");
-      });
+<a href="#menu-mobile-toggle-close" id="menu-mobile-toggle-close"><span aria-hidden="true">×</span></a>Menù      <script>
+      $("#menu-mobile-toggle-close").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("menu-toggled");
+		$(".sidebar-opacity").toggleClass("menu-toggled");
+      });
       </script>
 </li>
 <li><a href="http://www.fasten-saarland.de/">Home</a></li>
@@ -282,16 +282,16 @@ $(document).ready(function() {
 </div>
 <div style="display:none;"><script src="//js.users.51.la/21085533.js" type="text/javascript"></script><br/></div><div class="container">
 <div class="row"><column class="col-sm-3 hidden-xs" id="column-left">
-<script type="text/javascript">
-$(document).ready(function() {
-	$('#accordion-1').dcAccordion({
-		disableLink: false,	
-		menuClose: false,
-		autoClose: true,
-		autoExpand: true,		
-		saveState: false
-	});
-});
+<script type="text/javascript">
+$(document).ready(function() {
+	$('#accordion-1').dcAccordion({
+		disableLink: false,	
+		menuClose: false,
+		autoClose: true,
+		autoExpand: true,		
+		saveState: false
+	});
+});
 </script>
 <div class="panel panel-default panel-category">
 <div class="panel-heading">Categorie</div>
@@ -323,14 +323,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.fasten-saarland.de/ls2-casco-mx-mx-700-subverter.html"><img alt="LS2 Casco MX MX 700 Subverter" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/fastensaarlandde/ls2-casco-mx-mx-700-subverter-2522.jpg" title="LS2 Casco MX MX 700 Subverter"/></a>
+<a class="arevision" href="http://www.fasten-saarland.de/dainese-guanti-moto-in-tessuto-dainese-avila-ddry-nero-rosso.html"><img alt="Dainese Guanti moto in tessuto dainese avila d-dry nero rosso" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/fastensaarlandde/dainese-guanti-moto-in-tessuto-dainese-avila-ddry-nero-rosso-4138.jpg" title="Dainese Guanti moto in tessuto dainese avila d-dry nero rosso"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.fasten-saarland.de/ls2-casco-mx-mx-700-subverter.html">LS2 Casco MX MX 700 Subverter</a></h4></div>
+<div class="name"><h4><a href="http://www.fasten-saarland.de/dainese-guanti-moto-in-tessuto-dainese-avila-ddry-nero-rosso.html">Dainese Guanti moto in tessuto dainese avila d-dry nero rosso</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€44,99</span> <span class="price-old">€119,99</span>
+<span class="price-new">€41,99</span> <span class="price-old">€113,99</span>
 </p>
 </div>
 </div>
@@ -339,14 +339,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.fasten-saarland.de/just1-j39-reactor-casco-motocross-nerorossogiallo-taglia-xl.html"><img alt="Just1 J39 Reactor Casco Motocross, nero-rosso-giallo, taglia XL" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/fastensaarlandde/just1-j39-reactor-casco-motocross-nerorossogiallo-taglia-xl-148.jpg" title="Just1 J39 Reactor Casco Motocross, nero-rosso-giallo, taglia XL"/></a>
+<a class="arevision" href="http://www.fasten-saarland.de/caschi-neri-da-moto-shark.html"><img alt="Caschi neri da moto Shark" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/fastensaarlandde/caschi-neri-da-moto-shark-4565.jpg" title="Caschi neri da moto Shark"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.fasten-saarland.de/just1-j39-reactor-casco-motocross-nerorossogiallo-taglia-xl.html">Just1 J39 Reactor Casco Motocross, nero-rosso-giallo, taglia XL</a></h4></div>
+<div class="name"><h4><a href="http://www.fasten-saarland.de/caschi-neri-da-moto-shark.html">Caschi neri da moto Shark</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€39,99</span> <span class="price-old">€121,99</span>
+<span class="price-new">€40,99</span> <span class="price-old">€127,99</span>
 </p>
 </div>
 </div>
@@ -355,14 +355,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.fasten-saarland.de/caschi-neri-da-moto-spidi.html"><img alt="Caschi neri da moto Spidi" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/fastensaarlandde/caschi-neri-da-moto-spidi-90.jpg" title="Caschi neri da moto Spidi"/></a>
+<a class="arevision" href="http://www.fasten-saarland.de/caschi-neri-da-moto-hjc-helmets.html"><img alt="Caschi neri da moto HJC Helmets" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/fastensaarlandde/caschi-neri-da-moto-hjc-helmets-2447.jpg" title="Caschi neri da moto HJC Helmets"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.fasten-saarland.de/caschi-neri-da-moto-spidi.html">Caschi neri da moto Spidi</a></h4></div>
+<div class="name"><h4><a href="http://www.fasten-saarland.de/caschi-neri-da-moto-hjc-helmets.html">Caschi neri da moto HJC Helmets</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€41,99</span> <span class="price-old">€128,99</span>
+<span class="price-new">€40,99</span> <span class="price-old">€130,99</span>
 </p>
 </div>
 </div>
@@ -371,14 +371,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.fasten-saarland.de/thor-sector-racer-casco-motocross-nerogrigio-taglia-s.html"><img alt="Thor Sector Racer Casco Motocross, nero-grigio, taglia S" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/fastensaarlandde/thor-sector-racer-casco-motocross-nerogrigio-taglia-s-2237.jpg" title="Thor Sector Racer Casco Motocross, nero-grigio, taglia S"/></a>
+<a class="arevision" href="http://www.fasten-saarland.de/origine-tonale-power-casco-nerogiallo-taglia-xl.html"><img alt="Origine Tonale Power casco, nero-giallo, taglia XL" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/fastensaarlandde/origine-tonale-power-casco-nerogiallo-taglia-xl-206.jpg" title="Origine Tonale Power casco, nero-giallo, taglia XL"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.fasten-saarland.de/thor-sector-racer-casco-motocross-nerogrigio-taglia-s.html">Thor Sector Racer Casco Motocross, nero-grigio, taglia S</a></h4></div>
+<div class="name"><h4><a href="http://www.fasten-saarland.de/origine-tonale-power-casco-nerogiallo-taglia-xl.html">Origine Tonale Power casco, nero-giallo, taglia XL</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€39,99</span> <span class="price-old">€113,99</span>
+<span class="price-new">€43,99</span> <span class="price-old">€119,99</span>
 </p>
 </div>
 </div>
@@ -387,14 +387,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.fasten-saarland.de/shoei-neotec-ii-splicer-casco-nerogrigio-taglia-xl.html"><img alt="Shoei Neotec II Splicer Casco, nero-grigio, taglia XL" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/fastensaarlandde/shoei-neotec-ii-splicer-casco-nerogrigio-taglia-xl-5130.jpg" title="Shoei Neotec II Splicer Casco, nero-grigio, taglia XL"/></a>
+<a class="arevision" href="http://www.fasten-saarland.de/caschi-grigi-da-moto-momo-design.html"><img alt="Caschi grigi da moto MOMO DESIGN" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/fastensaarlandde/caschi-grigi-da-moto-momo-design-1396.jpg" title="Caschi grigi da moto MOMO DESIGN"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.fasten-saarland.de/shoei-neotec-ii-splicer-casco-nerogrigio-taglia-xl.html">Shoei Neotec II Splicer Casco, nero-grigio, taglia XL</a></h4></div>
+<div class="name"><h4><a href="http://www.fasten-saarland.de/caschi-grigi-da-moto-momo-design.html">Caschi grigi da moto MOMO DESIGN</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€45,99</span> <span class="price-old">€118,99</span>
+<span class="price-new">€44,99</span> <span class="price-old">€126,99</span>
 </p>
 </div>
 </div>
@@ -403,14 +403,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.fasten-saarland.de/caschi-rosa-fluo-da-moto-enduro.html"><img alt="Caschi rosa fluo da moto Enduro" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/fastensaarlandde/caschi-rosa-fluo-da-moto-enduro-4499.jpg" title="Caschi rosa fluo da moto Enduro"/></a>
+<a class="arevision" href="http://www.fasten-saarland.de/schuberth-c4-casco-bianco-dimensione-s.html"><img alt="Schuberth C4 Casco, bianco, dimensione S" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/fastensaarlandde/schuberth-c4-casco-bianco-dimensione-s-3149.jpg" title="Schuberth C4 Casco, bianco, dimensione S"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.fasten-saarland.de/caschi-rosa-fluo-da-moto-enduro.html">Caschi rosa fluo da moto Enduro</a></h4></div>
+<div class="name"><h4><a href="http://www.fasten-saarland.de/schuberth-c4-casco-bianco-dimensione-s.html">Schuberth C4 Casco, bianco, dimensione S</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€46,99</span> <span class="price-old">€118,99</span>
+<span class="price-new">€42,99</span> <span class="price-old">€122,99</span>
 </p>
 </div>
 </div>
@@ -427,14 +427,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.fasten-saarland.de/blauer-mystic-graphic-a-casco-integrale-white-black.html"><img alt="BLAUER MYSTIC GRAPHIC A casco integrale - (White/Black)" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/fastensaarlandde/blauer-mystic-graphic-a-casco-integrale-white-black-170.jpg" title="BLAUER MYSTIC GRAPHIC A casco integrale - (White/Black)"/></a>
+<a class="arevision" href="http://www.fasten-saarland.de/caschi-neri-da-moto-shark.html"><img alt="Caschi neri da moto Shark" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/fastensaarlandde/caschi-neri-da-moto-shark-762.jpg" title="Caschi neri da moto Shark"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.fasten-saarland.de/blauer-mystic-graphic-a-casco-integrale-white-black.html">BLAUER MYSTIC GRAPHIC A casco integrale - (White/Black)</a></h4></div>
+<div class="name"><h4><a href="http://www.fasten-saarland.de/caschi-neri-da-moto-shark.html">Caschi neri da moto Shark</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€43,99</span> <span class="price-old">€121,99</span>
+<span class="price-new">€44,99</span> <span class="price-old">€118,99</span>
 </p>
 </div>
 </div>
@@ -443,14 +443,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.fasten-saarland.de/caschi-da-moto-xlite-motogp.html"><img alt="Caschi da moto X-lite MotoGP" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/fastensaarlandde/caschi-da-moto-xlite-motogp-3660.jpg" title="Caschi da moto X-lite MotoGP"/></a>
+<a class="arevision" href="http://www.fasten-saarland.de/caschi-bianchi-da-moto-per-donna-schuberth.html"><img alt="Caschi bianchi da moto per Donna Schuberth" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/fastensaarlandde/caschi-bianchi-da-moto-per-donna-schuberth-5056.jpg" title="Caschi bianchi da moto per Donna Schuberth"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.fasten-saarland.de/caschi-da-moto-xlite-motogp.html">Caschi da moto X-lite MotoGP</a></h4></div>
+<div class="name"><h4><a href="http://www.fasten-saarland.de/caschi-bianchi-da-moto-per-donna-schuberth.html">Caschi bianchi da moto per Donna Schuberth</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€40,99</span> <span class="price-old">€116,99</span>
+<span class="price-new">€43,99</span> <span class="price-old">€128,99</span>
 </p>
 </div>
 </div>
@@ -459,14 +459,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.fasten-saarland.de/scorpion-kdf-161-blue-mirror.html"><img alt="Scorpion Kdf 16-1 Blue Mirror" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/fastensaarlandde/scorpion-kdf-161-blue-mirror-1524.jpg" title="Scorpion Kdf 16-1 Blue Mirror"/></a>
+<a class="arevision" href="http://www.fasten-saarland.de/caschi-da-moto-astone.html"><img alt="Caschi da moto Astone" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/fastensaarlandde/caschi-da-moto-astone-468.jpg" title="Caschi da moto Astone"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.fasten-saarland.de/scorpion-kdf-161-blue-mirror.html">Scorpion Kdf 16-1 Blue Mirror</a></h4></div>
+<div class="name"><h4><a href="http://www.fasten-saarland.de/caschi-da-moto-astone.html">Caschi da moto Astone</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€42,99</span> <span class="price-old">€113,99</span>
+<span class="price-new">€44,99</span> <span class="price-old">€118,99</span>
 </p>
 </div>
 </div>
@@ -475,14 +475,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.fasten-saarland.de/agv-compact-st-multi-plk.html"><img alt="agv compact st multi plk" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/fastensaarlandde/agv-compact-st-multi-plk-4732.jpg" title="agv compact st multi plk"/></a>
+<a class="arevision" href="http://www.fasten-saarland.de/scorpion-exo-city-avenue-casco-jet-biancoblu-dimensione-s.html"><img alt="Scorpion Exo City Avenue Casco Jet, bianco-blu, dimensione S" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/fastensaarlandde/scorpion-exo-city-avenue-casco-jet-biancoblu-dimensione-s-3878.jpg" title="Scorpion Exo City Avenue Casco Jet, bianco-blu, dimensione S"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.fasten-saarland.de/agv-compact-st-multi-plk.html">agv compact st multi plk</a></h4></div>
+<div class="name"><h4><a href="http://www.fasten-saarland.de/scorpion-exo-city-avenue-casco-jet-biancoblu-dimensione-s.html">Scorpion Exo City Avenue Casco Jet, bianco-blu, dimensione S</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€46,99</span> <span class="price-old">€121,99</span>
+<span class="price-new">€40,99</span> <span class="price-old">€122,99</span>
 </p>
 </div>
 </div>
@@ -491,14 +491,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.fasten-saarland.de/xlite-casco-integrale-x803-rr-ultra-carbon-puro.html"><img alt="X-Lite casco integrale X-803 rr Ultra Carbon - Puro" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/fastensaarlandde/xlite-casco-integrale-x803-rr-ultra-carbon-puro-2530.jpg" title="X-Lite casco integrale X-803 rr Ultra Carbon - Puro"/></a>
+<a class="arevision" href="http://www.fasten-saarland.de/caschi-da-moto-enduro.html"><img alt="Caschi da moto Enduro" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/fastensaarlandde/caschi-da-moto-enduro-5118.jpg" title="Caschi da moto Enduro"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.fasten-saarland.de/xlite-casco-integrale-x803-rr-ultra-carbon-puro.html">X-Lite casco integrale X-803 rr Ultra Carbon - Puro</a></h4></div>
+<div class="name"><h4><a href="http://www.fasten-saarland.de/caschi-da-moto-enduro.html">Caschi da moto Enduro</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€42,99</span> <span class="price-old">€111,99</span>
+<span class="price-new">€41,99</span> <span class="price-old">€122,99</span>
 </p>
 </div>
 </div>
@@ -507,14 +507,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.fasten-saarland.de/visiera-bell-bullitt-aletta-marrone-colore-bianco.html"><img alt="Visiera Bell Bullitt Aletta Marrone - Colore: Bianco" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/fastensaarlandde/visiera-bell-bullitt-aletta-marrone-colore-bianco-4872.jpg" title="Visiera Bell Bullitt Aletta Marrone - Colore: Bianco"/></a>
+<a class="arevision" href="http://www.fasten-saarland.de/hjc-hj20st-max-vision-pinlock-dark-smoke.html"><img alt="HJC HJ20ST Max Vision Pinlock Dark Smoke" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/fastensaarlandde/hjc-hj20st-max-vision-pinlock-dark-smoke-3336.jpg" title="HJC HJ20ST Max Vision Pinlock Dark Smoke"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.fasten-saarland.de/visiera-bell-bullitt-aletta-marrone-colore-bianco.html">Visiera Bell Bullitt Aletta Marrone - Colore: Bianco</a></h4></div>
+<div class="name"><h4><a href="http://www.fasten-saarland.de/hjc-hj20st-max-vision-pinlock-dark-smoke.html">HJC HJ20ST Max Vision Pinlock Dark Smoke</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€41,99</span> <span class="price-old">€119,99</span>
+<span class="price-new">€46,99</span> <span class="price-old">€125,99</span>
 </p>
 </div>
 </div>
@@ -523,14 +523,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.fasten-saarland.de/caschi-giallo-fluo-da-moto-alpinestars.html"><img alt="Caschi giallo fluo da moto Alpinestars" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/fastensaarlandde/caschi-giallo-fluo-da-moto-alpinestars-4479.jpg" title="Caschi giallo fluo da moto Alpinestars"/></a>
+<a class="arevision" href="http://www.fasten-saarland.de/hjc-visiera-a-specchio-silver-hjc-hj20st-per-rpha-st.html"><img alt="Hjc Visiera a specchio silver hjc hj-20st per rpha st" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/fastensaarlandde/hjc-visiera-a-specchio-silver-hjc-hj20st-per-rpha-st-730.jpg" title="Hjc Visiera a specchio silver hjc hj-20st per rpha st"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.fasten-saarland.de/caschi-giallo-fluo-da-moto-alpinestars.html">Caschi giallo fluo da moto Alpinestars</a></h4></div>
+<div class="name"><h4><a href="http://www.fasten-saarland.de/hjc-visiera-a-specchio-silver-hjc-hj20st-per-rpha-st.html">Hjc Visiera a specchio silver hjc hj-20st per rpha st</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€46,99</span> <span class="price-old">€118,99</span>
+<span class="price-new">€39,99</span> <span class="price-old">€126,99</span>
 </p>
 </div>
 </div>
@@ -539,14 +539,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.fasten-saarland.de/caschi-da-moto-bogotto.html"><img alt="Caschi da moto Bogotto" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/fastensaarlandde/caschi-da-moto-bogotto-3745.jpg" title="Caschi da moto Bogotto"/></a>
+<a class="arevision" href="http://www.fasten-saarland.de/suomy-casco-da-ciclo-gunwind-hv-verde-nero-l-5962-cm.html"><img alt="Suomy Casco da Ciclo Gunwind HV Verde/Nero L (59-62 cm)" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/fastensaarlandde/suomy-casco-da-ciclo-gunwind-hv-verde-nero-l-5962-cm-2231.jpg" title="Suomy Casco da Ciclo Gunwind HV Verde/Nero L (59-62 cm)"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.fasten-saarland.de/caschi-da-moto-bogotto.html">Caschi da moto Bogotto</a></h4></div>
+<div class="name"><h4><a href="http://www.fasten-saarland.de/suomy-casco-da-ciclo-gunwind-hv-verde-nero-l-5962-cm.html">Suomy Casco da Ciclo Gunwind HV Verde/Nero L (59-62 cm)</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€45,99</span> <span class="price-old">€126,99</span>
+<span class="price-new">€40,99</span> <span class="price-old">€110,99</span>
 </p>
 </div>
 </div>
@@ -555,14 +555,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.fasten-saarland.de/acerbis-xpro-vtr-casco-motocross-nerogiallo-taglia-xl.html"><img alt="Acerbis X-Pro VTR Casco Motocross, nero-giallo, taglia XL" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/fastensaarlandde/acerbis-xpro-vtr-casco-motocross-nerogiallo-taglia-xl-4286.jpg" title="Acerbis X-Pro VTR Casco Motocross, nero-giallo, taglia XL"/></a>
+<a class="arevision" href="http://www.fasten-saarland.de/cool-casc-copricasco-universale-drago-blaugrana.html"><img alt="Cool Casc Copricasco Universale Drago Blaugrana" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/fastensaarlandde/cool-casc-copricasco-universale-drago-blaugrana-2366.jpg" title="Cool Casc Copricasco Universale Drago Blaugrana"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.fasten-saarland.de/acerbis-xpro-vtr-casco-motocross-nerogiallo-taglia-xl.html">Acerbis X-Pro VTR Casco Motocross, nero-giallo, taglia XL</a></h4></div>
+<div class="name"><h4><a href="http://www.fasten-saarland.de/cool-casc-copricasco-universale-drago-blaugrana.html">Cool Casc Copricasco Universale Drago Blaugrana</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€42,99</span> <span class="price-old">€122,99</span>
+<span class="price-new">€45,99</span> <span class="price-old">€113,99</span>
 </p>
 </div>
 </div>
@@ -571,14 +571,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.fasten-saarland.de/schuberth-r2-casco-nerogrigio-taglia-xs.html"><img alt="Schuberth R2 casco, nero-grigio, taglia XS" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/fastensaarlandde/schuberth-r2-casco-nerogrigio-taglia-xs-927.jpg" title="Schuberth R2 casco, nero-grigio, taglia XS"/></a>
+<a class="arevision" href="http://www.fasten-saarland.de/nexx-xvilijord-visiera-male-trasparente.html"><img alt="Nexx X.Vilijord, visiera male Trasparente" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/fastensaarlandde/nexx-xvilijord-visiera-male-trasparente-3278.jpg" title="Nexx X.Vilijord, visiera male Trasparente"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.fasten-saarland.de/schuberth-r2-casco-nerogrigio-taglia-xs.html">Schuberth R2 casco, nero-grigio, taglia XS</a></h4></div>
+<div class="name"><h4><a href="http://www.fasten-saarland.de/nexx-xvilijord-visiera-male-trasparente.html">Nexx X.Vilijord, visiera male Trasparente</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€44,99</span> <span class="price-old">€119,99</span>
+<span class="price-new">€40,99</span> <span class="price-old">€125,99</span>
 </p>
 </div>
 </div>
@@ -587,14 +587,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.fasten-saarland.de/one-occhiali-moto-cross-enduro-one-racing-splash-arancio-nero.html"><img alt="One Occhiali moto cross enduro one racing splash arancio nero" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/fastensaarlandde/one-occhiali-moto-cross-enduro-one-racing-splash-arancio-nero-5211.jpg" title="One Occhiali moto cross enduro one racing splash arancio nero"/></a>
+<a class="arevision" href="http://www.fasten-saarland.de/casco-cross-bambino-hjc-clxy-ii-creeper-mc5sf-grigio-xl-5556cm.html"><img alt="Casco Cross Bambino HJC CL-XY II Creeper MC5SF Grigio XL 55-56cm" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/fastensaarlandde/casco-cross-bambino-hjc-clxy-ii-creeper-mc5sf-grigio-xl-5556cm-3957.jpg" title="Casco Cross Bambino HJC CL-XY II Creeper MC5SF Grigio XL 55-56cm"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.fasten-saarland.de/one-occhiali-moto-cross-enduro-one-racing-splash-arancio-nero.html">One Occhiali moto cross enduro one racing splash arancio nero</a></h4></div>
+<div class="name"><h4><a href="http://www.fasten-saarland.de/casco-cross-bambino-hjc-clxy-ii-creeper-mc5sf-grigio-xl-5556cm.html">Casco Cross Bambino HJC CL-XY II Creeper MC5SF Grigio XL 55-56cm</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€44,99</span> <span class="price-old">€111,99</span>
+<span class="price-new">€44,99</span> <span class="price-old">€116,99</span>
 </p>
 </div>
 </div>
@@ -603,14 +603,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.fasten-saarland.de/casco-jet-origine-palio-20-nero-opaco-uomo-xs-5354cm.html"><img alt="Casco Jet Origine Palio 2.0 Nero Opaco Uomo XS 53-54cm" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/fastensaarlandde/casco-jet-origine-palio-20-nero-opaco-uomo-xs-5354cm-1263.jpg" title="Casco Jet Origine Palio 2.0 Nero Opaco Uomo XS 53-54cm"/></a>
+<a class="arevision" href="http://www.fasten-saarland.de/agv-street-9-as-visiera-male-fume-intenso.html"><img alt="AGV Street 9 AS, visiera male Fumé Intenso" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/fastensaarlandde/agv-street-9-as-visiera-male-fume-intenso-929.jpg" title="AGV Street 9 AS, visiera male Fumé Intenso"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.fasten-saarland.de/casco-jet-origine-palio-20-nero-opaco-uomo-xs-5354cm.html">Casco Jet Origine Palio 2.0 Nero Opaco Uomo XS 53-54cm</a></h4></div>
+<div class="name"><h4><a href="http://www.fasten-saarland.de/agv-street-9-as-visiera-male-fume-intenso.html">AGV Street 9 AS, visiera male Fumé Intenso</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€40,99</span> <span class="price-old">€111,99</span>
+<span class="price-new">€44,99</span> <span class="price-old">€129,99</span>
 </p>
 </div>
 </div>
@@ -646,43 +646,43 @@ $(document).ready(function() {
 <div id="powered">
 <div class="container">
 <div class="row">
-<div class="col-sm-12 col-md-12">
-      Copyright © 2022 <a href="//www.fasten-saarland.de" target="_blank">www.fasten-saarland.de</a> All Rights Reserved  
+<div class="col-sm-12 col-md-12">
+      Copyright © 2022 <a href="//www.fasten-saarland.de" target="_blank">www.fasten-saarland.de</a> All Rights Reserved  
       </div>
 </div>
 </div>
 </div>
 </footer>
 <script src="catalog/view/theme/gobbling/js/jquery.visible.min.js" type="text/javascript"></script>
-<script type="text/javascript">
-
-var win = $(window);
-
-var allMods = $("footer");
-
-allMods.each(function(i, el) {
-    
-  if ($(el).visible(true)) {
-    $(el).addClass("already-visible"); 
-  }
-  
-});
-
-win.scroll(function(event) {
-  
-  allMods.each(function(i, el) {
-    
-    var el = $(el);
-    
-    if (el.visible(true)) {
-      el.addClass("come-in"); 
-    } else {
-      el.removeClass("come-in already-visible");
-    }
-    
-  });
-  
-}); 
+<script type="text/javascript">
+
+var win = $(window);
+
+var allMods = $("footer");
+
+allMods.each(function(i, el) {
+    
+  if ($(el).visible(true)) {
+    $(el).addClass("already-visible"); 
+  }
+  
+});
+
+win.scroll(function(event) {
+  
+  allMods.each(function(i, el) {
+    
+    var el = $(el);
+    
+    if (el.visible(true)) {
+      el.addClass("come-in"); 
+    } else {
+      el.removeClass("come-in already-visible");
+    }
+    
+  });
+  
+}); 
 </script>
 <script src="catalog/view/theme/gobbling/js/jquery.easing-1.3.min.js" type="text/javascript"></script>
 <link href="catalog/view/theme/gobbling/js/quickview/fancybox/jquery.fancybox.css" property="stylesheet" rel="stylesheet">

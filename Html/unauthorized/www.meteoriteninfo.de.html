@@ -34,48 +34,48 @@
 <script src="catalog/view/theme/telltale/js/cloud-zoom.js" type="text/javascript"></script>
 <link href="catalog/view/theme/telltale/stylesheet/dcaccordion.css" property="stylesheet" rel="stylesheet" type="text/css">
 <script src="catalog/view/theme/telltale/js/jquery.dcjqaccordion.js" type="text/javascript"></script>
-<script type="text/javascript">
-window.__sscf.cf_5317227  = function() {
-if (!this._ssSTLHandled) {
-    setTimeout(function () {
-        var aGet = window._ssURBNGetters;
-        var productKey = aGet.productKey();
-        var store = aGet.store();
-        var selectedColorString = productKey + "/selectedColorSliceItem";
-        var primarySliceString = productKey + "/primarySliceItems";
-        var selectedColor = store && store.getters[selectedColorString];
-        var primarySlice = store && store.getters[primarySliceString];
-        var detailToggle = document.querySelector(".c-pwa-product-details__details .o-pwa-accordion__toggle");
-        var colorCode;
-
-        if (selectedColor && primarySlice) {
-            colorCode = selectedColor.code;
-            if (!primarySlice.reduce(hasRelatedProducts(colorCode), false)) {
-                console.log("[T] - STL Should NOT exist. Collapsing Details.");
-                detailToggle.click();
-            } else {
-                console.log("[T] - STL Should exist");
-            }
-        } else {
-            console.log("[T] - Unable to locate vars: ", selectedColor, primarySlice);
-        }
-
-        function hasRelatedProducts(code) {
-            return function relatedProductSearch(hasRelatedProducts, p) {
-                if (hasRelatedProducts) { return true; }
-                // check for matching code
-                if (p.code === code) {
-                    if (p.productsRelatedToColor.length > 0) {
-                        return true;
-                    }
-                }
-                return false;
-            };
-        }
-    }, 500);
-    this._ssSTLHandled = true;
-}
-}
+<script type="text/javascript">
+window.__sscf.cf_5317227  = function() {
+if (!this._ssSTLHandled) {
+    setTimeout(function () {
+        var aGet = window._ssURBNGetters;
+        var productKey = aGet.productKey();
+        var store = aGet.store();
+        var selectedColorString = productKey + "/selectedColorSliceItem";
+        var primarySliceString = productKey + "/primarySliceItems";
+        var selectedColor = store && store.getters[selectedColorString];
+        var primarySlice = store && store.getters[primarySliceString];
+        var detailToggle = document.querySelector(".c-pwa-product-details__details .o-pwa-accordion__toggle");
+        var colorCode;
+
+        if (selectedColor && primarySlice) {
+            colorCode = selectedColor.code;
+            if (!primarySlice.reduce(hasRelatedProducts(colorCode), false)) {
+                console.log("[T] - STL Should NOT exist. Collapsing Details.");
+                detailToggle.click();
+            } else {
+                console.log("[T] - STL Should exist");
+            }
+        } else {
+            console.log("[T] - Unable to locate vars: ", selectedColor, primarySlice);
+        }
+
+        function hasRelatedProducts(code) {
+            return function relatedProductSearch(hasRelatedProducts, p) {
+                if (hasRelatedProducts) { return true; }
+                // check for matching code
+                if (p.code === code) {
+                    if (p.productsRelatedToColor.length > 0) {
+                        return true;
+                    }
+                }
+                return false;
+            };
+        }
+    }, 500);
+    this._ssSTLHandled = true;
+}
+}
 </script>
 </link></link></link></meta></head>
 <body class="common-home telltale">
@@ -84,12 +84,12 @@ if (!this._ssSTLHandled) {
 <div id="sidebar-wrapper">
 <ul class="sidebar-nav list-group telltale">
 <li class="sidebar-title">
-<a href="#menu-toggle-close" id="menu-toggle-close"><span aria-hidden="true">×</span></a>Informatie      <script>
-      $("#menu-toggle-close").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-		$(".sidebar-opacity").toggleClass("toggled");
-      });
+<a href="#menu-toggle-close" id="menu-toggle-close"><span aria-hidden="true">×</span></a>Informatie      <script>
+      $("#menu-toggle-close").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+		$(".sidebar-opacity").toggleClass("toggled");
+      });
       </script>
 </li>
 <li><a href="https://www.meteoriteninfo.de/index.php?route=information/information&amp;information_id=7">FAQ</a></li>
@@ -153,12 +153,12 @@ if (!this._ssSTLHandled) {
 <span class="button-text">Menu</span>
 </div>
 </a>
-<script>
-        $("#menu-mobile-toggle").click(function(e) {
-          e.preventDefault();
-          $("#wrapper").toggleClass("menu-toggled");
-		  $(".sidebar-opacity").toggleClass("menu-toggled");
-        });
+<script>
+        $("#menu-mobile-toggle").click(function(e) {
+          e.preventDefault();
+          $("#wrapper").toggleClass("menu-toggled");
+		  $(".sidebar-opacity").toggleClass("menu-toggled");
+        });
       </script>
 <div class="btn-group btn-block buttons-header" id="cart">
 <a class="btn dropdown-toggle" data-loading-text="Laden..." data-toggle="dropdown">
@@ -196,26 +196,26 @@ if (!this._ssSTLHandled) {
 </div>
 </div>
 </nav>
-<script type="text/javascript">
-$(document).ready(function() {
-	$('#accordion-mobile').dcAccordion({
-		disableLink: false,	
-		menuClose: false,
-		autoClose: true,
-		autoExpand: true,		
-		saveState: false
-	});
-});
+<script type="text/javascript">
+$(document).ready(function() {
+	$('#accordion-mobile').dcAccordion({
+		disableLink: false,	
+		menuClose: false,
+		autoClose: true,
+		autoExpand: true,		
+		saveState: false
+	});
+});
 </script>
 <div class="hidden-sm hidden-md hidden-lg" id="menu-mobile">
 <ul class="accordion sidebar-nav list-group" id="accordion-mobile">
 <li class="sidebar-title">
-<a href="#menu-mobile-toggle-close" id="menu-mobile-toggle-close"><span aria-hidden="true">×</span></a>Menu      <script>
-      $("#menu-mobile-toggle-close").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("menu-toggled");
-		$(".sidebar-opacity").toggleClass("menu-toggled");
-      });
+<a href="#menu-mobile-toggle-close" id="menu-mobile-toggle-close"><span aria-hidden="true">×</span></a>Menu      <script>
+      $("#menu-mobile-toggle-close").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("menu-toggled");
+		$(".sidebar-opacity").toggleClass("menu-toggled");
+      });
       </script>
 </li>
 <li><a href="https://www.meteoriteninfo.de/">Home</a></li>
@@ -254,16 +254,16 @@ $(document).ready(function() {
 </div>
 <div style="display:none;"><script src="//js.users.51.la/21085533.js" type="text/javascript"></script><br/></div><div class="container">
 <div class="row"><column class="col-sm-3 hidden-xs" id="column-left">
-<script type="text/javascript">
-$(document).ready(function() {
-	$('#accordion-1').dcAccordion({
-		disableLink: false,	
-		menuClose: false,
-		autoClose: true,
-		autoExpand: true,		
-		saveState: false
-	});
-});
+<script type="text/javascript">
+$(document).ready(function() {
+	$('#accordion-1').dcAccordion({
+		disableLink: false,	
+		menuClose: false,
+		autoClose: true,
+		autoExpand: true,		
+		saveState: false
+	});
+});
 </script>
 <div class="panel panel-default panel-category">
 <div class="panel-heading">Categorieën</div>
@@ -301,14 +301,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.meteoriteninfo.de/zonnebril-mode-nieuwe-trendmeter-nagel-ronde-frame-zonnebril-vrouwelijke-trend-hoogwaardige-zonnebril-heren-gebruiken-uv400-materiaal-oogbescherming-f.html"><img alt="Zonnebril Mode Nieuwe Trendmeter Nagel Ronde Frame Zonnebril Vrouwelijke Trend Hoogwaardige Zonnebril Heren Gebruiken Uv400 Materiaal Oogbescherming F" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/zonnebril-mode-nieuwe-trendmeter-nagel-ronde-frame-zonnebril-vrouwelijke-trend-hoogwaardige-zonnebril-heren-gebruiken-uv400-materiaal-oogbescherming-f-1050.jpg" title="Zonnebril Mode Nieuwe Trendmeter Nagel Ronde Frame Zonnebril Vrouwelijke Trend Hoogwaardige Zonnebril Heren Gebruiken Uv400 Materiaal Oogbescherming F"/></a>
+<a class="arevision" href="https://www.meteoriteninfo.de/zonnebril-damesmode-zonnebril-heren-gepolariseerde-zonnebril-retro-uv400-3originalbox.html"><img alt="Zonnebril Damesmode Zonnebril Heren Gepolariseerde Zonnebril Retro Uv400 3Originalbox" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/zonnebril-damesmode-zonnebril-heren-gepolariseerde-zonnebril-retro-uv400-3originalbox-352.jpg" title="Zonnebril Damesmode Zonnebril Heren Gepolariseerde Zonnebril Retro Uv400 3Originalbox"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.meteoriteninfo.de/zonnebril-mode-nieuwe-trendmeter-nagel-ronde-frame-zonnebril-vrouwelijke-trend-hoogwaardige-zonnebril-heren-gebruiken-uv400-materiaal-oogbescherming-f.html">Zonnebril Mode Nieuwe Trendmeter Nagel Ronde Frame Zonnebril Vrouwelijke Trend Hoogwaardige Zonnebril Heren Gebruiken Uv400 Materiaal Oogbescherming F</a></h4></div>
+<div class="name"><h4><a href="https://www.meteoriteninfo.de/zonnebril-damesmode-zonnebril-heren-gepolariseerde-zonnebril-retro-uv400-3originalbox.html">Zonnebril Damesmode Zonnebril Heren Gepolariseerde Zonnebril Retro Uv400 3Originalbox</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€37,99</span> <span class="price-old">€95,99</span>
+<span class="price-new">€37,99</span> <span class="price-old">€94,99</span>
 </p>
 </div>
 </div>
@@ -317,14 +317,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.meteoriteninfo.de/serengeti-eyewear-lerici-zonnebril-satin-black-shiny-dark-gun.html"><img alt="Serengeti Eyewear Lerici Zonnebril Satin Black/Shiny Dark Gun" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/serengeti-eyewear-lerici-zonnebril-satin-black-shiny-dark-gun-3319.jpg" title="Serengeti Eyewear Lerici Zonnebril Satin Black/Shiny Dark Gun"/></a>
+<a class="arevision" href="https://www.meteoriteninfo.de/polaroid-dames-pld-4045-s-ig-nho-zonnebril-havana-gold-brown-pz-51.html"><img alt="Polaroid dames PLD 4045/S IG NHO zonnebril, (Havana Gold/Brown Pz), 51" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/polaroid-dames-pld-4045-s-ig-nho-zonnebril-havana-gold-brown-pz-51-650.jpg" title="Polaroid dames PLD 4045/S IG NHO zonnebril, (Havana Gold/Brown Pz), 51"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.meteoriteninfo.de/serengeti-eyewear-lerici-zonnebril-satin-black-shiny-dark-gun.html">Serengeti Eyewear Lerici Zonnebril Satin Black/Shiny Dark Gun</a></h4></div>
+<div class="name"><h4><a href="https://www.meteoriteninfo.de/polaroid-dames-pld-4045-s-ig-nho-zonnebril-havana-gold-brown-pz-51.html">Polaroid dames PLD 4045/S IG NHO zonnebril, (Havana Gold/Brown Pz), 51</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€37,99</span> <span class="price-old">€96,99</span>
+<span class="price-new">€37,99</span> <span class="price-old">€99,99</span>
 </p>
 </div>
 </div>
@@ -333,14 +333,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.meteoriteninfo.de/mirchen-zonnebril-vrouwen-mannen-retro-metal-frame-oversized-zonnebril-vrouw-4goudgeel.html"><img alt="MIRCHEN Zonnebril Vrouwen Mannen Retro Metal Frame Oversized Zonnebril Vrouw 4-Goud-Geel" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/mirchen-zonnebril-vrouwen-mannen-retro-metal-frame-oversized-zonnebril-vrouw-4goudgeel-2460.jpg" title="MIRCHEN Zonnebril Vrouwen Mannen Retro Metal Frame Oversized Zonnebril Vrouw 4-Goud-Geel"/></a>
+<a class="arevision" href="https://www.meteoriteninfo.de/rayban-rb3016-clubmaster-zonnebril-51mm-violet-112871.html"><img alt="Ray-Ban RB3016 Clubmaster zonnebril 51mm Violet (112871)" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/rayban-rb3016-clubmaster-zonnebril-51mm-violet-112871-2843.jpg" title="Ray-Ban RB3016 Clubmaster zonnebril 51mm Violet (112871)"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.meteoriteninfo.de/mirchen-zonnebril-vrouwen-mannen-retro-metal-frame-oversized-zonnebril-vrouw-4goudgeel.html">MIRCHEN Zonnebril Vrouwen Mannen Retro Metal Frame Oversized Zonnebril Vrouw 4-Goud-Geel</a></h4></div>
+<div class="name"><h4><a href="https://www.meteoriteninfo.de/rayban-rb3016-clubmaster-zonnebril-51mm-violet-112871.html">Ray-Ban RB3016 Clubmaster zonnebril 51mm Violet (112871)</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€37,99</span> <span class="price-old">€95,99</span>
+<span class="price-new">€35,99</span> <span class="price-old">€94,99</span>
 </p>
 </div>
 </div>
@@ -349,14 +349,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.meteoriteninfo.de/coach-hc-7079-pale-gold-burgundy-shaded-58-14-140-dames-zonnebrillen.html"><img alt="Coach HC 7079 PALE GOLD/BURGUNDY SHADED 58/14/140 Dames Zonnebrillen" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/coach-hc-7079-pale-gold-burgundy-shaded-58-14-140-dames-zonnebrillen-2367.jpg" title="Coach HC 7079 PALE GOLD/BURGUNDY SHADED 58/14/140 Dames Zonnebrillen"/></a>
+<a class="arevision" href="https://www.meteoriteninfo.de/michael-kors-lon-11686g-53-zonnebril-goudkleurig-gunmetalmirror.html"><img alt="Michael Kors LON 11686G 53 zonnebril, goudkleurig/gunmetalmirror" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/michael-kors-lon-11686g-53-zonnebril-goudkleurig-gunmetalmirror-4580.jpg" title="Michael Kors LON 11686G 53 zonnebril, goudkleurig/gunmetalmirror"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.meteoriteninfo.de/coach-hc-7079-pale-gold-burgundy-shaded-58-14-140-dames-zonnebrillen.html">Coach HC 7079 PALE GOLD/BURGUNDY SHADED 58/14/140 Dames Zonnebrillen</a></h4></div>
+<div class="name"><h4><a href="https://www.meteoriteninfo.de/michael-kors-lon-11686g-53-zonnebril-goudkleurig-gunmetalmirror.html">Michael Kors LON 11686G 53 zonnebril, goudkleurig/gunmetalmirror</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€37,99</span> <span class="price-old">€100,99</span>
+<span class="price-new">€37,99</span> <span class="price-old">€99,99</span>
 </p>
 </div>
 </div>
@@ -365,30 +365,30 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.meteoriteninfo.de/guess-gu7470-32f-zonnebril-goud-oro-marrone-grad.html"><img alt="Guess GU7470 32F Zonnebril goud (oro/marrone grad)" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/guess-gu7470-32f-zonnebril-goud-oro-marrone-grad-4164.jpg" title="Guess GU7470 32F Zonnebril goud (oro/marrone grad)"/></a>
+<a class="arevision" href="https://www.meteoriteninfo.de/rayban-dames-0ve2168-zonnebril-zwart-mat-zwart-pale-goud.html"><img alt="Ray-Ban dames 0VE2168 zonnebril zwart (mat zwart/pale goud)." class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/rayban-dames-0ve2168-zonnebril-zwart-mat-zwart-pale-goud-336.jpg" title="Ray-Ban dames 0VE2168 zonnebril zwart (mat zwart/pale goud)."/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.meteoriteninfo.de/guess-gu7470-32f-zonnebril-goud-oro-marrone-grad.html">Guess GU7470 32F Zonnebril goud (oro/marrone grad)</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€37,99</span> <span class="price-old">€91,99</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.meteoriteninfo.de/modieuze-zonnebril-frameloze-zonnebril-met-cat-eyezonnebril-groen-a.html"><img alt="Modieuze zonnebril, frameloze zonnebril met Cat Eye-zonnebril. groen A" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/modieuze-zonnebril-frameloze-zonnebril-met-cat-eyezonnebril-groen-a-454.jpg" title="Modieuze zonnebril, frameloze zonnebril met Cat Eye-zonnebril. groen A"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="https://www.meteoriteninfo.de/modieuze-zonnebril-frameloze-zonnebril-met-cat-eyezonnebril-groen-a.html">Modieuze zonnebril, frameloze zonnebril met Cat Eye-zonnebril. groen A</a></h4></div>
+<div class="name"><h4><a href="https://www.meteoriteninfo.de/rayban-dames-0ve2168-zonnebril-zwart-mat-zwart-pale-goud.html">Ray-Ban dames 0VE2168 zonnebril zwart (mat zwart/pale goud).</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
 <span class="price-new">€37,99</span> <span class="price-old">€98,99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="https://www.meteoriteninfo.de/wuxingqing-vrouwen-gepolariseerde-zonnebril-retro-oogkleding-oversized-goggles-brillen-brillen-bron.html"><img alt="Wuxingqing Vrouwen Gepolariseerde Zonnebril Retro Oogkleding Oversized Goggles Brillen Brillen BRON" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/wuxingqing-vrouwen-gepolariseerde-zonnebril-retro-oogkleding-oversized-goggles-brillen-brillen-bron-1346.jpg" title="Wuxingqing Vrouwen Gepolariseerde Zonnebril Retro Oogkleding Oversized Goggles Brillen Brillen BRON"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="https://www.meteoriteninfo.de/wuxingqing-vrouwen-gepolariseerde-zonnebril-retro-oogkleding-oversized-goggles-brillen-brillen-bron.html">Wuxingqing Vrouwen Gepolariseerde Zonnebril Retro Oogkleding Oversized Goggles Brillen Brillen BRON</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€37,99</span> <span class="price-old">€97,99</span>
 </p>
 </div>
 </div>
@@ -405,27 +405,11 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.meteoriteninfo.de/tiffany-co-dames-0ty2149-8134-53-zonnebril-blauw-havana-blue-demolens.html"><img alt="Tiffany &amp; Co. Dames 0TY2149 8134 53 zonnebril, blauw (Havana/Blue/Demolens)," class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/tiffany-co-dames-0ty2149-8134-53-zonnebril-blauw-havana-blue-demolens-2841.jpg" title="Tiffany &amp; Co. Dames 0TY2149 8134 53 zonnebril, blauw (Havana/Blue/Demolens),"/></a>
+<a class="arevision" href="https://www.meteoriteninfo.de/mirchen-fashion-square-zonnebril-vrouwen-mannen-vintage-persoonlijkheid-overdreven-big-frame-zonnebril-vrouw-c7.html"><img alt="MIRCHEN Fashion Square Zonnebril Vrouwen Mannen Vintage Persoonlijkheid Overdreven Big Frame Zonnebril Vrouw C7" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/mirchen-fashion-square-zonnebril-vrouwen-mannen-vintage-persoonlijkheid-overdreven-big-frame-zonnebril-vrouw-c7-3860.jpg" title="MIRCHEN Fashion Square Zonnebril Vrouwen Mannen Vintage Persoonlijkheid Overdreven Big Frame Zonnebril Vrouw C7"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.meteoriteninfo.de/tiffany-co-dames-0ty2149-8134-53-zonnebril-blauw-havana-blue-demolens.html">Tiffany &amp; Co. Dames 0TY2149 8134 53 zonnebril, blauw (Havana/Blue/Demolens),</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€37,99</span> <span class="price-old">€91,99</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.meteoriteninfo.de/jtct-trendy-zonnebril-vierkant-grote-gouden-rand-bril-mode-individualiteit-trend-zonnebril-eenvoudige-wild-uv400-bescherming-groen.html"><img alt="JTCT Trendy zonnebril Vierkant Grote gouden rand Bril Mode Individualiteit Trend Zonnebril Eenvoudige Wild UV400 bescherming Groen" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/jtct-trendy-zonnebril-vierkant-grote-gouden-rand-bril-mode-individualiteit-trend-zonnebril-eenvoudige-wild-uv400-bescherming-groen-495.jpg" title="JTCT Trendy zonnebril Vierkant Grote gouden rand Bril Mode Individualiteit Trend Zonnebril Eenvoudige Wild UV400 bescherming Groen"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="https://www.meteoriteninfo.de/jtct-trendy-zonnebril-vierkant-grote-gouden-rand-bril-mode-individualiteit-trend-zonnebril-eenvoudige-wild-uv400-bescherming-groen.html">JTCT Trendy zonnebril Vierkant Grote gouden rand Bril Mode Individualiteit Trend Zonnebril Eenvoudige Wild UV400 bescherming Groen</a></h4></div>
+<div class="name"><h4><a href="https://www.meteoriteninfo.de/mirchen-fashion-square-zonnebril-vrouwen-mannen-vintage-persoonlijkheid-overdreven-big-frame-zonnebril-vrouw-c7.html">MIRCHEN Fashion Square Zonnebril Vrouwen Mannen Vintage Persoonlijkheid Overdreven Big Frame Zonnebril Vrouw C7</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
 <span class="price-new">€36,99</span> <span class="price-old">€97,99</span>
@@ -437,14 +421,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.meteoriteninfo.de/jytbd-sport-outdoor-producten-persoonlijkheid-zonnebril-retro-vintage-ovaal-ronde-zonnebril-mannen-vrouwen-zonnebril-shades-kleine-frame-koele-zonnebril-5.html"><img alt="JYTBD Sport Outdoor Producten/Persoonlijkheid Zonnebril Retro Vintage Ovaal Ronde Zonnebril Mannen Vrouwen Zonnebril Shades Kleine Frame Koele Zonnebril 5" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/jytbd-sport-outdoor-producten-persoonlijkheid-zonnebril-retro-vintage-ovaal-ronde-zonnebril-mannen-vrouwen-zonnebril-shades-kleine-frame-koele-zonnebril-5-156.jpg" title="JYTBD Sport Outdoor Producten/Persoonlijkheid Zonnebril Retro Vintage Ovaal Ronde Zonnebril Mannen Vrouwen Zonnebril Shades Kleine Frame Koele Zonnebril 5"/></a>
+<a class="arevision" href="https://www.meteoriteninfo.de/rayban-0pr64ts-svf5t0-66-zonnebril-goud-grijs-roze.html"><img alt="Ray-Ban 0PR64TS SVF5T0 66 zonnebril, goud/grijs roze" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/rayban-0pr64ts-svf5t0-66-zonnebril-goud-grijs-roze-194.jpg" title="Ray-Ban 0PR64TS SVF5T0 66 zonnebril, goud/grijs roze"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.meteoriteninfo.de/jytbd-sport-outdoor-producten-persoonlijkheid-zonnebril-retro-vintage-ovaal-ronde-zonnebril-mannen-vrouwen-zonnebril-shades-kleine-frame-koele-zonnebril-5.html">JYTBD Sport Outdoor Producten/Persoonlijkheid Zonnebril Retro Vintage Ovaal Ronde Zonnebril Mannen Vrouwen Zonnebril Shades Kleine Frame Koele Zonnebril 5</a></h4></div>
+<div class="name"><h4><a href="https://www.meteoriteninfo.de/rayban-0pr64ts-svf5t0-66-zonnebril-goud-grijs-roze.html">Ray-Ban 0PR64TS SVF5T0 66 zonnebril, goud/grijs roze</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€36,99</span> <span class="price-old">€98,99</span>
+<span class="price-new">€37,99</span> <span class="price-old">€100,99</span>
 </p>
 </div>
 </div>
@@ -453,11 +437,27 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.meteoriteninfo.de/amyhy-zonnebril-voor-vrouwen-gepolariseerde-zonnebril-voor-vrouwelijke-dames.html"><img alt="Amyhy Zonnebril voor vrouwen gepolariseerde zonnebril voor vrouwelijke dames." class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/amyhy-zonnebril-voor-vrouwen-gepolariseerde-zonnebril-voor-vrouwelijke-dames-3784.jpg" title="Amyhy Zonnebril voor vrouwen gepolariseerde zonnebril voor vrouwelijke dames."/></a>
+<a class="arevision" href="https://www.meteoriteninfo.de/zcf-nieuwe-super-vuur-ronde-frame-mannen-en-vrouwen-zonnebril-gepolariseerde-zonnebril-tij-zonnebril-mode-bron.html"><img alt="ZCF Nieuwe super vuur ronde frame mannen en vrouwen zonnebril gepolariseerde zonnebril tij zonnebril mode BRON" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/zcf-nieuwe-super-vuur-ronde-frame-mannen-en-vrouwen-zonnebril-gepolariseerde-zonnebril-tij-zonnebril-mode-bron-932.jpg" title="ZCF Nieuwe super vuur ronde frame mannen en vrouwen zonnebril gepolariseerde zonnebril tij zonnebril mode BRON"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.meteoriteninfo.de/amyhy-zonnebril-voor-vrouwen-gepolariseerde-zonnebril-voor-vrouwelijke-dames.html">Amyhy Zonnebril voor vrouwen gepolariseerde zonnebril voor vrouwelijke dames.</a></h4></div>
+<div class="name"><h4><a href="https://www.meteoriteninfo.de/zcf-nieuwe-super-vuur-ronde-frame-mannen-en-vrouwen-zonnebril-gepolariseerde-zonnebril-tij-zonnebril-mode-bron.html">ZCF Nieuwe super vuur ronde frame mannen en vrouwen zonnebril gepolariseerde zonnebril tij zonnebril mode BRON</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€36,99</span> <span class="price-old">€95,99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="https://www.meteoriteninfo.de/mr-boho-hayes-zonnebril-voor-dames-animalia.html"><img alt="Mr. Boho | Hayes | Zonnebril voor dames Animalia" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/mr-boho-hayes-zonnebril-voor-dames-animalia-3571.jpg" title="Mr. Boho | Hayes | Zonnebril voor dames Animalia"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="https://www.meteoriteninfo.de/mr-boho-hayes-zonnebril-voor-dames-animalia.html">Mr. Boho | Hayes | Zonnebril voor dames Animalia</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
 <span class="price-new">€37,99</span> <span class="price-old">€96,99</span>
@@ -469,14 +469,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.meteoriteninfo.de/chyuanhua-zonnebril-womens-square-frame-zonnebril-uv400-bescherming-6-kleuren-lady-zonnebril-goud-zwart.html"><img alt="Chyuanhua zonnebril Womens Square Frame zonnebril UV400 bescherming 6 kleuren Lady zonnebril Goud/Zwart" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/chyuanhua-zonnebril-womens-square-frame-zonnebril-uv400-bescherming-6-kleuren-lady-zonnebril-goud-zwart-618.jpg" title="Chyuanhua zonnebril Womens Square Frame zonnebril UV400 bescherming 6 kleuren Lady zonnebril Goud/Zwart"/></a>
+<a class="arevision" href="https://www.meteoriteninfo.de/fendi-vrouwen-sliky-ff-0181-s-vk-zonnebril-pttrncry-blk-54.html"><img alt="Fendi vrouwen Sliky Ff 0181/S Vk zonnebril, Pttrncry Blk, 54" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/fendi-vrouwen-sliky-ff-0181-s-vk-zonnebril-pttrncry-blk-54-4318.jpg" title="Fendi vrouwen Sliky Ff 0181/S Vk zonnebril, Pttrncry Blk, 54"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.meteoriteninfo.de/chyuanhua-zonnebril-womens-square-frame-zonnebril-uv400-bescherming-6-kleuren-lady-zonnebril-goud-zwart.html">Chyuanhua zonnebril Womens Square Frame zonnebril UV400 bescherming 6 kleuren Lady zonnebril Goud/Zwart</a></h4></div>
+<div class="name"><h4><a href="https://www.meteoriteninfo.de/fendi-vrouwen-sliky-ff-0181-s-vk-zonnebril-pttrncry-blk-54.html">Fendi vrouwen Sliky Ff 0181/S Vk zonnebril, Pttrncry Blk, 54</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€37,99</span> <span class="price-old">€90,99</span>
+<span class="price-new">€37,99</span> <span class="price-old">€97,99</span>
 </p>
 </div>
 </div>
@@ -485,11 +485,27 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.meteoriteninfo.de/dxxhmjy-highend-bril-houten-zonnebril-vrouwen-mode-uv400-spiegel-lenzen-bamboe-zonnebril-voor-mannen-gepersonaliseerde-highend-zonnebril-blauw.html"><img alt="DXXHMJY High-end bril Houten Zonnebril Vrouwen Mode Uv400 Spiegel Lenzen Bamboe Zonnebril Voor Mannen Gepersonaliseerde High-end Zonnebril Blauw" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/dxxhmjy-highend-bril-houten-zonnebril-vrouwen-mode-uv400-spiegel-lenzen-bamboe-zonnebril-voor-mannen-gepersonaliseerde-highend-zonnebril-blauw-2005.jpg" title="DXXHMJY High-end bril Houten Zonnebril Vrouwen Mode Uv400 Spiegel Lenzen Bamboe Zonnebril Voor Mannen Gepersonaliseerde High-end Zonnebril Blauw"/></a>
+<a class="arevision" href="https://www.meteoriteninfo.de/ltuor-vintage-ronde-zonnebril-dames-mannen-vrouwelijk-merk-metalen-frame-spiegelglazen-zonnebril-jy0210-c12.html"><img alt="LTUOR Vintage ronde zonnebril dames mannen vrouwelijk merk metalen frame spiegelglazen zonnebril JY0210 C12." class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/ltuor-vintage-ronde-zonnebril-dames-mannen-vrouwelijk-merk-metalen-frame-spiegelglazen-zonnebril-jy0210-c12-3106.jpg" title="LTUOR Vintage ronde zonnebril dames mannen vrouwelijk merk metalen frame spiegelglazen zonnebril JY0210 C12."/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.meteoriteninfo.de/dxxhmjy-highend-bril-houten-zonnebril-vrouwen-mode-uv400-spiegel-lenzen-bamboe-zonnebril-voor-mannen-gepersonaliseerde-highend-zonnebril-blauw.html">DXXHMJY High-end bril Houten Zonnebril Vrouwen Mode Uv400 Spiegel Lenzen Bamboe Zonnebril Voor Mannen Gepersonaliseerde High-end Zonnebril Blauw</a></h4></div>
+<div class="name"><h4><a href="https://www.meteoriteninfo.de/ltuor-vintage-ronde-zonnebril-dames-mannen-vrouwelijk-merk-metalen-frame-spiegelglazen-zonnebril-jy0210-c12.html">LTUOR Vintage ronde zonnebril dames mannen vrouwelijk merk metalen frame spiegelglazen zonnebril JY0210 C12.</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€37,99</span> <span class="price-old">€96,99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="https://www.meteoriteninfo.de/marc-jacobs-dames-marc-116-s-2t-26x-52-zonnebril-oranje-rood-ml-sf-52.html"><img alt="Marc Jacobs dames Marc 116/S 2T 26X 52 zonnebril, oranje/rood Ml Sf, 52" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/marc-jacobs-dames-marc-116-s-2t-26x-52-zonnebril-oranje-rood-ml-sf-52-171.jpg" title="Marc Jacobs dames Marc 116/S 2T 26X 52 zonnebril, oranje/rood Ml Sf, 52"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="https://www.meteoriteninfo.de/marc-jacobs-dames-marc-116-s-2t-26x-52-zonnebril-oranje-rood-ml-sf-52.html">Marc Jacobs dames Marc 116/S 2T 26X 52 zonnebril, oranje/rood Ml Sf, 52</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
 <span class="price-new">€37,99</span> <span class="price-old">€98,99</span>
@@ -501,14 +517,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.meteoriteninfo.de/mesyr-zonnebril-mode-mannen-vrouwen-vintage-punk-zonnebril-uv400-07.html"><img alt="MESYR Zonnebril Mode Mannen Vrouwen Vintage Punk Zonnebril Uv400 07" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/mesyr-zonnebril-mode-mannen-vrouwen-vintage-punk-zonnebril-uv400-07-3709.jpg" title="MESYR Zonnebril Mode Mannen Vrouwen Vintage Punk Zonnebril Uv400 07"/></a>
+<a class="arevision" href="https://www.meteoriteninfo.de/jytbd-sport-outdoor-producten-persoonlijkheid-zonnebril-lady-cat-eye-mode-zonnebril-retro-reizen-rijden-metalen-frame-zonnebril-5.html"><img alt="JYTBD Sport Outdoor Producten/Persoonlijkheid Zonnebril Lady Cat Eye Mode Zonnebril Retro Reizen Rijden Metalen Frame Zonnebril 5" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/jytbd-sport-outdoor-producten-persoonlijkheid-zonnebril-lady-cat-eye-mode-zonnebril-retro-reizen-rijden-metalen-frame-zonnebril-5-1111.jpg" title="JYTBD Sport Outdoor Producten/Persoonlijkheid Zonnebril Lady Cat Eye Mode Zonnebril Retro Reizen Rijden Metalen Frame Zonnebril 5"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.meteoriteninfo.de/mesyr-zonnebril-mode-mannen-vrouwen-vintage-punk-zonnebril-uv400-07.html">MESYR Zonnebril Mode Mannen Vrouwen Vintage Punk Zonnebril Uv400 07</a></h4></div>
+<div class="name"><h4><a href="https://www.meteoriteninfo.de/jytbd-sport-outdoor-producten-persoonlijkheid-zonnebril-lady-cat-eye-mode-zonnebril-retro-reizen-rijden-metalen-frame-zonnebril-5.html">JYTBD Sport Outdoor Producten/Persoonlijkheid Zonnebril Lady Cat Eye Mode Zonnebril Retro Reizen Rijden Metalen Frame Zonnebril 5</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€36,99</span> <span class="price-old">€90,99</span>
+<span class="price-new">€37,99</span> <span class="price-old">€98,99</span>
 </p>
 </div>
 </div>
@@ -517,14 +533,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.meteoriteninfo.de/zonnebril-mode-vrouwen-ronde-zonnebril-mannen-zonnebril-uv400-c03gradient.html"><img alt="Zonnebril mode vrouwen ronde zonnebril mannen zonnebril Uv400 C03Gradient" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/zonnebril-mode-vrouwen-ronde-zonnebril-mannen-zonnebril-uv400-c03gradient-2176.jpg" title="Zonnebril mode vrouwen ronde zonnebril mannen zonnebril Uv400 C03Gradient"/></a>
+<a class="arevision" href="https://www.meteoriteninfo.de/kanqingqing-dames-zonnebril-vintage-half-frame-heldere-zonnebril-klassieke-womens-gepolariseerde-zonnebril-dames-gradient-bril-beige.html"><img alt="Kanqingqing Dames zonnebril Vintage Half Frame Heldere Zonnebril Klassieke Womens gepolariseerde zonnebril dames gradiënt bril Beige" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/kanqingqing-dames-zonnebril-vintage-half-frame-heldere-zonnebril-klassieke-womens-gepolariseerde-zonnebril-dames-gradient-bril-beige-2061.jpg" title="Kanqingqing Dames zonnebril Vintage Half Frame Heldere Zonnebril Klassieke Womens gepolariseerde zonnebril dames gradiënt bril Beige"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.meteoriteninfo.de/zonnebril-mode-vrouwen-ronde-zonnebril-mannen-zonnebril-uv400-c03gradient.html">Zonnebril mode vrouwen ronde zonnebril mannen zonnebril Uv400 C03Gradient</a></h4></div>
+<div class="name"><h4><a href="https://www.meteoriteninfo.de/kanqingqing-dames-zonnebril-vintage-half-frame-heldere-zonnebril-klassieke-womens-gepolariseerde-zonnebril-dames-gradient-bril-beige.html">Kanqingqing Dames zonnebril Vintage Half Frame Heldere Zonnebril Klassieke Womens gepolariseerde zonnebril dames gradiënt bril Beige</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€36,99</span> <span class="price-old">€96,99</span>
+<span class="price-new">€37,99</span> <span class="price-old">€96,99</span>
 </p>
 </div>
 </div>
@@ -533,62 +549,46 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.meteoriteninfo.de/mesyr-zonnebril-retro-grote-vierkante-zonnebril-vrouwen-vintage-shades-progressieve-metalen-kleur-zonnebril-goldtrans.html"><img alt="MESYR Zonnebril Retro Grote Vierkante Zonnebril Vrouwen Vintage Shades Progressieve Metalen Kleur Zonnebril GoldTrans" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/mesyr-zonnebril-retro-grote-vierkante-zonnebril-vrouwen-vintage-shades-progressieve-metalen-kleur-zonnebril-goldtrans-2102.jpg" title="MESYR Zonnebril Retro Grote Vierkante Zonnebril Vrouwen Vintage Shades Progressieve Metalen Kleur Zonnebril GoldTrans"/></a>
+<a class="arevision" href="https://www.meteoriteninfo.de/mesyr-zonnebril-retro-ronde-zonnebril-vrouwen-zonnebril-vrouwen-legering-spiegel-zonnebril-ray-vrouw-zilverframegrijs.html"><img alt="MESYR Zonnebril Retro Ronde Zonnebril Vrouwen Zonnebril Vrouwen Legering Spiegel Zonnebril Ray Vrouw ZilverFrameGrijs" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/mesyr-zonnebril-retro-ronde-zonnebril-vrouwen-zonnebril-vrouwen-legering-spiegel-zonnebril-ray-vrouw-zilverframegrijs-197.jpg" title="MESYR Zonnebril Retro Ronde Zonnebril Vrouwen Zonnebril Vrouwen Legering Spiegel Zonnebril Ray Vrouw ZilverFrameGrijs"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.meteoriteninfo.de/mesyr-zonnebril-retro-grote-vierkante-zonnebril-vrouwen-vintage-shades-progressieve-metalen-kleur-zonnebril-goldtrans.html">MESYR Zonnebril Retro Grote Vierkante Zonnebril Vrouwen Vintage Shades Progressieve Metalen Kleur Zonnebril GoldTrans</a></h4></div>
+<div class="name"><h4><a href="https://www.meteoriteninfo.de/mesyr-zonnebril-retro-ronde-zonnebril-vrouwen-zonnebril-vrouwen-legering-spiegel-zonnebril-ray-vrouw-zilverframegrijs.html">MESYR Zonnebril Retro Ronde Zonnebril Vrouwen Zonnebril Vrouwen Legering Spiegel Zonnebril Ray Vrouw ZilverFrameGrijs</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€36,99</span> <span class="price-old">€94,99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="https://www.meteoriteninfo.de/guess-gm0745-5820x-guess-by-marciano-sunglasses-gm0745-20x-58-zonnebril-58-zwart.html"><img alt="Guess GM0745 5820X Guess by Marciano Sunglasses GM0745 20X 58 zonnebril 58, zwart" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/guess-gm0745-5820x-guess-by-marciano-sunglasses-gm0745-20x-58-zonnebril-58-zwart-3544.jpg" title="Guess GM0745 5820X Guess by Marciano Sunglasses GM0745 20X 58 zonnebril 58, zwart"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="https://www.meteoriteninfo.de/guess-gm0745-5820x-guess-by-marciano-sunglasses-gm0745-20x-58-zonnebril-58-zwart.html">Guess GM0745 5820X Guess by Marciano Sunglasses GM0745 20X 58 zonnebril 58, zwart</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€36,99</span> <span class="price-old">€100,99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="https://www.meteoriteninfo.de/marc-jacobs-marc-27-s-fw-twc-55-zonnebril-burgundy-shaded.html"><img alt="Marc Jacobs MARC 27/S FW TWC 55 zonnebril, Burgundy Shaded" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/marc-jacobs-marc-27-s-fw-twc-55-zonnebril-burgundy-shaded-485.jpg" title="Marc Jacobs MARC 27/S FW TWC 55 zonnebril, Burgundy Shaded"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="https://www.meteoriteninfo.de/marc-jacobs-marc-27-s-fw-twc-55-zonnebril-burgundy-shaded.html">Marc Jacobs MARC 27/S FW TWC 55 zonnebril, Burgundy Shaded</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
 <span class="price-new">€36,99</span> <span class="price-old">€97,99</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.meteoriteninfo.de/fendi-zonnebril-ff-0318-s-grijs.html"><img alt="FENDI zonnebril (FF 0318/S) grijs." class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/fendi-zonnebril-ff-0318-s-grijs-4791.jpg" title="FENDI zonnebril (FF 0318/S) grijs."/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="https://www.meteoriteninfo.de/fendi-zonnebril-ff-0318-s-grijs.html">FENDI zonnebril (FF 0318/S) grijs.</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€36,99</span> <span class="price-old">€99,99</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.meteoriteninfo.de/kdysmwd-gepolariseerde-zonnebril-voor-mannen-en-vrouwen-goud-groen.html"><img alt="KDYSMWD gepolariseerde zonnebril voor mannen en vrouwen Goud Groen" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/kdysmwd-gepolariseerde-zonnebril-voor-mannen-en-vrouwen-goud-groen-145.jpg" title="KDYSMWD gepolariseerde zonnebril voor mannen en vrouwen Goud Groen"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="https://www.meteoriteninfo.de/kdysmwd-gepolariseerde-zonnebril-voor-mannen-en-vrouwen-goud-groen.html">KDYSMWD gepolariseerde zonnebril voor mannen en vrouwen Goud Groen</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€36,99</span> <span class="price-old">€98,99</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.meteoriteninfo.de/mirchen-zonnebril-dames-heren-modieus-helder-retro-zonder-frame-bril-10darkblue.html"><img alt="Mirchen zonnebril, dames, heren, modieus, helder, retro, zonder frame, bril 10-DarkBlue" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/mirchen-zonnebril-dames-heren-modieus-helder-retro-zonder-frame-bril-10darkblue-177.jpg" title="Mirchen zonnebril, dames, heren, modieus, helder, retro, zonder frame, bril 10-DarkBlue"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="https://www.meteoriteninfo.de/mirchen-zonnebril-dames-heren-modieus-helder-retro-zonder-frame-bril-10darkblue.html">Mirchen zonnebril, dames, heren, modieus, helder, retro, zonder frame, bril 10-DarkBlue</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€37,99</span> <span class="price-old">€97,99</span>
 </p>
 </div>
 </div>
@@ -631,43 +631,43 @@ $(document).ready(function() {
 <div id="powered">
 <div class="container">
 <div class="row">
-<div class="col-sm-12 col-md-12">
-      Copyright © 2022 <a href="//www.meteoriteninfo.de" target="_blank">www.meteoriteninfo.de</a> All Rights Reserved  
+<div class="col-sm-12 col-md-12">
+      Copyright © 2022 <a href="//www.meteoriteninfo.de" target="_blank">www.meteoriteninfo.de</a> All Rights Reserved  
       </div>
 </div>
 </div>
 </div>
 </footer>
 <script src="catalog/view/theme/telltale/js/jquery.visible.min.js" type="text/javascript"></script>
-<script type="text/javascript">
-
-var win = $(window);
-
-var allMods = $("footer");
-
-allMods.each(function(i, el) {
-    
-  if ($(el).visible(true)) {
-    $(el).addClass("already-visible"); 
-  }
-  
-});
-
-win.scroll(function(event) {
-  
-  allMods.each(function(i, el) {
-    
-    var el = $(el);
-    
-    if (el.visible(true)) {
-      el.addClass("come-in"); 
-    } else {
-      el.removeClass("come-in already-visible");
-    }
-    
-  });
-  
-}); 
+<script type="text/javascript">
+
+var win = $(window);
+
+var allMods = $("footer");
+
+allMods.each(function(i, el) {
+    
+  if ($(el).visible(true)) {
+    $(el).addClass("already-visible"); 
+  }
+  
+});
+
+win.scroll(function(event) {
+  
+  allMods.each(function(i, el) {
+    
+    var el = $(el);
+    
+    if (el.visible(true)) {
+      el.addClass("come-in"); 
+    } else {
+      el.removeClass("come-in already-visible");
+    }
+    
+  });
+  
+}); 
 </script>
 <script src="catalog/view/theme/telltale/js/jquery.easing-1.3.min.js" type="text/javascript"></script>
 <link href="catalog/view/theme/telltale/js/quickview/fancybox/jquery.fancybox.css" property="stylesheet" rel="stylesheet">

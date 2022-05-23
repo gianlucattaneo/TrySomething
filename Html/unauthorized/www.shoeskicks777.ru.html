@@ -152,14 +152,14 @@
 </div>
 <div class="clear0"></div>
 </div>
-<style type="text/css">
-    #menuCate li > ul{
-        display: none; 
-    }
-    #menuCate li:hover > ul,
-    #menuCate li > ul li:hover{         
-        display: block; 
-    }
+<style type="text/css">
+    #menuCate li > ul{
+        display: none; 
+    }
+    #menuCate li:hover > ul,
+    #menuCate li > ul li:hover{         
+        display: block; 
+    }
 </style>
 <div class="nav_warp">
 <div class="nav_box">
@@ -251,34 +251,34 @@
 </div>
 </li>
 </ul>
-<script>
-
-    $(function() {
-
-        $(".category_1 li").hover(function() {
-
-            if($.trim($(this).find('.dropdown_menu2 dd').html())!="")
-
-            {
-
-                $(this).children(".dropdown_menu2").show();
-
-                $(this).addClass("actived");
-
-            }
-
-        },
-
-        function() {
-
-            $(this).removeClass("actived");
-
-            $(this).children(".dropdown_menu2").hide();
-
-        });
-
-    })
-
+<script>
+
+    $(function() {
+
+        $(".category_1 li").hover(function() {
+
+            if($.trim($(this).find('.dropdown_menu2 dd').html())!="")
+
+            {
+
+                $(this).children(".dropdown_menu2").show();
+
+                $(this).addClass("actived");
+
+            }
+
+        },
+
+        function() {
+
+            $(this).removeClass("actived");
+
+            $(this).children(".dropdown_menu2").hide();
+
+        });
+
+    })
+
 </script>
 </li>
 </ul>
@@ -942,38 +942,38 @@
 </li>
 </ul>
 </div></div>
-<script>
-    $(function(){
-        $('ul.nav > li').hover(
-            function(){
-                _this = $(this);
-                if(_this.find(".son_nav").find("li").size() == 0){
-                    return false;
-                }
-                if($.trim(_this.find('ul.son_nav').html())!="" && $.trim(_this.find('ul.son_nav').html())!='<i class="arr"></i>')
-                {
-                    _this.find('ul.son_nav').show();
-                    _this.find('ul.son_nav').css('left','-'+((_this.find('ul.son_nav').outerWidth()-_this.outerWidth())/2)+'px');
-                    if(_this.find('ul.son_nav').offset().left<$('.nav_box').offset().left)
-                    {
-                        var dvalue = $('.nav_box').offset().left-_this.find('ul.son_nav').offset().left;
-                        _this.find('ul.son_nav').css('left',parseFloat(_this.find('ul.son_nav').css('left'))+dvalue+'px');
-                        _this.find('ul.son_nav .arr').css('left',400-dvalue+'px');
-                    }
-                    else if(_this.find('ul.son_nav').offset().left-$('.nav_box').offset().left > 288)
-                    {
-                        var dvalue = _this.find('ul.son_nav').offset().left-$('.nav_box').offset().left-288;
-                        _this.find('ul.son_nav').css('left',parseFloat(_this.find('ul.son_nav').css('left'))-dvalue+'px');
-                        _this.find('ul.son_nav .arr').css('left',400+dvalue+'px');
-                    }
-                }
-            },
-            function(){
-                _this = $(this);
-                _this.find('ul.son_nav').hide();
-            }
-        );
-    });
+<script>
+    $(function(){
+        $('ul.nav > li').hover(
+            function(){
+                _this = $(this);
+                if(_this.find(".son_nav").find("li").size() == 0){
+                    return false;
+                }
+                if($.trim(_this.find('ul.son_nav').html())!="" && $.trim(_this.find('ul.son_nav').html())!='<i class="arr"></i>')
+                {
+                    _this.find('ul.son_nav').show();
+                    _this.find('ul.son_nav').css('left','-'+((_this.find('ul.son_nav').outerWidth()-_this.outerWidth())/2)+'px');
+                    if(_this.find('ul.son_nav').offset().left<$('.nav_box').offset().left)
+                    {
+                        var dvalue = $('.nav_box').offset().left-_this.find('ul.son_nav').offset().left;
+                        _this.find('ul.son_nav').css('left',parseFloat(_this.find('ul.son_nav').css('left'))+dvalue+'px');
+                        _this.find('ul.son_nav .arr').css('left',400-dvalue+'px');
+                    }
+                    else if(_this.find('ul.son_nav').offset().left-$('.nav_box').offset().left > 288)
+                    {
+                        var dvalue = _this.find('ul.son_nav').offset().left-$('.nav_box').offset().left-288;
+                        _this.find('ul.son_nav').css('left',parseFloat(_this.find('ul.son_nav').css('left'))-dvalue+'px');
+                        _this.find('ul.son_nav .arr').css('left',400+dvalue+'px');
+                    }
+                }
+            },
+            function(){
+                _this = $(this);
+                _this.find('ul.son_nav').hide();
+            }
+        );
+    });
 </script>
 </div><!--end header_box-->
 <script>
@@ -1326,7 +1326,7 @@ $(".51buypic li img").css("height",b).css("width",a);
                             $('#home_deals_1').html("<span class=\"discount-timer-big\" endTime=\"2018/11/25 00:00:00\"></span>");
                             $('.discount-timer-big').each(function() {
                                 $(this).genTimer({
-                                    beginTime: "2022/05/23 15:44:42",
+                                    beginTime: "2022/05/24 04:10:08",
                                     targetTime: $(this).attr('endTime'),
                                     callback: function(time) {
                                         this.html(time);
@@ -1335,7 +1335,7 @@ $(".51buypic li img").css("height",b).css("width",a);
                             });
                             $('.discount-timer').each(function() {
                                 $(this).genTimer({
-                                    beginTime: "2022/05/23 15:44:42",
+                                    beginTime: "2022/05/24 04:10:08",
                                     targetTime: $(this).attr('endTime'),
                                     callback: function(time) {
                                         this.html(time);
@@ -2212,17 +2212,17 @@ $(".51buypic li img").css("height",b).css("width",a);
 </dd>
 </dl>
 <dl class="contact_us">
-<dt>
-	Customer Service
+<dt>
+	Customer Service
 </dt>
 <dd class="phone">
-<p>
-		Kik: shoeskicks
+<p>
+		Kik: shoeskicks
 	</p>
 </dd>
 <dd class="email">
-<p>
-		shoeskicks@outlook.com
+<p>
+		shoeskicks@outlook.com
 	</p>
 </dd>
 <ul class="shartto">
@@ -2246,41 +2246,41 @@ $(".51buypic li img").css("height",b).css("width",a);
 </li>
 </ul>
 <div class="newletterform">
-<script type="text/javascript">
-    function submitNewsletter()
-    {
-        email = $("#newsletter_email").val();
-        if (email == "")
-        {
-            $("#newsletter_email").tip("Please enter a valid email address.", 15, 0, 2000);
-            return;
-        }
-        $isvalidemail = /^((([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+(\.([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+)*)|((\x22)((((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(([\x01-\x08\x0b\x0c\x0e-\x1f\x7f]|\x21|[\x23-\x5b]|[\x5d-\x7e]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(\\([\x01-\x09\x0b\x0c\x0d-\x7f]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))))*(((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(\x22)))@((([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.)+(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))$/i.test(email);
-        if (!$isvalidemail)
-        {
-            $("#newsletter_email").tip("Please enter a valid email address.", 15, 0, 2000);
-            return;
-        }
-        $.ajax({
-            url: '/h-module-submitNewsletter.html',
-            type: 'POST',
-            data: {
-                email: email
-            },
-            dataType: 'text',
-            cache: false,
-            success: function(msg) {
-                if (msg == "1") {
-                    $("#newsletter_email").tip("Subscribe Successfully", 15, 0, 2000);
-                } else {
-                    $("#newsletter_email").tip("Subscribe failed, please try to refresh", 15, 0, 2000);
-                }
-            },
-            error: function() {
-                alert('Connection fails, please retry refresh');
-            }
-        });
-    }
+<script type="text/javascript">
+    function submitNewsletter()
+    {
+        email = $("#newsletter_email").val();
+        if (email == "")
+        {
+            $("#newsletter_email").tip("Please enter a valid email address.", 15, 0, 2000);
+            return;
+        }
+        $isvalidemail = /^((([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+(\.([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+)*)|((\x22)((((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(([\x01-\x08\x0b\x0c\x0e-\x1f\x7f]|\x21|[\x23-\x5b]|[\x5d-\x7e]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(\\([\x01-\x09\x0b\x0c\x0d-\x7f]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))))*(((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(\x22)))@((([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.)+(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))$/i.test(email);
+        if (!$isvalidemail)
+        {
+            $("#newsletter_email").tip("Please enter a valid email address.", 15, 0, 2000);
+            return;
+        }
+        $.ajax({
+            url: '/h-module-submitNewsletter.html',
+            type: 'POST',
+            data: {
+                email: email
+            },
+            dataType: 'text',
+            cache: false,
+            success: function(msg) {
+                if (msg == "1") {
+                    $("#newsletter_email").tip("Subscribe Successfully", 15, 0, 2000);
+                } else {
+                    $("#newsletter_email").tip("Subscribe failed, please try to refresh", 15, 0, 2000);
+                }
+            },
+            error: function() {
+                alert('Connection fails, please retry refresh');
+            }
+        });
+    }
 </script>
 <form>
 <label>Subscribe To Our Newsletter</label>
@@ -2292,30 +2292,30 @@ $(".51buypic li img").css("height",b).css("width",a);
 <div class="clearboth"></div>
 </div>
 </div>
-<div class="payment">
+<div class="payment">
 	   <a href="#"><img alt="" src="/res/front/newdefault/statics/images/link4.jpg"/></a>  <a href="#"><img alt="" src="/res/front/newdefault/statics/images/link6.jpg"/></a> <a href="#"><img alt="" src="/res/front/newdefault/statics/images/link7.jpg"/></a>    <a href="#"><img alt="" src="/res/front/newdefault/statics/images/link11.jpg"/></a> <a href="#"><img alt="" src="/res/front/newdefault/statics/images/link12.jpg"/></a> <a href="#"><img alt="" src="/res/front/newdefault/statics/images/link13.jpg"/></a>
 </div>
 <div class="quick_index">
 <strong>Quick Index:</strong> <a href="/h-product-search.html?tag=1&amp;keywords=A">A</a> <a href="/h-product-search.html?tag=1&amp;keywords=B">B</a> <a href="/h-product-search.html?tag=1&amp;keywords=C">C</a> <a href="/h-product-search.html?tag=1&amp;keywords=D">D</a> <a href="/h-product-search.html?tag=1&amp;keywords=E">E</a> <a href="/h-product-search.html?tag=1&amp;keywords=F">F</a> <a href="/h-product-search.html?tag=1&amp;keywords=G">G</a> <a href="/h-product-search.html?tag=1&amp;keywords=H">H</a> <a href="/h-product-search.html?tag=1&amp;keywords=I">I</a> <a href="/h-product-search.html?tag=1&amp;keywords=J">J</a> <a href="/h-product-search.html?tag=1&amp;keywords=K">K</a> <a href="/h-product-search.html?tag=1&amp;keywords=L">L</a> <a href="/h-product-search.html?tag=1&amp;keywords=M">M</a> <a href="/h-product-search.html?tag=1&amp;keywords=N">N</a> <a href="/h-product-search.html?tag=1&amp;keywords=O">O</a> <a href="/h-product-search.html?tag=1&amp;keywords=P">P</a> <a href="/h-product-search.html?tag=1&amp;keywords=Q">Q</a> <a href="/h-product-search.html?tag=1&amp;keywords=R">R</a> <a href="/h-product-search.html?tag=1&amp;keywords=S">S</a> <a href="/h-product-search.html?tag=1&amp;keywords=T">T</a> <a href="/h-product-search.html?tag=1&amp;keywords=U">U</a> <a href="/h-product-search.html?tag=1&amp;keywords=V">V</a> <a href="/h-product-search.html?tag=1&amp;keywords=W">W</a> <a href="/h-product-search.html?tag=1&amp;keywords=X">X</a> <a href="/h-product-search.html?tag=1&amp;keywords=Y">Y</a> <a href="/h-product-search.html?tag=1&amp;keywords=Z">Z</a> <a href="/h-product-search.html?tag=1&amp;keywords=0-9">0-9</a> <a href="#">Sitemap</a><a href="#">Mobile Site</a>
 </div>
-<p class="copyright">
+<p class="copyright">
 	Copyright © 2015-2016 <a href="#">shoeskicks</a><a href="#" style="line-height:1.5;">.</a>cn<span style="line-height:1.5;"> All Rights Reserved.</span>
 </p>
-<script type="text/javascript">
-var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
-document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F5272c02cb2a86e9650d1491910f5147e' type='text/javascript'%3E%3C/script%3E"));
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F5272c02cb2a86e9650d1491910f5147e' type='text/javascript'%3E%3C/script%3E"));
 </script>
 <p>
 <br/>
 </p>
 </div><!--end bottom_box-->
-<script>
-(function() {
-  var _53code = document.createElement("script");
-  _53code.src = "//tb.53kf.com/code/code/10072655/1";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(_53code, s);
-})();
+<script>
+(function() {
+  var _53code = document.createElement("script");
+  _53code.src = "//tb.53kf.com/code/code/10072655/1";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(_53code, s);
+})();
 </script><script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1260865638'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D1260865638%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
 </body>
 </html>

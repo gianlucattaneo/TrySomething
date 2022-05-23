@@ -13,94 +13,94 @@
 <link href="//fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet" type="text/css"/>
 <link href="http://mywatches.com.pk/media/favicon/stores/23/favicon_1.ico" rel="icon" type="image/x-icon"/>
 <link href="http://mywatches.com.pk/media/favicon/stores/23/favicon_1.ico" rel="shortcut icon" type="image/x-icon"/>
-<link href="//fonts.googleapis.com/css?family=Open+Sans%3A300%2C300italic%2C400%2C400italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic&amp;v1&amp;subset=latin%2Clatin-ext" media="screen" rel="stylesheet" type="text/css"/> <link href="//fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet"/><link href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet"/><link href="//fonts.googleapis.com/css?family=Open+Sans%3A300%2C300italic%2C400%2C400italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic&amp;v1&amp;subset=latin%2Clatin-ext" media="screen" rel="stylesheet" type="text/css"> <link href="http://mywatches.com.pk/media/porto/web/bootstrap/css/bootstrap.optimized.min.css" media="all" rel="stylesheet" type="text/css"/> <link href="http://mywatches.com.pk/media/porto/web/css/animate.optimized.css" media="all" rel="stylesheet" type="text/css"/> <link href="http://mywatches.com.pk/media/porto/web/css/header/type16.css" media="all" rel="stylesheet" type="text/css"/><link href="http://mywatches.com.pk/media/porto/web/css/custom.css" media="all" rel="stylesheet" type="text/css"/><link href="http://mywatches.com.pk/media/porto/configed_css/design_mywatches_com_pk.css" media="all" rel="stylesheet" type="text/css"/><link href="http://mywatches.com.pk/media/porto/configed_css/settings_mywatches_com_pk.css" media="all" rel="stylesheet" type="text/css"/><script type="text/javascript">
-var porto_config = {
-    paths: {
-        'parallax': 'js/jquery.parallax.min',
-        'owlcarousel': 'owl.carousel/owl.carousel',
-        'owlcarousel_thumbs': 'owl.carousel/owl.carousel2.thumbs',
-        'imagesloaded': 'Smartwave_Porto/js/imagesloaded',
-        'packery': 'Smartwave_Porto/js/packery.pkgd',
-        'floatelement': 'js/jquery.floatelement'
-    },
-    shim: {
-        'parallax': {
-          deps: ['jquery']
-        },
-        'owlcarousel': {
-          deps: ['jquery']
-        },        
-        'owlcarousel_thumbs': {
-          deps: ['jquery','owlcarousel']
-        },    
-        'packery': {
-          deps: ['jquery','imagesloaded']
-        },
-        'floatelement': {
-          deps: ['jquery']
-        }
-    }
-};
-
-require.config(porto_config);</script><script type="text/javascript">
-require([
-    'jquery'
-], function ($) {
-    $(document).ready(function(){
-        $(".drop-menu > a").off("click").on("click", function(){
-            if($(this).parent().children(".nav-sections").hasClass("visible")) {
-                $(this).parent().children(".nav-sections").removeClass("visible");
-                $(this).removeClass("active");
-            }
-            else {
-                $(this).parent().children(".nav-sections").addClass("visible");
-                $(this).addClass("active");
-            }
-        });
-    });
-    var scrolled = false;
-    $(window).scroll(function(){
-        if(!$('.page-header').hasClass('type10')) {
-            if($(window).width()>=768){
-                if(160<$(window).scrollTop() && !scrolled){
-                    $('.page-header:not(.sticky-header)').css("height",$('.page-header:not(.sticky-header)').height()+'px');
-                    $('.page-header').addClass("sticky-header");
-                    scrolled = true;
-                    if((!$(".page-header").hasClass("type12")) && (!$(".page-header").hasClass("type23")) && (!$(".page-header").hasClass("type25")) && (!$(".page-header").hasClass("type26"))) {
-                        $('.page-header .minicart-wrapper').after('<div class="minicart-place hide"></div>');
-
-                        if($(".page-header").hasClass("type2"))
-                            $('.page-header .navigation').append($('header.page-header.type2 a.action.my-wishlist').detach());
-
-                        var minicart = $('.page-header .minicart-wrapper').detach();
-                        if($(".page-header").hasClass("type8"))
-                            $('.page-header .menu-wrapper').append(minicart);
-                        else
-                            $('.page-header .navigation').append(minicart);
-                        
-                         } else {
-                         }
-                     }
-                if(160>=$(window).scrollTop() && scrolled){
-                    $('.page-header.sticky-header').css("height",'auto');
-                    $('.page-header').removeClass("sticky-header");
-                    scrolled = false;
-                    if((!$(".page-header").hasClass("type12")) && (!$(".page-header").hasClass("type23")) && (!$(".page-header").hasClass("type25")) && (!$(".page-header").hasClass("type26"))) {
-                        var minicart;
-                        if($(".page-header").hasClass("type8"))
-                            minicart = $('.page-header .menu-wrapper .minicart-wrapper').detach();
-                        else
-                            minicart = $('.page-header .navigation .minicart-wrapper').detach();
-                        $('.minicart-place').after(minicart);
-                        $('.minicart-place').remove();
-                        if($(".page-header").hasClass("type2"))
-                            $('.page-header .block.block-search').before($('.page-header .navigation a.action.my-wishlist').detach());
-                        $('.page-header .minicart-wrapper-moved').addClass("minicart-wrapper").removeClass("minicart-wrapper-moved").removeClass("hide");
-                    }
-                     }
-            }
-        }
-    });
+<link href="//fonts.googleapis.com/css?family=Open+Sans%3A300%2C300italic%2C400%2C400italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic&amp;v1&amp;subset=latin%2Clatin-ext" media="screen" rel="stylesheet" type="text/css"/> <link href="//fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet"/><link href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet"/><link href="//fonts.googleapis.com/css?family=Open+Sans%3A300%2C300italic%2C400%2C400italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic&amp;v1&amp;subset=latin%2Clatin-ext" media="screen" rel="stylesheet" type="text/css"> <link href="http://mywatches.com.pk/media/porto/web/bootstrap/css/bootstrap.optimized.min.css" media="all" rel="stylesheet" type="text/css"/> <link href="http://mywatches.com.pk/media/porto/web/css/animate.optimized.css" media="all" rel="stylesheet" type="text/css"/> <link href="http://mywatches.com.pk/media/porto/web/css/header/type16.css" media="all" rel="stylesheet" type="text/css"/><link href="http://mywatches.com.pk/media/porto/web/css/custom.css" media="all" rel="stylesheet" type="text/css"/><link href="http://mywatches.com.pk/media/porto/configed_css/design_mywatches_com_pk.css" media="all" rel="stylesheet" type="text/css"/><link href="http://mywatches.com.pk/media/porto/configed_css/settings_mywatches_com_pk.css" media="all" rel="stylesheet" type="text/css"/><script type="text/javascript">
+var porto_config = {
+    paths: {
+        'parallax': 'js/jquery.parallax.min',
+        'owlcarousel': 'owl.carousel/owl.carousel',
+        'owlcarousel_thumbs': 'owl.carousel/owl.carousel2.thumbs',
+        'imagesloaded': 'Smartwave_Porto/js/imagesloaded',
+        'packery': 'Smartwave_Porto/js/packery.pkgd',
+        'floatelement': 'js/jquery.floatelement'
+    },
+    shim: {
+        'parallax': {
+          deps: ['jquery']
+        },
+        'owlcarousel': {
+          deps: ['jquery']
+        },        
+        'owlcarousel_thumbs': {
+          deps: ['jquery','owlcarousel']
+        },    
+        'packery': {
+          deps: ['jquery','imagesloaded']
+        },
+        'floatelement': {
+          deps: ['jquery']
+        }
+    }
+};
+
+require.config(porto_config);</script><script type="text/javascript">
+require([
+    'jquery'
+], function ($) {
+    $(document).ready(function(){
+        $(".drop-menu > a").off("click").on("click", function(){
+            if($(this).parent().children(".nav-sections").hasClass("visible")) {
+                $(this).parent().children(".nav-sections").removeClass("visible");
+                $(this).removeClass("active");
+            }
+            else {
+                $(this).parent().children(".nav-sections").addClass("visible");
+                $(this).addClass("active");
+            }
+        });
+    });
+    var scrolled = false;
+    $(window).scroll(function(){
+        if(!$('.page-header').hasClass('type10')) {
+            if($(window).width()>=768){
+                if(160<$(window).scrollTop() && !scrolled){
+                    $('.page-header:not(.sticky-header)').css("height",$('.page-header:not(.sticky-header)').height()+'px');
+                    $('.page-header').addClass("sticky-header");
+                    scrolled = true;
+                    if((!$(".page-header").hasClass("type12")) && (!$(".page-header").hasClass("type23")) && (!$(".page-header").hasClass("type25")) && (!$(".page-header").hasClass("type26"))) {
+                        $('.page-header .minicart-wrapper').after('<div class="minicart-place hide"></div>');
+
+                        if($(".page-header").hasClass("type2"))
+                            $('.page-header .navigation').append($('header.page-header.type2 a.action.my-wishlist').detach());
+
+                        var minicart = $('.page-header .minicart-wrapper').detach();
+                        if($(".page-header").hasClass("type8"))
+                            $('.page-header .menu-wrapper').append(minicart);
+                        else
+                            $('.page-header .navigation').append(minicart);
+                        
+                         } else {
+                         }
+                     }
+                if(160>=$(window).scrollTop() && scrolled){
+                    $('.page-header.sticky-header').css("height",'auto');
+                    $('.page-header').removeClass("sticky-header");
+                    scrolled = false;
+                    if((!$(".page-header").hasClass("type12")) && (!$(".page-header").hasClass("type23")) && (!$(".page-header").hasClass("type25")) && (!$(".page-header").hasClass("type26"))) {
+                        var minicart;
+                        if($(".page-header").hasClass("type8"))
+                            minicart = $('.page-header .menu-wrapper .minicart-wrapper').detach();
+                        else
+                            minicart = $('.page-header .navigation .minicart-wrapper').detach();
+                        $('.minicart-place').after(minicart);
+                        $('.minicart-place').remove();
+                        if($(".page-header").hasClass("type2"))
+                            $('.page-header .block.block-search').before($('.page-header .navigation a.action.my-wishlist').detach());
+                        $('.page-header .minicart-wrapper-moved').addClass("minicart-wrapper").removeClass("minicart-wrapper-moved").removeClass("hide");
+                    }
+                     }
+            }
+        }
+    });
  });</script> <!-- BEGIN GOOGLE ANALYTICS CODE --><script type="text/x-magento-init">
 {
     "*": {
@@ -176,8 +176,8 @@ require([
                 }
             }
         }
-    }</script> <li><a href="http://mywatches.com.pk/contact">Contact Us</a></li> <li class="link authorization-link" data-label="or"><a href="https://mywatches.com.pk/customer/account/login/referer/aHR0cDovL215d2F0Y2hlcy5jb20ucGsv/">Sign In</a></li><li><a href="https://mywatches.com.pk/customer/account/create/" id="idwiaWokYm">Create an Account</a></li></ul></div></div></div><div class="header content"> <strong class="logo" title="Watches in Pakistan"> <img alt="Watches in Pakistan" height="86" src="https://mywatches.com.pk/media/logo/stores/23/mywatches.com.pk-logo.jpg" width="170"/></strong> <div class="minicart-wrapper" data-block="minicart"><a class="action showcart" data-bind="scope: 'minicart_content'" href="https://mywatches.com.pk/checkout/cart/"><span class="text">Cart</span> <span class="counter qty empty" data-bind="css: { empty: !!getCartParam('summary_count') == false }, blockLoader: isLoading"><span class="counter-number"><!-- ko if: getCartParam('summary_count') --><!-- ko text: getCartParam('summary_count') --><!-- /ko --><!-- /ko --><!-- ko ifnot: getCartParam('summary_count') -->0<!-- /ko --></span> <span class="counter-label"><!-- ko i18n: 'items' --><!-- /ko --></span></span></a> <div class="block block-minicart empty" data-mage-init='{"dropdownDialog":{ "appendTo":"[data-block=minicart]", "triggerTarget":".showcart", "timeout": "2000", "closeOnMouseLeave": false, "closeOnEscape": true, "triggerClass":"active", "parentClass":"active", "buttons":[]}}' data-role="dropdownDialog"><div data-bind="scope: 'minicart_content'" id="minicart-content-wrapper"><!-- ko template: getTemplate() --><!-- /ko --></div></div> <script>
-        window.checkout = {"shoppingCartUrl":"https:\/\/mywatches.com.pk\/checkout\/cart\/","checkoutUrl":"https:\/\/mywatches.com.pk\/checkout\/","updateItemQtyUrl":"http:\/\/mywatches.com.pk\/checkout\/sidebar\/updateItemQty\/","removeItemUrl":"http:\/\/mywatches.com.pk\/checkout\/sidebar\/removeItem\/","imageTemplate":"Magento_Catalog\/product\/image_with_borders","baseUrl":"http:\/\/mywatches.com.pk\/","minicartMaxItemsVisible":5,"websiteId":"1","maxItemsToDisplay":10,"storeId":"23","storeGroupId":"1","customerLoginUrl":"https:\/\/mywatches.com.pk\/customer\/account\/login\/referer\/aHR0cDovL215d2F0Y2hlcy5jb20ucGsv\/","isRedirectRequired":true,"autocomplete":"on","captcha":{"user_login":{"isCaseSensitive":false,"imageHeight":50,"imageSrc":"","refreshUrl":"http:\/\/mywatches.com.pk\/captcha\/refresh\/","isRequired":false,"timestamp":1653291448}}};</script><script type="text/x-magento-init">
+    }</script> <li><a href="http://mywatches.com.pk/contact">Contact Us</a></li> <li class="link authorization-link" data-label="or"><a href="https://mywatches.com.pk/customer/account/login/referer/aHR0cDovL215d2F0Y2hlcy5jb20ucGsv/">Sign In</a></li><li><a href="https://mywatches.com.pk/customer/account/create/" id="idNzm1eJoh">Create an Account</a></li></ul></div></div></div><div class="header content"> <strong class="logo" title="Watches in Pakistan"> <img alt="Watches in Pakistan" height="86" src="https://mywatches.com.pk/media/logo/stores/23/mywatches.com.pk-logo.jpg" width="170"/></strong> <div class="minicart-wrapper" data-block="minicart"><a class="action showcart" data-bind="scope: 'minicart_content'" href="https://mywatches.com.pk/checkout/cart/"><span class="text">Cart</span> <span class="counter qty empty" data-bind="css: { empty: !!getCartParam('summary_count') == false }, blockLoader: isLoading"><span class="counter-number"><!-- ko if: getCartParam('summary_count') --><!-- ko text: getCartParam('summary_count') --><!-- /ko --><!-- /ko --><!-- ko ifnot: getCartParam('summary_count') -->0<!-- /ko --></span> <span class="counter-label"><!-- ko i18n: 'items' --><!-- /ko --></span></span></a> <div class="block block-minicart empty" data-mage-init='{"dropdownDialog":{ "appendTo":"[data-block=minicart]", "triggerTarget":".showcart", "timeout": "2000", "closeOnMouseLeave": false, "closeOnEscape": true, "triggerClass":"active", "parentClass":"active", "buttons":[]}}' data-role="dropdownDialog"><div data-bind="scope: 'minicart_content'" id="minicart-content-wrapper"><!-- ko template: getTemplate() --><!-- /ko --></div></div> <script>
+        window.checkout = {"shoppingCartUrl":"https:\/\/mywatches.com.pk\/checkout\/cart\/","checkoutUrl":"https:\/\/mywatches.com.pk\/checkout\/","updateItemQtyUrl":"http:\/\/mywatches.com.pk\/checkout\/sidebar\/updateItemQty\/","removeItemUrl":"http:\/\/mywatches.com.pk\/checkout\/sidebar\/removeItem\/","imageTemplate":"Magento_Catalog\/product\/image_with_borders","baseUrl":"http:\/\/mywatches.com.pk\/","minicartMaxItemsVisible":5,"websiteId":"1","maxItemsToDisplay":10,"storeId":"23","storeGroupId":"1","customerLoginUrl":"https:\/\/mywatches.com.pk\/customer\/account\/login\/referer\/aHR0cDovL215d2F0Y2hlcy5jb20ucGsv\/","isRedirectRequired":true,"autocomplete":"on","captcha":{"user_login":{"isCaseSensitive":false,"imageHeight":50,"imageSrc":"","refreshUrl":"http:\/\/mywatches.com.pk\/captcha\/refresh\/","isRequired":false,"timestamp":1653336315}}};</script><script type="text/x-magento-init">
     {
         "[data-block='minicart']": {
             "Magento_Ui/js/core/app": {"components":{"minicart_content":{"children":{"subtotal.container":{"children":{"subtotal":{"children":{"subtotal.totals":{"config":{"display_cart_subtotal_incl_tax":0,"display_cart_subtotal_excl_tax":1,"template":"Magento_Tax\/checkout\/minicart\/subtotal\/totals"},"children":{"subtotal.totals.msrp":{"component":"Magento_Msrp\/js\/view\/checkout\/minicart\/subtotal\/totals","config":{"displayArea":"minicart-subtotal-hidden","template":"Magento_Msrp\/checkout\/minicart\/subtotal\/totals"}}},"component":"Magento_Tax\/js\/view\/checkout\/minicart\/subtotal\/totals"}},"component":"uiComponent","config":{"template":"Magento_Checkout\/minicart\/subtotal"}}},"component":"uiComponent","config":{"displayArea":"subtotalContainer"}},"item.renderer":{"component":"Magento_Checkout\/js\/view\/cart-item-renderer","config":{"displayArea":"defaultRenderer","template":"Magento_Checkout\/minicart\/item\/default"},"children":{"item.image":{"component":"Magento_Catalog\/js\/view\/image","config":{"template":"Magento_Catalog\/product\/image","displayArea":"itemImage"}},"checkout.cart.item.price.sidebar":{"component":"uiComponent","config":{"template":"Magento_Checkout\/minicart\/item\/price","displayArea":"priceSidebar"}}}},"extra_info":{"component":"uiComponent","config":{"displayArea":"extraInfo"}},"promotion":{"component":"uiComponent","config":{"displayArea":"promotion"}}},"config":{"itemRenderer":{"default":"defaultRenderer","simple":"defaultRenderer","virtual":"defaultRenderer"},"template":"Magento_Checkout\/minicart\/content"},"component":"Magento_Checkout\/js\/view\/minicart"}},"types":[]}        },
@@ -224,7 +224,7 @@ require([
                     }
                 }
             }
-    }</script></div><div class="columns"><div class="column main"><input name="form_key" type="hidden" value="Ip09E6qzzfU1Kcl0"/> <div data-bind="scope:'authenticationPopup', style: {display: 'none'}" id="authenticationPopup"> <script>window.authenticationPopup = {"autocomplete":"on","customerRegisterUrl":"https:\/\/mywatches.com.pk\/customer\/account\/create\/","customerForgotPasswordUrl":"https:\/\/mywatches.com.pk\/customer\/account\/forgotpassword\/","baseUrl":"http:\/\/mywatches.com.pk\/"}</script> <!-- ko template: getTemplate() --><!-- /ko --><script type="text/x-magento-init">
+    }</script></div><div class="columns"><div class="column main"><input name="form_key" type="hidden" value="Hl7O01NUou1nPqF5"/> <div data-bind="scope:'authenticationPopup', style: {display: 'none'}" id="authenticationPopup"> <script>window.authenticationPopup = {"autocomplete":"on","customerRegisterUrl":"https:\/\/mywatches.com.pk\/customer\/account\/create\/","customerForgotPasswordUrl":"https:\/\/mywatches.com.pk\/customer\/account\/forgotpassword\/","baseUrl":"http:\/\/mywatches.com.pk\/"}</script> <!-- ko template: getTemplate() --><!-- /ko --><script type="text/x-magento-init">
         {
             "#authenticationPopup": {
                 "Magento_Ui/js/core/app": {"components":{"authenticationPopup":{"component":"Vnecoms_Sms\/js\/account\/authentication-popup","children":{"messages":{"component":"Magento_Ui\/js\/view\/messages","displayArea":"messages"},"captcha":{"component":"Magento_Captcha\/js\/view\/checkout\/loginCaptcha","displayArea":"additional-login-form-fields","formId":"user_login","configSource":"checkout"}},"template":"Vnecoms_Sms\/account\/authentication-popup","initialCountry":"pk","geoIpUrl":"https:\/\/ipinfo.io","allowDropdown":"false","onlyCountries":false,"preferredCountries":["PK"]}}}            },
@@ -335,27 +335,27 @@ require([
 </a>
 </div>
 </div>
-<script type="text/javascript">
-  require([
-    'jquery',
-    'owl.carousel/owl.carousel.min'
-  ], function ($) {
-    var banner_owl = $("#banner-slider-demo-1");
-    banner_owl.owlCarousel({
-      items: 1,
-      autoplay: true,
-      autoplayTimeout: 5000,
-      autoplayHoverPause: true,
-      dots: true,
-      nav: false,
-      navRewind: true,
-      animateIn: 'fadeIn',
-      animateOut: 'fadeOut',
-      loop: true,
-      lazyLoad: true,
-      navText: ["<em class='porto-icon-chevron-left'></em>","<em class='porto-icon-chevron-right'></em>"]
-    });
-  });
+<script type="text/javascript">
+  require([
+    'jquery',
+    'owl.carousel/owl.carousel.min'
+  ], function ($) {
+    var banner_owl = $("#banner-slider-demo-1");
+    banner_owl.owlCarousel({
+      items: 1,
+      autoplay: true,
+      autoplayTimeout: 5000,
+      autoplayHoverPause: true,
+      dots: true,
+      nav: false,
+      navRewind: true,
+      animateIn: 'fadeIn',
+      animateOut: 'fadeOut',
+      loop: true,
+      lazyLoad: true,
+      navText: ["<em class='porto-icon-chevron-left'></em>","<em class='porto-icon-chevron-right'></em>"]
+    });
+  });
 </script>
 <div class="homepage-bar">
 <div class="container">
@@ -457,100 +457,100 @@ require([
 </div>
 </div>
 </div>
-<script type="text/javascript">
-        require([
-          'jquery',
-          'owl.carousel/owl.carousel.min'
-        ], function ($) {
-          $("#parallax-slider-demo-1").owlCarousel({
-            items: 1,
-            autoplay: true,
-            autoplayTimeout: 5000,
-            autoplayHoverPause: true,
-            dots: false,
-            nav: false,
-            loop: true,
-            navRewind: true
-          });
-        });
+<script type="text/javascript">
+        require([
+          'jquery',
+          'owl.carousel/owl.carousel.min'
+        ], function ($) {
+          $("#parallax-slider-demo-1").owlCarousel({
+            items: 1,
+            autoplay: true,
+            autoplayTimeout: 5000,
+            autoplayHoverPause: true,
+            dots: false,
+            nav: false,
+            loop: true,
+            navRewind: true
+          });
+        });
       </script>
 </div>
 </div>
 </div>
-<style>
-  #banner-slider-demo-1 .content h2 {
-    font-size: 36px;
-    font-weight: 900;
-    letter-spacing: -0.03em;
-    text-transform: uppercase;
-    line-height: 38px;
-    margin-bottom: 10px;
-    margin-top:0;
-  }
-  #banner-slider-demo-1 .content span {
-    font-family: 'Oswald';
-    font-size:18px;
-    line-height:25px;
-    letter-spacing: 0.05em;
-    font-weight: 600;
-    text-transform:uppercase;
-  }
-  #banner-slider-demo-1 .content .btn-default {
-    font-size: 15px;
-    line-height: 25px;
-    letter-spacing: 0.05em;
-    padding: 12px 27px;
-    border-radius:3px;
-    background-color: #0088cc;
-    color: #fff;
-    font-family: 'Oswald';
-    text-transform: uppercase;
-    margin-top: 28px;
-  }
-  #banner-slider-demo-1 .border-top {
-    position:absolute;
-    top:-52px;
-    left:9%;
-  }
-  #banner-slider-demo-1 .border-bottom {
-    position:absolute;
-    bottom:-38px;
-    left:9%;
-  }
-  @media(max-width:767px){
-    #banner-slider-demo-1 .border-top,#banner-slider-demo-1 .border-bottom {
-      display:none;
-    }
-    #banner-slider-demo-1 .content {
-      top:25% !important;
-    }
-    #banner-slider-demo-1 .content.content-slide-1 {
-      top:25%!important;
-      left: 2.4%;
-    }
-    #banner-slider-demo-1 .content span {
-      font-size:10px !important;
-      line-height:1!important;
-    }
-    #banner-slider-demo-1 .content h2 {
-      font-size: 20px !important;
-      margin-bottom: 5px;
-      margin-top:0;
-    }
-    #banner-slider-demo-1 .content .btn-default {
-      font-size: 10px;
-      line-height: 25px;
-      padding: 2px 12px;
-      margin-top: 0px;
-    }
-  }
-.page-main {
-padding: 0;
-}
-.columns .column.main {
-    padding: 0;
-    min-height: auto;
-}
+<style>
+  #banner-slider-demo-1 .content h2 {
+    font-size: 36px;
+    font-weight: 900;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    line-height: 38px;
+    margin-bottom: 10px;
+    margin-top:0;
+  }
+  #banner-slider-demo-1 .content span {
+    font-family: 'Oswald';
+    font-size:18px;
+    line-height:25px;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+    text-transform:uppercase;
+  }
+  #banner-slider-demo-1 .content .btn-default {
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 0.05em;
+    padding: 12px 27px;
+    border-radius:3px;
+    background-color: #0088cc;
+    color: #fff;
+    font-family: 'Oswald';
+    text-transform: uppercase;
+    margin-top: 28px;
+  }
+  #banner-slider-demo-1 .border-top {
+    position:absolute;
+    top:-52px;
+    left:9%;
+  }
+  #banner-slider-demo-1 .border-bottom {
+    position:absolute;
+    bottom:-38px;
+    left:9%;
+  }
+  @media(max-width:767px){
+    #banner-slider-demo-1 .border-top,#banner-slider-demo-1 .border-bottom {
+      display:none;
+    }
+    #banner-slider-demo-1 .content {
+      top:25% !important;
+    }
+    #banner-slider-demo-1 .content.content-slide-1 {
+      top:25%!important;
+      left: 2.4%;
+    }
+    #banner-slider-demo-1 .content span {
+      font-size:10px !important;
+      line-height:1!important;
+    }
+    #banner-slider-demo-1 .content h2 {
+      font-size: 20px !important;
+      margin-bottom: 5px;
+      margin-top:0;
+    }
+    #banner-slider-demo-1 .content .btn-default {
+      font-size: 10px;
+      line-height: 25px;
+      padding: 2px 12px;
+      margin-top: 0px;
+    }
+  }
+.page-main {
+padding: 0;
+}
+.columns .column.main {
+    padding: 0;
+    min-height: auto;
+}
 </style></div></div></main><footer class="page-footer"> <div class="footer"> <div class="footer-top"><div class="container"><div class="row"><div class="col-lg-12"><div class="custom-block"><div class="footer-top-inner">
 <div class="row">
 <div class="col-md-5">
@@ -577,7 +577,7 @@ padding: 0;
 <ul class="contact-info" style="padding-top: 7px;">
 <li><p><b style="color: #fff;text-transform:uppercase;">Address</b><br>Online Watches Pakistan</br></p></li>
 <li><p><b style="color: #fff;text-transform:uppercase;">Phone</b><br>0335-2345111 (Whatsapp)<br/>0335-2345222<br/>0335-2345999</br></p></li>
-<li><p><b style="color: #fff;text-transform:uppercase;">Email</b><br/><a href="/cdn-cgi/l/email-protection#561f383039161b2f213722353e33257835393b78263d"><span class="__cf_email__" data-cfemail="a0e9cec6cfe0edd9d7c1d4c3c8c5d38ec3cfcd8ed0cb">[email protected]</span></a></p></li>
+<li><p><b style="color: #fff;text-transform:uppercase;">Email</b><br/><a href="/cdn-cgi/l/email-protection#652c0b030a25281c120411060d00164b060a084b150e"><span class="__cf_email__" data-cfemail="1a53747c755a57636d7b6e79727f6934797577346a71">[email protected]</span></a></p></li>
 <li><p><b style="color: #fff;text-transform:uppercase;">Working Days/Hours</b><br/>Mon - Sat / 9:00AM - 8:00PM<br/> Sunday Holiday</p></li>
 </ul>
 </div>

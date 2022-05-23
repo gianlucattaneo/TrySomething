@@ -34,48 +34,48 @@
 <script src="catalog/view/theme/snout/js/cloud-zoom.js" type="text/javascript"></script>
 <link href="catalog/view/theme/snout/stylesheet/dcaccordion.css" property="stylesheet" rel="stylesheet" type="text/css">
 <script src="catalog/view/theme/snout/js/jquery.dcjqaccordion.js" type="text/javascript"></script>
-<script type="text/javascript">
-window.__sscf.cf_5317227  = function() {
-if (!this._ssSTLHandled) {
-    setTimeout(function () {
-        var aGet = window._ssURBNGetters;
-        var productKey = aGet.productKey();
-        var store = aGet.store();
-        var selectedColorString = productKey + "/selectedColorSliceItem";
-        var primarySliceString = productKey + "/primarySliceItems";
-        var selectedColor = store && store.getters[selectedColorString];
-        var primarySlice = store && store.getters[primarySliceString];
-        var detailToggle = document.querySelector(".c-pwa-product-details__details .o-pwa-accordion__toggle");
-        var colorCode;
-
-        if (selectedColor && primarySlice) {
-            colorCode = selectedColor.code;
-            if (!primarySlice.reduce(hasRelatedProducts(colorCode), false)) {
-                console.log("[T] - STL Should NOT exist. Collapsing Details.");
-                detailToggle.click();
-            } else {
-                console.log("[T] - STL Should exist");
-            }
-        } else {
-            console.log("[T] - Unable to locate vars: ", selectedColor, primarySlice);
-        }
-
-        function hasRelatedProducts(code) {
-            return function relatedProductSearch(hasRelatedProducts, p) {
-                if (hasRelatedProducts) { return true; }
-                // check for matching code
-                if (p.code === code) {
-                    if (p.productsRelatedToColor.length > 0) {
-                        return true;
-                    }
-                }
-                return false;
-            };
-        }
-    }, 500);
-    this._ssSTLHandled = true;
-}
-}
+<script type="text/javascript">
+window.__sscf.cf_5317227  = function() {
+if (!this._ssSTLHandled) {
+    setTimeout(function () {
+        var aGet = window._ssURBNGetters;
+        var productKey = aGet.productKey();
+        var store = aGet.store();
+        var selectedColorString = productKey + "/selectedColorSliceItem";
+        var primarySliceString = productKey + "/primarySliceItems";
+        var selectedColor = store && store.getters[selectedColorString];
+        var primarySlice = store && store.getters[primarySliceString];
+        var detailToggle = document.querySelector(".c-pwa-product-details__details .o-pwa-accordion__toggle");
+        var colorCode;
+
+        if (selectedColor && primarySlice) {
+            colorCode = selectedColor.code;
+            if (!primarySlice.reduce(hasRelatedProducts(colorCode), false)) {
+                console.log("[T] - STL Should NOT exist. Collapsing Details.");
+                detailToggle.click();
+            } else {
+                console.log("[T] - STL Should exist");
+            }
+        } else {
+            console.log("[T] - Unable to locate vars: ", selectedColor, primarySlice);
+        }
+
+        function hasRelatedProducts(code) {
+            return function relatedProductSearch(hasRelatedProducts, p) {
+                if (hasRelatedProducts) { return true; }
+                // check for matching code
+                if (p.code === code) {
+                    if (p.productsRelatedToColor.length > 0) {
+                        return true;
+                    }
+                }
+                return false;
+            };
+        }
+    }, 500);
+    this._ssSTLHandled = true;
+}
+}
 </script>
 </link></link></link></meta></head>
 <body class="common-home snout">
@@ -84,12 +84,12 @@ if (!this._ssSTLHandled) {
 <div id="sidebar-wrapper">
 <ul class="sidebar-nav list-group snout">
 <li class="sidebar-title">
-<a href="#menu-toggle-close" id="menu-toggle-close"><span aria-hidden="true">×</span></a>Informatie      <script>
-      $("#menu-toggle-close").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-		$(".sidebar-opacity").toggleClass("toggled");
-      });
+<a href="#menu-toggle-close" id="menu-toggle-close"><span aria-hidden="true">×</span></a>Informatie      <script>
+      $("#menu-toggle-close").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+		$(".sidebar-opacity").toggleClass("toggled");
+      });
       </script>
 </li>
 <li><a href="http://www.mieterberater.de/index.php?route=information/information&amp;information_id=7">FAQ</a></li>
@@ -153,12 +153,12 @@ if (!this._ssSTLHandled) {
 <span class="button-text">Menu</span>
 </div>
 </a>
-<script>
-        $("#menu-mobile-toggle").click(function(e) {
-          e.preventDefault();
-          $("#wrapper").toggleClass("menu-toggled");
-		  $(".sidebar-opacity").toggleClass("menu-toggled");
-        });
+<script>
+        $("#menu-mobile-toggle").click(function(e) {
+          e.preventDefault();
+          $("#wrapper").toggleClass("menu-toggled");
+		  $(".sidebar-opacity").toggleClass("menu-toggled");
+        });
       </script>
 <div class="btn-group btn-block buttons-header" id="cart">
 <a class="btn dropdown-toggle" data-loading-text="Laden..." data-toggle="dropdown">
@@ -196,26 +196,26 @@ if (!this._ssSTLHandled) {
 </div>
 </div>
 </nav>
-<script type="text/javascript">
-$(document).ready(function() {
-	$('#accordion-mobile').dcAccordion({
-		disableLink: false,	
-		menuClose: false,
-		autoClose: true,
-		autoExpand: true,		
-		saveState: false
-	});
-});
+<script type="text/javascript">
+$(document).ready(function() {
+	$('#accordion-mobile').dcAccordion({
+		disableLink: false,	
+		menuClose: false,
+		autoClose: true,
+		autoExpand: true,		
+		saveState: false
+	});
+});
 </script>
 <div class="hidden-sm hidden-md hidden-lg" id="menu-mobile">
 <ul class="accordion sidebar-nav list-group" id="accordion-mobile">
 <li class="sidebar-title">
-<a href="#menu-mobile-toggle-close" id="menu-mobile-toggle-close"><span aria-hidden="true">×</span></a>Menu      <script>
-      $("#menu-mobile-toggle-close").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("menu-toggled");
-		$(".sidebar-opacity").toggleClass("menu-toggled");
-      });
+<a href="#menu-mobile-toggle-close" id="menu-mobile-toggle-close"><span aria-hidden="true">×</span></a>Menu      <script>
+      $("#menu-mobile-toggle-close").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("menu-toggled");
+		$(".sidebar-opacity").toggleClass("menu-toggled");
+      });
       </script>
 </li>
 <li><a href="http://www.mieterberater.de/">Home</a></li>
@@ -248,16 +248,16 @@ $(document).ready(function() {
 </div>
 <div style="display:none;"><script src="//js.users.51.la/21085533.js" type="text/javascript"></script><br/></div><div class="container">
 <div class="row"><column class="col-sm-3 hidden-xs" id="column-left">
-<script type="text/javascript">
-$(document).ready(function() {
-	$('#accordion-1').dcAccordion({
-		disableLink: false,	
-		menuClose: false,
-		autoClose: true,
-		autoExpand: true,		
-		saveState: false
-	});
-});
+<script type="text/javascript">
+$(document).ready(function() {
+	$('#accordion-1').dcAccordion({
+		disableLink: false,	
+		menuClose: false,
+		autoClose: true,
+		autoExpand: true,		
+		saveState: false
+	});
+});
 </script>
 <div class="panel panel-default panel-category">
 <div class="panel-heading">Categorieën</div>
@@ -289,14 +289,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.mieterberater.de/adidas-performance-sportjas-x27manchester-unitedx27-in-donkerrood-zwart.html"><img alt="ADIDAS PERFORMANCE Sportjas 'Manchester United' in Donkerrood / Zwart" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/adidas-performance-sportjas-x27manchester-unitedx27-in-donkerrood-zwart-361.jpg" title="ADIDAS PERFORMANCE Sportjas 'Manchester United' in Donkerrood / Zwart"/></a>
+<a class="arevision" href="http://www.mieterberater.de/balenciaga-white-logo-hoodie-hoodies-amp-sweatvesten-wit.html"><img alt="Balenciaga WHITE Logo hoodie Hoodies &amp; sweatvesten - Wit" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/balenciaga-white-logo-hoodie-hoodies-amp-sweatvesten-wit-8077.jpg" title="Balenciaga WHITE Logo hoodie Hoodies &amp; sweatvesten - Wit"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.mieterberater.de/adidas-performance-sportjas-x27manchester-unitedx27-in-donkerrood-zwart.html">ADIDAS PERFORMANCE Sportjas 'Manchester United' in Donkerrood / Zwart</a></h4></div>
+<div class="name"><h4><a href="http://www.mieterberater.de/balenciaga-white-logo-hoodie-hoodies-amp-sweatvesten-wit.html">Balenciaga WHITE Logo hoodie Hoodies &amp; sweatvesten - Wit</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€46,99</span> <span class="price-old">€127,99</span>
+<span class="price-new">€45,99</span> <span class="price-old">€129,99</span>
 </p>
 </div>
 </div>
@@ -305,14 +305,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.mieterberater.de/borriello-blue-shirt-zakelijke-overhemden-blauw.html"><img alt="borriello Blue Shirt Zakelijke Overhemden - Blauw" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/borriello-blue-shirt-zakelijke-overhemden-blauw-2013.jpg" title="borriello Blue Shirt Zakelijke Overhemden - Blauw"/></a>
+<a class="arevision" href="http://www.mieterberater.de/mustang-tussenjas-x27wellingtonx27-in-zwart.html"><img alt="MUSTANG Tussenjas 'Wellington' in Zwart" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/mustang-tussenjas-x27wellingtonx27-in-zwart-9065.jpg" title="MUSTANG Tussenjas 'Wellington' in Zwart"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.mieterberater.de/borriello-blue-shirt-zakelijke-overhemden-blauw.html">borriello Blue Shirt Zakelijke Overhemden - Blauw</a></h4></div>
+<div class="name"><h4><a href="http://www.mieterberater.de/mustang-tussenjas-x27wellingtonx27-in-zwart.html">MUSTANG Tussenjas 'Wellington' in Zwart</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€44,99</span> <span class="price-old">€126,99</span>
+<span class="price-new">€46,99</span> <span class="price-old">€147,99</span>
 </p>
 </div>
 </div>
@@ -321,14 +321,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.mieterberater.de/roncato-red-cabin-bag-tassen-rood.html"><img alt="Roncato RED Cabin bag Tassen - Rood" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/roncato-red-cabin-bag-tassen-rood-118.jpg" title="Roncato RED Cabin bag Tassen - Rood"/></a>
+<a class="arevision" href="http://www.mieterberater.de/fratelli-rossetti-brown-moccasins-instappers-amp-slip-ons-bruin.html"><img alt="Fratelli Rossetti Brown Moccasins Instappers &amp; Slip ons - Bruin" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/fratelli-rossetti-brown-moccasins-instappers-amp-slip-ons-bruin-1622.jpg" title="Fratelli Rossetti Brown Moccasins Instappers &amp; Slip ons - Bruin"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.mieterberater.de/roncato-red-cabin-bag-tassen-rood.html">Roncato RED Cabin bag Tassen - Rood</a></h4></div>
+<div class="name"><h4><a href="http://www.mieterberater.de/fratelli-rossetti-brown-moccasins-instappers-amp-slip-ons-bruin.html">Fratelli Rossetti Brown Moccasins Instappers &amp; Slip ons - Bruin</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€45,99</span> <span class="price-old">€130,99</span>
+<span class="price-new">€47,99</span> <span class="price-old">€129,99</span>
 </p>
 </div>
 </div>
@@ -337,14 +337,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.mieterberater.de/mister-tee-shirt-in-pastelgroen-rood-zwart.html"><img alt="Mister Tee Shirt in Pastelgroen / Rood / Zwart" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/mister-tee-shirt-in-pastelgroen-rood-zwart-6679.jpg" title="Mister Tee Shirt in Pastelgroen / Rood / Zwart"/></a>
+<a class="arevision" href="http://www.mieterberater.de/alexander-mcqueen-black-wallet-portemonnees-zwart.html"><img alt="Alexander McQueen Black Wallet Portemonnees - Zwart" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/alexander-mcqueen-black-wallet-portemonnees-zwart-2206.jpg" title="Alexander McQueen Black Wallet Portemonnees - Zwart"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.mieterberater.de/mister-tee-shirt-in-pastelgroen-rood-zwart.html">Mister Tee Shirt in Pastelgroen / Rood / Zwart</a></h4></div>
+<div class="name"><h4><a href="http://www.mieterberater.de/alexander-mcqueen-black-wallet-portemonnees-zwart.html">Alexander McQueen Black Wallet Portemonnees - Zwart</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€45,99</span> <span class="price-old">€131,99</span>
+<span class="price-new">€45,99</span> <span class="price-old">€128,99</span>
 </p>
 </div>
 </div>
@@ -353,14 +353,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.mieterberater.de/paul-smith-black-passport-holder-portemonnees-zwart.html"><img alt="Paul Smith BLACK Passport holder Portemonnees - Zwart" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/paul-smith-black-passport-holder-portemonnees-zwart-3600.jpg" title="Paul Smith BLACK Passport holder Portemonnees - Zwart"/></a>
+<a class="arevision" href="http://www.mieterberater.de/amanda-christensen-classic-tie-stropdassen-peach.html"><img alt="Amanda Christensen - Classic Tie - stropdassen - peach" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/amanda-christensen-classic-tie-stropdassen-peach-7367.jpg" title="Amanda Christensen - Classic Tie - stropdassen - peach"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.mieterberater.de/paul-smith-black-passport-holder-portemonnees-zwart.html">Paul Smith BLACK Passport holder Portemonnees - Zwart</a></h4></div>
+<div class="name"><h4><a href="http://www.mieterberater.de/amanda-christensen-classic-tie-stropdassen-peach.html">Amanda Christensen - Classic Tie - stropdassen - peach</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€45,99</span> <span class="price-old">€126,99</span>
+<span class="price-new">€48,99</span> <span class="price-old">€136,99</span>
 </p>
 </div>
 </div>
@@ -369,14 +369,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.mieterberater.de/nudie-jeans-black-grim-tim-slim-jeans-slim-fit-jeans-zwart.html"><img alt="Nudie Jeans Black Grim Tim Slim Jeans Slim Fit Jeans - Zwart" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/nudie-jeans-black-grim-tim-slim-jeans-slim-fit-jeans-zwart-6567.jpg" title="Nudie Jeans Black Grim Tim Slim Jeans Slim Fit Jeans - Zwart"/></a>
+<a class="arevision" href="http://www.mieterberater.de/denim-project-sweatshirt-x27dpikerx27-in-navy-geel.html"><img alt="Denim Project Sweatshirt 'DPIKER' in Navy / Geel" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/denim-project-sweatshirt-x27dpikerx27-in-navy-geel-462.jpg" title="Denim Project Sweatshirt 'DPIKER' in Navy / Geel"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.mieterberater.de/nudie-jeans-black-grim-tim-slim-jeans-slim-fit-jeans-zwart.html">Nudie Jeans Black Grim Tim Slim Jeans Slim Fit Jeans - Zwart</a></h4></div>
+<div class="name"><h4><a href="http://www.mieterberater.de/denim-project-sweatshirt-x27dpikerx27-in-navy-geel.html">Denim Project Sweatshirt 'DPIKER' in Navy / Geel</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€46,99</span> <span class="price-old">€125,99</span>
+<span class="price-new">€43,99</span> <span class="price-old">€127,99</span>
 </p>
 </div>
 </div>
@@ -393,14 +393,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.mieterberater.de/indicode-jeans-tussenjas-x27aaronx27-in-bruin.html"><img alt="INDICODE JEANS Tussenjas 'Aaron' in Bruin" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/indicode-jeans-tussenjas-x27aaronx27-in-bruin-6836.jpg" title="INDICODE JEANS Tussenjas 'Aaron' in Bruin"/></a>
+<a class="arevision" href="http://www.mieterberater.de/philippe-model-grey-tropez-x-sneaker-in-suede-and-gray-fabric-sneakers-grijs.html"><img alt="Philippe Model Grey Tropez X sneaker in suede and gray fabric Sneakers - Grijs" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/philippe-model-grey-tropez-x-sneaker-in-suede-and-gray-fabric-sneakers-grijs-2476.jpg" title="Philippe Model Grey Tropez X sneaker in suede and gray fabric Sneakers - Grijs"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.mieterberater.de/indicode-jeans-tussenjas-x27aaronx27-in-bruin.html">INDICODE JEANS Tussenjas 'Aaron' in Bruin</a></h4></div>
+<div class="name"><h4><a href="http://www.mieterberater.de/philippe-model-grey-tropez-x-sneaker-in-suede-and-gray-fabric-sneakers-grijs.html">Philippe Model Grey Tropez X sneaker in suede and gray fabric Sneakers - Grijs</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€49,99</span> <span class="price-old">€145,99</span>
+<span class="price-new">€45,99</span> <span class="price-old">€130,99</span>
 </p>
 </div>
 </div>
@@ -409,14 +409,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.mieterberater.de/corneliani-gray-suit-kostuums-grijs.html"><img alt="Corneliani Gray Suit Kostuums - Grijs" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/corneliani-gray-suit-kostuums-grijs-4424.jpg" title="Corneliani Gray Suit Kostuums - Grijs"/></a>
+<a class="arevision" href="http://www.mieterberater.de/adidas-performance-m-mh-3s-tp2-trainingsbroek-legink.html"><img alt="adidas Performance - M MH 3S TP2 - trainingsbroek - legink" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/adidas-performance-mx-mh-3s-tp2-trainingsbroek-legink-4775.jpg" title="adidas Performance - M MH 3S TP2 - trainingsbroek - legink"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.mieterberater.de/corneliani-gray-suit-kostuums-grijs.html">Corneliani Gray Suit Kostuums - Grijs</a></h4></div>
+<div class="name"><h4><a href="http://www.mieterberater.de/adidas-performance-m-mh-3s-tp2-trainingsbroek-legink.html">adidas Performance - M MH 3S TP2 - trainingsbroek - legink</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€44,99</span> <span class="price-old">€127,99</span>
+<span class="price-new">€47,99</span> <span class="price-old">€133,99</span>
 </p>
 </div>
 </div>
@@ -425,14 +425,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.mieterberater.de/matinique-steel-grey-jacket-winterjassen-grijs.html"><img alt="Matinique Steel Grey Jacket Winterjassen - Grijs" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/matinique-steel-grey-jacket-winterjassen-grijs-8453.jpg" title="Matinique Steel Grey Jacket Winterjassen - Grijs"/></a>
+<a class="arevision" href="http://www.mieterberater.de/adidas-performance-sportondergoed-in-zwart.html"><img alt="ADIDAS PERFORMANCE Sportondergoed in Zwart" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/adidas-performance-sportondergoed-in-zwart-4511.jpg" title="ADIDAS PERFORMANCE Sportondergoed in Zwart"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.mieterberater.de/matinique-steel-grey-jacket-winterjassen-grijs.html">Matinique Steel Grey Jacket Winterjassen - Grijs</a></h4></div>
+<div class="name"><h4><a href="http://www.mieterberater.de/adidas-performance-sportondergoed-in-zwart.html">ADIDAS PERFORMANCE Sportondergoed in Zwart</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€44,99</span> <span class="price-old">€130,99</span>
+<span class="price-new">€48,99</span> <span class="price-old">€128,99</span>
 </p>
 </div>
 </div>
@@ -441,14 +441,110 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.mieterberater.de/versace-white-tshirt-tshirts-print-wit.html"><img alt="Versace WHITE T-shirt T-shirts print - Wit" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/versace-white-tshirt-tshirts-print-wit-2471.jpg" title="Versace WHITE T-shirt T-shirts print - Wit"/></a>
+<a class="arevision" href="http://www.mieterberater.de/shiwi-overhemd-x27jasonx27-in-lichtblauw.html"><img alt="Shiwi Overhemd 'jason' in Lichtblauw" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/shiwi-overhemd-x27jasonx27-in-lichtblauw-586.jpg" title="Shiwi Overhemd 'jason' in Lichtblauw"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.mieterberater.de/versace-white-tshirt-tshirts-print-wit.html">Versace WHITE T-shirt T-shirts print - Wit</a></h4></div>
+<div class="name"><h4><a href="http://www.mieterberater.de/shiwi-overhemd-x27jasonx27-in-lichtblauw.html">Shiwi Overhemd 'jason' in Lichtblauw</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€49,99</span> <span class="price-old">€128,99</span>
+<span class="price-new">€47,99</span> <span class="price-old">€144,99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="http://www.mieterberater.de/levi039s-blue-jeans-regular-fit-jeans-blauw.html"><img alt="Levi's Blue Jeans Regular Fit Jeans - Blauw" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/levi039s-blue-jeans-regular-fit-jeans-blauw-5072.jpg" title="Levi's Blue Jeans Regular Fit Jeans - Blauw"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="http://www.mieterberater.de/levi039s-blue-jeans-regular-fit-jeans-blauw.html">Levi's Blue Jeans Regular Fit Jeans - Blauw</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€49,99</span> <span class="price-old">€126,99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="http://www.mieterberater.de/abercrombie-amp-fitch-badjas-kort-in-grijs-gemeleerd.html"><img alt="Abercrombie &amp; Fitch Badjas kort in Grijs gemêleerd" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/abercrombie-amp-fitch-badjas-kort-in-grijs-gemeleerd-3344.png" title="Abercrombie &amp; Fitch Badjas kort in Grijs gemêleerd"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="http://www.mieterberater.de/abercrombie-amp-fitch-badjas-kort-in-grijs-gemeleerd.html">Abercrombie &amp; Fitch Badjas kort in Grijs gemêleerd</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€47,99</span> <span class="price-old">€140,99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="http://www.mieterberater.de/passi-black-passi-lage-veterschoen-brogue-nette-schoenen-zwart.html"><img alt="Passi Black Passi Lage veterschoen brogue Nette schoenen - Zwart" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/passi-black-passi-lage-veterschoen-brogue-nette-schoenen-zwart-667.jpg" title="Passi Black Passi Lage veterschoen brogue Nette schoenen - Zwart"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="http://www.mieterberater.de/passi-black-passi-lage-veterschoen-brogue-nette-schoenen-zwart.html">Passi Black Passi Lage veterschoen brogue Nette schoenen - Zwart</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€47,99</span> <span class="price-old">€125,99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="http://www.mieterberater.de/heritage-heavenly-0820p-short-sleeves-polo-polo039s-blauw.html"><img alt="HERITAGE Heavenly 0820P Short sleeves Polo Polo's - Blauw" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/heritage-heavenly-0820p-short-sleeves-polo-polo039s-blauw-6528.jpg" title="HERITAGE Heavenly 0820P Short sleeves Polo Polo's - Blauw"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="http://www.mieterberater.de/heritage-heavenly-0820p-short-sleeves-polo-polo039s-blauw.html">HERITAGE Heavenly 0820P Short sleeves Polo Polo's - Blauw</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€47,99</span> <span class="price-old">€127,99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="http://www.mieterberater.de/saucony-gray-sneakers-sneakers-grijs.html"><img alt="Saucony Gray Sneakers Sneakers - Grijs" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/saucony-gray-sneakers-sneakers-grijs-3620.jpg" title="Saucony Gray Sneakers Sneakers - Grijs"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="http://www.mieterberater.de/saucony-gray-sneakers-sneakers-grijs.html">Saucony Gray Sneakers Sneakers - Grijs</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€49,99</span> <span class="price-old">€125,99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="http://www.mieterberater.de/bugatti-veterlaarzen-in-bruin.html"><img alt="bugatti Veterlaarzen in Bruin" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/bugatti-veterlaarzen-in-bruin-2432.jpg" title="bugatti Veterlaarzen in Bruin"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="http://www.mieterberater.de/bugatti-veterlaarzen-in-bruin.html">bugatti Veterlaarzen in Bruin</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€43,99</span> <span class="price-old">€123,99</span>
 </p>
 </div>
 </div>
@@ -473,110 +569,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.mieterberater.de/mauro-grifoni-red-mesh-truien-amp-vesten-rood.html"><img alt="Mauro Grifoni Red Mesh Truien &amp; Vesten - Rood" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/mauro-grifoni-red-mesh-truien-amp-vesten-rood-329.jpg" title="Mauro Grifoni Red Mesh Truien &amp; Vesten - Rood"/></a>
+<a class="arevision" href="http://www.mieterberater.de/dsquared2-green-cappello-petten-groen.html"><img alt="Dsquared2 Green CAPPELLO Petten - Groen" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/dsquared2-green-cappello-petten-groen-7541.jpg" title="Dsquared2 Green CAPPELLO Petten - Groen"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="http://www.mieterberater.de/mauro-grifoni-red-mesh-truien-amp-vesten-rood.html">Mauro Grifoni Red Mesh Truien &amp; Vesten - Rood</a></h4></div>
+<div class="name"><h4><a href="http://www.mieterberater.de/dsquared2-green-cappello-petten-groen.html">Dsquared2 Green CAPPELLO Petten - Groen</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€46,99</span> <span class="price-old">€127,99</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.mieterberater.de/united-colors-of-benetton-overhemd-in-blauw.html"><img alt="UNITED COLORS OF BENETTON Overhemd in Blauw" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/united-colors-of-benetton-overhemd-in-blauw-7177.jpg" title="UNITED COLORS OF BENETTON Overhemd in Blauw"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="http://www.mieterberater.de/united-colors-of-benetton-overhemd-in-blauw.html">UNITED COLORS OF BENETTON Overhemd in Blauw</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€46,99</span> <span class="price-old">€125,99</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.mieterberater.de/stussy-green-2-bar-app-hoodie-hoodies-amp-sweatvesten-groen.html"><img alt="Stüssy GREEN 2 BAR APP Hoodie Hoodies &amp; sweatvesten - Groen" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/stussy-green-2-bar-app-hoodie-hoodies-amp-sweatvesten-groen-3711.jpg" title="Stüssy GREEN 2 BAR APP Hoodie Hoodies &amp; sweatvesten - Groen"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="http://www.mieterberater.de/stussy-green-2-bar-app-hoodie-hoodies-amp-sweatvesten-groen.html">Stüssy GREEN 2 BAR APP Hoodie Hoodies &amp; sweatvesten - Groen</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€48,99</span> <span class="price-old">€128,99</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.mieterberater.de/aspesi-blue-impermeabile-trenchcoats-amp-mantels-blauw.html"><img alt="Aspesi Blue IMPERMEABILE Trenchcoats &amp; Mantels - Blauw" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/aspesi-blue-impermeabile-trenchcoats-amp-mantels-blauw-1869.jpg" title="Aspesi Blue IMPERMEABILE Trenchcoats &amp; Mantels - Blauw"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="http://www.mieterberater.de/aspesi-blue-impermeabile-trenchcoats-amp-mantels-blauw.html">Aspesi Blue IMPERMEABILE Trenchcoats &amp; Mantels - Blauw</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€46,99</span> <span class="price-old">€130,99</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.mieterberater.de/officine-generale-grey-pierre-flanelle-pants-broeken-grijs.html"><img alt="Officine Générale Grey Pierre Flanelle Pants Broeken - Grijs" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/officine-generale-grey-pierre-flanelle-pants-broeken-grijs-3342.jpg" title="Officine Générale Grey Pierre Flanelle Pants Broeken - Grijs"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="http://www.mieterberater.de/officine-generale-grey-pierre-flanelle-pants-broeken-grijs.html">Officine Générale Grey Pierre Flanelle Pants Broeken - Grijs</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€49,99</span> <span class="price-old">€130,99</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.mieterberater.de/urban-classics-shirt-in-sinaasappel.html"><img alt="Urban Classics Shirt in Sinaasappel" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/urban-classics-shirt-in-sinaasappel-9250.jpg" title="Urban Classics Shirt in Sinaasappel"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="http://www.mieterberater.de/urban-classics-shirt-in-sinaasappel.html">Urban Classics Shirt in Sinaasappel</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€47,99</span> <span class="price-old">€141,99</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="http://www.mieterberater.de/tom-tailor-denim-broek-in-grijs.html"><img alt="TOM TAILOR DENIM Broek in Grijs" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/tom-tailor-denim-broek-in-grijs-3087.jpg" title="TOM TAILOR DENIM Broek in Grijs"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="http://www.mieterberater.de/tom-tailor-denim-broek-in-grijs.html">TOM TAILOR DENIM Broek in Grijs</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€45,99</span> <span class="price-old">€144,99</span>
+<span class="price-new">€46,99</span> <span class="price-old">€128,99</span>
 </p>
 </div>
 </div>
@@ -619,43 +619,43 @@ $(document).ready(function() {
 <div id="powered">
 <div class="container">
 <div class="row">
-<div class="col-sm-12 col-md-12">
-      Copyright © 2022 <a href="//www.mieterberater.de" target="_blank">www.mieterberater.de</a> All Rights Reserved  
+<div class="col-sm-12 col-md-12">
+      Copyright © 2022 <a href="//www.mieterberater.de" target="_blank">www.mieterberater.de</a> All Rights Reserved  
       </div>
 </div>
 </div>
 </div>
 </footer>
 <script src="catalog/view/theme/snout/js/jquery.visible.min.js" type="text/javascript"></script>
-<script type="text/javascript">
-
-var win = $(window);
-
-var allMods = $("footer");
-
-allMods.each(function(i, el) {
-    
-  if ($(el).visible(true)) {
-    $(el).addClass("already-visible"); 
-  }
-  
-});
-
-win.scroll(function(event) {
-  
-  allMods.each(function(i, el) {
-    
-    var el = $(el);
-    
-    if (el.visible(true)) {
-      el.addClass("come-in"); 
-    } else {
-      el.removeClass("come-in already-visible");
-    }
-    
-  });
-  
-}); 
+<script type="text/javascript">
+
+var win = $(window);
+
+var allMods = $("footer");
+
+allMods.each(function(i, el) {
+    
+  if ($(el).visible(true)) {
+    $(el).addClass("already-visible"); 
+  }
+  
+});
+
+win.scroll(function(event) {
+  
+  allMods.each(function(i, el) {
+    
+    var el = $(el);
+    
+    if (el.visible(true)) {
+      el.addClass("come-in"); 
+    } else {
+      el.removeClass("come-in already-visible");
+    }
+    
+  });
+  
+}); 
 </script>
 <script src="catalog/view/theme/snout/js/jquery.easing-1.3.min.js" type="text/javascript"></script>
 <link href="catalog/view/theme/snout/js/quickview/fancybox/jquery.fancybox.css" property="stylesheet" rel="stylesheet">

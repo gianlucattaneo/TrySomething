@@ -34,60 +34,60 @@
 <script src="catalog/view/theme/drop/js/cloud-zoom.js" type="text/javascript"></script>
 <link href="catalog/view/theme/drop/stylesheet/dcaccordion.css" property="stylesheet" rel="stylesheet" type="text/css">
 <script src="catalog/view/theme/drop/js/jquery.dcjqaccordion.js" type="text/javascript"></script>
-<script>
-      // This allows to expose several variables to the global scope, to be used in scripts
-      window.theme = {
-        template: "index",
-        shopCurrency: "GBP",
-        moneyFormat: "\u003cspan class=money\u003e\u0026pound;{{amount}}\u003c\/span\u003e",
-        moneyWithCurrencyFormat: "\u003cspan class=money\u003e\u0026pound;{{amount}} GBP\u003c\/span\u003e",
-        currencyConversionEnabled: true,
-        currencyConversionMoneyFormat: "money_format",
-        currencyConversionRoundAmounts: true,
-        productImageSize: "natural",
-        searchMode: "product,article",
-        showPageTransition: true,
-        showElementStaggering: true,
-        showImageZooming: true,
-        enableExperimentalResizeObserver: false
-      };
-
-      window.languages = {
-        cartAddNote: "Add Order Note",
-        cartEditNote: "Edit Order Note",
-        productImageLoadingError: "This image could not be loaded. Please try to reload the page.",
-        productFormAddToCart: "Add to cart",
-        productFormUnavailable: "Unavailable",
-        productFormSoldOut: "Sold Out",
-        shippingEstimatorOneResult: "1 option available:",
-        shippingEstimatorMoreResults: "{{count}} options available:",
-        shippingEstimatorNoResults: "No shipping could be found"
-      };
-
-      window.lazySizesConfig = {
-        loadHidden: false,
-        hFac: 0.5,
-        expFactor: 2,
-        ricTimeout: 150,
-        lazyClass: 'Image--lazyLoad',
-        loadingClass: 'Image--lazyLoading',
-        loadedClass: 'Image--lazyLoaded'
-      };
-
-      document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
-      document.documentElement.style.setProperty('--window-height', window.innerHeight + 'px');
-
-      // We do a quick detection of some features (we could use Modernizr but for so little...)
-      (function() {
-        document.documentElement.className += ((window.CSS && window.CSS.supports('(position: sticky) or (position: -webkit-sticky)')) ? ' supports-sticky' : ' no-supports-sticky');
-        document.documentElement.className += (window.matchMedia('(-moz-touch-enabled: 1), (hover: none)')).matches ? ' no-supports-hover' : ' supports-hover';
-      }());
-
-      window.onpageshow = function (event) {
-        if (event.persisted) {
-          window.location.reload();
-        }
-      };
+<script>
+      // This allows to expose several variables to the global scope, to be used in scripts
+      window.theme = {
+        template: "index",
+        shopCurrency: "GBP",
+        moneyFormat: "\u003cspan class=money\u003e\u0026pound;{{amount}}\u003c\/span\u003e",
+        moneyWithCurrencyFormat: "\u003cspan class=money\u003e\u0026pound;{{amount}} GBP\u003c\/span\u003e",
+        currencyConversionEnabled: true,
+        currencyConversionMoneyFormat: "money_format",
+        currencyConversionRoundAmounts: true,
+        productImageSize: "natural",
+        searchMode: "product,article",
+        showPageTransition: true,
+        showElementStaggering: true,
+        showImageZooming: true,
+        enableExperimentalResizeObserver: false
+      };
+
+      window.languages = {
+        cartAddNote: "Add Order Note",
+        cartEditNote: "Edit Order Note",
+        productImageLoadingError: "This image could not be loaded. Please try to reload the page.",
+        productFormAddToCart: "Add to cart",
+        productFormUnavailable: "Unavailable",
+        productFormSoldOut: "Sold Out",
+        shippingEstimatorOneResult: "1 option available:",
+        shippingEstimatorMoreResults: "{{count}} options available:",
+        shippingEstimatorNoResults: "No shipping could be found"
+      };
+
+      window.lazySizesConfig = {
+        loadHidden: false,
+        hFac: 0.5,
+        expFactor: 2,
+        ricTimeout: 150,
+        lazyClass: 'Image--lazyLoad',
+        loadingClass: 'Image--lazyLoading',
+        loadedClass: 'Image--lazyLoaded'
+      };
+
+      document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+      document.documentElement.style.setProperty('--window-height', window.innerHeight + 'px');
+
+      // We do a quick detection of some features (we could use Modernizr but for so little...)
+      (function() {
+        document.documentElement.className += ((window.CSS && window.CSS.supports('(position: sticky) or (position: -webkit-sticky)')) ? ' supports-sticky' : ' no-supports-sticky');
+        document.documentElement.className += (window.matchMedia('(-moz-touch-enabled: 1), (hover: none)')).matches ? ' no-supports-hover' : ' supports-hover';
+      }());
+
+      window.onpageshow = function (event) {
+        if (event.persisted) {
+          window.location.reload();
+        }
+      };
     </script>
 </link></link></link></meta></head>
 <body class="common-home drop">
@@ -96,12 +96,12 @@
 <div id="sidebar-wrapper">
 <ul class="sidebar-nav list-group drop">
 <li class="sidebar-title">
-<a href="#menu-toggle-close" id="menu-toggle-close"><span aria-hidden="true">×</span></a>Informationen      <script>
-      $("#menu-toggle-close").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-		$(".sidebar-opacity").toggleClass("toggled");
-      });
+<a href="#menu-toggle-close" id="menu-toggle-close"><span aria-hidden="true">×</span></a>Informationen      <script>
+      $("#menu-toggle-close").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+		$(".sidebar-opacity").toggleClass("toggled");
+      });
       </script>
 </li>
 <li><a href="https://www.pionierpalast-berlin.de/index.php?route=information/information&amp;information_id=7">FAQ</a></li>
@@ -164,12 +164,12 @@
 <span class="button-text">Speisekarte</span>
 </div>
 </a>
-<script>
-        $("#menu-mobile-toggle").click(function(e) {
-          e.preventDefault();
-          $("#wrapper").toggleClass("menu-toggled");
-		  $(".sidebar-opacity").toggleClass("menu-toggled");
-        });
+<script>
+        $("#menu-mobile-toggle").click(function(e) {
+          e.preventDefault();
+          $("#wrapper").toggleClass("menu-toggled");
+		  $(".sidebar-opacity").toggleClass("menu-toggled");
+        });
       </script>
 <div class="btn-group btn-block buttons-header" id="cart">
 <a class="btn dropdown-toggle" data-loading-text="Wird geladen..." data-toggle="dropdown">
@@ -207,26 +207,26 @@
 </div>
 </div>
 </nav>
-<script type="text/javascript">
-$(document).ready(function() {
-	$('#accordion-mobile').dcAccordion({
-		disableLink: false,	
-		menuClose: false,
-		autoClose: true,
-		autoExpand: true,		
-		saveState: false
-	});
-});
+<script type="text/javascript">
+$(document).ready(function() {
+	$('#accordion-mobile').dcAccordion({
+		disableLink: false,	
+		menuClose: false,
+		autoClose: true,
+		autoExpand: true,		
+		saveState: false
+	});
+});
 </script>
 <div class="hidden-sm hidden-md hidden-lg" id="menu-mobile">
 <ul class="accordion sidebar-nav list-group" id="accordion-mobile">
 <li class="sidebar-title">
-<a href="#menu-mobile-toggle-close" id="menu-mobile-toggle-close"><span aria-hidden="true">×</span></a>Speisekarte      <script>
-      $("#menu-mobile-toggle-close").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("menu-toggled");
-		$(".sidebar-opacity").toggleClass("menu-toggled");
-      });
+<a href="#menu-mobile-toggle-close" id="menu-mobile-toggle-close"><span aria-hidden="true">×</span></a>Speisekarte      <script>
+      $("#menu-mobile-toggle-close").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("menu-toggled");
+		$(".sidebar-opacity").toggleClass("menu-toggled");
+      });
       </script>
 </li>
 <li><a href="https://www.pionierpalast-berlin.de/">Start</a></li>
@@ -259,16 +259,16 @@ $(document).ready(function() {
 </div>
 <div style="display:none;"><script src="//js.users.51.la/21085533.js" type="text/javascript"></script><br/></div><div class="container">
 <div class="row"><column class="col-sm-3 hidden-xs" id="column-left">
-<script type="text/javascript">
-$(document).ready(function() {
-	$('#accordion-1').dcAccordion({
-		disableLink: false,	
-		menuClose: false,
-		autoClose: true,
-		autoExpand: true,		
-		saveState: false
-	});
-});
+<script type="text/javascript">
+$(document).ready(function() {
+	$('#accordion-1').dcAccordion({
+		disableLink: false,	
+		menuClose: false,
+		autoClose: true,
+		autoExpand: true,		
+		saveState: false
+	});
+});
 </script>
 <div class="panel panel-default panel-category">
 <div class="panel-heading">Kategorien</div>
@@ -300,11 +300,43 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.pionierpalast-berlin.de/next-ecru-cropped-ribbed-cardigan-316yrs-offwhite.html"><img alt="Next Ecru Cropped Ribbed Cardigan (3-16yrs) - Off-white Ex" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/next-ecru-cropped-ribbed-cardigan-316yrs-offwhite-5460.jpg" title="Next Ecru Cropped Ribbed Cardigan (3-16yrs) - Off-white Ex"/></a>
+<a class="arevision" href="https://www.pionierpalast-berlin.de/lili-gaufrette-geranium-cocktail-dress-party-blanc.html"><img alt="Lili Gaufrette Geranium - Cocktail Dress / Party Blanc bl" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/lili-gaufrette-geranium-cocktail-dress-party-blanc-4518.jpg" title="Lili Gaufrette Geranium - Cocktail Dress / Party Blanc bl"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.pionierpalast-berlin.de/next-ecru-cropped-ribbed-cardigan-316yrs-offwhite.html">Next Ecru Cropped Ribbed Cardigan (3-16yrs) - Off-white Ex</a></h4></div>
+<div class="name"><h4><a href="https://www.pionierpalast-berlin.de/lili-gaufrette-geranium-cocktail-dress-party-blanc.html">Lili Gaufrette Geranium - Cocktail Dress / Party Blanc bl</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€35.99</span> <span class="price-old">€149.99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="https://www.pionierpalast-berlin.de/converse-chuck-taylor-all-star-zstreet-trainers-obsidian-court-blue-white.html"><img alt="Converse Chuck Taylor All Star Z-street - Trainers Obsidian/court Blue/white Bc" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/converse-chuck-taylor-all-star-zstreet-trainers-obsidian-court-blue-white-1177.jpg" title="Converse Chuck Taylor All Star Z-street - Trainers Obsidian/court Blue/white Bc"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="https://www.pionierpalast-berlin.de/converse-chuck-taylor-all-star-zstreet-trainers-obsidian-court-blue-white.html">Converse Chuck Taylor All Star Z-street - Trainers Obsidian/court Blue/white Bc</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€37.99</span> <span class="price-old">€119.99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="https://www.pionierpalast-berlin.de/soliver-kurz-shorts-dark-blue.html"><img alt="S.oliver Kurz - Shorts Dark Blue K9" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/soliver-kurz-shorts-dark-blue-5436.jpg" title="S.oliver Kurz - Shorts Dark Blue K9"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="https://www.pionierpalast-berlin.de/soliver-kurz-shorts-dark-blue.html">S.oliver Kurz - Shorts Dark Blue K9</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
 <span class="price-new">€37.99</span> <span class="price-old">€129.99</span>
@@ -316,14 +348,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.pionierpalast-berlin.de/protest-valor-jr-print-tshirt-offwhite-neon-pink-blue.html"><img alt="Protest Valor Jr - Print T-shirt Off-white/neon Pink/blue CF" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/protest-valor-jr-print-tshirt-offwhite-neon-pink-blue-3025.jpg" title="Protest Valor Jr - Print T-shirt Off-white/neon Pink/blue CF"/></a>
+<a class="arevision" href="https://www.pionierpalast-berlin.de/steiff-collection-jeans-shorts-mit-gummizugbund-denim-colony-blue.html"><img alt="Steiff Collection Jeans Shorts Mit Gummizugbund - Denim Colony Blue PY" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/steiff-collection-jeans-shorts-mit-gummizugbund-denim-colony-blue-4681.jpg" title="Steiff Collection Jeans Shorts Mit Gummizugbund - Denim Colony Blue PY"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.pionierpalast-berlin.de/protest-valor-jr-print-tshirt-offwhite-neon-pink-blue.html">Protest Valor Jr - Print T-shirt Off-white/neon Pink/blue CF</a></h4></div>
+<div class="name"><h4><a href="https://www.pionierpalast-berlin.de/steiff-collection-jeans-shorts-mit-gummizugbund-denim-colony-blue.html">Steiff Collection Jeans Shorts Mit Gummizugbund - Denim Colony Blue PY</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€36.99</span> <span class="price-old">€139.99</span>
+<span class="price-new">€37.99</span> <span class="price-old">€139.99</span>
 </p>
 </div>
 </div>
@@ -332,62 +364,30 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.pionierpalast-berlin.de/wheat-pants-lemon-flowers.html"><img alt="Wheat Pants - Lemon Flowers 1q" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/wheat-pants-lemon-flowers-3878.jpg" title="Wheat Pants - Lemon Flowers 1q"/></a>
+<a class="arevision" href="https://www.pionierpalast-berlin.de/guess-toddler-print-tshirt-pink-sky.html"><img alt="Guess Toddler - Print T-shirt Pink Sky gZ" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/guess-toddler-print-tshirt-pink-sky-2460.jpg" title="Guess Toddler - Print T-shirt Pink Sky gZ"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.pionierpalast-berlin.de/wheat-pants-lemon-flowers.html">Wheat Pants - Lemon Flowers 1q</a></h4></div>
+<div class="name"><h4><a href="https://www.pionierpalast-berlin.de/guess-toddler-print-tshirt-pink-sky.html">Guess Toddler - Print T-shirt Pink Sky gZ</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€37.99</span> <span class="price-old">€149.99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="https://www.pionierpalast-berlin.de/nike-sportswear-air-max-oketo-schuh-fur-altere-kinder-trainers-wolf-grey-white.html"><img alt="Nike Sportswear Air Max Oketo Schuh Für Ältere Kinder - Trainers Wolf Grey/white yz" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/nike-sportswear-air-max-oketo-schuh-fur-altere-kinder-trainers-wolf-grey-white-1015.jpg" title="Nike Sportswear Air Max Oketo Schuh Für Ältere Kinder - Trainers Wolf Grey/white yz"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="https://www.pionierpalast-berlin.de/nike-sportswear-air-max-oketo-schuh-fur-altere-kinder-trainers-wolf-grey-white.html">Nike Sportswear Air Max Oketo Schuh Für Ältere Kinder - Trainers Wolf Grey/white yz</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
 <span class="price-new">€35.99</span> <span class="price-old">€139.99</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.pionierpalast-berlin.de/lassig-hobo-bag-baby-changing-olive-beige.html"><img alt="Lässig Hobo Bag - Baby Changing Olive/beige Wu" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/lassig-hobo-bag-baby-changing-olive-beige-238.jpg" title="Lässig Hobo Bag - Baby Changing Olive/beige Wu"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="https://www.pionierpalast-berlin.de/lassig-hobo-bag-baby-changing-olive-beige.html">Lässig Hobo Bag - Baby Changing Olive/beige Wu</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€28.99</span> <span class="price-old">€159.99</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.pionierpalast-berlin.de/nike-sportswear-club-pant-tracksuit-bottoms-beige.html"><img alt="Nike Sportswear Club Pant - Tracksuit Bottoms Beige 4j" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/nike-sportswear-club-pant-tracksuit-bottoms-beige-4155.jpg" title="Nike Sportswear Club Pant - Tracksuit Bottoms Beige 4j"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="https://www.pionierpalast-berlin.de/nike-sportswear-club-pant-tracksuit-bottoms-beige.html">Nike Sportswear Club Pant - Tracksuit Bottoms Beige 4j</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€35.99</span> <span class="price-old">€139.99</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.pionierpalast-berlin.de/liliput-frontprint-body-weis.html"><img alt="Liliput Front-print - Body Weiß A9" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/liliput-frontprint-body-weis-3044.jpg" title="Liliput Front-print - Body Weiß A9"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="https://www.pionierpalast-berlin.de/liliput-frontprint-body-weis.html">Liliput Front-print - Body Weiß A9</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€36.99</span> <span class="price-old">€129.99</span>
 </p>
 </div>
 </div>
@@ -404,11 +404,11 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.pionierpalast-berlin.de/nike-performance-zipup-hoodie-grey.html"><img alt="Nike Performance Zip-up Hoodie - Grey np" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/nike-performance-zipup-hoodie-grey-3257.jpg" title="Nike Performance Zip-up Hoodie - Grey np"/></a>
+<a class="arevision" href="https://www.pionierpalast-berlin.de/lmtd-tshirt-hoher-spitzenkragen-print-sky-captain.html"><img alt="Lmtd T-shirt Hoher Spitzenkragen - Print Sky Captain n4" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/lmtd-tshirt-hoher-spitzenkragen-print-sky-captain-2653.jpg" title="Lmtd T-shirt Hoher Spitzenkragen - Print Sky Captain n4"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.pionierpalast-berlin.de/nike-performance-zipup-hoodie-grey.html">Nike Performance Zip-up Hoodie - Grey np</a></h4></div>
+<div class="name"><h4><a href="https://www.pionierpalast-berlin.de/lmtd-tshirt-hoher-spitzenkragen-print-sky-captain.html">Lmtd T-shirt Hoher Spitzenkragen - Print Sky Captain n4</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
 <span class="price-new">€35.99</span> <span class="price-old">€149.99</span>
@@ -420,14 +420,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.pionierpalast-berlin.de/soliver-hoodie-turquoise.html"><img alt="S.oliver Hoodie - Turquoise yT" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/soliver-hoodie-turquoise-1881.jpg" title="S.oliver Hoodie - Turquoise yT"/></a>
+<a class="arevision" href="https://www.pionierpalast-berlin.de/boden-harry-potter-day-dress-mittelgrau-jaspiert-mustermix.html"><img alt="Boden Harry Potter - Day Dress Mittelgrau Jaspiert Mustermix X1" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/boden-harry-potter-day-dress-mittelgrau-jaspiert-mustermix-3017.jpg" title="Boden Harry Potter - Day Dress Mittelgrau Jaspiert Mustermix X1"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.pionierpalast-berlin.de/soliver-hoodie-turquoise.html">S.oliver Hoodie - Turquoise yT</a></h4></div>
+<div class="name"><h4><a href="https://www.pionierpalast-berlin.de/boden-harry-potter-day-dress-mittelgrau-jaspiert-mustermix.html">Boden Harry Potter - Day Dress Mittelgrau Jaspiert Mustermix X1</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€35.99</span> <span class="price-old">€149.99</span>
+<span class="price-new">€35.99</span> <span class="price-old">€159.99</span>
 </p>
 </div>
 </div>
@@ -436,91 +436,11 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.pionierpalast-berlin.de/polo-ralph-lauren-graph-sweatshirt-red.html"><img alt="Polo Ralph Lauren Graph - Sweatshirt Red iC" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/polo-ralph-lauren-graph-sweatshirt-red-4412.jpg" title="Polo Ralph Lauren Graph - Sweatshirt Red iC"/></a>
+<a class="arevision" href="https://www.pionierpalast-berlin.de/name-it-snowsuit-purple.html"><img alt="Name It Snowsuit - Purple 5L" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/name-it-snowsuit-purple-2800.jpg" title="Name It Snowsuit - Purple 5L"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.pionierpalast-berlin.de/polo-ralph-lauren-graph-sweatshirt-red.html">Polo Ralph Lauren Graph - Sweatshirt Red iC</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€36.99</span> <span class="price-old">€139.99</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.pionierpalast-berlin.de/camper-pelotas-ariel-ankle-strap-ballet-pumps-black.html"><img alt="Camper Pelotas Ariel - Ankle Strap Ballet Pumps Black nq" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/camper-pelotas-ariel-ankle-strap-ballet-pumps-black-991.jpg" title="Camper Pelotas Ariel - Ankle Strap Ballet Pumps Black nq"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="https://www.pionierpalast-berlin.de/camper-pelotas-ariel-ankle-strap-ballet-pumps-black.html">Camper Pelotas Ariel - Ankle Strap Ballet Pumps Black nq</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€36.99</span> <span class="price-old">€129.99</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.pionierpalast-berlin.de/name-it-tights-dark-blue.html"><img alt="Name It Tights - Dark Blue JG" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/name-it-tights-dark-blue-3828.jpg" title="Name It Tights - Dark Blue JG"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="https://www.pionierpalast-berlin.de/name-it-tights-dark-blue.html">Name It Tights - Dark Blue JG</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€36.99</span> <span class="price-old">€119.99</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.pionierpalast-berlin.de/boss-kidswear-baby-shoes-white-yellow.html"><img alt="Boss Kidswear Baby Shoes - White/yellow Om" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/boss-kidswear-baby-shoes-white-yellow-1422.jpg" title="Boss Kidswear Baby Shoes - White/yellow Om"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="https://www.pionierpalast-berlin.de/boss-kidswear-baby-shoes-white-yellow.html">Boss Kidswear Baby Shoes - White/yellow Om</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€37.99</span> <span class="price-old">€149.99</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.pionierpalast-berlin.de/mango-strickjacke-mit-sternenmuster-cardigan-schwarz.html"><img alt="Mango Strickjacke Mit Sternenmuster - Cardigan Schwarz iR" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/mango-strickjacke-mit-sternenmuster-cardigan-schwarz-4405.jpg" title="Mango Strickjacke Mit Sternenmuster - Cardigan Schwarz iR"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="https://www.pionierpalast-berlin.de/mango-strickjacke-mit-sternenmuster-cardigan-schwarz.html">Mango Strickjacke Mit Sternenmuster - Cardigan Schwarz iR</a></h4></div>
-<div class="product_box_brand"></div>
-<p class="price">
-<span class="price-new">€36.99</span> <span class="price-old">€129.99</span>
-</p>
-</div>
-</div>
-</div>
-<div class="product-layout-grid product-grid col-xs-12">
-<div class="product-thumb transition">
-<div class="image">
-<div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.pionierpalast-berlin.de/adidas-performance-core-sportswear-boblue-white.html"><img alt="Adidas Performance Core - Sportswear Boblue/white Rd" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/adidas-performance-core-sportswear-boblue-white-1610.jpg" title="Adidas Performance Core - Sportswear Boblue/white Rd"/></a>
-</div>
-</div>
-<div class="caption">
-<div class="name"><h4><a href="https://www.pionierpalast-berlin.de/adidas-performance-core-sportswear-boblue-white.html">Adidas Performance Core - Sportswear Boblue/white Rd</a></h4></div>
+<div class="name"><h4><a href="https://www.pionierpalast-berlin.de/name-it-snowsuit-purple.html">Name It Snowsuit - Purple 5L</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
 <span class="price-new">€35.99</span> <span class="price-old">€119.99</span>
@@ -532,14 +452,14 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.pionierpalast-berlin.de/pepe-jeans-bendela-print-tshirt-menthol.html"><img alt="Pepe Jeans Bendela - Print T-shirt Menthol 7J" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/pepe-jeans-bendela-print-tshirt-menthol-4573.jpg" title="Pepe Jeans Bendela - Print T-shirt Menthol 7J"/></a>
+<a class="arevision" href="https://www.pionierpalast-berlin.de/next-spiderman-5-pack-briefs-158yrs-underwear-set-black.html"><img alt="Next Spider-man 5 Pack Briefs (1.5-8yrs) - Underwear Set Black 8Z" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/next-spiderman-5-pack-briefs-158yrs-underwear-set-black-3880.jpg" title="Next Spider-man 5 Pack Briefs (1.5-8yrs) - Underwear Set Black 8Z"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.pionierpalast-berlin.de/pepe-jeans-bendela-print-tshirt-menthol.html">Pepe Jeans Bendela - Print T-shirt Menthol 7J</a></h4></div>
+<div class="name"><h4><a href="https://www.pionierpalast-berlin.de/next-spiderman-5-pack-briefs-158yrs-underwear-set-black.html">Next Spider-man 5 Pack Briefs (1.5-8yrs) - Underwear Set Black 8Z</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€37.99</span> <span class="price-old">€149.99</span>
+<span class="price-new">€35.99</span> <span class="price-old">€139.99</span>
 </p>
 </div>
 </div>
@@ -548,11 +468,11 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.pionierpalast-berlin.de/protest-boz-fleece-jumper-space-blue.html"><img alt="Protest Boz - Fleece Jumper Space Blue aM" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/protest-boz-fleece-jumper-space-blue-3614.jpg" title="Protest Boz - Fleece Jumper Space Blue aM"/></a>
+<a class="arevision" href="https://www.pionierpalast-berlin.de/converse-collegiate-camo-pant-tracksuit-bottoms-dark-grey-heather.html"><img alt="Converse Collegiate Camo Pant - Tracksuit Bottoms Dark Grey Heather Ir" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/converse-collegiate-camo-pant-tracksuit-bottoms-dark-grey-heather-2657.jpg" title="Converse Collegiate Camo Pant - Tracksuit Bottoms Dark Grey Heather Ir"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.pionierpalast-berlin.de/protest-boz-fleece-jumper-space-blue.html">Protest Boz - Fleece Jumper Space Blue aM</a></h4></div>
+<div class="name"><h4><a href="https://www.pionierpalast-berlin.de/converse-collegiate-camo-pant-tracksuit-bottoms-dark-grey-heather.html">Converse Collegiate Camo Pant - Tracksuit Bottoms Dark Grey Heather Ir</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
 <span class="price-new">€36.99</span> <span class="price-old">€119.99</span>
@@ -564,11 +484,43 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.pionierpalast-berlin.de/nike-performance-dry-short-trophy-sports-shorts-carbon-heather-pink.html"><img alt="Nike Performance Dry Short Trophy - Sports Shorts Carbon Heather/pink iO" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/nike-performance-dry-short-trophy-sports-shorts-carbon-heather-pink-4088.jpg" title="Nike Performance Dry Short Trophy - Sports Shorts Carbon Heather/pink iO"/></a>
+<a class="arevision" href="https://www.pionierpalast-berlin.de/nike-sportswear-air-crew-sweatshirt-dark-grey-heather-black.html"><img alt="Nike Sportswear Air Crew - Sweatshirt Dark Grey Heather/black kf" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/nike-sportswear-air-crew-sweatshirt-dark-grey-heather-black-2527.jpg" title="Nike Sportswear Air Crew - Sweatshirt Dark Grey Heather/black kf"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.pionierpalast-berlin.de/nike-performance-dry-short-trophy-sports-shorts-carbon-heather-pink.html">Nike Performance Dry Short Trophy - Sports Shorts Carbon Heather/pink iO</a></h4></div>
+<div class="name"><h4><a href="https://www.pionierpalast-berlin.de/nike-sportswear-air-crew-sweatshirt-dark-grey-heather-black.html">Nike Sportswear Air Crew - Sweatshirt Dark Grey Heather/black kf</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€36.99</span> <span class="price-old">€129.99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="https://www.pionierpalast-berlin.de/name-it-swimming-shorts-blueprint.html"><img alt="Name It Swimming Shorts - Blueprint eI" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/name-it-swimming-shorts-blueprint-3365.jpg" title="Name It Swimming Shorts - Blueprint eI"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="https://www.pionierpalast-berlin.de/name-it-swimming-shorts-blueprint.html">Name It Swimming Shorts - Blueprint eI</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€35.99</span> <span class="price-old">€159.99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="https://www.pionierpalast-berlin.de/soliver-slim-fit-jeans-blue-denim.html"><img alt="S.oliver Slim Fit Jeans - Blue Denim n9" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/soliver-slim-fit-jeans-blue-denim-1913.jpg" title="S.oliver Slim Fit Jeans - Blue Denim n9"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="https://www.pionierpalast-berlin.de/soliver-slim-fit-jeans-blue-denim.html">S.oliver Slim Fit Jeans - Blue Denim n9</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
 <span class="price-new">€36.99</span> <span class="price-old">€149.99</span>
@@ -580,14 +532,62 @@ $(document).ready(function() {
 <div class="product-thumb transition">
 <div class="image">
 <div class="img-revision revision-module-new-product">
-<a class="arevision" href="https://www.pionierpalast-berlin.de/hype-dragons-print-tshirt-pink-blue.html"><img alt="Hype Dragons - Print T-shirt Pink/blue JY" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/hype-dragons-print-tshirt-pink-blue-2354.jpg" title="Hype Dragons - Print T-shirt Pink/blue JY"/></a>
+<a class="arevision" href="https://www.pionierpalast-berlin.de/name-it-zebra-3-pack-body-loden-green.html"><img alt="Name It Zebra 3 Pack - Body Loden Green LA" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/name-it-zebra-3-pack-body-loden-green-1711.jpg" title="Name It Zebra 3 Pack - Body Loden Green LA"/></a>
 </div>
 </div>
 <div class="caption">
-<div class="name"><h4><a href="https://www.pionierpalast-berlin.de/hype-dragons-print-tshirt-pink-blue.html">Hype Dragons - Print T-shirt Pink/blue JY</a></h4></div>
+<div class="name"><h4><a href="https://www.pionierpalast-berlin.de/name-it-zebra-3-pack-body-loden-green.html">Name It Zebra 3 Pack - Body Loden Green LA</a></h4></div>
 <div class="product_box_brand"></div>
 <p class="price">
-<span class="price-new">€37.99</span> <span class="price-old">€129.99</span>
+<span class="price-new">€36.99</span> <span class="price-old">€139.99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="https://www.pionierpalast-berlin.de/soliver-jeans-skinny-fit-medium-blue.html"><img alt="S.oliver Jeans Skinny Fit - Medium Blue 76" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/soliver-jeans-skinny-fit-medium-blue-2086.jpg" title="S.oliver Jeans Skinny Fit - Medium Blue 76"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="https://www.pionierpalast-berlin.de/soliver-jeans-skinny-fit-medium-blue.html">S.oliver Jeans Skinny Fit - Medium Blue 76</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€35.99</span> <span class="price-old">€129.99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="https://www.pionierpalast-berlin.de/johnny-urban-liam-junior-rucksack-rosa.html"><img alt="Johnny Urban Liam Junior - Rucksack Rosa Rt" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/johnny-urban-liam-junior-rucksack-rosa-2.jpg" title="Johnny Urban Liam Junior - Rucksack Rosa Rt"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="https://www.pionierpalast-berlin.de/johnny-urban-liam-junior-rucksack-rosa.html">Johnny Urban Liam Junior - Rucksack Rosa Rt</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€29.99</span> <span class="price-old">€139.99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="https://www.pionierpalast-berlin.de/kangaroos-kx3500-trainers-jet-black.html"><img alt="Kangaroos Kx-3500 - Trainers Jet Black L1" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/kangaroos-kx3500-trainers-jet-black-690.jpg" title="Kangaroos Kx-3500 - Trainers Jet Black L1"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="https://www.pionierpalast-berlin.de/kangaroos-kx3500-trainers-jet-black.html">Kangaroos Kx-3500 - Trainers Jet Black L1</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€35.99</span> <span class="price-old">€119.99</span>
 </p>
 </div>
 </div>
@@ -623,43 +623,43 @@ $(document).ready(function() {
 <div id="powered">
 <div class="container">
 <div class="row">
-<div class="col-sm-12 col-md-12">
-      Copyright © 2022 <a href="//www.pionierpalast-berlin.de" target="_blank">www.pionierpalast-berlin.de</a> All Rights Reserved  
+<div class="col-sm-12 col-md-12">
+      Copyright © 2022 <a href="//www.pionierpalast-berlin.de" target="_blank">www.pionierpalast-berlin.de</a> All Rights Reserved  
       </div>
 </div>
 </div>
 </div>
 </footer>
 <script src="catalog/view/theme/drop/js/jquery.visible.min.js" type="text/javascript"></script>
-<script type="text/javascript">
-
-var win = $(window);
-
-var allMods = $("footer");
-
-allMods.each(function(i, el) {
-    
-  if ($(el).visible(true)) {
-    $(el).addClass("already-visible"); 
-  }
-  
-});
-
-win.scroll(function(event) {
-  
-  allMods.each(function(i, el) {
-    
-    var el = $(el);
-    
-    if (el.visible(true)) {
-      el.addClass("come-in"); 
-    } else {
-      el.removeClass("come-in already-visible");
-    }
-    
-  });
-  
-}); 
+<script type="text/javascript">
+
+var win = $(window);
+
+var allMods = $("footer");
+
+allMods.each(function(i, el) {
+    
+  if ($(el).visible(true)) {
+    $(el).addClass("already-visible"); 
+  }
+  
+});
+
+win.scroll(function(event) {
+  
+  allMods.each(function(i, el) {
+    
+    var el = $(el);
+    
+    if (el.visible(true)) {
+      el.addClass("come-in"); 
+    } else {
+      el.removeClass("come-in already-visible");
+    }
+    
+  });
+  
+}); 
 </script>
 <script src="catalog/view/theme/drop/js/jquery.easing-1.3.min.js" type="text/javascript"></script>
 <link href="catalog/view/theme/drop/js/quickview/fancybox/jquery.fancybox.css" property="stylesheet" rel="stylesheet">

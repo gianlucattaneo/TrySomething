@@ -10,9 +10,9 @@
 <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport"/>
 <script crossorigin="anonymous" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" src="https://code.jquery.com/jquery-3.3.1.min.js">
 </script>
-<script>
-            // Change document class from no-js to js so we can detect this in css
-            document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+<script>
+            // Change document class from no-js to js so we can detect this in css
+            document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
         </script>
 <link href="https://fonts.googleapis.com/css?family=Karla:400|Montserrat:400&amp;display=swap" rel="stylesheet"/>
 <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
@@ -36,7 +36,7 @@ window.onload = function() {
     var pathName = window.location.pathname;
 
     fbq('track', 'PageView', {},
-    {"eventID":"store-4-prd-us-central1-123607542481"});
+    {"eventID":"store-4-prd-us-central1-123678140972"});
 
     // Search events start -- only fire if the shopper lands on the /search.php page
     if (pathName.indexOf('/search.php') === 0 && getUrlParameter('search_query')) {
@@ -89,7 +89,7 @@ window.onload = function() {
     }
 }
 </script>
-<noscript><img alt="null" height="1" src="https://www.facebook.com/tr?id=303103174025469&amp;ev=PageView&amp;noscript=1&amp;a=plbigcommerce1.2&amp;eid=store-4-prd-us-central1-123607542481" style="display:none" width="1"/></noscript>
+<noscript><img alt="null" height="1" src="https://www.facebook.com/tr?id=303103174025469&amp;ev=PageView&amp;noscript=1&amp;a=plbigcommerce1.2&amp;eid=store-4-prd-us-central1-123678140972" style="display:none" width="1"/></noscript>
 <!-- End Tracking Code for analytics_facebook -->
 <!-- Start Tracking Code for analytics_googleanalytics -->
 <script>
@@ -226,7 +226,7 @@ var pageTracker = new trackEcommerce();
 <script defer="" src="https://cdn11.bigcommerce.com/r-113fb03b5c387c42ceec76fcc2571cdf3b87c132/javascript/braintree.js" type="text/javascript"></script>
 <script src="https://checkout-sdk.bigcommerce.com/v1/loader.js" type="text/javascript"></script>
 <script type="text/javascript">
-var BCData = {"csrf_token":"348bf6777ad46594fdf62def5100532997e5db8731b5d4d563af0a8eae2be5e3"};
+var BCData = {"csrf_token":"09da026f80b36ea673027ea1fe457c0925ad58687c405f42c2b839ea0fd7882e"};
 </script>
 <script defer="" src="https://www.searchanise.com/widgets/bigcommerce/init.js?api_key=7w8Z1e2S0i"></script><script async="" src="https://searchserverapi.com/widgets/bigcommerce/init.js?api_key=7w8Z1e2S0i"></script><script>
     (function () {
@@ -493,374 +493,374 @@ let rScixScript = (function () {
 </script><script>(function(){ var s = document.createElement('script'), e = ! document.body ? document.querySelector('head') : document.body; s.src = 'https://acsbapp.com/apps/app/dist/js/app.js'; s.async = true; s.onload = function(){ acsbJS.init({ statementLink : '', footerHtml : '', hideMobile : false, hideTrigger : false, language : 'en', position : 'left', leadColor : '#146ff8', triggerColor : '#146ff8', triggerRadius : '5px', triggerPositionX : 'right', triggerPositionY : 'bottom', triggerIcon : 'wheels2', triggerSize : 'medium', triggerOffsetX : 20, triggerOffsetY : 100, mobile : { triggerSize : 'small', triggerPositionX : 'right', triggerPositionY : 'center', triggerOffsetX : 10, triggerOffsetY : 0, triggerRadius : '50%' } }); }; e.appendChild(s);}());</script>
 <!-- snippet location htmlhead -->
 <script src="//cdn.webshopapp.com/assets/jquery-ui-1-10-1.js?2018-01-09"></script>
-<script>
-jQuery(document).ready(function() {
-     jQuery('#cart-preview-dropdown').hover(function(){     
-           jQuery('body').addClass('cart_open');    
-       },function(){    
-          jQuery('body').removeClass('cart_open');     
-       });
-   });
+<script>
+jQuery(document).ready(function() {
+     jQuery('#cart-preview-dropdown').hover(function(){     
+           jQuery('body').addClass('cart_open');    
+       },function(){    
+          jQuery('body').removeClass('cart_open');     
+       });
+   });
 </script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.7.0/moment.min.js" type="text/javascript"></script>
 <script async="" src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
 <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
-<script>
-                  /*!
-         * jQuery UI Touch Punch 0.2.3
-         *
-         * Copyright 2011–2014, Dave Furfero
-         * Dual licensed under the MIT or GPL Version 2 licenses.
-         *
-         * Depends:
-         *  jquery.ui.widget.js
-         *  jquery.ui.mouse.js
-         */
-        !function(a){function f(a,b){if(!(a.originalEvent.touches.length>1)){a.preventDefault();var c=a.originalEvent.changedTouches[0],d=document.createEvent("MouseEvents");d.initMouseEvent(b,!0,!0,window,1,c.screenX,c.screenY,c.clientX,c.clientY,!1,!1,!1,!1,0,null),a.target.dispatchEvent(d)}}if(a.support.touch="ontouchend"in document,a.support.touch){var e,b=a.ui.mouse.prototype,c=b._mouseInit,d=b._mouseDestroy;b._touchStart=function(a){var b=this;!e&&b._mouseCapture(a.originalEvent.changedTouches[0])&&(e=!0,b._touchMoved=!1,f(a,"mouseover"),f(a,"mousemove"),f(a,"mousedown"))},b._touchMove=function(a){e&&(this._touchMoved=!0,f(a,"mousemove"))},b._touchEnd=function(a){e&&(f(a,"mouseup"),f(a,"mouseout"),this._touchMoved||f(a,"click"),e=!1)},b._mouseInit=function(){var b=this;b.element.bind({touchstart:a.proxy(b,"_touchStart"),touchmove:a.proxy(b,"_touchMove"),touchend:a.proxy(b,"_touchEnd")}),c.call(b)},b._mouseDestroy=function(){var b=this;b.element.unbind({touchstart:a.proxy(b,"_touchStart"),touchmove:a.proxy(b,"_touchMove"),touchend:a.proxy(b,"_touchEnd")}),d.call(b)}}}(jQuery);
+<script>
+                  /*!
+         * jQuery UI Touch Punch 0.2.3
+         *
+         * Copyright 2011–2014, Dave Furfero
+         * Dual licensed under the MIT or GPL Version 2 licenses.
+         *
+         * Depends:
+         *  jquery.ui.widget.js
+         *  jquery.ui.mouse.js
+         */
+        !function(a){function f(a,b){if(!(a.originalEvent.touches.length>1)){a.preventDefault();var c=a.originalEvent.changedTouches[0],d=document.createEvent("MouseEvents");d.initMouseEvent(b,!0,!0,window,1,c.screenX,c.screenY,c.clientX,c.clientY,!1,!1,!1,!1,0,null),a.target.dispatchEvent(d)}}if(a.support.touch="ontouchend"in document,a.support.touch){var e,b=a.ui.mouse.prototype,c=b._mouseInit,d=b._mouseDestroy;b._touchStart=function(a){var b=this;!e&&b._mouseCapture(a.originalEvent.changedTouches[0])&&(e=!0,b._touchMoved=!1,f(a,"mouseover"),f(a,"mousemove"),f(a,"mousedown"))},b._touchMove=function(a){e&&(this._touchMoved=!0,f(a,"mousemove"))},b._touchEnd=function(a){e&&(f(a,"mouseup"),f(a,"mouseout"),this._touchMoved||f(a,"click"),e=!1)},b._mouseInit=function(){var b=this;b.element.bind({touchstart:a.proxy(b,"_touchStart"),touchmove:a.proxy(b,"_touchMove"),touchend:a.proxy(b,"_touchEnd")}),c.call(b)},b._mouseDestroy=function(){var b=this;b.element.unbind({touchstart:a.proxy(b,"_touchStart"),touchmove:a.proxy(b,"_touchMove"),touchend:a.proxy(b,"_touchEnd")}),d.call(b)}}}(jQuery);
      </script>
 <script src="https://scripts.sirv.com/sirv.js"></script>
 <!--compare button css start-->
-<style>
-        @media only screen and (max-width: 812px) {
-        .header-search-mobile {
-            position: unset !important;
-            order: 3;
-            margin: 10px auto;
-        }
-        ul.navPages-list.sf-menu.clearfix.sf-js-enabled.sf-arrows {
-            margin-top: 0 !important;
-        }
-        }
-        
-        @media only screen and (max-width: 767px) {
-        .header-search-mobile {
-            width: 90%;
-            margin: 10px auto 10px !important;
-        }
-        }
-        
-        @media only screen and (max-width: 480px) {
-        .header .header-inner-section .header-middle-section {
-            padding-top: 15px;
-        }
-        }
-        
-        .desk{
-            display:none;
-        }
-        a.compare_a.button.button--small.card-figcaption-button.button.card-button.compare{
-            background: url(https://cdn11.bigcommerce.com/s-qc54sxupbs/product_images/uploaded_images/static.png?t=1613830919&_ga=2.210122069.1592585943.1613830760-1185122722.1613830760);
-            background-repeat: no-repeat;
-            background-size: 40px;
-            padding: 26px;
-        }
-        a.compare_a.button.button--small.card-figcaption-button.button.card-button.compare:hover{
-            border: unset !important;
-            background: url(https://cdn11.bigcommerce.com/s-qc54sxupbs/product_images/uploaded_images/hover.png?t=1613830918&_ga=2.154670584.1592585943.1613830760-1185122722.1613830760);
-            background-repeat: no-repeat;
-            background-size: 40px;
-            padding: 26px;
-        }
-        .compare_div:hover {
-            border: unset !important;
-           
-        }
-        .compare_div{
-            right: 0px !important;
-            z-index: 9999 !important;
-            position: absolute !important;
-            top: 50% !important;
-        }
-        /*.compare_a{
-            background-color: rgb(255, 206, 196) !important;
-            border-radius: 26px !important;
-            height: 17px !important;
-            font-size: 13px !important;
-            padding: 7px !important;
-            width: 57% !important;
-        }*/
-        .fa-exchange{
-            margin-left: 2px !important;
-        }
-        
-        
-        @media only screen and (min-width: 768px){
-           
-            .mobile{
-                display:none !important;
-            }
-			
-			
-        }
-        @media only screen and (max-width: 767px){
-           .desk{
-               display:none !important;
-           }
-            .mobile{
-                display:block !important;
-            }
-            .compare-button.mobile {
-                width: 50% !important;
-                margin: auto !important;
-                padding: 4px 0 !important;
-                text-align: center !important;
-            }
-            .compare-button.mobile > a.button.button--small.card-figcaption-button.button.card-button.compare{
-                padding: 6px!important;
-                font-size: 15px !important;
-                margin: 0px !important;
-                color: #777 !important;
-                line-height: normal !important;
-                font-family: gilroymedium !important;
-                text-transform: capitalize !important;
-                background: #fff !important;
-                border: 1px solid silver !important;
-                border-radius: 3px !important;
-                transition: all,0.14s !important;
-                text-decoration: none !important;
-                outline: 0 !important;
-                box-shadow: none !important;
-            }
-            .compare-button.mobile > a.button.button--small.card-figcaption-button.button.card-button.compare:hover{
-                color:white !important;
-                background: #ff7f64 !important;
-                border: 1px solid #ff7f64 !important;
-                border-radius:3px !important;
-            }
-			
-			.product-tabs-section.retainer_desc .measurements-content {
-               margin: 23px 0 0;
-           }
-		   
-        }
-        /*@media only screen and (max-width: 1024px) and (min-width: 769px){
-            .compare_div{
-                top: 165px !important;
-                right: 30px !important;
-            }
-        }
-        @media only screen and (max-width: 768px) and (min-width: 701px){
-            .compare_div{
-                top: 190px !important;
-                right: 30px !important;
-            }
-            .compare_a {
-                background-color: rgb(255, 206, 196) !important;
-                border-radius: 26px !important;
-                height: 28px !important;
-                font-size: 13px !important;
-                padding: 7px 7px 7px 7px !important;
-                width: 85% !important;
-            }
-            .fa-exchange {
-                margin: 7px 0px 4px 7px !important;
-            }
-        }
-        @media only screen and (max-width: 700px) and (min-width: 580px){
-            .compare_div{
-                top: 190px !important;
-                right: 20px !important;
-            }
-            .compare_a {
-                background-color: rgb(255, 206, 196) !important;
-                border-radius: 26px !important;
-                height: 28px !important;
-                font-size: 13px !important;
-                padding: 7px 7px 7px 7px !important;
-                width: 85% !important;
-            }
-            .fa-exchange {
-                margin: 8px 0px 4px 7px !important;
-            }
-        }
-        @media only screen and (max-width: 579px) and (min-width: 568px){
-            .compare_div{
-                top: 180px !important;
-                right: 20px !important;
-            }
-            .compare_a {
-                background-color: rgb(255, 206, 196) !important;
-                border-radius: 26px !important;
-                height: 28px !important;
-                font-size: 13px !important;
-                padding: 7px 7px 7px 7px !important;
-                width: 85% !important;
-            }
-            .fa-exchange {
-                margin: 8px 0px 4px 7px !important;
-            }
-        }
-        @media only screen and (max-width: 567px) and (min-width: 500px){
-            .compare_div{
-                top: 100px !important;
-                right: 12px !important;
-            }
-            .compare_a {
-                background-color: rgb(255, 206, 196) !important;
-                border-radius: 26px !important;
-                height: 28px !important;
-                font-size: 13px !important;
-                padding: 7px 7px 7px 7px !important;
-                width: 85% !important;
-            }
-            .fa-exchange {
-                margin: 8px 0px 4px 7px !important;
-            }
-        }
-        @media only screen and (max-width: 499px) and (min-width: 345px){
-            .compare_div{
-                top: 100px !important;
-                right: 20px !important;
-            }
-            .compare_a {
-                background-color: rgb(255, 206, 196) !important;
-                border-radius: 26px !important;
-                height: 28px !important;
-                font-size: 13px !important;
-                padding: 7px 7px 7px 7px !important;
-                width: 81% !important;
-            }
-            .fa-exchange {
-                margin: 8px 0px 4px 6px !important;
-            }
-        }
-        @media only screen and (max-width: 344px){
-            .compare_div{
-                top: 108px !important;
-                right: 20px !important;
-            }
-            .compare_a {
-                background-color: rgb(255, 206, 196) !important;
-                border-radius: 26px !important;
-                height: 24px !important;
-                font-size: 13px !important;
-                padding: 7px 7px 7px 7px !important;
-                width: 77% !important;
-            }
-            .fa-exchange {
-                margin: 6px 0px 4px 6px !important;
-            }
-        }*/
-        
-        
-        
-        
-.product-tab-section-custom {
-    display: block !important; 
-}
-/*.product-tab-section-custom.cstm-defualt-template {*/
-/*    display: block;*/
-/*}*/
-/*.product-tabs-section.clearfix {*/
-/*    display: none;*/
-/*}*/
-/*.product-tabs-section.clearfix.cstm-retainer-template {*/
-/*    display: flex;*/
-/*}*/
-
-.product-tabs-section.clearfix.cstm-retainer-template .measurements-content.clearfix {
-    margin: 0px !important;
-}
-
-.product-tabs-section.clearfix.cstm-retainer-template .measurements-content.clearfix {
-    display: flex !important;
-    flex-wrap: wrap;
-}
-
-
-.product-tabs-section.clearfix.cstm-retainer-template .measurements-content.clearfix .retainer_template_descrip {
-    margin: 0 0 30px;
-}
-
-.product-tabs-section.clearfix.cstm-retainer-template .measurements-content.clearfix .measurements-custom-feild {
-    margin-bottom: 30px;
-}
-
-.product-tabs-section.clearfix.cstm-retainer-template .measurements-content.clearfix {
-    display: flex !important;
-    flex-wrap: wrap !important;
-}
-
-.measurements-section .measurements-item {
-    display: flex;
-    flex-flow: column;
-}
-
-.new-custom-badges-structure button.slick-prev.slick-arrow {
-    left: 25px !important;
-}
-
-.new-custom-badges-structure button.slick-next.slick-arrow {
-    right: 0 !important;
-}
-
-html {
-    overflow-x: hidden;
-}
-        
-li.tab.nav-include.retainer_delete {
-    display: none;
-}  
-
-.retainer_template_descrip.retainer_delete {
-    display: block;
-}
-
-.retainer_template_descrip {
-    display: none;
-}
-
-.measurements-detail.retainer_delete {
-    display: none;
-}
-
-.product-info-item.custom-fields-box.upc.retainer_upsc {
-    display: none;
-}
-
-.product-tabs-section.retainer_desc .measurements-content {
-    margin: 71px 0 0;
-}
-
-.container.defalut_prod {
-    padding: 0;
-}
-
-.container.defalut_prod.retainer_cont {
-    padding: 0 60px;
-}
-
- @media only screen and (max-width:1079px){
-
-.container.defalut_prod.retainer_cont {
-    padding: 0 30px;
-}
-
-}
-
-
-@media only screen and (max-width: 767px){
-.container.defalut_prod.retainer_cont {
-    padding: 0 0px;
-}
-
-}
-
-.retainer_head_mobile {
-    display: none;
-}
-
-.delete_heading {
-    display: none;
-}
-
-@media only screen and (max-width: 767px) {
-.product-tabs-section.retainer_desc .measurements-content {
-    margin: 15px 0 0;
-}
-}
-  
+<style>
+        @media only screen and (max-width: 812px) {
+        .header-search-mobile {
+            position: unset !important;
+            order: 3;
+            margin: 10px auto;
+        }
+        ul.navPages-list.sf-menu.clearfix.sf-js-enabled.sf-arrows {
+            margin-top: 0 !important;
+        }
+        }
+        
+        @media only screen and (max-width: 767px) {
+        .header-search-mobile {
+            width: 90%;
+            margin: 10px auto 10px !important;
+        }
+        }
+        
+        @media only screen and (max-width: 480px) {
+        .header .header-inner-section .header-middle-section {
+            padding-top: 15px;
+        }
+        }
+        
+        .desk{
+            display:none;
+        }
+        a.compare_a.button.button--small.card-figcaption-button.button.card-button.compare{
+            background: url(https://cdn11.bigcommerce.com/s-qc54sxupbs/product_images/uploaded_images/static.png?t=1613830919&_ga=2.210122069.1592585943.1613830760-1185122722.1613830760);
+            background-repeat: no-repeat;
+            background-size: 40px;
+            padding: 26px;
+        }
+        a.compare_a.button.button--small.card-figcaption-button.button.card-button.compare:hover{
+            border: unset !important;
+            background: url(https://cdn11.bigcommerce.com/s-qc54sxupbs/product_images/uploaded_images/hover.png?t=1613830918&_ga=2.154670584.1592585943.1613830760-1185122722.1613830760);
+            background-repeat: no-repeat;
+            background-size: 40px;
+            padding: 26px;
+        }
+        .compare_div:hover {
+            border: unset !important;
+           
+        }
+        .compare_div{
+            right: 0px !important;
+            z-index: 9999 !important;
+            position: absolute !important;
+            top: 50% !important;
+        }
+        /*.compare_a{
+            background-color: rgb(255, 206, 196) !important;
+            border-radius: 26px !important;
+            height: 17px !important;
+            font-size: 13px !important;
+            padding: 7px !important;
+            width: 57% !important;
+        }*/
+        .fa-exchange{
+            margin-left: 2px !important;
+        }
+        
+        
+        @media only screen and (min-width: 768px){
+           
+            .mobile{
+                display:none !important;
+            }
+			
+			
+        }
+        @media only screen and (max-width: 767px){
+           .desk{
+               display:none !important;
+           }
+            .mobile{
+                display:block !important;
+            }
+            .compare-button.mobile {
+                width: 50% !important;
+                margin: auto !important;
+                padding: 4px 0 !important;
+                text-align: center !important;
+            }
+            .compare-button.mobile > a.button.button--small.card-figcaption-button.button.card-button.compare{
+                padding: 6px!important;
+                font-size: 15px !important;
+                margin: 0px !important;
+                color: #777 !important;
+                line-height: normal !important;
+                font-family: gilroymedium !important;
+                text-transform: capitalize !important;
+                background: #fff !important;
+                border: 1px solid silver !important;
+                border-radius: 3px !important;
+                transition: all,0.14s !important;
+                text-decoration: none !important;
+                outline: 0 !important;
+                box-shadow: none !important;
+            }
+            .compare-button.mobile > a.button.button--small.card-figcaption-button.button.card-button.compare:hover{
+                color:white !important;
+                background: #ff7f64 !important;
+                border: 1px solid #ff7f64 !important;
+                border-radius:3px !important;
+            }
+			
+			.product-tabs-section.retainer_desc .measurements-content {
+               margin: 23px 0 0;
+           }
+		   
+        }
+        /*@media only screen and (max-width: 1024px) and (min-width: 769px){
+            .compare_div{
+                top: 165px !important;
+                right: 30px !important;
+            }
+        }
+        @media only screen and (max-width: 768px) and (min-width: 701px){
+            .compare_div{
+                top: 190px !important;
+                right: 30px !important;
+            }
+            .compare_a {
+                background-color: rgb(255, 206, 196) !important;
+                border-radius: 26px !important;
+                height: 28px !important;
+                font-size: 13px !important;
+                padding: 7px 7px 7px 7px !important;
+                width: 85% !important;
+            }
+            .fa-exchange {
+                margin: 7px 0px 4px 7px !important;
+            }
+        }
+        @media only screen and (max-width: 700px) and (min-width: 580px){
+            .compare_div{
+                top: 190px !important;
+                right: 20px !important;
+            }
+            .compare_a {
+                background-color: rgb(255, 206, 196) !important;
+                border-radius: 26px !important;
+                height: 28px !important;
+                font-size: 13px !important;
+                padding: 7px 7px 7px 7px !important;
+                width: 85% !important;
+            }
+            .fa-exchange {
+                margin: 8px 0px 4px 7px !important;
+            }
+        }
+        @media only screen and (max-width: 579px) and (min-width: 568px){
+            .compare_div{
+                top: 180px !important;
+                right: 20px !important;
+            }
+            .compare_a {
+                background-color: rgb(255, 206, 196) !important;
+                border-radius: 26px !important;
+                height: 28px !important;
+                font-size: 13px !important;
+                padding: 7px 7px 7px 7px !important;
+                width: 85% !important;
+            }
+            .fa-exchange {
+                margin: 8px 0px 4px 7px !important;
+            }
+        }
+        @media only screen and (max-width: 567px) and (min-width: 500px){
+            .compare_div{
+                top: 100px !important;
+                right: 12px !important;
+            }
+            .compare_a {
+                background-color: rgb(255, 206, 196) !important;
+                border-radius: 26px !important;
+                height: 28px !important;
+                font-size: 13px !important;
+                padding: 7px 7px 7px 7px !important;
+                width: 85% !important;
+            }
+            .fa-exchange {
+                margin: 8px 0px 4px 7px !important;
+            }
+        }
+        @media only screen and (max-width: 499px) and (min-width: 345px){
+            .compare_div{
+                top: 100px !important;
+                right: 20px !important;
+            }
+            .compare_a {
+                background-color: rgb(255, 206, 196) !important;
+                border-radius: 26px !important;
+                height: 28px !important;
+                font-size: 13px !important;
+                padding: 7px 7px 7px 7px !important;
+                width: 81% !important;
+            }
+            .fa-exchange {
+                margin: 8px 0px 4px 6px !important;
+            }
+        }
+        @media only screen and (max-width: 344px){
+            .compare_div{
+                top: 108px !important;
+                right: 20px !important;
+            }
+            .compare_a {
+                background-color: rgb(255, 206, 196) !important;
+                border-radius: 26px !important;
+                height: 24px !important;
+                font-size: 13px !important;
+                padding: 7px 7px 7px 7px !important;
+                width: 77% !important;
+            }
+            .fa-exchange {
+                margin: 6px 0px 4px 6px !important;
+            }
+        }*/
+        
+        
+        
+        
+.product-tab-section-custom {
+    display: block !important; 
+}
+/*.product-tab-section-custom.cstm-defualt-template {*/
+/*    display: block;*/
+/*}*/
+/*.product-tabs-section.clearfix {*/
+/*    display: none;*/
+/*}*/
+/*.product-tabs-section.clearfix.cstm-retainer-template {*/
+/*    display: flex;*/
+/*}*/
+
+.product-tabs-section.clearfix.cstm-retainer-template .measurements-content.clearfix {
+    margin: 0px !important;
+}
+
+.product-tabs-section.clearfix.cstm-retainer-template .measurements-content.clearfix {
+    display: flex !important;
+    flex-wrap: wrap;
+}
+
+
+.product-tabs-section.clearfix.cstm-retainer-template .measurements-content.clearfix .retainer_template_descrip {
+    margin: 0 0 30px;
+}
+
+.product-tabs-section.clearfix.cstm-retainer-template .measurements-content.clearfix .measurements-custom-feild {
+    margin-bottom: 30px;
+}
+
+.product-tabs-section.clearfix.cstm-retainer-template .measurements-content.clearfix {
+    display: flex !important;
+    flex-wrap: wrap !important;
+}
+
+.measurements-section .measurements-item {
+    display: flex;
+    flex-flow: column;
+}
+
+.new-custom-badges-structure button.slick-prev.slick-arrow {
+    left: 25px !important;
+}
+
+.new-custom-badges-structure button.slick-next.slick-arrow {
+    right: 0 !important;
+}
+
+html {
+    overflow-x: hidden;
+}
+        
+li.tab.nav-include.retainer_delete {
+    display: none;
+}  
+
+.retainer_template_descrip.retainer_delete {
+    display: block;
+}
+
+.retainer_template_descrip {
+    display: none;
+}
+
+.measurements-detail.retainer_delete {
+    display: none;
+}
+
+.product-info-item.custom-fields-box.upc.retainer_upsc {
+    display: none;
+}
+
+.product-tabs-section.retainer_desc .measurements-content {
+    margin: 71px 0 0;
+}
+
+.container.defalut_prod {
+    padding: 0;
+}
+
+.container.defalut_prod.retainer_cont {
+    padding: 0 60px;
+}
+
+ @media only screen and (max-width:1079px){
+
+.container.defalut_prod.retainer_cont {
+    padding: 0 30px;
+}
+
+}
+
+
+@media only screen and (max-width: 767px){
+.container.defalut_prod.retainer_cont {
+    padding: 0 0px;
+}
+
+}
+
+.retainer_head_mobile {
+    display: none;
+}
+
+.delete_heading {
+    display: none;
+}
+
+@media only screen and (max-width: 767px) {
+.product-tabs-section.retainer_desc .measurements-content {
+    margin: 15px 0 0;
+}
+}
+  
     </style>
 <!--compare button css ends-->
 </meta></meta></link></link></link></meta></link></head>
@@ -1013,7 +1013,7 @@ li.tab.nav-include.retainer_delete {
 <span>Email</span>
 </a>
 </li>
-<!--<li><a href="tel:877-933-0035">Call Us</a></li>
+<!--<li><a href="tel:877-933-0035">Call Us</a></li>
                            <li><a href="javascript:void(0);" onClick="Reamaze.popup();">Live Chat</a></li>-->
 <li><a href="/faq/">FAQ</a></li>
 </ul>
@@ -1049,12 +1049,12 @@ li.tab.nav-include.retainer_delete {
 <p>Free 2 Day Shipping on</p>
 <p>Orders over $65</p>
 </div>
-<!--<div class="contact-number">
-              <span class="custom-drop-down">Contact<i class="fa fa-angle-down" aria-hidden="true"></i></span>
-              <div class="custom-drop-down-options">
-                <a href="tel:8779330035"><i class="fa fa-phone" aria-hidden="true"></i> 8779330035</a>
-                <a data-reveal-id="modal_callback_form" href="#" class="request-call-back-button">Request a callback</a>
-              </div>
+<!--<div class="contact-number">
+              <span class="custom-drop-down">Contact<i class="fa fa-angle-down" aria-hidden="true"></i></span>
+              <div class="custom-drop-down-options">
+                <a href="tel:8779330035"><i class="fa fa-phone" aria-hidden="true"></i> 8779330035</a>
+                <a data-reveal-id="modal_callback_form" href="#" class="request-call-back-button">Request a callback</a>
+              </div>
            </div>-->
 </div>
 <nav class="navUser">
@@ -1129,8 +1129,8 @@ li.tab.nav-include.retainer_delete {
 </div>
 <div class="header-middle-section">
 <ul class="navPages-list sf-menu clearfix">
-<!-- <li class="navPages-item">
-              <a href="/sunglasses/" class="navPages-action needsclick">sunglasses</a>
+<!-- <li class="navPages-item">
+              <a href="/sunglasses/" class="navPages-action needsclick">sunglasses</a>
           </li> -->
 <li class="navPages-item">
 <a class="navPages-action needsclick" href="/men/">Men</a>
@@ -1218,28 +1218,28 @@ li.tab.nav-include.retainer_delete {
 </div>
 </div>
 <div class="category-section">
-<div class="category-section-inner" data-slick='{"arrows": false,"dots":false,"slidesToShow": 3,"slidesToScroll": 1,
-  "responsive": [
-      {
-          "breakpoint": 1024,
-          "settings": {
-              "slidesToScroll": 1,
-              "slidesToShow": 1.5,
-              "rtl": false,
-              "infinite": false,
-              "autoplay": true,
-              "autoplaySpeed": 3000
-          }
-      },
-      {
-          "breakpoint": 768,
-          "settings": {
-              "slidesToScroll": 1,
-              "slidesToShow": 1.5,
-              "rtl": false,
-              "infinite": false
-          }
-      }
+<div class="category-section-inner" data-slick='{"arrows": false,"dots":false,"slidesToShow": 3,"slidesToScroll": 1,
+  "responsive": [
+      {
+          "breakpoint": 1024,
+          "settings": {
+              "slidesToScroll": 1,
+              "slidesToShow": 1.5,
+              "rtl": false,
+              "infinite": false,
+              "autoplay": true,
+              "autoplaySpeed": 3000
+          }
+      },
+      {
+          "breakpoint": 768,
+          "settings": {
+              "slidesToScroll": 1,
+              "slidesToShow": 1.5,
+              "rtl": false,
+              "infinite": false
+          }
+      }
   ]}'>
 <div class="category-item">
 <a href="/women">
@@ -1247,7 +1247,7 @@ li.tab.nav-include.retainer_delete {
 <img alt="" src="/product_images/uploaded_images/cat-banner1.jpg"/>
 <span class="category-text">
 <h4>Women's <br/>Sunglasses</h4>
-<span>See More
+<span>See More
                           <svg>
 <use xlink:href="#icon-chevron-right"></use>
 </svg>
@@ -1262,7 +1262,7 @@ li.tab.nav-include.retainer_delete {
 <img alt="" src="/product_images/uploaded_images/cat-banner2.jpg"/>
 <span class="category-text">
 <h4>Men's <br/>Sunglasses</h4>
-<span>See More
+<span>See More
                           <svg>
 <use xlink:href="#icon-chevron-right"></use>
 </svg></span>
@@ -1335,60 +1335,60 @@ li.tab.nav-include.retainer_delete {
 <div class="shop-by-frame-section">
 <div class="section-title">
 <h2 class="page-heading">Shop by Frame Shape</h2>
-<a data-reveal-id="modal-frame-form" href="">
-         See all
+<a data-reveal-id="modal-frame-form" href="">
+         See all
       </a>
 </div>
 <div class="shop-by-frame-list">
-<div class="frame-group" data-slick='{"arrows": false,"dots":false,"slidesToShow": 6,"slidesToScroll": 1,
-       "responsive": [
-           {
-               "breakpoint": 1280,
-               "settings": {
-                   "slidesToScroll": 1,
-                   "slidesToShow": 4.5,
-                   "rtl": false,
-                   "infinite": true,
-                   "autoplay": true,
-                   "autoplaySpeed": 3000
-               }
-           },{
-               "breakpoint": 1024,
-               "settings": {
-                   "slidesToScroll": 2,
-                   "slidesToShow": 3.5,
-                   "rtl": false,
-                   "infinite": false,
-                   "autoplay": true,
-                   "autoplaySpeed": 3000
-               }
-           },
-           {
-               "breakpoint": 768,
-               "settings": {
-                   "slidesToScroll": 2,
-                   "slidesToShow": 2.5,
-                   "rtl": false,
-                   "infinite": false
-               }
-           },
-           {
-               "breakpoint": 480,
-               "settings": {
-                   "slidesToScroll": 2,
-                   "slidesToShow": 2.5,
-                   "rtl": false,
-                   "infinite": false
-               }
-           }
+<div class="frame-group" data-slick='{"arrows": false,"dots":false,"slidesToShow": 6,"slidesToScroll": 1,
+       "responsive": [
+           {
+               "breakpoint": 1280,
+               "settings": {
+                   "slidesToScroll": 1,
+                   "slidesToShow": 4.5,
+                   "rtl": false,
+                   "infinite": true,
+                   "autoplay": true,
+                   "autoplaySpeed": 3000
+               }
+           },{
+               "breakpoint": 1024,
+               "settings": {
+                   "slidesToScroll": 2,
+                   "slidesToShow": 3.5,
+                   "rtl": false,
+                   "infinite": false,
+                   "autoplay": true,
+                   "autoplaySpeed": 3000
+               }
+           },
+           {
+               "breakpoint": 768,
+               "settings": {
+                   "slidesToScroll": 2,
+                   "slidesToShow": 2.5,
+                   "rtl": false,
+                   "infinite": false
+               }
+           },
+           {
+               "breakpoint": 480,
+               "settings": {
+                   "slidesToScroll": 2,
+                   "slidesToShow": 2.5,
+                   "rtl": false,
+                   "infinite": false
+               }
+           }
        ]}'>
 <div class="frame-box">
 <a class="frame-item" href="/frame-shape/browline">
 <span class="frame-img">
 <img alt="" src="/product_images/uploaded_images/browline.jpg"/>
 </span>
-<span class="frame-title">
-                   Browline
+<span class="frame-title">
+                   Browline
                </span>
 </a>
 </div>
@@ -1397,8 +1397,8 @@ li.tab.nav-include.retainer_delete {
 <span class="frame-img">
 <img alt="" src="/product_images/uploaded_images/butterfly.jpg"/>
 </span>
-<span class="frame-title">
-                   Butterfly
+<span class="frame-title">
+                   Butterfly
                </span>
 </a>
 </div>
@@ -1407,8 +1407,8 @@ li.tab.nav-include.retainer_delete {
 <span class="frame-img">
 <img alt="" src="/product_images/uploaded_images/cat-eye.jpg"/>
 </span>
-<span class="frame-title">
-                   Cat Eye
+<span class="frame-title">
+                   Cat Eye
                </span>
 </a>
 </div>
@@ -1417,8 +1417,8 @@ li.tab.nav-include.retainer_delete {
 <span class="frame-img">
 <img alt="" src="/product_images/uploaded_images/geometric.jpg"/>
 </span>
-<span class="frame-title">
-                   Geometric
+<span class="frame-title">
+                   Geometric
                </span>
 </a>
 </div>
@@ -1427,8 +1427,8 @@ li.tab.nav-include.retainer_delete {
 <span class="frame-img">
 <img alt="" src="/product_images/uploaded_images/oval.jpg"/>
 </span>
-<span class="frame-title">
-                   Oval
+<span class="frame-title">
+                   Oval
                </span>
 </a>
 </div>
@@ -1437,8 +1437,8 @@ li.tab.nav-include.retainer_delete {
 <span class="frame-img">
 <img alt="" src="/product_images/uploaded_images/pilot.jpg"/>
 </span>
-<span class="frame-title">
-                   Pilot
+<span class="frame-title">
+                   Pilot
                </span>
 </a>
 </div>
@@ -1460,8 +1460,8 @@ li.tab.nav-include.retainer_delete {
 <span class="frame-img">
 <img alt="" src="/product_images/uploaded_images/browline.jpg"/>
 </span>
-<span class="frame-title">
-                    Browline
+<span class="frame-title">
+                    Browline
                 </span>
 </a>
 </div>
@@ -1470,8 +1470,8 @@ li.tab.nav-include.retainer_delete {
 <span class="frame-img">
 <img alt="" src="/product_images/uploaded_images/butterfly.jpg"/>
 </span>
-<span class="frame-title">
-                    Butterfly
+<span class="frame-title">
+                    Butterfly
                 </span>
 </a>
 </div>
@@ -1480,8 +1480,8 @@ li.tab.nav-include.retainer_delete {
 <span class="frame-img">
 <img alt="" src="/product_images/uploaded_images/cat-eye.jpg"/>
 </span>
-<span class="frame-title">
-                    Cat Eye
+<span class="frame-title">
+                    Cat Eye
                 </span>
 </a>
 </div>
@@ -1490,8 +1490,8 @@ li.tab.nav-include.retainer_delete {
 <span class="frame-img">
 <img alt="" src="/product_images/uploaded_images/geometric.jpg"/>
 </span>
-<span class="frame-title">
-                    Geometric
+<span class="frame-title">
+                    Geometric
                 </span>
 </a>
 </div>
@@ -1500,8 +1500,8 @@ li.tab.nav-include.retainer_delete {
 <span class="frame-img">
 <img alt="" src="/product_images/uploaded_images/oval.jpg"/>
 </span>
-<span class="frame-title">
-                    Oval
+<span class="frame-title">
+                    Oval
                 </span>
 </a>
 </div>
@@ -1510,8 +1510,8 @@ li.tab.nav-include.retainer_delete {
 <span class="frame-img">
 <img alt="" src="/product_images/uploaded_images/pilot.jpg"/>
 </span>
-<span class="frame-title">
-                    Pilot
+<span class="frame-title">
+                    Pilot
                 </span>
 </a>
 </div>
@@ -1520,8 +1520,8 @@ li.tab.nav-include.retainer_delete {
 <span class="frame-img">
 <img alt="" src="/product_images/uploaded_images/rectangle.jpg"/>
 </span>
-<span class="frame-title">
-                     Rectangle
+<span class="frame-title">
+                     Rectangle
                  </span>
 </a>
 </div>
@@ -1530,8 +1530,8 @@ li.tab.nav-include.retainer_delete {
 <span class="frame-img">
 <img alt="" src="/product_images/uploaded_images/round.jpg"/>
 </span>
-<span class="frame-title">
-                      Round
+<span class="frame-title">
+                      Round
                   </span>
 </a>
 </div>
@@ -1540,8 +1540,8 @@ li.tab.nav-include.retainer_delete {
 <span class="frame-img">
 <img alt="" src="/product_images/uploaded_images/shield.jpg"/>
 </span>
-<span class="frame-title">
-                       Shield
+<span class="frame-title">
+                       Shield
                    </span>
 </a>
 </div>
@@ -1550,8 +1550,8 @@ li.tab.nav-include.retainer_delete {
 <span class="frame-img">
 <img alt="" src="/product_images/uploaded_images/square.jpg"/>
 </span>
-<span class="frame-title">
-                        Square
+<span class="frame-title">
+                        Square
                     </span>
 </a>
 </div>
@@ -1648,16 +1648,16 @@ li.tab.nav-include.retainer_delete {
 </a>
 </div>
 </li>
-<!-- <li>
-            <div class="category-image">
-                <a href="#" title=""><img src="/product_images/uploaded_images/cat-sport.jpg" alt=""></a>
-            </div>
-            <div class="category-name">
-                <a href="#" title="">
-                    <span>Youth</span>
-                    <span class="explore">+ Explore</span>
-                </a>
-            </div>
+<!-- <li>
+            <div class="category-image">
+                <a href="#" title=""><img src="/product_images/uploaded_images/cat-sport.jpg" alt=""></a>
+            </div>
+            <div class="category-name">
+                <a href="#" title="">
+                    <span>Youth</span>
+                    <span class="explore">+ Explore</span>
+                </a>
+            </div>
           </li> -->
 <li>
 <div class="category-image">
@@ -1678,8 +1678,8 @@ li.tab.nav-include.retainer_delete {
 <h2 class="page-heading">Shop Popular Brands</h2>
 <p>He wears them. She wears them. Everyone wears them. Shop the top selling brands worn around the world at our low outlet pricing.</p>
 <div class="see-all-link">
-<a data-reveal-id="modal-brand-list" href="">
-             See all
+<a data-reveal-id="modal-brand-list" href="">
+             See all
           </a>
 </div>
 </div>
@@ -1775,34 +1775,34 @@ li.tab.nav-include.retainer_delete {
 </div>
 </div>
 </div>
-<!-- <div class="newsletter" data-section-type="newsletterSubscription">
-          <div class="newsletter-main">
-              <div class="newsletter-inner">
-                <div class="newsletter-content">
-    <div class="news-content-cl">
-        <div class="section-heading">
-            <h2 class="page-heading">Stay in <span class="line-text">Touch</span></h2>
-        </div>
-        <p>Subscribe to the newsletter for exclusive access to the latest trends, sales & special offers. </p>      
-    </div>
-  
-  <form class="form" action="/subscribe.php" method="post">
-      <fieldset class="form-fieldset">
-          <input type="hidden" name="action" value="subscribe">
-          <input type="hidden" name="nl_first_name" value="bc">
-          <input type="hidden" name="check" value="1">
-          <div class="form-field">
-              <label class="form-label is-srOnly" for="nl_email">Email Address</label>
-              <div class="form-prefixPostfix wrap">
-                  <input class="form-input" id="nl_email" name="nl_email" type="email" value="" placeholder="Your email address" onfocus="this.placeholder =''" onblur="this.placeholder = 'Your email address'">
-                  <input class="button button--primary form-prefixPostfix-button--postfix" type="submit" value="JOIN">
-              </div>
-          </div>
-      </fieldset>
-  </form>
-</div>
-              </div>
-          </div>
+<!-- <div class="newsletter" data-section-type="newsletterSubscription">
+          <div class="newsletter-main">
+              <div class="newsletter-inner">
+                <div class="newsletter-content">
+    <div class="news-content-cl">
+        <div class="section-heading">
+            <h2 class="page-heading">Stay in <span class="line-text">Touch</span></h2>
+        </div>
+        <p>Subscribe to the newsletter for exclusive access to the latest trends, sales & special offers. </p>      
+    </div>
+  
+  <form class="form" action="/subscribe.php" method="post">
+      <fieldset class="form-fieldset">
+          <input type="hidden" name="action" value="subscribe">
+          <input type="hidden" name="nl_first_name" value="bc">
+          <input type="hidden" name="check" value="1">
+          <div class="form-field">
+              <label class="form-label is-srOnly" for="nl_email">Email Address</label>
+              <div class="form-prefixPostfix wrap">
+                  <input class="form-input" id="nl_email" name="nl_email" type="email" value="" placeholder="Your email address" onfocus="this.placeholder =''" onblur="this.placeholder = 'Your email address'">
+                  <input class="button button--primary form-prefixPostfix-button--postfix" type="submit" value="JOIN">
+              </div>
+          </div>
+      </fieldset>
+  </form>
+</div>
+              </div>
+          </div>
     </div> -->
 </div>
 <div class="modal" data-prevent-quick-search-close="" data-reveal="" id="modal">
@@ -1822,28 +1822,28 @@ li.tab.nav-include.retainer_delete {
 <div class="klaviyo-form-RPBKp7"></div>
 </div>
 <footer class="footer" role="contentinfo">
-<!--<div class="newsletter-content">
-<div class="news-content-cl">
-<div class="section-heading">
-<h2 class="page-heading">Stay in <span class="line-text">Touch</span></h2>
-</div>
-<p>Subscribe to the newsletter for exclusive access to the latest trends, sales & special offers. </p>      
-</div>
-
-<form class="form" action="/subscribe.php" method="post">
-<fieldset class="form-fieldset">
-<input type="hidden" name="action" value="subscribe">
-<input type="hidden" name="nl_first_name" value="bc">
-<input type="hidden" name="check" value="1">
-<div class="form-field">
-<label class="form-label is-srOnly" for="nl_email">Email Address</label>
-<div class="form-prefixPostfix wrap">
-<input class="form-input" id="nl_email" name="nl_email" type="email" value="" placeholder="Your email address" onfocus="this.placeholder =''" onblur="this.placeholder = 'Your email address'">
-<input class="button button--primary form-prefixPostfix-button--postfix" type="submit" value="JOIN">
-</div>
-</div>
-</fieldset>
-</form>
+<!--<div class="newsletter-content">
+<div class="news-content-cl">
+<div class="section-heading">
+<h2 class="page-heading">Stay in <span class="line-text">Touch</span></h2>
+</div>
+<p>Subscribe to the newsletter for exclusive access to the latest trends, sales & special offers. </p>      
+</div>
+
+<form class="form" action="/subscribe.php" method="post">
+<fieldset class="form-fieldset">
+<input type="hidden" name="action" value="subscribe">
+<input type="hidden" name="nl_first_name" value="bc">
+<input type="hidden" name="check" value="1">
+<div class="form-field">
+<label class="form-label is-srOnly" for="nl_email">Email Address</label>
+<div class="form-prefixPostfix wrap">
+<input class="form-input" id="nl_email" name="nl_email" type="email" value="" placeholder="Your email address" onfocus="this.placeholder =''" onblur="this.placeholder = 'Your email address'">
+<input class="button button--primary form-prefixPostfix-button--postfix" type="submit" value="JOIN">
+</div>
+</div>
+</fieldset>
+</form>
 </div>-->
 <div class="footer-top-section">
 <div class="container">
@@ -1934,25 +1934,25 @@ li.tab.nav-include.retainer_delete {
 <h5 class="footer-info-heading"><a href="/contact-us/">Contact Us</a></h5>
 <h5 class="footer-info-heading footer-info-heading-mobile">Contact Us</h5>
 <ul class="footer-info-list">
-<!--<li>
-                          <a href="javascript:void(0);" onclick="Reamaze.popup();">
-                              <svg><use xlink:href="#icon-live-chat" /></svg><span>Live Chat</span>
-                          </a>
+<!--<li>
+                          <a href="javascript:void(0);" onclick="Reamaze.popup();">
+                              <svg><use xlink:href="#icon-live-chat" /></svg><span>Live Chat</span>
+                          </a>
                       </li>-->
 <li>
 <a href="mailto:support@sunglassoutlet.com">
 <svg><use xlink:href="#icon-closed-envelope"></use></svg><span>support@sunglassoutlet.com</span>
 </a>
 </li>
-<!--<li>
-                          <a href="tel:877-933-0035">
-                             <svg><use xlink:href="#icon-telephone-handle" /></svg><span>877-933-0035</span>
-                          </a>
+<!--<li>
+                          <a href="tel:877-933-0035">
+                             <svg><use xlink:href="#icon-telephone-handle" /></svg><span>877-933-0035</span>
+                          </a>
                       </li>-->
-<!--<li class="for-mobile-and-tab-only">
-                        <a data-reveal-id="modal_callback_form" href="#" class="request-call-back-button">
-                            <i class="fa fa-reply-all" aria-hidden="true"></i>Request a callback
-                        </a>
+<!--<li class="for-mobile-and-tab-only">
+                        <a data-reveal-id="modal_callback_form" href="#" class="request-call-back-button">
+                            <i class="fa fa-reply-all" aria-hidden="true"></i>Request a callback
+                        </a>
                       </li>-->
 </ul>
 </article>
@@ -2037,53 +2037,53 @@ li.tab.nav-include.retainer_delete {
 </div>
 </article>
 </footer>
-<style>
-.cat_heading{
-    background: #f1f2f4;
-    font-weight: 900;
-    padding: 5px 15px;
-}
-.count{
-    border: 1px solid lightgray;
-    background: lightgray;
-    font-size: 11px;
-    border-radius: 30px;
-    padding: 3px 6px;
-}
-.count-compare{
-    border: 1px solid #ff7f64;
-    background: #ff7f64;
-    font-size: 11px;
-    border-radius: 30px;
-    color: white;
-    margin-left: 6px;
-    padding: 4px 8px;
-}
-.compare-content ul li.compare-itm .product-image{
-    background: white !important;
-}
-@media only screen and (max-width: 767px){
-    .compare-content ul{
-        display: flex !important;
-    }
-    .compare-wrapper.active .compare-content ul{
-        display: block !important;
-    }
-    .compare-content ul li.compare-itm {
-        background: white !important;
-    }
-}
-
-@media only screen and (min-width: 1300px){
-    .compare-content{
-        height: 374px !important;
-        overflow-y: scroll !important;
-    }
-}
-.compare-content ul{
-    overflow-y: unset !important;
-    max-height: unset !important;
-}
+<style>
+.cat_heading{
+    background: #f1f2f4;
+    font-weight: 900;
+    padding: 5px 15px;
+}
+.count{
+    border: 1px solid lightgray;
+    background: lightgray;
+    font-size: 11px;
+    border-radius: 30px;
+    padding: 3px 6px;
+}
+.count-compare{
+    border: 1px solid #ff7f64;
+    background: #ff7f64;
+    font-size: 11px;
+    border-radius: 30px;
+    color: white;
+    margin-left: 6px;
+    padding: 4px 8px;
+}
+.compare-content ul li.compare-itm .product-image{
+    background: white !important;
+}
+@media only screen and (max-width: 767px){
+    .compare-content ul{
+        display: flex !important;
+    }
+    .compare-wrapper.active .compare-content ul{
+        display: block !important;
+    }
+    .compare-content ul li.compare-itm {
+        background: white !important;
+    }
+}
+
+@media only screen and (min-width: 1300px){
+    .compare-content{
+        height: 374px !important;
+        overflow-y: scroll !important;
+    }
+}
+.compare-content ul{
+    overflow-y: unset !important;
+    max-height: unset !important;
+}
 </style>
 <div class="compare-wrapper">
 <div class="compare-inner">
@@ -2116,9 +2116,9 @@ li.tab.nav-include.retainer_delete {
 </div>
 <script>window.__webpack_public_path__ = "https://cdn11.bigcommerce.com/s-qc54sxupbs/stencil/810c14d0-0a4f-013a-37c1-2edc0fb22b4c/e/584384c0-9c4e-013a-1199-06d273e54258/dist/";</script>
 <script src="https://cdn11.bigcommerce.com/s-qc54sxupbs/stencil/810c14d0-0a4f-013a-37c1-2edc0fb22b4c/e/584384c0-9c4e-013a-1199-06d273e54258/dist/theme-bundle.main.js"></script>
-<script>
-            // Exported in app.js
-            window.stencilBootstrap("default", "{\"themeSettings\":{\"alert-backgroundColor\":\"#ffffff\",\"alert-color\":\"#191918\",\"alert-color-alt\":\"#ffffff\",\"applePay-button\":\"black\",\"blockquote-cite-font-color\":\"#999999\",\"blog_size\":\"1680x700\",\"body-bg\":\"#f1f2f4\",\"body-font\":\"Google_Karla_400\",\"brand_size\":\"100x90\",\"brandpage_products_per_page\":30,\"button--default-borderColor\":\"#cccccc\",\"button--default-borderColorActive\":\"#ff7e65\",\"button--default-borderColorHover\":\"#999999\",\"button--default-color\":\"#666666\",\"button--default-colorActive\":\"#000000\",\"button--default-colorHover\":\"#191918\",\"button--disabled-backgroundColor\":\"#cccccc\",\"button--disabled-borderColor\":\"transparent\",\"button--disabled-color\":\"#ffffff\",\"button--icon-svg-color\":\"#ff7e65\",\"button--primary-backgroundColor\":\"#191918\",\"button--primary-backgroundColorActive\":\"#000000\",\"button--primary-backgroundColorHover\":\"#666666\",\"button--primary-color\":\"#ffffff\",\"button--primary-colorActive\":\"#ffffff\",\"button--primary-colorHover\":\"#ffffff\",\"card--alternate-backgroundColor\":\"#ffffff\",\"card--alternate-borderColor\":\"#ffffff\",\"card--alternate-color--hover\":\"#ffffff\",\"card-figcaption-button-background\":\"#ffffff\",\"card-figcaption-button-color\":\"#191918\",\"card-title-color\":\"#191918\",\"card-title-color-hover\":\"#ff7e65\",\"carousel-arrow-bgColor\":\"#ffffff\",\"carousel-arrow-borderColor\":\"#ffffff\",\"carousel-arrow-color\":\"#999999\",\"carousel-bgColor\":\"#ffffff\",\"carousel-description-color\":\"#191918\",\"carousel-dot-bgColor\":\"#ffffff\",\"carousel-dot-color\":\"#191918\",\"carousel-dot-color-active\":\"#ff7e65\",\"carousel-title-color\":\"#191918\",\"categorypage_products_per_page\":30,\"checkRadio-backgroundColor\":\"#ffffff\",\"checkRadio-borderColor\":\"#cccccc\",\"checkRadio-color\":\"#191918\",\"color-black\":\"#000000\",\"color-error\":\"#cc4749\",\"color-errorLight\":\"#ffdddd\",\"color-grey\":\"#999999\",\"color-greyDark\":\"#666666\",\"color-greyDarker\":\"#191918\",\"color-greyDarkest\":\"#000000\",\"color-greyLight\":\"#999999\",\"color-greyLighter\":\"#cccccc\",\"color-greyLightest\":\"#e5e5e5\",\"color-greyMedium\":\"#ff7e65\",\"color-info\":\"#666666\",\"color-infoLight\":\"#dfdfdf\",\"color-primary\":\"#ff7e65\",\"color-primaryDark\":\"#666666\",\"color-primaryDarker\":\"#191918\",\"color-primaryLight\":\"#999999\",\"color-secondary\":\"#ffffff\",\"color-secondaryDark\":\"#e5e5e5\",\"color-secondaryDarker\":\"#cccccc\",\"color-success\":\"#008a06\",\"color-successLight\":\"#d5ffd8\",\"color-textBase\":\"#191918\",\"color-textBase--active\":\"#ff7e65\",\"color-textBase--hover\":\"#ff7e65\",\"color-textHeading\":\"#191918\",\"color-textLink\":\"#191918\",\"color-textLink--active\":\"#ff7e65\",\"color-textLink--hover\":\"#ff7e65\",\"color-textSecondary\":\"#ff7e65\",\"color-textSecondary--active\":\"#191918\",\"color-textSecondary--hover\":\"#191918\",\"color-warning\":\"#f1a500\",\"color-warningLight\":\"#fffdea\",\"color-white\":\"#ffffff\",\"color-whitesBase\":\"#e5e5e5\",\"color_badge_product_sale_badges\":\"#007dc6\",\"color_hover_product_sale_badges\":\"#000000\",\"color_text_product_sale_badges\":\"#ffffff\",\"container-border-global-color-base\":\"#e9eaec\",\"container-fill-base\":\"#ffffff\",\"container-fill-dark\":\"#e5e5e5\",\"default_image_brand\":\"img/BrandDefault.gif\",\"default_image_gift_certificate\":\"img/GiftCertificate.png\",\"default_image_product\":\"img/ProductDefault.gif\",\"dropdown--quickSearch-backgroundColor\":\"#e5e5e5\",\"dropdown--wishList-backgroundColor\":\"#ffffff\",\"fontSize-h1\":48,\"fontSize-h2\":42,\"fontSize-h3\":36,\"fontSize-h4\":22,\"fontSize-h5\":16,\"fontSize-h6\":12,\"fontSize-root\":14,\"footer-backgroundColor\":\"#f1f2f4\",\"form-label-font-color\":\"#666666\",\"gallery_size\":\"425x235\",\"geotrust_ssl_common_name\":\"\",\"geotrust_ssl_seal_size\":\"M\",\"header-backgroundColor\":\"#f1f2f4\",\"headings-font\":\"Google_Montserrat_400\",\"hide_content_navigation\":false,\"homepage_blog_posts_count\":3,\"homepage_featured_products_column_count\":3,\"homepage_featured_products_count\":0,\"homepage_new_products_column_count\":3,\"homepage_new_products_count\":0,\"homepage_show_carousel\":true,\"homepage_show_carousel_arrows\":false,\"homepage_stretch_carousel_images\":false,\"homepage_top_products_column_count\":3,\"homepage_top_products_count\":0,\"icon-color\":\"#ff7e65\",\"icon-color-hover\":\"#999999\",\"icon-ratingEmpty\":\"#f1f2f4\",\"icon-ratingFull\":\"#ff7e65\",\"input-bg-color\":\"#ffffff\",\"input-border-color\":\"#cccccc\",\"input-border-color-active\":\"#999999\",\"input-disabled-bg\":\"#ffffff\",\"input-font-color\":\"#666666\",\"label-backgroundColor\":\"#cccccc\",\"label-color\":\"#ffffff\",\"loadingOverlay-backgroundColor\":\"#ffffff\",\"logo-position\":\"center\",\"logo_fontSize\":28,\"logo_size\":\"150x61\",\"navPages-color\":\"#191918\",\"navPages-color-hover\":\"#ff7e65\",\"navPages-subMenu-backgroundColor\":\"#e5e5e5\",\"navPages-subMenu-separatorColor\":\"#cccccc\",\"navUser-color\":\"#191918\",\"navUser-color-hover\":\"#ff7e65\",\"navUser-dropdown-backgroundColor\":\"#ffffff\",\"navUser-dropdown-borderColor\":\"#d9dbdf\",\"navUser-indicator-backgroundColor\":\"#191918\",\"navigation_design\":\"simple\",\"optimizedCheckout-backgroundImage\":\"\",\"optimizedCheckout-backgroundImage-size\":\"1000x400\",\"optimizedCheckout-body-backgroundColor\":\"#ffffff\",\"optimizedCheckout-buttonPrimary-backgroundColor\":\"#191918\",\"optimizedCheckout-buttonPrimary-backgroundColorActive\":\"#000000\",\"optimizedCheckout-buttonPrimary-backgroundColorDisabled\":\"#cccccc\",\"optimizedCheckout-buttonPrimary-backgroundColorHover\":\"#666666\",\"optimizedCheckout-buttonPrimary-borderColor\":\"#cccccc\",\"optimizedCheckout-buttonPrimary-borderColorActive\":\"transparent\",\"optimizedCheckout-buttonPrimary-borderColorDisabled\":\"transparent\",\"optimizedCheckout-buttonPrimary-borderColorHover\":\"transparent\",\"optimizedCheckout-buttonPrimary-color\":\"#ffffff\",\"optimizedCheckout-buttonPrimary-colorActive\":\"#ffffff\",\"optimizedCheckout-buttonPrimary-colorDisabled\":\"#ffffff\",\"optimizedCheckout-buttonPrimary-colorHover\":\"#ffffff\",\"optimizedCheckout-buttonPrimary-font\":\"Google_Karla_400\",\"optimizedCheckout-buttonSecondary-backgroundColor\":\"#ffffff\",\"optimizedCheckout-buttonSecondary-backgroundColorActive\":\"#e5e5e5\",\"optimizedCheckout-buttonSecondary-backgroundColorHover\":\"#f5f5f5\",\"optimizedCheckout-buttonSecondary-borderColor\":\"#cccccc\",\"optimizedCheckout-buttonSecondary-borderColorActive\":\"#ff7e65\",\"optimizedCheckout-buttonSecondary-borderColorHover\":\"#999999\",\"optimizedCheckout-buttonSecondary-color\":\"#191918\",\"optimizedCheckout-buttonSecondary-colorActive\":\"#000000\",\"optimizedCheckout-buttonSecondary-colorHover\":\"#191918\",\"optimizedCheckout-buttonSecondary-font\":\"Google_Karla_400\",\"optimizedCheckout-colorFocus\":\"#4496f6\",\"optimizedCheckout-contentPrimary-color\":\"#191918\",\"optimizedCheckout-contentPrimary-font\":\"Google_Karla_400\",\"optimizedCheckout-contentSecondary-color\":\"#ff7e65\",\"optimizedCheckout-contentSecondary-font\":\"Google_Karla_400\",\"optimizedCheckout-discountBanner-backgroundColor\":\"#e5e5e5\",\"optimizedCheckout-discountBanner-iconColor\":\"#191918\",\"optimizedCheckout-discountBanner-textColor\":\"#191918\",\"optimizedCheckout-form-textColor\":\"#666666\",\"optimizedCheckout-formChecklist-backgroundColor\":\"#ffffff\",\"optimizedCheckout-formChecklist-backgroundColorSelected\":\"#f5f5f5\",\"optimizedCheckout-formChecklist-borderColor\":\"#cccccc\",\"optimizedCheckout-formChecklist-color\":\"#191918\",\"optimizedCheckout-formField-backgroundColor\":\"#ffffff\",\"optimizedCheckout-formField-borderColor\":\"#cccccc\",\"optimizedCheckout-formField-errorColor\":\"#d14343\",\"optimizedCheckout-formField-inputControlColor\":\"#476bef\",\"optimizedCheckout-formField-placeholderColor\":\"#999999\",\"optimizedCheckout-formField-shadowColor\":\"#e5e5e5\",\"optimizedCheckout-formField-textColor\":\"#191918\",\"optimizedCheckout-header-backgroundColor\":\"#f5f5f5\",\"optimizedCheckout-header-borderColor\":\"#dddddd\",\"optimizedCheckout-header-textColor\":\"#191918\",\"optimizedCheckout-headingPrimary-color\":\"#191918\",\"optimizedCheckout-headingPrimary-font\":\"Google_Montserrat_400\",\"optimizedCheckout-headingSecondary-color\":\"#191918\",\"optimizedCheckout-headingSecondary-font\":\"Google_Montserrat_400\",\"optimizedCheckout-link-color\":\"#476bef\",\"optimizedCheckout-link-font\":\"Google_Karla_400\",\"optimizedCheckout-link-hoverColor\":\"#002fe1\",\"optimizedCheckout-loadingToaster-backgroundColor\":\"#191918\",\"optimizedCheckout-loadingToaster-textColor\":\"#ffffff\",\"optimizedCheckout-logo\":\"\",\"optimizedCheckout-logo-position\":\"left\",\"optimizedCheckout-logo-size\":\"150x55\",\"optimizedCheckout-orderSummary-backgroundColor\":\"#ffffff\",\"optimizedCheckout-orderSummary-borderColor\":\"#dddddd\",\"optimizedCheckout-show-backgroundImage\":false,\"optimizedCheckout-show-logo\":\"none\",\"optimizedCheckout-step-backgroundColor\":\"#ff7e65\",\"optimizedCheckout-step-borderColor\":\"#dddddd\",\"optimizedCheckout-step-textColor\":\"#ffffff\",\"overlay-backgroundColor\":\"#191918\",\"pace-progress-backgroundColor\":\"#999999\",\"paymentbuttons-paypal-color\":\"gold\",\"paymentbuttons-paypal-fundingicons\":false,\"paymentbuttons-paypal-label\":\"checkout\",\"paymentbuttons-paypal-layout\":\"horizontal\",\"paymentbuttons-paypal-shape\":\"pill\",\"paymentbuttons-paypal-size\":\"small\",\"paymentbuttons-paypal-tagline\":true,\"pdp-non-sale-price-label\":\"Was:\",\"pdp-price-label\":\"Outlet Price\",\"pdp-retail-price-label\":\"Retail Price:\",\"pdp-sale-price-label\":\"Now\",\"price_ranges\":true,\"product_list_display_mode\":\"grid\",\"product_sale_badges\":\"topleft\",\"product_size\":\"425x235\",\"productgallery_size\":\"425x235\",\"productpage_related_products_count\":10,\"productpage_reviews_count\":9,\"productpage_similar_by_views_count\":10,\"productpage_videos_count\":8,\"productthumb_size\":\"100x100\",\"productview_thumb_size\":\"100x100\",\"restrict_to_login\":false,\"searchpage_products_per_page\":30,\"select-arrow-color\":\"#ff7e65\",\"select-bg-color\":\"#ffffff\",\"shop_by_brand_show_footer\":true,\"shop_by_price_visibility\":true,\"show_accept_amex\":true,\"show_accept_discover\":true,\"show_accept_mastercard\":true,\"show_accept_paypal\":true,\"show_accept_visa\":true,\"show_copyright_footer\":true,\"show_powered_by\":true,\"show_product_details_tabs\":true,\"show_product_dimensions\":false,\"show_product_quantity_box\":true,\"show_product_quick_view\":true,\"show_product_reviews_tabs\":true,\"show_product_weight\":true,\"social_icon_placement_bottom\":\"right\",\"social_icon_placement_top\":false,\"spinner-borderColor-dark\":\"#e9eaec\",\"spinner-borderColor-light\":\"#ffffff\",\"storeName-color\":\"#191918\",\"supported_card_type_icons\":[\"american_express\",\"diners\",\"discover\",\"mastercard\",\"visa\"],\"swatch_option_size\":\"36x36\",\"thumb_size\":\"150x90\",\"zoom_size\":\"1280x1280\"},\"genericError\":\"Oops! Something went wrong.\",\"maintenanceMode\":[],\"urls\":{\"account\":{\"add_address\":\"/account.php?action=add_shipping_address\",\"addresses\":\"/account.php?action=address_book\",\"details\":\"/account.php?action=account_details\",\"inbox\":\"/account.php?action=inbox\",\"index\":\"/account.php\",\"orders\":{\"all\":\"/account.php?action=order_status\",\"completed\":\"/account.php?action=view_orders\",\"save_new_return\":\"/account.php?action=save_new_return\"},\"payment_methods\":{\"all\":\"/account.php?action=payment_methods\"},\"recent_items\":\"/account.php?action=recent_items\",\"returns\":\"/account.php?action=view_returns\",\"send_message\":\"/account.php?action=send_message\",\"update_action\":\"/account.php?action=update_account\",\"wishlists\":{\"add\":\"/wishlist.php?action=addwishlist\",\"all\":\"/wishlist.php\",\"delete\":\"/wishlist.php?action=deletewishlist\",\"edit\":\"/wishlist.php?action=editwishlist\"}},\"auth\":{\"check_login\":\"/login.php?action=check_login\",\"create_account\":\"/login.php?action=create_account\",\"forgot_password\":\"/login.php?action=reset_password\",\"login\":\"/login.php\",\"logout\":\"/login.php?action=logout\",\"save_new_account\":\"/login.php?action=save_new_account\",\"save_new_password\":\"/login.php?action=save_new_password\",\"send_password_email\":\"/login.php?action=send_password_email\"},\"brands\":\"https://www.sunglassoutlet.com/brands/\",\"cart\":\"/cart.php\",\"checkout\":{\"multiple_address\":\"/checkout.php?action=multiple\",\"single_address\":\"/checkout\"},\"compare\":\"/compare\",\"contact_us_submit\":\"/pages.php?action=sendContactForm\",\"gift_certificate\":{\"balance\":\"/giftcertificates.php?action=balance\",\"purchase\":\"/giftcertificates.php\",\"redeem\":\"/giftcertificates.php?action=redeem\"},\"home\":\"https://www.sunglassoutlet.com/\",\"product\":{\"post_review\":\"/postreview.php\"},\"rss\":{\"products\":[]},\"search\":\"/search.php\",\"sitemap\":\"/sitemap.php\",\"subscribe\":{\"action\":\"/subscribe.php\"}},\"secureBaseUrl\":\"https://www.sunglassoutlet.com\",\"cartId\":null,\"template\":\"pages/home\",\"preMSg\":\"Order in the next\",\"sameDay\":\"for same day shipping\",\"exDayShipping\":\"for shipping on\",\"mondayShipping\":\"for shipping on Monday\",\"sameDayHourend\":\"15\",\"exHourEnd\":\"24\"}").load();
+<script>
+            // Exported in app.js
+            window.stencilBootstrap("default", "{\"themeSettings\":{\"alert-backgroundColor\":\"#ffffff\",\"alert-color\":\"#191918\",\"alert-color-alt\":\"#ffffff\",\"applePay-button\":\"black\",\"blockquote-cite-font-color\":\"#999999\",\"blog_size\":\"1680x700\",\"body-bg\":\"#f1f2f4\",\"body-font\":\"Google_Karla_400\",\"brand_size\":\"100x90\",\"brandpage_products_per_page\":30,\"button--default-borderColor\":\"#cccccc\",\"button--default-borderColorActive\":\"#ff7e65\",\"button--default-borderColorHover\":\"#999999\",\"button--default-color\":\"#666666\",\"button--default-colorActive\":\"#000000\",\"button--default-colorHover\":\"#191918\",\"button--disabled-backgroundColor\":\"#cccccc\",\"button--disabled-borderColor\":\"transparent\",\"button--disabled-color\":\"#ffffff\",\"button--icon-svg-color\":\"#ff7e65\",\"button--primary-backgroundColor\":\"#191918\",\"button--primary-backgroundColorActive\":\"#000000\",\"button--primary-backgroundColorHover\":\"#666666\",\"button--primary-color\":\"#ffffff\",\"button--primary-colorActive\":\"#ffffff\",\"button--primary-colorHover\":\"#ffffff\",\"card--alternate-backgroundColor\":\"#ffffff\",\"card--alternate-borderColor\":\"#ffffff\",\"card--alternate-color--hover\":\"#ffffff\",\"card-figcaption-button-background\":\"#ffffff\",\"card-figcaption-button-color\":\"#191918\",\"card-title-color\":\"#191918\",\"card-title-color-hover\":\"#ff7e65\",\"carousel-arrow-bgColor\":\"#ffffff\",\"carousel-arrow-borderColor\":\"#ffffff\",\"carousel-arrow-color\":\"#999999\",\"carousel-bgColor\":\"#ffffff\",\"carousel-description-color\":\"#191918\",\"carousel-dot-bgColor\":\"#ffffff\",\"carousel-dot-color\":\"#191918\",\"carousel-dot-color-active\":\"#ff7e65\",\"carousel-title-color\":\"#191918\",\"categorypage_products_per_page\":30,\"checkRadio-backgroundColor\":\"#ffffff\",\"checkRadio-borderColor\":\"#cccccc\",\"checkRadio-color\":\"#191918\",\"color-black\":\"#000000\",\"color-error\":\"#cc4749\",\"color-errorLight\":\"#ffdddd\",\"color-grey\":\"#999999\",\"color-greyDark\":\"#666666\",\"color-greyDarker\":\"#191918\",\"color-greyDarkest\":\"#000000\",\"color-greyLight\":\"#999999\",\"color-greyLighter\":\"#cccccc\",\"color-greyLightest\":\"#e5e5e5\",\"color-greyMedium\":\"#ff7e65\",\"color-info\":\"#666666\",\"color-infoLight\":\"#dfdfdf\",\"color-primary\":\"#ff7e65\",\"color-primaryDark\":\"#666666\",\"color-primaryDarker\":\"#191918\",\"color-primaryLight\":\"#999999\",\"color-secondary\":\"#ffffff\",\"color-secondaryDark\":\"#e5e5e5\",\"color-secondaryDarker\":\"#cccccc\",\"color-success\":\"#008a06\",\"color-successLight\":\"#d5ffd8\",\"color-textBase\":\"#191918\",\"color-textBase--active\":\"#ff7e65\",\"color-textBase--hover\":\"#ff7e65\",\"color-textHeading\":\"#191918\",\"color-textLink\":\"#191918\",\"color-textLink--active\":\"#ff7e65\",\"color-textLink--hover\":\"#ff7e65\",\"color-textSecondary\":\"#ff7e65\",\"color-textSecondary--active\":\"#191918\",\"color-textSecondary--hover\":\"#191918\",\"color-warning\":\"#f1a500\",\"color-warningLight\":\"#fffdea\",\"color-white\":\"#ffffff\",\"color-whitesBase\":\"#e5e5e5\",\"color_badge_product_sale_badges\":\"#007dc6\",\"color_hover_product_sale_badges\":\"#000000\",\"color_text_product_sale_badges\":\"#ffffff\",\"container-border-global-color-base\":\"#e9eaec\",\"container-fill-base\":\"#ffffff\",\"container-fill-dark\":\"#e5e5e5\",\"default_image_brand\":\"img/BrandDefault.gif\",\"default_image_gift_certificate\":\"img/GiftCertificate.png\",\"default_image_product\":\"img/ProductDefault.gif\",\"dropdown--quickSearch-backgroundColor\":\"#e5e5e5\",\"dropdown--wishList-backgroundColor\":\"#ffffff\",\"fontSize-h1\":48,\"fontSize-h2\":42,\"fontSize-h3\":36,\"fontSize-h4\":22,\"fontSize-h5\":16,\"fontSize-h6\":12,\"fontSize-root\":14,\"footer-backgroundColor\":\"#f1f2f4\",\"form-label-font-color\":\"#666666\",\"gallery_size\":\"425x235\",\"geotrust_ssl_common_name\":\"\",\"geotrust_ssl_seal_size\":\"M\",\"header-backgroundColor\":\"#f1f2f4\",\"headings-font\":\"Google_Montserrat_400\",\"hide_content_navigation\":false,\"homepage_blog_posts_count\":3,\"homepage_featured_products_column_count\":3,\"homepage_featured_products_count\":0,\"homepage_new_products_column_count\":3,\"homepage_new_products_count\":0,\"homepage_show_carousel\":true,\"homepage_show_carousel_arrows\":false,\"homepage_stretch_carousel_images\":false,\"homepage_top_products_column_count\":3,\"homepage_top_products_count\":0,\"icon-color\":\"#ff7e65\",\"icon-color-hover\":\"#999999\",\"icon-ratingEmpty\":\"#f1f2f4\",\"icon-ratingFull\":\"#ff7e65\",\"input-bg-color\":\"#ffffff\",\"input-border-color\":\"#cccccc\",\"input-border-color-active\":\"#999999\",\"input-disabled-bg\":\"#ffffff\",\"input-font-color\":\"#666666\",\"label-backgroundColor\":\"#cccccc\",\"label-color\":\"#ffffff\",\"loadingOverlay-backgroundColor\":\"#ffffff\",\"logo-position\":\"center\",\"logo_fontSize\":28,\"logo_size\":\"150x61\",\"navPages-color\":\"#191918\",\"navPages-color-hover\":\"#ff7e65\",\"navPages-subMenu-backgroundColor\":\"#e5e5e5\",\"navPages-subMenu-separatorColor\":\"#cccccc\",\"navUser-color\":\"#191918\",\"navUser-color-hover\":\"#ff7e65\",\"navUser-dropdown-backgroundColor\":\"#ffffff\",\"navUser-dropdown-borderColor\":\"#d9dbdf\",\"navUser-indicator-backgroundColor\":\"#191918\",\"navigation_design\":\"simple\",\"optimizedCheckout-backgroundImage\":\"\",\"optimizedCheckout-backgroundImage-size\":\"1000x400\",\"optimizedCheckout-body-backgroundColor\":\"#ffffff\",\"optimizedCheckout-buttonPrimary-backgroundColor\":\"#191918\",\"optimizedCheckout-buttonPrimary-backgroundColorActive\":\"#000000\",\"optimizedCheckout-buttonPrimary-backgroundColorDisabled\":\"#cccccc\",\"optimizedCheckout-buttonPrimary-backgroundColorHover\":\"#666666\",\"optimizedCheckout-buttonPrimary-borderColor\":\"#cccccc\",\"optimizedCheckout-buttonPrimary-borderColorActive\":\"transparent\",\"optimizedCheckout-buttonPrimary-borderColorDisabled\":\"transparent\",\"optimizedCheckout-buttonPrimary-borderColorHover\":\"transparent\",\"optimizedCheckout-buttonPrimary-color\":\"#ffffff\",\"optimizedCheckout-buttonPrimary-colorActive\":\"#ffffff\",\"optimizedCheckout-buttonPrimary-colorDisabled\":\"#ffffff\",\"optimizedCheckout-buttonPrimary-colorHover\":\"#ffffff\",\"optimizedCheckout-buttonPrimary-font\":\"Google_Karla_400\",\"optimizedCheckout-buttonSecondary-backgroundColor\":\"#ffffff\",\"optimizedCheckout-buttonSecondary-backgroundColorActive\":\"#e5e5e5\",\"optimizedCheckout-buttonSecondary-backgroundColorHover\":\"#f5f5f5\",\"optimizedCheckout-buttonSecondary-borderColor\":\"#cccccc\",\"optimizedCheckout-buttonSecondary-borderColorActive\":\"#ff7e65\",\"optimizedCheckout-buttonSecondary-borderColorHover\":\"#999999\",\"optimizedCheckout-buttonSecondary-color\":\"#191918\",\"optimizedCheckout-buttonSecondary-colorActive\":\"#000000\",\"optimizedCheckout-buttonSecondary-colorHover\":\"#191918\",\"optimizedCheckout-buttonSecondary-font\":\"Google_Karla_400\",\"optimizedCheckout-colorFocus\":\"#4496f6\",\"optimizedCheckout-contentPrimary-color\":\"#191918\",\"optimizedCheckout-contentPrimary-font\":\"Google_Karla_400\",\"optimizedCheckout-contentSecondary-color\":\"#ff7e65\",\"optimizedCheckout-contentSecondary-font\":\"Google_Karla_400\",\"optimizedCheckout-discountBanner-backgroundColor\":\"#e5e5e5\",\"optimizedCheckout-discountBanner-iconColor\":\"#191918\",\"optimizedCheckout-discountBanner-textColor\":\"#191918\",\"optimizedCheckout-form-textColor\":\"#666666\",\"optimizedCheckout-formChecklist-backgroundColor\":\"#ffffff\",\"optimizedCheckout-formChecklist-backgroundColorSelected\":\"#f5f5f5\",\"optimizedCheckout-formChecklist-borderColor\":\"#cccccc\",\"optimizedCheckout-formChecklist-color\":\"#191918\",\"optimizedCheckout-formField-backgroundColor\":\"#ffffff\",\"optimizedCheckout-formField-borderColor\":\"#cccccc\",\"optimizedCheckout-formField-errorColor\":\"#d14343\",\"optimizedCheckout-formField-inputControlColor\":\"#476bef\",\"optimizedCheckout-formField-placeholderColor\":\"#999999\",\"optimizedCheckout-formField-shadowColor\":\"#e5e5e5\",\"optimizedCheckout-formField-textColor\":\"#191918\",\"optimizedCheckout-header-backgroundColor\":\"#f5f5f5\",\"optimizedCheckout-header-borderColor\":\"#dddddd\",\"optimizedCheckout-header-textColor\":\"#191918\",\"optimizedCheckout-headingPrimary-color\":\"#191918\",\"optimizedCheckout-headingPrimary-font\":\"Google_Montserrat_400\",\"optimizedCheckout-headingSecondary-color\":\"#191918\",\"optimizedCheckout-headingSecondary-font\":\"Google_Montserrat_400\",\"optimizedCheckout-link-color\":\"#476bef\",\"optimizedCheckout-link-font\":\"Google_Karla_400\",\"optimizedCheckout-link-hoverColor\":\"#002fe1\",\"optimizedCheckout-loadingToaster-backgroundColor\":\"#191918\",\"optimizedCheckout-loadingToaster-textColor\":\"#ffffff\",\"optimizedCheckout-logo\":\"\",\"optimizedCheckout-logo-position\":\"left\",\"optimizedCheckout-logo-size\":\"150x55\",\"optimizedCheckout-orderSummary-backgroundColor\":\"#ffffff\",\"optimizedCheckout-orderSummary-borderColor\":\"#dddddd\",\"optimizedCheckout-show-backgroundImage\":false,\"optimizedCheckout-show-logo\":\"none\",\"optimizedCheckout-step-backgroundColor\":\"#ff7e65\",\"optimizedCheckout-step-borderColor\":\"#dddddd\",\"optimizedCheckout-step-textColor\":\"#ffffff\",\"overlay-backgroundColor\":\"#191918\",\"pace-progress-backgroundColor\":\"#999999\",\"paymentbuttons-paypal-color\":\"gold\",\"paymentbuttons-paypal-fundingicons\":false,\"paymentbuttons-paypal-label\":\"checkout\",\"paymentbuttons-paypal-layout\":\"horizontal\",\"paymentbuttons-paypal-shape\":\"pill\",\"paymentbuttons-paypal-size\":\"small\",\"paymentbuttons-paypal-tagline\":true,\"pdp-non-sale-price-label\":\"Was:\",\"pdp-price-label\":\"Outlet Price\",\"pdp-retail-price-label\":\"Retail Price:\",\"pdp-sale-price-label\":\"Now\",\"price_ranges\":true,\"product_list_display_mode\":\"grid\",\"product_sale_badges\":\"topleft\",\"product_size\":\"425x235\",\"productgallery_size\":\"425x235\",\"productpage_related_products_count\":10,\"productpage_reviews_count\":9,\"productpage_similar_by_views_count\":10,\"productpage_videos_count\":8,\"productthumb_size\":\"100x100\",\"productview_thumb_size\":\"100x100\",\"restrict_to_login\":false,\"searchpage_products_per_page\":30,\"select-arrow-color\":\"#ff7e65\",\"select-bg-color\":\"#ffffff\",\"shop_by_brand_show_footer\":true,\"shop_by_price_visibility\":true,\"show_accept_amex\":true,\"show_accept_discover\":true,\"show_accept_mastercard\":true,\"show_accept_paypal\":true,\"show_accept_visa\":true,\"show_copyright_footer\":true,\"show_powered_by\":true,\"show_product_details_tabs\":true,\"show_product_dimensions\":false,\"show_product_quantity_box\":true,\"show_product_quick_view\":true,\"show_product_reviews_tabs\":true,\"show_product_weight\":true,\"social_icon_placement_bottom\":\"right\",\"social_icon_placement_top\":false,\"spinner-borderColor-dark\":\"#e9eaec\",\"spinner-borderColor-light\":\"#ffffff\",\"storeName-color\":\"#191918\",\"supported_card_type_icons\":[\"american_express\",\"diners\",\"discover\",\"mastercard\",\"visa\"],\"swatch_option_size\":\"36x36\",\"thumb_size\":\"150x90\",\"zoom_size\":\"1280x1280\"},\"genericError\":\"Oops! Something went wrong.\",\"maintenanceMode\":[],\"urls\":{\"account\":{\"add_address\":\"/account.php?action=add_shipping_address\",\"addresses\":\"/account.php?action=address_book\",\"details\":\"/account.php?action=account_details\",\"inbox\":\"/account.php?action=inbox\",\"index\":\"/account.php\",\"orders\":{\"all\":\"/account.php?action=order_status\",\"completed\":\"/account.php?action=view_orders\",\"save_new_return\":\"/account.php?action=save_new_return\"},\"payment_methods\":{\"all\":\"/account.php?action=payment_methods\"},\"recent_items\":\"/account.php?action=recent_items\",\"returns\":\"/account.php?action=view_returns\",\"send_message\":\"/account.php?action=send_message\",\"update_action\":\"/account.php?action=update_account\",\"wishlists\":{\"add\":\"/wishlist.php?action=addwishlist\",\"all\":\"/wishlist.php\",\"delete\":\"/wishlist.php?action=deletewishlist\",\"edit\":\"/wishlist.php?action=editwishlist\"}},\"auth\":{\"check_login\":\"/login.php?action=check_login\",\"create_account\":\"/login.php?action=create_account\",\"forgot_password\":\"/login.php?action=reset_password\",\"login\":\"/login.php\",\"logout\":\"/login.php?action=logout\",\"save_new_account\":\"/login.php?action=save_new_account\",\"save_new_password\":\"/login.php?action=save_new_password\",\"send_password_email\":\"/login.php?action=send_password_email\"},\"brands\":\"https://www.sunglassoutlet.com/brands/\",\"cart\":\"/cart.php\",\"checkout\":{\"multiple_address\":\"/checkout.php?action=multiple\",\"single_address\":\"/checkout\"},\"compare\":\"/compare\",\"contact_us_submit\":\"/pages.php?action=sendContactForm\",\"gift_certificate\":{\"balance\":\"/giftcertificates.php?action=balance\",\"purchase\":\"/giftcertificates.php\",\"redeem\":\"/giftcertificates.php?action=redeem\"},\"home\":\"https://www.sunglassoutlet.com/\",\"product\":{\"post_review\":\"/postreview.php\"},\"rss\":{\"products\":[]},\"search\":\"/search.php\",\"sitemap\":\"/sitemap.php\",\"subscribe\":{\"action\":\"/subscribe.php\"}},\"secureBaseUrl\":\"https://www.sunglassoutlet.com\",\"cartId\":null,\"template\":\"pages/home\",\"preMSg\":\"Order in the next\",\"sameDay\":\"for same day shipping\",\"exDayShipping\":\"for shipping on\",\"mondayShipping\":\"for shipping on Monday\",\"sameDayHourend\":\"15\",\"exHourEnd\":\"24\"}").load();
         </script>
 <script defer="" src="https://cdn11.bigcommerce.com/shared/js/datatags-a6c27a4dafebddd5845000c8abc99b2096434171.js" type="text/javascript"></script>
 <script type="text/javascript">
@@ -2482,260 +2482,260 @@ addEventListenerStamped(document, 'stamped:widget:carousel:loaded', function(e) 
 <!-- snippet location footer -->
 <!--<script src='https://sunglassoutlet.com/content/magiczoomplus/magiczoomplus.stencil.js' defer></script>-->
 <script crossorigin="anonymous" integrity="sha256-ZQGLNISOtnQdRdKwA8Ou7EyEVtnE2k1oBZPBr5NcGQs=" src="https://cdnjs.cloudflare.com/ajax/libs/fixto/0.5.0/fixto.min.js"></script>
-<script>
-        
-            $(document).on('Searchanise.ResultsUpdated', function() {
-                selected = [];
-                $(' .snize-product-filters-checkbox ').each(function(){
-                    if($(this).is(':checked')){
-                        var ch ={};
-                        var html = '<span>'+$(this).val()+' <i class="snize-product-filters-reset value" data-value = "'+$(this).val()+'" data-facet="'+$(this).attr('name')+'"></i>  </span>';
-                        ch.name = html;
-                        ch.value = $(this).val();
-                        selected[selected.length]  = ch;
-                    }
-                })
-
-                $(' .snize-filters-dropdown-title ').each(function(){
-                    if( $(this).parent().attr('id') ==   'snize_filters_dropdown_price' ){
-                        if($(this).find('a').length){
-                            var html = $(this).html();
-                            var ch ={};
-                            ch.name = $(html).append();
-                            ch.value = $(this).text();
-                            selected[selected.length]  = ch;
-                        }
-                    }
-                })
-
-                if( selected.length != 0 ){
-                    if($('.snize-horizontal-filters-selected').length < 1){
-                        $('<div class="selected-filters" style="border: 0px!important;"><div class="label"><strong>Applied Filter</strong></div><div class="snize-horizontal-filters-selected"></div><a class="reset-link" href=""> Reset Filters</a></div>').insertAfter($('.snize-horizontal-filters', this));
-                        //$('<div class="selected-filters"><strong>Applied Filter</strong> <div class="snize-horizontal-filters-selected"></div></div>').insertAfter($('.snize-horizontal-filters', this));
-                    }
-                }
-                else{
-                    $('.selected-filters').empty();
-                }
-                $('.snize-horizontal-filters-selected').empty();
-
-                selected.forEach(item => {
-                    $('.snize-horizontal-filters-selected').append(item.name);
-                });
-
-
-                $('#snize-search-results-grid-mode   .snize-product').each(function() {
-                	$('.snize-reviews', this).insertBefore($('.snize-title', this));
-                });
-               
-                // For List View
-                $('#snize-search-results-list-mode   .snize-product').each(function() {
-                    $('.snize-reviews', this).insertAfter($('.snize-thumbnail', this));
-                    $('.snize-price-list', this).insertAfter($('.snize-reviews', this));
-                    $('.snize-in-stock', this).insertAfter($('.snize-price-list', this));
-                    $('.snize-button', this).insertAfter($('.snize-in-stock', this));
-                   
-                    /*console.log('DIV');
-                    console.log($(".snize-custom-fields").children().length);
-                    $(".snize-custom-fields").children().each(function(){
-
-                        var txt = $(this).text();
-                        console.log(txt);
-                        var split = txt.split(':');
-                        console.log(split);
-                        $(this).empty();
-                        $(this).append('<span class="label">'+split[0]+'</span> <span class="value">'+split[1]+'</span>');
-                    });*/
-
-                });
-
-               
-
-                /*$('.snize-add-to-cart-button').each(function() {
-                    var productId = $(this).parents('.snize-product').eq(0).attr('id').replace('snize-product-', '');
-                    $(this).attr('href', 'product_id=' + productId).removeClass('snize-add-to-cart-button').addClass('addtocartlist');
-                }).click(function() {
-                    setTimeout(function() {
-                       $.getJSON('/api/storefront/carts', function(carts) {
-                            var cartQuantity = 0;
-
-                            $.each(carts[0].lineItems, function(itemType, items) {
-                                $.each(items, function(k, item) {
-                                    cartQuantity += item.quantity;
-                                });
-                            });
-
-                            $('.cart-quantity').html(cartQuantity).show();
-                        });
-                    }, 3000);
-                });*/
-               
-                $('.snize-add-to-cart-button').each(function() {
-                    var productId = $(this).parents('.snize-product').eq(0).attr('id').replace('snize-product-', '');
-                    
-                    $(this).attr('data-product-id', productId).attr('href', 'product_id=' + productId).removeClass('snize-add-to-cart-button snize-action-button').addClass('addtocartlist');
-                    //for adding compare button on product list
-                    $("li#snize-product-"+productId).append('<div title="Compare" class="compare-button compare_div desk"><a data-tooltip="" title="Compare" class="compare_a button button--small card-figcaption-button compare-box button card-button compare" for="compare-'+productId+'" data-compare-id="'+productId+'"></a></div>');
-                    $("li#snize-product-"+productId).append('<div title="Compare" class="compare-button mobile"><a data-tooltip="" title="Compare" class="button button--small card-figcaption-button compare-box button card-button compare" for="compare-'+productId+'" data-compare-id="'+productId+'">Compare</a></div>');
-                    $("li#snize-product-"+productId).mouseenter(function(){
-                        $('li#snize-product-'+productId+' > .desk').css('display','block');
-                    });
-                    $("li#snize-product-"+productId).mouseleave(function(){
-                        $('li#snize-product-'+productId+' > .desk').css("display", "none");
-                    });
-                }).click(function(e) {
-                    e.preventDefault();
-                    $.post('/cart.php', {action: 'add', product_id: $(this).attr('data-product-id')}, function() {
-                        setTimeout(function() {
-                           $.getJSON('/api/storefront/carts', function(carts) {
-                                var cartQuantity = 0;
-    
-                                $.each(carts[0].lineItems, function(itemType, items) {
-                                    $.each(items, function(k, item) {
-                                        cartQuantity += item.quantity;
-                                    });
-                                });
-    
-                                $('.cart-quantity').html(cartQuantity).show();
-                            });
-                        }, 1000);
-                    });
-                });
-            });
-          
-            $(document).on('click','.snize-horizontal-filters-selected .snize-product-filters-reset.value',function(){
-                $('input[name="'+$(this).data('facet')+'"][value="'+$(this).data('value')+'"]').click();
-            });
-
-            $(document).on('click','.snize-horizontal-filters-selected .snize-product-filters-reset',function(){
-                $('div.snize-horizontal-filters').find('i[data-se-facet-attribute="'+$(this).data('se-facet-attribute')+'"]').click();
-            });
-
-            //for callback form on order details
-            $('#defaultCheck6').change(function() {
-                if(this.checked) {
-                    $(".other-check-selected").show();
-                }else{
-                    $(".other-check-selected").hide();
-                }       
-            });
-            $('a.compare_a.button.button--small.card-figcaption-button.button.card-button.compare').mouseover(function(){
-                $('a.compare_a.button.button--small.card-figcaption-button.button.card-button.compare').css('border','2px solid rgb(255, 206, 196)');
-            });
-            jQuery.validator.addMethod('phoneUK', function(phone_number, element) {
-                return this.optional(element) || phone_number.length > 9 &&
-                phone_number.match(/^(\(?(0|\+44)[1-9]{1}\d{1,4}?\)?\s?\d{3,4}\s?\d{3,4})$/);
-            }, 'Please specify a valid phone number');
-            /*$("#callback-req-frm").validate({
-                rules: {
-                    // simple rule, converted to {required:true}
-                    name: "required",
-                    phone_number: {
-                      required: true,
-                      phoneUS: true
-                    },
-                    order_number: {
-                      required: false,
-                      minlength: 6,
-                      maxlength: 6,
-                    },
-                    'regards[]': {
-                        required: true,
-                    },
-                    other_regards_to: {
-                      required: function(element) {
-                        return $('#defaultCheck6').is(':checked');
-                      }
-                    },
-                },
-                messages: {
-                    'regards[]': {
-                        required: "You must check at least 1 box" 
-                    }
-                },
-                errorPlacement: function (error, element) {
-                    if (element.attr("name") == "name"){
-                        $("span.name-error").html(error);
-                    }else if(element.attr("name") == "phone_number"){
-                        $("span.phone-error").html(error);
-                    }else if(element.attr("name") == "order_number"){
-                        $("span.ordernmbr-error").html(error);
-                    }else if(element.attr("name") == "regards[]"){
-                        $("span.regards-error").html(error);
-                    }else if(element.attr("name") == "other_regards_to"){
-                        $("span.otherregardsto-error").html(error);
-                    }
-                },
-                submitHandler: function (form) { // for demo
-                    var datastring = $(".callback_Request-form").serialize();
-                    $('.callback_Request-form button[type="submit"]').text('SUBMITTING...');
-                    $.ajax({
-                        type: "POST",
-                        url: "https://req-callback.herokuapp.com/log_data.php",
-                        data: datastring,
-                        dataType: "json",
-                        complete: function complete(data) {
-                        //         $('.callback_Request-form').fadeOut();
-                        //         $("<h4 class='call-back-fields form-success-msg'>Callback Request Successfully Sent</h4>").insertAfter(".callback_Request-form");
-                        //     setTimeout(function () {
-                        //         $('.callback_Request-form input').val('');
-                        //         $('.callback_Request-form input[type="checkbox"]').prop('checked', false);
-                        //         $('.callback_Request-form').fadeIn();
-                        //         $('.callback_Request-form button[type="submit"]').text('SUBMIT');
-                        //         $('.form-success-msg').fadeOut();
-                        //   }, 5000);
-                        $('#modal_callback_form').removeClass('open').hide();
-                        $('body').removeClass('has-activeModal');
-                        $('#callback-req-frm')[0].reset();
-                        $('.callback_Request-form button[type="submit"]').text('SUBMIT');
-
-                        $('#modal_callback_success').modal('show');
-                    },
-                    error: function error() {
-                      $('.result').append('error handing here');
-                    }
-                  });
-                }
-            });*/
-            $("#modal_callback_success .make-me-hide").click(function(){
-                $('#modal_callback_success').modal('hide');
-            });
-
-            //cart page coupon call-back-fields
-            // $('.cart-coupon-toggle').click(function(){
-            //     $(this).parent().next().toggle();
-            // });
-           
-            $(document).on('click','.cart-coupon-toggle',function(){
-                $(this).parent().next().toggle();
-            });
-
-            var $window = $(window);
-            var windowsize = $window.width();
-            if (windowsize > 440) {
-                $('body').on('click','.needsclick.moble-needs-click',function(){
-                    var current_ele = $(this);
-                    $('.needsclick.moble-needs-click').each(function() {
-                        if(current_ele.attr('data-inc') != $(this).attr('data-inc')) {
-                            if($(this).parent().hasClass('openforMob')) {
-                                $(this).parent().removeClass('openforMob')
-                            }
-                        }
-                    });
-                    current_ele.parent().toggleClass('openforMob');
-                });
-                $('body').on('click','.megamenu-heading',function(){ 
-                    jQuery(this).find('i').toggleClass('fa fa-plus fa fa-minus');
-                    jQuery(this).parent().find('.down-clses').slideToggle();
-                });
-            }
+<script>
+        
+            $(document).on('Searchanise.ResultsUpdated', function() {
+                selected = [];
+                $(' .snize-product-filters-checkbox ').each(function(){
+                    if($(this).is(':checked')){
+                        var ch ={};
+                        var html = '<span>'+$(this).val()+' <i class="snize-product-filters-reset value" data-value = "'+$(this).val()+'" data-facet="'+$(this).attr('name')+'"></i>  </span>';
+                        ch.name = html;
+                        ch.value = $(this).val();
+                        selected[selected.length]  = ch;
+                    }
+                })
+
+                $(' .snize-filters-dropdown-title ').each(function(){
+                    if( $(this).parent().attr('id') ==   'snize_filters_dropdown_price' ){
+                        if($(this).find('a').length){
+                            var html = $(this).html();
+                            var ch ={};
+                            ch.name = $(html).append();
+                            ch.value = $(this).text();
+                            selected[selected.length]  = ch;
+                        }
+                    }
+                })
+
+                if( selected.length != 0 ){
+                    if($('.snize-horizontal-filters-selected').length < 1){
+                        $('<div class="selected-filters" style="border: 0px!important;"><div class="label"><strong>Applied Filter</strong></div><div class="snize-horizontal-filters-selected"></div><a class="reset-link" href=""> Reset Filters</a></div>').insertAfter($('.snize-horizontal-filters', this));
+                        //$('<div class="selected-filters"><strong>Applied Filter</strong> <div class="snize-horizontal-filters-selected"></div></div>').insertAfter($('.snize-horizontal-filters', this));
+                    }
+                }
+                else{
+                    $('.selected-filters').empty();
+                }
+                $('.snize-horizontal-filters-selected').empty();
+
+                selected.forEach(item => {
+                    $('.snize-horizontal-filters-selected').append(item.name);
+                });
+
+
+                $('#snize-search-results-grid-mode   .snize-product').each(function() {
+                	$('.snize-reviews', this).insertBefore($('.snize-title', this));
+                });
+               
+                // For List View
+                $('#snize-search-results-list-mode   .snize-product').each(function() {
+                    $('.snize-reviews', this).insertAfter($('.snize-thumbnail', this));
+                    $('.snize-price-list', this).insertAfter($('.snize-reviews', this));
+                    $('.snize-in-stock', this).insertAfter($('.snize-price-list', this));
+                    $('.snize-button', this).insertAfter($('.snize-in-stock', this));
+                   
+                    /*console.log('DIV');
+                    console.log($(".snize-custom-fields").children().length);
+                    $(".snize-custom-fields").children().each(function(){
+
+                        var txt = $(this).text();
+                        console.log(txt);
+                        var split = txt.split(':');
+                        console.log(split);
+                        $(this).empty();
+                        $(this).append('<span class="label">'+split[0]+'</span> <span class="value">'+split[1]+'</span>');
+                    });*/
+
+                });
+
+               
+
+                /*$('.snize-add-to-cart-button').each(function() {
+                    var productId = $(this).parents('.snize-product').eq(0).attr('id').replace('snize-product-', '');
+                    $(this).attr('href', 'product_id=' + productId).removeClass('snize-add-to-cart-button').addClass('addtocartlist');
+                }).click(function() {
+                    setTimeout(function() {
+                       $.getJSON('/api/storefront/carts', function(carts) {
+                            var cartQuantity = 0;
+
+                            $.each(carts[0].lineItems, function(itemType, items) {
+                                $.each(items, function(k, item) {
+                                    cartQuantity += item.quantity;
+                                });
+                            });
+
+                            $('.cart-quantity').html(cartQuantity).show();
+                        });
+                    }, 3000);
+                });*/
+               
+                $('.snize-add-to-cart-button').each(function() {
+                    var productId = $(this).parents('.snize-product').eq(0).attr('id').replace('snize-product-', '');
+                    
+                    $(this).attr('data-product-id', productId).attr('href', 'product_id=' + productId).removeClass('snize-add-to-cart-button snize-action-button').addClass('addtocartlist');
+                    //for adding compare button on product list
+                    $("li#snize-product-"+productId).append('<div title="Compare" class="compare-button compare_div desk"><a data-tooltip="" title="Compare" class="compare_a button button--small card-figcaption-button compare-box button card-button compare" for="compare-'+productId+'" data-compare-id="'+productId+'"></a></div>');
+                    $("li#snize-product-"+productId).append('<div title="Compare" class="compare-button mobile"><a data-tooltip="" title="Compare" class="button button--small card-figcaption-button compare-box button card-button compare" for="compare-'+productId+'" data-compare-id="'+productId+'">Compare</a></div>');
+                    $("li#snize-product-"+productId).mouseenter(function(){
+                        $('li#snize-product-'+productId+' > .desk').css('display','block');
+                    });
+                    $("li#snize-product-"+productId).mouseleave(function(){
+                        $('li#snize-product-'+productId+' > .desk').css("display", "none");
+                    });
+                }).click(function(e) {
+                    e.preventDefault();
+                    $.post('/cart.php', {action: 'add', product_id: $(this).attr('data-product-id')}, function() {
+                        setTimeout(function() {
+                           $.getJSON('/api/storefront/carts', function(carts) {
+                                var cartQuantity = 0;
+    
+                                $.each(carts[0].lineItems, function(itemType, items) {
+                                    $.each(items, function(k, item) {
+                                        cartQuantity += item.quantity;
+                                    });
+                                });
+    
+                                $('.cart-quantity').html(cartQuantity).show();
+                            });
+                        }, 1000);
+                    });
+                });
+            });
+          
+            $(document).on('click','.snize-horizontal-filters-selected .snize-product-filters-reset.value',function(){
+                $('input[name="'+$(this).data('facet')+'"][value="'+$(this).data('value')+'"]').click();
+            });
+
+            $(document).on('click','.snize-horizontal-filters-selected .snize-product-filters-reset',function(){
+                $('div.snize-horizontal-filters').find('i[data-se-facet-attribute="'+$(this).data('se-facet-attribute')+'"]').click();
+            });
+
+            //for callback form on order details
+            $('#defaultCheck6').change(function() {
+                if(this.checked) {
+                    $(".other-check-selected").show();
+                }else{
+                    $(".other-check-selected").hide();
+                }       
+            });
+            $('a.compare_a.button.button--small.card-figcaption-button.button.card-button.compare').mouseover(function(){
+                $('a.compare_a.button.button--small.card-figcaption-button.button.card-button.compare').css('border','2px solid rgb(255, 206, 196)');
+            });
+            jQuery.validator.addMethod('phoneUK', function(phone_number, element) {
+                return this.optional(element) || phone_number.length > 9 &&
+                phone_number.match(/^(\(?(0|\+44)[1-9]{1}\d{1,4}?\)?\s?\d{3,4}\s?\d{3,4})$/);
+            }, 'Please specify a valid phone number');
+            /*$("#callback-req-frm").validate({
+                rules: {
+                    // simple rule, converted to {required:true}
+                    name: "required",
+                    phone_number: {
+                      required: true,
+                      phoneUS: true
+                    },
+                    order_number: {
+                      required: false,
+                      minlength: 6,
+                      maxlength: 6,
+                    },
+                    'regards[]': {
+                        required: true,
+                    },
+                    other_regards_to: {
+                      required: function(element) {
+                        return $('#defaultCheck6').is(':checked');
+                      }
+                    },
+                },
+                messages: {
+                    'regards[]': {
+                        required: "You must check at least 1 box" 
+                    }
+                },
+                errorPlacement: function (error, element) {
+                    if (element.attr("name") == "name"){
+                        $("span.name-error").html(error);
+                    }else if(element.attr("name") == "phone_number"){
+                        $("span.phone-error").html(error);
+                    }else if(element.attr("name") == "order_number"){
+                        $("span.ordernmbr-error").html(error);
+                    }else if(element.attr("name") == "regards[]"){
+                        $("span.regards-error").html(error);
+                    }else if(element.attr("name") == "other_regards_to"){
+                        $("span.otherregardsto-error").html(error);
+                    }
+                },
+                submitHandler: function (form) { // for demo
+                    var datastring = $(".callback_Request-form").serialize();
+                    $('.callback_Request-form button[type="submit"]').text('SUBMITTING...');
+                    $.ajax({
+                        type: "POST",
+                        url: "https://req-callback.herokuapp.com/log_data.php",
+                        data: datastring,
+                        dataType: "json",
+                        complete: function complete(data) {
+                        //         $('.callback_Request-form').fadeOut();
+                        //         $("<h4 class='call-back-fields form-success-msg'>Callback Request Successfully Sent</h4>").insertAfter(".callback_Request-form");
+                        //     setTimeout(function () {
+                        //         $('.callback_Request-form input').val('');
+                        //         $('.callback_Request-form input[type="checkbox"]').prop('checked', false);
+                        //         $('.callback_Request-form').fadeIn();
+                        //         $('.callback_Request-form button[type="submit"]').text('SUBMIT');
+                        //         $('.form-success-msg').fadeOut();
+                        //   }, 5000);
+                        $('#modal_callback_form').removeClass('open').hide();
+                        $('body').removeClass('has-activeModal');
+                        $('#callback-req-frm')[0].reset();
+                        $('.callback_Request-form button[type="submit"]').text('SUBMIT');
+
+                        $('#modal_callback_success').modal('show');
+                    },
+                    error: function error() {
+                      $('.result').append('error handing here');
+                    }
+                  });
+                }
+            });*/
+            $("#modal_callback_success .make-me-hide").click(function(){
+                $('#modal_callback_success').modal('hide');
+            });
+
+            //cart page coupon call-back-fields
+            // $('.cart-coupon-toggle').click(function(){
+            //     $(this).parent().next().toggle();
+            // });
+           
+            $(document).on('click','.cart-coupon-toggle',function(){
+                $(this).parent().next().toggle();
+            });
+
+            var $window = $(window);
+            var windowsize = $window.width();
+            if (windowsize > 440) {
+                $('body').on('click','.needsclick.moble-needs-click',function(){
+                    var current_ele = $(this);
+                    $('.needsclick.moble-needs-click').each(function() {
+                        if(current_ele.attr('data-inc') != $(this).attr('data-inc')) {
+                            if($(this).parent().hasClass('openforMob')) {
+                                $(this).parent().removeClass('openforMob')
+                            }
+                        }
+                    });
+                    current_ele.parent().toggleClass('openforMob');
+                });
+                $('body').on('click','.megamenu-heading',function(){ 
+                    jQuery(this).find('i').toggleClass('fa fa-plus fa fa-minus');
+                    jQuery(this).parent().find('.down-clses').slideToggle();
+                });
+            }
         </script>
 <div data-background-color="#191918" data-link="https://www.sunglassoutlet.com/reviews/" data-show-avatar="true" data-style-color-link="#ff7f64" data-widget-type="drawer" id="stamped-reviews-widget"></div>
-<style>
-    @media only screen and (max-width:480px) {
-        div#stamped-reviews-widget.open {z-index: 999999 !important;}
-    }
-    #stamped-widget-drawer .stamped-reviews-product-title {color: #ff7f64 !important;}
+<style>
+    @media only screen and (max-width:480px) {
+        div#stamped-reviews-widget.open {z-index: 999999 !important;}
+    }
+    #stamped-widget-drawer .stamped-reviews-product-title {color: #ff7f64 !important;}
     </style>
 <div class="modal new_custom_call_back_form" data-reveal="" id="modal_callback_form">
 <div class="modal-header">
@@ -2781,38 +2781,38 @@ addEventListenerStamped(document, 'stamped:widget:carousel:loaded', function(e) 
 <div class="checkbox-group-form">
 <div class="form-check">
 <input class="form-check-input" id="defaultCheck1" name="regards[]" type="checkbox" value="Place an order"/>
-<label class="form-check-label" for="defaultCheck1">
-              Place an order
+<label class="form-check-label" for="defaultCheck1">
+              Place an order
             </label>
 </div>
 <div class="form-check">
 <input class="form-check-input" id="defaultCheck2" name="regards[]" type="checkbox" value="About Item"/>
-<label class="form-check-label" for="defaultCheck2">
-              About Item
+<label class="form-check-label" for="defaultCheck2">
+              About Item
             </label>
 </div>
 <div class="form-check">
 <input class="form-check-input" id="defaultCheck3" name="regards[]" type="checkbox" value="Issue with order"/>
-<label class="form-check-label" for="defaultCheck3">
-              Issue with order
+<label class="form-check-label" for="defaultCheck3">
+              Issue with order
             </label>
 </div>
 <div class="form-check">
 <input class="form-check-input" id="defaultCheck4" name="regards[]" type="checkbox" value="Return"/>
-<label class="form-check-label" for="defaultCheck4">
-              Return
+<label class="form-check-label" for="defaultCheck4">
+              Return
             </label>
 </div>
 <div class="form-check">
 <input class="form-check-input" id="defaultCheck5" name="regards[]" type="checkbox" value="Delivery Issue Question"/>
-<label class="form-check-label" for="defaultCheck5">
-              Delivery Issue Question
+<label class="form-check-label" for="defaultCheck5">
+              Delivery Issue Question
             </label>
 </div>
 <div class="form-check">
 <input class="form-check-input" id="defaultCheck6" name="regards[]" type="checkbox" value="Other"/>
-<label class="form-check-label" for="defaultCheck6">
-              Other
+<label class="form-check-label" for="defaultCheck6">
+              Other
             </label>
 </div>
 </div>
@@ -2823,8 +2823,8 @@ addEventListenerStamped(document, 'stamped:widget:carousel:loaded', function(e) 
 <span class="otherregardsto-error"></span>
 </div>
 </div>
-<p class="note">
-          Once submitted, you will recieve a text confirming your callback request, shortly there after, expect a call from us: 
+<p class="note">
+          Once submitted, you will recieve a text confirming your callback request, shortly there after, expect a call from us: 
           <span>
 <strong>8779330035</strong>
 </span>
@@ -2840,8 +2840,8 @@ addEventListenerStamped(document, 'stamped:widget:carousel:loaded', function(e) 
 <label>Our Hours:</label>
 <span> Open Monday - Friday 10 am-5pm EST</span>
 </div>
-<p class="note">
-        If you submit a callback request outside of business hours, we will call you back once open.
+<p class="note">
+        If you submit a callback request outside of business hours, we will call you back once open.
       </p>
 <div class="form-row">
 <label>Closed:</label>
@@ -2864,7 +2864,7 @@ addEventListenerStamped(document, 'stamped:widget:carousel:loaded', function(e) 
 </div>
 <!--/.icon-->
 <h1>Success!</h1>
-<p>We've sent a confirmation text to your phone number
+<p>We've sent a confirmation text to your phone number
             <br/>for verification.</p>
 <button class="redo btn make-me-hide" data-dismiss="modal" type="button">Ok</button>
 </div>
@@ -2873,141 +2873,141 @@ addEventListenerStamped(document, 'stamped:widget:carousel:loaded', function(e) 
 </div>
 </div>
 </div>
-<!--<script>
- $(document).ready(function() {
-        $("#EmptyCart").click(function(e){
-            e.preventDefault();
-            var cart_htmlPage, cart_found, removeLink;
-            
-            $.ajax({
-                url: "%%GLOBAL_ShopPath%%/cart.php",
-                success: function(result) {
-                    //Removing all the products from the cart
-                    cart_htmlPage = $(result);
-                    cart_items_found = $("a.CartRemoveLink", cart_htmlPage);
- 
-                    $(cart_items_found).each(function(i, el) {
-                        //Retrieving the remove URL and hitting it to remove from cart
-                        removeLink = "%%GLOBAL_ShopPath%%/" + $(this).attr("href");
-                        $.ajax({
-                            url: removeLink,
-                            success: function(result) {
-                                if ($(cart_items_found).length == (i+1)) {
-                                    console.log("Done");
-                                    document.location = "%%GLOBAL_ShopPath%%";
-                                }
-                            },
-                            async: false
-                        });
-                    });
-                },
-                async: false
-            });
-            return false;
-        });
-    });
+<!--<script>
+ $(document).ready(function() {
+        $("#EmptyCart").click(function(e){
+            e.preventDefault();
+            var cart_htmlPage, cart_found, removeLink;
+            
+            $.ajax({
+                url: "%%GLOBAL_ShopPath%%/cart.php",
+                success: function(result) {
+                    //Removing all the products from the cart
+                    cart_htmlPage = $(result);
+                    cart_items_found = $("a.CartRemoveLink", cart_htmlPage);
+ 
+                    $(cart_items_found).each(function(i, el) {
+                        //Retrieving the remove URL and hitting it to remove from cart
+                        removeLink = "%%GLOBAL_ShopPath%%/" + $(this).attr("href");
+                        $.ajax({
+                            url: removeLink,
+                            success: function(result) {
+                                if ($(cart_items_found).length == (i+1)) {
+                                    console.log("Done");
+                                    document.location = "%%GLOBAL_ShopPath%%";
+                                }
+                            },
+                            async: false
+                        });
+                    });
+                },
+                async: false
+            });
+            return false;
+        });
+    });
 </script>-->
-<script type="text/javascript">
-        $("#callback-req-frm").validate({
-            rules: {
-                // simple rule, converted to {required:true}
-                name: "required",
-                phone_number: {
-                  required: true
-                },
-                order_number: {
-                  required: false
-                },
-                'regards[]': {
-                    required: true,
-                },
-                other_regards_to: {
-                  required: function(element) {
-                    return $('#defaultCheck6').is(':checked');
-                  }
-                },
-            },
-            messages: {
-                'regards[]': {
-                    required: "You must check at least 1 box" 
-                }
-            },
-            errorPlacement: function (error, element) {
-                if (element.attr("name") == "name"){
-                    $("span.name-error").html(error);
-                }else if(element.attr("name") == "phone_number"){
-                    $("span.phone-error").html(error);
-                }else if(element.attr("name") == "order_number"){
-                    $("span.ordernmbr-error").html(error);
-                }else if(element.attr("name") == "regards[]"){
-                    $("span.regards-error").html(error);
-                }else if(element.attr("name") == "other_regards_to"){
-                    $("span.otherregardsto-error").html(error);
-                }
-            },
-            submitHandler: function (form) { // for demo
-                var datastring = $("form#callback-req-frm").serialize();
-                var name = $("form#callback-req-frm").find('#name').val();
-                var phonenumber = $("form#callback-req-frm").find('#phonenumber').val();
-                var ordernumber = $("form#callback-req-frm").find('#ordernumber').val();
-                var regards = '{';
-                $("form#callback-req-frm input[name='regards[]']:checked").each(function (index, obj) {
-                    if(regards == '{') {
-                        regards = regards + '"' + $(this).attr('id') + '":"' + $(this).val() + '"';
-                    } else {
-                        regards = regards + ',"' + $(this).attr('id') + '":"' + $(this).val() + '"';
-                    }
-                });
-                regards = regards+'}';
-                var dataStringNew = '{"name":"'+name+'","phonenumber":"'+phonenumber+'","ordernumber":"'+ordernumber+'","regards":'+regards+'}';
-                $('.callback_Request-form button[type="submit"]').text('SUBMITTING...');
-                $.ajax({
-                    type: "POST",
-                    url: "https://agent.sunglassoutlet.com/api/saveCallBackRequest",
-                    data: dataStringNew,
-                    dataType: "json",
-                    complete: function complete(data) {
-                        $('#modal_callback_form').removeClass('open').hide();
-                        $('body').removeClass('has-activeModal');
-                        $('#callback-req-frm')[0].reset();
-                        $('.callback_Request-form button[type="submit"]').text('SUBMIT');
-
-                        $('#modal_callback_success').modal('show');
-                    },
-                    error: function error() {
-                        $('.result').append('error handing here');
-                    }
-                });
-            }
-        });
+<script type="text/javascript">
+        $("#callback-req-frm").validate({
+            rules: {
+                // simple rule, converted to {required:true}
+                name: "required",
+                phone_number: {
+                  required: true
+                },
+                order_number: {
+                  required: false
+                },
+                'regards[]': {
+                    required: true,
+                },
+                other_regards_to: {
+                  required: function(element) {
+                    return $('#defaultCheck6').is(':checked');
+                  }
+                },
+            },
+            messages: {
+                'regards[]': {
+                    required: "You must check at least 1 box" 
+                }
+            },
+            errorPlacement: function (error, element) {
+                if (element.attr("name") == "name"){
+                    $("span.name-error").html(error);
+                }else if(element.attr("name") == "phone_number"){
+                    $("span.phone-error").html(error);
+                }else if(element.attr("name") == "order_number"){
+                    $("span.ordernmbr-error").html(error);
+                }else if(element.attr("name") == "regards[]"){
+                    $("span.regards-error").html(error);
+                }else if(element.attr("name") == "other_regards_to"){
+                    $("span.otherregardsto-error").html(error);
+                }
+            },
+            submitHandler: function (form) { // for demo
+                var datastring = $("form#callback-req-frm").serialize();
+                var name = $("form#callback-req-frm").find('#name').val();
+                var phonenumber = $("form#callback-req-frm").find('#phonenumber').val();
+                var ordernumber = $("form#callback-req-frm").find('#ordernumber').val();
+                var regards = '{';
+                $("form#callback-req-frm input[name='regards[]']:checked").each(function (index, obj) {
+                    if(regards == '{') {
+                        regards = regards + '"' + $(this).attr('id') + '":"' + $(this).val() + '"';
+                    } else {
+                        regards = regards + ',"' + $(this).attr('id') + '":"' + $(this).val() + '"';
+                    }
+                });
+                regards = regards+'}';
+                var dataStringNew = '{"name":"'+name+'","phonenumber":"'+phonenumber+'","ordernumber":"'+ordernumber+'","regards":'+regards+'}';
+                $('.callback_Request-form button[type="submit"]').text('SUBMITTING...');
+                $.ajax({
+                    type: "POST",
+                    url: "https://agent.sunglassoutlet.com/api/saveCallBackRequest",
+                    data: dataStringNew,
+                    dataType: "json",
+                    complete: function complete(data) {
+                        $('#modal_callback_form').removeClass('open').hide();
+                        $('body').removeClass('has-activeModal');
+                        $('#callback-req-frm')[0].reset();
+                        $('.callback_Request-form button[type="submit"]').text('SUBMIT');
+
+                        $('#modal_callback_success').modal('show');
+                    },
+                    error: function error() {
+                        $('.result').append('error handing here');
+                    }
+                });
+            }
+        });
     </script>
 </body>
 </html>
-<script type="text/javascript">
-window.dataLayer = window.dataLayer || [];
-window.dataLayer.push({
-'event': 'fireRemarketingTag',
-'ecomm_pagetype': 'home'
-});
-
+<script type="text/javascript">
+window.dataLayer = window.dataLayer || [];
+window.dataLayer.push({
+'event': 'fireRemarketingTag',
+'ecomm_pagetype': 'home'
+});
+
 </script>
 <script data-cfasync="false">window.ju_num="A819C467-6907-4722-A8C4-8581D903B638";window.asset_host='//cdn.jst.ai/';(function(i,s,o,g,r,a,m){i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)};a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script',asset_host+'vck.js','juapp');</script>
 <!-- Global site tag (gtag.js) -->
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-167352165-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'AW-630683823');
-  gtag('config', 'UA-167352165-1',{'custom_map': {'dimension2': 'ecomm_pagetype'}});
-
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-630683823');
+  gtag('config', 'UA-167352165-1',{'custom_map': {'dimension2': 'ecomm_pagetype'}});
+
 </script>
-<script>
-  gtag('event', 'home', {
-    'send_to': 'AW-630683823'
-  });
-  gtag('event','Page Type', {
-	'send_to': 'UA-167352165-1',
-	'ecomm_pagetype':'home'
-	});
+<script>
+  gtag('event', 'home', {
+    'send_to': 'AW-630683823'
+  });
+  gtag('event','Page Type', {
+	'send_to': 'UA-167352165-1',
+	'ecomm_pagetype':'home'
+	});
 </script>
