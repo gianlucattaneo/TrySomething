@@ -63,10 +63,11 @@ def gennaro():
 
 
 if __name__ == '__main__':
-    feature_names = ['cart_count', 'https', 'meta_count', 'price_count']
+    feature_names = ['meta_count', 'url_length', 'google_verified', 'domain', 'url_numbers']
     target_names = ['authorized', 'unauthorized']
     features = []
     targets = []
+
     with open('Stats/total.csv', mode='r') as infile:
         reader = csv.DictReader(infile, delimiter=';')
         print(reader.fieldnames)
@@ -90,13 +91,19 @@ if __name__ == '__main__':
     plt.show()
     plt.clf()
 
-    for pairidx, pair in enumerate([[0, 1], [0, 2], [0, 3], [1, 2], [1, 3], [2, 3]]):
+    pairs = []
+    for i in range(n_features):
+        for j in range(i, n_features):
+            if i != j:
+                pairs.append([i, j])
+
+    for pair_idx, pair in enumerate(pairs):
         X = features[:, pair]
         y = targets
 
         clf = tree.DecisionTreeClassifier().fit(X, y)
 
-        ax = plt.subplot(2, 3, pairidx + 1)
+        ax = plt.subplot(5, 3, pair_idx + 1)
         plt.tight_layout(h_pad=0.5, w_pad=0.5, pad=2.5)
         DecisionBoundaryDisplay.from_estimator(
             clf,
