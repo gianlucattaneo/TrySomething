@@ -63,7 +63,7 @@ def gennaro():
 
 
 if __name__ == '__main__':
-    feature_names = ['meta_count', 'url_length', 'google_verified', 'domain', 'url_numbers']
+    feature_names = ['https', 'meta_count', 'url_length', 'google_verified', 'domain', 'url_numbers', 'special_chars']
     target_names = ['authorized', 'unauthorized']
     features = []
     targets = []
@@ -91,6 +91,8 @@ if __name__ == '__main__':
     plt.show()
     plt.clf()
 
+    print(tree.export_text(clf, feature_names=feature_names, show_weights=True))
+
     pairs = []
     for i in range(n_features):
         for j in range(i, n_features):
@@ -103,7 +105,7 @@ if __name__ == '__main__':
 
         clf = tree.DecisionTreeClassifier().fit(X, y)
 
-        ax = plt.subplot(5, 3, pair_idx + 1)
+        ax = plt.subplot(5, 5, pair_idx + 1)
         plt.tight_layout(h_pad=0.5, w_pad=0.5, pad=2.5)
         DecisionBoundaryDisplay.from_estimator(
             clf,

@@ -1,7 +1,7 @@
 import json
 import os
 import glob
-import numpy as np
+import re
 
 from bs4 import BeautifulSoup
 import requests
@@ -52,6 +52,7 @@ def save_html(classes, sites, folder='Html/'):
             except Exception as e:
                 print(f'Error on {url} --- {e}')
                 os.remove(path)
+
 
 def vecchio():
     with open('fake_ecommerce.json.json', 'a') as f:
@@ -115,7 +116,6 @@ def feature_google_verified(url, class_):
 
 def feature_domain(url):
     domain = url.replace('.html', '').split('.')[-1]
-
     if domain in glob_domains:
         # print(domain, glob_domains.index(domain))
         return glob_domains.index(domain)
@@ -128,8 +128,34 @@ def feature_domain(url):
 def feature_url_numbers(url):
     split = url.split('.')
     truncated = split[1] if 'www' in url else split[0]
-    print(1 if any(char.isdigit() for char in truncated) else 0, truncated)
+    # print(1 if any(char.isdigit() for char in truncated) else 0, truncated)
     return 1 if any(char.isdigit() for char in truncated) else 0
+
+
+def feature_url_special_chars(url):
+    regex = re.compile('[@_!#$%^&*()<>?/}{~:\-|]')
+    split = url.split('.')
+    truncated = split[1] if 'www' in url else split[0].split('//')[1]
+    return 1 if regex.search(truncated) else 0
+
+
+def feature_p_iva(url, class_):
+    doc = get_url_html_offline(url, class_)
+    return url if 'iva' in doc.text.lower() else ''
+
+
+def feature_login_btn(url, class_):
+    doc = get_url_html_offline(url, class_)
+    found = []
+    tmp = []
+    try:
+        found = doc.find_all('a')
+        for tag in found:
+            if 'login' in tag['href'].lower() or 'sign in' in tag['href'].lower():
+                tmp.append(url)
+                break
+    finally:
+        return tmp
 
 
 glob_domains = []
@@ -155,14 +181,18 @@ if __name__ == '__main__':
     tmp_csv = ''
     for class_ in sites:
         for url in sites[class_]:
-            tmp_csv += f'{url};{class_};' \
-                      f'{feature_https(url)};' \
-                      f'{feature_meta_count(url,class_)};'\
-                       f'{feature_url_length(url)};' \
-                       f'{feature_google_verified(url,class_)};' \
-                       f'{feature_domain(url)};' \
-                       f'{feature_url_numbers(url)}\n'
+            print(feature_p_iva(url, class_))
+            # tmp_csv += f'{url};{class_};' \
+            #            f'{feature_https(url)};' \
+            #            f'{feature_meta_count(url,class_)};'\
+            #            f'{feature_url_length(url)};' \
+            #            f'{feature_google_verified(url,class_)};' \
+            #            f'{feature_domain(url)};' \
+            #            f'{feature_url_numbers(url)};' \
+            #            f'{feature_url_special_chars(url)}\n'
 
-    with open('Stats/total.csv', 'w') as stats:
-        stats.write('url;class;https;meta_count;url_length;google_verified;domain;url_numbers\n')
-        stats.write(tmp_csv)
+    # with open('Stats/total.csv', 'w') as stats:
+    #     # TODO ricordarsi di aggiungere i campi
+    #     stats.write('url;class;https;meta_count;url_length;google_verified;domain;url_numbers;special_chars\n')
+    #     stats.write(tmp_csv)
+

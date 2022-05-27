@@ -1,0 +1,1468 @@
+ <!DOCTYPE html>
+<html lang="en"><head> <meta charset="utf-8"/><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"1aa99febfe",applicationID:"699181248"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(){}function i(t,e,n,r){return function(){return s.recordSupportability("API/"+e+"/called"),o(t+e,[u.now()].concat(c(arguments)),n?null:this,r),n?void 0:this}}var o=t("handle"),a=t(9),c=t(10),f=t("ee").get("tracer"),u=t("loader"),s=t(4),d=NREUM;"undefined"==typeof window.newrelic&&(newrelic=d);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",v=l+"ixn-";a(p,function(t,e){d[e]=i(l,e,!0,"api")}),d.addPageAction=i(l,"addPageAction",!0),d.setCurrentRouteName=i(l,"routeName",!0),e.exports=newrelic,d.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(v+"tracer",[u.now(),t,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw f.emit("fn-err",[arguments,this,t],n),t}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){m[e]=i(v,e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),s.recordSupportability("API/noticeError/called"),o("err",[t,u.now(),!1,e])}},{}],2:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],3:[function(t,e,n){var r=!1;try{var i=Object.defineProperty({},"passive",{get:function(){r=!0}});window.addEventListener("testPassive",null,i),window.removeEventListener("testPassive",null,i)}catch(o){}e.exports=function(t){return r?{passive:!0,capture:!!t}:!!t}},{}],4:[function(t,e,n){function r(t,e){var n=[a,t,{name:t},e];return o("storeMetric",n,null,"api"),n}function i(t,e){var n=[c,t,{name:t},e];return o("storeEventMetrics",n,null,"api"),n}var o=t("handle"),a="sm",c="cm";e.exports={constants:{SUPPORTABILITY_METRIC:a,CUSTOM_METRIC:c},recordSupportability:r,recordCustom:i}},{}],5:[function(t,e,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=t(11);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],6:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?l("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&l("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();if(n.length>0){var r=n[n.length-1];if(u&&u<r.startTime)return;var i=[r],o=a({});o&&i.push(o),l("lcp",i)}}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||l("cls",[t])})}function a(t){var e=navigator.connection||navigator.mozConnection||navigator.webkitConnection;if(e)return e.type&&(t["net-type"]=e.type),e.effectiveType&&(t["net-etype"]=e.effectiveType),e.rtt&&(t["net-rtt"]=e.rtt),e.downlink&&(t["net-dlink"]=e.downlink),t}function c(t){if(t instanceof y&&!w){var e=Math.round(t.timeStamp),n={type:t.type};a(n),e<=v.now()?n.fid=v.now()-e:e>v.offset&&e<=Date.now()?(e-=v.offset,n.fid=v.now()-e):e=v.now(),w=!0,l("timing",["fi",e,n])}}function f(t){"hidden"===t&&(u=v.now(),l("pageHide",[u]))}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var u,s,d,p,l=t("handle"),v=t("loader"),m=t(8),g=t(3),y=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){s=new PerformanceObserver(r);try{s.observe({entryTypes:["paint"]})}catch(h){}d=new PerformanceObserver(i);try{d.observe({entryTypes:["largest-contentful-paint"]})}catch(h){}p=new PerformanceObserver(o);try{p.observe({type:"layout-shift",buffered:!0})}catch(h){}}if("addEventListener"in document){var w=!1,b=["click","keydown","mousedown","pointerdown","touchstart"];b.forEach(function(t){document.addEventListener(t,c,g(!1))})}m(f)}},{}],7:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}e.exports={agent:i,version:o,match:r}},{}],8:[function(t,e,n){function r(t){function e(){t(c&&document[c]?document[c]:document[o]?"hidden":"visible")}"addEventListener"in document&&a&&document.addEventListener(a,e,i(!1))}var i=t(3);e.exports=r;var o,a,c;"undefined"!=typeof document.hidden?(o="hidden",a="visibilitychange",c="visibilityState"):"undefined"!=typeof document.msHidden?(o="msHidden",a="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(o="webkitHidden",a="webkitvisibilitychange",c="webkitVisibilityState")},{}],9:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],10:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],11:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?u(t,f,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){t&&a&&t(n,r,i);for(var c=e(i),f=m(n),u=f.length,s=0;s<u;s++)f[s].apply(c,r);var p=d[w[n]];return p&&p.push([b,n,r,c]),c}}function o(t,e){h[t]=m(t).concat(e)}function v(t,e){var n=h[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return h[t]||[]}function g(t){return p[t]=p[t]||i(n)}function y(t,e){l.aborted||s(t,function(t,n){e=e||"feature",w[n]=e,e in d||(d[e]=[])})}var h={},w={},b={on:o,addEventListener:o,removeEventListener:v,emit:n,get:g,listeners:m,context:e,buffer:y,abort:c,aborted:!1};return b}function o(t){return u(t,f,a)}function a(){return new r}function c(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var f="nr@context",u=t("gos"),s=t(9),d={},p={},l=e.exports=i();e.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!M++){var t=T.info=NREUM.info,e=m.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();f(x,function(e,n){t[e]||(t[e]=n)});var n=a();c("mark",["onload",n+T.offset],null,"api"),c("timing",["load",n]);var r=m.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https://")?r.src=t.agent:r.src=l+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===m.readyState&&o()}function o(){c("mark",["domContent",a()+T.offset],null,"api")}var a=t(5),c=t("handle"),f=t(9),u=t("ee"),s=t(7),d=t(2),p=t(3),l=d.getConfiguration("ssl")===!1?"http":"https",v=window,m=v.document,g="addEventListener",y="attachEvent",h=v.XMLHttpRequest,w=h&&h.prototype,b=!1;NREUM.o={ST:setTimeout,SI:v.setImmediate,CT:clearTimeout,XHR:h,REQ:v.Request,EV:v.Event,PR:v.Promise,MO:v.MutationObserver};var E=""+location,x={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1216.min.js"},O=h&&w&&w[g]&&!/CriOS/.test(navigator.userAgent),T=e.exports={offset:a.getLastTimestamp(),now:a,origin:E,features:{},xhrWrappable:O,userAgent:s,disabled:b};if(!b){t(1),t(6),m[g]?(m[g]("DOMContentLoaded",o,p(!1)),v[g]("load",r,p(!1))):(m[y]("onreadystatechange",i),v[y]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var M=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,f,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,f],s],t)}c(n+"start",[o,a,f],s,u);try{return p=e.apply(a,o)}catch(v){throw c(n+"err",[o,a,v],s,u),v}finally{c(n+"end",[o,a,p],s,u)}}return a(e)?e:(n||(n=""),nrWrapper[p]=e,o(e,nrWrapper,t),nrWrapper)}function r(t,e,r,i,o){r||(r="");var c,f,u,s="-"===r.charAt(0);for(u=0;u<e.length;u++)f=e[u],c=t[f],a(c)||(t[f]=n(c,s?f+r:r,i,f,o))}function c(n,r,o,a){if(!v||e){var c=v;v=!0;try{t.emit(n,r,o,e,a)}catch(f){i([f,n,r,o],t)}v=c}}return t||(t=s),n.inPlace=r,n.flag=p,n}function i(t,e){e||(e=s);try{e.emit("internal-error",t)}catch(n){}}function o(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(o){i([o],n)}for(var a in t)l.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[p])}function c(t,e){var n=e(t);return n[p]=t,o(t,n,s),n}function f(t,e,n){var r=t[e];t[e]=c(r,n)}function u(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var s=t("ee"),d=t(10),p="nr@original",l=Object.prototype.hasOwnProperty,v=!1;e.exports=r,e.exports.wrapFunction=c,e.exports.wrapInPlace=f,e.exports.argsToArray=u},{}]},{},["loader"]);</script>
+<meta content="Surfing Wetsuits, Surfboards, Surf Gear &amp; Accessories  | Cleanline Surf" name="title"/>
+<meta content="We are a full service surf shop located on the Northern Oregon Coast. Established in 1980 and locally owned and operated, Cleanline is The Northwest's &quot;Original&quot; Surf Shop. " name="description"/>
+<meta content="Seaside Oregon Surf Shop Online, Surfing Wetsuits, Surf Gear, Snowboarding Shop, Skateboard Shops" name="keywords"/>
+<meta content="INDEX,FOLLOW" name="robots"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Surfing Wetsuits, Surfboards, Surf Gear &amp; Accessories  | Cleanline Surf</title>
+<link href="https://static.cleanlinesurf.com/version1651108454/_cache/merged/632abe8e3d40e22bc19ff8368961a242.min.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://static.cleanlinesurf.com/version1651108454/frontend/Cleanline/theme/en_US/css/print.min.css" media="print" rel="stylesheet" type="text/css"/>
+<link href="https://static.cleanlinesurf.com/version1651108454/frontend/Cleanline/theme/en_US/Magento_Theme/favicon.ico" rel="icon" sizes="32x32"/>
+<link href="https://static.cleanlinesurf.com/version1651108454/frontend/Cleanline/theme/en_US/Magento_Theme/favicon.ico" rel="icon" type="image/x-icon"/>
+<link href="https://static.cleanlinesurf.com/version1651108454/frontend/Cleanline/theme/en_US/Magento_Theme/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+<link href="https://www.cleanlinesurf.com" rel="canonical"/>
+<meta content="4243dda5e423b41346cea9585c00f2b3" name="p:domain_verify"/>
+<meta content="1ad88d60fe6001be26db4a52c2a008a6" name="p:domain_verify"/>
+<meta content="Fu_sCIS3bsaZFbZYxGFKeF0uFbEc9hmu4b5V8lDTbx8" name="google-site-verification"/>
+<meta content="mdn1nnj75flhkyfmb7uervkm0y3mto" name="facebook-domain-verification"/> <!-- BEGIN GOOGLE ANALYTICS CODE --><!-- END GOOGLE ANALYTICS CODE --> <link as="script" href="https://static.cleanlinesurf.com/version1651108454/frontend/Cleanline/theme/en_US/magepack/bundle-common.min.js" rel="prefetch"/> <link as="script" href="https://static.cleanlinesurf.com/version1651108454/frontend/Cleanline/theme/en_US/magepack/bundle-cms.min.js" rel="prefetch"/> <style> picture.mfwebp source.lazyload, picture.mfwebp source.lazy {background:none;content:none;}</style><!-- <link rel="stylesheet" type="text/css" media="all" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css"/> -->
+<meta content="website" property="og:type"/>
+<meta content="Surfing Wetsuits, Surfboards, Surf Gear &amp; Accessories  | Cleanline Surf" property="og:title"/>
+<meta content="We are a full service surf shop located on the Northern Oregon Coast. Established in 1980 and locally owned and operated, Cleanline is The Northwest's &quot;Original&quot; Surf Shop. " property="og:description"/>
+<meta content="https://www.cleanlinesurf.com" property="og:url"/>
+<meta content="Cleanline Surf" property="og:site_name"/>
+<!-- Magic Zoom Plus Magento 2 module version v1.6.3 [v1.6.90:v5.3.5] -->
+<link href="https://static.cleanlinesurf.com/version1651108454/frontend/Cleanline/theme/en_US/MagicToolbox_MagicZoomPlus/css/magiczoomplus.min.css" media="screen" rel="stylesheet" type="text/css"/>
+<link href="https://static.cleanlinesurf.com/version1651108454/frontend/Cleanline/theme/en_US/MagicToolbox_MagicZoomPlus/css/magiczoomplus.module.min.css" media="screen" rel="stylesheet" type="text/css"/>
+</head><body class="cms-home cms-index-index page-layout-1column" data-container="body" data-mage-init='{"loaderAjax": {}, "loader": { "icon": "https://static.cleanlinesurf.com/version1651108454/frontend/Cleanline/theme/en_US/images/loader-2.gif"}}'> <noscript><div class="message global noscript"><div class="content"><p><strong>JavaScript seems to be disabled in your browser.</strong> <span>For the best experience on our site, be sure to turn on Javascript in your browser.</span></p></div></div></noscript> <div id="paypal-express-in-context-checkout-main" style="display: none;"></div> <div class="page-wrapper"><header class="page-header"><div class="panel wrapper"><div class="panel header"><div class="topbar"><div class="left"><a href="/free-shipping"><div class="free"><i class="fas fa-shipping-fast"></i> Free Shipping $75+</div></a> <a href="/why-shop-with-us"><div class="guarantee"><i class="far fa-money-bill-alt"></i> Low Price Guarantee</div></a></div><div class="right" data-bind="scope: 'customer'"><a href="tel:+1888-546-6176"><div class="phone"><i class="fas fa-phone"></i> 888-546-6176</div></a> <a href="https://www.cleanlinesurf.com/contact/"><div class="contact"><i class="fas fa-comments"></i>Contact Us</div></a> <a href="https://help.cleanlinesurf.com/hc/en-us"><div class="help"><i class="fas fa-question-circle"></i>Help</div></a> <a href="https://www.cleanlinesurf.com/customer/account/"><div class="account"><i class="fas fa-user"></i>My Account</div></a> <!-- ko if: customer().firstname --><a href="https://www.cleanlinesurf.com/customer/account/logout/"><div class="logout"><i class="fas fa-eject"></i>Log out</div></a> <!-- /ko --></div></div></div></div><div class="header content"><div class="menu-icon"><div></div><div></div><div></div></div> <strong class="logo"> <img alt="Cleanline Surf Logo" src="https://static.cleanlinesurf.com/version1651108454/frontend/Cleanline/theme/en_US/images/logo-white.svg"/></strong> <nav class="menu"><ul><li class="mobile-search"> <form action="https://www.cleanlinesurf.com/catalogsearch/result/" class="form minisearch" id="search_mini_form-mobile" method="get"><div class="field search"><label class="label" data-role="minisearch-label" for="mobile-search"><span>Search</span></label> <div class="control"><input aria-autocomplete="both" aria-haspopup="false" autocomplete="off" class="input-text" data-mage-init='{"quickSearch":{ "formSelector":"#search_mini_form-mobile", "url":"https://www.cleanlinesurf.com/search/ajax/suggest/", "destinationSelector":"#search_autocomplete-mobile"} }' id="mobile-search" maxlength="128" name="q" placeholder="Search..." role="combobox" type="text" value=""/><div class="search-autocomplete" id="search_autocomplete-mobile"></div></div></div><div class="actions"><button class="action search" title="Search" type="submit"><span>Search</span></button></div></form></li> <li class="level0">
+<a href="https://www.cleanlinesurf.com/wetsuits">Wetsuits<span class="show-more"></span></a>
+<ul>
+<li class="level1 mobile-only">
+<a href="https://www.cleanlinesurf.com/mens-wetsuits" rel="nofollow">Wetsuits By Brand</a>
+<ul>
+<li class="level2"><a href="https://www.cleanlinesurf.com/oneill-wetsuits">O'Neill Wetsuits</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/rip-curl-wetsuits">Rip Curl Wetsuits</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/billabong-wetsuits">Billabong Wetsuits</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/patagonia-wetsuits">Patagonia Wetsuits</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/quiksilver-wetsuits">Quiksilver Wetsuits</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/roxy-wetsuits">Roxy Wetsuits</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/vissla-wetsuits">Vissla Wetsuits</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/buell-wetsuits" rel="nofollow">Buell Wetsuits</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/isurus-wetsuits" rel="nofollow">Isurus Wetsuits</a></li>
+</ul>
+</li>
+<li class="level1">
+<a href="https://www.cleanlinesurf.com/mens-wetsuits" rel="nofollow">Men's Wetsuits</a>
+<ul>
+<li class="level2"><a href="https://www.cleanlinesurf.com/mens-fullsuits" rel="nofollow">Fullsuits</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/mens-fullsuits/hood/detachable-hood-attached-hood" rel="nofollow">Hooded Fullsuits</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/mens-spring-suits" rel="nofollow">Spring Suits</a>
+</li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/mens-wetsuit-boots" rel="nofollow">Boots</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/mens-wetsuit-gloves" rel="nofollow">Gloves</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/mens-wetsuit-hoods" rel="nofollow">Hoods</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/mens-rash-guards" rel="nofollow">Rash Guards &amp;
+                        Layers</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/mens-neoprene-tops-jackets" rel="nofollow">Neoprene
+                        Tops &amp; Jackets</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/mens-wetsuit-shorts" rel="nofollow">Shorts</a></li>
+</ul>
+</li>
+<li class="level1">
+<a href="https://www.cleanlinesurf.com/womens-wetsuits" rel="nofollow">Women's Wetsuits</a>
+<ul>
+<li class="level2"><a href="https://www.cleanlinesurf.com/womens-fullsuits" rel="nofollow">Fullsuits</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/womens-fullsuits/hood/attached-hood" rel="nofollow">Hooded Fullsuits</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/womens-spring-suits" rel="nofollow">Spring Suits</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/womens-wetsuit-boots" rel="nofollow">Boots</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/womens-wetsuit-gloves" rel="nofollow">Gloves</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/womens-wetsuit-hoods" rel="nofollow">Hoods</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/womens-rash-guards-layers" rel="nofollow">Rash Guards &amp; Layers</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/womens-neoprene-tops-jackets" rel="nofollow">Neoprene Tops &amp; Jackets</a></li>
+</ul></li>
+</ul>
+</li>
+<li class="level1">
+<a href="https://www.cleanlinesurf.com/youth-wetsuits" rel="nofollow">Youth Wetsuits</a>
+<ul>
+<li class="level2"><a href="https://www.cleanlinesurf.com/youth-fullsuits" rel="nofollow">Fullsuits</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/youth-spring-suits" rel="nofollow">Spring Suits</a>
+</li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/youth-wetsuit-boots" rel="nofollow">Boots</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/youth-rash-guards-layers" rel="nofollow">Rash Guards
+                        &amp; Layers</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/youth-neoprene-tops-jackets" rel="nofollow">Neoprene
+                        Tops &amp; Jackets</a></li>
+</ul>
+</li>
+<li class="level1">
+<a href="https://www.cleanlinesurf.com/sale-wetsuits" rel="nofollow">Wetsuit Sale</a>
+<ul>
+<li class="level2"><a href="https://www.cleanlinesurf.com/mens-sale-wetsuits" rel="nofollow">Men's</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/womens-sale-wetsuits" rel="nofollow">Women's</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/youth-sale-wetsuits" rel="nofollow">Youth</a></li>
+</ul>
+<a class="margin-top" href="https://www.cleanlinesurf.com/wetsuit-care" rel="nofollow">Wetsuit Care</a>
+</li>
+<li class="level1 banner span2">
+<a class="hide-below-768" href="https://www.cleanlinesurf.com/sale-wetsuits" rel="nofollow"><img loading="lazy" src="//img.cleanlinesurf.com/media/images/menu-banner-wetsuits-wetsuit-sale3.jpg"/></a>
+</li>
+<li class="level1 banner row2">
+<a href="https://www.cleanlinesurf.com/billabong-wetsuits" title="Billabong Wetsuits">
+<picture class="mfwebp"> <source loading="lazy" srcset="https://media.cleanlinesurf.com/mf_webp/png/media/images/wetsuit_brand_icons/logo-billabong.webp" type="image/webp"/> <img alt="Billabong Logo" class="brand" data-webpconverted="1" loading="lazy" src="https://www.cleanlinesurf.com/media/images/wetsuit_brand_icons/logo-billabong.png"/></picture>
+</a>
+<a href="https://www.cleanlinesurf.com/buell-wetsuits" title="Buell Wetsuits">
+<picture class="mfwebp"> <source loading="lazy" srcset="https://media.cleanlinesurf.com/mf_webp/png/media/images/wetsuit_brand_icons/logo-buell.webp" type="image/webp"/> <img alt="Buell Logo" class="brand" data-webpconverted="1" loading="lazy" src="https://www.cleanlinesurf.com/media/images/wetsuit_brand_icons/logo-buell.png"/></picture>
+</a>
+<a href="https://www.cleanlinesurf.com/isurus-wetsuits" title="Isurus Wetsuits">
+<picture class="mfwebp"> <source loading="lazy" srcset="https://media.cleanlinesurf.com/mf_webp/png/media/images/wetsuit_brand_icons/logo-isurus.webp" type="image/webp"/> <img alt="Isurus Logo" class="brand" data-webpconverted="1" loading="lazy" src="https://www.cleanlinesurf.com/media/images/wetsuit_brand_icons/logo-isurus.png"/></picture>
+</a>
+<a href="https://www.cleanlinesurf.com/oneill-wetsuits" title="O'Neill Wetsuits">
+<picture class="mfwebp"> <source loading="lazy" srcset="https://media.cleanlinesurf.com/mf_webp/png/media/images/wetsuit_brand_icons/logo-oneill.webp" type="image/webp"/> <img alt="O'Neill Logo" class="brand" data-webpconverted="1" loading="lazy" src="https://www.cleanlinesurf.com/media/images/wetsuit_brand_icons/logo-oneill.png"/></picture>
+</a>
+<a href="https://www.cleanlinesurf.com/patagonia-wetsuits" title="Patagonia Wetsuits">
+<picture class="mfwebp"> <source loading="lazy" srcset="https://media.cleanlinesurf.com/mf_webp/png/media/images/wetsuit_brand_icons/logo-patagonia.webp" type="image/webp"/> <img alt="Patagonia Logo" class="brand" data-webpconverted="1" loading="lazy" src="https://www.cleanlinesurf.com/media/images/wetsuit_brand_icons/logo-patagonia.png"/></picture>
+</a>
+<a href="https://www.cleanlinesurf.com/quiksilver-wetsuits" title="Quiksilver Wetsuits">
+<picture class="mfwebp"> <source loading="lazy" srcset="https://media.cleanlinesurf.com/mf_webp/png/media/images/wetsuit_brand_icons/logo-quiksilver.webp" type="image/webp"/> <img alt="Quiksilver Logo" class="brand" data-webpconverted="1" loading="lazy" src="https://www.cleanlinesurf.com/media/images/wetsuit_brand_icons/logo-quiksilver.png"/></picture>
+</a>
+<a href="https://www.cleanlinesurf.com/rip-curl-wetsuits" title="Rip Curl Wetsuits">
+<picture class="mfwebp"> <source loading="lazy" srcset="https://media.cleanlinesurf.com/mf_webp/png/media/images/wetsuit_brand_icons/logo-rip-curl.webp" type="image/webp"/> <img alt="Rip Curl Logo" class="brand" data-webpconverted="1" loading="lazy" src="https://www.cleanlinesurf.com/media/images/wetsuit_brand_icons/logo-rip-curl.png"/></picture>
+</a>
+<a href="https://www.cleanlinesurf.com/roxy-wetsuits" title="Roxy Wetsuits">
+<picture class="mfwebp"> <source loading="lazy" srcset="https://media.cleanlinesurf.com/mf_webp/png/media/images/wetsuit_brand_icons/logo-roxy.webp" type="image/webp"/> <img alt="Roxy Logo" class="brand" data-webpconverted="1" loading="lazy" src="https://www.cleanlinesurf.com/media/images/wetsuit_brand_icons/logo-roxy.png"/></picture>
+</a>
+<a href="https://www.cleanlinesurf.com/vissla-wetsuits" title="Vissla Wetsuits">
+<picture class="mfwebp"> <source loading="lazy" srcset="https://media.cleanlinesurf.com/mf_webp/png/media/images/wetsuit_brand_icons/logo-vissla.webp" type="image/webp"/> <img alt="Vissla Logo" class="brand" data-webpconverted="1" loading="lazy" src="https://www.cleanlinesurf.com/media/images/wetsuit_brand_icons/logo-vissla.png"/></picture>
+</a>
+</li>
+</ul>
+<span class="show-more"></span>
+
+<li class="level0">
+<a href="https://www.cleanlinesurf.com/surfboards">Surfboards<span class="show-more"></span></a>
+<ul>
+<li class="level1">
+<a href="https://www.cleanlinesurf.com/surfboards" rel="nofollow">By Brand</a>
+<ul>
+<li class="level2"><a href="https://www.cleanlinesurf.com/7s-surfboards" rel="nofollow">7S</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/arakawa-surfboards" rel="nofollow">Arakawa</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/bing-surfboards" rel="nofollow">Bing</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/catch-surf-surfboards" rel="nofollow">Catch Surf</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/channel-islands-surfboards" rel="nofollow">Channel Islands</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/cj-nelson-designs-surfboards" rel="nofollow">CJ Nelson Designs</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/critical-slide-surfboards" rel="nofollow">Critical Slide</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/donald-takayama" rel="nofollow">Donald Takayama</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/firewire-surfboards" rel="nofollow">Firewire</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/gary-hanel-surfboards" rel="nofollow">Gary Hanel</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/harley-ingleby-series-surfboards" rel="nofollow">Harley Ingleby Series</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/haydenshapes-surfboards" rel="nofollow">Haydenshapes</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/js-industries-surfboards" rel="nofollow">JS Industries</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/kai-sallas-surfboards" rel="nofollow">Kai Sallas</a></li>
+</ul>
+</li>
+<li class="level1">
+<div class="spacer"></div>
+<ul>
+<li class="level2"><a href="https://www.cleanlinesurf.com/lib-tech-surfboards" rel="nofollow">Lib Tech</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/lost-surfboards" rel="nofollow">Lost</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/modern-surfboards" rel="nofollow">Modern</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/murdey-surfboards" rel="nofollow">Murdey</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/pyzel-surfboards" rel="nofollow">Pyzel</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/rainbow-surfboards" rel="nofollow">Rainbow</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/salt-gypsy-surfboards" rel="nofollow">Salt Gypsy</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/sharp-eye-surfboards" rel="nofollow">Sharp Eye</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/skindog-surfboards" rel="nofollow">Skindog</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/softech-surfboards" rel="nofollow">Softech</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/soleil-series-surfboards" rel="nofollow">Soleil Series</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/stewart-surfboards" rel="nofollow">Stewart</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/torq-surfboards" rel="nofollow">Torq</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/tyler-warren-shapes-surfboards" rel="nofollow">Tyler Warren Shapes</a></li>
+</ul>
+</li>
+<li class="level1">
+<a href="https://www.cleanlinesurf.com/surfboards" rel="nofollow">By Type</a>
+<ul>
+<li class="level2"><a href="https://www.cleanlinesurf.com/shortboard-surfboards" rel="nofollow">Shortboards</a>
+</li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/twins-fish" rel="nofollow">Twins &amp; Fish</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/guns-step-ups" rel="nofollow">Guns &amp; Step-Ups</a>
+</li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/mid-lengths" rel="nofollow">Mid-Lengths</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/hybrids-funboards" rel="nofollow">Hybrids &amp;
+                        Funboards</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/longboard-surfboards" rel="nofollow">Longboards</a>
+</li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/soft-tops" rel="nofollow">Soft Tops</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/grom-surfboards" rel="nofollow">Grom Boards</a></li>
+</ul>
+<a class="margin-top" href="https://www.cleanlinesurf.com/sale-surfboards" rel="nofollow">Surfboard Sale</a>
+<a class="margin-top" href="https://www.cleanlinesurf.com/surfboards-used" rel="nofollow">Used Surfboards</a>
+</li>
+<li class="level1 banner">
+<a href="https://www.cleanlinesurf.com/firewire-hydroshort-helium-surfboard.html" rel="nofollow">
+<img alt="Firewire Hydroshort Surfboard" loading="lazy" src="//img.cleanlinesurf.com/media/images/menu-banner-fall-2019-hydroshort-surfboard.jpg"/>
+</a> </li>
+<li class="level1 banner row2">
+<a href="https://www.cleanlinesurf.com/arakawa-surfboards" title="Arakawa Surfboards">
+<picture class="mfwebp"> <source loading="lazy" srcset="https://media.cleanlinesurf.com/mf_webp/png/media/images/surfboard_brand_icons/logo-arakawa-surfboards-200px.webp" type="image/webp"/> <img alt="Arakawa Logo" class="brand" data-webpconverted="1" loading="lazy" src="https://www.cleanlinesurf.com/media/images/surfboard_brand_icons/logo-arakawa-surfboards-200px.png"/></picture> </a>
+<a href="https://www.cleanlinesurf.com/bing-surfboards" title="Bing Surfboards">
+<picture class="mfwebp"> <source loading="lazy" srcset="https://media.cleanlinesurf.com/mf_webp/png/media/images/surfboard_brand_icons/logo-bing-surfboards-200px.webp" type="image/webp"/> <img alt="Bing Logo" class="brand" data-webpconverted="1" loading="lazy" src="https://www.cleanlinesurf.com/media/images/surfboard_brand_icons/logo-bing-surfboards-200px.png"/></picture> </a>
+<a href="https://www.cleanlinesurf.com/catch-surf-surfboards" title="Catch Surf Surfboards">
+<picture class="mfwebp"> <source loading="lazy" srcset="https://media.cleanlinesurf.com/mf_webp/png/media/images/surfboard_brand_icons/logo-catch-surf-surfboards-200px.webp" type="image/webp"/> <img alt="Catch Surf Logo" class="brand" data-webpconverted="1" loading="lazy" src="https://www.cleanlinesurf.com/media/images/surfboard_brand_icons/logo-catch-surf-surfboards-200px.png"/></picture> </a>
+<a href="https://www.cleanlinesurf.com/channel-islands-surfboards" title="Channel Islands Surfboards">
+<picture class="mfwebp"> <source loading="lazy" srcset="https://media.cleanlinesurf.com/mf_webp/png/media/images/surfboard_brand_icons/logo-channel-islands-surfboards-200px.webp" type="image/webp"/> <img alt="Channel Islands Logo" class="brand" data-webpconverted="1" loading="lazy" src="https://www.cleanlinesurf.com/media/images/surfboard_brand_icons/logo-channel-islands-surfboards-200px.png"/></picture> </a>
+<a href="https://www.cleanlinesurf.com/firewire-surfboards" title="Firewire Surfboards">
+<picture class="mfwebp"> <source loading="lazy" srcset="https://media.cleanlinesurf.com/mf_webp/png/media/images/surfboard_brand_icons/logo-firewire-surfboards-200px.webp" type="image/webp"/> <img alt="Firewire Logo" class="brand" data-webpconverted="1" loading="lazy" src="https://www.cleanlinesurf.com/media/images/surfboard_brand_icons/logo-firewire-surfboards-200px.png"/></picture> </a>
+<a href="https://www.cleanlinesurf.com/murdey-surfboards" title="Murdey Surfboards">
+<picture class="mfwebp"> <source loading="lazy" srcset="https://media.cleanlinesurf.com/mf_webp/png/media/images/surfboard_brand_icons/logo-murdey-surfboards-200px.webp" type="image/webp"/> <img alt="Murdey Logo" class="brand" data-webpconverted="1" loading="lazy" src="https://www.cleanlinesurf.com/media/images/surfboard_brand_icons/logo-murdey-surfboards-200px.png"/></picture> </a>
+<a href="https://www.cleanlinesurf.com/pyzel-surfboards" title="Pyzel Surfboards">
+<picture class="mfwebp"> <source loading="lazy" srcset="https://media.cleanlinesurf.com/mf_webp/png/media/images/surfboard_brand_icons/logo-pyzel-surfboards-200px.webp" type="image/webp"/> <img alt="Pyzel Logo" class="brand" data-webpconverted="1" loading="lazy" src="https://www.cleanlinesurf.com/media/images/surfboard_brand_icons/logo-pyzel-surfboards-200px.png"/></picture> </a>
+<a href="https://www.cleanlinesurf.com/surftech-surfboards" title="Surftech Surfboards">
+<picture class="mfwebp"> <source loading="lazy" srcset="https://media.cleanlinesurf.com/mf_webp/png/media/images/surfboard_brand_icons/logo-surftech-surfboards-200px.webp" type="image/webp"/> <img alt="Surftech Logo" class="brand" data-webpconverted="1" loading="lazy" src="https://www.cleanlinesurf.com/media/images/surfboard_brand_icons/logo-surftech-surfboards-200px.png"/></picture> </a>
+<a href="https://www.cleanlinesurf.com/torq-surfboards" title="Torq Surfboards">
+<picture class="mfwebp"> <source loading="lazy" srcset="https://media.cleanlinesurf.com/mf_webp/png/media/images/surfboard_brand_icons/logo-torq-surfboards-200px.webp" type="image/webp"/> <img alt="Torq Logo" class="brand" data-webpconverted="1" loading="lazy" src="https://www.cleanlinesurf.com/media/images/surfboard_brand_icons/logo-torq-surfboards-200px.png"/></picture></a>
+</li>
+</ul>
+<span class="show-more"></span>
+</li>
+<li class="level0">
+<a href="https://www.cleanlinesurf.com/surf-gear">Surf Gear<span class="show-more"></span></a>
+<ul>
+<li class="level1">
+<a href="https://www.cleanlinesurf.com/surfboard-fins" rel="nofollow">Surfboard Fins</a>
+<ul>
+<li class="level2"><a href="https://www.cleanlinesurf.com/fcs-fins" rel="nofollow">FCS &amp; FCS II Fins</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/futures-fins" rel="nofollow">Futures Fins</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/captain-fin-co-fins" rel="nofollow">Captain Fin
+                        Co.</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/catch-surf-fins" rel="nofollow">Catch Surf</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/channel-islands-fins" rel="nofollow">Channel
+                        Islands</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/endorfins-fins" rel="nofollow">Endorfins</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/flying-diamonds-fins" rel="nofollow">Flying
+                        Diamonds</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/lib-tech-fins" rel="nofollow">Lib Tech</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/nvs-fins" rel="nofollow">NVS</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/true-ames-fins" rel="nofollow">True Ames</a></li>
+</ul>
+</li>
+<li class="level1">
+<a href="https://www.cleanlinesurf.com/surfboard-fins" rel="nofollow">By Type</a>
+<ul>
+<li class="level2"><a href="https://www.cleanlinesurf.com/twin-fins" rel="nofollow">Twin Fins</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/thruster-fins" rel="nofollow">Thruster Fins</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/quad-fins" rel="nofollow">Quad Fins</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/tri-quad-fins" rel="nofollow">Tri-Quad Fins</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/longboard-fins" rel="nofollow">Longboard Fins</a>
+</li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/side-bite-fins" rel="nofollow">Side Bite Fins</a>
+</li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/specialty-fins" rel="nofollow">Specialty Fins</a>
+</li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/fin-accessories-hardware" rel="nofollow">Fin
+                        Accessories</a></li>
+</ul>
+</li>
+<li class="level1">
+<a href="https://www.cleanlinesurf.com/surfboard-traction-pads" rel="nofollow">Traction</a>
+<a class="margin-top" href="https://www.cleanlinesurf.com/surfboard-leashes" rel="nofollow">Leashes</a>
+<a class="margin-top" href="https://www.cleanlinesurf.com/surfboard-bags" rel="nofollow">Surfboard Bags</a>
+<ul>
+<li class="level2"><a href="https://www.cleanlinesurf.com/channel-islands-surfboard-bags" rel="nofollow">Channel Islands</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/dakine-surfboard-bags" rel="nofollow">Dakine</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/fcs-surfboard-bags" rel="nofollow">FCS</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/pro-lite-surfboard-bags" rel="nofollow">Pro-lite</a>
+</li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/shortboard-surfboard-bags" rel="nofollow">Shortboard</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/fish-hybrid-surfboard-bags" rel="nofollow">Fish &amp;
+                        Hybrid</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/longboard-surfboard-bags" rel="nofollow">Longboard</a></li>
+</ul>
+<a class="margin-top" href="https://www.cleanlinesurf.com/surf-packs" rel="nofollow">Surf Packs</a>
+</li>
+<li class="level1">
+<a href="https://www.cleanlinesurf.com/surf-accessories" rel="nofollow">Surf Accessories</a>
+<ul>
+<li class="level2"><a href="https://www.cleanlinesurf.com/sunscreen" rel="nofollow">Sunscreen</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/surf-helmets" rel="nofollow">Surf Helmets</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/surfboard-repair" rel="nofollow">Surfboard Repair</a>
+</li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/surf-wax" rel="nofollow">Surf Wax</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/surfboard-racks-pads-straps" rel="nofollow">Racks,
+                        Pads &amp; Straps</a></li> </ul>
+<a class="margin-top" href="https://www.cleanlinesurf.com/sup" rel="nofollow">SUP</a>
+<a class="margin-top" href="https://www.cleanlinesurf.com/skimboarding" rel="nofollow">Skimboarding</a>
+<a class="margin-top" href="https://www.cleanlinesurf.com/bodyboarding" rel="nofollow">Bodyboarding</a>
+<a class="margin-top" href="https://www.cleanlinesurf.com/skateboard-completes" rel="nofollow">Skateboarding</a>
+</li>
+<li class="level1 banner">
+<a href="https://www.cleanlinesurf.com/surf-packs" rel="nofollow">
+<img alt="Surf Packs" loading="lazy" src="//img.cleanlinesurf.com/media/images/menu-banner-fall-2019-surf-packs.jpg"/>
+</a> </li>
+<li class="level1 banner row2">
+<a href="https://www.cleanlinesurf.com/catch-surf-fins" title="Catch Surf Fins">
+<picture class="mfwebp"> <source loading="lazy" srcset="https://media.cleanlinesurf.com/mf_webp/png/media/images/gear_brand_icons/logo-catch-surf-200px.webp" type="image/webp"/> <img alt="Catch Surf Logo" class="brand" data-webpconverted="1" loading="lazy" src="https://www.cleanlinesurf.com/media/images/gear_brand_icons/logo-catch-surf-200px.png"/></picture> </a>
+<a href="https://www.cleanlinesurf.com/channel-islands-surfboard-bags" title="Channel Islands Surfboard Bags">
+<picture class="mfwebp"> <source loading="lazy" srcset="https://media.cleanlinesurf.com/mf_webp/png/media/images/gear_brand_icons/logo-channel-islands-200px.webp" type="image/webp"/> <img alt="Channel Islands Logo" class="brand" data-webpconverted="1" loading="lazy" src="https://www.cleanlinesurf.com/media/images/gear_brand_icons/logo-channel-islands-200px.png"/></picture> </a>
+<a href="https://www.cleanlinesurf.com/surfboard-leashes/brand/dakine" title="Dakine Leashes">
+<picture class="mfwebp"> <source loading="lazy" srcset="https://media.cleanlinesurf.com/mf_webp/png/media/images/gear_brand_icons/logo-dakine-200px.webp" type="image/webp"/> <img alt="Dakine Logo" class="brand" data-webpconverted="1" loading="lazy" src="https://www.cleanlinesurf.com/media/images/gear_brand_icons/logo-dakine-200px.png"/></picture> </a>
+<a href="https://www.cleanlinesurf.com/fcs-fins/brand/fcs-fcs-ii" title="FCS &amp; FCS II Fins">
+<picture class="mfwebp"> <source loading="lazy" srcset="https://media.cleanlinesurf.com/mf_webp/png/media/images/gear_brand_icons/logo-fcs-200px.webp" type="image/webp"/> <img alt="FCS Logo" class="brand" data-webpconverted="1" loading="lazy" src="https://www.cleanlinesurf.com/media/images/gear_brand_icons/logo-fcs-200px.png"/></picture> </a>
+<a href="https://www.cleanlinesurf.com/futures-fins/brand/futures-fins" title="Futures Fins">
+<picture class="mfwebp"> <source loading="lazy" srcset="https://media.cleanlinesurf.com/mf_webp/png/media/images/gear_brand_icons/logo-futures-fins-200px.webp" type="image/webp"/> <img alt="Futures Fins Logo" class="brand" data-webpconverted="1" loading="lazy" src="https://www.cleanlinesurf.com/media/images/gear_brand_icons/logo-futures-fins-200px.png"/></picture> </a>
+<a href="https://www.cleanlinesurf.com/octopus-traction-pads" title="Octopus Traction Pads">
+<picture class="mfwebp"> <source loading="lazy" srcset="https://media.cleanlinesurf.com/mf_webp/png/media/images/gear_brand_icons/logo-octopus-200px.webp" type="image/webp"/> <img alt="Octopus Logo" class="brand" data-webpconverted="1" loading="lazy" src="https://www.cleanlinesurf.com/media/images/gear_brand_icons/logo-octopus-200px.png"/></picture> </a>
+<a href="https://www.cleanlinesurf.com/pro-lite-surfboard-bags" title="Pro-Lite Surfboard Bags">
+<picture class="mfwebp"> <source loading="lazy" srcset="https://media.cleanlinesurf.com/mf_webp/png/media/images/gear_brand_icons/logo-pro-lite-200px.webp" type="image/webp"/> <img alt="Pro-Lite Logo" class="brand" data-webpconverted="1" loading="lazy" src="https://www.cleanlinesurf.com/media/images/gear_brand_icons/logo-pro-lite-200px.png"/></picture> </a>
+<a href="https://www.cleanlinesurf.com/slater-designs-traction-pads" title="Slater Designs Traction Pads">
+<picture class="mfwebp"> <source loading="lazy" srcset="https://media.cleanlinesurf.com/mf_webp/png/media/images/gear_brand_icons/logo-slater-designs-200px.webp" type="image/webp"/> <img alt="Slater Designs Logo" class="brand" data-webpconverted="1" loading="lazy" src="https://www.cleanlinesurf.com/media/images/gear_brand_icons/logo-slater-designs-200px.png"/></picture> </a>
+<a href="https://www.cleanlinesurf.com/true-ames-fins" title="True Ames Fins">
+<picture class="mfwebp"> <source loading="lazy" srcset="https://media.cleanlinesurf.com/mf_webp/png/media/images/gear_brand_icons/logo-true-ames-200px.webp" type="image/webp"/> <img alt="True Ames Logo" class="brand" data-webpconverted="1" loading="lazy" src="https://www.cleanlinesurf.com/media/images/gear_brand_icons/logo-true-ames-200px.png"/></picture></a>
+</li>
+</ul>
+<span class="show-more"></span>
+</li>
+<li class="level0">
+<a href="https://www.cleanlinesurf.com/apparel">Apparel<span class="show-more"></span></a>
+<ul>
+<li class="level1">
+<a href="https://www.cleanlinesurf.com/mens-surf-clothing-swimwear-accessories-footwear" rel="nofollow">Men's</a>
+<ul>
+<li class="level2"><a href="https://www.cleanlinesurf.com/mens-surf-t-shirts-tanks" rel="nofollow">T-Shirts &amp;
+                        Tanks</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/mens-flannel-shirts" rel="nofollow">Flannel
+                        Shirts</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/mens-hoodies-sweatshirts" rel="nofollow">Hoodies &amp;
+                        Sweatshirts</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/mens-jackets" rel="nofollow">Jackets &amp; Vests</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/mens-ponchos" rel="nofollow">Ponchos</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/mens-boardshorts" rel="nofollow">Boardshorts</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/mens-shorts-pants" rel="nofollow">Shorts &amp; Pants</a>
+</li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/mens-footwear" rel="nofollow">Footwear</a></li>
+</ul>
+<a class="margin-top" href="https://www.cleanlinesurf.com/mens-accessories" rel="nofollow">Men's Accessories</a>
+<ul>
+<li class="level2"><a href="https://www.cleanlinesurf.com/mens-surf-bags-backpacks" rel="nofollow">Bags &amp;
+                        Backpacks</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/mens-hats-beanies" rel="nofollow">Hats &amp; Beanies</a>
+</li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/mens-sunglasses" rel="nofollow">Sunglasses</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/mens-surf-watches" rel="nofollow">Surf Watches</a>
+</li>
+</ul>
+</li>
+<li class="level1">
+<a href="https://www.cleanlinesurf.com/womens-surf-clothing-swimwear-accessories-footwear" rel="nofollow">Women's</a>
+<ul>
+<li class="level2"><a href="https://www.cleanlinesurf.com/womens-surf-tops-tanks" rel="nofollow">T-Shirts,
+                        Tops, &amp; Tanks</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/womens-flannels-and-sweaters" rel="nofollow">Flannels &amp; Sweaters</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/womens-hoodies-sweatshirts" rel="nofollow">Hoodies &amp; Sweatshirts</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/womens-jackets" rel="nofollow">Jackets &amp; Vests</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/womens-ponchos" rel="nofollow">Ponchos</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/womens-boardshorts-swimsuits" rel="nofollow">Boardshorts &amp; Swimsuits</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/womens-shorts-pants" rel="nofollow">Shorts &amp; Pants</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/womens-dresses-jumpsuits" rel="nofollow">Dresses &amp; Jumpsuits</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/womens-footwear" rel="nofollow">Footwear</a></li>
+</ul>
+<a class="margin-top" href="https://www.cleanlinesurf.com/womens-accessories" rel="nofollow">Women's
+                Accessories</a>
+<ul>
+<li class="level2"><a href="https://www.cleanlinesurf.com/womens-bags-backpacks" rel="nofollow">Bags &amp;
+                        Backpacks</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/womens-hats-beanies" rel="nofollow">Hats &amp;
+                        Beanies</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/womens-sunglasses" rel="nofollow">Sunglasses</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/womens-surf-watches" rel="nofollow">Surf Watches</a>
+</li>
+</ul>
+</li>
+<li class="level1">
+<a href="https://www.cleanlinesurf.com/youth-surf-clothing-swimwear-accessories-footwear" rel="nofollow">Youth</a>
+<ul>
+<li class="level2"><a href="https://www.cleanlinesurf.com/youth-tshirts-tops" rel="nofollow">T-Shirts &amp; Tops</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/youth-hoodies-sweatshirts" rel="nofollow">Hoodies &amp; Sweatshirts</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/youth-jackets-vests" rel="nofollow">Jackets &amp; Vests</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/youth-ponchos" rel="nofollow">Ponchos</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/youth-swimsuits-boardshorts" rel="nofollow">Boardshorts &amp; Swimsuits</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/youth-shorts-pants" rel="nofollow">Shorts &amp; Pants</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/youth-footwear" rel="nofollow">Footwear</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/youth-accessories" rel="nofollow">Accessories</a>
+</li>
+</ul>
+<a class="margin-top" href="https://www.cleanlinesurf.com/cleanline-private-label" rel="nofollow">Cleanline Private
+                Label</a>
+<ul>
+<li class="level2"><a href="https://www.cleanlinesurf.com/mens-cleanline-private-label" rel="nofollow">Men's</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/womens-cleanline-private-label" rel="nofollow">Women's</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/youth-cleanline-private-label" rel="nofollow">Youth</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/cleanline-private-label-accessories" rel="nofollow">Accessories</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/cleanline-private-label-hats-beanies" rel="nofollow">Hats &amp; Beanies</a></li>
+</ul>
+</li>
+<li class="level1 banner">
+<div style="background: #eee; line-height: 0;">
+<a href="https://www.cleanlinesurf.com/cleanline-private-label" rel="nofollow">
+<picture class="mfwebp"> <source loading="lazy" srcset="https://media.cleanlinesurf.com/mf_webp/jpg/media/images/menu-apparel-shop-cleanline.webp" type="image/webp"/> <img alt="Shop Cleanline Private Label" data-webpconverted="1" loading="lazy" src="https://media.cleanlinesurf.com/images/menu-apparel-shop-cleanline.jpg"/></picture>
+</a>
+</div>
+</li>
+</ul>
+<span class="show-more"></span>
+</li>
+<li class="level0">
+<a href="https://www.cleanlinesurf.com/sale">Sale<span class="show-more"></span></a>
+<ul>
+<li class="level1">
+<a href="https://www.cleanlinesurf.com/sale-wetsuits" rel="nofollow">Wetsuit Sale</a>
+<ul>
+<li class="level2"><a href="https://www.cleanlinesurf.com/mens-sale-wetsuits" rel="nofollow">Men's</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/womens-sale-wetsuits" rel="nofollow">Women's</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/youth-sale-wetsuits" rel="nofollow">Youth</a></li>
+</ul>
+<a class="margin-top" href="https://www.cleanlinesurf.com/sale-surfboards" rel="nofollow">Surfboard Sale</a>
+</li>
+<li class="level1">
+<a href="https://www.cleanlinesurf.com/sale-apparel" rel="nofollow">Apparel Sale</a>
+<ul>
+<li class="level2"><a href="https://www.cleanlinesurf.com/mens-sale-apparel" rel="nofollow">Men's</a></li>
+<li class="level2"><a href="https://www.cleanlinesurf.com/womens-sale-apparel" rel="nofollow">Women's</a></li>
+</ul>
+<a class="margin-top" href="https://www.cleanlinesurf.com/sale-kite" rel="nofollow">Kite Gear Sale</a>
+</li>
+<li class="level1 banner span2">
+<a href="https://www.cleanlinesurf.com/sale-wetsuits" rel="nofollow">
+<img loading="lazy" src="//img.cleanlinesurf.com/media/images/menu-banner-summer-2016-wetsuit-sale.jpg"/>
+</a>
+</li>
+</ul>
+<span class="show-more"></span>
+</li> <li class="mobile-contact" data-bind="scope: 'customer'"><div><i class="fa fa-phone"></i> <a href="tel:+1-888-546-6176">1-888-546-6176</a></div><div><i class="fa fa-comments"></i> <a href="https://www.cleanlinesurf.com/contact/">Contact Us</a></div><div><i class="fa fa-question-circle"></i> <a href="https://help.cleanlinesurf.com/hc/en-us">Help</a></div><div><i class="fa fa-user"></i> <a href="https://www.cleanlinesurf.com/customer/account/login/">My Account</a></div><!-- ko if: customer().firstname --><div><i class="fas fa-eject"></i> <a href="https://www.cleanlinesurf.com/customer/account/logout/">Log out</a></div><!-- /ko --></li></nav> <div class="block block-search algolia-search-block"><div class="block block-title"><strong>Search</strong></div><div class="block block-content"><form action="https://www.cleanlinesurf.com/catalogsearch/result/" id="search_mini_form" method="get"><div id="algolia-searchbox"><label for="search">Search:</label> <input autocapitalize="off" autocomplete="off" autocorrect="off" class="input-text algolia-search-input" id="search" name="q" placeholder="Search for products, categories, ..." spellcheck="false" type="text"/><span class="clear-cross clear-query-autocomplete"></span> <span class="magnifying-glass" height="24" id="algolia-glass" width="24"></span></div></form></div></div> <div class="minicart-wrapper" data-block="minicart"><a class="action showcart" data-bind="scope: 'minicart_content'" href="https://www.cleanlinesurf.com/checkout/cart/"><span class="text">My Cart</span> <span class="counter qty empty" data-bind="css: { empty: !!getCartParam('summary_count') == false }, blockLoader: isLoading"><span class="counter-number"><!-- ko text: getCartParam('summary_count') --><!-- /ko --></span> <span class="counter-label"><!-- ko if: getCartParam('summary_count') --><!-- ko text: getCartParam('summary_count') --><!-- /ko --><!-- ko i18n: 'items' --><!-- /ko --><!-- /ko --></span></span></a> <div class="block block-minicart" data-mage-init='{"dropdownDialog":{ "appendTo":"[data-block=minicart]", "triggerTarget":".showcart", "timeout": "2000", "closeOnMouseLeave": false, "closeOnEscape": true, "triggerClass":"active", "parentClass":"active", "buttons":[]}}' data-role="dropdownDialog"><div data-bind="scope: 'minicart_content'" id="minicart-content-wrapper"><!-- ko template: getTemplate() --><!-- /ko --></div></div> </div></div></header><div class="menu-overlay"></div><div class="menu-overlay-mobile"></div> <main class="page-main" id="maincontent"><div id="algolia-autocomplete-container"></div> <a id="contentarea" tabindex="-1"></a> <div class="page messages"> <div data-placeholder="messages"></div> <div data-bind="scope: 'messages'"><!-- ko if: cookieMessages && cookieMessages.length > 0 --><div class="messages" data-bind="foreach: { data: cookieMessages, as: 'message' }" role="alert"><div data-bind="attr: { class: 'message-' + message.type + ' ' + message.type + ' message', 'data-ui-id': 'message-' + message.type }"><div data-bind="html: $parent.prepareMessageForHtml(message.text)"></div></div></div><!-- /ko --><!-- ko if: messages().messages && messages().messages.length > 0 --><div class="messages" data-bind="foreach: { data: messages().messages, as: 'message' }" role="alert"><div data-bind="attr: { class: 'message-' + message.type + ' ' + message.type + ' message', 'data-ui-id': 'message-' + message.type }"><div data-bind="html: $parent.prepareMessageForHtml(message.text)"></div></div></div><!-- /ko --></div></div><div class="columns"><div class="column main"><input name="form_key" type="hidden" value="y5qvbnjWO1FyLCC6"/> <div data-bind="scope:'authenticationPopup'" id="authenticationPopup" style="display: none;"><!-- ko template: getTemplate() --><!-- /ko --></div> <div data-mage-init='{"campaigncatcher":{"checkCampaignUrl": "https://www.cleanlinesurf.com/mailchimp/campaign/check/"}}' id="monkey_campaign" style="display:none;"></div> <div data-mage-init='{"Mirasvit_CacheWarmer\/js\/track":{"pageType":"cms_index_index","url":"https:\/\/www.cleanlinesurf.com\/cache_warmer\/track\/","cookieName":"mst-cache-warmer-track","cookieValue":null}}'></div> <div class="homepage-slider owl-carousel" style="width: 100%; height: auto; aspect-ratio: 1600/583;">
+<div>
+<a href="https://www.cleanlinesurf.com/sharp-eye-surfboards" onclick="ga('send', 'event', {eventCategory: 'Home Page', eventAction: 'click', eventLabel: 'Banner: Spring22 Sharp Eye Surfboards'});" title="Sharp Eye Surfboards">
+<img alt="Sharp Eye Surfboards" height="583" src="https://img.cleanlinesurf.com/media/banners/2022-04-sharp-eye-surfboards.webp" width="1600">
+</img></a>
+</div>
+<div>
+<a href="https://www.cleanlinesurf.com/volcom-wetsuits" onclick="ga('send', 'event', {eventCategory: 'Home Page', eventAction: 'click', eventLabel: 'Banner: Winter22 Volcom Wetsuits'});" title="Volcom Wetsuits">
+<img alt="Volcom Wetsuits" height="583" src="https://img.cleanlinesurf.com/media/banners/2022-02-volcom-wetsuits.webp" width="1600">
+</img></a>
+</div>
+<div>
+<a href="https://www.cleanlinesurf.com/channel-islands-surfboards" onclick="ga('send', 'event', {eventCategory: 'Home Page', eventAction: 'click', eventLabel: 'Banner: Winter21 Channel Islands Surfboards'});" title="Channel Islands Surfboards">
+<img alt="Channel Islands Surfboards" height="583" src="https://img.cleanlinesurf.com/media/banners/2021-12-channel-islands.webp" width="1600">
+</img></a>
+</div>
+<div>
+<a href="https://www.cleanlinesurf.com/endorfins-fins" onclick="ga('send', 'event', {eventCategory: 'Home Page', eventAction: 'click', eventLabel: 'Banner: Fall21 Endorfins'});" title="Endorfins Fins">
+<img alt="Endorfins Fins" height="583" src="https://img.cleanlinesurf.com/media/banners/2021-12-endorfins-2.webp" width="1600">
+</img></a>
+</div>
+<div>
+<a href="https://www.cleanlinesurf.com/oneill-wetsuits" onclick="ga('send', 'event', {eventCategory: 'Home Page', eventAction: 'click', eventLabel: 'Banner: Winter22 Oneill Wetsuits'});" title="Shop O'Neill Wetsuits">
+<img alt="Shop O'neill Wetsuits" height="583" src="https://img.cleanlinesurf.com/media/banners/2022-02-oneill-wetsuits.webp" width="1600">
+</img></a>
+</div>
+<div>
+<a href="https://www.cleanlinesurf.com/patagonia-wetsuits" onclick="ga('send', 'event', {eventCategory: 'Home Page', eventAction: 'click', eventLabel: 'Banner: Winter22 Patagonia Wetsuits'});" title="Patagonia Wetsuits">
+<img alt="Patagonia Wetsuits" height="583" src="https://img.cleanlinesurf.com/media/banners/2022-01-patagonia-wetsuits.webp" width="1600">
+</img></a>
+</div>
+</div>
+<div class="separator dark">
+<hr/>
+</div>
+<div class="featured-products"><h4>Featured Products</h4><div class="owl-carousel"> <div class="item"><a href="https://www.cleanlinesurf.com/slater-designs-regular-surf-leash.html"> <span class="product-image-container" style="width:140px;"><span class="product-image-wrapper" style="padding-bottom: 100%;"><picture class="mfwebp"> <source max-height="140" max-width="140" srcset="https://media.cleanlinesurf.com/mf_webp/jpg/media/catalog/product/cache/f0190f23a0f44b42b39d652b0804aed3/s/l/slater-designs-surf-leash-front-6ft.webp" type="image/webp"/> <img alt="Slater Designs Regular Leash" class="product-image-photo" data-webpconverted="1" max-height="140" max-width="140" src="https://media.cleanlinesurf.com/catalog/product/cache/f0190f23a0f44b42b39d652b0804aed3/s/l/slater-designs-surf-leash-front-6ft.jpg"/></picture></span></span> <span class="brand">Slater Designs</span> <span class="name">Regular Leash</span> <div class="no-review"></div> <div class="price-box price-final_price" data-price-box="product-id-90703" data-product-id="90703" data-role="priceBox"> <span class="normal-price"> <span class="price-container price-final_price tax weee"> <span class="price-label">As low as</span> <span class="price-wrapper" data-price-amount="30.95" data-price-type="finalPrice" id="product-price-90703"><span class="price">$30.95</span></span> </span></span> </div></a></div> <div class="item"><a href="https://www.cleanlinesurf.com/nocs-provisions-pro-issue-waterproof-binoculars.html"> <span class="product-image-container" style="width:140px;"><span class="product-image-wrapper" style="padding-bottom: 100%;"><picture class="mfwebp"> <source max-height="140" max-width="140" srcset="https://media.cleanlinesurf.com/mf_webp/jpg/media/catalog/product/cache/f0190f23a0f44b42b39d652b0804aed3/n/o/nos-provisions-pro-issue-waterproof-10-42-binoculars-persimmon-orange-01_2.webp" type="image/webp"/> <img alt="Nocs Provisions Pro Issue Waterproof Binoculars" class="product-image-photo" data-webpconverted="1" max-height="140" max-width="140" src="https://media.cleanlinesurf.com/catalog/product/cache/f0190f23a0f44b42b39d652b0804aed3/n/o/nos-provisions-pro-issue-waterproof-10-42-binoculars-persimmon-orange-01_2.jpg"/></picture></span></span> <span class="brand">Nocs Provisions</span> <span class="name">Pro Issue Waterproof Binoculars</span> <div class="no-review"></div> <div class="price-box price-final_price" data-price-box="product-id-90685" data-product-id="90685" data-role="priceBox"> <span class="normal-price"> <span class="price-container price-final_price tax weee"> <span class="price-label">As low as</span> <span class="price-wrapper" data-price-amount="294.95" data-price-type="finalPrice" id="product-price-90685"><span class="price">$294.95</span></span> </span></span> </div></a></div> <div class="item"><a href="https://www.cleanlinesurf.com/skindog-the-ova-thunderbolt-red-surfboard.html"> <span class="product-image-container" style="width:140px;"><span class="product-image-wrapper" style="padding-bottom: 100%;"><picture class="mfwebp"> <source max-height="140" max-width="140" srcset="https://media.cleanlinesurf.com/mf_webp/jpg/media/catalog/product/cache/f0190f23a0f44b42b39d652b0804aed3/s/k/skindog-surfboards-the-ova-blue-deck_1.webp" type="image/webp"/> <img alt="Skindog The OVA Thunderbolt Red Surfboard" class="product-image-photo" data-webpconverted="1" max-height="140" max-width="140" src="https://media.cleanlinesurf.com/catalog/product/cache/f0190f23a0f44b42b39d652b0804aed3/s/k/skindog-surfboards-the-ova-blue-deck_1.jpg"/></picture></span></span> <span class="brand">Skindog</span> <span class="name">The OVA Thunderbolt Red Surfboard</span> <div class="no-review"></div> <div class="price-box price-final_price" data-price-box="product-id-90693" data-product-id="90693" data-role="priceBox"> <span class="normal-price"> <span class="price-container price-final_price tax weee"> <span class="price-label">As low as</span> <span class="price-wrapper" data-price-amount="999.95" data-price-type="finalPrice" id="product-price-90693"><span class="price">$999.95</span></span> </span></span> </div></a></div> <div class="item"><a href="https://www.cleanlinesurf.com/naish-surf-boardbag.html"> <span class="product-image-container" style="width:140px;"><span class="product-image-wrapper" style="padding-bottom: 100%;"><picture class="mfwebp"> <source max-height="140" max-width="140" srcset="https://media.cleanlinesurf.com/mf_webp/jpg/media/catalog/product/cache/f0190f23a0f44b42b39d652b0804aed3/s/u/surf-boardbag.webp" type="image/webp"/> <img alt="Naish Surf Surfboard Bag" class="product-image-photo" data-webpconverted="1" max-height="140" max-width="140" src="https://media.cleanlinesurf.com/catalog/product/cache/f0190f23a0f44b42b39d652b0804aed3/s/u/surf-boardbag.jpg"/></picture></span></span> <span class="brand">Naish</span> <span class="name">Surf Surfboard Bag</span> <div class="no-review"></div> <div class="price-box price-final_price" data-price-box="product-id-85146" data-product-id="85146" data-role="priceBox"> <span class="normal-price"> <span class="price-container price-final_price tax weee"> <span class="price-label">As low as</span> <span class="price-wrapper" data-price-amount="121.95" data-price-type="finalPrice" id="product-price-85146"><span class="price">$121.95</span></span> </span></span> </div></a></div> <div class="item"><a href="https://www.cleanlinesurf.com/critical-slide-logger-head-9-2-x-22-x-3-surfboard-kiwi-cslogpu0902kiws.html"> <span class="product-image-container" style="width:140px;"><span class="product-image-wrapper" style="padding-bottom: 100%;"><picture class="mfwebp"> <source max-height="140" max-width="140" srcset="https://media.cleanlinesurf.com/mf_webp/jpg/media/catalog/product/cache/f0190f23a0f44b42b39d652b0804aed3/c/r/critical-slide-surfboard-gsicslogpu0902kiws-critical-slide-logger-head-pu-kiwi-deck.webp" type="image/webp"/> <img alt="Critical Slide Logger Head 9'2 x 22 ¾ x 3 Surfboard - Kiwi" class="product-image-photo" data-webpconverted="1" max-height="140" max-width="140" src="https://media.cleanlinesurf.com/catalog/product/cache/f0190f23a0f44b42b39d652b0804aed3/c/r/critical-slide-surfboard-gsicslogpu0902kiws-critical-slide-logger-head-pu-kiwi-deck.jpg"/></picture></span></span> <span class="brand">Critical Slide</span> <span class="name">Logger Head 9'2 x 22 ¾ x 3 Surfboard - Kiwi</span> <div class="no-review"></div> <div class="price-box price-final_price" data-price-box="product-id-90871" data-product-id="90871" data-role="priceBox"> <span class="price-container price-final_price tax weee"> <span class="price-wrapper" data-price-amount="1049.95" data-price-type="finalPrice" id="product-price-90871"><span class="price">$1,049.95</span></span> </span> </div></a></div> <div class="item"><a href="https://www.cleanlinesurf.com/cleanline-women-s-silhouette-circle-cropped-sweatshirt.html"> <span class="product-image-container" style="width:140px;"><span class="product-image-wrapper" style="padding-bottom: 100%;"><picture class="mfwebp"> <source max-height="140" max-width="140" srcset="https://media.cleanlinesurf.com/mf_webp/jpg/media/catalog/product/cache/f0190f23a0f44b42b39d652b0804aed3/c/l/cleanlinesurf-wmns-silhouettecircle-cropped-black-back.webp" type="image/webp"/> <img alt="Cleanline Women's Silhouette Circle Cropped Sweatshirt" class="product-image-photo" data-webpconverted="1" max-height="140" max-width="140" src="https://media.cleanlinesurf.com/catalog/product/cache/f0190f23a0f44b42b39d652b0804aed3/c/l/cleanlinesurf-wmns-silhouettecircle-cropped-black-back.jpg"/></picture></span></span> <span class="brand">Cleanline</span> <span class="name">Women's Silhouette Circle Cropped Sweatshirt</span> <div class="no-review"></div> <div class="price-box price-final_price" data-price-box="product-id-86583" data-product-id="86583" data-role="priceBox"> <span class="normal-price"> <span class="price-container price-final_price tax weee"> <span class="price-label">As low as</span> <span class="price-wrapper" data-price-amount="47.95" data-price-type="finalPrice" id="product-price-86583"><span class="price">$47.95</span></span> </span></span> </div></a></div> <div class="item"><a href="https://www.cleanlinesurf.com/cleanline-4-3-hooded-chest-zip-wetsuit.html"> <span class="product-image-container" style="width:140px;"><span class="product-image-wrapper" style="padding-bottom: 100%;"><picture class="mfwebp"> <source max-height="140" max-width="140" srcset="https://media.cleanlinesurf.com/mf_webp/jpg/media/catalog/product/cache/f0190f23a0f44b42b39d652b0804aed3/h/o/hoodmaybe_2.webp" type="image/webp"/> <img alt="Cleanline 4/3 Hooded Chest Zip Wetsuit" class="product-image-photo" data-webpconverted="1" max-height="140" max-width="140" src="https://media.cleanlinesurf.com/catalog/product/cache/f0190f23a0f44b42b39d652b0804aed3/h/o/hoodmaybe_2.jpg"/></picture></span></span> <span class="brand">Cleanline</span> <span class="name">4/3 Hooded Chest Zip Wetsuit</span> <div class="product-reviews-summary short"> <div class="rating-summary"><span class="label"><span>Rating:</span></span> <div class="rating-result" title="95%"><span style="width:95%"><span>95%</span></span></div></div> <div class="reviews-actions"><a class="action view" href="https://www.cleanlinesurf.com/cleanline-4-3-hooded-chest-zip-wetsuit.html#reviews">2 <span>Reviews</span></a></div></div> <div class="price-box price-final_price" data-price-box="product-id-75611" data-product-id="75611" data-role="priceBox"> <span class="normal-price"> <span class="price-container price-final_price tax weee"> <span class="price-label">As low as</span> <span class="price-wrapper" data-price-amount="569.95" data-price-type="finalPrice" id="product-price-75611"><span class="price">$569.95</span></span> </span></span> </div></a></div> <div class="item"><a href="https://www.cleanlinesurf.com/sector-9-wavepark-shadow-30-25-skateboard-complete.html"> <span class="product-image-container" style="width:140px;"><span class="product-image-wrapper" style="padding-bottom: 100%;"><picture class="mfwebp"> <source max-height="140" max-width="140" srcset="https://media.cleanlinesurf.com/mf_webp/jpg/media/catalog/product/cache/f0190f23a0f44b42b39d652b0804aed3/s/e/sector-9-complete-10002787-wavepark-shadow-complete-bottom.webp" type="image/webp"/> <img alt='Sector 9 Wavepark Shadow 30.25" Skateboard Complete' class="product-image-photo" data-webpconverted="1" max-height="140" max-width="140" src="https://media.cleanlinesurf.com/catalog/product/cache/f0190f23a0f44b42b39d652b0804aed3/s/e/sector-9-complete-10002787-wavepark-shadow-complete-bottom.jpg"/></picture></span></span> <span class="brand">Sector 9</span> <span class="name">Wavepark Shadow 30.25" Skateboard Complete</span> <div class="no-review"></div> <div class="price-box price-final_price" data-price-box="product-id-90952" data-product-id="90952" data-role="priceBox"> <span class="price-container price-final_price tax weee"> <span class="price-wrapper" data-price-amount="168.95" data-price-type="finalPrice" id="product-price-90952"><span class="price">$168.95</span></span> </span> </div></a></div> <div class="item"><a href="https://www.cleanlinesurf.com/surfica-longboard-surfboard-bag.html"> <span class="product-image-container" style="width:140px;"><span class="product-image-wrapper" style="padding-bottom: 100%;"><picture class="mfwebp"> <source max-height="140" max-width="140" srcset="https://media.cleanlinesurf.com/mf_webp/jpg/media/catalog/product/cache/f0190f23a0f44b42b39d652b0804aed3/c/a/cat-prod-surfica-longboard-bb_1024x1024_2x.webp" type="image/webp"/> <img alt="Surfica Longboard Surfboard Bag" class="product-image-photo" data-webpconverted="1" max-height="140" max-width="140" src="https://media.cleanlinesurf.com/catalog/product/cache/f0190f23a0f44b42b39d652b0804aed3/c/a/cat-prod-surfica-longboard-bb_1024x1024_2x.jpg"/></picture></span></span> <span class="brand">Surfica</span> <span class="name">Longboard Surfboard Bag</span> <div class="product-reviews-summary short"> <div class="rating-summary"><span class="label"><span>Rating:</span></span> <div class="rating-result" title="93%"><span style="width:93%"><span>93%</span></span></div></div> <div class="reviews-actions"><a class="action view" href="https://www.cleanlinesurf.com/surfica-longboard-surfboard-bag.html#reviews">2 <span>Reviews</span></a></div></div> <div class="price-box price-final_price" data-price-box="product-id-78260" data-product-id="78260" data-role="priceBox"> <span class="normal-price"> <span class="price-container price-final_price tax weee"> <span class="price-label">As low as</span> <span class="price-wrapper" data-price-amount="113.95" data-price-type="finalPrice" id="product-price-78260"><span class="price">$113.95</span></span> </span></span> </div></a></div> <div class="item"><a href="https://www.cleanlinesurf.com/cleanline-lines-zip-hoodie-black.html"> <span class="product-image-container" style="width:140px;"><span class="product-image-wrapper" style="padding-bottom: 100%;"><picture class="mfwebp"> <source max-height="140" max-width="140" srcset="https://media.cleanlinesurf.com/mf_webp/jpg/media/catalog/product/cache/f0190f23a0f44b42b39d652b0804aed3/c/l/cleanlinesurf-lines-ziphoodie-blk-back.webp" type="image/webp"/> <img alt="Cleanline Lines Zip Hoodie - Black/White" class="product-image-photo" data-webpconverted="1" max-height="140" max-width="140" src="https://media.cleanlinesurf.com/catalog/product/cache/f0190f23a0f44b42b39d652b0804aed3/c/l/cleanlinesurf-lines-ziphoodie-blk-back.jpg"/></picture></span></span> <span class="brand">Cleanline</span> <span class="name">Lines Zip Hoodie - Black</span> <div class="product-reviews-summary short"> <div class="rating-summary"><span class="label"><span>Rating:</span></span> <div class="rating-result" title="100%"><span style="width:100%"><span>100%</span></span></div></div> <div class="reviews-actions"><a class="action view" href="https://www.cleanlinesurf.com/cleanline-lines-zip-hoodie-black.html#reviews">1 <span>Review</span></a></div></div> <div class="price-box price-final_price" data-price-box="product-id-13266" data-product-id="13266" data-role="priceBox"> <span class="normal-price"> <span class="price-container price-final_price tax weee"> <span class="price-label">As low as</span> <span class="price-wrapper" data-price-amount="54.95" data-price-type="finalPrice" id="product-price-13266"><span class="price">$54.95</span></span> </span></span> </div></a></div> <div class="item"><a href="https://www.cleanlinesurf.com/dakine-daylight-surf-noserider-surfboard-bag.html"> <span class="product-image-container" style="width:140px;"><span class="product-image-wrapper" style="padding-bottom: 100%;"><picture class="mfwebp"> <source max-height="140" max-width="140" srcset="https://media.cleanlinesurf.com/mf_webp/jpg/media/catalog/product/cache/f0190f23a0f44b42b39d652b0804aed3/d/a/dakine-daylight-noserider-cascade-camo.webp" type="image/webp"/> <img alt="Dakine Daylight Noserider Surfboard Bag" class="product-image-photo" data-webpconverted="1" max-height="140" max-width="140" src="https://media.cleanlinesurf.com/catalog/product/cache/f0190f23a0f44b42b39d652b0804aed3/d/a/dakine-daylight-noserider-cascade-camo.jpg"/></picture></span></span> <span class="brand">Dakine</span> <span class="name">Daylight Noserider Surfboard Bag</span> <div class="product-reviews-summary short"> <div class="rating-summary"><span class="label"><span>Rating:</span></span> <div class="rating-result" title="85%"><span style="width:85%"><span>85%</span></span></div></div> <div class="reviews-actions"><a class="action view" href="https://www.cleanlinesurf.com/dakine-daylight-surf-noserider-surfboard-bag.html#reviews">2 <span>Reviews</span></a></div></div> <div class="price-box price-final_price" data-price-box="product-id-72218" data-product-id="72218" data-role="priceBox"> <span class="normal-price"> <span class="price-container price-final_price tax weee"> <span class="price-label">As low as</span> <span class="price-wrapper" data-price-amount="124.95" data-price-type="finalPrice" id="product-price-72218"><span class="price">$124.95</span></span> </span></span> </div></a></div> <div class="item"><a href="https://www.cleanlinesurf.com/pro-lite-the-drip-contest-traction.html"> <span class="product-image-container" style="width:140px;"><span class="product-image-wrapper" style="padding-bottom: 100%;"><picture class="mfwebp"> <source max-height="140" max-width="140" srcset="https://media.cleanlinesurf.com/mf_webp/jpg/media/catalog/product/cache/f0190f23a0f44b42b39d652b0804aed3/p/r/pro-lite-the-drip-surf-traction-pad-black-white-01_2.webp" type="image/webp"/> <img alt="Pro-Lite The Drip Contest Traction" class="product-image-photo" data-webpconverted="1" max-height="140" max-width="140" src="https://media.cleanlinesurf.com/catalog/product/cache/f0190f23a0f44b42b39d652b0804aed3/p/r/pro-lite-the-drip-surf-traction-pad-black-white-01_2.jpg"/></picture></span></span> <span class="brand">Pro-Lite</span> <span class="name">The Drip Contest Traction</span> <div class="no-review"></div> <div class="price-box price-final_price" data-price-box="product-id-90143" data-product-id="90143" data-role="priceBox"> <span class="normal-price"> <span class="price-container price-final_price tax weee"> <span class="price-label">As low as</span> <span class="price-wrapper" data-price-amount="45.95" data-price-type="finalPrice" id="product-price-90143"><span class="price">$45.95</span></span> </span></span> </div></a></div> <div class="item"><a href="https://www.cleanlinesurf.com/critical-slide-logger-head-9-2-x-22-x-3-surfboard-honey-cslogpu0902hons.html"> <span class="product-image-container" style="width:140px;"><span class="product-image-wrapper" style="padding-bottom: 100%;"><picture class="mfwebp"> <source max-height="140" max-width="140" srcset="https://media.cleanlinesurf.com/mf_webp/jpg/media/catalog/product/cache/f0190f23a0f44b42b39d652b0804aed3/c/r/critical-slide-surfboard-gsicslogpu0902hons-critical-slide-logger-head-pu-honey-deck.webp" type="image/webp"/> <img alt="Critical Slide Logger Head 9'2 x 22 ¾ x 3 Surfboard - Honey" class="product-image-photo" data-webpconverted="1" max-height="140" max-width="140" src="https://media.cleanlinesurf.com/catalog/product/cache/f0190f23a0f44b42b39d652b0804aed3/c/r/critical-slide-surfboard-gsicslogpu0902hons-critical-slide-logger-head-pu-honey-deck.jpg"/></picture></span></span> <span class="brand">Critical Slide</span> <span class="name">Logger Head 9'2 x 22 ¾ x 3 Surfboard - Honey</span> <div class="no-review"></div> <div class="price-box price-final_price" data-price-box="product-id-90870" data-product-id="90870" data-role="priceBox"> <span class="price-container price-final_price tax weee"> <span class="price-wrapper" data-price-amount="1049.95" data-price-type="finalPrice" id="product-price-90870"><span class="price">$1,049.95</span></span> </span> </div></a></div> <div class="item"><a href="https://www.cleanlinesurf.com/rip-curl-surf-series-dry-bag-10l.html"> <span class="product-image-container" style="width:140px;"><span class="product-image-wrapper" style="padding-bottom: 100%;"><picture class="mfwebp"> <source max-height="140" max-width="140" srcset="https://media.cleanlinesurf.com/mf_webp/jpg/media/catalog/product/cache/f0190f23a0f44b42b39d652b0804aed3/r/i/rip-curl-surf-series-lutmm1-dry-bag-10l-off-white-01.webp" type="image/webp"/> <img alt="Rip Curl Surf Series Dry Bag - 10L" class="product-image-photo" data-webpconverted="1" max-height="140" max-width="140" src="https://media.cleanlinesurf.com/catalog/product/cache/f0190f23a0f44b42b39d652b0804aed3/r/i/rip-curl-surf-series-lutmm1-dry-bag-10l-off-white-01.jpg"/></picture></span></span> <span class="brand">Rip Curl</span> <span class="name">Surf Series Dry Bag - 10L</span> <div class="no-review"></div> <div class="price-box price-final_price" data-price-box="product-id-90716" data-product-id="90716" data-role="priceBox"> <span class="normal-price"> <span class="price-container price-final_price tax weee"> <span class="price-label">As low as</span> <span class="price-wrapper" data-price-amount="29.95" data-price-type="finalPrice" id="product-price-90716"><span class="price">$29.95</span></span> </span></span> </div></a></div> <div class="item"><a href="https://www.cleanlinesurf.com/dakine-packable-roll-top-dry-duffel-bag-40l.html"> <span class="product-image-container" style="width:140px;"><span class="product-image-wrapper" style="padding-bottom: 100%;"><picture class="mfwebp"> <source max-height="140" max-width="140" srcset="https://media.cleanlinesurf.com/mf_webp/jpg/media/catalog/product/cache/f0190f23a0f44b42b39d652b0804aed3/d/a/dakine-packable-roll-dry-duffel-bag-40l-black-01.webp" type="image/webp"/> <img alt="Dakine Packable Roll Top Dry Duffel Bag - 40L" class="product-image-photo" data-webpconverted="1" max-height="140" max-width="140" src="https://media.cleanlinesurf.com/catalog/product/cache/f0190f23a0f44b42b39d652b0804aed3/d/a/dakine-packable-roll-dry-duffel-bag-40l-black-01.jpg"/></picture></span></span> <span class="brand">Dakine</span> <span class="name">Packable Roll Top Dry Duffel Bag - 40L</span> <div class="no-review"></div> <div class="price-box price-final_price" data-price-box="product-id-90165" data-product-id="90165" data-role="priceBox"> <span class="normal-price"> <span class="price-container price-final_price tax weee"> <span class="price-label">As low as</span> <span class="price-wrapper" data-price-amount="84.95" data-price-type="finalPrice" id="product-price-90165"><span class="price">$84.95</span></span> </span></span> </div></a></div></div></div>
+<div class="separator">
+<hr/>
+</div>
+<div class="instagram-feed"><a class="link" href="https://www.instagram.com/cleanlinesurf" target="_blank">@cleanlinesurf</a> <div class="images"> <div class="image"><a href="https://www.instagram.com/p/Cd4ekNurtPA/" rel="nofollow" target="_blank"><img alt="Stay hydrated my friends 💧
+
+#cleanlinesurf #since1980 #surfshop #oregoncoast #purveyorsofstoke #thenorthwestsoriginalsurfshop #waterbottle #hydroflask #hydration @_dpattie @hydroflask" src="https://www.cleanlinesurf.com/imageproxy?url=aHR0cHM6Ly9zY29udGVudC1zZWExLTEuY2RuaW5zdGFncmFtLmNvbS92L3Q1MS4yODg1LTE1LzI4MzUzMzk0M18zNDA4NzcwNTc5ODAzNTlfMTkxMzQzMzMwODY0MTI5MTExN19uLndlYnA/c3RwPWRzdC1qcGdfZTM1X3M2NDB4NjQwX3NoMC4wOCZfbmNfaHQ9c2NvbnRlbnQtc2VhMS0xLmNkbmluc3RhZ3JhbS5jb20mX25jX2NhdD0xMDMmX25jX29oYz0yYVJ5dFA0Tk8zb0FYXzE1YlNKJnRuPU8yZ3VBaG9iTENHV3NGU1AmZWRtPUFCZmQwTWdCQUFBQSZjY2I9Ny01Jm9oPTAwX0FUX21zcm5FX0FJMWl2aXZELUVSS0ZkTWxJM1NYMUZmWEdQMTJxbFN3UEVEd3cmb2U9NjI5NjAzRjEmX25jX3NpZD03YmZmODM="/></a></div> <div class="image"><a href="https://www.instagram.com/p/Cd1Do70p03C/" rel="nofollow" target="_blank"><img alt="Hope you're gettin' some!  Have a great weekend! 
+
+#weekends #weekendvibes #surf #surfing #coldwatersurf #surfer #waves #backlit #surfphotography 
+Capture @bcrobby" src="https://www.cleanlinesurf.com/imageproxy?url=aHR0cHM6Ly9zY29udGVudC1zZWExLTEuY2RuaW5zdGFncmFtLmNvbS92L3Q1MS4yODg1LTE1LzI4MTU4NjU3OV81NTc4MTIwNTU5NDU1MTJfMTA3OTY2MDMyODQ3NDUxODkyMV9uLndlYnA/c3RwPWMxNzAuMC42NzYuNjc2YV9kc3QtanBnX2UzNV9zNjQweDY0MF9zaDAuMDgmX25jX2h0PXNjb250ZW50LXNlYTEtMS5jZG5pbnN0YWdyYW0uY29tJl9uY19jYXQ9MTA0Jl9uY19vaGM9aDhPT092aWFjbXNBWF9oRG5VZCZlZG09QUJmZDBNZ0JBQUFBJmNjYj03LTUmb2g9MDBfQVQtWWVtak5qbmczU1BDSTAwRE5VN1lKUUo4QUhBVEZwLUsxQTZrU3VrdlBXdyZvZT02Mjk2REMwRiZfbmNfc2lkPTdiZmY4Mw=="/></a></div> <div class="image"><a href="https://www.instagram.com/p/CdwjSDEvmSg/" rel="nofollow" target="_blank"><img alt="A throwback to golden days of Summer..... We're ready when you are!
+
+#bringiton #summerdays #sunshine #beachdays #surf #surfing #beachdogs #tbt #throwback #throwbackthursday  Capture @kookwithakamera" src="https://www.cleanlinesurf.com/imageproxy?url=aHR0cHM6Ly9zY29udGVudC1zZWExLTEuY2RuaW5zdGFncmFtLmNvbS92L3Q1MS4yODg1LTE1LzI4MTY0MzYyMF80MTg5ODM5ODMwNTc0MjRfODI2Njk0OTAxNzEwMDUyMjkxMF9uLndlYnA/c3RwPWMwLjYyLjY3Ni42NzZhX2RzdC1qcGdfZTM1X3M2NDB4NjQwX3NoMC4wOCZfbmNfaHQ9c2NvbnRlbnQtc2VhMS0xLmNkbmluc3RhZ3JhbS5jb20mX25jX2NhdD0xMDAmX25jX29oYz1GcEp1TzY0NGhtSUFYOF9ULUhiJnRuPU8yZ3VBaG9iTENHV3NGU1AmZWRtPUFCZmQwTWdCQUFBQSZjY2I9Ny01Jm9oPTAwX0FULTRGSl81bnVFYnN4Rk5VMmpXT2JBR1ZGOF9IQU9NNHN1OUwtNTVsUHFiX2cmb2U9NjI5NjEwRkYmX25jX3NpZD03YmZmODM="/></a></div> <div class="image"><a href="https://www.instagram.com/p/Cdrx4nVrKYP/" rel="nofollow" target="_blank"><img alt="☆☆NEW☆☆ We're stoked to share the new Lib Tech/Lost Mason Ho Little Wings are here!  Check 'em out on our site ☝️ or stop by our Seaside location!
+
+#surfboards #libtech #libtechsurf #Lost #mayhem #mattbiolos #masonho #littlewing #surfing #surf #cleanlinesurf #surfshop #since1980 #oregoncoast #coldwaterspecialists #thenorthwestsoriginalsurfshop 
+@libtechsurf @lostsurfboards @matt_biolos @cocom4debarrelkilla" src="https://www.cleanlinesurf.com/imageproxy?url=aHR0cHM6Ly9zY29udGVudC1zZWExLTEuY2RuaW5zdGFncmFtLmNvbS92L3Q1MS4yODg1LTE1LzI4MTk0MjQ3OF8xMTc1MjA5MzM2Mzg0MzkyXzgzNjY1MDcyMTM3OTg1MDgwNzFfbi53ZWJwP3N0cD1kc3QtanBnX2UzNV9zNjQweDY0MF9zaDAuMDgmX25jX2h0PXNjb250ZW50LXNlYTEtMS5jZG5pbnN0YWdyYW0uY29tJl9uY19jYXQ9MTAwJl9uY19vaGM9TFB0b3VCcS1VUFlBWF9VaUF1aiZlZG09QUJmZDBNZ0JBQUFBJmNjYj03LTUmb2g9MDBfQVQtYmhVd2FKa0RreW5QUk5Ld1hEQVZldmp6R21CUXA0NWNqaGpwcWV1c3pWUSZvZT02Mjk1MkMxRCZfbmNfc2lkPTdiZmY4Mw=="/></a></div> </div></div>
+<div class="separator">
+<hr/>
+</div>
+<div class="instagram-feed"><a class="link" href="https://www.instagram.com/cleanlinesurf_boardrack" target="_blank">@cleanlinesurf_boardrack</a> <div class="images"> <div class="image"><a href="https://www.instagram.com/p/Cd6rPIsPXsi/" rel="nofollow" target="_blank"><img alt="*Ward Coffey - Bonzer*
+5’8” 19 x 2 7/16 | 
+Built for speed. In good condition, comes with fins.
+$350
+
+This board is at our Seaside location.
+
+#11838 #usedsurfboards #boardporn" src="https://www.cleanlinesurf.com/imageproxy?url=aHR0cHM6Ly9zY29udGVudC1zZWExLTEuY2RuaW5zdGFncmFtLmNvbS92L3Q1MS4yODg1LTE1LzI4MzE2Njc0MV81NDgyMTQ4NTY2NzYxOTZfMzY2NzU3MDE2MjUwNjY5MDA3Ml9uLmpwZz9zdHA9ZHN0LWpwZ19lMzVfczY0MHg2NDBfc2gwLjA4Jl9uY19odD1zY29udGVudC1zZWExLTEuY2RuaW5zdGFncmFtLmNvbSZfbmNfY2F0PTEwMCZfbmNfb2hjPVphZ3VMcEdVMkJBQVgtY0FBMG8mdG49TzJndUFob2JMQ0dXc0ZTUCZlZG09QUJmZDBNZ0JBQUFBJmNjYj03LTUmb2g9MDBfQVQtX0JzMURVUktmSG9pSnR6dHUwNk5pNWlHTkVNSkREcDdROVVvY1E5VUI2QSZvZT02Mjk2N0JERiZfbmNfc2lkPTdiZmY4Mw=="/></a></div> <div class="image"><a href="https://www.instagram.com/p/Cd6oyGcPPsu/" rel="nofollow" target="_blank"><img alt="*Pyzel - Pyzalien II XL*
+5’8” 19.13 x 2.44 | 28.5L
+Shortboard for better summer conditions with a tad extra float. In good condition, comes with fins and sock.
+$500
+
+This board is in our Seaside location.
+
+#11834 #usedsurfboards #boardporn #pyzelsurfboards" src="https://www.cleanlinesurf.com/imageproxy?url=aHR0cHM6Ly9zY29udGVudC1zZWExLTEuY2RuaW5zdGFncmFtLmNvbS92L3Q1MS4yODg1LTE1LzI4MzI5NjQ5OV8yOTg2Mjg4NDkxNTE3OTlfODg1NTg1MTEzNTUwMjgwNDE0Ml9uLmpwZz9zdHA9ZHN0LWpwZ19lMzVfczY0MHg2NDBfc2gwLjA4Jl9uY19odD1zY29udGVudC1zZWExLTEuY2RuaW5zdGFncmFtLmNvbSZfbmNfY2F0PTEwNyZfbmNfb2hjPWJfM0lsUE15TFQ0QVg4VXN3d1gmZWRtPUFCZmQwTWdCQUFBQSZjY2I9Ny01Jm9oPTAwX0FUOGl0ZXJSd1BKNEhWSS0wcVlLM3B3VlI5Ym4tRi1BNVQxNkVnUy1aTDU1Z1Emb2U9NjI5NTU1N0QmX25jX3NpZD03YmZmODM="/></a></div> <div class="image"><a href="https://www.instagram.com/p/Cd6oQA1vCsM/" rel="nofollow" target="_blank"><img alt="*Pyzel - Pyzalien II XL*❌SOLD
+5’10” 19.63 x 2.5 | 30.8L
+Daily driver for average to good condition with a little extra float to it. In good condition, comes with sock and fins.
+$425
+
+This board is in our Seaside location.
+
+#11837 #usedsurfboards #boardporn #pyzelsurfboards" src="https://www.cleanlinesurf.com/imageproxy?url=aHR0cHM6Ly9zY29udGVudC1zZWExLTEuY2RuaW5zdGFncmFtLmNvbS92L3Q1MS4yODg1LTE1LzI4Mzc0ODE4NF8xNTg0MzI1MzMzMjk4NjBfNDA5MDU2MzIxODA5OTUyNjQyNV9uLmpwZz9zdHA9ZHN0LWpwZ19lMzVfczY0MHg2NDBfc2gwLjA4Jl9uY19odD1zY29udGVudC1zZWExLTEuY2RuaW5zdGFncmFtLmNvbSZfbmNfY2F0PTEwOCZfbmNfb2hjPW1xTkhYclY5VzAwQVgtWl9fclUmZWRtPUFCZmQwTWdCQUFBQSZjY2I9Ny01Jm9oPTAwX0FUOUsxNkd3N2JldjlVZlpwb2lEeGdnT0FRaS1NWllZdlNxRGNZYjNJMGw2b3cmb2U9NjI5NjRFQzgmX25jX3NpZD03YmZmODM="/></a></div> <div class="image"><a href="https://www.instagram.com/p/Cd6nZ31vRWE/" rel="nofollow" target="_blank"><img alt="*Channel Islands - Fishbeard*
+5’8” 19 3/8 x 2 7/16 | 29.2L
+Performance fish designed to be surfed in better waves. In good condition with a repaired/rebuilt tail. Comes with fins and sock.
+$499
+
+This board is at our Seaside location.
+
+#11836 #usedsurfboards #boardporn #cisurfboards" src="https://www.cleanlinesurf.com/imageproxy?url=aHR0cHM6Ly9zY29udGVudC1zZWExLTEuY2RuaW5zdGFncmFtLmNvbS92L3Q1MS4yODg1LTE1LzI4MzQ5MzQ1M18xMDg4Mzg5MjU4NzAyMTA2XzUzODc3MDUzMDc0Mzk0NDM5Njlfbi5qcGc/c3RwPWRzdC1qcGdfZTM1X3M2NDB4NjQwX3NoMC4wOCZfbmNfaHQ9c2NvbnRlbnQtc2VhMS0xLmNkbmluc3RhZ3JhbS5jb20mX25jX2NhdD0xMDImX25jX29oYz0tUkpXWjNmY0l5SUFYOWRQQ1dlJnRuPU8yZ3VBaG9iTENHV3NGU1AmZWRtPUFCZmQwTWdCQUFBQSZjY2I9Ny01Jm9oPTAwX0FUX0taODh3MDE3WmZwdWJKUkE4b2U0a2NITVBkclU1bFVfb3RONktaRzZ0blEmb2U9NjI5NUVCMzUmX25jX3NpZD03YmZmODM="/></a></div> </div></div>
+</div></div></main><footer class="page-footer"><div class="footer content"><div class="branding">
+<div class="about-us">
+<h4>Welcome to Cleanlinesurf.com</h4>
+<p>
+                                We are a full service surf shop located on the Northern Oregon Coast. Established in 1980 and locally owned and operated, Cleanline is The Northwest's "Original" Surf Shop. We carry the Northwest's largest selection of surfboards &amp; surfing wetsuits, as well as a wide selection of quality, cutting edge surf gear to suit your lifestyle.
+                            </p>
+</div>
+<div class="comments">
+<h4>What Our Customers Are Saying</h4>
+<div class="quotes"></div>
+</div>
+</div>
+<div class="pre-foot-wrap">
+<div class="pre-foot">
+<div class="stoke">
+<span class="title">40 Years Of Stoke</span>
+</div>
+<div class="newsletter">
+<h4>Sign Up For News &amp; Deals</h4>
+<div class="block newsletter"><div class="title"><strong>Newsletter</strong></div><div class="content"><form action="https://www.cleanlinesurf.com/newsletter/subscriber/new/" class="form subscribe" data-mage-init='{"validation": {"errorClass": "mage-error"}}' id="newsletter-validate-detail-mobile" method="post" novalidate=""><div class="field newsletter"><div class="control"><label for="newsletter"><span class="label">Sign Up for Our Newsletter:</span> <input data-mage-init='{"mage/trim-input":{}}' data-validate="{required:true, 'validate-email':true}" id="newsletter-mobile" name="email" placeholder="Enter your email address" type="email"/></label></div></div><div class="actions"><button aria-label="Subscribe" class="action subscribe primary" title="Subscribe" type="submit"><span>Subscribe</span></button></div></form></div></div>
+</div>
+</div>
+</div>
+<div class="foot-wrap">
+<div class="foot">
+<div>
+<h5>Cleanlinesurf.com</h5>
+<ul>
+<li><a href="https://www.cleanlinesurf.com/about-cleanline/" rel="nofollow">About Us</a></li>
+<li><a href="https://www.cleanlinesurf.com/blog/" rel="nofollow">Blog</a></li>
+<li><a href="https://www.cleanlinesurf.com/jobs/" rel="nofollow">Jobs</a></li>
+<li><a href="https://www.cleanlinesurf.com/gift-certificate.html/" rel="nofollow">Gift Certificates</a></li>
+<li><a href="https://www.cleanlinesurf.com/wetsuit-guide/" rel="nofollow">Wetsuit Guide</a></li>
+</ul>
+</div>
+<div>
+<h5>Our Stores</h5>
+<ul>
+<li><a href="https://www.cleanlinesurf.com/about-cleanline/" rel="nofollow">Locations &amp; Hours</a></li>
+<li><a href="https://www.cleanlinesurf.com/surf-report/" rel="nofollow">Surf Report</a></li>
+<li><a href="https://www.cleanlinesurf.com/surf-lessons/" rel="nofollow">Surf Lessons</a></li>
+<li><a href="https://www.cleanlinesurf.com/surf-rentals/" rel="nofollow">Surf Rentals</a></li>
+<li><a href="https://www.cleanlinesurf.com/theshop/surfboard-wetsuit-consignments/" rel="nofollow">Consignments</a></li>
+<li><a href="https://www.instagram.com/cleanlinesurf_boardrack/" rel="nofollow" target="_blank">Used Boardrack</a></li>
+<li><a href="https://www.cleanlinesurf.com/theshop/demos/" rel="nofollow">Demos</a></li>
+<li><a href="https://www.cleanlinesurf.com/tour/" rel="nofollow">Shop Tour</a></li>
+<li><a href="https://www.cleanlinesurf.com/theshop/gallery/" rel="nofollow">Josh's Gallery</a></li>
+</ul>
+</div>
+<div>
+<h5>Customer Service</h5>
+<ul>
+<li><a href="https://www.cleanlinesurf.com/sales/guest/form/" rel="nofollow">Order Status</a></li>
+<li><a href="https://www.cleanlinesurf.com/shipping-policy/" rel="nofollow">Shipping</a></li>
+<li><a href="https://www.cleanlinesurf.com/returns/" rel="nofollow">Returns</a></li>
+<li><a href="https://www.cleanlinesurf.com/customer-comments/" rel="nofollow">Customer Comments</a></li>
+<li><a href="https://www.cleanlinesurf.com/contact/" rel="nofollow">Contact Us</a></li>
+</ul>
+</div>
+<div class="tall">
+<h5>Contact Us</h5>
+<ul class="contact">
+<li>
+<span>Call Us</span>
+<i class="fas fa-phone"></i>
+<div>888-546-6176</div>
+</li>
+<li>
+<span>Email Us</span>
+<i class="fas fa-envelope"></i>
+<div>support@cleanlinesurf.com</div>
+</li>
+<li>
+<span>Visit Us</span>
+<i class="fas fa-building"></i>
+<div>
+<address>
+                                                60 N. Roosevelt Dr.<br/>
+                                                Seaside, OR 97138
+                                            </address>
+<hr/>
+<address>
+                                                171 Sunset Blvd.<br/>
+                                                Cannon Beach, OR 97110
+                                            </address>
+</div>
+</li>
+</ul>
+</div>
+<div class="tall">
+<div class="newsletter">
+<h4>Sign Up For News &amp; Deals</h4>
+<div class="block newsletter"><div class="title"><strong>Newsletter</strong></div><div class="content"><form action="https://www.cleanlinesurf.com/newsletter/subscriber/new/" class="form subscribe" data-mage-init='{"validation": {"errorClass": "mage-error"}}' id="newsletter-validate-detail" method="post" novalidate=""><div class="field newsletter"><div class="control"><label for="newsletter"><span class="label">Sign Up for Our Newsletter:</span> <input data-mage-init='{"mage/trim-input":{}}' data-validate="{required:true, 'validate-email':true}" id="newsletter" name="email" placeholder="Enter your email address" type="email"/></label></div></div><div class="actions"><button aria-label="Subscribe" class="action subscribe primary" title="Subscribe" type="submit"><span>Subscribe</span></button></div></form></div></div>
+</div>
+<h5>Follow Us</h5>
+<div class="social">
+<a href="https://instagram.com/cleanlinesurf" rel="nofollow" target="_blank"><i class="fab fa-instagram"></i></a>
+<a href="https://www.facebook.com/cleanlinesurf" rel="nofollow" target="_blank"><i class="fab fa-facebook"></i></a>
+<a href="https://twitter.com/cleanlinesurf" rel="nofollow" target="_blank"><i class="fab fa-twitter"></i></a>
+<!--<a href="https://www.youtube.com/CleanlineSurfTube" target="_blank" rel="nofollow"><i class="fab fa-youtube"></i></a>-->
+</div>
+</div>
+</div>
+<div class="copy">
+                            © 1998 - 2022 Cleanline Surf Co. All Rights Reserved.<br/>
+                            All Prices In USD
+                        </div>
+</div> <div class="field-recaptcha" data-bind="scope:'msp-recaptcha-58312e2256fb5bcda606e9b5046e00ef'" id="msp-recaptcha-58312e2256fb5bcda606e9b5046e00ef-container"><!-- ko template: getTemplate() --><!-- /ko --></div></div></footer> <div class="modal-trigger newsletter-popup" data-target=".modal.newsletter-popup" style="display: none;"></div><div class="modal newsletter-popup"><div class="inner"><form class="newsletter-popup-form"><button class="close">X</button> <span class="title">Save 10%</span> <span class="sub-title">When you sign up for our newsletter</span> <span class="excludes">Excludes items on sale, surfboards, wax, and gift cards.</span> <div class="input-box"><input class="input-text required-entry validate-email" id="newsletter2" name="email" placeholder="Enter your email address" title="Sign up for our newsletter" type="text"/></div><button class="button btn-inline" title="Subscribe" type="submit">Submit</button></form></div></div> <div id="mana-please-wait" style="display:none;"><p><img alt="Loading..." src="https://static.cleanlinesurf.com/version1651108454/frontend/Cleanline/theme/en_US/Manadev_Core/images/please-wait.gif"><br>Loading...</br></img></p></div> <!-- BEGIN GOOGLE TRUSTED STORES BADGE CODE --><!-- END GOOGLE TRUSTED STORES BADGE CODE --> <!-- Product hit template --><!-- Category hit template --><!-- Page hit template --><!-- Extra attribute hit template --> <!-- Suggestion hit template --> <!-- Wrapping template --> </div><script>
+    var BASE_URL = 'https://www.cleanlinesurf.com/';
+    var require = {
+        "baseUrl": "https://static.cleanlinesurf.com/version1651108454/frontend/Cleanline/theme/en_US"
+    };</script>
+<script src="https://static.cleanlinesurf.com/version1651108454/_cache/merged/fce14777f398defca82bffa2e7920586.min.js" type="text/javascript"></script>
+<script type="text/x-magento-init">
+{
+    "*": {
+        "Magento_GoogleAnalytics/js/google-analytics": {
+            "isCookieRestrictionModeEnabled": 0,
+            "currentWebsite": 1,
+            "cookieName": "user_allowed_save_cookie",
+            "ordersTrackingData": [],
+            "pageTrackingData": {"optPageUrl":"","isAnonymizedIpActive":false,"accountId":"UA-35900507-1"}        }
+    }
+}</script>
+<script defer="" src="https://chimpstatic.com/mcjs-connected/js/users/8fa406436531ad1839421da1b/e5fb1bf8a583fe5534e24d4f4.js" type="text/javascript"></script>
+<script data-rocketjavascript="false">
+    var MagefanWebP = {
+
+        _canUseWebP: null,
+
+        getUserAgentInfo: function(){
+            try {
+                var ua = navigator.userAgent,
+                    tem,
+                    M = ua.match(/(opera|chrome|safari|firefox|msie|trident(?=\/))\/?\s*(\d+)/i) || [];
+                if (/trident/i.test(M[1])) {
+                    tem = /\brv[ :]+(\d+)/g.exec(ua) || [];
+                    return ['IE', (tem[1] || '')];
+                }
+                if (M[1] === 'Chrome') {
+                    tem = ua.match(/\b(OPR|Edge)\/(\d+)/);
+                    if (tem != null) {
+                        tem = tem.slice(1);
+                        tem[0] = tem[0].replace('OPR', 'Opera');
+                        return tem;
+                    }
+                }
+                M = M[2] ? [M[1], M[2]] : [navigator.appName, navigator.appVersion, '-?'];
+                if ((tem = ua.match(/version\/(\d+)/i)) != null) M.splice(1, 1, tem[1]);
+                return M;
+             } catch (e) {
+                return ['', 0];
+             }
+        },
+
+        canUseWebP: function(){
+
+            if (null !== this._canUseWebP){
+                return this._canUseWebP;
+            }
+
+            try {
+                var elem = document.createElement('canvas');
+                if (!!(elem.getContext && elem.getContext('2d'))) {
+                    var r = (elem.toDataURL('image/webp').indexOf('data:image/webp') == 0);
+                    if (!r) {
+                        var ua = this.getUserAgentInfo();
+                        if (ua && ua.length > 1) {
+                            ua[0] = ua[0].toLowerCase();
+                            if ('firefox' == ua[0] && parseInt(ua[1]) >= 65) {
+                                this._canUseWebP = true;
+                                return this._canUseWebP;
+                            }
+                            if ('edge' == ua[0] && parseInt(ua[1]) >= 18) {
+                                this._canUseWebP = true;
+                                return this._canUseWebP;
+                            }
+                             if ('safari' == ua[0] && parseInt(ua[1]) >= 14) {
+                                this._canUseWebP = true;
+                                return this._canUseWebP;
+                            }
+                        }
+                    }
+
+                    this._canUseWebP = r;
+                    return this._canUseWebP;
+                }
+                this._canUseWebP = false;
+                return this._canUseWebP;
+            } catch (e) {
+                console.log(e);
+                this._canUseWebP = false;
+                return this._canUseWebP;
+            }
+        },
+
+        getOriginWebPImage: function(src) {
+
+            if (src.indexOf('mf_webp') == -1) {
+                return src;
+            }
+
+            var $array = src.split('/');
+            var $imageFormat = '';
+
+            for (var i = 0; i < $array.length; i++) {
+                if ($array[i] == "mf_webp") {
+                    $imageFormat = $array[i + 1];
+                    $array.splice(i, 3);
+                    break;
+                }
+            }
+            src = $array.join('/');
+            return src.replace('.webp', '.' + $imageFormat);
+        },
+
+        getWebUrl: function (imageUrl) {
+            /* @var string */
+            imageUrl = imageUrl.trim();
+            var baseUrl = 'https://www.cleanlinesurf.com/';
+            var imageFormat = imageUrl.split('.').pop();
+            var mediaBaseUrl = 'https://media.cleanlinesurf.com/';
+            var staticBaseUrl = 'https://static.cleanlinesurf.com/';
+
+            if (imageUrl.indexOf(mediaBaseUrl) == -1 && imageUrl.indexOf(staticBaseUrl) == -1) {
+                return false;
+            }
+
+            var imagePath = imageUrl;
+            imagePath = imagePath.replace(mediaBaseUrl, 'media/');
+            imagePath = imagePath.replace(staticBaseUrl, 'static/');
+            imagePath = imagePath.replace(baseUrl + 'pub/media/', 'media/');
+            imagePath = imagePath.replace(baseUrl + 'pub/static/', 'static/');
+            imagePath = imagePath.replace(/\.(jpg|jpeg|png|JPG|JPEG|PNG|gif|GIF)/i, '.webp');
+            imagePath = mediaBaseUrl + 'mf_webp/' + imageFormat + '/' + imagePath;
+            imagePath = imagePath.replace('%20', ' ');
+            imagePath = imagePath.replace(/version\d{10}\//g, '');
+            return imagePath;
+        }
+    };
+
+    /* MagicToolboxContainer Fix */
+    function MagefanWebPMagicToolboxContainerFix()
+    {
+        if (!MagefanWebP.canUseWebP()) {
+            (function(){
+                var i;
+                var els = document.querySelectorAll(".MagicToolboxContainer a, .MagicToolboxContainer img");
+                if (!els) return;
+                var el;
+                for (i=0; i<els.length; i++) {
+                    el = els[i];
+                    if (el.href) {
+                        el.href = MagefanWebP.getOriginWebPImage(el.href);
+                    }
+
+                    if (el.getAttribute('webpimg')) {
+                        el.src = MagefanWebP.getOriginWebPImage(el.getAttribute('webpimg'));
+                    } else {
+                        if (el.src) {
+                            el.src = MagefanWebP.getOriginWebPImage(el.src);
+                        }
+                    }
+
+                    if (el.dataset && el.dataset.image) {
+                        el.dataset.image = MagefanWebP.getOriginWebPImage(el.dataset.image);
+                    }
+
+                }
+            })();
+        } else {
+            replacePixelMagicToolbox();
+            checkIfPixelReplaced();
+        }
+    }
+
+    function replacePixelMagicToolbox() {
+        (function() {
+            var i, els = document.querySelectorAll(".MagicToolboxContainer img");
+
+            if (!els) return;
+            var el;
+
+            for (i=0; i<els.length; i++) {
+                el = els[i];
+
+                if (el.getAttribute('webpimg')) {
+                    el.src = el.getAttribute('webpimg');
+                }
+            }
+        })();
+    }
+
+    function checkIfPixelReplaced() {
+        var intervalCounter = 0,
+            waitForMagicToolbox = setInterval(function() {
+                if (document.querySelectorAll('figure img[src$="/p.jpg"]').length) {
+                   replacePixelMagicToolbox();
+                   clearInterval(waitForMagicToolbox);
+                }
+
+                if (intervalCounter > 10) {
+                    clearInterval(waitForMagicToolbox);
+                }
+
+                intervalCounter++;
+            }, 500);
+    }
+
+    document.addEventListener("DOMContentLoaded", function(){
+        if (!MagefanWebP.canUseWebP()) {
+            document.body.className += ' no-webp ';
+
+             (function(){
+                var i;
+                var els = document.querySelectorAll('a[href$=".webp"]');
+                if (!els) return;
+                var el;
+                for (i=0; i<els.length; i++) {
+                    el = els[i];
+                    if (el.href) {
+                        el.href = MagefanWebP.getOriginWebPImage(el.href);
+                    }
+                }
+            })();
+            
+        } else {
+            document.body.className += ' webp-supported ';
+        }
+    });</script>
+<script>
+    require(['jquery', 'domReady!'], function($){
+        if (!MagefanWebP.canUseWebP()) {
+            /* Replace some custom webp images with original one if webp is not supported */
+            /* Can add <a> tag in future as well */
+            setInterval(function(){
+                $("img[src$='.webp']:not(.no-origin-webp-img)").each(function(){
+                    var $t = $(this);
+                    var scr = $t.attr('src');
+                    var newScr = MagefanWebP.getOriginWebPImage(scr);
+
+                    if (scr != newScr) {
+                        $t.attr('src', newScr);
+                    } else {
+                        $t.addClass('no-origin-webp-img');
+                    }
+                });
+            }, 1000);
+        }
+
+        function processLazyPictureImg()
+        {
+            var $t = $(this);
+            var src = $t.attr('src');
+            var keys = ['original', 'src', 'lazyload'];
+            var original, _original;
+            for (var i=0;i<keys.length;i++) {
+                _original = $t.data(keys[i]);
+                if (_original) {
+                    original = _original;
+                    break;
+                }
+            }
+            if (original == src) {
+
+                if ($t.data('mf-lazy-picture-img')) return;
+                $t.data('mf-lazy-picture-img', 1);
+
+                $t.parent().find('source').each(function(){
+                    var $s = $(this);
+                    var srcset = $s.attr('srcset');
+                    var originalset = $s.data('originalset');
+                    if (originalset != srcset) {
+                        $s.attr('srcset', originalset);
+                        $s.removeClass('lazyload');
+                    }
+                });
+                $t.parents('.lazy-loader').removeClass('lazy-loader');
+                $("picture img[src='"+src+"']").each(processLazyPictureImg);
+            }
+        }
+
+        $('picture img[data-original],picture img[data-src],picture img[data-lazyload]')
+            .on('load', processLazyPictureImg)
+            .each(processLazyPictureImg);
+    });</script>
+<script>
+    requirejs(['jquery'], function($) {
+        var script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.id = 'ze-snippet';
+        script.async = true;
+        script.src = 'https://static.zdassets.com/ekr/snippet.js?key=3af822a2-64b9-493c-9be4-f171549ca90d';
+        $(document.body).append(script);
+    });</script>
+<script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"WebSite","url":"https:\/\/www.cleanlinesurf.com\/","name":"Cleanline Surf"}</script>
+<script type="application/ld+json">{"@context":"http:\/\/schema.org\/","@type":"WebPage","speakable":{"@type":"SpeakableSpecification","cssSelector":[".cms-content"],"xpath":["\/html\/head\/title"]}}</script>
+<script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=default%2CArray.prototype.includes%2CPromise"></script>
+<script>
+     window.algoliaConfig = {"instant":{"enabled":true,"selector":".columns","isAddToCartEnabled":false,"addToCartParams":{"action":"https:\/\/www.cleanlinesurf.com\/checkout\/cart\/add\/uenc\/aHR0cHM6Ly93d3cuY2xlYW5saW5lc3VyZi5jb20v\/","formKey":"y5qvbnjWO1FyLCC6"},"infiniteScrollEnabled":false,"urlTrackedParameters":["query","attribute:*","index","page"]},"autocomplete":{"enabled":true,"selector":".algolia-search-input","sections":[{"name":"pages","label":"Pages","hitsPerPage":"2"}],"nbOfProductsSuggestions":6,"nbOfCategoriesSuggestions":2,"nbOfQueriesSuggestions":0,"isDebugEnabled":false},"landingPage":{"query":"","configuration":"[]"},"extensionVersion":"3.0.1","applicationId":"4NVV4QU4UI","indexName":"magento2_default","apiKey":"YWUyOGY5Mjg1ZDM3MTUyNmQyZDRhNmZiZDMzYWQzN2MyOTQyOGY2NWRkMjAzODY1ZjM4MTk4MjE5YmU1Yjc5YXRhZ0ZpbHRlcnM9","attributeFilter":[],"facets":[{"attribute":"price","type":"slider","label":"Price","searchable":"2","create_rule":"2"},{"attribute":"categories","type":"conjunctive","label":"Categories","searchable":"2","create_rule":"2"},{"attribute":"color","type":"disjunctive","label":"Colors","searchable":"1","create_rule":"2"}],"areCategoriesInFacets":true,"hitsPerPage":9,"sortingIndices":[{"attribute":"price","sort":"asc","sortLabel":"Lowest price","name":"magento2_default_products_price_default_asc","label":"Lowest price","ranking":["asc(price.USD.default)","typo","geo","words","filters","proximity","attribute","exact","custom"]},{"attribute":"price","sort":"desc","sortLabel":"Highest price","name":"magento2_default_products_price_default_desc","label":"Highest price","ranking":["desc(price.USD.default)","typo","geo","words","filters","proximity","attribute","exact","custom"]},{"attribute":"created_at","sort":"desc","sortLabel":"Newest first","name":"magento2_default_products_created_at_desc","label":"Newest first","ranking":["desc(created_at)","typo","geo","words","filters","proximity","attribute","exact","custom"]}],"isSearchPage":false,"isCategoryPage":false,"isLandingPage":false,"removeBranding":true,"productId":null,"priceKey":".USD.default","currencyCode":"USD","currencySymbol":"$","priceFormat":{"pattern":"$%s","precision":2,"requiredPrecision":2,"decimalSymbol":".","groupSymbol":",","groupLength":3,"integerRequired":false},"maxValuesPerFacet":10,"autofocus":true,"request":{"query":"","refinementKey":"","refinementValue":"","categoryId":"","landingPageId":"","path":"","level":""},"showCatsNotIncludedInNavigation":false,"showSuggestionsOnNoResultsPage":true,"baseUrl":"https:\/\/www.cleanlinesurf.com","popularQueries":["FireWire","leash","Gath","patagonia","Vissla","torq","aletas bodyboard","twin 1","futures alpha"],"useAdaptiveImage":false,"urls":{"logo":"https:\/\/static.cleanlinesurf.com\/version1651108454\/frontend\/Cleanline\/theme\/en_US\/Algolia_AlgoliaSearch\/images\/search-by-algolia.svg"},"ccAnalytics":{"enabled":false,"ISSelector":".ais-Hits-item a.result, .ais-InfiniteHits-item a.result","conversionAnalyticsMode":null,"addToCartSelector":".action.primary.tocart","orderedProductIds":[]},"isPersonalizationEnabled":false,"personalization":{"enabled":false,"viewedEvents":{"viewProduct":{"eventName":"Viewed Product","enabled":false,"method":"viewedObjectIDs"}},"clickedEvents":{"productClicked":{"eventName":"Product Clicked","enabled":false,"selector":".ais-Hits-item a.result, .ais-InfiniteHits-item a.result","method":"clickedObjectIDs"},"productRecommended":{"eventName":"Recommended Product Clicked","enabled":false,"selector":".products-upsell .product-item","method":"clickedObjectIDs"}},"filterClicked":{"eventName":"Filter Clicked","enabled":false,"method":"clickedFilters"}},"analytics":{"enabled":false,"delay":"3000","triggerOnUiInteraction":"1","pushInitialSearch":"0"},"now":1653523200,"queue":{"isEnabled":true,"nbOfJobsToRun":500,"retryLimit":2,"nbOfElementsPerIndexingJob":600},"isPreventBackendRenderingEnabled":false,"areOutOfStockOptionsDisplayed":false,"translations":{"to":"to","or":"or","go":"Go","popularQueries":"You can try one of the popular search queries","seeAll":"See all products","allDepartments":"All departments","seeIn":"See products in","orIn":"or in","noProducts":"No products for query","noResults":"No results","refine":"Refine","selectedFilters":"Selected Filters","clearAll":"Clear all","previousPage":"Previous page","nextPage":"Next page","searchFor":"Search for products","relevance":"Relevance","categories":"Categories","products":"Products","searchBy":"Search by","searchForFacetValuesPlaceholder":"Search for other ...","showMore":"Show more products"}};</script>
+<script type="text/javascript">window["mgctlbx$Pltm"] = "Magento 2";</script>
+<script src="https://static.cleanlinesurf.com/version1651108454/frontend/Cleanline/theme/en_US/MagicToolbox_MagicZoomPlus/js/magiczoomplus.min.js" type="text/javascript"></script>
+<script src="https://static.cleanlinesurf.com/version1651108454/frontend/Cleanline/theme/en_US/MagicToolbox_MagicZoomPlus/js/magictoolbox.utils.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+	var mzOptions = {
+		'history':false,
+		'zoomWidth':'auto',
+		'zoomHeight':'auto',
+		'zoomPosition':'right',
+		'zoomDistance':15,
+		'selectorTrigger':'click',
+		'transitionEffect':true,
+		'lazyZoom':true,
+		'rightClick':true,
+		'cssClass':'',
+		'zoomMode':'zoom',
+		'zoomOn':'hover',
+		'upscale':true,
+		'smoothing':true,
+		'variableZoom':false,
+		'zoomCaption':'off',
+		'expand':'window',
+		'expandZoomMode':'zoom',
+		'expandZoomOn':'click',
+		'expandCaption':true,
+		'closeOnClickOutside':true,
+		'hint':'off',
+		'textHoverZoomHint':'Hover to zoom',
+		'textClickZoomHint':'Click to zoom',
+		'textExpandHint':'Click to expand',
+		'textBtnClose':'Close',
+		'textBtnNext':'Next',
+		'textBtnPrev':'Previous'
+	}
+</script>
+<script type="text/javascript">
+	var mzMobileOptions = {
+		'zoomMode':'off',
+		'textHoverZoomHint':'Touch to zoom',
+		'textClickZoomHint':'Double tap to zoom',
+		'textExpandHint':'Tap to expand'
+	}
+</script>
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "mage/cookies": {
+                "expires": null,
+                "path": "\u002F",
+                "domain": ".www.cleanlinesurf.com",
+                "secure": false,
+                "lifetime": "604800"
+            }
+        }
+    }</script>
+<script>
+    window.cookiesConfig = window.cookiesConfig || {};
+    window.cookiesConfig.secure = true;</script>
+<script>
+    require.config({
+        map: {
+            '*': {
+                wysiwygAdapter: 'mage/adminhtml/wysiwyg/tiny_mce/tinymce4Adapter'
+            }
+        }
+    });</script>
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "Magento_Paypal/js/in-context/express-checkout": {"id":"paypal-express-in-context-checkout-main","path":"https:\/\/www.cleanlinesurf.com\/paypal\/express\/gettoken\/","merchantId":"XAS5N53VHG6PA","button":true,"clientConfig":{"locale":"en_US","environment":"production","button":["paypal-express-in-context-checkout-main"]}}        }
+    }</script>
+<script>
+    manadevSeoQuery = {};</script>
+<script type="text/x-magento-init">
+            {
+                "*": {
+                    "Magento_Ui/js/core/app": {
+                        "components": {
+                            "customer": {
+                                "component": "Magento_Customer/js/view/customer"
+                            }
+                        }
+                    }
+                }
+            }</script>
+<script type="text/x-magento-init">
+            {
+                "*": {
+                    "Magento_Ui/js/core/app": {
+                        "components": {
+                            "customer": {
+                                "component": "Magento_Customer/js/view/customer"
+                            }
+                        }
+                    }
+                }
+            }</script>
+<script>
+        window.checkout = {"shoppingCartUrl":"https:\/\/www.cleanlinesurf.com\/checkout\/cart\/","checkoutUrl":"https:\/\/www.cleanlinesurf.com\/checkout\/","updateItemQtyUrl":"https:\/\/www.cleanlinesurf.com\/checkout\/sidebar\/updateItemQty\/","removeItemUrl":"https:\/\/www.cleanlinesurf.com\/checkout\/sidebar\/removeItem\/","imageTemplate":"Magento_Catalog\/product\/image_with_borders","baseUrl":"https:\/\/www.cleanlinesurf.com\/","minicartMaxItemsVisible":5,"websiteId":"1","maxItemsToDisplay":10,"storeId":"1","storeGroupId":"1","customerLoginUrl":"https:\/\/www.cleanlinesurf.com\/customer\/account\/login\/referer\/aHR0cHM6Ly93d3cuY2xlYW5saW5lc3VyZi5jb20v\/","isRedirectRequired":false,"autocomplete":"off","captcha":{"user_login":{"isCaseSensitive":false,"imageHeight":50,"imageSrc":"","refreshUrl":"https:\/\/www.cleanlinesurf.com\/captcha\/refresh\/","isRequired":false,"timestamp":1653548411}}};</script>
+<script type="text/x-magento-init">
+    {
+        "[data-block='minicart']": {
+            "Magento_Ui/js/core/app": {"components":{"minicart_content":{"children":{"subtotal.container":{"children":{"subtotal":{"children":{"subtotal.totals":{"config":{"display_cart_subtotal_incl_tax":0,"display_cart_subtotal_excl_tax":1,"template":"Magento_Tax\/checkout\/minicart\/subtotal\/totals"},"children":{"subtotal.totals.msrp":{"component":"Magento_Msrp\/js\/view\/checkout\/minicart\/subtotal\/totals","config":{"displayArea":"minicart-subtotal-hidden","template":"Magento_Msrp\/checkout\/minicart\/subtotal\/totals"}}},"component":"Magento_Tax\/js\/view\/checkout\/minicart\/subtotal\/totals"}},"component":"uiComponent","config":{"template":"Magento_Checkout\/minicart\/subtotal"}}},"component":"uiComponent","config":{"displayArea":"subtotalContainer"}},"item.renderer":{"component":"uiComponent","config":{"displayArea":"defaultRenderer","template":"Magento_Checkout\/minicart\/item\/default"},"children":{"item.image":{"component":"Magento_Catalog\/js\/view\/image","config":{"template":"Magento_Catalog\/product\/image","displayArea":"itemImage"}},"checkout.cart.item.price.sidebar":{"component":"uiComponent","config":{"template":"Magento_Checkout\/minicart\/item\/price","displayArea":"priceSidebar"}}}},"extra_info":{"component":"uiComponent","config":{"displayArea":"extraInfo"}},"promotion":{"component":"uiComponent","config":{"displayArea":"promotion"}}},"config":{"itemRenderer":{"default":"defaultRenderer","simple":"defaultRenderer","virtual":"defaultRenderer"},"template":"Magento_Checkout\/minicart\/content"},"component":"Magento_Checkout\/js\/view\/minicart"}},"types":[]}        },
+        "*": {
+            "Magento_Ui/js/block-loader": "https://static.cleanlinesurf.com/version1651108454/frontend/Cleanline/theme/en_US/images/loader-1.gif"
+        }
+    }</script>
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "Magento_Ui/js/core/app": {
+                "components": {
+                        "messages": {
+                            "component": "Magento_Theme/js/view/messages"
+                        }
+                    }
+                }
+            }
+    }</script>
+<script>
+        window.authenticationPopup = {"autocomplete":"off","customerRegisterUrl":"https:\/\/www.cleanlinesurf.com\/customer\/account\/create\/","customerForgotPasswordUrl":"https:\/\/www.cleanlinesurf.com\/customer\/account\/forgotpassword\/","baseUrl":"https:\/\/www.cleanlinesurf.com\/"};</script>
+<script type="text/x-magento-init">
+        {
+            "#authenticationPopup": {
+                "Magento_Ui/js/core/app": {"components":{"authenticationPopup":{"component":"Magento_Customer\/js\/view\/authentication-popup","children":{"messages":{"component":"Magento_Ui\/js\/view\/messages","displayArea":"messages"},"captcha":{"component":"Magento_Captcha\/js\/view\/checkout\/loginCaptcha","displayArea":"additional-login-form-fields","formId":"user_login","configSource":"checkout"},"msp_recaptcha":{"component":"MSP_ReCaptcha\/js\/reCaptcha","displayArea":"additional-login-form-fields","configSource":"checkoutConfig","reCaptchaId":"msp-recaptcha-popup-login","zone":"login","badge":"inline","settings":{"siteKey":"6LehXLIZAAAAAP9-crzkhFXZp_Z1NRFsGztKWCHq","size":"invisible","badge":"inline","theme":null,"lang":null,"enabled":{"login":true,"create":true,"forgot":true,"contact":true,"review":true,"newsletter":false,"sendfriend":true,"paypal":true}}},"amazon-button":{"component":"Amazon_Login\/js\/view\/login-button-wrapper","sortOrder":"0","displayArea":"additional-login-form-fields","config":{"tooltip":"Securely login to our website using your existing Amazon details.","componentDisabled":true}}}}}}            },
+            "*": {
+                "Magento_Ui/js/block-loader": "https\u003A\u002F\u002Fstatic.cleanlinesurf.com\u002Fversion1651108454\u002Ffrontend\u002FCleanline\u002Ftheme\u002Fen_US\u002Fimages\u002Floader\u002D1.gif"
+            }
+        }</script>
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "Magento_Customer/js/section-config": {
+                "sections": {"stores\/store\/switch":["*"],"stores\/store\/switchrequest":["*"],"directory\/currency\/switch":["*"],"*":["messages"],"customer\/account\/logout":["*","recently_viewed_product","recently_compared_product","persistent"],"customer\/account\/loginpost":["*"],"customer\/account\/createpost":["*"],"customer\/account\/editpost":["*"],"customer\/ajax\/login":["checkout-data","cart","captcha"],"catalog\/product_compare\/add":["compare-products"],"catalog\/product_compare\/remove":["compare-products"],"catalog\/product_compare\/clear":["compare-products"],"sales\/guest\/reorder":["cart"],"sales\/order\/reorder":["cart"],"checkout\/cart\/add":["cart","directory-data"],"checkout\/cart\/delete":["cart"],"checkout\/cart\/updatepost":["cart"],"checkout\/cart\/updateitemoptions":["cart"],"checkout\/cart\/couponpost":["cart"],"checkout\/cart\/estimatepost":["cart"],"checkout\/cart\/estimateupdatepost":["cart"],"checkout\/onepage\/saveorder":["cart","checkout-data","last-ordered-items"],"checkout\/sidebar\/removeitem":["cart"],"checkout\/sidebar\/updateitemqty":["cart"],"rest\/*\/v1\/carts\/*\/payment-information":["cart","last-ordered-items","instant-purchase"],"rest\/*\/v1\/guest-carts\/*\/payment-information":["cart"],"rest\/*\/v1\/guest-carts\/*\/selected-payment-method":["cart","checkout-data"],"rest\/*\/v1\/carts\/*\/selected-payment-method":["cart","checkout-data","instant-purchase"],"customer\/address\/*":["instant-purchase"],"customer\/account\/*":["instant-purchase"],"vault\/cards\/deleteaction":["instant-purchase"],"multishipping\/checkout\/overviewpost":["cart"],"authorizenet\/directpost_payment\/place":["cart","checkout-data"],"paypal\/express\/placeorder":["cart","checkout-data"],"paypal\/payflowexpress\/placeorder":["cart","checkout-data"],"paypal\/express\/onauthorization":["cart","checkout-data"],"persistent\/index\/unsetcookie":["persistent"],"review\/product\/post":["review"],"braintree\/paypal\/placeorder":["cart","checkout-data"],"wishlist\/index\/add":["wishlist"],"wishlist\/index\/remove":["wishlist"],"wishlist\/index\/updateitemoptions":["wishlist"],"wishlist\/index\/update":["wishlist"],"wishlist\/index\/cart":["wishlist","cart"],"wishlist\/index\/fromcart":["wishlist","cart"],"wishlist\/index\/allcart":["wishlist","cart"],"wishlist\/shared\/allcart":["wishlist","cart"],"wishlist\/shared\/cart":["cart"]},
+                "clientSideSections": ["checkout-data","cart-data"],
+                "baseUrls": ["https:\/\/www.cleanlinesurf.com\/"],
+                "sectionNames": ["messages","customer","compare-products","last-ordered-items","cart","directory-data","captcha","instant-purchase","persistent","review","wishlist","recently_viewed_product","recently_compared_product","product_data_storage","paypal-billing-agreement"]            }
+        }
+    }</script>
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "Magento_Customer/js/customer-data": {
+                "sectionLoadUrl": "https\u003A\u002F\u002Fwww.cleanlinesurf.com\u002Fcustomer\u002Fsection\u002Fload\u002F",
+                "expirableSectionLifetime": 60,
+                "expirableSectionNames": ["cart","persistent"],
+                "cookieLifeTime": "604800",
+                "updateSessionUrl": "https\u003A\u002F\u002Fwww.cleanlinesurf.com\u002Fcustomer\u002Faccount\u002FupdateSession\u002F"
+            }
+        }
+    }</script>
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "Magento_Customer/js/invalidation-processor": {
+                "invalidationRules": {
+                    "website-rule": {
+                        "Magento_Customer/js/invalidation-rules/website-rule": {
+                            "scopeConfig": {
+                                "websiteId": "1"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }</script>
+<script type="text/x-magento-init">
+    {
+        "body": {
+            "pageCache": {"url":"https:\/\/www.cleanlinesurf.com\/page_cache\/block\/render\/","handles":["default","cms_index_index","cms_page_view","cms_index_index_id_home","algolia_search_handle","algolia_search_handle_with_topsearch","mana_styles"],"originalRequest":{"route":"cms","controller":"index","action":"index","uri":"\/"},"versionCookieName":"private_content_version"}        }
+    }</script>
+<script>
+    requirejs(['jquery', 'owlcarousel'], function($) {
+        var owl = $(".homepage-slider.owl-carousel");
+        owl.owlCarousel({
+            dots: true,
+            nav: true,
+            loop: true,
+            items: 1,
+            autoplay: true,
+            autoplayTimeout: 10000,
+            autoplayHoverPause: true,
+            autoplaySpeed: 1500,
+            onInitialize : function(element) {
+                owl.children().sort(function() {
+                    return Math.round(Math.random()) - 0.5;
+                }).each(function() {
+                    $(this).appendTo(owl);
+                });
+            },
+        });
+    });
+</script>
+<script>
+                                requirejs(['jquery'], function($) {
+                                    var customerComments = [
+                                        'I can always count on Cleanline Surf to supply us with the best girls wetsuit with great deals plus very helpful customer service. I highly recommend you to my family and friends.',
+                                        'Seriously a great experience and product! From the prices to the personalized note. I just wanted to share why my family gets so excited to receive this wetsuit. My son has cold urticaria- which essential means he is allergic to cold. I know, crazy but research it, it is real! He will go into anaphylactic shock. He was diagnosed at 4 and is now 8. One of the hardest things we battled with was swimming in outdoor pools, indoor pools, lakes, oceans, or running through the sprinklers. With his wetsuit he feels like a super hero that can overcome! Thank you for making it a great experience to order from you. I hope I can find great prices & products each year so we can shop with you again!',
+                                        'Just want to say thank you for being AMAZING. I ordered my first wetsuit from you and it shipped fast. I was shocked to see all the goodies and the handwritten thank you note along with the quality gear I ordered. Your stickers will be going on my truck soon and I have been telling all my friends about you guys. Shopping with you was a great experience and I will ll definitely be ordering some more suits from you in the very near future for the wife and kids!',
+                                        'The crew at Cleanline Surf are always awesome. I have mostly purchased via their website. The gear gets shipped quickly which means it arrives just as fast. If they are low on stock, they will call the store that has it while I wait on hold to make sure it is actually there. Take the time to stop in or check them out online. They are my go-to surf shop on the Oregon Coast.',
+                                        'I just wanted to let you know in reference to my order. I was so pleasantly surprised at the customer service. When the package arrived my wife opened it (It was a gift for our son for his birthday) and she opened it and said "Oh my gosh, it is a handwritten note and some candy" In this age of terrible customer service and everyone is just a number on Amazon, received a product so quickly and with all the personal touches that actually lets you know that a real person not a "robot" mailed a package, made us decide that if we ever need anything surf related again we will 100 percent order from you again. Not to mention that the package was wrapped so nicely so as not to cause damage. It was great and we were so impressed. I wish we lived in Oregon we would visit your shop. Great job and we look forward to ordering from you again!',
+                                        'I am from Massachusetts and this is the only site I order from even though they are located across the county in Oregon. Their customer service is next to none. They take the time to respond to any email as if you are in the store yourself whether it is ding repair or wetsuit sizing. Also the personalized post cards and starburst in your package does not hurt.',
+                                        'Thank you for all your help helping me choose my new wetsuit and getting it to me on time for a nice hurricane swell last Friday. I chose the O Neill Psyco Tech 3/2 and I love it. It felt snug trying it on at home, but once I surfed it, it was perfect. Super warm in 62 degree water, I know it will take cooler. Very flexible and light. Thanks for taking my several calls and answering my questions. Thanks Again',
+                                        'Ok people... I have worked in the skate, surf, and snowboard industry for well over a decade and customer service even longer! I have never seen anything like this. I mean the shop looks like your average surf shop. But the people that work there are incredible! I have been coming into buy and rent for a few summers now. And they always remember me (I live in Boise Idaho!) so they see me very few and far between. This last time, I requested a specific board to rent in advance. When I got there they forgot to have it transferred down from the Sea Side shop. So what does the guy do... He drops everything he is doing and drives 30min to and from the other shop just to get me that specific board. And I did not mind the wait due to the skate park being like a mile away. When I got back, the board was ready and he gave me a discount on the entire deal. Smiles, hand shakes, and high fives all around! Spencer, you\re the man!',
+                                    ];
+                                    var rand = customerComments.sort(function() {return 0.5 - Math.random()});
+
+                                    $('.comments .quotes').html('<blockquote>' + rand[0] + '</blockquote>');
+                                });
+                            </script>
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "Magento_Customer/js/block-submit-on-send": {
+                "formId": "newsletter-validate-detail"
+            }
+        }
+    }</script>
+<script type="text/javascript">
+    require(['jquery', 'domReady!'], function ($) {
+        $('#msp-recaptcha-58312e2256fb5bcda606e9b5046e00ef-container')
+            .appendTo('#newsletter-validate-detail');
+    });</script>
+<script type="text/x-magento-init">
+{
+    "#msp-recaptcha-58312e2256fb5bcda606e9b5046e00ef-container": {
+        "Magento_Ui/js/core/app": {"components":{"msp-recaptcha-58312e2256fb5bcda606e9b5046e00ef":{"component":"MSP_ReCaptcha\/js\/reCaptcha","reCaptchaId":"msp-recaptcha-58312e2256fb5bcda606e9b5046e00ef","zone":"newsletter","badge":"bottomright","settings":{"siteKey":"6LehXLIZAAAAAP9-crzkhFXZp_Z1NRFsGztKWCHq","size":"invisible","badge":"inline","theme":null,"lang":null,"enabled":{"login":true,"create":true,"forgot":true,"contact":true,"review":true,"newsletter":false,"sendfriend":true,"paypal":true}}}}}    }
+}</script>
+<script>
+        requirejs(['jquery', 'mage/cookies', 'domReady!'], function($) {
+            var isKiosk = navigator.userAgent === 'cleanlinekiosk';
+            setTimeout(function() {
+                var hasVisited = $.cookie('hasVisited');
+
+                if (!hasVisited && !isKiosk){
+                    $('.modal-trigger.newsletter-popup').click();
+                    $.cookie('hasVisited', '1', { path: '/', expires: (60 * 60 * 24 * 365 * 10) });
+                }
+            }, 10000);
+        });</script>
+<script type="text/x-magento-init">
+        {
+            "*": {
+                "Magento_Ui/js/core/app": {
+                    "components": {
+                        "storage-manager": {
+                            "component": "Magento_Catalog/js/storage-manager",
+                            "appendTo": "",
+                            "storagesConfiguration" : {"recently_viewed_product":{"requestConfig":{"syncUrl":"https:\/\/www.cleanlinesurf.com\/catalog\/product\/frontend_action_synchronize\/"},"lifetime":"1000","allowToSendRequest":null},"recently_compared_product":{"requestConfig":{"syncUrl":"https:\/\/www.cleanlinesurf.com\/catalog\/product\/frontend_action_synchronize\/"},"lifetime":"1000","allowToSendRequest":null},"product_data_storage":{"updateRequestConfig":{"url":"https:\/\/www.cleanlinesurf.com\/rest\/default\/V1\/products-render-info"},"requestConfig":{"syncUrl":"https:\/\/www.cleanlinesurf.com\/catalog\/product\/frontend_action_synchronize\/"},"allowToSendRequest":null}}                        }
+                    }
+                }
+            }
+        }</script>
+<script async="" defer="" src="https://apis.google.com/js/platform.js?onload=renderBadge"></script>
+<script>
+    window.renderBadge = function() {
+        var ratingBadgeContainer = document.createElement("div");
+        document.body.appendChild(ratingBadgeContainer);
+        window.gapi.load('ratingbadge', function() {
+            window.gapi.ratingbadge.render(
+                ratingBadgeContainer, {
+                    "merchant_id": 8635127,
+                    "position": "BOTTOM_RIGHT"
+                });
+        });
+    }</script>
+<script>
+    require(['Manadev_Core/js/vars/session'], function(session) {
+        session.set({
+            url: 'https://www.cleanlinesurf.com/mana_core/session/save/',
+            values: {}        });
+    });</script>
+<script type="text/javascript">
+        var gts = gts || [];
+
+        gts.push(["id", "8635127"]);
+        gts.push(["badge_position", "BOTTOM_RIGHT"]);
+        gts.push(["locale", "en_US"]);
+
+        (function() {
+            var gts = document.createElement("script");
+            gts.type = "text/javascript";
+            gts.async = true;
+            gts.src = "https://www.googlecommerce.com/trustedstores/api/js";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(gts, s);
+        })();</script>
+<script id="autocomplete_products_template" type="text/template">
+    <a class="algoliasearch-autocomplete-hit"
+        {{^__queryID}} href="{{url}}" {{/__queryID}}
+        {{#__queryID}} href="{{urlForInsights}}" {{/__queryID}}
+    >
+        {{#thumbnail_url}}
+        <div class="thumb"><img src="{{thumbnail_url}}" alt="{{{name}}}" /></div>
+        {{/thumbnail_url}}
+
+        <div class="info">
+            {{{_highlightResult.name.value}}}
+
+            <div class="algoliasearch-autocomplete-category">
+                {{#categories_without_path}}
+                in {{{categories_without_path}}}
+                {{/categories_without_path}}
+
+                {{#_highlightResult.color}}
+                {{#_highlightResult.color.value}}
+                <span>
+                    {{#categories_without_path}} | {{/categories_without_path}}
+                    Color: {{{_highlightResult.color.value}}}</span>
+                {{/_highlightResult.color.value}}
+                {{/_highlightResult.color}}</div>
+
+            <div class="algoliasearch-autocomplete-price">
+                    <span class="after_special
+                                {{#price.USD.default_original_formated}}
+                                    promotion
+                                {{/price.USD.default_original_formated}}">
+                        {{price.USD.default_formated}}</span>
+
+                {{#price.USD.default_original_formated}}
+                    <span class="before_special">
+                        {{price.USD.default_original_formated}}</span>
+                {{/price.USD.default_original_formated}}
+                {{#price.USD.default_tier_formated}}
+                    <span class="tier_price">
+                        As low as                        <span class="tier_value">{{price.USD.default_tier_formated}}</span></span>
+                {{/price.USD.default_tier_formated}}</div></div></a></script>
+<script id="autocomplete_categories_template" type="text/template">
+    <a class="algoliasearch-autocomplete-hit" href="{{url}}">
+        {{#image_url}}
+        <div class="thumb">
+            <img src="{{{image_url}}}" alt="{{{name}}}" /></div>
+        {{/image_url}}
+
+        {{#image_url}}
+        <div class="info">
+            {{/image_url}}
+            {{^image_url}}
+            <div class="info-without-thumb">
+                {{#_highlightResult.path}}
+                {{{_highlightResult.path.value}}}
+                {{/_highlightResult.path}}
+                {{^_highlightResult.path}}
+                {{{path}}}
+                {{/_highlightResult.path}}
+
+                {{#product_count}}
+                <small>({{product_count}})</small>
+                {{/product_count}}</div>
+            <div class="algolia-clearfix"></div>
+            {{/image_url}}</div></a></script>
+<script id="autocomplete_pages_template" type="text/template">
+    <a class="algoliasearch-autocomplete-hit" href="{{url}}">
+        <div class="info-without-thumb">
+            {{{_highlightResult.name.value}}}
+            {{#content}}
+            <div class="details">
+                {{{content}}}</div>
+            {{/content}}</div>
+        <div class="algolia-clearfix"></div></a></script>
+<script id="autocomplete_extra_template" type="text/template">
+    <a class="algoliasearch-autocomplete-hit" href="{{url}}">
+        <div class="info-without-thumb">
+            {{{_highlightResult.value.value}}}</div>
+        <div class="algolia-clearfix"></div></a></script>
+<script id="autocomplete_suggestions_template" type="text/template">
+    <a class="algoliasearch-autocomplete-hit" href="{{url}}">
+        <svg xmlns="http://www.w3.org/2000/svg"
+             class="algolia-glass-suggestion magnifying-glass"
+             width="24"
+             height="24"
+             viewBox="0 0 128 128">
+            <g transform="scale(2.5)">
+                <path stroke-width="3" d="M19.5 19.582l9.438 9.438"></path>
+                <circle stroke-width="3" cx="12" cy="12" r="10.5" fill="none"></circle>
+                <path d="M23.646 20.354l-3.293 3.293c-.195.195-.195.512 0 .707l7.293 7.293c.195.195.512.195.707
+                0l3.293-3.293c.195-.195.195-.512 0-.707l-7.293-7.293c-.195-.195-.512-.195-.707 0z" ></path></g></svg>
+        <div class="info-without-thumb">
+            {{{_highlightResult.query.value}}}
+
+            {{#category}}
+                <span class="text-muted">in</span>
+                <span class="category-tag">{{category}}</span>
+            {{/category}}</div>
+        <div class="algolia-clearfix"></div></a></script>
+<script id="menu-template" type="text/template">
+    <div class="autocomplete-wrapper">
+        <div class="col9">
+            <div class="aa-dataset-products"></div></div>
+        <div class="col3">
+            <div class="other-sections">
+                <div class="aa-dataset-suggestions"></div>
+                 <div class="aa-dataset-0"></div>
+                 <div class="aa-dataset-1"></div>
+                 <div class="aa-dataset-2"></div>
+                 <div class="aa-dataset-3"></div>
+                 <div class="aa-dataset-4"></div>
+                 <div class="aa-dataset-5"></div>
+                 <div class="aa-dataset-6"></div>
+                 <div class="aa-dataset-7"></div>
+                 <div class="aa-dataset-8"></div>
+                 <div class="aa-dataset-9"></div>
+                </div></div></div></script>
+<script id="instant_wrapper_template" type="text/template">
+    {{#findAutocomplete}}
+        <div id="algolia-autocomplete-container"></div>
+    {{/findAutocomplete}}
+
+    <div id="algolia_instant_selector"
+         class=" with-facets">
+        <div class="row">
+            <div class="col-md-3" id="algolia-left-container">
+                <div id="refine-toggle" class="visible-xs visible-sm">
+                    + Refine</div>
+                <div class="hidden-xs hidden-sm" id="instant-search-facets-container">
+                    <div id="clear-refinements"></div>
+                    <div id="current-refinements"></div></div></div>
+
+            <div class="col-md-9" id="algolia-right-container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div>
+                            {{#second_bar}}
+                               <div id="instant-search-bar"></div>
+                            {{/second_bar}}</div></div></div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div itemscope itemtype="http://schema.org/ItemList" class="hits">
+                            <div class="algolia-infos">
+                                <div class="pull-left" id="algolia-stats"></div>
+                                <div class="pull-right">
+                                    <div class="sort-by-label pull-left">
+                                        SORT BY &nbsp;</div>
+                                    <div class="pull-left" id="algolia-sorts"></div></div>
+                                <div class="algolia-clearfix"></div></div>
+                            <div id="algolia-banner"></div>
+                            <div id="instant-empty-results-container"></div>
+                            <div id="instant-search-results-container"></div></div></div>
+                    <div class="algolia-clearfix"></div></div>
+
+                <div class="text-center">
+                    <div id="instant-search-pagination-container"></div></div></div></div></div></script>
+<script id="instant-hit-template" type="text/template">
+    <div class="col-md-4 col-sm-6" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+        <meta itemprop="position" content="{{__position}}" />
+        <div class="result-wrapper" itemprop="item" itemscope itemtype="http://schema.org/Product">
+            <meta itemprop="url"
+                {{^__queryID}} content="{{url}}" {{/__queryID}}
+                {{#__queryID}} content="{{urlForInsights}}" {{/__queryID}}
+                />
+            <a class="result"
+                {{^__queryID}} href="{{url}}" {{/__queryID}}
+                {{#__queryID}} href="{{urlForInsights}}" {{/__queryID}}
+                data-objectid="{{objectID}}"
+                data-indexname="{{__indexName}}"
+                data-position="{{__position}}"
+                data-queryid="{{__queryID}}">
+                <div class="result-content">
+                    <div class="result-thumbnail">
+                        {{#image_url}}<img itemprop="image" src="{{{image_url}}}" alt="{{{name}}}" />{{/image_url}}
+                        {{^image_url}}<span class="no-image"></span>{{/image_url}}</div>
+                    <div class="result-sub-content">
+                        <h3 itemprop="name" class="result-title text-ellipsis">
+                            {{{ _highlightResult.name.value }}}</h3>
+                        <div class="ratings">
+                            <div class="result-sub-content">
+                                <div class="product-reviews-summary short">
+                                    <div class="rating-summary">
+                                        <span class="label"><span>Rating:</span></span>
+                                        <div class="rating-result" title="{{rating_summary}}%">
+                                            <span style="width:{{rating_summary}}%">
+                                                <span>{{rating_summary}}%</span></span></div></div></div>
+
+
+                                {{^price.USD.default_max}}
+                                <div itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="price">
+                                    <meta itemprop="price" content="{{price.USD.default}}" />
+                                {{/price.USD.default_max}}
+                                {{#price.USD.default_max}}
+                                <div itemprop="offers" itemscope itemtype="http://schema.org/AggregateOffer" class="price">
+                                    <meta itemprop="lowPrice" content="{{price.USD.default}}" />
+                                    <meta itemprop="highPrice" content="{{price.USD.default_max}}" />
+                                {{/price.USD.default_max}}
+                                    <meta itemprop="priceCurrency" content="USD" />
+                                    <div class="price-wrapper">
+                                        <div>
+
+                                            <span class="after_special
+                                                    {{#price.USD.default_original_formated}}
+                                                        promotion
+                                                    {{/price.USD.default_original_formated}}">
+                                                {{price.USD.default_formated}}</span>
+                                            {{#price.USD.default_original_formated}}
+                                                <span class="before_special">
+                                                    {{price.USD.default_original_formated}}</span>
+                                            {{/price.USD.default_original_formated}}
+                                            {{#price.USD.default_tier_formated}}
+                                                <span class="tier_price">
+                                                    As low as                                                    <span class="tier_value">{{price.USD.default_tier_formated}}</span></span>
+                                            {{/price.USD.default_tier_formated}}</div></div></div></div></div>
+                        <div class="result-description text-ellipsis">{{{ _highlightResult.description.value }}}</div>
+
+                        {{#isAddToCartEnabled}}
+                        <form data-role="tocart-form" action="{{ addToCart.action }}" method="post">
+                            <input type="hidden" name="product" value="{{objectID}}">
+                            <input type="hidden" name="uenc" value="{{ addToCart.uenc }}">
+                            <input name="form_key" type="hidden" value="{{ addToCart.formKey }}">
+                            <button type="submit" title="Add to Cart" class="action tocart primary"
+                            data-objectid="{{objectID}}"
+                            data-indexname="{{__indexName}}"
+                            data-position="{{__position}}"
+                            data-queryid="{{__queryID}}"
+                            >
+                                <span>Add to Cart</span></button></form>
+                        {{/isAddToCartEnabled}}</div></div>
+                <div class="algolia-clearfix"></div></a></div></div></script>
+<script id="instant-stats-template" type="text/template">
+    {{#hasOneResult}}<strong>1</strong> result found{{/hasOneResult}}
+
+    {{#hasManyResults}}
+        {{^hasNoResults}}{{first}}-{{last}} out of{{/hasNoResults}}
+        <strong>
+            <span itemprop="numberOfItems">{{nbHits}}</span>
+            results found</strong>
+    {{/hasManyResults}}
+
+    {{^hasNoResults}}
+    in {{seconds}} seconds    {{/hasNoResults}}</script>
+<script id="refinements-lists-item-template" type="text/template">
+    <label class="{{cssClasses.label}} {{#isRefined}}checked{{/isRefined}}">
+        <input class="{{cssClasses.checkbox}}" {{#isRefined}}checked{{/isRefined}} type="checkbox" value="{{value}}" />
+        {{value}}
+        <span class="{{cssClasses.count}}">{{count}}</span></label></script>
+<script id="current-refinements-template" type="text/template">
+    <div class="cross-wrapper">
+        <span class="clear-cross clear-refinement"></span></div>
+    <div class="current-refinement-wrapper">
+        {{#label}}
+        <span class="current-refinement-label">{{label}}{{^operator}}:{{/operator}}</span>
+        {{/label}}
+        {{#operator}}
+        {{{displayOperator}}}
+        {{/operator}}
+        {{#exclude}}-{{/exclude}}
+        <span class="current-refinement-name">{{name}}</span></div></script>
+<script>
+    var manaScripts = Array.prototype.slice.call(document.getElementsByTagName('script'))
+        .filter(function(element) {
+            return element.getAttribute('type') == 'text/x-magento-init';
+        })
+        .map(function(element) {
+            return JSON.parse(element.textContent);
+        });</script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"1aa99febfe","applicationID":"699181248","transactionName":"ZwRUbERQWhVYVxBZV15Od1tCWFsIFlcJQxdZD1JdTh5dCF1RHA==","queueTime":0,"applicationTime":5879,"atts":"S0NXGgxKSRs=","errorBeacon":"bam.nr-data.net","agent":""}</script></body></html>

@@ -1,0 +1,1522 @@
+<!DOCTYPE html>
+
+<html class="no-js" lang="it">
+<head>
+<base href="https://www.tgsrl.it/"/>
+<link href="https://www.tgsrl.it/" rel="canonical"/><script language="JavaScript" type="text/javascript">
+//<![CDATA[
+/**
+* Website mavigation map
+*/
+var SiteNavigation = {
+/**
+* URLs set
+*/
+  request_for_quote: "request-for-quote/"
+	, privacypolicypopup: "privacy-policy/"
+	, searchform: "advanced-search/"
+	, userentry: "welcome/"
+	, thisproduct: ""
+	, productfeatures: "product-features-selection/"
+	, financingtable: ""
+}
+//]]>
+</script><meta charset="utf-8"/>
+<meta content="width=device-width,maximum-scale=1.0" name="viewport"/>
+<link href="img/106-Broadway-201310227-21-Blue-site-responsive-design.css" rel="stylesheet" type="text/css"/>
+<link href="custom_style.php?v=21" rel="stylesheet" type="text/css"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/css/select2.min.css" rel="stylesheet"/>
+<meta content="it" name="language">
+<meta content="telephone=no" name="format-detection"/>
+<title>Tecno Group srl</title>
+<meta content="https://www.tgsrl.it/" property="og:url">
+<meta content="website" property="og:type">
+<meta content="Tecno Group srl" property="og:title"/>
+<meta content="https://www.tgsrl.it/pimages/106_sitelogo_0913081129w1IWwv.png" property="og:image"/>
+</meta></meta></meta></head>
+<body itemscope="" itemtype="http://schema.org/WebPage">
+<div class="line"></div>
+<div class="left_air"></div>
+<div class="container" id="header">
+<div class="hide modal-backdrop text-center" id="ecs_loader"><img alt="loader" id="ecs_ajax_loader" src="img/rev-16/all/ajax-loader.gif"/></div>
+<div id="header_content">
+<div class="row">
+<div class="span4" itemscope="" itemtype="http://schema.org/Organization">
+<meta content="https://www.tgsrl.it/" itemprop="url"/>
+<meta content="TECNO GROUP S.R.L." itemprop="name"/>
+<a href="./">
+<img alt="TECNO GROUP S.R.L." class="logo_header" itemprop="logo" src="https://www.tgsrl.it/pimages/106_sitelogo_0913081129w1IWwv.png" title="TECNO GROUP S.R.L.">
+</img></a>
+</div>
+<div class="span6 pull-right header_input_container">
+<div class="row-fluid header_user_area">
+<div class="span12 text-right">
+<div class="btn-group" id="loginarea_button">
+<button class="btn btn-success dropdown-toggle drop" data-toggle="dropdown">
+Area Cliente<span class="caret"></span>
+</button>
+<div class="dropdown-menu">
+<form action="ajax_login.php" class="frm_login_header form-vertical text-left" method="post">
+<div class="control-group">
+<label class="control-label">Login</label>
+<div class="controls">
+<input maxlength="64" name="uname" type="text" value=""/>
+</div>
+</div>
+<div class="control-group">
+<label class="control-label">Password</label>
+<div class="controls">
+<input maxlength="64" name="upassword" type="password" value=""/>
+</div>
+</div>
+<div class="control-group">
+<div class="controls">
+<input class="btn" name="submit" type="submit" value="login"/>
+</div>
+</div>
+<div class="lnk_frm_login">
+<a class="lnk_user_reg" href="new-user-registration-form/">Sei nuovo ? Registrati</a>
+<br/>
+<a class="lnk_user_reg" href="password-reminder/">Reimposta password dimenticata</a>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid text-right minibasket_container">
+<div class="span12">
+<div class="ptag">
+<div class="input-prepend" id="minibasket">
+<div class="minibasket_inner">
+<button class="btn btn-minibsk-lbl" onclick="location.href=document.getElementsByTagName('base')[0].href+'cart/'"><i class="icon-shopping-cart"></i> Il tuo carrello</button>
+<!-- CARRELLO CON NUMERO DI PRODOTTI
+<button class="btn btn-minibsk-lbl" onclick="location.href=document.getElementsByTagName('base')[0].href+'cart/'"><i class="icon-shopping-cart"></i>(<span id="header-topbar-header-main-right-elements-cart-items" class="cart-count">0</span>)</button>
+-->
+<button class="btn btn-inverse btn-minibsk" onclick="location.href=document.getElementsByTagName('base')[0].href+'cart/'">
+<span id="minibasket_total">€0,00</span><span data-value="1" id="noiva" style="display:none;"></span><span id="minibasket_tax"><small> + iva</small></span>
+</button>
+</div>
+</div>
+<div class="hidden-phone popover fade bottom in" id="basket_preview">
+<!-- Cart Product Content -->
+<div class="cart-widget-content hidden-phone">
+<div class="cart-widget-product">
+<h4>Il tuo carrello è vuoto</h4>
+</div>
+</div>
+<!-- End Cart Product Content -->
+<!-- Cart Footer -->
+<div class="cart-widget-footer text-right hidden-phone">
+<div class="cart-footer-inner" style="">
+</div>
+</div>
+<!-- Cart Footer -->
+</div>
+</div>
+</div>
+</div>
+<div class="text-right search search_form_container">
+<form action="search-results/" id="search_form" method="GET" name="search_form">
+<div class="input-append">
+<input name="action" type="hidden" value="search"/>
+<input autocomplete="off" id="form_ss_phrase" name="keyword" placeholder="Cerca" type="text"/>
+<button class="btn search_button tooltip-bottom" title="Cerca"><i class="icon-search"></i></button>
+<a class="btn tooltip-bottom" href="advanced-search/" title="Ricerca avanzata"><i class="icon-cog"></i></a>
+</div>
+</form>
+</div>
+</div>
+</div>
+<p class="hidden-desktop" id="nav_global">
+<select class="nav_global" data-level="0" name="nav_global">
+<option value="">- - MENU - -</option>
+<option data-has-children="" data-id="node-1" data-parent="" data-target="_self" value="https://www.tgsrl.it/">Home</option>
+<option data-has-children="1" data-id="node-2" data-parent="" data-target="_self" value="">Categorie</option>
+<option data-has-children="1" data-id="node-4" data-parent="" data-target="_self" value="">Marchi</option>
+<option data-has-children="" data-id="node-7" data-parent="" data-target="" value="custom/chi-siamo/">Chi siamo</option>
+<option data-has-children="" data-id="node-7" data-parent="" data-target="" value="custom/contatti/">Contatti</option>
+<option data-has-children="" data-id="node-12" data-parent="" data-target="_self" value="purchase-contract/">Condizioni d'Acquisto</option>
+<option data-has-children="" data-id="node-18" data-parent="" data-target="_self" value="new-user-registration-form/">Registrati</option>
+<option data-has-children="1" data-id="category-1" data-parent="" data-target="_self" value="consumabili/">CONSUMABILI</option>
+<option data-has-children="1" data-id="category-8" data-parent="" data-target="_self" value="informatica/">INFORMATICA</option>
+<option data-has-children="1" data-id="category-62" data-parent="" data-target="_self" value="office/">OFFICE</option>
+<option data-has-children="" data-id="category-69" data-parent="" data-target="_self" value="prezzatrici/">PREZZATRICI</option>
+<option data-has-children="1" data-id="category-70" data-parent="" data-target="_self" value="printing/">PRINTING</option>
+<option data-has-children="1" data-id="category-74" data-parent="" data-target="_self" value="sicurezza/">SICUREZZA</option>
+<option data-has-children="1" data-id="category-80" data-parent="" data-target="_self" value="sistemi-pos/">SISTEMI POS</option>
+<option data-has-children="1" data-id="category-86" data-parent="" data-target="_self" value="telefonia/">TELEFONIA</option>
+<option data-has-children="1" data-id="category-95" data-parent="" data-target="_self" value="tv-audio-video/">TV AUDIO VIDEO</option>
+<option value="">- - - - - -</option>
+<option data-has-children="" data-id="node-104" data-parent="" data-target="_self" value="new-products/">Nuovi arrivi</option>
+<option data-has-children="" data-id="node-201" data-parent="" data-target="_self" value="purchase-contract/">Condizioni d'Acquisto</option>
+<option data-has-children="" data-id="node-202" data-parent="" data-target="_self" value="privacy-policy/">Informativa per la privacy</option>
+<option data-has-children="" data-id="node-278" data-parent="" data-target="_self" value="rss-feed/">Feed RSS</option>
+</select>
+</p>
+</div>
+<nav class="navmenu6 show_nav_menu menuxtop navbar hidden-phone hidden-tablet">
+<div class="navbar-inner">
+<ul class="nav nav-collapse collapse">
+<li>
+<a href="https://www.tgsrl.it/" target="_self">Home</a>
+</li>
+<li>
+<a href="javascript:void(0)">Categorie</a>
+<div class="subcontainer">
+<div class="subcontainer-inner">
+<ul><li>
+<a href="consumabili/" target="_self">CONSUMABILI</a>
+<div class="subcontainer">
+<div class="subcontainer-inner">
+<ul><li>
+<a href="consumabili/originali/" target="_self">ORIGINALI</a>
+</li>
+<li>
+<a href="consumabili/ricarica-cartucce-universale/" target="_self">RICARICA CARTUCCE UNIVERSALE</a>
+</li>
+</ul>
+</div>
+</div>
+</li>
+<li>
+<a href="informatica/" target="_self">INFORMATICA</a>
+<div class="subcontainer">
+<div class="subcontainer-inner">
+<ul><li>
+<a href="informatica/accessori-per-informatica/" target="_self">ACCESSORI PER INFORMATICA</a>
+</li>
+<li>
+<a href="informatica/componentistica/" target="_self">COMPONENTISTICA</a>
+</li>
+<li>
+<a href="informatica/monitor/" target="_self">MONITOR</a>
+</li>
+<li>
+<a href="informatica/networking/" target="_self">NETWORKING</a>
+</li>
+<li>
+<a href="informatica/notebook-e-ultrabook/" target="_self">NOTEBOOK E ULTRABOOK</a>
+</li>
+<li>
+<a href="informatica/pc-desktop/" target="_self">PC DESKTOP</a>
+</li>
+<li>
+<a href="informatica/pc-ricondizionati/" target="_self">PC RICONDIZIONATI</a>
+</li>
+<li>
+<a href="informatica/server/" target="_self">SERVER</a>
+</li>
+<li>
+<a href="informatica/software/" target="_self">SOFTWARE</a>
+</li>
+<li>
+<a href="informatica/storage/" target="_self">STORAGE</a>
+</li>
+<li>
+<a href="informatica/tablet/" target="_self">TABLET</a>
+</li>
+</ul>
+</div>
+</div>
+</li>
+<li>
+<a href="office/" target="_self">OFFICE</a>
+<div class="subcontainer">
+<div class="subcontainer-inner">
+<ul><li>
+<a href="office/accessori-office/" target="_self">ACCESSORI OFFICE</a>
+</li>
+<li>
+<a href="office/calcolatrici/" target="_self">CALCOLATRICI</a>
+</li>
+<li>
+<a href="office/cancelleria/" target="_self">CANCELLERIA</a>
+</li>
+<li>
+<a href="office/colonnine-per-fila/" target="_self">COLONNINE PER FILA</a>
+</li>
+<li>
+<a href="office/sedie-per-ufficio/" target="_self">SEDIE PER UFFICIO</a>
+</li>
+</ul>
+</div>
+</div>
+</li>
+<li>
+<a href="prezzatrici/" target="_self">PREZZATRICI</a>
+</li>
+<li>
+<a href="printing/" target="_self">PRINTING</a>
+<div class="subcontainer">
+<div class="subcontainer-inner">
+<ul><li>
+<a href="printing/multifunzione-copiatrici-laser/" target="_self">MULTIFUNZIONE / COPIATRICI LASER</a>
+</li>
+<li>
+<a href="printing/multifunzione-ink-jet/" target="_self">MULTIFUNZIONE INK-JET</a>
+</li>
+<li>
+<a href="printing/stampanti-laser/" target="_self">STAMPANTI LASER</a>
+</li>
+</ul>
+</div>
+</div>
+</li>
+<li>
+<a href="sicurezza/" target="_self">SICUREZZA</a>
+<div class="subcontainer">
+<div class="subcontainer-inner">
+<ul><li>
+<a href="sicurezza/centrali-allarme/" target="_self">CENTRALI ALLARME</a>
+</li>
+<li>
+<a href="sicurezza/videosorveglianza/" target="_self">VIDEOSORVEGLIANZA</a>
+</li>
+</ul>
+</div>
+</div>
+</li>
+<li>
+<a href="sistemi-pos/" target="_self">SISTEMI POS</a>
+<div class="subcontainer">
+<div class="subcontainer-inner">
+<ul><li>
+<a href="sistemi-pos/bobina-etichette/" target="_self">BOBINA ETICHETTE</a>
+</li>
+<li>
+<a href="sistemi-pos/scanner-barcode/" target="_self">SCANNER BARCODE</a>
+</li>
+<li>
+<a href="sistemi-pos/sistemi-pos-lettori-barcode/" target="_self">SISTEMI POS - LETTORI BARCODE</a>
+</li>
+<li>
+<a href="sistemi-pos/stampanti-termiche/" target="_self">STAMPANTI TERMICHE</a>
+</li>
+</ul>
+</div>
+</div>
+</li>
+<li>
+<a href="telefonia/" target="_self">TELEFONIA</a>
+<div class="subcontainer">
+<div class="subcontainer-inner">
+<ul><li>
+<a href="telefonia/accessori-telefonia/" target="_self">ACCESSORI TELEFONIA</a>
+</li>
+<li>
+<a href="telefonia/fissa/" target="_self">FISSA</a>
+</li>
+<li>
+<a href="telefonia/smart-watch/" target="_self">SMART WATCH</a>
+</li>
+<li>
+<a href="telefonia/telefonia-mobile/" target="_self">TELEFONIA MOBILE</a>
+</li>
+</ul>
+</div>
+</div>
+</li>
+<li>
+<a href="tv-audio-video/" target="_self">TV AUDIO VIDEO</a>
+<div class="subcontainer">
+<div class="subcontainer-inner">
+<ul><li>
+<a href="tv-audio-video/accessori-per-la-tv/" target="_self">ACCESSORI PER LA TV</a>
+</li>
+<li>
+<a href="tv-audio-video/digitale-terrestre/" target="_self">DIGITALE TERRESTRE</a>
+</li>
+<li>
+<a href="tv-audio-video/speakers/" target="_self">SPEAKERS</a>
+</li>
+<li>
+<a href="tv-audio-video/telecomandi/" target="_self">TELECOMANDI</a>
+</li>
+<li>
+<a href="tv-audio-video/televisori/" target="_self">TELEVISORI</a>
+</li>
+</ul>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</li>
+<li>
+<a href="javascript:void(0)">Marchi</a>
+<div class="subcontainer">
+<div class="subcontainer-inner">
+<ul><li>
+<a href="brands/acer/" target="_self">ACER</a>
+</li>
+<li>
+<a href="brands/adata/" target="_self">ADATA</a>
+</li>
+<li>
+<a href="brands/asus/" target="_self">ASUS</a>
+</li>
+<li>
+<a href="brands/audiola/" target="_self">AUDIOLA</a>
+</li>
+<li>
+<a href="brands/brondi/" target="_self">BRONDI</a>
+</li>
+<li>
+<a href="brands/brother/" target="_self">BROTHER</a>
+</li>
+<li>
+<a href="brands/cancelleria-ingro/" target="_self">CANCELLERIA INGRO</a>
+</li>
+<li>
+<a href="brands/canon/" target="_self">CANON</a>
+</li>
+<li>
+<a href="brands/cash-mkt/" target="_self">CASH MKT</a>
+</li>
+<li>
+<a href="brands/casio/" target="_self">CASIO</a>
+</li>
+<li>
+<a href="brands/coolermaster/" target="_self">COOLERMASTER</a>
+</li>
+<li>
+<a href="brands/datalogic/" target="_self">DATALOGIC</a>
+</li>
+<li>
+<a href="brands/devia/" target="_self">DEVIA</a>
+</li>
+<li>
+<a href="brands/digicom/" target="_self">DIGICOM</a>
+</li>
+<li>
+<a href="brands/digitus/" target="_self">DIGITUS</a>
+</li>
+<li>
+<a href="brands/ednet/" target="_self">EDNET</a>
+</li>
+<li>
+<a href="brands/empire/" target="_self">EMPIRE</a>
+</li>
+<li>
+<a href="brands/epson/" target="_self">EPSON</a>
+</li>
+<li>
+<a href="brands/fujitsu/" target="_self">FUJITSU</a>
+</li>
+<li>
+<a href="brands/gainward/" target="_self">GAINWARD</a>
+</li>
+<li>
+<a href="brands/hp/" target="_self">HP</a>
+</li>
+<li>
+<a href="brands/huawei/" target="_self">HUAWEI</a>
+</li>
+<li>
+<a href="brands/intel/" target="_self">INTEL</a>
+</li>
+<li>
+<a href="brands/itek/" target="_self">ITEK</a>
+</li>
+<li>
+<a href="brands/jbl/" target="_self">JBL</a>
+</li>
+<li>
+<a href="brands/jvc/" target="_self">JVC</a>
+</li>
+<li>
+<a href="brands/kaspersky-lab/" target="_self">KASPERSKY LAB</a>
+</li>
+<li>
+<a href="brands/legrand/" target="_self">LEGRAND</a>
+</li>
+<li>
+<a href="brands/lenovo/" target="_self">LENOVO</a>
+</li>
+<li>
+<a href="brands/lg/" target="_self">LG</a>
+</li>
+<li>
+<a href="brands/link/" target="_self">LINK</a>
+</li>
+<li>
+<a href="brands/linq/" target="_self">LINQ</a>
+</li>
+<li>
+<a href="brands/logitech/" target="_self">LOGITECH</a>
+</li>
+<li>
+<a href="brands/mach-power/" target="_self">MACH POWER</a>
+</li>
+<li>
+<a href="brands/manli/" target="_self">MANLI</a>
+</li>
+<li>
+<a href="brands/marca/" target="_self">marca</a>
+</li>
+<li>
+<a href="brands/motorola/" target="_self">MOTOROLA</a>
+</li>
+<li>
+<a href="brands/msi/" target="_self">MSI</a>
+</li>
+<li>
+<a href="brands/new-digital/" target="_self">NEW DIGITAL</a>
+</li>
+<li>
+<a href="javascript:void(0)">NO BRAND</a>
+</li>
+<li>
+<a href="brands/olivetti/" target="_self">OLIVETTI</a>
+</li>
+<li>
+<a href="brands/oppo/" target="_self">OPPO</a>
+</li>
+<li>
+<a href="brands/philips/" target="_self">PHILIPS</a>
+</li>
+<li>
+<a href="brands/print-rite/" target="_self">PRINT RITE</a>
+</li>
+<li>
+<a href="brands/printex/" target="_self">PRINTEX</a>
+</li>
+<li>
+<a href="brands/prodotti-oem/" target="_self">PRODOTTI OEM</a>
+</li>
+<li>
+<a href="brands/qnap/" target="_self">QNAP</a>
+</li>
+<li>
+<a href="brands/rapoo/" target="_self">RAPOO</a>
+</li>
+<li>
+<a href="brands/ricoh/" target="_self">RICOH</a>
+</li>
+<li>
+<a href="brands/samsung/" target="_self">SAMSUNG</a>
+</li>
+<li>
+<a href="brands/seagate/" target="_self">SEAGATE</a>
+</li>
+<li>
+<a href="brands/sony/" target="_self">SONY</a>
+</li>
+<li>
+<a href="brands/superior-electronics/" target="_self">SUPERIOR ELECTRONICS</a>
+</li>
+<li>
+<a href="brands/techmade/" target="_self">TECHMADE</a>
+</li>
+<li>
+<a href="brands/toshiba/" target="_self">TOSHIBA</a>
+</li>
+<li>
+<a href="brands/tp-link/" target="_self">TP-LINK</a>
+</li>
+<li>
+<a href="brands/xiaomi/" target="_self">XIAOMI</a>
+</li>
+<li>
+<a href="brands/xtreme/" target="_self">XTREME</a>
+</li>
+<li>
+<a href="brands/zotac/" target="_self">ZOTAC</a>
+</li>
+<li>
+<a href="brands/zucchetti/" target="_self">ZUCCHETTI</a>
+</li>
+</ul>
+</div>
+</div>
+</li>
+<li>
+<a href="custom/chi-siamo/" target="">Chi siamo</a>
+</li>
+<li>
+<a href="custom/contatti/" target="">Contatti</a>
+</li>
+<li>
+<a href="purchase-contract/" target="_self">Condizioni d'Acquisto</a>
+</li>
+<li>
+<a href="new-user-registration-form/" target="_self">Registrati</a>
+</li>
+</ul>
+</div>
+</nav>
+<meta content="Home" itemprop="breadcrumb"/>
+</div>
+<div class="container hidden-phone" id="container-homeslideshow">
+<div class="carousel slide" data-time-interval="4" id="homeslideshow"></div>
+<script type="text/javascript">
+var HomeSlideshow = [];
+HomeSlideshow.push({"image": "pimages/slideshow-desktop-34-106-693.jpg", "target": "_blank", "link": ""});
+HomeSlideshow.push({"image": "pimages/slideshow-desktop-35-106-197.jpg", "target": "_blank", "link": ""});
+HomeSlideshow.push({"image": "pimages/slideshow-desktop-36-106-880.jpg", "target": "_blank", "link": ""});
+HomeSlideshow.push({"image": "pimages/slideshow-desktop-37-106-739.jpg", "target": "_self", "link": ""});
+</script>
+</div>
+<div class="container" id="homepage">
+<div class="row-fluid">
+<div class="span3 sidebar hidden-phone hidden-tablet">
+<nav class="navmenu4 menuxleft">
+<ul class="nav nav-tabs nav-stacked" data-placeholder="left" id="l-navbar">
+<li>
+<a class="show_nav_menu" data-id="category-1" data-parent-start="category-1" data-position="left" href="consumabili/" target="_self">
+CONSUMABILI<i class="icon-chevron-right pull-right"></i>
+<span class="clearfix"></span>
+</a>
+</li>
+<li>
+<a class="show_nav_menu" data-id="category-8" data-parent-start="category-8" data-position="left" href="informatica/" target="_self">
+INFORMATICA<i class="icon-chevron-right pull-right"></i>
+<span class="clearfix"></span>
+</a>
+</li>
+<li>
+<a class="show_nav_menu" data-id="category-62" data-parent-start="category-62" data-position="left" href="office/" target="_self">
+OFFICE<i class="icon-chevron-right pull-right"></i>
+<span class="clearfix"></span>
+</a>
+</li>
+<li>
+<a data-id="category-69" href="prezzatrici/" target="_self">
+PREZZATRICI</a>
+</li>
+<li>
+<a class="show_nav_menu" data-id="category-70" data-parent-start="category-70" data-position="left" href="printing/" target="_self">
+PRINTING<i class="icon-chevron-right pull-right"></i>
+<span class="clearfix"></span>
+</a>
+</li>
+<li>
+<a class="show_nav_menu" data-id="category-74" data-parent-start="category-74" data-position="left" href="sicurezza/" target="_self">
+SICUREZZA<i class="icon-chevron-right pull-right"></i>
+<span class="clearfix"></span>
+</a>
+</li>
+<li>
+<a class="show_nav_menu" data-id="category-80" data-parent-start="category-80" data-position="left" href="sistemi-pos/" target="_self">
+SISTEMI POS<i class="icon-chevron-right pull-right"></i>
+<span class="clearfix"></span>
+</a>
+</li>
+<li>
+<a class="show_nav_menu" data-id="category-86" data-parent-start="category-86" data-position="left" href="telefonia/" target="_self">
+TELEFONIA<i class="icon-chevron-right pull-right"></i>
+<span class="clearfix"></span>
+</a>
+</li>
+<li>
+<a class="show_nav_menu" data-id="category-95" data-parent-start="category-95" data-position="left" href="tv-audio-video/" target="_self">
+TV AUDIO VIDEO<i class="icon-chevron-right pull-right"></i>
+<span class="clearfix"></span>
+</a>
+</li>
+<li class="menudelimiter"></li>
+<li>
+<a data-id="node-104" href="new-products/" target="_self">
+Nuovi arrivi</a>
+</li>
+</ul>
+</nav>
+<div class="carousel_box hidden-phone hidden-tablet" data-auto="true">
+<div class="carousel_box_inner">
+<a class="arrow prev"><span></span></a>
+<ul>
+<li>
+<a href="monitor-tv-lg-24-led-hd-ready-smart-tv-dvb-t2-c-s2/">
+<img alt='MONITOR TV LG 24" LED HD READY SMART TV DVB-T2/C/S2' src="pimages/MONITOR-TV-LG-24-LED-HD-READY-SMART-TV-DVB-T2-C-S2-small-667-782.jpg"/>
+</a>
+<a class="title" href="monitor-tv-lg-24-led-hd-ready-smart-tv-dvb-t2-c-s2/" title='MONITOR TV LG 24" LED HD READY SMART TV DVB-T2/C/S2'>MONITOR TV LG 24" LED HD READY SMART TV DVB-T2/C/S2</a>
+</li>
+<li>
+<a href="epson-wf2510-t1634-giallo-16xl/">
+<img alt="EPSON WF2510 T1634 GIALLO 16XL" src="pimages/EPSON-WF2510-T1634-GIALLO-16XL-small-50-921.jpg"/>
+</a>
+<a class="title" href="epson-wf2510-t1634-giallo-16xl/" title="EPSON WF2510 T1634 GIALLO 16XL">EPSON WF2510 T1634 GIALLO 16XL</a>
+</li>
+<li>
+<a href="epson-c13t18124010-18xlciano/">
+<img alt="EPSON C13T18124010 18XLCIANO" src="pimages/EPSON-C13T18124010-18XLCIANO-small-56-896.jpg"/>
+</a>
+<a class="title" href="epson-c13t18124010-18xlciano/" title="EPSON C13T18124010 18XLCIANO">EPSON C13T18124010 18XLCIANO</a>
+</li>
+<li>
+<a href="pc-aio-msi-23.8-fhd-i5-1135g7-8gb-ssd256-w10h/">
+<img alt='PC AIO MSI 23.8" FHD I5-1135G7 8GB SSD256 W10H' src="pimages/PC-AIO-MSI-23-8-FHD-I5-1135G7-8GB-SSD256-W10H-small-492-816.jpg"/>
+</a>
+<a class="title" href="pc-aio-msi-23.8-fhd-i5-1135g7-8gb-ssd256-w10h/" title='PC AIO MSI 23.8" FHD I5-1135G7 8GB SSD256 W10H'>PC AIO MSI 23.8" FHD I5-1135G7 8GB SSD256 W10H</a>
+</li>
+</ul>
+<a class="arrow next"><span></span></a>
+</div>
+</div>
+</div>
+<div class="span9 main_content">
+<div class="index_header">
+<h5>NUOVI ARRIVI</h5>
+</div>
+<div class="plist row-fluid">
+<div class="span4">
+<div class="product_box" data-multiplo="1" data-name='TV LED SAMSUNG 55" 4K SMART-TV DVB-T2/C' rel="atom">
+<div class="thumbnail pagination-centered" title='_TV LED SAMSUNG 55" 4K SMART-TV DVB-T2/C'>
+<p class="pull-right" style="padding:8px;font-size:16px;color:transparent;"><b> </b></p>
+<br class="discount_banner-height"/>
+<h4 class="minh1"><a href="tv-led-samsung-55-4k-smart-tv-dvb-t2-c/">TV LED SAMSUNG 55" 4K SMART-TV DVB-T2/C</a></h4>
+<div class="carousel minh2 to_resize">
+<div class="container-fluid" style="overflow:hidden;">
+<img alt='TV LED SAMSUNG 55" 4K SMART-TV DVB-T2/C' class="hide image__762" height="80" src="pimages/TV-LED-SAMSUNG-55-4K-SMART-TV-DVB-T2-C-thumbnail-671-023.jpg" title='TV LED SAMSUNG 55" 4K SMART-TV DVB-T2/C' width="80">
+<a class="" href="tv-led-samsung-55-4k-smart-tv-dvb-t2-c/">
+<div class="croped-plist-div to_resize" data-height="80" data-width="80" style="
+margin:auto;
+width:100%;
+height:230px;
+background-image:url('pimages/TV-LED-SAMSUNG-55-4K-SMART-TV-DVB-T2-C-big-671-636.jpg');overflow: hidden;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;"></div>
+</a>
+</img></div>
+<a class="fancybox carousel-control zoom-image-control hidden-phone hidden" href="pimages/TV-LED-SAMSUNG-55-4K-SMART-TV-DVB-T2-C-extra-big-671-975.jpg" rel="" title='TV LED SAMSUNG 55" 4K SMART-TV DVB-T2/C'>
+<i class="icon-zoom-in icon-white icon-double"></i>
+</a>
+</div>
+<div class="tet-center btn_box_group">
+<div class="minh3">
+<div>
+Categoria: <a href="tv-audio-video/televisori/tv-led/">TV LED</a>
+</div>
+</div>
+<div class="minh4">
+</div>
+<div class="minh5">
+</div>
+<div class="minh6">
+<div>
+</div>
+</div>
+<div class="minh7">
+<a class="btn btn-info" href="tv-led-samsung-55-4k-smart-tv-dvb-t2-c/" title="dettaglio prodotto">
+<i class="icon-zoom-in icon-white prod_box_btn_dt_ico"></i>
+<span class="prod_box_btn_dt_txt">dettagli prodotto</span>
+</a>
+</div>
+<div class="minh8">
+<div class="text-center">
+<a class="wishlist_entry_off_0_762" href="#" onclick="return addsubscription('wishlist', 762, 0, '');">
+<img alt="Clicca qui per aggiungere questo prodotto alla tua Lista dei desideri" class="plist_wishlist_icon_off" src="img/rev-16/all/wishlist-off.png" title="Clicca qui per aggiungere questo prodotto alla tua Lista dei desideri">
+</img></a>
+<a class="wishlist_entry_on_0_762" href="#" onclick="return removesubscription(this, true, 'wishlist', 762, 0, '');" style="display:none;">
+<img alt="Questo prodotto è già nella tua Lista dei desideri. Clicca qui per rimuoverlo" class="plist_wishlist_icon_on" src="img/rev-16/all/wishlist-on.png" title="Questo prodotto è già nella tua Lista dei desideri. Clicca qui per rimuoverlo">
+</img></a>
+<a class="wishlist_entry_off_0_762 plist_wishlist_text_off" href="#" onclick="return addsubscription('wishlist', 762, 0, '');">
+Aggiungi alla Lista Desideri</a>
+<a class="wishlist_entry_on_0_762 plist_wishlist_text_on" href="#" onclick="return removesubscription(this, true, 'wishlist', 762, 0, '');" style="display:none;">
+Rimuovi dalla Lista Desideri</a>
+</div>
+<div>
+<strong>Spedizione il</strong>: 27 Mag 2022
+</div>
+<div> </div>
+</div>
+<div class="minh9">
+</div>
+<div class="minh10">
+</div>
+</div>
+</div>
+</div>
+ 
+</div>
+<div class="span4">
+<div class="product_box" data-multiplo="1" data-name='TV LED SAMSUNG 32" HD READY SMART-TV DVB-T2/C' rel="atom">
+<div class="thumbnail pagination-centered" title='_TV LED SAMSUNG 32" HD READY SMART-TV DVB-T2/C'>
+<p class="pull-right" style="padding:8px;font-size:16px;color:transparent;"><b> </b></p>
+<br class="discount_banner-height"/>
+<h4 class="minh1"><a href="tv-led-samsung-32-hd-ready-smart-tv-dvb-t2-c/">TV LED SAMSUNG 32" HD READY SMART-TV DVB-T2/C</a></h4>
+<div class="carousel minh2 to_resize">
+<div class="container-fluid" style="overflow:hidden;">
+<img alt='TV LED SAMSUNG 32" HD READY SMART-TV DVB-T2/C' class="hide image__761" height="80" src="pimages/TV-LED-SAMSUNG-32-HD-READY-SMART-TV-DVB-T2-C-thumbnail-670-056.jpg" title='TV LED SAMSUNG 32" HD READY SMART-TV DVB-T2/C' width="80">
+<a class="" href="tv-led-samsung-32-hd-ready-smart-tv-dvb-t2-c/">
+<div class="croped-plist-div to_resize" data-height="80" data-width="80" style="
+margin:auto;
+width:100%;
+height:230px;
+background-image:url('pimages/TV-LED-SAMSUNG-32-HD-READY-SMART-TV-DVB-T2-C-big-670-752.jpg');overflow: hidden;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;"></div>
+</a>
+</img></div>
+<a class="fancybox carousel-control zoom-image-control hidden-phone hidden" href="pimages/TV-LED-SAMSUNG-32-HD-READY-SMART-TV-DVB-T2-C-extra-big-670-459.jpg" rel="" title='TV LED SAMSUNG 32" HD READY SMART-TV DVB-T2/C'>
+<i class="icon-zoom-in icon-white icon-double"></i>
+</a>
+</div>
+<div class="tet-center btn_box_group">
+<div class="minh3">
+<div>
+Categoria: <a href="tv-audio-video/televisori/tv-led/">TV LED</a>
+</div>
+</div>
+<div class="minh4">
+</div>
+<div class="minh5">
+</div>
+<div class="minh6">
+<div>
+</div>
+</div>
+<div class="minh7">
+<a class="btn btn-info" href="tv-led-samsung-32-hd-ready-smart-tv-dvb-t2-c/" title="dettaglio prodotto">
+<i class="icon-zoom-in icon-white prod_box_btn_dt_ico"></i>
+<span class="prod_box_btn_dt_txt">dettagli prodotto</span>
+</a>
+</div>
+<div class="minh8">
+<div class="text-center">
+<a class="wishlist_entry_off_0_761" href="#" onclick="return addsubscription('wishlist', 761, 0, '');">
+<img alt="Clicca qui per aggiungere questo prodotto alla tua Lista dei desideri" class="plist_wishlist_icon_off" src="img/rev-16/all/wishlist-off.png" title="Clicca qui per aggiungere questo prodotto alla tua Lista dei desideri"/>
+</a>
+<a class="wishlist_entry_on_0_761" href="#" onclick="return removesubscription(this, true, 'wishlist', 761, 0, '');" style="display:none;">
+<img alt="Questo prodotto è già nella tua Lista dei desideri. Clicca qui per rimuoverlo" class="plist_wishlist_icon_on" src="img/rev-16/all/wishlist-on.png" title="Questo prodotto è già nella tua Lista dei desideri. Clicca qui per rimuoverlo"/>
+</a>
+<a class="wishlist_entry_off_0_761 plist_wishlist_text_off" href="#" onclick="return addsubscription('wishlist', 761, 0, '');">
+Aggiungi alla Lista Desideri</a>
+<a class="wishlist_entry_on_0_761 plist_wishlist_text_on" href="#" onclick="return removesubscription(this, true, 'wishlist', 761, 0, '');" style="display:none;">
+Rimuovi dalla Lista Desideri</a>
+</div>
+<div>
+<strong>Spedizione il</strong>: 27 Mag 2022
+</div>
+<div> </div>
+</div>
+<div class="minh9">
+</div>
+<div class="minh10">
+</div>
+</div>
+</div>
+</div>
+ 
+</div>
+<div class="span4">
+<div class="product_box" data-multiplo="1" data-name='TV LED PHILIPS 32" HD READY SMART-TV DVB-T2/C/S2' rel="atom">
+<div class="thumbnail pagination-centered" title='_TV LED PHILIPS 32" HD READY SMART-TV DVB-T2/C/S2'>
+<p class="pull-right" style="padding:8px;font-size:16px;color:transparent;"><b> </b></p>
+<br class="discount_banner-height"/>
+<h4 class="minh1"><a href="tv-led-philips-32-hd-ready-smart-tv-dvb-t2-c-s2/">TV LED PHILIPS 32" HD READY SMART-TV DVB-T2/C/S2</a></h4>
+<div class="carousel minh2 to_resize">
+<div class="container-fluid" style="overflow:hidden;">
+<img alt='TV LED PHILIPS 32" HD READY SMART-TV DVB-T2/C/S2' class="hide image__760" height="80" src="pimages/TV-LED-PHILIPS-32-HD-READY-SMART-TV-DVB-T2-C-S2-thumbnail-669-392.jpg" title='TV LED PHILIPS 32" HD READY SMART-TV DVB-T2/C/S2' width="80"/>
+<a class="" href="tv-led-philips-32-hd-ready-smart-tv-dvb-t2-c-s2/">
+<div class="croped-plist-div to_resize" data-height="80" data-width="80" style="
+margin:auto;
+width:100%;
+height:230px;
+background-image:url('pimages/TV-LED-PHILIPS-32-HD-READY-SMART-TV-DVB-T2-C-S2-big-669-659.jpg');overflow: hidden;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;"></div>
+</a>
+</div>
+<a class="fancybox carousel-control zoom-image-control hidden-phone hidden" href="pimages/TV-LED-PHILIPS-32-HD-READY-SMART-TV-DVB-T2-C-S2-extra-big-669-373.jpg" rel="" title='TV LED PHILIPS 32" HD READY SMART-TV DVB-T2/C/S2'>
+<i class="icon-zoom-in icon-white icon-double"></i>
+</a>
+</div>
+<div class="tet-center btn_box_group">
+<div class="minh3">
+<div>
+Categoria: <a href="tv-audio-video/televisori/tv-led/">TV LED</a>
+</div>
+</div>
+<div class="minh4">
+</div>
+<div class="minh5">
+</div>
+<div class="minh6">
+<div>
+</div>
+</div>
+<div class="minh7">
+<a class="btn btn-info" href="tv-led-philips-32-hd-ready-smart-tv-dvb-t2-c-s2/" title="dettaglio prodotto">
+<i class="icon-zoom-in icon-white prod_box_btn_dt_ico"></i>
+<span class="prod_box_btn_dt_txt">dettagli prodotto</span>
+</a>
+</div>
+<div class="minh8">
+<div class="text-center">
+<a class="wishlist_entry_off_0_760" href="#" onclick="return addsubscription('wishlist', 760, 0, '');">
+<img alt="Clicca qui per aggiungere questo prodotto alla tua Lista dei desideri" class="plist_wishlist_icon_off" src="img/rev-16/all/wishlist-off.png" title="Clicca qui per aggiungere questo prodotto alla tua Lista dei desideri"/>
+</a>
+<a class="wishlist_entry_on_0_760" href="#" onclick="return removesubscription(this, true, 'wishlist', 760, 0, '');" style="display:none;">
+<img alt="Questo prodotto è già nella tua Lista dei desideri. Clicca qui per rimuoverlo" class="plist_wishlist_icon_on" src="img/rev-16/all/wishlist-on.png" title="Questo prodotto è già nella tua Lista dei desideri. Clicca qui per rimuoverlo"/>
+</a>
+<a class="wishlist_entry_off_0_760 plist_wishlist_text_off" href="#" onclick="return addsubscription('wishlist', 760, 0, '');">
+Aggiungi alla Lista Desideri</a>
+<a class="wishlist_entry_on_0_760 plist_wishlist_text_on" href="#" onclick="return removesubscription(this, true, 'wishlist', 760, 0, '');" style="display:none;">
+Rimuovi dalla Lista Desideri</a>
+</div>
+<div>
+<strong>Spedizione il</strong>: 27 Mag 2022
+</div>
+<div> </div>
+</div>
+<div class="minh9">
+</div>
+<div class="minh10">
+</div>
+</div>
+</div>
+</div>
+ 
+</div>
+</div>
+<div class="index_header">
+<h5>OFFERTE SPECIALI</h5>
+</div>
+<div class="plist row-fluid">
+<div class="span4">
+ 
+</div>
+<div class="span4">
+ 
+</div>
+<div class="span4">
+ 
+</div>
+</div>
+<div class="index_header">
+<h5>PRODOTTI IN EVIDENZA</h5>
+</div>
+<div class="plist row-fluid">
+<div class="span4">
+<div class="product_box" data-multiplo="1" data-name='MONITOR TV LG 24" LED HD READY SMART TV DVB-T2/C/S2' rel="atom">
+<div class="thumbnail pagination-centered" title='_MONITOR TV LG 24" LED HD READY SMART TV DVB-T2/C/S2'>
+<p class="pull-right" style="padding:8px;font-size:16px;color:transparent;"><b> </b></p>
+<br class="discount_banner-height"/>
+<h4 class="minh1"><a href="monitor-tv-lg-24-led-hd-ready-smart-tv-dvb-t2-c-s2/">MONITOR TV LG 24" LED HD READY SMART TV DVB-T2/C/S2</a></h4>
+<div class="carousel minh2 to_resize">
+<div class="container-fluid" style="overflow:hidden;">
+<img alt='MONITOR TV LG 24" LED HD READY SMART TV DVB-T2/C/S2' class="hide image__758" height="80" src="pimages/MONITOR-TV-LG-24-LED-HD-READY-SMART-TV-DVB-T2-C-S2-thumbnail-667-172.jpg" title='MONITOR TV LG 24" LED HD READY SMART TV DVB-T2/C/S2' width="80"/>
+<a class="" href="monitor-tv-lg-24-led-hd-ready-smart-tv-dvb-t2-c-s2/">
+<div class="croped-plist-div to_resize" data-height="80" data-width="80" style="
+margin:auto;
+width:100%;
+height:230px;
+background-image:url('pimages/MONITOR-TV-LG-24-LED-HD-READY-SMART-TV-DVB-T2-C-S2-big-667-328.jpg');overflow: hidden;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;"></div>
+</a>
+</div>
+<a class="fancybox carousel-control zoom-image-control hidden-phone hidden" href="pimages/MONITOR-TV-LG-24-LED-HD-READY-SMART-TV-DVB-T2-C-S2-extra-big-667-202.jpg" rel="" title='MONITOR TV LG 24" LED HD READY SMART TV DVB-T2/C/S2'>
+<i class="icon-zoom-in icon-white icon-double"></i>
+</a>
+</div>
+<div class="tet-center btn_box_group">
+<div class="minh3">
+<div>
+Categoria: <a href="tv-audio-video/televisori/tv-led/">TV LED</a>
+</div>
+</div>
+<div class="minh4">
+</div>
+<div class="minh5">
+</div>
+<div class="minh6">
+<div>
+</div>
+</div>
+<div class="minh7">
+<a class="btn btn-info" href="monitor-tv-lg-24-led-hd-ready-smart-tv-dvb-t2-c-s2/" title="dettaglio prodotto">
+<i class="icon-zoom-in icon-white prod_box_btn_dt_ico"></i>
+<span class="prod_box_btn_dt_txt">dettagli prodotto</span>
+</a>
+</div>
+<div class="minh8">
+<div class="text-center">
+<a class="wishlist_entry_off_0_758" href="#" onclick="return addsubscription('wishlist', 758, 0, '');">
+<img alt="Clicca qui per aggiungere questo prodotto alla tua Lista dei desideri" class="plist_wishlist_icon_off" src="img/rev-16/all/wishlist-off.png" title="Clicca qui per aggiungere questo prodotto alla tua Lista dei desideri"/>
+</a>
+<a class="wishlist_entry_on_0_758" href="#" onclick="return removesubscription(this, true, 'wishlist', 758, 0, '');" style="display:none;">
+<img alt="Questo prodotto è già nella tua Lista dei desideri. Clicca qui per rimuoverlo" class="plist_wishlist_icon_on" src="img/rev-16/all/wishlist-on.png" title="Questo prodotto è già nella tua Lista dei desideri. Clicca qui per rimuoverlo"/>
+</a>
+<a class="wishlist_entry_off_0_758 plist_wishlist_text_off" href="#" onclick="return addsubscription('wishlist', 758, 0, '');">
+Aggiungi alla Lista Desideri</a>
+<a class="wishlist_entry_on_0_758 plist_wishlist_text_on" href="#" onclick="return removesubscription(this, true, 'wishlist', 758, 0, '');" style="display:none;">
+Rimuovi dalla Lista Desideri</a>
+</div>
+<div>
+<strong>Spedizione il</strong>: 27 Mag 2022
+</div>
+<div> </div>
+</div>
+<div class="minh9">
+</div>
+<div class="minh10">
+</div>
+</div>
+</div>
+</div>
+ 
+</div>
+<div class="span4">
+<div class="product_box" data-multiplo="1" data-name="LENOVO E1 SMARTWATCH SPORTS 25 DAYS GOLD ROSE" rel="atom">
+<div class="thumbnail pagination-centered" title="_LENOVO E1 SMARTWATCH SPORTS 25 DAYS GOLD ROSE">
+<p class="pull-right" style="padding:8px;font-size:16px;color:transparent;"><b> </b></p>
+<br class="discount_banner-height"/>
+<h4 class="minh1"><a href="lenovo-e1-smartwatch-sports-25-days-gold-rose/">LENOVO E1 SMARTWATCH SPORTS 25 DAYS GOLD ROSE</a></h4>
+<div class="carousel minh2 to_resize">
+<div class="container-fluid" style="overflow:hidden;">
+<img alt="LENOVO E1 SMARTWATCH SPORTS 25 DAYS GOLD ROSE" class="hide image__712" height="80" src="pimages/LENOVO-E1-SMARTWATCH-SPORTS-25-DAYS-GOLD-ROSE-thumbnail-629-526.jpg" title="LENOVO E1 SMARTWATCH SPORTS 25 DAYS GOLD ROSE" width="80"/>
+<a class="" href="lenovo-e1-smartwatch-sports-25-days-gold-rose/">
+<div class="croped-plist-div to_resize" data-height="80" data-width="80" style="
+margin:auto;
+width:100%;
+height:230px;
+background-image:url('pimages/LENOVO-E1-SMARTWATCH-SPORTS-25-DAYS-GOLD-ROSE-big-629-039.jpg');overflow: hidden;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;"></div>
+</a>
+</div>
+<a class="fancybox carousel-control zoom-image-control hidden-phone hidden" href="pimages/LENOVO-E1-SMARTWATCH-SPORTS-25-DAYS-GOLD-ROSE-extra-big-629-379.jpg" rel="" title="LENOVO E1 SMARTWATCH SPORTS 25 DAYS GOLD ROSE">
+<i class="icon-zoom-in icon-white icon-double"></i>
+</a>
+</div>
+<div class="tet-center btn_box_group">
+<div class="minh3">
+<div>
+Categoria: <a href="telefonia/smart-watch/">SMART WATCH</a>
+</div>
+</div>
+<div class="minh4">
+</div>
+<div class="minh5">
+</div>
+<div class="minh6">
+<div>
+</div>
+</div>
+<div class="minh7">
+<a class="btn btn-info" href="lenovo-e1-smartwatch-sports-25-days-gold-rose/" title="dettaglio prodotto">
+<i class="icon-zoom-in icon-white prod_box_btn_dt_ico"></i>
+<span class="prod_box_btn_dt_txt">dettagli prodotto</span>
+</a>
+</div>
+<div class="minh8">
+<div class="text-center">
+<a class="wishlist_entry_off_0_712" href="#" onclick="return addsubscription('wishlist', 712, 0, '');">
+<img alt="Clicca qui per aggiungere questo prodotto alla tua Lista dei desideri" class="plist_wishlist_icon_off" src="img/rev-16/all/wishlist-off.png" title="Clicca qui per aggiungere questo prodotto alla tua Lista dei desideri"/>
+</a>
+<a class="wishlist_entry_on_0_712" href="#" onclick="return removesubscription(this, true, 'wishlist', 712, 0, '');" style="display:none;">
+<img alt="Questo prodotto è già nella tua Lista dei desideri. Clicca qui per rimuoverlo" class="plist_wishlist_icon_on" src="img/rev-16/all/wishlist-on.png" title="Questo prodotto è già nella tua Lista dei desideri. Clicca qui per rimuoverlo"/>
+</a>
+<a class="wishlist_entry_off_0_712 plist_wishlist_text_off" href="#" onclick="return addsubscription('wishlist', 712, 0, '');">
+Aggiungi alla Lista Desideri</a>
+<a class="wishlist_entry_on_0_712 plist_wishlist_text_on" href="#" onclick="return removesubscription(this, true, 'wishlist', 712, 0, '');" style="display:none;">
+Rimuovi dalla Lista Desideri</a>
+</div>
+<div>
+<strong>Spedizione il</strong>: 27 Mag 2022
+</div>
+<div> </div>
+</div>
+<div class="minh9">
+</div>
+<div class="minh10">
+</div>
+</div>
+</div>
+</div>
+ 
+</div>
+<div class="span4">
+<div class="product_box" data-multiplo="1" data-name="EPSON C13T18124010 18XLCIANO" rel="atom">
+<div class="thumbnail pagination-centered" title="_EPSON C13T18124010 18XLCIANO">
+<p class="pull-right" style="padding:8px;font-size:16px;color:transparent;"><b> </b></p>
+<br class="discount_banner-height"/>
+<h4 class="minh1"><a href="epson-c13t18124010-18xlciano/">EPSON C13T18124010 18XLCIANO</a></h4>
+<div class="carousel minh2 to_resize">
+<div class="container-fluid" style="overflow:hidden;">
+<img alt="EPSON C13T18124010 18XLCIANO" class="hide image__58" height="80" src="pimages/EPSON-C13T18124010-18XLCIANO-thumbnail-56-124.jpg" title="EPSON C13T18124010 18XLCIANO" width="80"/>
+<a class="" href="epson-c13t18124010-18xlciano/">
+<div class="croped-plist-div to_resize" data-height="80" data-width="80" style="
+margin:auto;
+width:100%;
+height:230px;
+background-image:url('pimages/EPSON-C13T18124010-18XLCIANO-big-56-478.jpg');overflow: hidden;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;"></div>
+</a>
+</div>
+<a class="fancybox carousel-control zoom-image-control hidden-phone hidden" href="pimages/EPSON-C13T18124010-18XLCIANO-extra-big-56-407.jpg" rel="" title="EPSON C13T18124010 18XLCIANO">
+<i class="icon-zoom-in icon-white icon-double"></i>
+</a>
+</div>
+<div class="tet-center btn_box_group">
+<div class="minh3">
+<div>
+Categoria: <a href="consumabili/originali/ink-jet-originali/">INK-JET ORIGINALI</a>
+</div>
+</div>
+<div class="minh4">
+</div>
+<div class="minh5">
+</div>
+<div class="minh6">
+<div>
+</div>
+</div>
+<div class="minh7">
+<a class="btn btn-info" href="epson-c13t18124010-18xlciano/" title="dettaglio prodotto">
+<i class="icon-zoom-in icon-white prod_box_btn_dt_ico"></i>
+<span class="prod_box_btn_dt_txt">dettagli prodotto</span>
+</a>
+</div>
+<div class="minh8">
+<div class="text-center">
+<a class="wishlist_entry_off_0_58" href="#" onclick="return addsubscription('wishlist', 58, 0, '');">
+<img alt="Clicca qui per aggiungere questo prodotto alla tua Lista dei desideri" class="plist_wishlist_icon_off" src="img/rev-16/all/wishlist-off.png" title="Clicca qui per aggiungere questo prodotto alla tua Lista dei desideri"/>
+</a>
+<a class="wishlist_entry_on_0_58" href="#" onclick="return removesubscription(this, true, 'wishlist', 58, 0, '');" style="display:none;">
+<img alt="Questo prodotto è già nella tua Lista dei desideri. Clicca qui per rimuoverlo" class="plist_wishlist_icon_on" src="img/rev-16/all/wishlist-on.png" title="Questo prodotto è già nella tua Lista dei desideri. Clicca qui per rimuoverlo"/>
+</a>
+<a class="wishlist_entry_off_0_58 plist_wishlist_text_off" href="#" onclick="return addsubscription('wishlist', 58, 0, '');">
+Aggiungi alla Lista Desideri</a>
+<a class="wishlist_entry_on_0_58 plist_wishlist_text_on" href="#" onclick="return removesubscription(this, true, 'wishlist', 58, 0, '');" style="display:none;">
+Rimuovi dalla Lista Desideri</a>
+</div>
+<div>
+<strong>Spedizione il</strong>: 27 Mag 2022
+</div>
+<div> </div>
+</div>
+<div class="minh9">
+</div>
+<div class="minh10">
+</div>
+</div>
+</div>
+</div>
+ 
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="footer" style="overflow:hidden;">
+<div class="container" id="footer-container">
+<div class="row-fluid hidden-phone hidden-tablet">
+<div class="span12">
+<div class="navbar navbar-inverse" id="b-navbar">
+<div class="navbar-inner">
+<ul class="nav" data-placeholder="bottom">
+<li>
+<a href="purchase-contract/" id="node-201" target="_self">Condizioni d'Acquisto</a>
+</li>
+<li>
+<a href="privacy-policy/" id="node-202" target="_self">Informativa per la privacy</a>
+</li>
+<li>
+<a href="rss-feed/" id="node-278" target="_self">Feed RSS</a>
+</li>
+<li>
+<a href="site-map/" id="lnk_site_map">Mappa del sito</a>
+</li>
+<li>
+<a href="cookies/" id="lnk_cookie">Informativa sui cookies</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="subfooter">
+<div class="container">
+<div class="row-fluid">
+<div class="span6 pdd hide" id="responsive_option">
+<p class="text-center">
+<a class="btn responsive_design" data-status="disable" href="#">Visualizza in modalità desktop</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+<input name="js_ua_mobile_pattern" type="hidden" value="(Android)|(webOS)|(iPhone)|(iPad)|(iPod)|(BlackBerry)"/>
+<div class="modal hide fade" data-backdrop="static" id="whishlist_modal">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button aria-hidden="true" class="close" data-dismiss="modal" id="whishlist_modal_close" type="button">×</button>
+<h4 class="modal-title" id="whishlist_modal_title">AGGIORNAMENTO CARRELLO</h4>
+</div>
+<div class="modal-body" id="whishlist_modal_body">
+</div>
+<div class="modal-footer">
+<div id="whishlist_modal_footer" style="text-align:center;"></div>
+<button aria-hidden="true" class="btn btn-info close" data-dismiss="modal" type="button">Chiudi</button>
+</div>
+</div>
+</div>
+</div>
+<div class="modal hide fade" data-backdrop="static" id="dialog_add_to_cart">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="dialog_add_to_cart_text_hidden hidden">Il prodotto {product} è stato aggiunto al carrello</div>
+<div class="hidden" id="dialog_add_to_cart_offers_text_hidden">OFFERTE COMBINATE</div>
+<div class="modal-header">
+<button aria-hidden="true" class="close" data-dismiss="modal" id="prosegui_shopping2" type="button">×</button>
+<h4 class="modal-title" id="dialog_add_to_cart_title">AGGIORNAMENTO CARRELLO</h4>
+</div>
+<div class="modal-body">
+<div class="row-fluid">
+<div class="right_bordered span7 text-center" style="border-right-width: 1px; border-right-style: solid; border-right-color: rgb(238, 238, 238);">
+<p id="dialog_add_to_cart_text"></p>
+<!-- IMMAGINE -->
+<div>
+<div class="row-fluid">
+<div class="span5 text-center">
+<img alt="miniatura_modale" class="img-polaroid" id="dialog_add_to_cart_pic_prodotto" src="pimages/106_sitelogo_0913081129w1IWwv.png" style="max-width: 100px; max-height: 150px;"/>
+</div>
+<div class="span7 well-small">
+<span id="dialog_add_to_cart_box_prodotto"></span><br/>
+<span class="p_modal_price">Prezzo: <b><span id="dialog_add_to_cart_price_box_prodotto"></span></b></span><br/>
+<span class="p_modal_qty"> Quantità: <b><span id="dialog_add_to_cart_quant_box_prodotto"></span></b></span>
+</div>
+</div>
+</div>
+</div>
+<div class="left_bordered span5 text-center">
+<div class="row-fluid">
+<div class="span12">Totale Carrello: <b id="minibasket_total2"></b><br/><br/></div>
+<div class="span12" id="prosegui_shopping"><a class="btn" href="javascript:void(0);" onclick="$('#dialog_add_to_cart').modal('hide');" style="width:180px;margin-bottom:4px"><b>PROSEGUI<br>negli acquisti</br></b></a></div>
+<div class="span12" id="concludi_ordine"><a class="btn btn-info" href="cart/" style="width:180px;margin-bottom:4px"><b>CONCLUDI<br>l'ordine</br></b></a></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var WISHLIST_ENABLED = true;
+var wlsubscriptions = new Array();
+function wls(fvset_) {
+wlsubscriptions["var" + fvset_] = true;
+}
+</script>
+<script>
+STOCKINFORMER_ENABLED = true
+</script>
+<script src="templates/js/jquery-1.12.4.min.js"></script>
+<script src="templates/js/bootstrap.min.js"></script>
+<script src="templates/js/select2.min.js"></script>
+<script src="templates/js/jquery.elevateZoom-3.0.8.min.js"></script>
+<script src="templates/js/shop-plugins.js"></script>
+<script src="templates/js/shop-main.js"></script>
+<script src="templates/js/flowpics.js"></script>
+<script src="templates/js/navmenu-v6.js"></script>
+<script src="templates/js/navmenu-v4.js"></script>
+<script type="text/javascript">
+function cookieInfoAccept() {
+$.get('ajax_accept_cookies.php');
+$('#cookie-box-info').fadeOut();
+return false;
+};
+function cookieInfoRefuse(){
+$.get('ajax_refuse_cookies.php');
+$('#cookie-box-info').fadeOut();
+return false;
+}
+function show_all_cookies(){
+$("#cookie-box-info-txt").css("max-height","100%");
+$("#cookie-box-info-leggi-tutto").css("display","none");
+}
+window.onload = function() {
+var elem = document.createElement("div");
+elem.setAttribute("id", "cookie-box-info")
+elem.innerHTML = '<p id="cookie-box-info-txt">Questo sito utilizza cookie tecnici per garantire il corretto funzionamento e cookies non tecnici per altre finalità tra le quali gestire, migliorare e personalizzare la tua esperienza di navigazione del sito. Per maggiori informazioni su come utilizziamo e gestiamo i cookie consulta la nostra <a href="cookies/">Informativa sui cookie</a>. Navigando su questo sito inoltre vengono scritti e/o letti sul tuo browser anche cookies gestiti da terze parti. Chiudendo questa notifica rifiuti l&#39;utilizzo dei cookie non tecnici.</p><div id="cookie-box-info-leggi-tutto"><a onclick="show_all_cookies();" href="javascript:void(0);">Leggi di più</a></div>' +
+'<a href="javascript:void(0);" class="btn float-right btn-cookie-accept" onclick="cookieInfoAccept()">ACCETTA TUTTI I COOKIES</a>' +
+'';
+document.getElementsByTagName("body")[0].appendChild(elem);
+if($("#cookie-box-info-txt").prop('scrollHeight') -2 > $("#cookie-box-info-txt").height()){
+$("#cookie-box-info-leggi-tutto").css('display','block');
+}
+console.log($("#cookie-box-info-txt").prop('scrollHeight') + " " + $("#cookie-box-info-txt").height());
+}
+</script>
+<style type="text/css">
+#cookie-box-info{
+border:solid 0px;
+z-index:9999999;
+position:fixed;
+left:0;
+color:#eee;
+background-color:rgba(0,0,0,0.95);
+font-size:.9em;
+margin: 15px 0px;
+padding:15px;
+border-radius: 3px;
+bottom:0px;
+}
+#cookie-box-info-txt{
+max-height:80px;
+overflow:auto;
+text-align: justify;
+}
+#cookie-box-info-leggi-tutto{
+display: none;
+}
+#cookie-box-info-leggi-tutto a{
+color: #888;
+}
+#cookie-box-info-txt a{
+color: #eee;
+text-decoration: underline;
+}
+</style>
+<script>
+function leggiBlogCookie(nomeCookie)
+{
+if (document.cookie.length > 0)
+{
+var inizio = document.cookie.indexOf(nomeCookie + "=");
+if (inizio != -1)
+{
+inizio = inizio + nomeCookie.length + 1;
+var fine = document.cookie.indexOf(";",inizio);
+if (fine == -1) fine = document.cookie.length;
+return unescape(document.cookie.substring(inizio,fine));
+}else{
+return "";
+}
+}
+return "";
+}
+$( document ).ready(function() {
+var show_blog_warning = 1;
+var show_blog_warning = leggiBlogCookie('demo_warning_blog_show');
+if(show_blog_warning=='') show_blog_warning = 1;
+if(show_blog_warning == 1) {
+$('.demo_blog_contents').fadeIn();
+// $('.demo_blog_contents').css('display','');
+} else {
+$('.demo_blog_contents').fadeOut();
+// $('.demo_blog_contents').css('display','none');
+}
+$(".blog_warning_close").click(function(){
+$(this).parent().parent().parent().parent().parent().fadeOut();
+// $('.demo_blog_contents').css("display","none");
+var demo_warning_check = $(this).parent().find('.demo_warning_hide_check');
+if(demo_warning_check.is(':checked')) {
+cookie_set('demo_warning_blog_show', '0', '', '', '', '');
+}
+else {
+cookie_set('demo_warning_blog_show', '1', '', '', '', '');
+}
+});
+$('.i_button').click(function(){
+$('#ecs_loader').removeClass("hide");
+setTimeout(function(){$('#ecs_loader').addClass("hide"); }, 60000);
+});
+$('#scelta_ordinamento_dinamico').change(function(){
+valore_ordinamento = $(this).val();
+console.log(valore_ordinamento);
+cookie_set('plist_sort_combined', valore_ordinamento, '', '/', '', '');	
+location.reload();
+});
+$('#scelta_ordinamento_dinamico_mobile').change(function(){
+valore_ordinamento = $(this).val();
+console.log(valore_ordinamento);
+cookie_set('plist_sort_combined', valore_ordinamento, '', '/', '', '');
+location.reload();
+});
+var cart_preview_time;
+$('#minibasket').mouseleave(function(){
+cart_preview_time = setTimeout(function(){
+if($('#header').attr('opened')!='yes'){
+$('#basket_preview').hide();
+}},300);
+});
+$('#minibasket').mouseenter(function(){
+clearTimeout(cart_preview_time);
+if($('#header').attr('opened')!='yes'){
+posizione = $(this).closest('.minibasket_container').css('position');
+console.log(posizione);
+var offset = $(this).offset();
+var larghezza = $(this).width();
+var larghezza_preview = 320;
+if( posizione != 'absolute') {
+$('#basket_preview').css('left',offset.left + larghezza - larghezza_preview);
+$('#basket_preview').css('top',offset.top + parseInt($(this).find('.btn-minibsk-lbl').height()));
+$('#basket_preview').show();
+}else{
+$('#basket_preview').css('left', 0 - Math.abs($(this).width() - 320));
+$('#basket_preview').css('top',offset.top + 4 + parseInt($(this).find('.btn-minibsk-lbl').height()));
+$('#basket_preview').show();
+}
+}
+});
+$('#basket_preview').mouseenter(function(){
+$('#header').attr('opened','yes')
+});
+$('#basket_preview').mouseleave(function(){
+$('#header').attr('opened','no')
+$('#basket_preview').hide();
+});
+//avis
+$(".starsContainer").on("click", function(e) {e.preventDefault();$('html, body').animate({scrollTop: $("#avProductWrapper").offset().top}, 1500);});
+$(".select2").select2();
+var contatore_ratio=0;
+var sommatoria_ratio=0;
+$('.croped-plist-div').each(function(){
+// console.log($(this).data('width') + " " + $(this).data('height'));
+if($(this).data('width')!=0){
+contatore_ratio++;
+ratio = parseFloat($(this).data('width')) / parseFloat($(this).data('height'));
+sommatoria_ratio = sommatoria_ratio + ratio;
+}
+});
+if(contatore_ratio>0){
+media_pesata_ratio = sommatoria_ratio/contatore_ratio;
+console.log("Contatore: " + contatore_ratio + " Sommatoria: " + sommatoria_ratio + " Media:" + media_pesata_ratio);
+croped_height = parseFloat($('.croped-plist-div').last().css('width')) / media_pesata_ratio;
+$('.croped-plist-div').css('height',croped_height);
+$('.minh2').css('height',croped_height);
+}
+});
+$( window ).load(function() {
+var running_slides=new Array();
+var already_sent =new Array();
+var slide_activate = new Array;
+var show = new Array;
+$('.product_box').hover(function(){
+var id=$(this).find('.slide_a').data("id");
+if (id === undefined || id == null ) return false;
+// $(this).find('.minh2').prepend('<div style="width:100%;position:absolute" class="hide text-center plist_loader"><img src="img/rev-16/all/002-42.gif" /></div>');
+var target = $(this);
+running_slides[id]=new Array();
+var w_slide=$(this).find('slide_a').width();
+var h_slide=$(this).find('slide_a').height();
+$('.product_box .zoom-image-control').addClass("hidden");
+var src_1=$(this).find('.slide_a').find('img').attr("src");
+// console.log(already_sent[id]);
+if(already_sent[id]!="1") {
+already_sent[id]="1";
+var prima_volta=1;
+$(this).find('.minh1').append('<img class="temp_img hide" src="'+src_1+'" />');
+$(this).find('.minh1').append('<div class="temp_div hide"></div>');
+$(this).find('.temp_div').html($(this).find('.slide_a').html());
+}else{
+var prima_volta=0;
+src_1=$(this).find('.temp_img').attr("src");
+}
+var el=$(this).find('.slide_a').find('img');
+var el2=$(this).find('.slide_a');
+var el3=$(this).find('.noslide');
+el.css("max-width","100%");
+el.css("max-height","100%");
+el.css("width","auto");
+el.css("height","auto");
+running_slides[id].push(src_1);
+$.getJSON('ajax_product_image_rollover.php?id='+id,function(data){
+if(data.response=="OK"){
+var num_slides = data.data.lenght;
+slide_activate[id] = true;
+$.each(data.data, function(i,obj) {
+src=obj.grandbig;
+if(src!='' && src!=undefined) {
+if(already_sent[id]!="1") target.find('.temp_img').css("src",src);
+running_slides[id].push(src);
+}
+});
+// el.attr("src","");
+// el.attr("alt","");
+// target.find('.plist_loader').fadeIn();
+slides=running_slides[id].reverse();
+$.each(slides,function(i,src2){
+// console.log(slide_activate[id]);
+if(slide_activate[id]){
+setTimeout(function(){el.fadeOut(900,function(){el.attr("src",src2);/* target.find('.plist_loader').fadeOut();*/ });el.load().fadeIn().delay(2000);},100);
+}else{
+el.attr("height",init_h).attr("width",init_w);
+el2.html($(this).find('.temp_div').html());
+var content = $(this).find('.temp_div').html();
+target.find('slide_a').html(content);
+return false;
+}
+num_slides = i;
+});
+num_slides++;
+// console.log(num_slides + " " + slide_activate[id]);
+if(!slide_activate[id]) {
+el2.html($(this).find('.temp_div').html());
+var content = $(this).find('.temp_div').html();
+target.find('slide_a').html(content);
+return false;
+}
+show[id] = setInterval(function(){$.each(slides,function(i,src2){
+if(slide_activate[id]){
+setTimeout(function(){el.fadeOut(900,function(){el.attr("src",src2)});el.load().fadeIn().delay(2000);},(1000)); 
+}else{
+el2.html($(this).find('.temp_div').html());
+var content = $(this).find('.temp_div').html();
+target.find('slide_a').html(content);
+return false;
+}
+});},num_slides*3000);
+}else{
+el2.html($(this).find('.temp_div').html());
+var content = $(this).find('.temp_div').html();
+target.find('slide_a').html(content);
+return false;
+}
+});
+},function(){
+var id=$(this).find('.slide_a').data("id");
+if (id === undefined) return false;
+// $(this).find('.plist_loader').remove();
+clearInterval(show[id]);
+delete show[id];
+var content = $(this).find('.temp_div').html();
+$(this).find('.slide_a').html(content);
+var href = $(this).find('.slide_a').attr("href");
+if(href!=undefined){
+if(href.lenght){
+$(this).find('.slide_a').remove();
+$(this).find('.minh2').append('<a class="slide_a" data-id="'+id+'"></a>')
+$(this).find('.slide_a').html(content);
+$(this).find('.slide_a').attr("href",href);
+slide_activate[id] = false;
+}
+}
+});
+});
+$("#mngm-bar-close").bind('click', function() {
+$("#mngm-bar").addClass('hide');
+$("#mngm-bar-modal").modal('show');
+});
+$(".mngm-bar-set-hidden").click(function(){
+$("#mngm-bar-modal").modal('hide');
+$.ajax({ url: "ajax_demo_manage_panel_state.php?operation=hide",
+method: "GET",
+});
+});
+</script>
+<script>
+var FB_ADDTOCART = false;
+var C_CURRENCY = "EUR";
+</script>
+<script src="templates/js/shop-home.js"></script>
+<div class="right_air"></div>
+<div id="controller_box_min_height"></div>
+</body>
+</html>
