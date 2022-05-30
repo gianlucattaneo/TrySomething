@@ -2,6 +2,8 @@ import json
 import os
 import glob
 import re
+import socket
+import geocoder
 
 from bs4 import BeautifulSoup
 import requests
@@ -94,8 +96,7 @@ def feature_https(url):
     return 1 if "https" in url else 0
 
 
-def feature_meta_count(url, class_):
-    doc = get_url_html_offline(url, class_)
+def feature_meta_count(doc):
     found = doc.find_all('meta')
     return len(found) if found else 0
 
@@ -105,8 +106,7 @@ def feature_url_length(url):
     return len(split[1] if 'www' in url else split[0])
 
 
-def feature_google_verified(url, class_):
-    doc = get_url_html_offline(url, class_)
+def feature_google_verified(doc):
     found = []
     try:
         found = doc.find('head').find_all('meta', {'name': 'google-site-verification'})
@@ -138,15 +138,12 @@ def feature_url_special_chars(url):
     truncated = split[1] if 'www' in url else split[0].split('//')[1]
     return 1 if regex.search(truncated) else 0
 
-
-def feature_p_iva(url, class_):
-    doc = get_url_html_offline(url, class_)
+# TODO
+def feature_p_iva(doc):
     return url if 'iva' in doc.text.lower() else ''
 
-
-def feature_login_btn(url, class_):
-    doc = get_url_html_offline(url, class_)
-    found = []
+# TODO
+def feature_login_btn(doc):
     tmp = []
     try:
         found = doc.find_all('a')
@@ -157,7 +154,57 @@ def feature_login_btn(url, class_):
     finally:
         return tmp
 
+# TODO
+def feature_payment_methods(doc):
+    tmp= 0
+    try:
+        found = doc.find_all('img')
+        tmp = 1 if any('card' in tag['class'] for tag in found) else 0
+    finally:
+        return tmp
 
+
+def feature_ip_location(url):
+    try:
+        ip = socket.gethostbyname(url.replace('http://', '').replace('https://', '').replace('www.', ''))
+        request_url = 'https://geolocation-db.com/jsonp/' + ip
+        response = requests.get(request_url)
+        result = response.content.decode()
+        result = result.split("(")[1].strip(")")
+        loc = json.loads(result)['country_code']
+        # loc = geocoder.ip(ip)
+        if loc in glob_country_codes:
+            return glob_country_codes.index(loc)
+        else:
+            glob_country_codes.append(loc)
+            return len(glob_country_codes) - 1
+    except:
+        return 0
+
+
+def feature_trustpilot_review(url):
+    try:
+        url = url.replace('http://', '').replace('https://', '')
+        request_url = 'https://www.trustpilot.com/review/' + url
+        response = requests.get(request_url).content
+        doc = BeautifulSoup(response, 'html.parser').find('p', {'data-rating-typography': True}).text
+        return doc
+    except:
+        return -1.0
+
+
+def feature_social_link(doc, social):
+    found = doc.find_all('a')
+    for tag in found:
+        try:
+            if social in tag['href']:
+                return 1
+        except:
+            pass
+    return 0
+
+
+glob_country_codes = ['Not found']
 glob_domains = []
 
 if __name__ == '__main__':
@@ -181,18 +228,38 @@ if __name__ == '__main__':
     tmp_csv = ''
     for class_ in sites:
         for url in sites[class_]:
-            print(feature_p_iva(url, class_))
-            # tmp_csv += f'{url};{class_};' \
-            #            f'{feature_https(url)};' \
-            #            f'{feature_meta_count(url,class_)};'\
-            #            f'{feature_url_length(url)};' \
-            #            f'{feature_google_verified(url,class_)};' \
-            #            f'{feature_domain(url)};' \
-            #            f'{feature_url_numbers(url)};' \
-            #            f'{feature_url_special_chars(url)}\n'
+            doc = get_url_html_offline(url, class_)
+            tmp_csv += f'{url};{class_};' \
+                       f'{feature_https(url)};' \
+                       f'{feature_meta_count(doc)};'\
+                       f'{feature_url_length(url)};' \
+                       f'{feature_google_verified(doc)};' \
+                       f'{feature_domain(url)};' \
+                       f'{feature_url_numbers(url)};' \
+                       f'{feature_url_special_chars(url)};' \
+                       f'{feature_ip_location(url)};' \
+                       f'{feature_trustpilot_review(url)};' \
+                       f'{feature_social_link(doc, social="instagram")};' \
+                       f'{feature_social_link(doc, social="facebook")};'\
+                       f'{feature_social_link(doc, social="twitter")};' \
+                       f'{feature_social_link(doc, social="pinterest")};' \
+                       f'\n'
 
-    # with open('Stats/total.csv', 'w') as stats:
-    #     # TODO ricordarsi di aggiungere i campi
-    #     stats.write('url;class;https;meta_count;url_length;google_verified;domain;url_numbers;special_chars\n')
-    #     stats.write(tmp_csv)
+    with open('Stats/total.csv', 'w+') as stats:
+        # TODO ricordarsi di aggiungere i campi
+        stats.write('url;class;https;'
+                    'meta_count;'
+                    'url_length;'
+                    'google_verified;'
+                    'domain;'
+                    'url_numbers;'
+                    'special_chars;'
+                    'ip_location;'
+                    'trustpilot_review;'
+                    'instagram;'
+                    'facebook;'
+                    'twitter;'
+                    'pinterest;'
+                    '\n')
+        stats.write(tmp_csv)
 
