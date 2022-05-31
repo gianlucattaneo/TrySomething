@@ -99,6 +99,7 @@ if __name__ == '__main__':
 
     clf = tree.DecisionTreeClassifier().fit(features, targets)
 
+    plt.figure(figsize=(16, 9))
     plot_tree(clf, feature_names=feature_names, class_names=target_names, filled=True, rounded=True)
     plt.show()
     plt.clf()

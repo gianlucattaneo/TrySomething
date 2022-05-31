@@ -9,9 +9,18 @@ from bs4 import BeautifulSoup
 import requests
 
 
+def check_redirects(url):
+    try:
+        r = requests.get(url, allow_redirects=False, timeout=10)
+        redirect = r.headers['location']
+        return redirect if 'http' in redirect else url
+    except:
+        return url
+
+
 def get_url_html(url):
     headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0'}
-    result = requests.get(url, headers=headers).content
+    result = requests.get(url, headers=headers, timeout=10).content
     onl = BeautifulSoup(result, 'html.parser')
     return onl
 
@@ -37,59 +46,32 @@ def save_html(classes, sites, folder='Html/'):
         class_folder = f'{folder}{class_}/'
         os.makedirs(class_folder, exist_ok=True)
         for url in sites[class_]:
-            path = f'{class_folder}{url.replace("http://", "http-").replace("https://", "https-")}.html'
+            print(f'---------------------------\nStarting {url}')
+            redirect = check_redirects(url)
+            print(f'Reditecting to {redirect}')
+            path = f'{class_folder}' \
+                   f'{redirect.replace("http://", "http-").replace("https://", "https-").split("/")[0]}.html'
             try:
                 with open(path, 'w', encoding='utf-8') as class_file:
-                    doc = get_url_html(url)
+                    doc = get_url_html(redirect)
                     if not doc.find('head'):
                         raise Exception('<head> not found')
                     title = doc.find('title').text
                     if 'Error' in title:
                         raise Exception('HTML Error')
+                    if 'Not Found' in title:
+                        raise Exception('Not Found')
                     if 'Kaspersky Security Cloud' in title:
                         raise Exception('Security Error')
                     if 'Access Denied' in title:
                         raise Exception('Access Denied')
+                    if 'Cloudflare' in title:
+                        raise Exception('Blocked by Cloudflare')
                     class_file.write(str(doc))
+                    print(f'{redirect} Successful')
             except Exception as e:
-                print(f'Error on {url} --- {e}')
+                print(f'Error on {redirect} --- {e}')
                 os.remove(path)
-
-
-def vecchio():
-    with open('fake_ecommerce.json.json', 'a') as f:
-        content = f.read()
-        sites = get_url_array(json.loads(content))
-
-    classes = ['authorized', 'unauthorized']
-    # save_html(classes, sites)
-
-    feature = 'len_url'
-    class_folder = 'Stats/'
-    os.makedirs(class_folder, exist_ok=True)
-    with open(f'{class_folder}{feature}.csv', 'w') as class_file:
-        class_file.write(f'{feature}\n')
-        for class_ in classes:
-            for url in sites[class_]:
-                try:
-
-                    if 'www' in url:
-                        print(url.split('.')[1])
-                    else:
-                        print(url.split('.')[0])
-                    # class_file.write(f'{url};{class_};'
-                    #                  f'{1 if "https" in url else 0}\n')
-                    # doc = get_url_html_offline(url, class_)
-                    # found = doc.find('head')
-
-                    # if found:
-                    #     # found = found.find_all('meta', {'name': 'google-site-verification'})
-                    #     class_file.write('1\n')
-                    # else:
-                    #     class_file.write('0\n')
-
-                except Exception as e:
-                    print(f'Error on {url} -- {e}')
 
 
 def feature_https(url):
@@ -156,7 +138,7 @@ def feature_login_btn(doc):
 
 # TODO
 def feature_payment_methods(doc):
-    tmp= 0
+    tmp = 0
     try:
         found = doc.find_all('img')
         tmp = 1 if any('card' in tag['class'] for tag in found) else 0
@@ -228,6 +210,9 @@ if __name__ == '__main__':
     tmp_csv = ''
     for class_ in sites:
         for url in sites[class_]:
+            ciao = check_redirects(url)
+            if ciao:
+                print(ciao)
             doc = get_url_html_offline(url, class_)
             tmp_csv += f'{url};{class_};' \
                        f'{feature_https(url)};' \
