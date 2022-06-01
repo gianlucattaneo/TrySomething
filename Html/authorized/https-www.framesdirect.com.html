@@ -1,0 +1,1543 @@
+
+<!DOCTYPE html>
+
+<html lang="en" xml:lang="en" xmlns="https://www.w3.org/1999/xhtml" xmlns:fb="https://www.facebook.com/2008/fbml" xmlns:og="https://ogp.me/ns#">
+<head id="ctl00_Head1">
+<script>var dataLayer = dataLayer || [],fdFncs = fdFncs || {}; dataLayer.push({'transactionAffiliation': 'framesdirect.com'});/*  Rapid+JS v6.1.6 Released on 2021-08-24T19:39Z | (c) Yottaa, Inc. | https://www.yottaa.com/rapidjs-license */ (function(h,Ba){return Ba(h)})('undefined'!==typeof window?window:this,function(h,Ba){function N(){var a='0123456789abcdef'.split(''),b=[],c=Math.random,d;b[8]=b[13]=b[18]=b[23]='-';b[14]='4';for(var e=0;36>e;e++)b[e]||(d=0|16*c(),b[e]=a[19==e?d&3|8:d&15]);return b.join('')}function T(a){return f.rum.key+'-'+a}function ha(){for(var a=f.rum.key?f.rum.key:l.getCookie('yo-rum-key'),b=0,c=0,d=0,e=0;e<f.delayed.length;e++){var m=f.delayed[e];'none'!=m.orgDelayType&&(Z='active',m.newNode&&m.newNode.nodeName? 'img'==m.newNode.nodeName.toLowerCase()?c++:'script'==m.newNode.nodeName.toLowerCase()&&'attributesrc'!=m.type&&b++:m.me&&m.me.nodeName&&'script'==m.me.nodeName.toLowerCase()&&d++)}var e=null!=a?a:h.location.hostname,a=ia,m=db,q=eb,k=document.location.href,n=navigator.userAgent,ja=document.title,U=l.hasResourceTiming()&&l.def(h.performance.timing.toJSON),B=l.hasResourceTiming(),w=l.hasResourceTiming(),v=l.metaDataValue('X-Yottaa-Optimizations'),p=(new Date).getTime(),x;if(!1==l.hasResourceTiming()|| !1==l.def(h.performance.getEntriesByType))x={};else{x=h.performance.getEntriesByType('resource');for(var t=x.length,z={},r=0;r<t;r++){var u=x[r],A=z[u.initiatorType];A?(A.count++,A.size+=u.decodedBodySize):z[u.initiatorType]={count:1,size:u.decodedBodySize}}x=z}b={siteKey:e,uuid:a,formatVersion:m,releaseDate:q,requestType:'navigation',fullPageURL:k,pageCategory:'',userAgent:n,pageTitle:ja,isNavigationSupported:U,isResourceTimingSupported:B,isPaintTimingSupported:w,yOptimizations:v,eventTimestamp:p, entryMap:x,sequencing:{numScriptsSequenced:b,numImagesSequenced:c,numBlocksSequenced:d,numDelayedObjects:f.delayed.length},commonDimensions:{}};f.rum.pageCategory&&(b.pageCategory=f.rum.pageCategory);C.geo&&(b.geo=C.geo);c=navigator.connection||navigator.mozConnection||navigator.webkitConnection;b.connection={};!0==g.def(c)&&(b.connection.effectiveType=c.effectiveType,b.connection.rtt=c.rtt);for(var y in O)b.commonDimensions[y]=O[y];b.commonDimensions.optState||(b.commonDimensions.optState=Z);try{if(h.localStorage&& localStorage.getItem){var F=localStorage.getItem(T(Ca));if(null!=F){var F=JSON.parse(F),D=(new Date).getTime()>F.visitorTimestamp+Da;b.visitor={visitorTimestamp:(new Date).getTime(),numVisitorPageViews:F.numVisitorPageViews+1,numSessionPageViews:D?1:F.numSessionPageViews+1,visitorId:F.visitorId?F.visitorId:N(),numSessions:D?F.numSessions+1:F.numSessions,sessionId:D?N():F.sessionId,bandwidth:''}}else b.visitor={visitorTimestamp:(new Date).getTime(),numVisitorPageViews:1,numSessionPageViews:1,numSessions:1, visitorId:N(),sessionId:N(),bandwidth:''};localStorage.setItem(T(Ca),JSON.stringify(b.visitor));var E=localStorage.getItem(T(ka));null!=E&&(b.qoe=JSON.parse(E))}}catch(G){l.log('localStorage was not available',G)}!0==b.isNavigationSupported&&!0!==f.rum.spa&&(b.navigationTiming=h.performance.timing.toJSON(),b.experienceMetrics=$,Ea&&(b.webVitalsInfo=V));b.isPaintTimingSupported=!1;b.paintTiming={};b.userTiming={};b.measureTiming={};if(h.performance&&h.performance.getEntriesByType){y=h.performance.getEntriesByType('paint'); if(null!=y&&0<y.length)for(b.isPaintTimingSupported=!0,e=0;e<y.length;e++)b.paintTiming[y[e].name]=y[e].startTime;y=h.performance.getEntriesByType('mark');if(null!=y&&0<y.length)for(e=0;e<y.length;e++)b.userTiming[y[e].name]=y[e].startTime;y=h.performance.getEntriesByType('measure');if(null!=y&&0<y.length)for(e=0;e<y.length;e++)b.measureTiming[y[e].name]=y[e].duration}C.rum=b}function Fa(a){for(var b=0;b<f.delayed.length;b++){var c=f.delayed[b];if(c.src==a||c.srcAttr==a)return c}return null}function W(a, b,c,d){a={lastByteTime:c.duration,implementationType:'dom',type:a,zone:b,resourceName:c.name,resourceSizeBytes:c.decodedBodySize};c=Fa(c.name);null!=c&&(a.delayedType=c.orgDelayType,a.delayedValue=c.delayValue);g.def(d)&&(a.stack=d);return a}function la(a){if(!1!=l.hasResourceTiming()){try{if(!h.localStorage||!h.localStorage.getItem)return}catch(b){l.log('localStorage was not available');return}var c=C.rum,d=[],e=h.performance.timing,m=0,q=0,k=e.domInteractive-e.navigationStart,v=e.domContentLoadedEventEnd- e.navigationStart,ja=e.domComplete-e.navigationStart,U=e.loadEventEnd-e.navigationStart,B=h.performance.getEntries(),e=B.length,w;a:{if(document.querySelector&&(w=document.querySelector('img[class*=hero]'),null!=w)){w=w.currentSrc||w.src;break a}for(var p=document.getElementsByTagName('img'),r=null,x=0,t=document.documentElement.scrollTop||document.body.scrollTop,z=0;z<p.length;z++){w=p[z];var u=w.getBoundingClientRect();if(u.top-t<h.innerHeight)u.width*u.height>x&&(r=w.currentSrc||w.src,x=u.width* u.height);else break}w=r}for(p=0;p<e;p++)t=B[p],r=t.startTime,z=0,'resource'==t.entryType&&(r<=k?(q+=f.rum.advanced.domInteractiveCoef,z=1):r<=v?(q+=f.rum.advanced.domContentLoadedEventCoef,z=2):r<=ja?(q+=f.rum.advanced.domCompleteCoef,z=3):r<=U||a&&p<a?(q+=f.rum.advanced.loadEventCoef,z=4):0<t.duration&&(m+=t.duration),x=ma[t.name],0!=z&&t.duration>f.rum.advanced.blockingTime?G.push(W(4,z,t,x)):0==z&&t.duration>f.rum.advanced.performanceTime?G.push(W(0,z,t,x)):t.decodedBodySize>f.rum.advanced.violationSize&& G.push(W(1,z,t,x)),!0==t.name.toLowerCase().startsWith('https:')&&!0==t.name.toLowerCase().startsWith('http:')&&G.push(W(3,z,t,x)),w==t.name&&(n.setExperienceMetric('hero_image_display',t.startTime+t.duration),n.setExperienceMetric('hero_image',w)),t.toJSON&&(t=t.toJSON(),t.implementationType='dom',g.def(x)&&(t.stack=x),x=Fa(t.name),null!=x&&(t.delayedType=x.orgDelayType,t.delayedValue=x.delayValue),t.onLoadStartTime=r-U,d.push(t)));1<e&&g._calculateTti(B,e,U);h.performance.getEntriesByName&&!0!== f.rum.spaTransition&&(a=document.getElementsByTagName('script'),na(a,'src'),a=document.getElementsByTagName('link'),na(a,'href'),a=document.getElementsByTagName('img'),na(a,'currentSrc'));a=localStorage.getItem(T(ka));null==a?a={sessionTimeSaved:m,journeyTime:m}:(a=JSON.parse(a),a={sessionTimeSaved:(new Date).getTime()>a.collectionTimestamp+Da?m:a.sessionTimeSaved+m,journeyTime:a.journeyTime+m});a.entries=e;a.timeSaved=m;a.score=q;a.pageMeasured=c?c.fullPageURL:h.location.href;a.pageMeasuredCategory= c?c.pageCategory:'';a.violations=G;!0===f.rum.requests&&(a.resourceTiming=d);a.jsErrors=oa;a.pageMeasuredUuid=ia;a.collectionTimestamp=(new Date).getTime();a.commonDimensions={};for(var A in O)a.commonDimensions[A]=O[A];a.experienceMetrics=$;Ea&&(a.webVitalsInfo=V);a.commonDimensions.optState||(a.commonDimensions.optState=Z);try{!0!==f.sendRumOnUnload?localStorage.setItem(T(ka),JSON.stringify(a)):c.qoe=a}catch(D){g.log('LocalStorage failed to save',D)}}}function fb(a){if(h.performance&&h.performance.getEntriesByType)for(var b= h.performance.getEntriesByType('resource'),c=0;c<b.length;c++)if(b[c].name===a)return c;return-1}function gb(a,b,c,d){if(f.sequenceWrites&&'script'==a.nodeName.toLowerCase()){for(var e in r)if(0<r[e].length&&d.writeLocation!=r[e][0].getWriteSelector())return g.def(d.writeLocation)&&(a.yo_writeSelector=d.writeLocation),r[e][0].addScript(a),!1;e=null;f&&(e=g.select(d.writeLocation));if(null!=e){a.write_context=new u(e,a,d.writeLocation);var m=r[d.writeLocation];g.undef(m)&&(m=r[d.writeLocation]=[]); m.push(a.write_context);aa=function(){var a=Array.prototype.slice.call(arguments,0,-1).join('');0<m.length&&m[m.length-1].collectDocumentWrite(a)};a.original_onload=a.onload;a.original_onreadystatechange=a.onreadystatechange;a.onload=a.onreadystatechange=null;var q=!1;a.onerror=a.onload=function(){q||this.readyState&&'loaded'!==this.readyState&&'complete'!==this.readyState||(g.log('loading ',this,this.write_context.getId()),q=!0,this.original_onload?this.original_onload.call(arguments):k.publish({topic:'sequence/afterloaded/'+ a.src,message:a}),this.write_context.finalizeWriteOverride(),this.original_onload=this.write_context=this.onload=this.onreadystatechange=null)};a.onreadystatechange=function(){q||this.readyState&&'loaded'!==this.readyState&&'complete'!==this.readyState||(g.log('loading ',this,this.write_context.getId()),q=!0,this.original_onload||k.publish({topic:'sequence/afterloaded/'+a.src,message:a}),this.write_context.finalizeWriteOverride(),this.original_onload=this.write_context=this.onload=this.onreadystatechange= null);this.original_onreadystatechange&&this.original_onreadystatechange.call(arguments)}}}return!0}function hb(a,b,c,d){if(f.sequenceWrites&&'function'!==typeof d.writeLocation){for(var e in r)if(0<r[e].length&&d.writeLocation!=r[e][0].getWriteSelector())return g.def(d.writeLocation)&&(d.yo_writeSelector=d.writeLocation),r[e][0].addScript(a),!1;e=null;f&&(e=g.select(d.writeLocation));if(null!=e){d.write_context=new u(e,{src:a},d.writeLocation);var m=r[d.writeLocation];g.undef(m)&&(m=r[d.writeLocation]= []);m.push(d.write_context);aa=function(){var a=Array.prototype.slice.call(arguments,0,-1).join('');0<m.length&&m[m.length-1].collectDocumentWrite(a)}}}return!0}function ib(a,b){for(;a.firstChild;)a.removeChild(a.firstChild);g.writeHTML(a,b)}function jb(){if(!1!=f.afterShockLoaded){for(var a=0;a<f.delayed.length;a++)if('none'!=f.delayed[a].delayType)return;null!=f.intervalID&&(clearInterval(f.intervalID),f.intervalID=null,g.log('Turning off response timer all objects are loaded.'))}}function Ga(a){f.sequenceWrites&& g.undef(a.yo_write)&&(a.yo_write=a.write,aa=kb,a.writeln=a.write=function(){var b=Array.prototype.slice.call(arguments).join('');aa(b,a)})}function kb(a,b){for(var c=!1,d=0;d<f.write.length;d++){var e=f.write[d];if(a.match(e.start)||1==e.state){var d={document:b},m;for(m in e)d[m]=e[m];c=!0;e.string&&!1==pa?e.string+=a:(e.state=1,e.string=a);if(g.undef(e.end)||a.match(e.end)){if(g.undef(d.delayType)||'none'==d.delayType){e.config=d;if(g.def(d.onBefore))d.onBefore(e,b);g.undef(d.selector)||null==d.selector? d.selector=b:d.selector=g.select(d.selector);d.selector.yo_write?(pa=!0,-1!=e.string.indexOf('m_js_controller.js')&&(pa=!0),d.selector.yo_write(e.string)):g.writeHTML(d.selector,e.string,d.how);if(g.def(d.onAfter))d.onAfter(e,b)}else g.undef(d.selector)?(d.selector='yo_write_'+Math.floor(1E9*Math.random()),g.undef(d.how)&&(d.how='append'),g.undef(d.delayValue)&&(d.delayValue=d.selector),document.yo_write('<di'+'v id='+d.selector+' style=width:0px;height:0px></di'+'v>'),d.selector=g.select(d.selector).parentNode): d.selector=g.select(d.selector),m=Yo.sequence.resource(''),g.def(d.onBefore)&&m.beforeLoading(d.onBefore),g.def(d.onLoad)&&m.afterLoaded(d.onLoad),m.type='inner',m.how=e.how,m.newNode=a,m.before=d.selector,m.me=d.selector,f.delayed.push(m),domCompleteTriggered&&m.execute();e.state=2;e.string=''}break}}!1==c&&b.yo_write(a);g.log('write hander = '+a)}function Ha(a){return function(b,c,d){var e=ba[(a?'on':'')+b];if(e)e.triggered?X(function(){c(e.event)},0):e.listeners.push(c);else return a?this.yo_addEventListener(b, c,d):this.yo_attachEvent(b,c,d)}}function lb(a,b,c){function d(a){g.log('Loading '+c.before.src+' via event handler '+c.delayValue);c.afterShock();var f=null;g.def(a.currentTarget)?f=a.currentTarget:g.def(a.srcElement)&&(f=a.srcElement);g.removeEvent(f,b[0],d)}g.log('Adding event ',b[0],b[1]);g.addEvent(a,b[0],d)}function Ia(a,b){return a.top>b.top-a.height&&a.bottom<b.bottom+f.offset+2*a.height&&a.left>b.left-a.width&&a.right<b.right+f.offset+2*a.width}function mb(a,b){return Ja(this,a,b,'insert')} function nb(a){return Ja(this,a,a,'append')}function Ja(a,b,c,d){k.publish({topic:'sequence/captured',message:{parentNode:a,newNode:b,before:c,captureType:d}});if(!1==Ka(b,a,function(a,g){var q=a.clone();q.type=d;q.newNode=b;q.src=b?b.src:'';q.before=c;q.me=g;f.delayed.push(q)}))return P.safeWriteInsert(b,c,a,Y(b),'append'==d);a=f.delayed[f.delayed.length-1];if(domCompleteTriggered||'none'==a.delayType)return a.execute()}function Ka(a,b,c){var d=null,e=null,f=!1;a&&a.nodeName&&(d=a.nodeName.toLowerCase()); if('script'==d||'iframe'==d){e=Y(a);c(e,b);var f=!0,q=!1;a.onreadystatechange&&(a.onreadystatechangeOriginal=a.onreadystatechange,a.onreadystatechange=null);a.onreadystatechange=function(){q||this.readyState&&'loaded'!==this.readyState&&'complete'!==this.readyState||(k.publish({persistent:!0,topic:'sequence/afterloaded/'+e.key,message:e}),q=!0);if(this.onreadystatechangeOriginal){var a=this.onreadystatechangeOriginal;this.onreadystatechangeOriginal=null;a.apply(this,arguments)}};a.onload&&(a.onloadOriginal= a.onload,a.onload=null);a.onload=function(){!1==q&&(k.publish({persistent:!0,topic:'sequence/afterloaded/'+e.key,message:e}),q=!0);if(this.onloadOriginal){var a=this.onloadOriginal;this.onloadOriginal=null;a.apply(this,arguments)}}}else if(e=Y(b),null==e||'none'!=e.delayType)c(e,b),e.before=b,f=!0;g.log(a.nodeName+' '+a.src+' is'+(f?' ':' NOT ')+'sequenced.');!1==f&&k.publish({topic:'sequence/beforeloading/'+e.key,message:e});return f}function Y(a){var b=a.src;!0==f.excludeParameters&&!0==g.def(b)&& (b=b.split('?')[0]);!0==g.def(a.yo_src)&&(b=a.yo_src);if(null==b||0==b.length){var c=new (_delayed());c.delayType='none';return c}for(c=0;c<f.resources.length;c++){var d=f.resources[c];if(!0==d.match&&!0==g.matchUrl(d.url,b)&&((g.undef(a.nodeName)||'xhr'!==a.nodeName)&&!0!==d.xhr||'xhr'===a.nodeName&&!0===d.xhr))return g.log('Found configuration for '+b+' delayType '+d.delayType),'empty'==d.delayType&&(a.src=null==d.delaySrc?'data:text/javascript;plain,//':d.delaySrc,d.delayType='none'),d}g.log('Did NOT find configuration for '+ b+' checking local configuration. ');c=new (_delayed());c.key=c.src=b;if(null!=a.delayType)'empty'==a.delayType&&(a.src=null==a.delaySrc?'data:text/javascript;plain,//':a.delaySrc,a.delayType='none'),c[a.delayType](a.delayValue);else c[f.defaultType](f.defaultDelay);c.before=a;return c}function La(){for(var a=0;a<f.resources.length;a++){var b=f.resources[a];if(!b.isConfig){var c=new (_delayed());c.key=c.url=b.url;c.match=!0;c.local=!0;c[b.delayType](b.delayValue);f.resources[a]=c}}}var v={},X=h.setTimeout, Ma=h.setInterval,f={defaultDelay:5E3,defaultType:'none',log:!1,throttle:20,sequenceXHR:!1,sequenceWrites:!1,sendTimingData:!1,timingDataURL:'',offset:100,scan:['script','img','source','picture'],resources:[],abTesting:[],write:[],intervalID:null,lazyCheckSize:!0,pre:'data-yo-',srcAttrs:['data-yo-src','data-yo-srcset'],afterShockLoaded:!1,optimizeIE:!0,logPrefix:'Yo.utils.log: ',delayed:[],maxMessageSize:2048E3,scriptAttrs:['async','nomodule','defer'],ttiWatcherInterval:3E3,ttiLagTime:2E3,scrapeLevel:'top', sendRumOnUnload:!1,excludeParameters:!1},l={log:function(){if(f.log&&('undefined'!==typeof h&&l.def(h.console)&&l.def(h.console.log)||'undefined'!==typeof self&&l.def(self.console)&&l.def(self.console.log))){var a=Array.prototype.slice.call(arguments);a.unshift(f.logPrefix);console.log.apply(console,a)}},def:function(a){return'undefined'!=typeof a},undef:function(a){return!l.def(a)},isFunction:function(a){return!!(a&&a.constructor&&a.call&&a.apply)},decodeSafeString:function(a){return decodeURIComponent(a)}, getCookie:function(a){for(var b=document.cookie.split(';'),c=0;c<b.length;c++){var d=b[c];if(-1!=d.indexOf(a)){for(;' '==d.charAt(0);)d=d.substring(1,d.length);return d.substring(a.length+1,d.length)}}return null},setCookie:function(a,b,c){var d='';c&&(d=new Date,d=new Date(d.getTime()+1E3*c),d='; expires='+d.toGMTString());document.cookie=a+'='+b+d+'; path=/';return!0},addEvent:function(a,b,c){a.attachEvent?a.attachEvent('on'+b,c):a.addEventListener&&a.addEventListener(b,c,!1)},removeEvent:function(a, b,c){a.detachEvent?a.detachEvent('on'+b,c):a.removeEventListener(b,c,!1)},metaDataValue:function(a,b){var c=document.getElementsByName(a);return null!=c&&1==c.length?1==arguments.length?c[0].getAttribute('content'):c[0].setAttribute('content',b):null},matchUrl:function(a,b){if(null==a||null==b)return!1;l.log('Match src',b,'and url',a);return'string'===typeof a&&-1!=b.indexOf(a)||null!=b.match(a)},sendData:function(a,b){if(!0==l.isIE('8'))return l.log('IE 8 detected we will not send data back for this browser currently.'), !1;var c=JSON.stringify(a);if(navigator.sendBeacon&&c.length<f.maxMessageSize&&3E4>c.length)v.pubsub.publish({topic:'sequence/beforeloading/'+b,message:a}),navigator.sendBeacon(b,c),v.pubsub.publish({topic:'sequence/afterloaded/'+b,message:a});else if(c.length<f.maxMessageSize){var d=new XMLHttpRequest;d.onreadystatechange=function(){4==this.readyState&&l.log('Rum data response received',this.status)};d.open('POST',b,!0);d.setRequestHeader('Content-type','application/json');d.send(c)}else l.log('Message is larger than max message length for qoe calles message size: ', c.length,f.maxMessageSize)}},k={},J={},ob=1,Na={},qa=[],pb=function(a,b){X(function(){a.callback.call(a.context,b.message,b.topic)},0)};k.subscribe=function(a){a.id=++ob;l.undef(a.priority)&&(a.priority=0);l.undef(a.priority)&&(a.priority=0);'string'===typeof a.topic&&-1!=a.topic.indexOf('*')&&(a.topic=new RegExp(a.topic.replace(/\*/g,'.*')));if('string'===typeof a.topic){a.topic=a.topic.toLowerCase();!0==l.undef(J[a.topic])&&(J[a.topic]=[]);J[a.topic].push(a);J[a.topic].sort(function(a,b){return b.priority- a.priority});var b=Na[a.topic];l.def(b)&&a.callback.call(b.context,b.message,b.topic)}else qa.push(a);l.log('_pubsub.subscribe',a.topic,a.id);return a.id};k.publish=function(a){a.topic=a.topic.toLowerCase();for(var b=J[a.topic],c=b=!0==l.undef(b)?[]:b.slice(0),d=0;d<qa.length;d++){var e=qa[d];null!=a.topic.match(e.topic)&&c.push(e)}a.persistent&&(Na[a.topic]=a);if(!0==l.def(b)){c=[];for(d=0;d<b.length;d++){var e=b[d],g=!0;!0==a.async?pb(e,a):(g=e.callback.call(e.context,a.message,a.topic),c.push(g)); l.log('_pubsub.publish',e.topic,e.id);if(!1==g&&!0===a.cancellable)break}return c}l.log('_pubsub.publish',a.topic,'no callbacks');return 0};k.unsubscribe=function(a){for(var b in J)for(var c=J[b],d=0;d<c.length;d++)if(c[d].id==a)return c.splice(d,1),l.log('_pubsub.unsubscribe','found'),!0;l.log('_pubsub.unsubscribe','not found');return!1};var C={releaseDate:'2021-08-24-CTRL',errors:{has:!1},config:f},ra=function(){return C};k.subscribe({topic:'core/configure',callback:function(a){ra.config=f}});k.subscribe({topic:'core/start', callback:function(){ra.config=f}});l.addEvent(h,'error',function(a){var b=a.message,c=a.lineno,d=a.filename;3==arguments.length&&(b=arguments[0],d=arguments[1],c=arguments[2]);l.log('errorCapture',b,c,d);var e='';try{e=a&&a.error&&a.error.stack?a.error.stack:Error().stack}catch(g){}k.publish({topic:'core/js/error',persistent:!0,message:{message:b,implementationType:'dom',resourceName:d,lineNumber:c,stack:e,collectionTimestamp:(new Date).getTime()}});C.errors={has:!0}});l.hasWebVitals=function(){return'undefined'!== typeof h.LayoutShift};var sa=function(){(new PerformanceObserver(function(a){a=a.getEntries();for(var b=0;b<a.length;b++){var c=a[b];k.publish({topic:'web-vitals/cumulative-layout-shift',persistent:!0,message:{score:c.value,entry:c}})}})).observe({type:'layout-shift',buffered:!0});(new PerformanceObserver(function(a){a=a.getEntries();for(var b=0;b<a.length;b++){var c=a[b];k.publish({topic:'web-vitals/first-input',persistent:!0,message:{delay:c.processingEnd-c.startTime,name:c.name,startTime:c.startTime, entry:c}})}})).observe({type:'first-input'});(new PerformanceObserver(function(a){a=a.getEntries();for(var b=0;b<a.length;b++){var c=a[b];k.publish({topic:'web-vitals/largest-contentful-paint',persistent:!0,message:{time:c.startTime,entry:c}})}})).observe({type:'largest-contentful-paint',buffered:!0})};try{!0==l.hasWebVitals()&&sa()}catch(qb){l.log('WebVital initialize error',qb.message)}l.hasResourceTiming=function(){return l.def(h.performance)&&l.def(h.performance.getEntries)};l.calculateTti=function(){var a= h.performance.timing;if(!1==l.hasResourceTiming()||l.undef(a.loadEventEnd))return-1;var b=h.performance.getEntries();return l._calculateTti(b,b.length,a.loadEventEnd-a.navigationStart)};l._calculateTti=function(a,b,c){for(var d=[],e=f.ttiLagTime,g=-1,q=a[0],h=q.startTime,k=h+q.duration,l=[h,k+e],p=0;p<b;p++)if(q=a[p],h=q.startTime,k=h+q.duration,'resource'==q.entryType)if(!0==(h+k>=l[0]&&h<=l[1])){if(d.push(q),2<d.length)if(l=[h,k+e],Oa(d,l),3<=d.length)g=l[1]-e;else break}else if(h>l[1]-e){if(k> c)break;l=[h,k+e];Oa(d,l)}if(g<c){if(!1==f.afterShockLoaded)return-1;g=c}n.setExperienceMetric('time_to_interactive',g);return g};var Oa=function(a,b){for(var c=0;c<a.length;c++){var d=a[c],e=d.startTime;!1==(e+(e+d.duration)>=b[0]&&e<=b[1])&&(a.splice(c,1),c--)}},n={},db='3',eb='2021-08-24-CTRL',oa=[],ka='rapid-js-qoe-5',Ca='rapid-js-visitor-3',G=[],Z='unknown',O={optState:Z},Da=18E5,ia=N(),ma={},Pa=0,Qa=0,$={},Ea=l.hasWebVitals(),V={lcp:[],cls:[],fid:[]};n.initialize=function(a,b,c,d,e){f.rum={beaconUrl:a, requests:b,key:c,post:!0,advanced:{performanceTime:1500,blockingTime:750,violationSize:1024E3,domInteractiveCoef:200,domContentLoadedEventCoef:150,domCompleteCoef:100,loadEventCoef:50}};l.def(e)&&(e.performanceTime&&(f.rum.advanced.performanceTime=e.performanceTime),e.blockingTime&&(f.rum.advanced.blockingTime=e.blockingTime),e.violationSize&&(f.rum.advanced.violationSize=e.violationSize),e.maxMessageSize&&(f.maxMessageSize=e.maxMessageSize));h.performance&&h.performance.setResourceTimingBufferSize&& h.performance.setResourceTimingBufferSize(500)};n.addViolation=function(a,b){G.push({lastByteTime:0,implementationType:'dom',type:a,zone:0,duration:0,startTime:-1,resourceName:b,resourceSizeBytes:0})};var na=function(a,b){for(var c=0;c<a.length;c++)if('href'!=b||'stylesheet'==a[c].rel){var d=a[c][b];if(null!=d&&''!=d&&(0==d.indexOf('//')&&(d=h.location.protocol+d),!0==d.startsWith('http'))){var e=h.performance.getEntriesByName(d);null!=e&&0!=e.length||G.push(W(2,0,{name:d,duration:0,decodedBodySize:0}, ma[d]))}}},sa=function(){n.setExperienceMetric('cumulative_layout_shift',0);k.subscribe({topic:'web-vitals/cumulative-layout-shift',callback:function(a){var b=a.entry,c=[];if(!b.hadRecentInput){var d=n.getExperienceMetric('cumulative_layout_shift');n.setExperienceMetric('cumulative_layout_shift',d+a.score)}for(a=0;a<b.sources.length;a++)d=b.sources[a],c.push({node:l.elementToString(d.node),currentRect:d.currentRect,previousRect:d.previousRect});V.cls.push({duration:b.duration,entryType:b.entryType, hadRecentInput:b.hadRecentInput,lastInputTime:b.lastInputTime,name:b.name,sources:c,startTime:b.startTime,value:b.value})}});k.subscribe({topic:'web-vitals/first-input',callback:function(a){var b=a.entry;n.setExperienceMetric('first_input_delay',a.delay);n.setExperienceMetric('first_input_name',a.name);n.setExperienceMetric('first_input_start_time',a.startTime);V.fid.push({cancelable:b.cancelable,duration:b.duration,entryType:b.entryType,name:b.name,processingEnd:b.processingEnd,processingStart:b.processingStart, startTime:b.startTime,target:l.elementToString(b.target)})}});k.subscribe({topic:'web-vitals/largest-contentful-paint',callback:function(a){var b=a.entry;n.setExperienceMetric('largest_contentful_paint',a.time);V.lcp.push({entryType:b.entryType,duration:b.duration,id:b.id,name:b.name,renderTime:b.renderTime,startTime:b.startTime,size:b.size,loadTime:b.loadTime,url:b.url,resourceIndex:fb(b.url),element:l.elementToString(b.element)})}})};n.captureStack=function(){try{return Error().stack}catch(a){return''}}; n.set=function(a,b){O[a]=b};n.spa=function(){f.rum&&(f.rum.spa=!0)};n.get=function(){return O};n.now=function(){return h.performance&&h.performance.now?Math.floor(h.performance.now()):Math.floor((new Date).getTime())};n.setExperienceMetric=function(a,b){$[a]=b};n.getExperienceMetric=function(a){return $[a]};k.subscribe({topic:'core/load',callback:function(){l.def(f.rum)&&l.def(f.rum.beaconUrl)&&(f.rum.onLoadTime=n.now(),!0!==f.rum.spa&&X(function(){l.log('onload window event triggered');!0===f.sendRumOnUnload? ha():k.publish({topic:'rum/send',message:C.rum})},100),l.addEvent(h,'beforeunload',function(){l.log('beforeunload window event triggered');!0===f.sendRumOnUnload?k.publish({topic:'rum/send',message:C.rum}):la()}))}});k.subscribe({topic:'sequence/captured',callback:function(a,b){var c='';a.open_args?c=a.open_args[1]:a.newNode&&a.newNode.src?c=a.newNode.src:a.delayed&&a.delayed.newNode&&a.delayed.newNode.src?c=a.delayed.newNode.src:a.src&&(c=a.src);ma[c]=n.captureStack()}});k.subscribe({topic:'core/js/error', callback:function(a,b){oa.push(a)}});k.subscribe({topic:'rum/spa/transition/start',callback:function(a,b){if(0!=Pa){var c=n.now(),d=C.rum;f.rum.spa=f.rum.spaTransition=!0;if(l.undef(d)||l.undef(d.navigationTiming))l.undef(d)&&(d={}),h.performance&&h.performance.timing&&(d.navigationTiming=h.performance.timing.toJSON());for(var e in d.navigationTiming)d.navigationTiming[e]=c;ia=N();G=[];oa=[];la(Qa);h.performance&&(n.clearResourceTimings.call(h.performance),h.performance.clearMarks&&h.performance.clearMarks(), h.performance.clearMeasures&&h.performance.clearMeasures())}}});k.subscribe({topic:'rum/spa/rendered',callback:function(a,b){var c=C.rum,d=n.now(),e=c?c.navigationTiming:null;ha();c=C.rum;!0==g.undef(c.navigationTiming)&&(c.navigationTiming=e?e:h.performance&&h.performance.timing?h.performance.timing.toJSON():{});a.pageType&&a.viewType&&(c.pageCategory=a.pageType+'-'+a.viewType);if(!0===f.rum.spaTransition)c.navigationTiming.loadEventEnd=d;else if(f.rum.onLoadTime)c.navigationTiming.loadEventEnd= c.navigationTiming.navigationStart+(c.navigationTiming.loadEventEnd-c.navigationTiming.navigationStart)+(d-f.rum.onLoadTime);else return f.rum.spa=!1;f.rum.spaTransition=!1;!0==l.hasResourceTiming()&&(Qa=h.performance.getEntries().length);Pa++;c=k.publish({topic:'rum/beforeSend',async:!1,message:C.rum});0!=c.length&&!1===c[0]||l.sendData(C.rum,f.rum.beaconUrl);n.setExperienceMetric('cumulative_layout_shift',0);!0==g.def(v.sequence)&&(v.configure({scan:['img','source','script']}),v.sequence.displayNow())}}); k.subscribe({topic:'rum/send',callback:function(a,b){ha();!0===f.sendRumOnUnload&&la();var c=k.publish({topic:'rum/beforeSend',async:!1,message:C.rum});0!=c.length&&!1===c[0]||l.sendData(C.rum,f.rum.beaconUrl)}});h.performance&&h.performance.clearResourceTimings&&(n.clearResourceTimings=h.performance.clearResourceTimings,h.performance.clearResourceTimings=function(){});sa();var Q=document;_loadCookieConfig=function(){var a=l.getCookie('yo-aftershock-config');if(null!=a&&0<a.length)try{a=eval(a),v.configure(a)}catch(b){}}; _domready=function(){function a(a){b(a)}function b(a){('poll'===a||'readystatechange'===a.type)&&'complete'!==Q.readyState||d||(d=!0,f.afterShockLoaded=!0,k.publish({topic:'core/load',async:!0,message:v,persistent:!0}))}function c(){try{Q.documentElement.doScroll('left')}catch(a){X(c,50);return}b('poll')}var d=!1,e=!0;if('complete'===Q.readyState)f.afterShockLoaded=!0,k.publish({topic:'core/load',async:!0,message:Yo,persistent:!0});else{if(Q.createEventObject&&Q.documentElement.doScroll){try{e=!h.frameElement}catch(g){}e&& c()}l.addEvent(h,'load',a)}};k.subscribe({topic:'core/start',callback:function(){_loadCookieConfig();_domready()}});var g=l;String.prototype.startsWith||(String.prototype.startsWith=function(a,b){return this.substr(b||0,a.length)===a});String.prototype.endsWith||(String.prototype.endsWith=function(a){return-1!==this.indexOf(a,this.length-a.length)});g.rewrite=function(a){var b=g.metaDataValue('resource.version'),c=g.metaDataValue('cdn.hostname'),d=g.metaDataValue('profile.id');return location.protocol+ c+'/'+d+'/'+location.hostname+'/'+b+(0!=a.indexOf('/')?'/':'')+a};g.rewriteImageAPI=function(a){var b=g.metaDataValue('resource.version'),c=g.metaDataValue('cdn.hostname'),d=g.metaDataValue('profile.id'),e='o~',f=g.browser();f&&'chrome'===f.name?e+='f_webp':f&&'safari'===f.name&&13<=f.version&&(e+='f_jp2');!0==a.startsWith('/')&&!1==a.startsWith('//')&&(a=h.location.protocol+'//'+h.location.hostname+a);return location.protocol+c+'/'+d+'/'+e+'/'+b+'/'+a};g.rewriteSrcSet=function(a,b){for(var c=a.split(','), d='',e=0;e<c.length;e++){var g=c[e].trim(),f=g.lastIndexOf(' '),h='';-1!=f&&(h=' '+g.substring(f).trim(),g=g.substring(0,f).trim());g=b(g,h);d+=g+h;e<c.length-1&&(d+=', ')}return d};g.select=function(a){var b=-1;if(null==a||1==a.length)return null;if('document'==a)return document;if('window'==a)return h;if(g.def(a.nodeName))return a;if('.'==a[0])return a=document.getElementsByClassName(a.substring(1)),0<a.length?a[0]:null;if(-1!=(b=a.indexOf('['))){var c=a.substring(0,b),d=a.substring(b+1),e=d.indexOf(']'), f=d.indexOf('['),d=d.substring(0,e),q=0,e=-1,k=[],l=null;if(-1!=(q=d.indexOf('~')))e=2;else if(-1!=(q=d.indexOf('*')))e=1;else if(-1!=(q=d.indexOf('=')))e=0;else return null;if(-1!=f){f=a.substring(b+1+f+1);b=f.indexOf(']');try{f=parseInt(f.substring(0,b))}catch(p){}}var n=d.substring(0,q),q=d.substring(q+1);2==e&&(l=new RegExp(q));c=document.getElementsByTagName(c);for(b=0;b<c.length;b++){var B=0<n.length?c[b].getAttribute(n):c[b].innerHTML;0==e&&B==q?k.push(c[b]):1==e&&null!=B&&-1!=B.indexOf(q)? k.push(c[b]):2==e&&null!=B&&-1!=B.search(l)&&k.push(c[b])}g.log(a,d,n,q,0==k.length?k.length:k[0]);return-1!=f?f<k.length?k[f]:null:k[0]}'#'==a[0]&&(a=a.substring(1));return document.getElementById(a)};g.writeHTML=function(a,b,c){var d=document.createElement('div');d.innerHTML='string'===typeof b?b:b.innerHTML;for(b=d.childNodes;0<b.length;)if('script'==b[0].nodeName.toLowerCase())if(b[0].src)v.sequence.script(d.removeChild(b[0]).src).load();else try{eval(d.removeChild(b[0]).innerHTML)}catch(e){g.log(e)}else'insert'== c?a.parentNode.insertBefore(d.removeChild(b[0]),a):a.appendChild(d.removeChild(b[0]))};g.contains=document.documentElement.compareDocumentPosition?function(a,b){return!!(a.compareDocumentPosition(b)&16)}:document.documentElement.contains?function(a,b){return a!==b&&(a.contains?a.contains(b):!1)}:function(a,b){for(;b=b.parentNode;)if(b===a)return!0;return!1};g.updateHeadItemAttributes=function(a,b,c){0>a&&(document.cookie='yo-disable-instanton=true;Max-Age=2',h.location.reload(!0));a=document.documentElement.getElementsByTagName('head')[0].children[a]; for(var d=0;d<b.length;d++)a.removeAttribute(b[d]);for(var e in c)a.setAttribute(e,c[e])};g.replaceHeadItemContent=function(a,b){0>a&&(document.cookie='yo-disable-instanton=true;Max-Age=2',h.location.reload(!0));document.documentElement.getElementsByTagName('head')[0].children[a].textContent=b};g.isIE=function(a){var b=navigator.userAgent;return b&&a&&11==parseInt(a)&&-1!=b.indexOf('rv:11')?!0:b&&a&&-1!=b.indexOf('MSIE '+a)?!0:b&&(-1!=b.indexOf('MSIE')||-1!=b.indexOf('rv:11'))};g.browser=function(){var a= navigator.userAgent,b,c=a.match(/(opera|chrome|safari|firefox|msie|trident(?=\/))\/?\s*(\d+)/i)||[];if(/trident/i.test(c[1]))return b=/\brv[ :]+(\d+)/g.exec(a)||[],{name:'IE',version:b[1]||''};if('Chrome'===c[1]&&(b=a.match(/\bOPR|Edge\/(\d+)/),null!=b))return{name:'Opera',version:b[1]};c=c[2]?[c[1],c[2]]:[navigator.appName,navigator.appVersion,'-?'];null!=(b=a.match(/version\/(\d+)/i))&&c.splice(1,1,b[1]);return{name:c[0].toLowerCase(),version:parseInt(c[1])}};g.inArray=function(a,b,c){var d;if(b){if(Array.prototype.indexOf)return Array.prototype.indexOf.call(b, a,c);d=b.length;for(c=c?0>c?Math.max(0,d+c):c:0;c<d;c++)if(c in b&&b[c]===a)return c}return-1};g.elementToString=function(a){try{if(a instanceof HTMLElement){var b='<'+a.nodeName.toLowerCase();if(a.getAttribute){var c=a.getAttribute('name'),d=a.getAttribute('id'),e=a.getAttribute('class');null!=c&&0<c.length&&(b+=' name="'+c+'"');null!=d&&0<d.length&&(b+=' id="'+d+'"');null!=e&&0<e.length&&(b+=' class="'+e+'"')}return b+' />'}return a.toString?a.toString():'[Object]'}catch(g){}};var ta=function(a){k.subscribe({topic:'sequence/beforeloading/'+ this.key,callback:a,context:this});return this},ua=function(a){k.subscribe({topic:'sequence/afterloaded/'+this.key,callback:a,context:this});return this},P={},r={},u=function(a,b,c){this.writeContent='';this.writeLocation=a;this.writeSelector=c;this.offScreenDom=null;this.node=b;this.scripts=[];this.id='yo_write_'+Math.floor(1E9*Math.random());g.log('creating WriteContext',this.id,this.node.src);u.prototype.getId=function(a){return this.id};u.prototype.collectDocumentWrite=function(a){this.writeContent+= a;g.log('write override',this.getId(),this.node.src,a)};u.prototype.addScript=function(a){this.scripts.push(a)};u.prototype.getWriteSelector=function(a){return this.writeSelector};u.prototype.executeDeferredScripts=function(){for(var a=0;a<this.scripts.length;a++){var b=this.scripts[a].getAttribute('src');g.def(this.scripts[a].yo_src)&&(b=this.scripts[a].yo_src);Yo.sequence.script(b).none().writeLocation(this.scripts[a].yo_writeSelector).load()}};u.prototype.finalizeWriteOverride=function(){null== this.writeLocation?g.log('write location is null, content ignored',this.getId(),this.node.src):0<this.writeContent.length?(g.log('creating off screen DOM',this.getId(),this.node.src),this.offScreenDom=Q.createElement('div'),this.offScreenDom.innerHTML=this.writeContent):g.log('no content, just continue',this.getId(),this.node.src);this.continueWrite()};u.prototype.insertContent=function(){for(;0<this.offScreenDom.childNodes.length;){var a=this.offScreenDom.childNodes[0],b=a.nodeName.toLowerCase(); if('script'==b){b=a.getAttribute('language');if(null==b||'vbscript'!=b.toLowerCase()){r[this.writeSelector].push(this);try{this.offScreenDom.removeChild(a)}catch(c){}Yo.sequence.script(a.getAttribute('src')).none().writeLocation(this.writeSelector).load();return!1}try{eval(a.innerHTML),this.offScreenDom.removeChild(a)}catch(g){}this.writeLocation.parentNode.insertBefore(a,this.writeLocation)}else if('link'==b&&'stylesheet'==a.getAttribute('rel').toLowerCase()){document.getElementsByTagName('head')[0].appendChild(a); try{this.offScreenDom.removeChild(a)}catch(f){}}else this.writeLocation.parentNode.insertBefore(a,this.writeLocation)}this.offScreenDom.innerHTML='';return!0};u.prototype.continueWrite=function(){for(var a=r[this.writeSelector],b=a.pop();b;){g.log('Continue writing ',b.getId());if(b.offScreenDom&&!1==b.insertContent())break;0==a.length&&b.executeDeferredScripts();b=a.pop()}}};P.safeWriteInsert=function(a,b,c,d,e){if(!0==gb(a,b,c,d)){var f;a:{try{!0==g.def(a.yo_src)&&(!0==g.isIE()?a.setAttribute('src', a.yo_src):a.src=a.yo_src);a.yo_processed=!0;f=!0==e||c.contains&&!1==c.contains(b)?c.yo_ac(a):c.yo_ib(a,b);break a}catch(h){g.log('ERROR adding node into dom',a,h)}f=void 0}return f}};P.safeWriteEval=function(a,b,c,d,e){if(!0==hb(a,b,c,d))try{a=a.replace('<script>','').replace('\<scri'+'ipt>',''),'gpt'==e&&(a='googletag.cmd.push(function() { googletag.pubads().enableSyncRendering = function(){}; '+a+'});'),h.eval(a),f.sequenceWrites&&d.write_context.finalizeWriteOverride()}catch(m){g.log('Error eval', m)}};f.delayed=[];f.targets=[];var A=function(){this.executed=!1;this.cont=!0};A.prototype.afterLoaded=ua;A.prototype.beforeLoading=ta;A.prototype.execute=function(){return this.afterShock()};A.prototype.clone=function(){var a=new A,b;for(b in this)a[b]=this[b];return a};A.prototype.preventDefault=function(){this.cont=!1};A.prototype.key=null;A.prototype.isConfig=function(a){return this.delayType==a};A.prototype.afterShock=function(){var a=null;if(!0!=this.loaded&&(this.delayType='none',this.loaded= !0,g.log('Injecting ',this.newNode,', by ',this.type,' into the DOM now.'),'attributesrc'!=this.type&&k.publish({topic:'sequence/beforeloading/'+this.key,message:this}),!1!=this.cont)){var b=this.newNode,c=this.type,d=this.before;if('insert'==c)a=P.safeWriteInsert(b,d,this.me,this,!1);else if('append'==c)a=P.safeWriteInsert(b,null,this.me,this,!0);else if('replace'==c)this.me.replaceChild(b,d),k.publish({topic:'sequence/afterloaded/'+this.key,message:this});else if('attributesrc'==c)d.setAttribute('src', b.yo_src);else if('src'==c)g.def(this.animator)&&null!=this.animator?animator(d,this.animator):g.def(f.animator)&&animator(d,f.animator),b=d.getAttribute(f.pre+'srcset'),null!=b&&d.setAttribute('srcset',b),d.src=this.srcAttr;else if('style'==c)b.setAttribute('style',b.getAttribute(f.pre+'style'));else if('inner'==c)g.log(this.how+' -> '+b),'replace'==this.how?ib(d,b):'eval'==this.how||'gpt'==this.how?a=P.safeWriteEval(b,d,this.me,this,this.how):g.writeHTML(d,b,this.how),k.publish({persistent:!0,topic:'sequence/afterloaded/'+ this.key,message:this});else if('function'==c)g.log(this.how+' -> '+b),d=this.func.apply(this.funcThis,this.funcParameters),k.publish({topic:'sequence/afterloaded/'+this.key,message:{delayed:this,retVal:d}});else if('xhr'==c){this.xhr.onreadystatechange&&(this.xhr.original_oonreadystatechange=this.xhr.onreadystatechange);var e=this;this.xhr.onreadystatechange=function(a){4==e.xhr.readyState&&k.publish({topic:'sequence/afterloaded/'+e.key,message:[a,this]});e.xhr.original_oonreadystatechange&&e.xhr.original_oonreadystatechange.apply(this)}; this.xhr.xhr_send.apply(this.xhr,this.xhr._yo.send_args)}else'image'==c&&this.loadImage(this);jb();return a}};_delayed=function(){return A};var ca=function(a){var b=new (_delayed());'string'===typeof a&&0==a.indexOf('/')&&a.lastIndexOf('/')==a.length-1&&(a=new RegExp(a));b.key=b.url=a;b.match=!0;g.undef(f.resources)&&(f.resources=[]);for(var c=-1,d=0;d<f.resources.length;d++){var e=f.resources[d].url;if('string'===typeof a&&'string'===typeof e&&-1!=a.indexOf(e)||'string'!==typeof e&&'string'===typeof a&& null!=a.match(e)){c=d;break}}b.writeLocation=function(a){this.writeLocation=a;return this};-1==c?f.resources.push(b):f.resources.splice(c,0,b);return b},aa=null,pa=!1;k.subscribe({topic:'core/configure',callback:function(){Ga(document)}});var H={},rb=function(a,b,c,d,e){this._yo={open_args:arguments,async:!1===c?!1:!0};g.log('xhr open = '+b+', async '+c);k.publish({topic:'sequence/captured',message:this._yo});return this.xhr_open.apply(this,arguments)},sb=function(a){if(g.undef(this._yo)||!0!==this._yo.async)return this.xhr_send.apply(this, arguments);var b=this,c={src:this._yo.open_args[1],nodeName:'xhr'};if(!1==Ka(c,c,function(a,c){var g=a.clone();g.type='xhr';g.xhr=b;g.src=c.src;g.newNode=c;f.delayed.push(g);!0==f.afterShockLoaded&&g.execute()}))return g.log('xhr send is NOT defered, '+c.src),this.xhr_send.apply(this,arguments);this._yo.send_args=arguments;g.log('xhr send is defered, '+c.src+', '+f.delayed[f.delayed.length-1].delayType);return this},tb=function(){if(g.undef(this._yo)||g.undef(this._yo.send_args)||!0!==this._yo.async)return this.xhr_abort.apply(this, arguments);g.log('Abort to the xhr object is called',' async true')};H.create=function(a){a=ca(a);a.xhr=!0;a.rewrite=function(a){this.afterLoaded(function(c){g.log('Begging to rewrite data for ajax call.');try{if(!(2>c.length)){var d=c[1],e=d.responseText,e=a.call(this,e);Object.defineProperty&&(Object.defineProperty(d,'responseText',{get:function(){return e}}),Object.defineProperty(d,'response',{get:function(){return e}}))}}catch(f){g.log('Error in rewrite handling',f)}})};return a};H.captureMethods= function(a){!0==g.undef(a.XMLHttpRequest.prototype.xhr_open)&&(a.XMLHttpRequest.prototype.xhr_open=a.XMLHttpRequest.prototype.open,a.XMLHttpRequest.prototype.xhr_send=a.XMLHttpRequest.prototype.send,a.XMLHttpRequest.prototype.xhr_abort=a.XMLHttpRequest.prototype.abort)};H.overrideMethods=function(a){a.XMLHttpRequest.prototype.open=rb;a.XMLHttpRequest.prototype.send=sb;a.XMLHttpRequest.prototype.abort=tb};H.captureMethods(h);k.subscribe({topic:'core/configure',callback:function(){!0==f.sequenceXHR&& !0==g.def(XMLHttpRequest)&&H.overrideMethods(h)}});_findTags=function(a,b){var c=document.getElementsByTagName(a),d;g.log('Find all '+a+' tags in the document.');for(var e=0,m=c.length;e<m;e+=1){d=c[e];if(!0===b){var h=d.getAttribute(f.pre+'delayType');null==h||'defer'!=h&&'lazy'!=h||(d.setAttribute(f.pre+'delayType','none'),d.setAttribute(f.pre+'delayValue',''));h=d.getAttribute('type');null!=h&&(-1<h.indexOf('yo/sequence/defer')||-1<h.indexOf('yo/sequence/lazy'))&&d.setAttribute('type','yo/sequence/none/')}if('true'!== d.getAttribute(f.pre+'loaded')){var h=_srcAttr(d),k=d.getAttribute(f.pre+'style');h?(g.log('Found src ',a,', src = '+h+' tag to handle with AfterShocK.'),v.sequence.content(d).load()):'script'==a?(h=d.getAttribute('type'),d.getAttribute(f.pre+'src'),h&&-1<h.indexOf('yo/sequence')?(g.log('Found a '+a+', yo/sequence tag to handle with AfterShocK.'),v.sequence.content(d).load()):'yo/abtest'==h&&_abTestScript(d)):k&&(g.log('Found style ',a,', src = '+h+' tag to handle with AfterShocK.'),d=v.sequence.content(d), d.type='style',d.before=d.newNode,d.load())}}};_srcAttr=function(a){for(var b=0;b<f.srcAttrs.length;b++){var c=a.getAttribute(f.srcAttrs[b]);if(null!=c)return c}return(c=a.getAttribute('src'))&&'data:image/cloaked;plain,'==c.slice(0,25)?c.substring(25):null};_loadFromDOM=function(a){a='string'===typeof a?g.select(a):a;var b=content=g.select(a.getAttribute(f.pre+'location')),c=a.getAttribute(f.pre+'how'),d=new (_delayed()),e=a.nodeName.toLowerCase(),m=a;'eval'==c||'gpt'==c?(content=a.innerHTML,d=v.sequence.script(content)): null==c&&(c='replace');var k=a.getAttribute(f.pre+'key');null!=k&&(d.key=k);var l=a.getAttribute(f.pre+'delayType'),p=a.getAttribute(f.pre+'delayValue'),n=a.getAttribute('src'),r=_srcAttr(a),B=r&&0<r.length?'src':'inner',n=a.getAttribute(f.pre+'animator'),w=a.getAttribute(f.pre+'onbefore');null!=w&&g.isFunction(h[w])&&d.beforeLoading(h[w]);var u=a.getAttribute(f.pre+'onLoad');null!=u&&g.isFunction(h[u])&&d.afterLoaded(h[u]);null==content&&(content=a,c='insert');a.setAttribute(f.pre+'loaded','true'); if(-1===g.inArray(a,f.targets)){d.animator=n;if('img'==e||'source'==e||'picture'==e)null==l&&(l='lazy'),null==b&&(b=a);else if('script'==e){n=a.getAttribute('type');null!=n&&(n=n.split('/'),2<n.length&&(l=n[2],p=n[3]));n=a.getAttribute(f.pre+'writeLocation');d.writeLocation=null!=n?n:a;n=a.getAttribute(f.pre+'src');if(null!=n){null==l&&(l='none');b={};for(c=0;c<f.scriptAttrs.length;c++)d=f.scriptAttrs[c],b[d]=a.getAttribute(d);d=v.sequence.script(n,b)[l](p);null!=k&&(d.key=k);null!=w&&g.isFunction(h[w])&& d.beforeLoading(h[w]);null!=u&&g.isFunction(h[u])&&d.afterLoaded(h[u]);d.src=n;d.me=a;d.load();return d}null==b&&(b=a)}null==l&&(l='none');!0==g.contains(document.documentElement,a)&&a.setAttribute(f.pre+'loaded','true');d[l](p);d.before=b;d.me=m;d.type=B;d.srcAttr=r;d.how=c;d.match=!1;d.newNode='eval'==c||'gpt'==c?content:a;d.key||(d.key=d.srcAttr);return d}};k.subscribe({topic:'core/load',callback:function(){v.sequence.scanTags(!1)}});var Ra={},ba={},da=function(a,b,c){g.def(ba[b])||(ba['on'+b]= {object:a,name:b,triggered:!1,event:null,listeners:[]},g.addEvent(a,b,function(a){var c=ba['on'+b],g=c.listeners;c.event=a;navigator.userAgent.match(/MSIE /)&&(c.event={type:a.type});for(var f=0;f<g.length;f++)g[f].call(c.object,a);c.triggered=!0}),!a.yo_addEventListener&&a.addEventListener&&c&&(a.yo_addEventListener=a.addEventListener,a.addEventListener=Ha(!0)),!a.yo_attachEvent&&a.attachEvent&&c&&(a.yo_attachEvent=a.attachEvent,a.attachEvent=Ha(!1)))};Ra.loadEvents=function(){da(h,'load',!0);da(document, 'readystatechange',!1);da(document,'DOMContentLoaded',!1);da(document,'DOMFrameContentLoaded',!0)};var ea=null,Sa=function(a){a.tempImage=new ea;var b=a.image.onload;a.image.onload=null;a.tempImage.onload=function(c){b&&b.call(a.image,c);k.publish({topic:'sequence/afterloaded/'+a.key,message:arguments})};var c=a.image.onerror;a.image.onerror=null;a.tempImage.onerror=function(b){c&&c.call(a.image,b);k.publish({topic:'sequence/afterloaded/'+a.key,message:arguments})};k.publish({topic:'sequence/beforeloading/'+ a.key,message:arguments});a.tempImage.src=a.src;a.image.setAttribute('src',a.src)},ub=function(){null==ea&&(ea=Image,Image=function(){var a=new ea;try{Object.defineProperty(a,'src',{set:function(b){this.yo_src=b;Yo.utils.log('Overloaded image src being set',b);b={src:b,key:b.toLowerCase()};k.publish({topic:'sequence/captured',message:b});var d={src:b.src,key:b.key,nodeName:'image'};nodeConfig=Y(d);var e=nodeConfig.clone();e.type='image';e.src=d.src;e.image=this;e.newNode=d;f.delayed.push(e);e.loadImage= Sa;!0==f.afterShockLoaded&&e.execute();b.image=a;'none'==nodeConfig.delayType&&Sa(b)},get:function(){return this.yo_src?this.yo_src:''}})}catch(b){g.log(b)}return a})};k.subscribe({topic:'core/configure',callback:function(){!0==f.sequenceImage&&ub()}});k.subscribe({topic:'core/load',callback:function(){}});_delayed().prototype.defer=function(a){this.orgDelayType=this.delayType='defer';this.delayValue=a;if(!0==g.isIE()&&!1==f.optimizeIE)return g.log('Override defer on IE',this.url),this.none();this.execute= function(){if(!1!=f.afterShockLoaded&&!0!=this.executed){this.executed=!0;g.log('Loading ',this.newNode,' via timer event. It will load in ',this.delayValue);var a=this;X(function(){a.afterShock()},1*this.delayValue);return this}};return this};_delayed().prototype.event=function(a){this.orgDelayType=this.delayType='event';this.delayValue=a;this.execute=function(){if(!1!=f.afterShockLoaded&&!0!=this.executed){this.executed=!0;g.log('Event handling '+this.before.src+' '+this.delayValue);var a=this.delayValue.split(' '), c=a[0].toLowerCase(),d=this;if('beforeloading'==c||'afterloaded'==c){a=a[1];if('#adjacent'==a)return this.defer(0);k.subscribe({topic:'sequence/'+c+'/'+a,context:this,callback:function(a){g.log('Loading '+(this.before?this.before.src:'no object')+' via event handler '+this.delayValue);d.afterShock()}})}else'pubsub'==c?(a=a[1],k.subscribe({topic:a,context:this,callback:function(a){g.log('Loading '+(this.before?this.before.src:'no object')+' via pubsub handler '+this.delayValue);d.afterShock()}})): lb(g.select(a[1]),a,this);return this}};return this};k.subscribe({topic:'core/load',callback:function(){}});var K={},I={top:0-f.offset,left:0-f.offset,height:0,width:0,right:0,bottom:0},Ta=function(a){a=a.getBoundingClientRect();g.undef(a.width)&&(a={top:a.top,left:a.left,right:a.right,bottom:a.bottom,width:a.right-a.left,height:a.bottom-a.top});return a},Ua,Va;document.defaultView&&document.defaultView.getComputedStyle&&(Ua=function(a,b){var c,d;if(d=a.ownerDocument.defaultView){if(d=d.getComputedStyle(a, null))c=d.getPropertyValue(b),''!==c||g.contains(a.ownerDocument.documentElement,a)||(c=a.style[b]);return c}});document.documentElement.currentStyle&&(Va=function(a,b){var c=a.currentStyle&&a.currentStyle[b];return''===c?'auto':c});var va=Ua||Va;document.getElementsByClassName||(document.getElementsByClassName=function(a){return this.querySelectorAll('.'+a)});K.scrollHandler=function(a){I.height=h.innerHeight||document.documentElement.clientHeight||document.body.clientHeight;I.bottom=I.height;I.width= h.innerWidth||document.documentElement.clientWidth||document.body.clientWidth;I.right=I.width;if(g.undef(document.documentElement.getBoundingClientRect))return!0;for(var b=a=0;b<f.delayed.length;b++)if(f.delayed[b].isConfig('lazy')){var c=b,d=f.delayed[c],e=d.delayValue;if('string'===typeof e)e=g.select(e);else if(null==e||g.def(e))e=d.before;if(null!=e&&!0==g.contains(document.documentElement,e))if(d=Ta(e),!1==(null!=f.intervalID&&g.def(e.getBoundingClientRect))&&d.top<I.height+f.offset)g.log('showIfVisible is visible ', c,', ',e),f.delayed[c].afterShock();else{var m;if(m=!0==(null!=f.intervalID&&g.def(e.getBoundingClientRect)))if(m=!f.lazyCheckSize||0<d.width&&0<d.height)if(m=!0==Ia(d,I)){b:{m=e;for(var k=m.parentNode;null!=k&&1==k.nodeType;){var l=va(k,'overflow');if(l&&'hidden'==l.toLowerCase())m.yo_clipped=k;else if(0==va(k,'opacity')||'none'==va(k,'display')){d=!1;break b}k=k.parentNode}!0==g.undef(m.yo_clipped)&&(m.yo_clipped=!1);d=!1!=m.yo_clipped?Ia(d,Ta(m.yo_clipped)):!0}m=!0==d}m&&(g.log('showIfVisible is visible ', c,', ',e),f.delayed[c].afterShock())}a++}};K.delayed=function(a){this.orgDelayType=this.delayType='lazy';this.delayValue=a;this.execute=function(a){return this};return this};var Wa=function(a,b){var c=0;return function(){var d=+new Date;d-c<b||(c=d,a.apply(this,arguments))}}(K.scrollHandler,20);g.addEvent(h,'scroll',Wa);g.addEvent(h,'resize',Wa);k.subscribe({topic:'core/load',callback:function(){K.scrollHandler()}});_delayed().prototype.lazy=K.delayed;k.subscribe({topic:'core/configure',callback:function(a){0< a.lazyTimer&&null==f.intervalID&&(f.intervalID=Ma(K.scrollHandler,a.lazyTimer))}});_delayed().prototype.none=function(){this.orgDelayType=this.delayType='none';this.execute=function(){return this.afterShock()};return this};_delayed().prototype.remove=function(a,b,c){var d=!1,e='yostore'+g.metaDataValue('resource.version')+this.key;g.undef(a)||'always'==a?d=!0:'session'==a?sessionStorage&&'true'==sessionStorage.getItem(e)?d=!0:sessionStorage&&sessionStorage.setItem(e,'true'):'visitor'==a&&(localStorage&& 'true'==localStorage.getItem(e)?d=!0:localStorage&&localStorage.setItem(e,'true'));if(!0==d)this.orgDelayType=this.delayType='remove',this.execute=function(){return this};else this[b](c);return this};var wa=null,vb=function(a,b){var c=g.select(b);wa=new MutationObserver(function(c){for(var e=!1,f=0;f<c.length;f++){var h=c[f];if('attributes'==h.type&&'observe.attributes'==a.delayType||'observe.all'==a.delayType)if(g.log('The '+h.attributeName+' attribute was modified for ',b),'all'==a.delayValue){e= !0;break}else{if(h.attributeName==a.delayValue){e=!0;break}}else if('childList'==h.type&&'observe.children'==a.delayType||'observe.all'==a.delayType)if(g.log('A child node has been added or removed for',b),'all'==a.delayValue){e=!0;break}else if(0<h.addedNodes.length&&'added'==a.delayValue){e=!0;break}else if(0<h.removedNodes.length&&'removed'==a.delayValue){e=!0;break}}!0==e&&(a.afterShock(),wa.disconnect())});wa.observe(c,{attributes:!0,childList:!0})};_delayed().prototype.observe=function(a,b, c){this.orgDelayType=this.delayType='observe.'+b;this.delayValue=c?c:'all';if('undefined'===typeof MutationObserver)return g.log('Override defer on IE',this.url),this.none();this.execute=function(){if(!1!=f.afterShockLoaded&&!0!=this.executed)return this.executed=!0,g.log('Loading ',this.newNode,' via observer. It will loaded when ',a,'changes',b),vb(this,a),this};return this};_delayed().prototype.firstInput=function(a,b){return this.webvitals('first-input',a,b)};_delayed().prototype.largestContentfulPaint= function(a,b){return this.webvitals('largest-contentful-paint',a,b)};_delayed().prototype.timeToInteractive=function(a,b){return this.webvitals('time-to-interactive',a,b)};var wb=function(){var a=g.calculateTti();0<a&&(clearInterval(f.ttiWatcherIntervalID),k.publish({topic:'web-vitals/time-to-interactive',persistent:!0,message:{time:a}}))};_delayed().prototype.webvitals=function(a,b,c){this.delayType=this.orgDelayType=a;this.delayValue=a+'-'+b;!1==g.hasWebVitals()?(g.log('webvitals fallback for ', this.url),this.defer(b?b:1E3)):this.execute=function(){var a=this;this.executed=!0;k.subscribe({topic:'web-vitals/'+this.orgDelayType,callback:function(e,g){var h=!0;c&&(h=c(e));h&&(f.afterShockLoaded?a.afterShock():a.defer(b?b:0))}});'time-to-interactive'==this.orgDelayType&&(0<f.ttiWatcherInterval&&null==f.ttiWatcherIntervalID&&(f.ttiWatcherIntervalID=Ma(wb,f.ttiWatcherInterval)),a.defer(b?b:1E3));!1==g.hasWebVitals()&&(g.log('webvitals fallback for ',this.url),a.defer(b?b:1E3))};return this};_delayed().prototype.spa= function(a){if(a)return this[a]();var b=this;this.event('pubsub rum/spa/rendered');k.subscribe({topic:'rum/spa/transition/start',callback:function(a,d){b.event('pubsub rum/spa/rendered')}});k.subscribe({topic:'rum/spa/rendered',callback:function(a,d){b.none()}})};_delayed().prototype.startTransition=function(a){this.orgDelayType=this.delayType='startTransition';this.delayValue=a;this.execute=function(){var a=this;this.executed=!0;k.subscribe({topic:'rum/spa/transition/start',callback:function(c,d){(g.undef(a.delayValue)|| 0<=(c.pageType+'-'+c.viewType).indexOf(a.delayValue))&&a.afterShock()}});return this};return this};_delayed().prototype.finishedRendering=function(a){this.orgDelayType=this.delayType='finishedRendering';this.delayValue=a;this.execute=function(){var a=this;this.executed=!0;k.subscribe({topic:'rum/spa/rendered',callback:function(c,d){(g.undef(a.delayValue)||0<=(c.pageType+'-'+c.viewType).indexOf(a.delayValue))&&a.afterShock()}});return this};return this};var Xa=!1,Ya=!1,D=function(){!1==Ya&&(k.publish({topic:'sequencing/user/first', async:!0,persistent:!0,message:{}}),g.removeEvent(document,'mousemove',D),g.removeEvent(document,'scroll',D),g.removeEvent(document,'keydown',D),g.removeEvent(document,'click',D),g.removeEvent(document,'touchstart',D),Ya=!0)};_delayed().prototype.firstInteraction=function(a,b){this.orgDelayType=this.delayType='firstInteraction';!1==Xa&&(Xa=!0,g.addEvent(document,'mousemove',D),g.addEvent(document,'scroll',D),g.addEvent(document,'keydown',D),g.addEvent(document,'click',D),g.addEvent(document,'touchstart', D));this.execute=function(){var c=this;this.executed=!0;k.subscribe({topic:'sequencing/user/first',callback:function(d,e){!0!=a||f.afterShockLoaded?c.afterShock():c.defer(b?b:0)}})};return this};var p={};domCompleteTriggered=!1;p.node=function(a){if(a=g.select(a))a.yo_ac=g.def(a.yo_ac)?a.yo_ac:a.appendChild,a.yo_ib=g.def(a.yo_ib)?a.yo_ib:a.insertBefore,a.appendChild=nb,a.insertBefore=mb};p.clearNode=function(a){g.def(a.yo_ib)&&(a.insertBefore=a.yo_ib);g.def(a.yo_ac)&&(a.appendChild=a.yo_ac)};p.addScanner= function(a){f.scan||(f.scan=[]);-1===g.inArray(a,f.scan)&&f.scan.push(a)};p.displayNow=function(a){!0===a&&'active'==v.rum.get().optState&&(a=!1);g.log('Handle the display of all visible tags up to now.');p.scanTags(!0,a);K.scrollHandler({})};p.createTimer=function(a,b){Yo.configure({lazyTimer:a});b&&Yo.configure({lazyCheckSize:b})};p.createElement=function(a){a.yo_createElement||(a.yo_createElement=a.createElement,a.createElement=function(b){var c=a.yo_createElement(b),d=b.toLowerCase();g.log('_sequencing.createElement', c,b);if(('iframe'==d||'script'==d)&&!0==g.undef(c.yo_src_override)){c.yo_src_override=!0;try{Object.defineProperty(c,'src',{set:function(a){if(this.yo_src=a)if(g.log('Object.src',a),nodeConfig=Y(this),null!=nodeConfig&&'none'!=nodeConfig.delayType){if(a=nodeConfig.clone(),a.type='attributesrc',a.newNode=this,a.before=this,a.me=this,f.delayed.push(a),domCompleteTriggered)return a.execute()}else this.setAttribute('src',a)},get:function(){return this.yo_src?this.yo_src:''}})}catch(e){g.log(e)}}return c})}; var L=null,Za=function(a){'none'===a&&null!==L?(L.disconnect(),L=null):'none'!==a&&'undefined'!==typeof MutationObserver&&null==L&&(L=new MutationObserver(function(a){for(var c=0;c<a.length;c++)for(var d=a[c].addedNodes,e=0;e<d.length;e++){var g=d[e];g.nodeType===Node.ELEMENT_NODE&&'BODY'===g.nodeName&&(p.node(g),'top'===f.scrapeLevel&&L.disconnect())}}),L.observe(document,{childList:!0,subtree:!0,attributes:!1,characterData:!1}))};p.resource=ca;p.script=function(a,b,c){var d=ca(a);!0==g.isFunction(a)? (d.src='[object Function]'+a.name,d.key=c||'[object Function]'+a.name,d.func=a):(d.src=a,d.newNode=a,!0==g.def(c)&&(d.key=c));!0==g.undef(b)&&(b={});d.before={src:a,attributes:b};d.load=function(a){var c=document.createElement('script');c.type='text/javascript';b.async=!0;for(var d in b)null!=b[d]&&c.setAttribute(d,b[d]);c.yo_src=this.url;(a||document.getElementsByTagName('script')[0].parentNode).appendChild(c);return this};d.eval=function(){f.delayed.push(this);this.how='eval';this.type='inner'; this.execute();return this};d.apply=function(a,b){f.delayed.push(this);this.how='apply';this.type='function';this.funcThis=a;this.funcParameters=b;this.execute();return this};d.writeLocation=function(a){this.writeLocation=a;return this};return d};p.xhr=H.create;p.content=function(a){var b=_loadFromDOM(a);k.publish({topic:'sequence/captured',message:{delayed:b,location:a}});b.load=function(){g.log('Sequence a script = '+a.id+', type '+this.type);null==this.delayType||'none'==this.delayType?g.log('Content found that needs to be loaded immediately'): g.log('Content found that needs to be sequenced',this.delayType,this.delayValue);this.execute(f.delayed.length-1);f.delayed.push(this)};return b};p.event=Ra;p.image=function(a){return ca(a)};p.scanTags=function(a,b){if(f.scan){for(var c=0,d=f.scan.length;c<d;c++)_findTags(f.scan[c],b);!0!==a&&(f.scan=[])}};p.cloakImages=function(a,b){if(!0!=g.undef(h.btoa))for(var c=0,d=a.length;c<d;c+=1){var e=a[c],f=document.getElementsByTagName(e);g.log('Cloak '+e);for(var k=0,l=f.length;k<l;k+=1)for(var n=f[k], p=0,r=b.length;p<r;p+=1){var B=b[p],w=n.getAttribute(B);null!=w&&(g.log('Cloak '+e,B,w),n.setAttribute(B,'data:image/cloaked;base64,'+btoa(w)))}}};p.document=Ga;p.captureMethods=H.captureMethods;p.overrideMethods=H.overrideMethods;var $a=document.getElementsByTagName('script');0<$a.length&&p.node($a[0].parentNode);p.node(document.getElementsByTagName('head')[0]);Za(f.scrapeLevel);g.addEvent(document,'readystatechange',function(a){'interactive'===document.readyState&&(g.log('readystatechange is document.interactive, calling displayNow'), 'unknown'!==v.rum.get().optState&&p.displayNow(!0))});!0==g.isIE()&&!0==f.optimizeIE&&p.createElement(document);k.subscribe({topic:'core/start',callback:function(){La()}});k.subscribe({topic:'core/configure',callback:function(a,b){La();Za(a.scrapeLevel)}});k.subscribe({topic:'core/load',callback:function(){domCompleteTriggered=!0;for(var a=0;a<f.delayed.length;a++)f.delayed[a].execute()}});var E={},R={};_abTest=function(a,b,c,d,e,f,k,l){return Yo.sequence.resource(d).none().beforeLoading(function(){g.log('adding the google segmentation using a custom (dimension'+ a+', '+b+', '+c+')',e,f);Yo.stats().errors.has&&(c+='_error');if('universal'==e){var d=!1;h.ga=function(){if(g.def(a)&&2<arguments.length&&0<=arguments[0].indexOf('set')&&arguments[1]!='dimension'+a){if((h.ga.q=h.ga.q||[]).push(arguments),ga(arguments[0],'dimension'+a,c),d=!0,!0==g.def(k)){for(var b=[],e=0;e<h.ga.q.length;e++)if(3!=h.ga.q[e].length||h.ga.q[e][1]!='dimension'+k)b[b.length]=h.ga.q[e];h.ga.q=b}}else(h.ga.q=h.ga.q||[]).push(arguments),!0==g.undef(k)&&!1==d&&((h.ga.q=h.ga.q||[]).push(['set', 'dimension'+a,c]),d=!0);_abTestAnalyticsUniversal(arguments)}}else if(g.def(_gaq)){for(var n=1,p=[],r=0;r<_gaq.length;r++)g.def(_gaq[r])&&2<_gaq[r].length&&-1!=_gaq[r][0].indexOf('_setCustomVar')?(!0!=g.undef(a)&&_gaq[r][1]==a||!0!=g.undef(k)&&_gaq[r][1]==k||(p[p.length]=_gaq[r]),n=r):p[p.length]=_gaq[r];_gaq=p;g.def(a)&&(p='_setCustomVar',0<_gaq.length&&0<_gaq[0].length&&(r=_gaq[0][0].indexOf('.'),-1!=r&&(p=_gaq[0][0].substring(0,r+1)+p)),g.def(l)&&(a=l),_gaq.splice(n,0,[p,a,b,c,g.undef(f)?2:f])); g.log('abTestAnalyticsClassic()');_abTestAnalyticsClassic()}else g.log('Error creating ga information, no selected version',e)})};_getCookieVariant=function(a){return l.getCookie('yo_abtesting_'+a.name+'v'+a.version)};_setCookieVariant=function(a,b,c){g.setCookie('yo_abtesting_'+a.name+'v'+a.version,b,c)};_configureAbTestAnalytics=function(){var a=config.abTestingAnalytics;g.def(a)&&g.undef(a.loaded)&&(_abTest(void 0,void 0,void 0,a.url,a.gaVersion),g.log('Registering analytics',a.url,a.gaVersion), a.loaded=!0)};_executeAllAbTest=function(){g.undef(f.abTestingAnalytics)?g.log('Analytics for ab testing not properly defined'):'classic'==f.abTestingAnalytics.gaVersion?_executeAllAbTestClassic():_executeAllAbTestUniversal()};_executeAllAbTestUniversal=function(){for(var a in f.abTesting){var b=f.abTesting[a];_executeAbTest(b);ga('set','dimension'+b.analytics.index,b.valuePrefix+b.name+'_v'+b.version+'_'+b.chosenVariant)}!0==E.delayedTrack&&ga('send','pageview')};_executeAllAbTestClassic=function(){var a= null;if(g.def(h._gat)&&g.def(E.uaCode))for(var b=h._gat._getTrackers(),c=0;c<b.length;c++)b[c]._getAccount()==E.uaCode&&(a=b[c]);for(var d in f.abTesting)b=f.abTesting[d],_executeAbTest(b),c=2,'hit'==b.analytics.stickiness?c=3:'visitor'==b.analytics.stickiness&&(c=1),null!=a?a._setCustomVar(b.analytics.index,b.analytics.name,b.valuePrefix+b.name+'_v'+b.version+'_'+b.chosenVariant,c):g.def(h._gaq)&&h._gaq.push(['_setCustomVar',b.analytics.index,b.analytics.name,b.valuePrefix+b.name+'_v'+b.version+ '_'+b.chosenVariant,c]);!0==E.delayedTrack&&(null!=a?(a._trackPageview(),g.log('pageTracker._trackPageview()')):g.def(h._gaq)?(h._gaq.push(['_trackPageview']),g.log("window._gaq.push(['_trackPageview'])")):g.log('Did not find the UA code so we can not track'))};_executeAbTest=function(a){var b=_getCookieVariant(a);null==b&&(b=_chooseVariant(a));'hit'!=a.stickiness&&_setCookieVariant(a,b,'visitor'==a.stickiness?864E5:60*(g.undef(a.sessionTime)?30:a.sessionTime));g.log('Variant',b,'was chooen for test', a.name);a.chosenVariant=b;a=a.variants[b];if(g.undef(a))'original'!=b&&g.log('Using original content as the variant',b,'was not found');else for(b=0;b<a.targets.length;b++){var c=a.targets[b];'function'==typeof c?c():Yo.sequence.content(c).load()}};_abTestScript=function(a){var b=a.getAttribute(f.pre+'abtestname'),c=f.abTesting[b];if(g.undef(c))g.log('Found variant script for test',b,"but doesn't exist");else if(b=a.getAttribute(f.pre+'variant'),g.def(c.variants[b]))g.log('Variant script with existing name', b,'already exists. This variant will be excluded');else{var b=a.getAttribute(f.pre+'variantname'),d=a.getAttribute(f.pre+'splitcondition');g.undef(c.variants[b])?c.variants[b]={splitCondition:d,targets:[a]}:c.variants[b].targets.push(a);g.log('Found script variant',b,'with splitCondition',d)}};_chooseVariant=function(a){var b=a.variants;if('percentage'==a.splitBy){var c=0,d;for(d in b){a=b[d];var e=c;a.splitCondition*=1;c+=a.splitCondition;a.splitCondition+=e}100<b[b.length-1]&&g.log('Total percentage of variants is greater than 100, test will always leave out some variants'); c=100*Math.random();for(d in b)if(a=b[d],c<a.splitCondition)return d;return'original'}g.log('Unsupported splitType',a.splitBy,'for test',a.name)};_abTestAnalyticsUniversal=function(a){'send'==a[0]&&g.def(E.delayedTrack)&&(h.ga.q.pop(),E.delayedTrack=!0)};_abTestAnalyticsClassic=function(a){if(g.def(E.delayedTrack)){a=[];for(var b=0;b<_gaq.length;b++)g.undef(_gaq[b])||1>_gaq[b].length||'_trackPageview'!=_gaq[b][0]?('_setAccount'==_gaq[b][0]&&(E.uaCode=_gaq[b][1]),a[a.length]=_gaq[b]):E.delayedTrack= !0;_gaq=a}};R.universal=function(a,b,c,d){return _abTest(a,void 0,b,c,'universal',void 0,d)};R.classic=function(a,b,c,d,e,g){return _abTest(a,b,c,d,'classic',e,g)};R.omniture=function(a,b,c,d){var e=s.t;s.t=function(){c&&(s[c]=d+s[c]);s['eVar'+a]=b;return e.apply(this,arguments)}};R.abTesting=function(a){g.undef(a.variants)&&(a.variants={});g.undef(a.splitBy)&&(a.splitBy='percentage');g.undef(a.stickiness)&&(a.stickiness='session');g.undef(a.version)&&(a.version='0');g.undef(a.analytics)&&(a.analytics= {});g.undef(a.analytics.valuePrefix)&&(a.analytics.valuePrefix='yo_abtesting_');g.undef(a.analytics.name)&&(a.analytics.name='yottaa_abtest');g.undef(a.valuePrefix)&&(a.valuePrefix='');f.abTesting[a.name]=a};R.abVariant=function(a,b){var c=f.abTesting[name];g.undef(c)&&g.log('Test',name,'was not defined');c.variants.push(b)};k.subscribe({topic:'core/load',callback:function(){_executeAllAbTest()}});f.services=[];var S={add:function(a){a={afterLoaded:ua,beforeLoading:ta,host:a.host,key:'*'+a.host+'*', properties:a,name:a.name,budget:a.budget};f.services.push(a);k.publish({topic:'services/add',message:a});return a},findByHost:function(a){for(var b=S.list(),c=0;c<b.length;c++){var d=b[c];if(!0==g.matchUrl(d.host,a))return g.log('Found service configuration for '+a+' service ',d),d}g.log('Did NOT find service configuration for '+a+' checking local configuration. ');return null},findByName:function(a){for(var b=S.list(),c=0;c<b.length;c++){var d=b[c];if(d.name==a)return g.log('Found service configuration for '+ a+' service ',d),d}g.log('Did NOT find service configuration for '+a+' checking local configuration. ');return null},list:function(){return f.services}},M={};f.scheduling={onLoadTime:null,lastScheduleTime:6E3,last:100,step:100,scheduled:!1,hosts:[],priorities:{low:{last:3E3,step:100},medium:{last:1E3,step:100},high:{last:100,step:100},critical:{last:-1}},prioritiesToKeep:[],serviceToKeep:[],budgetTime:!1,servicesToBudget:[],loadTime:(new Date).getTime()};M.resource=function(a){return{afterLoaded:ua, beforeLoading:ta,src:a,key:'*'+a+'*'}};M.bestFit=function(){f.scheduling.type='bestfit';f.scheduling.scheduled=!0};M.priority=function(a){f.scheduling.type='priority';f.scheduling.scheduled=!0;if(a&&a.services)for(var b=0;b<a.services.length;b++)v.services.add(a.services[b])};M.spread=function(a){f.scheduling.type='spread';g.def(a)&&(f.scheduling.step=a);f.scheduling.scheduled=!0};M.configure=function(a){for(var b in a)f.scheduling[b]=a[b];k.publish({topic:'schedule/configure',message:f});return f.scheduling}; M.budget=function(a){if(a){a.budgetTime&&(f.scheduling.budgetTime=a.budgetTime);a.prioritiesToKeep&&(f.scheduling.prioritiesToKeep=a.prioritiesToKeep);if(a.servicesToBudget){f.scheduling.servicesToBudget=a.servicesToBudget;for(var b=0;b<a.servicesToBudget.length;b++){var c=a.servicesToBudget[b];c.budget=!0;v.services.add(c)}}f.scheduling.budgeter=a.budgeter?a.budgeter:xb}};k.subscribe({topic:'core/start',callback:function(){}});k.subscribe({topic:'sequence/captured',callback:function(a,b){null!=f.scheduling.onLoadTime&& (new Date).getTime()>f.scheduling.onLoadTime+f.scheduling.lastScheduleTime?g.log('Scheduling has expired',f.scheduling.lastScheduleTime):!0==f.scheduling.scheduled&&('spread'==f.scheduling.type?xa(a,b):'bestfit'!=f.scheduling.type&&'priority'==f.scheduling.type&&yb(a,b))}});var yb=function(a,b){if(a.newNode){var c=a.newNode.src;if(c&&0<c.length){var d=ya(c),e=S.findByHost(d);if(null!=d&&-1==f.scheduling.hosts.indexOf(d)){if(null==e)return xa(a,b);var h=f.scheduling.priorities[e.properties.priority]; g.log('Service found ',e.properties.name,e.properties.priority);if(!0==g.undef(h))return xa(a,b);0<=h.last&&(h.last+=h.step,k.subscribe({topic:'sequence/beforeloading/*'+d+'*',callback:function(){-1==f.scheduling.hosts.indexOf(d)&&f.scheduling.hosts.push(d)}}),c=null!=f.scheduling.budgeter?f.scheduling.budgeter(e,c,a,f.scheduling):!1,g.log('Scheduling resource ',a.newNode.src,d,'defer',h.last,', isBudgeted = ',c),!0==c?a.newNode.delayType='remove':(a.newNode.delayType='defer',a.newNode.delayValue= h.last))}}}},xa=function(a,b){if(a.newNode){var c=a.newNode.src;if(c&&0<c.length){var d=ya(c),e=S.findByHost(c);null!=d&&-1==f.scheduling.hosts.indexOf(d)&&(f.scheduling.last+=f.scheduling.step,k.subscribe({topic:'sequence/beforeloading/*'+d+'*',callback:function(){-1==f.scheduling.hosts.indexOf(d)&&f.scheduling.hosts.push(d)}}),c=null!=f.scheduling.budgeter?f.scheduling.budgeter(e,c,a,f.scheduling):!1,g.log('Scheduling resource ',a.newNode.src,d,'defer',f.scheduling.last,', isBudgeted = ',c),!0== c?a.newNode.delayType='remove':(a.newNode.delayType='defer',a.newNode.delayValue=f.scheduling.last))}}},xb=function(a,b,c,d){c=d.budgetTime;var e=ya(b);if(!1!==c){if((new Date).getTime()-f.scheduling.loadTime>=c){if(-1!=d.hosts.indexOf(e))return!1;if(d.servicesToBudget&&0<d.servicesToBudget.length)return(a=S.findByHost(b))&&!0===a.budget?(n.addViolation(5,b),!0):!1;if(-1!=d.prioritiesToKeep.indexOf(a.properties.priority)||null!=a&&!1==a.budget)return!1;n.addViolation(5,b);return!0}null!=a&&(a.budget= !1)}return!1},ya=function(a){return(a=a.split('/')[2])?a=a.split('.').slice(-2).join('.'):null};k.subscribe({topic:'core/load',callback:function(){f.scheduling.onLoadTime=(new Date).getTime()}});var za={create:function(a){var b=f;-1==b.srcAttrs.indexOf('data-src')&&b.srcAttrs.push('data-src');-1==b.srcAttrs.indexOf('data-srcset')&&b.srcAttrs.push('data-srcset');b.imagePipeline=a;k.subscribe({topic:'sequence/beforeloading/*',callback:function(b,d){g.log('Yo.imagePipeline.beforeLoading - ',b);var e= b.before,f=a.optimizer||za.optimizer;f&&e&&e.nodeName&&'img'==e.nodeName.toLowerCase()&&(e=f(e,b.srcAttr))&&(g.log('Yo.imagePipeline updating image src - ',e),b.srcAttr=e)}})},rewrite:function(a,b){if(-1==b.indexOf('.yottaa.net')){var c=Yo.stats().config.imagePipeline;g.log('Yo.imagePipeline.rewrite',c,a,b);return location.protocol+c.cdn+'/'+c.profileId+'/'+a+'/'+c.version+'/'+b}},optimizer:function(a,b,c){g.log('Yo.imagePipeline default image optimized',a,b);c=c||[];(a=g.browser())&&'chrome'===a.name? c.push('f_webp'):a&&'safari'===a.name&&13<=a.version&&c.push('f_jp2');return za.rewrite('o~'+c.join(','),b)}},ab=function(a,b){var c='ul= dl= dt= sd= sr= vp= ct= rtt='.split(' ');c[0]+=navigator.language;c[1]+=encodeURIComponent(h.location.href.substring(0,1E3));c[2]+=encodeURIComponent(document.title);c[3]+=h.screen.colorDepth;c[4]+=h.screen.width+','+h.screen.height;c[5]+=h.screen.availWidth+','+h.screen.availHeight;if(b)for(var d in b)c.push(d+'='+encodeURIComponent(b[d]));d=navigator.connection|| navigator.mozConnection||navigator.webkitConnection;c[6]+=d?d.effectiveType:'unknown';c[7]+=d?d.rtt:'unknown';try{if(h.sessionStorage&&sessionStorage.getItem){var e=sessionStorage.getItem('rapid.testVariations');if(e&&'undefined'!=e){var g=JSON.parse(e);for(d=0;d<g.length;d++)!0==g[d].sticky&&c.push('testVariation='+g[d].testId+'-'+g[d].variationName)}if(-1!=(iPos=h.location.hash.indexOf('yoQoeConfig=')))var f=h.location.hash.substring(iPos+12).split('&'),c=c.concat(f)}}catch(k){l.log('sessionStorage was not available')}g= null;g=h.XMLHttpRequest?new XMLHttpRequest:new ActiveXObject('Microsoft.XMLHTTP');g.open('GET',a+'&'+c.join('&'),!1);g.send('');c=document.createElement('script');c.type='text/javascript';c.text=g.responseText;document.getElementsByTagName('head')[0].appendChild(c);l.log('Adding Rapid CTRL script into DOM: ',a);try{h.sessionStorage&&sessionStorage.setItem&&(e=n.get().testVariations)&&sessionStorage.setItem('rapid.testVariations',JSON.stringify(e))}catch(p){l.log('sessionStorage was not available')}}, bb={log:!1,resources:[],messageBridge:!1,defaultBlockedResponse:{status:200,body:'Blocked by service-worked'},security:{},handledResources:[],documentUri:''};self._serviceWorkerConfig=bb;var fa={},zb={EQ:function(a,b){return a===b},NEQ:function(a,b){return a!==b},CONTAIN:function(a,b){return-1<a.indexOf(b)},'NOT-CONTAIN':function(a,b){return-1===a.indexOf(b)},'STARTS-WITH':function(a,b){return 0===a.indexOf(b)},'ENDS-WITH':function(a,b){return a.indexOf(b)===a.length-b.length},IN:function(a,b){return!0=== b.includes(a)},'NOT-IN':function(a,b){return!1===b.includes(a)},REGEX:function(a,b){return Aa(a,b)},MATCH:function(a,b){return Aa(a,b)},'NOT-MATCH':function(a,b){return!1==Aa(a,b)}},Ab={PROTOCOL:function(a){return a.protocol},HOSTNAME:function(a){return a.hostname},HOST:function(a){return a.hostname},PATHNAME:function(a){return a.pathname},SEARCH:function(a){return a.search},EXTENSION:function(a){var b=a.pathname.lastIndexOf('.');return-1==b?'':a.pathname.substring(b+1)}},Bb={ALL:function(a){return!1}, 'function':function(a,b,c,d){return a.condition},'DOCUMENT-URI':function(a,b,c,d){return bb.documentUri},'REQUEST-URI':function(a,b,c,d){return b.url},'USER-AGENT':function(a,b,c,d){return(d||h).navigator.userAgent},URI:function(a,b,c,d){return h.location.toString()},'URI-Component':function(a,b,c,d){return Ab[a.request_property.toUpperCase()](b.uri)}};fa.matchAll=function(a,b,c){return new Promise(function(d,e){var g=fa.match(b,a,c);!0!=g?e(g):d(a)})};fa.match=function(a,b,c){for(var d=0;d<b.length;d++)if(!0== l.def(b[d].match)){var e;a:{e=a;for(var g=b[d].match,f=c,h=0;h<g.length;h++)if(!1==cb(g[h],e,f)){e=g[h];break a}e=!0}if(!0!=e)return e}else if(!1==cb(b[d],a,c))return b[d];return!0};var cb=function(a,b,c){var d=Bb[a.type||a.name];return d?(c=d(a,b,c,self),'function'===a.type?a.condition(a,b):'ALL'===a.type?!0:(b=zb[a.operator])&&c&&a.condition?b(c,a.condition):!1):!1},Aa=function(a,b){try{var c=b.indexOf('(?i)');return-1==c?null!==a.match(b):null!==a.match(new RegExp(b.substring(c+4),'i'))}catch(d){return l.log('Bad Regex in Condition', d),!1}};h.Yo||(h.Yo={});v={utils:g,pubsub:k,configure:function(a,b){if('string'===typeof a)ab(a,b);else for(var c in a)'resources'==c?f.resources=f.resources.concat(a.resources):'configurationUrl'==c?ab(a[c],b):f[c]=a[c];k.publish({topic:'core/configure',message:f})},sequence:p,rum:n,abTesting:R,insert:{HEAD_START:'head_start',HEAD_END:'head_end',BODY_START:'body_start',BODY_END:'body_end',location:function(a){null!=document.body?document.write("<di'+'v id='yo_tag_"+a+"'></di'+'v>"):document.write("<script id='yo_tag_"+ a+"'>\x3c/script>");k.publish({topic:'tag/location/'+a,persistent:!0})},resource:function(a,b,c,d){var e=v.sequence.script(a);e.loaded=!0;k.subscribe({topic:'tag/location/'+b,callback:function(){var a=g.select('#yo_tag_'+b);v.sequence.node(a);c&&''!=c||(c='none');e[c](d);e.loaded=!1;e.load(a)}});return e},script:function(a,b,c,d){var e=Yo.sequence.script(a);e.loaded=!0;k.subscribe({topic:'tag/location/'+b,callback:function(){c&&''!=c||(c='none');e[c](d);e.loaded=!1;e.eval()}});return e},content:function(a, b,c,d){var e=document.createElement('script');c&&''!=c||(c='none');e.setAttribute('type','yo/sequencing/'+c+'/'+d);var f=Yo.sequence.content(e);f.loaded=!0;0==b.indexOf('css:')?k.subscribe({topic:'core/load',callback:function(){g.def(a.nodeName)?e.appendChild(a):e.innerHTML=a;var c=b.split(':');f.before=g.select(c[1]);3==c.length&&('after'==c[2]?null==f.before.nextSibling?(f.before=f.before.parentNode,f.how='append'):f.before=f.before.nextSibling:'prepend'==c[2]?0<f.before.childNodes.length?f.before= f.before.childNodes[0]:f.how='append':'append'==c[2]&&(f.how='append'));f.loaded=!1;f.load()}}):k.subscribe({topic:'tag/location/'+b,callback:function(){g.def(a.nodeName)?e.appendChild(a):e.innerHTML=a;f.loaded=!1;f.before=g.select('#yo_tag_'+b);f.load()}});return f}},stats:ra,geo:function(){if(0===arguments.length)return C.geo;1===arguments.length&&(C.geo=arguments[0],k.publish({topic:'core/geo',message:arguments[0]}))},services:S,schedule:M,imagePipeline:za,spa:{trackMetrics:function(){n.spa()}, startTransition:function(a,b){return k.publish({topic:'rum/spa/transition/start',message:{pageType:a,viewType:b}})},finishedRendering:function(a,b){return k.publish({topic:'rum/spa/rendered',message:{pageType:a,viewType:b}})}},context:fa};h.Yo=v;k.publish({topic:'core/start',message:v});return v});Yo.configure('https://qoe-1.yottaa.net/api/v1/configure.rapid.js?key=E8L0c5_isHOM-g');</script>
+<script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};(a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;})(window,document.documentElement,'async-hide','dataLayer',4000,{'GTM-KLWK25':true});</script>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-KLWK25');</script>
+<link href="https://www.google-analytics.com" rel="preconnect"/><link crossorigin="" href="https://qoe-1.yottaa.net" rel="preconnect"/><link href="https://track.securedvisit.com" rel="preconnect"/><link href="https://images.framesdirect.com" rel="preconnect"/><link href="https://s.go-mpulse.net" rel="preconnect"/><link crossorigin="" href="https://c.go-mpulse.net" rel="preconnect"/>
+<link as="font" crossorigin="anonymous" href="/theme/fd-steel/style/v-637884729082711538/open-sans-v26-latin-300.woff2" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="anonymous" href="/theme/fd-steel/style/v-637886457075353023/open-sans-v26-latin-regular.woff2" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="anonymous" href="/theme/fd-steel/style/v-637884729082711538/open-sans-v26-latin-600.woff2" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="anonymous" href="/theme/fd-steel/style/v-637886457075353023/open-sans-v26-latin-700.woff2" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="anonymous" href="/theme/fd-steel/style/v-637884729082711538/open-sans-v26-latin-800.woff2" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="anonymous" href="/theme/fd-steel/style/v-637884729082711538/icomoon.woff2" rel="preload" type="font/woff2"/>
+<link as="style" href="/theme/fd-steel/style/v-637786233077270454/header.css" media="print" onload="this.media='all'" rel="stylesheet" type="text/css"/>
+<link as="style" href="/theme/fd-steel/style/v-637884729082711538/global.css" media="print" onload="this.media='all'" rel="stylesheet" type="text/css"/>
+<link href="/theme/fd-steel/style/v-637886457075353023/firstglobal.css" rel="stylesheet" type="text/css"/>
+<meta content="fucuPbk97BOL95MfoAN0Q35nbyo" name="alexaVerifyID"/>
+<meta content="qfib3oxbcbjqlv91mhkge7wngvey6t" name="facebook-domain-verification"/>
+<style type="text/css">
+#text-overlay, #laborSale, #TransitionsBar, #FSABar, #cyberSale, #polarizedSale, #saleContent {
+  cursor: pointer;
+}
+#text-overlay p {
+  line-height: 1.5
+}
+#home-promo h1 .hp-promo-sm {
+  line-height: 1.2;
+}
+#saleContent {
+  font-weight: 800;
+  line-height: 1;
+  color: #c8ccd9;
+  font-size: 1.333em;
+}
+@media (max-width: 1200px) {
+  #saleContent {
+     font-size: 1em;
+  }
+}
+#content #saleContent a.btn-cta {
+  background: #b00;
+}
+#heroBanner {
+    opacity: 0;
+    transition: opacity .1s ease-in-out;
+   -moz-transition: opacity .1s ease-in-out;
+   -webkit-transition: opacity .1s ease-in-out;
+}
+#home-promo img {
+  max-width: 340px;
+}
+#polarizedSale h2, #laborSale, #cyberSale { line-height: 1.25;}
+#polarizedSale .col-md-5:last-child > div {
+   max-width: 300px;
+   width: 100%;
+}
+/*#content #laborSale a.btn-cta, #content #cyberSale a.btn-cta {
+  position: absolute;
+  display: block;
+  bottom: 5px;
+  background: #3b4529;
+  border: 1px solid #fff;
+  margin: 0 auto;
+  left: 50%;
+  transform: translateX(-50%);
+}*/
+#content #cyberSale a.btn-cta {
+    border: 1px solid #000;
+    color: #000 !important;
+    background: #9fc6e4;
+}
+#content #laborSale .col-12:nth-child(3) a.btn-cta, #content #cyberSale .col-12:nth-child(3) a.btn-cta {
+  display: none;
+}
+.text-switch-to {
+  color: #fff;
+  display: none;
+}
+#content #cyberSale .col-12:nth-child(2) a.btn-cta {
+  background: #213b54;
+  color: #fff !important;
+}
+#cyberSale .col-12:nth-child(2) {
+  background: #9fc6e4;
+}
+@media (max-width: 1200px) {
+  .text-switch-to {
+    display: block;
+  }
+  .text-switch-from {
+    display: none;
+  }
+  #laborSale .col-12:first-child, #cyberSale .col-12:first-child {
+     order: 2;
+  }
+  #laborSale .col-12:nth-child(2), #cyberSale .col-12:nth-child(2) {
+     order: 1;
+  }
+  #laborSale .col-12:nth-child(3), #cyberSale .col-12:nth-child(3){
+     order: 3;
+  }
+  #content #laborSale .col-12:nth-child(2) a.btn-cta, #content #cyberSale .col-12:nth-child(2) a.btn-cta {
+     display: none;
+  }
+  #content #laborSale .col-12:nth-child(3) a.btn-cta, #content #cyberSale .col-12:nth-child(3) a.btn-cta {
+     display: inline-block;
+     position: relative;
+     bottom: inherit;
+     left: inherit;
+     transform: none;
+           border: none;
+  }
+}
+#laborSale .col-md-5:last-child > div, #cyberSale.col-md-5:last-child > div {
+  max-width:200px;
+  width: 100%;
+}
+#laborSale {
+  position: relative;
+  margin-left:15px;
+  margin-right: 15px;
+  color: #fff;
+  background: #3b4529;
+  border: 1px solid #ccc;
+}
+#cyberSale {
+  position: relative;
+  background: #213b54;
+  border: 1px solid #ccc;
+  color: #9fc6e4;
+  line-height: 1;
+  margin: 0 15px;
+}
+
+#laborSale .col-md-2 {
+  background: #7e0001;
+}
+#polarizedSale .col-md-2 a, #laborSale .col-md-2 a{
+  margin: 10px 0;
+  display: none;
+}
+#polarizedSale h2 { line-height: 1.25;}
+#polarizedSale .col-md-5:last-child > div {
+   max-width: 300px;
+   width: 100%;
+}
+#polarizedSale .col-md-2 a{
+  margin: 10px 0;
+}
+#polarizedSale {
+  background: #213b54;
+  border: 1px solid #ccc;
+  color: #9fc6e4;
+  line-height: 1;
+  margin: 0 15px;
+}
+#polarizedSale .col-md-2 {
+  background: #9fc6e4;
+}
+#content #polarizedSale a.btn-cta {
+  background: #9fc6e4;
+  color: #000 !important;
+}
+
+#blueReflectBar {
+  background: #018183;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: #fff;
+}
+
+#bluereflectBG {
+   background: url("https://images.framesdirect.com/image/upload/w_744,f_auto,q_auto/v1600202813/homePage/20200911-blueReflect.jpg") no-repeat top center/cover;
+   height: 292px;
+}
+#uspBlock > div > h3, #uspBlock > div > p, #rxSunBlock > div > p {
+  padding: 10px 14%;
+}
+#custom-2-col a { text-decoration: none;}
+#custom-2-col h3 {
+  line-height:1.4;
+font-size: 21px;
+font-weight: 700;
+} 
+.usp {text-align:center; line-height: 1.3; padding-top: 5px; padding-bottom: 5px;}
+#usp-holder { background-color: #f3eee8; padding: 20px 15%;}
+@media screen and (max-width: 1190px) {
+ #uspBlock > div > h3, #uspBlock > div > p, #rxSunBlock > div > p {
+  padding: 10px 5%;
+}
+#usp-holder { padding: 20px 5%;}
+}
+@media screen and (max-width: 450px) {
+  .usp { font-size: .8em; padding: 0 10px; }
+}
+.white-outline {
+  -webkit-text-stroke: 1px white;
+}
+#rec-custFaves { display:none; min-height: 350px; }
+#light-slider { height: 80px !important; list-style: none; overflow-y: hidden; opacity: 0;  transition: opacity .1s ease-in-out;
+   -moz-transition: opacity .1s ease-in-out;
+   -webkit-transition: opacity .1s ease-in-out;
+}
+#klarna {
+  background: #f5b6c7;
+  line-height: 1.2;
+  cursor: pointer;
+}
+#klarna h2 {
+  font-size: 2em;
+}
+#brand-showcase ul { display: flex; }
+.additional-logo {
+  display: none;
+}
+#cyber-column-flex {
+  cursor: pointer;
+  -ms-flex: 0 0 16.666667%;
+  flex: 0 0 16.666667%;
+  max-width: 16.666667%;
+  background: rgb(255,255,255,.4)
+}
+#oakley-promo-image {
+  -ms-flex: 0 0 41.666667%;
+  flex: 0 0 41.666667%;
+  max-width: 41.666667%;
+  cursor: pointer;
+}
+#cyber-column-flex {
+  flex-direction: column;
+}
+#hp-promo-asterisk {
+  margin-top: -30px;
+}
+.hp-promo-sm {
+  font-size: 20px;
+}
+#text-overlay {
+  position: absolute;
+  top: 0;
+  left: 100px;
+  height: 100%;
+  color: #000;
+  min-width: 340px;
+}
+#text-overlay-amp {
+  line-height: 1.2;
+  font-size: 4em;
+  color: #b00;
+  font-weight: 200;
+}
+li.lslide:empty { display:none !important;}
+#light-slider .keep a {
+  display: flex;
+  align-items: center;
+  min-height: 60px;
+}
+#homepage-content, #about-fd { max-width: 80%; margin: 0 auto;}
+#brand-callout {background-color: #000; color: white; margin: 0 15px 23px; cursor: pointer; }
+#brand-callout h2 {line-height: 30px;}
+#content #brand-callout a.btn-cta {border: 1px solid #fff; background: #fff; color: #000 !important;}
+#buy-one-give-one { margin-bottom: 0}
+#content #text-overlay a.btn-cta {
+  background: #b00;
+  color: #fff !important;
+  font-weight: 600;
+} 
+#content a.btn-cta {
+  background: #333333;
+  color: white;
+}
+#content a.btn-cta:hover {
+  opacity: .9
+}
+
+#FSABar {
+  position: relative;
+  overflow: hidden;
+  background: #bce3da;
+  margin-bottom: 15px;
+  color: #000;
+}
+#FSABar > div {
+  padding: 10px;
+}
+#FSABar > div > div.order-md-2 {
+  padding: 15px 10px 10px;
+}
+#FSABar img {
+  margin-top: -40px;
+}
+@media screen and (max-width: 992px) {
+  #homepage-content, #about-fd { max-width: 100%; margin: inherit;}
+}
+#rfk-hp-custFaves {
+  min-height : 363px;
+}
+@media screen and (max-width: 768px) {
+  #polarizedSale .col-md-5:last-child > div {
+     max-width: inherit;
+  }
+
+  #rfk-hp-custFaves {
+    min-height : 303px;
+  }
+}
+#rfk-hp-custFaves .rfk_product {
+  vertical-align : top;
+}
+#heroBanner {
+  display: block;
+  position: relative;
+  min-height: 500px;
+}
+#heroBanner > div:first-child {
+  display: table;
+  width: 100%;
+}
+#home-promo {
+  position: relative;
+  padding: 0;
+  vertical-align: middle;
+  text-align: center;
+  color: #000;
+}
+#home-promo a.btn-cta {
+  margin: 10px 0;
+}
+#home-promo h1, #home-promo h2, #home-promo h3, #home-promo h4, #home-promo .color-red {
+  font-size: 3.5em;
+  line-height: 1.1;
+  color: #000000;
+  font-variant-numeric: lining-nums;
+  text-transform: uppercase;
+  margin:5px 0;
+  font-weight: 800;
+}
+#home-promo h3 {
+  font-weight: 600;
+}
+#home-promo h4 {
+  font-size: 1.25rem;
+  text-transform: none;
+  font-weight: 500;
+  margin: 10px 0;
+  font-style: italic;
+}
+#brand-showcase .lSAction { 
+    opacity: 0;   
+    transition: opacity .1s ease-in-out;
+   -moz-transition: opacity .1s ease-in-out;
+   -webkit-transition: opacity .1s ease-in-out;
+}
+#brand-showcase .lSAction:hover { opacity: 1;}
+#brand-showcase .lSAction>a { top:33%;}
+#brand-showcase {
+  display: block;
+  background-color: transparent;
+  width: auto;
+  max-width: 1600px;
+  margin: 10px auto;
+  padding: 0;
+  border-bottom : 1px solid rgb(204, 204, 204);
+}
+#brand-showcase .lSPager { display: none;}
+#brand-showcase li {
+  background: #fff;
+  padding: .5em .5em .5em;
+  text-align: center;
+  border: none;
+  vertical-align: top;
+}
+#brand-showcase > a {
+  display: inline-block;
+  background-color: rgba(180, 180, 180, 0.5);
+  margin: 0;
+  padding: 10px 15px;
+  border: 1px #666 solid;
+  font-weight: bold;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  color: #666;
+}
+/* #brand-showcase a > div:last-child { */
+  /* display: table-cell; */
+  /* height: 75px; */
+  /* vertical-align: middle; */
+/* } */
+#brand-showcase a > div:last-child img {
+  padding: .5em 0;
+  margin: 0 auto;
+}
+#brand-showcase .img-flex img {
+  max-width: 103px;
+}
+#brand-showcase .img-flex .larger-brand img {
+  max-width: 130px;
+}
+#triple-block {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+#TransitionsBar {
+  background: url('https://images.framesdirect.com/image/upload/f_auto,q_auto/v1614832401/transitions/hp-transitions-image.jpg') no-repeat center center / cover;
+}
+#TransitionsBar .btn-cta.green {
+  background: #01A280;
+  font-weight: 400;
+  font-size: 18px;
+}
+#TransitionsBar h2 {
+  line-height: 1.2;
+}
+#transitions-badge {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+#hpContent {
+  position: relative;
+  overflow: hidden;
+  background: #f6f6f6;  
+}  
+#hpContent > div {
+padding: 10px;	
+}	
+#custom-2-col .flex-column { 
+border: 1px solid #ccc; 
+    height: 100%;
+    padding-bottom: 20px;
+}
+
+@media screen and (max-width: 1700px) {
+  #heroBanner {
+    min-height: 440px;
+  }
+}
+@media screen and (max-width: 1570px) {
+  #brand-showcase {
+    padding: 0 30px;
+  }
+  #heroBanner {
+    min-height: 400px;
+  }
+}
+@media screen and (max-width:1800px) and (min-width: 1500px) {
+  #home-promo h1, #home-promo h2, #home-promo h3, #home-promo h4, #home-promo .color-red {
+    font-size: 2.5em;
+  }
+  #hp-promo-title {
+    font-size: 16px;
+  }
+  #text-overlay-amp {
+    font-size: 3em;
+  }
+}
+@media screen and (max-width:1500px) and (min-width: 1200px) {
+  #home-promo img {
+    max-width: 200px;
+  }
+  #home-promo .hp-promo-sm {
+    font-size: 15px;
+  }
+  #home-promo h1, #home-promo h2, #home-promo h3, #home-promo h4, #home-promo .color-red {
+    font-size: 2em;
+  }
+  #hp-promo-title {
+    font-size: 13px;
+  }
+  
+  #text-overlay-amp {
+    font-size: 2em;
+  }
+  #home-promo .btn-cta {
+    margin-top: 10px;
+  } 
+}
+@media screen and (max-width: 1300px) {
+  #light-slider {
+    height: 136px !important;
+  }
+}
+@media screen and (max-width:1200px) {
+  #heroBanner {
+    min-height: 476px;
+  }
+  #text-overlay {
+    max-width: 100%;
+    flex: 0 0 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+   padding: 20px 0 0;
+  }
+  #heroBanner > a > img {
+    display: none;
+  }
+}
+@media screen and (max-width: 1160px) { 
+  #brand-showcase ul {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 990px) {
+  #TransitionsBar {
+    background-position: left center;
+  }
+  #triple-block, #custom-2-col.row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 906px) {
+  #heroBanner {
+     background: #f6f6f8;
+  }
+  #home-promo {
+    position: relative;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    float: none;
+    padding: 0 0 20px;
+    z-index: 5;
+    text-align: center;
+  }
+  #home-promo h4 {
+    margin-bottom: inherit;
+  }
+}
+@media screen and (max-width: 768px) {
+#rec-custFaves { min-height: inherit; }
+#custom-2-col .flex-column { border: 0 }
+  #custom-2-col > div > div {
+    border: none;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 1.5rem;
+  }
+  #brand-showcase {
+    padding: 0;
+  }
+  #home-promo {
+    display: block;
+    width:100%;
+    padding: 0 0 20px;
+  }
+  #transitions-badge {
+    position: relative;
+    right: 0;
+    bottom: -15px;
+    left: 15px;
+  }
+  #polarizedSale .col-md-5:last-child > div {
+     max-width: inherit;
+  }
+}
+@media screen and (max-width: 550px) {
+  #brand-showcase { min-height: 148px; }
+  #brand-showcase ul { display: none;}
+}
+@media screen and (max-width: 400px) {
+  #brand-showcase .img-flex img {
+    max-width: 75px;
+    max-height: 225px;
+  }
+  #home-promo h1,#home-promo h2 {
+    font-size: 2.6rem;
+  }
+}
+@media screen and (max-width: 340px) {
+#home-promo img, #text-overlay {
+  min-width: inherit;
+}
+</style>
+<link href="https://www.framesdirect.com" rel="canonical">
+<script type="text/javascript">
+    fdFncs.pageType = "Home";
+  </script>
+<script src="/theme/js/v-637559721063579271/jquery-and-more.js" type="text/javascript"></script>
+<title>
+	Prescription Sunglasses, Eyeglasses &amp; Glasses Frames | FramesDirect.com
+</title>
+<!--IIS3D - Release 174.0-->
+<meta content="width=device-width,minimum-scale=1.0,maximum-scale=10.0,initial-scale=1.0,user-scalable=yes" id="ctl00_viewport" name="viewport"/><meta charset="utf-8"/><meta content="telephone=no" name="format-detection"/><meta content="Shop the largest selection of glasses online. Free Shipping and Easy Returns on all Eyeglasses, prescription sunglasses, and sunglasses for men, women, and kids." name="description"/><meta content="7906862223" id="ctl00_fbPageId" property="fb:page_id"/><meta content="FramesDirect.com" id="ctl00_fbSiteName" property="og:site_name"/><meta content="Prescription Sunglasses, Eyeglasses &amp; Glasses Frames | FramesDirect.com" id="ctl00_fbTitle" property="og:title"/><meta content="product" id="ctl00_fbType" property="og:type"/><meta content="https://www.framesdirect.com/theme/fd-steel/images/global/logo.png" id="ctl00_fbImage" property="og:image"/><meta content="Shop the largest selection of glasses online. Free Shipping and Easy Returns on all Eyeglasses, prescription sunglasses, and sunglasses for men, women, and kids." id="ctl00_fbDescription" property="og:description"/><meta content="7906862223" id="ctl00_fbAdmin" property="fb:admins"/><meta id="ctl00_pagePath" property="og:url"/><meta content="en_US" id="ctl00_siteLocation" property="og:locale"/><link href="/favicon.ico" rel="shortcut icon">
+<script>!function(a){var e="https://s.go-mpulse.net/boomerang/",t="addEventListener";if("False"=="True")a.BOOMR_config=a.BOOMR_config||{},a.BOOMR_config.PageParams=a.BOOMR_config.PageParams||{},a.BOOMR_config.PageParams.pci=!0,e="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="CYGR6-WNL6Y-NAPEK-KWF9E-4X9RB",function(){function n(e){a.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!a.BOOMR||!a.BOOMR.version&&!a.BOOMR.snippetExecuted){a.BOOMR=a.BOOMR||{},a.BOOMR.snippetExecuted=!0;var i,_,o,r=document.createElement("iframe");if(a[t])a[t]("load",n,!1);else if(a.attachEvent)a.attachEvent("onload",n);r.src="javascript:void(0)",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="width:0;height:0;border:0;display:none;",o=document.getElementsByTagName("script")[0],o.parentNode.insertBefore(r,o);try{_=r.contentWindow.document}catch(O){i=document.domain,r.src="javascript:var d=document.open();d.domain='"+i+"';void(0);",_=r.contentWindow.document}_.open()._l=function(){var a=this.createElement("script");if(i)this.domain=i;a.id="boomr-if-as",a.src=e+"CYGR6-WNL6Y-NAPEK-KWF9E-4X9RB",BOOMR_lstart=(new Date).getTime(),this.body.appendChild(a)},_.write("<bo"+'dy onload="document._l();">'),_.close()}}(),"".length>0)if(a&&"performance"in a&&a.performance&&"function"==typeof a.performance.setResourceTimingBufferSize)a.performance.setResourceTimingBufferSize();!function(){if(BOOMR=a.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var e=""=="true"?1:0,t="",n="j4uxovs7mvdxkyuwbg3a-f-c5dafe725-clientnsv4-s.akamaihd.net",i="false"=="true"?2:1,_={"ak.v":"32","ak.cp":"124582","ak.ai":parseInt("289344",10),"ak.ol":"0","ak.cr":40,"ak.ipv":4,"ak.proto":"http/1.1","ak.rid":"3507a158","ak.r":25244,"ak.a2":e,"ak.m":"b","ak.n":"essl","ak.bpcip":"79.41.119.0","ak.cport":64298,"ak.gh":"2.20.252.88","ak.quicv":"","ak.tlsv":"tls1.2","ak.0rtt":"","ak.csrc":"-","ak.acc":"reno","ak.t":"1654000054","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==Omt63PFPjUMfD62xh5PNDCJl4hWm2wcw1UG978Gp8CtVTA/2YVcV0jGvI7MUgMD6BDsUtHktwPD1svWhnYvial/SgYe45q4EPCpAY8upVSaBrZ/DvasNzlc7QegMGyW8LDqDTd/bAal1L+Jgx83O7GDvAr0YJYA7igzLFar0MZpBKLWIP7seDIy3UL6Dmt84q3QCDTpbVBFjKqo40vKO+Yk2SbudjbwMAs3NWzrJWP9zMTZw2YDbXd26WpvrZHsGxzWoRqpX9RGtqVU3yodKFzNGCruXPO3/4YU4I4CHXzYbb3bULIDTl6TyD6PZKVf9c2n4vlkpdQICEU3iO9ZNCJ5K+lepEaw3xSYAPiqmgfSh5WBk3xGz8ykHhN/RSnQDSN/SJG3qxnAf39D+qQ3Uavo3u2s+URaStfgS8ji6rzU=","ak.pv":"22","ak.dpoabenc":"","ak.tf":i};if(""!==t)_["ak.ruds"]=t;var o={i:!1,av:function(e){var t="http.initiator";if(e&&(!e[t]||"spa_hard"===e[t]))_["ak.feo"]=void 0!==a.aFeoApplied?1:0,BOOMR.addVar(_)},rv:function(){var a=["ak.bpcip","ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.r","ak.acc","ak.t","ak.tf"];BOOMR.removeVar(a)}};BOOMR.plugins.AK={akVars:_,akDNSPreFetchDomain:n,init:function(){if(!o.i){var a=BOOMR.subscribe;a("before_beacon",o.av,null,null),a("onbeacon",o.rv,null,null),o.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></link></link></head>
+<body id="ctl00_mp_body">
+<a id="top"></a>
+<form action="/" id="aspnetForm" method="post">
+<div class="aspNetHidden">
+<input id="__EVENTTARGET" name="__EVENTTARGET" type="hidden" value=""/>
+<input id="__EVENTARGUMENT" name="__EVENTARGUMENT" type="hidden" value=""/>
+<input id="__VIEWSTATE" name="__VIEWSTATE" type="hidden" value="/wEPDwUJNDEwNTMxMzA5D2QWAmYPZBYEAgEPZBYMAgkPFgIeBFRleHQFHgo8IS0tSUlTM0QgLSBSZWxlYXNlIDE3NC4wLS0+CmQCDg8WAh8ABccBPG1ldGEgbmFtZT0iZGVzY3JpcHRpb24iIGNvbnRlbnQ9IlNob3AgdGhlIGxhcmdlc3Qgc2VsZWN0aW9uIG9mIGdsYXNzZXMgb25saW5lLiBGcmVlIFNoaXBwaW5nIGFuZCBFYXN5IFJldHVybnMgb24gYWxsIEV5ZWdsYXNzZXMsIHByZXNjcmlwdGlvbiBzdW5nbGFzc2VzLCBhbmQgc3VuZ2xhc3NlcyBmb3IgbWVuLCB3b21lbiwgYW5kIGtpZHMuIiAvPmQCEQ8WAh4HY29udGVudAVHUHJlc2NyaXB0aW9uIFN1bmdsYXNzZXMsIEV5ZWdsYXNzZXMgJiBHbGFzc2VzIEZyYW1lcyB8IEZyYW1lc0RpcmVjdC5jb21kAhIPFgIfAQUHcHJvZHVjdGQCEw8WAh8BBUJodHRwczovL3d3dy5mcmFtZXNkaXJlY3QuY29tL3RoZW1lL2ZkLXN0ZWVsL2ltYWdlcy9nbG9iYWwvbG9nby5wbmdkAhQPFgIfAQWhAVNob3AgdGhlIGxhcmdlc3Qgc2VsZWN0aW9uIG9mIGdsYXNzZXMgb25saW5lLiBGcmVlIFNoaXBwaW5nIGFuZCBFYXN5IFJldHVybnMgb24gYWxsIEV5ZWdsYXNzZXMsIHByZXNjcmlwdGlvbiBzdW5nbGFzc2VzLCBhbmQgc3VuZ2xhc3NlcyBmb3IgbWVuLCB3b21lbiwgYW5kIGtpZHMuZAIDD2QWAmYQZGQWAgICD2QWAmYPEA8WBh4ORGF0YVZhbHVlRmllbGQFEHZjX2N1cnJlbmN5X2NvZGUeDURhdGFUZXh0RmllbGQFEHZjX2N1cnJlbmN5X25hbWUeC18hRGF0YUJvdW5kZ2QQFRQJQXJnZW50aW5hCUF1c3RyYWxpYQZCcmF6aWwGQ2FuYWRhCkNoaW5hIFl1YW4HRGVubWFyawRFdXJvB0phbWFpY2EFSmFwYW4GTWV4aWNvC05ldyBaZWFsYW5kBk5vcndheQZSdXNzaWEMU291dGggQWZyaWNhC1NvdXRoIEtvcmVhBlN3ZWRlbgtTd2l0emVybGFuZA5Vbml0ZWQgS2luZ2RvbQ1Vbml0ZWQgU3RhdGVzCVZlbmV6dWVsYRUUA0FSUwNBVUQDQlJMA0NBRANDTlkDREtLA0VVUgNKTUQDSlBZA01YTgNOWkQDTk9LA1JVQgNaQVIDS1JXA1NFSwNDSEYDR0JQA1VTRANWRUIUKwMUZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2cWAQISZGQVCaT+GrApIdvhFzh6l148ikBYtw=="/>
+</div>
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+<script src="/include/script/web_script_resource.js" type="text/javascript"></script>
+<div class="aspNetHidden">
+<input id="__VIEWSTATEGENERATOR" name="__VIEWSTATEGENERATOR" type="hidden" value="CA0B0334"/>
+<input id="__EVENTVALIDATION" name="__EVENTVALIDATION" type="hidden" value="/wEdAARM5Gn/Bt8jAL8ooYQezvHL4+3WpZQNb82rzs2KnT3rh9cLXmZd9rSnb3RJzYNSSScLgSTjko85ZMcjkZh+KDvPgSjeurtXWT4E82L9Z0/9J7ZgCAk="/>
+</div>
+<script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager', 'aspnetForm', [], [], [], 90, 'ctl00');
+//]]>
+</script>
+<header id="header">
+<div id="header-in">
+<div class="d-flex align-items-center justify-content-between" id="header-top">
+<div class="text-center" id="tp-holder"></div>
+<ul id="menu-holder">
+<li class="d-none">
+<div id="currency-block">
+</div>
+</li>
+<li><a class="btn-sliding-box" data-slider="call-us" href="#">Contact Us</a></li>
+<li><a class="menu-aav-btn" href="javascript:shadowboxPop(850,460,'/theme/fd-steel/popup/popup-ecp-locator.html')" rel="nofollow" title="Find an eyecare professional to get a new prescription">Need a New Prescription?</a></li>
+<li class="login-holder">
+<div id="ctl00_lnkNewLogin"><a href="#">Sign In</a></div>
+</li>
+<li class="cart"><a class="cart" href="/ssl/cart_summary.aspx"><i></i><span>0</span></a></li>
+</ul>
+</div>
+</div>
+</header>
+<div id="header-inner">
+<div class="d-flex justify-content-between align-items-center" id="header-left">
+<div class="mobile-nav-bar">
+<div class="mobile-nav-button">
+<a class="mobile-nav-icon-holder nav-menu hamburger-icon" href="#" tabindex="2">
+<span></span>
+<span></span>
+<span></span>
+</a>
+</div>
+</div>
+<div class="d-flex align-items-center" id="logo">
+<div id="logo-icon">
+<a href="/"><img alt="FramesDirect.com logo" border="0" height="48" src="https://images.framesdirect.com/image/upload/w_91,f_auto,q_auto/v1529339889/fd-logo-icon-lg.svg" width="45"/><img alt="FramesDirect.com Premium Eyewear Logo" height="20" src="https://images.framesdirect.com/image/upload/w_18,f_auto,q_auto/v1515443634/fd-logo-icon-bl.svg" width="18"/></a>
+</div>
+<div id="logo-name">
+<a href="/"><img alt="FramesDirect.com" border="0" height="48" src="https://images.framesdirect.com/image/upload/f_auto,q_auto/v1529340804/fd-logo-copy-lg.svg" width="271"/><img alt="FramesDirect.com Premium Eyewear" height="16" src="https://images.framesdirect.com/image/upload/w_289,f_auto,q_auto/v1515443633/fd-logo-copy-bl.svg" width="230"/></a>
+</div>
+</div>
+<div class="mobile-cart cart"><a class="cart" href="/ssl/cart_summary.aspx"><i></i> <span>0</span></a></div>
+</div>
+<div id="header-right">
+<div id="menu-top-full">
+<nav id="site-nav" role="navigation">
+<div itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement">
+<div id="top-men"><a href="javascript:void(0);">Men</a>
+<div class="top-items">
+<ul class="menu-header ml-2 ml-lg-0 pl-0 pl-2 pl-lg-0">
+<li class="menu-back"><a class="weight-bold" href="#"><span class="icon-arrow-left"></span>BACK</a></li>
+<li class="menu-header pad-10 weight-bold">MEN</li>
+</ul>
+<div class="clear-content">
+<div class="categories">
+<a class="subtitle desktop" href="#">Shop By Product</a>
+<ul>
+<li><a href="/eyeglasses/mens">Glasses</a></li>
+<li><a href="/sunglasses/mens">Sunglasses</a></li>
+<li><a href="/prescription-sunglasses/mens">Prescription Sunglasses</a></li>
+<li><a href="/eyeglasses/readers?gender=men">Reading Glasses</a></li>
+<li><a href="/eyeglasses/boys">Boys' Glasses</a></li>
+<li class="desktop"><a href="/men/eyewear-dp">All Men's Eyewear</a></li>
+</ul>
+</div>
+<div class="mega-brands">
+<a class="subtitle" href="#">Top Brands for Men</a>
+<ul class="menu-brands-list">
+<li class="menu-back"><a class="weight-bold" href="#"><span class="icon-arrow-left"></span>BACK</a></li>
+<li class="menu-header pad-10 weight-bold">Top Brands for Men</li>
+<li><a href="/burberry/brand?brand=Burberry&amp;gender=men">Burberry</a></li>
+<li><a href="/costa/brand?brand=Costa&amp;gender=men">Costa</a></li>
+<li><a href="/dolce-gabbana/brand?brand=Dolce%20&amp;%20Gabbana&amp;gender=men">Dolce &amp; Gabbana</a></li>
+<li><a href="/gucci/brand?brand=Gucci&amp;gender=men">Gucci</a></li>
+<li><a href="/maui-jim/brand?brand=Maui%20Jim&amp;gender=men">Maui Jim</a></li>
+<li><a href="/oakley/brand?brand=Oakley&amp;gender=men">Oakley</a></li>
+<li><a href="/persol/brand?brand=Persol&amp;gender=men">Persol</a></li>
+<li><a href="/polo/brand?brand=Polo&amp;gender=men">Polo</a></li>
+<li><a href="/prada/brand?brand=Prada&amp;gender=men">Prada</a></li>
+<li><a href="/ray-ban/brand?brand=Ray-Ban&amp;gender=men">Ray-Ban</a></li>
+</ul>
+</div>
+<div class="promo-bottom"></div>
+</div>
+<div class="mobile-menu-btn text-center mx-auto">
+<ul class="tm-shop-all">
+<li class="menu-btn"><a href="/men/eyewear-dp">Shop All Men's Eyewear</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="top-women"><a href="javascript:void(0);">Women</a>
+<div class="top-items">
+<ul class="menu-header ml-2 ml-lg-0 pl-0 pl-2 pl-lg-0">
+<li class="menu-back"><a class="weight-bold" href="#"><span class="icon-arrow-left"></span>BACK</a></li>
+<li class="menu-header pad-10 weight-bold">WOMEN</li>
+</ul>
+<div class="clear-content">
+<div class="categories">
+<a class="subtitle desktop" href="#">Shop By Product</a>
+<ul class="ml-2 ml-lg-0 pl-0 pl-2 pl-lg-0">
+<li><a href="/eyeglasses/womens">Glasses</a></li>
+<li><a href="/sunglasses/womens">Sunglasses</a></li>
+<li><a href="/prescription-sunglasses/womens">Prescription Sunglasses</a></li>
+<li><a href="/eyeglasses/readers?gender=women">Reading Glasses</a></li>
+<li><a href="/eyeglasses/girls">Girls' Glasses</a></li>
+<li class="desktop"><a href="/women/eyewear-dp">All Women's Eyewear</a></li>
+</ul>
+</div>
+<div class="mega-brands">
+<a class="subtitle" href="#">Top Brands for Women</a>
+<ul class="menu-brands-list">
+<li class="menu-back"><a class="weight-bold" href="#"><span class="icon-arrow-left"></span>BACK</a></li>
+<li class="menu-header pad-10 weight-bold">Top Brands for Women</li>
+<li><a href="/burberry/brand?brand=Burberry&amp;gender=women">Burberry</a></li>
+<li><a href="/costa/brand?brand=Costa&amp;gender=women">Costa</a></li>
+<li><a href="/dolce-gabbana/brand?brand=Dolce%20&amp;%20Gabbana&amp;gender=women">Dolce &amp; Gabbana</a></li>
+<li><a href="/gucci/brand?brand=Gucci&amp;gender=women">Gucci</a></li>
+<li><a href="/kate-spade/brand?brand=Kate%20Spade&amp;gender=women">Kate Spade</a></li>
+<li><a href="/marc-jacobs/brand?brand=Marc%20Jacobs&amp;gender=women">Marc Jacobs</a></li>
+<li><a href="/maui-jim/brand?brand=Maui%20Jim&amp;gender=women">Maui Jim</a></li>
+<li><a href="/oakley/brand?brand=Oakley&amp;gender=women">Oakley</a></li>
+<li><a href="/persol/brand?brand=Persol&amp;gender=women">Persol</a></li>
+<li><a href="/prada/brand?brand=prada&amp;gender=women">Prada</a></li>
+</ul>
+</div>
+<div class="promo-bottom"></div>
+</div>
+<div class="mobile-menu-btn text-center mx-auto">
+<ul class="tm-shop-all">
+<li class="menu-btn"><a href="/women/eyewear-dp">Shop All Women's Eyewear</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="top-brands"><a href="javascript:void(0);" itemprop="name">Brands</a>
+<div class="top-items">
+<ul class="menu-header">
+<li class="menu-back"><a class="weight-bold" href="#"><span class="icon-arrow-left"></span>Back</a></li>
+<li class="menu-header pad-10 weight-bold">Brands</li>
+</ul>
+<div class="mt-brand-logos-holder align-center marg-bot-20">
+<div class="mt-brand-logo-item"><a class="mt-brand-logo-link" href="/ray-ban/brand" title="Ray-Ban Eyewear"><img alt="Ray-Ban Eyewear" data-src="https://images.framesdirect.com/image/upload/w_80,f_auto,q_auto/v1531417379/logos/ray-ban-logo.svg" height="40" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" width="58"/></a></div>
+<div class="mt-brand-logo-item"><a class="mt-brand-logo-link" href="/oakley/brand" title="Oakley Eyewear"><img alt="Oakley Eyewear" data-src="https://images.framesdirect.com/image/upload/w_80,f_auto,q_auto/v1531417376/logos/oakley-logo.svg" height="30" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" width="80"/></a></div>
+<div class="mt-brand-logo-item"><a class="mt-brand-logo-link" href="/gucci/brand" title="Gucci Eyewear"><img alt="Gucci Eyewear" data-src="https://images.framesdirect.com/image/upload/c_fit,f_auto,q_auto/v1531417379/logos/gucci-logo.svg" height="12" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" width="80"/></a></div>
+<div class="mt-brand-logo-item"><a class="mt-brand-logo-link" href="/kate-spade/brand" title="Kate Spade Eyewear"><img alt="Kate Spade Eyewear" data-src="https://images.framesdirect.com/image/upload/w_80,f_auto,q_auto/v1578930137/logos/kate-spade-logo.svg" height="24" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" width="80"/></a></div>
+<div class="mt-brand-logo-item"><a class="mt-brand-logo-link" href="/maui-jim/brand" title="Maui Jim Eyewear"><img alt="Maui Jim Eyewear" data-src="https://images.framesdirect.com/image/upload/w_80,f_auto,q_auto/v1531912917/logos/maui-jim-nb-logo.svg" height="40" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" width="80"/></a></div>
+</div>
+<div class="mt-brand-logos-holder align-center marg-bot-20">
+<div class="mt-brand-logo-item"><a class="mt-brand-logo-link" href="/wiley-x/brand" title="Wiley X Eyewear"><img alt="Wiley X Eyewear" data-src="https://images.framesdirect.com/image/upload/w_80,f_auto,q_auto/v1531417378/logos/wiley-x-logo.svg" height="20" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" width="80"/></a></div>
+<div class="mt-brand-logo-item"><a class="mt-brand-logo-link" href="/costa/brand" title="Costa Eyewear"><img alt="Costa Eyewear" data-src="https://images.framesdirect.com/image/upload/w_80,f_auto,q_auto/v1531417375/logos/costa-logo.svg" height="15" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" width="80"/></a></div>
+<div class="mt-brand-logo-item"><a class="mt-brand-logo-link" href="/giorgio-armani/brand" title="Giorgio Armani Eyewear"><img alt="Giorgio Armani Eyewear" data-src="https://images.framesdirect.com/image/upload/w_80,c_fit/v1626742482/logos/giorgio-armani-logo.svg" height="9" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" width="80"/></a></div>
+<div class="mt-brand-logo-item"><a class="mt-brand-logo-link" href="/prada/brand" title="Prada Eyewear"><img alt="Prada Eyewear" data-src="https://images.framesdirect.com/image/upload/w_80,f_auto,q_auto/v1531417381/logos/prada-logo.svg" height="21" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" width="80"/></a></div>
+<div class="mt-brand-logo-item"><a class="mt-brand-logo-link" href="/versace/brand" title="Versace Eyewear"><img alt="Versace Eyewear" data-src="https://images.framesdirect.com/image/upload/f_auto,q_auto/v1531417371/logos/versace-logo.svg" height="12" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" width="80"/></a></div>
+</div>
+<div class="text-center mx-auto">
+<ul class="tm-shop-all">
+<li class="menu-btn"><a href="/brands">Shop All Brands</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="top-eg"><a href="javascript:void(0);" itemprop="name">Eyeglasses</a>
+<div class="top-items">
+<ul class="menu-header">
+<li class="menu-back"><a class="weight-bold" href="#"><span class="icon-arrow-left"></span>BACK</a></li>
+<li class="menu-header pad-10 weight-bold">Eyeglasses</li>
+</ul>
+<div class="clear-content nowrap">
+<div class="categories">
+<a class="subtitle desktop" href="#">Shop By Gender</a>
+<ul class="ml-2 ml-lg-0 pl-0 pl-2 pl-lg-0">
+<li><a href="/eyeglasses/mens">Men's Glasses</a></li>
+<li><a href="/eyeglasses/womens">Women's Glasses</a></li>
+<li><a href="/eyeglasses/boys">Boys' Glasses</a></li>
+<li><a href="/eyeglasses/girls">Girls' Glasses</a></li>
+<li class="desktop"><a href="/eyeglasses/">All Eyeglasses</a></li>
+</ul>
+</div>
+<div class="popular-styles">
+<a class="subtitle" href="#">Popular Eyeglass Shapes &amp; Styles</a>
+<ul>
+<li class="menu-back"><a class="weight-bold" href="#"><span class="icon-arrow-left"></span>BACK</a></li>
+<li class="menu-header pad-10 weight-bold">Popular Eyeglass Shapes &amp; Styles</li>
+<li><a href="/eyeglasses/readers">Reading Glasses</a></li>
+<li><a href="/shop-by-frame-type/prescription-safety-glasses-dp">Prescription Safety Glasses</a></li>
+<li><a href="/shop-by-shape/round-eyewear-dp">Round Glasses</a></li>
+<li><a href="/knowledge-center/need-lenses-only">Lenses Only</a></li>
+<li><a href="/virtuclear/brand">VR Lens Inserts for Oculus</a></li>
+<li><a href="/shop-by-color">Shop by Color</a></li>
+</ul>
+</div>
+<div class="mega-brands">
+<a class="subtitle" href="#">Top Eyeglass Brands</a>
+<ul class="menu-brands-list">
+<li class="menu-back"><a class="weight-bold" href="#"><span class="icon-arrow-left"></span>BACK</a></li>
+<li class="menu-header pad-10 weight-bold">Top Eyeglass Brands</li>
+<li><a href="/eyeglasses/burberry">Burberry</a></li>
+<li><a href="/eyeglasses/giorgio-armani">Giorgio Armani</a></li>
+<li><a href="/eyeglasses/gucci">Gucci</a></li>
+<li><a href="/eyeglasses/kate-spade">Kate Spade</a></li>
+<li><a href="/eyeglasses/oakley">Oakley</a></li>
+<li><a href="/eyeglasses/prada">Prada</a></li>
+<li><a href="/eyeglasses/ray-ban">Ray-Ban</a></li>
+<li><a href="/eyeglasses/shuron">Shuron</a></li>
+<li><a href="/eyeglasses/versace">Versace</a></li>
+<li><a href="/eyeglasses/brands">All Eyeglass Brands</a></li>
+</ul>
+</div>
+<div class="promo-bottom"></div>
+</div>
+<div class="mobile-menu-btn text-center mx-auto">
+<ul class="tm-shop-all">
+<li class="menu-btn"><a href="/eyeglasses/">Shop All Eyeglasses</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="top-sg"><a href="javascript:void(0);" itemprop="name">Sunglasses</a>
+<div class="top-items">
+<ul class="menu-header ml-2 ml-lg-0 pl-0 pl-2 pl-lg-0">
+<li class="menu-back"><a class="weight-bold" href="#"><span class="icon-arrow-left"></span>BACK</a></li>
+<li class="menu-header pad-10 weight-bold">SUNGLASSES</li>
+</ul>
+<div class="clear-content">
+<div class="categories">
+<a class="subtitle desktop" href="#">Shop By Gender</a>
+<ul class="ml-2 ml-lg-0 pl-0 pl-2 pl-lg-0">
+<li><a href="/sunglasses/mens">Men's Sunglasses</a></li>
+<li><a href="/sunglasses/womens">Women's Sunglasses</a></li>
+<li><a href="/sunglasses/boys">Boys' Sunglasses</a></li>
+<li><a href="/sunglasses/girls">Girls' Sunglasses</a></li>
+<li class="desktop"><a href="/sunglasses/">All Sunglasses</a></li>
+</ul>
+</div>
+<div class="popular-styles">
+<a class="subtitle" href="#">Popular Sunglass Shapes &amp; Styles</a>
+<ul>
+<li class="menu-back"><a href="javascript:void(0);"><span class="icon-arrow-left"></span>BACK</a></li>
+<li class="menu-header pad-10 weight-bold">Popular Sunglass Shapes &amp; Styles</li>
+<li><a href="/shop-by-shape/wrap-around-sunglasses-dp">Wraparound Sunglasses</a></li>
+<li><a href="/collections/best-polarized-sunglasses-dp">Polarized Sunglasses</a></li>
+<li><a href="/collections/bifocal-sunglasses-readers-dp">Bifocal Sunglasses</a></li>
+<li><a href="/shop-by-shape/aviator-sunglasses-dp">Aviator Sunglasses</a></li>
+<li><a href="/shop-by-color">Shop by Color</a></li>
+</ul>
+</div>
+<div class="mega-brands">
+<a class="subtitle" href="#">Top Sunglasses Brands</a>
+<ul class="menu-brands-list">
+<li class="menu-back"><a href="javascript:void(0);"><span class="icon-arrow-left"></span>BACK</a></li>
+<li class="menu-header pad-10 weight-bold">TOP SUNGLASSES BRANDS</li>
+<li><a href="/sunglasses/carrera">Carrera</a></li>
+<li><a href="/sunglasses/costa">Costa</a></li>
+<li><a href="/sunglasses/gucci">Gucci</a></li>
+<li><a href="/sunglasses/kate-spade">Kate Spade</a></li>
+<li><a href="/sunglasses/maui-jim">Maui Jim</a></li>
+<li><a href="/sunglasses/oakley">Oakley</a></li>
+<li><a href="/sunglasses/ray-ban">Ray-Ban</a></li>
+<li><a href="/sunglasses/versace">Versace</a></li>
+<li><a href="/sunglasses/wiley-x">Wiley X</a></li>
+<li><a href="/sunglasses/brands">All Sunglass Brands</a></li>
+</ul>
+</div>
+<div class="promo-bottom"></div>
+</div>
+<div class="mobile-menu-btn text-center mx-auto">
+<ul class="tm-shop-all">
+<li class="menu-btn"><a href="/sunglasses/">Shop All Sunglasses</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="top-ps"><a href="javascript:void(0);" itemprop="name">Rx Sunglasses</a>
+<div class="top-items">
+<ul class="menu-header ml-2 ml-lg-0 pl-0 pl-2 pl-lg-0">
+<li class="menu-back"><a class="weight-bold" href="#"><span class="icon-arrow-left"></span>BACK</a></li>
+<li class="menu-header pad-10 weight-bold">Prescription Sunglasses</li>
+</ul>
+<div class="clear-content">
+<div class="categories">
+<a class="subtitle desktop" href="#">Shop By Gender</a>
+<ul class="ml-2 ml-lg-0 pl-0 pl-2 pl-lg-0">
+<li><a href="/prescription-sunglasses/mens">Men's Prescription Sunglasses</a></li>
+<li><a href="/prescription-sunglasses/womens">Women's Prescription Sunglasses</a></li>
+<li><a href="/prescription-sunglasses/boys">Boys' Prescription Sunglasses</a></li>
+<li><a href="/prescription-sunglasses/girls">Girls' Prescription Sunglasses</a></li>
+<li class="desktop"><a href="/prescription-sunglasses/">All Prescription Sunglasses</a></li>
+</ul>
+</div>
+<div class="popular-styles">
+<a class="subtitle" href="#">Popular Rx Sun Shapes &amp; Styles</a>
+<ul>
+<li class="menu-back"><a class="weight-bold" href="#"><span class="icon-arrow-left"></span>BACK</a></li>
+<li class="menu-header pad-10 weight-bold">Popular Rx Sun Shapes &amp; Styles</li>
+<li><a href="/collections/best-polarized-sunglasses-dp">Polarized Rx Sunglasses</a></li>
+<li><a href="/shop-by-shape/wrap-around-sunglasses-dp">Wraparound Rx Sunglasses</a></li>
+<li><a href="/collections/bifocal-sunglasses-readers-dp">Bifocal Sunglasses</a></li>
+<li><a href="/shop-by-color">Shop by Color</a></li>
+</ul>
+</div>
+<div class="mega-brands">
+<a class="subtitle" href="#">Top Rx Sun Brands</a>
+<ul class="menu-brands-list">
+<li class="menu-back"><a class="weight-bold" href="#"><span class="icon-arrow-left"></span>BACK</a></li>
+<li class="menu-header pad-10 weight-bold">Top Rx Sun Brands</li>
+<li><a href="/prescription-sunglasses/costa">Costa</a></li>
+<li><a href="/prescription-sunglasses/gucci">Gucci</a></li>
+<li><a href="/prescription-sunglasses/kate-spade">Kate Spade</a></li>
+<li><a href="/prescription-sunglasses/maui-jim">Maui Jim</a></li>
+<li><a href="/prescription-sunglasses/oakley">Oakley</a></li>
+<li><a href="/prescription-sunglasses/persol">Persol</a></li>
+<li><a href="/prescription-sunglasses/randolph-engineering">Randolph Engineering</a></li>
+<li><a href="/prescription-sunglasses/ray-ban">Ray-Ban</a></li>
+<li><a href="/prescription-sunglasses/wiley-x">Wiley X</a></li>
+<li><a href="/prescription-sunglasses/brands">All Rx Sunglass Brands</a></li>
+</ul>
+</div>
+<div class="promo-bottom"></div>
+</div>
+<div class="mobile-menu-btn text-center mx-auto">
+<ul class="tm-shop-all">
+<li class="menu-btn"><a href="/prescription-sunglasses/">Shop All Rx Sunglasses</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="top-cl"><a href="javascript:void(0);" itemprop="name">Contacts</a>
+<div class="top-items">
+<ul class="menu-header">
+<li class="menu-back"><a class="weight-bold" href="#"><span class="icon-arrow-left"></span>Back</a></li>
+<li class="menu-header pad-10 weight-bold">Contact Lenses</li>
+</ul>
+<div class="clear-content nowrap">
+<div class="categories">
+<a class="subtitle desktop" href="#">Shop By Product</a>
+<ul class="ml-2 ml-lg-0 pl-0 pl-2 pl-lg-0">
+<li><a href="/acuvue-1-day-moist-90-pack-contact-lenses">Acuvue 1-Day Moist 90 Pack</a></li>
+<li><a href="/acuvue-oasys-24-pack-contact-lenses">Acuvue Oasys 24 Pack</a></li>
+<li><a href="/dailies-aquacomfort-plus-90-pack-contact-lenses">Dailies AquaComfort Plus 90 Pack</a></li>
+<li><a href="/proclear-multifocal-toric-contact-lenses">Proclear Multifocal Toric</a></li>
+<li><a href="/acuvue-oasys-for-astigmatism-6-pk-contact-lenses">Acuvue Oasys for Astigmatism</a></li>
+<li class="desktop"><a href="/contact-lenses/">All Contact Lenses</a></li>
+</ul>
+</div>
+<div class="mega-brands">
+<a class="subtitle" href="#">Contact Lens Brands</a>
+<ul class="menu-brands-list">
+<li class="menu-back"><a class="weight-bold" href="#"><span class="icon-arrow-left"></span>BACK</a></li>
+<li class="menu-header pad-10 weight-bold">Contact Lens Brands</li>
+<li><a href="/contact-lenses/acuvue">Acuvue</a></li>
+<li><a href="/contact-lenses/air-optix">Air Optix</a></li>
+<li><a href="/contact-lenses/biofinity">Biofinity</a></li>
+<li><a href="/contact-lenses/biotrue">Biotrue</a></li>
+<li><a href="/contact-lenses/dailies">Dailies</a></li>
+<li><a href="/contact-lenses/freshlook">FreshLook</a></li>
+<li><a href="/contact-lenses/precision1">Precision1</a></li>
+<li><a href="/contact-lenses/proclear">Proclear</a></li>
+<li><a href="/contact-lenses/ultra">Ultra</a></li>
+<li><a href="/contact-lenses/brands">All Contact Lens Brands</a></li>
+</ul>
+</div>
+<div class="promo-bottom"></div>
+</div>
+<div class="mobile-menu-btn text-center mx-auto">
+<ul class="tm-shop-all">
+<li class="menu-btn"><a href="/contact-lenses/">Shop All Contacts</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="top-sale"><a href="javascript:void(0);" itemprop="name">Sale</a>
+<div class="top-items">
+<ul class="menu-header ml-2 ml-lg-0 pl-0 pl-2 pl-lg-0">
+<li class="menu-back"><a class="weight-bold" href="#"><span class="icon-arrow-left"></span>BACK</a></li>
+<li class="menu-header pad-10 weight-bold">Sale</li>
+</ul>
+<div class="clear-content">
+<div class="categories">
+<a class="desktop subtitle" href="/sale/?gender=men">Men's Sale</a>
+<ul>
+<li><a href="/sale/mens-eyeglasses">Men's Glasses</a></li>
+<li><a href="/sale/mens-sunglasses">Men's Sunglasses</a></li>
+<li><a href="/sale/mens-prescription-sunglasses">Men's Prescription Sunglasses</a></li>
+</ul>
+</div>
+<div class="categories">
+<a class="desktop subtitle" href="/sale/?gender=women">Women's Sale</a>
+<ul>
+<li><a href="/sale/womens-eyeglasses">Women's Glasses</a></li>
+<li><a href="/sale/womens-sunglasses">Women's Sunglasses</a></li>
+<li><a href="/sale/womens-prescription-sunglasses">Women's Prescription Sunglasses</a></li>
+</ul>
+</div>
+<div class="categories">
+<a class="desktop subtitle" href="/sale/designer-eyewear-outlet-dp"><img alt="Outlet Sale Tag" height="15" src="https://images.framesdirect.com/image/upload/w_15,f_auto,q_auto/v1632255080/icons/outlet-tag.svg" style="margin-left: -18px;" width="15"/> Designer Eyewear Outlet</a>
+<ul>
+<li class="d-none d-lg-block"><a href="/sale/designer-eyewear-outlet-dp?gender=men">Men's Outlet</a></li>
+<li class="d-none d-lg-block"><a href="/sale/designer-eyewear-outlet-dp?gender=women">Women's Outlet</a></li>
+<li class="d-none d-lg-block"><a href="/sale/designer-eyewear-outlet-dp">All Outlet</a></li>
+<li class="d-block d-lg-none"><a class="color-red" href="/sale/designer-eyewear-outlet-dp">Designer Eyewear Outlet</a></li>
+</ul>
+</div>
+<div class="promo-bottom"></div>
+</div>
+<div class="mobile-menu-btn text-center mx-auto">
+<ul class="tm-shop-all">
+<li class="menu-btn"><a href="/sale/">Shop All Sale</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</div>
+</div>
+<div class="search">
+<div id="mobile-menu-holder">
+<div class="nav-overlay"></div>
+<section class="mobile-nav">
+<ul id="mobile-menu-items">
+<li>
+<a class="btn-sliding-box" href="javascript:void(0);" id="men-slider">Men<span class="arrow"></span></a>
+<div class="mobile-lvl-2" id="sliding-box-mobile-mens"></div>
+</li>
+<li>
+<a class="btn-sliding-box" href="javascript:void(0);">Women<span class="arrow"></span></a>
+<div class="mobile-lvl-2" id="sliding-box-mobile-womens"></div>
+</li>
+<li>
+<a class="btn-sliding-box" data-slider="mobile-brands" href="javascript:void(0);">Brands<span class="arrow"></span></a>
+<div class="mobile-lvl-2" id="sliding-box-mobile-brands"></div>
+</li>
+<li>
+<a class="btn-sliding-box" data-slider="mobile-eg" href="javascript:void(0);">Eyeglasses<span class="arrow"></span></a>
+<div class="mobile-lvl-2" id="sliding-box-mobile-eg"></div>
+</li>
+<li>
+<a class="btn-sliding-box" data-slider="mobile-sg" href="javascript:void(0);">Sunglasses<span class="arrow"></span></a>
+<div class="mobile-lvl-2" id="sliding-box-mobile-sg"></div>
+</li>
+<li>
+<a class="btn-sliding-box" data-slider="mobile-ps" href="javascript:void(0);">Prescription Sunglasses<span class="arrow"></span></a>
+<div class="mobile-lvl-2" id="sliding-box-mobile-ps"></div>
+</li>
+<li>
+<a class="btn-sliding-box" data-slider="mobile-cl" href="javascript:void(0);">Contact Lenses<span class="arrow"></span></a>
+<div class="mobile-lvl-2" id="sliding-box-mobile-cl"></div>
+</li>
+<li>
+<a class="btn-sliding-box" data-slider="mobile-sale" href="javascript:void(0);">Sale<span class="arrow"></span></a>
+<div class="mobile-lvl-2" id="sliding-box-mobile-sale"></div>
+</li>
+<li id="mobile-login"></li>
+<li id="mobile-menu-phone"><a href="tel:1-800-248-9427"><i class="icon-mobile valign-top"></i> 1-800-248-9427</a></li>
+<li id="currency-holder"></li>
+</ul>
+</section>
+</div>
+<div id="search-holder">
+<div class="d-flex" id="ctl00_pnlSearch" onkeypress="javascript:return WebForm_FireDefaultButton(event, 'ctl00_btnSubmitSearch')">
+<!-- these 2 fake fields are a workaround for chrome autofill getting the wrong fields -->
+<input autocomplete="off" name="fakeusernameremembered" style="display:none" title="unused field" type="text"/>
+<input autocomplete="off" name="fakepasswordremembered" style="display:none" title="unused field" type="password"/>
+<!--------------------------------------------------------------------------------------->
+<input class="autosearch" id="ctl00_txtSearch" maxlength="70" name="ctl00$txtSearch" placeholder="Search" type="text"/>
+<div class="search-submit-holder d-flex align-items-center">
+<span>Search</span>
+<a aria-label="Search" class="btn-cta icon-search" href="javascript:__doPostBack('ctl00$btnSubmitSearch','')" id="ctl00_btnSubmitSearch"></a>
+</div>
+</div>
+<a class="cart" href="/ssl/cart_summary.aspx"><i></i> <span>0</span></a>
+</div>
+</div>
+</div>
+<div id="count-bnr"></div>
+<div id="promo-bnr"></div>
+<div id="menu-top">
+<div class="mobile_body_wrapper">
+<div id="sliding-box-mobile-search-container"></div>
+<div id="bnr-holder">
+</div>
+<div id="mobile-content-holder">
+<div id="content">
+<div class="position-relative img-flex" id="heroBanner">
+<a href="/promotions/top-brands-discounted-dp"><img alt="Man and woman, she's wearing Kate Spade Vandra Eyeglasses, he's wearing Hugo Boss Boss Black 0921-S Sunglasses" height="550" id="heroImg" src="https://images.framesdirect.com/image/upload/f_auto,q_auto,w_1920,dpr_2.0/v1650380460/homePage/2022.4.20-hp-main-vandra-boss0921.jpg" usemap="#image-map" width="1920"/></a><map name="image-map"><area alt="Kate Spade Vandra Eyeglasses" coords="837,3,1252,550" href="/kate-spade-vandra-eyeglasses?color=5021914" shape="rect" target="_self" title="Kate Spade Vandra Eyeglasses"/><area alt="Hugo Boss Boss Black 0921-S Sunglasses" coords="1252,548,1704,0" href="/hugo-boss-black-boss-0921-s-sunglasses?color=5020671" shape="rect" target="_self" title="Hugo Boss Boss Black 0921-S Sunglasses"/></map>
+<div class="col-12 col-xl-4 d-flex" id="text-overlay">
+<div class="col-12 d-flex flex-column align-items-center justify-content-center" id="home-promo"><h1>20%–50% Off<div class="hp-promo-sm weight-normal transform-none">80+ DESIGNER BRANDS</div></h1><div id="text-overlay-amp">&amp;</div><h2>60% Off<sup class="size-7" id="hp-promo-asterisk"></sup> <div class="hp-promo-sm weight-normal transform-none">LENSES STARTING AT $23.99</div></h2><a class="btn-cta px-4 d-block py-2 mt-4 d-inline-block" href="/promotions/top-brands-discounted-dp">Shop Now</a></div>
+</div>
+</div>
+<div class="pb-2" id="brand-showcase">
+<ul class="justify-content-around align-items-center flex-wrap img-flex" id="light-slider">
+<li><a href="/persol/brand"><img alt="Persol" height="150" src="https://images.framesdirect.com/image/upload/w_115/v1531417379/logos/persol-logo.svg" width="253"/></a></li>
+<li><a href="/kate-spade/brand"><img alt="Kate Spade Eyewear" height="92" src="https://images.framesdirect.com/image/upload/w_155/v1578930137/logos/kate-spade-logo.svg" width="300"/></a></li>
+<li><a href="/maui-jim/brand"><img alt="Maui Jim" height="80" src="https://images.framesdirect.com/image/upload/w_155,f_auto,q_auto/v1531420489/logos/maui-jim.png" width="155"/></a></li>
+<li><a href="/prada/brand"><img alt="Prada" height="77" src="https://images.framesdirect.com/image/upload/w_155/v1589562778/logos/prada-logo.svg" width="300"/></a></li>
+<li><a href="/versace/brand"><img alt="Versace Eyewear" height="45" src="https://images.framesdirect.com/image/upload/h_40/v1536603243/logos/versace-logo.svg" width="300"/></a></li>
+<li><a href="/ray-ban/brand"><img alt="Ray-Ban" height="150" src="https://images.framesdirect.com/image/upload/w_115/v1531417379/logos/ray-ban-logo.svg" width="221"/></a></li>
+<li><a href="/oakley/brand"><img alt="Oakley" height="114" src="https://images.framesdirect.com/image/upload/w_145/v1531417376/logos/oakley-logo.svg" width="300"/></a></li>
+<li><a href="/gucci/brand"><img alt="Gucci" height="47" src="https://images.framesdirect.com/image/upload/w_145/v1531417377/logos/gucci-logo.svg" width="300"/></a></li>
+<li class="larger-brand"><a href="/costa/brand"><img alt="Costa" height="54" src="https://images.framesdirect.com/image/upload/w_175/v1531417375/logos/costa-logo.svg" width="300"/></a></li>
+</ul>
+</div>
+<div id="homepage-content">
+<div id="rfk-hp-custFaves"><h2 class="weight-bold transform-uppercase mt-5 text-center">Customer Favorites</h2><div aria-label="Recommendations" class="mb-4" data-rfkid="rfkid_34"></div></div>
+<div class="d-flex flex-wrap px-0 mb-4 mx-3 display-none" id="saleContent">
+<div class="col-12 col-lg-6 px-0 img-flex d-flex justify-content-center align-items-center py-lg-5 py-3" style="background: #fffceb; color: #bfddee;">
+<a href="/email/early-summer-sale-dp"><img alt="Early Summer Sale" height="268" src="https://images.framesdirect.com/image/upload/f_auto,q_auto,w_672/v1651699894/homePage/2022-early-summer-sale-hp.gif" style="max-width: 350px;" width="672"/></a>
+</div>
+<div class="col-12 col-lg-6 text-center d-flex flex-column align-items-center justify-content-center py-lg-5 py-3 column2" style="background: #0073a7; color: #fee880;">
+<p class="mt-0 size-40 mb-0 mt-xl-3 weight-bold">20% OFF</p>
+<p class="size-16 mt-0">SELECT LUXURY BRANDS</p>
+<a class="btn-cta py-2" href="/email/early-summer-sale-dp" style="background: #fee880; color:#333 !important;">SHOP NOW</a>
+</div>
+</div>
+<div class="d-flex flex-wrap m-0 mb-5" id="triple-block">
+<div class="position-relative col-12 col-lg-4 text-center text-lg-left d-flex flex-column mb-0 mb-md-3 mb-xl-0 pt-2" id="expertOpticians">
+<div class="img-flex mb-3">
+<a href="/knowledge-center/opticians-on-staff"><img alt="Certified Opticians on staff: Order prescription eyeglasses online with confidence" data-src="https://images.framesdirect.com/image/upload/w_476,f_auto,q_auto/v1591107471/homePage/hp-ops-01.jpg" height="372" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" width="476"/></a>
+</div>
+<h2 class="size-18 weight-bold line-height-30 mb-3 transform-uppercase">Opticians Available</h2>
+<div class="mb-4 pr-0 pr-lg-5">Our customer service team is staffed by expert opticians, many with 20+ years of experience.  They are passionate about helping you find the perfect eyewear.</div>
+<a class="btn-cta px-xl-4 px-3 py-2 mt-auto mx-auto mx-lg-0 mr-lg-auto" href="/knowledge-center/opticians-on-staff">About our opticians</a>
+</div>
+<div class="position-relative col-12 col-lg-4 text-center text-lg-left d-flex flex-column mb-0 mb-md-3 mb-xl-0 pt-2 mt-sm-0 mt-3" id="premiumLenses">
+<div class="img-flex mb-3">
+<a class="display-block" href="/knowledge-center/high-quality-lenses"><img alt="We offer the best lenses available with DuraClear, BlueReflect, and Transitions features." data-src="https://images.framesdirect.com/image/upload/w_476,f_auto,q_auto/v1591107471/homePage/hp-lenses-02.jpg" height="372" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" width="476"/></a>
+</div>
+<h2 class="size-18 weight-bold line-height-30 mb-3 transform-uppercase">High Quality Lenses</h2>
+<div class="mb-4 pr-0 pr-lg-5">Owned by Essilor, the world's largest manufacturer of lenses, FramesDirect.com provides high quality lenses with options such as BlueReflect<sup>™</sup> and Transitions<sup>®</sup>.</div>
+<a class="btn-cta px-xl-4 px-3 py-2 mt-auto mx-auto mx-lg-0 mr-lg-auto" href="/knowledge-center/high-quality-lenses">About our lenses</a>
+</div>
+<div class="position-relative col-12 col-lg-4 text-center text-lg-left d-flex flex-column mb-0 mb-md-3 mb-xl-0 pt-2 mt-sm-0 mt-3" id="buy-one-give-one">
+<div class="img-flex mb-3">
+<a class="display-block" href="/promotions/buy-one-give-one"><img alt="We offer the highest-quality eyeglass lenses made with innovative technology and superb craftsmanship." data-src="https://images.framesdirect.com/image/upload/w_476,f_auto,q_auto/v1611941268/homePage/hp-bogo-2021.jpg" height="372" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" width="476"/></a>
+</div>
+<h2 class="size-18 weight-bold line-height-30 mb-3 transform-uppercase">Buy One, Give One</h2>
+<div class="mb-4 pr-0 pr-lg-5">As part of the Essilor Group, we are improving lives by improving sight. When your order ships, a pair of glasses can be donated on your behalf.</div>
+<a class="btn-cta px-3 px-xl-4 py-2 mt-auto mx-auto mx-lg-0 mr-lg-auto" href="/promotions/buy-one-give-one">Learn how to donate</a>
+</div>
+</div>
+<div class="d-flex flex-wrap justify-content-center align-items-center py-3" id="brand-callout"><a href="/oakley/brand?department=eyeglasses,rxsunglasses"><img alt="Oakley Eyewear" class="mr-sm-4 mr-1 color-white" data-src="https://images.framesdirect.com/image/upload/w_100,f_auto,q_auto/v1600187357/logos/oakley-logo-w.svg" height="38" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" width="100"/></a><h2 class="mx-3 color-white size-18 mb-0 text-center">Discover Oakley Prescription Eyewear</h2><a class="btn-cta px-4 d-block d-lg-inline-block py-1 ml-3 mt-3 mt-lg-0" href="/oakley/brand?department=eyeglasses,rxsunglasses">SHOP OAKLEY NOW</a>
+</div>
+<div class="row d-flex flex-wrap m-0 mb-4 justify-content-between" id="custom-2-col">
+<div class="col-lg-6 col-12" id="uspBlock">
+<div class="d-flex flex-column">
+<h3 class="text-center size-20 my-2 py-4">Why Choose FramesDirect.com?</h3>
+<p class="text-center mb-3 mt-0 pt-0">Whether you're calling for expert advice from a trained optician, or are looking for the best price on your favorite designer eyewear, we're here for you.</p>
+<div class="d-flex align-items-center justify-content-center flex-wrap" id="usp-holder">
+<div class="usp col-4"><a href="/knowledge-center/our-value-proposition#qualityLenses" title="High Quality Lenses"><div><img alt="High-Quality Lenses Icon" data-src="https://images.framesdirect.com/image/upload/w_160,f_auto,q_auto/v1624631847/icons/USP-lenses.svg" height="80" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" width="80"/></div><div class="text-center weight-medium">High-quality<br/>Lenses</div></a></div>
+<div class="usp col-4"><a href="/knowledge-center/our-value-proposition#expertOpticians" title="Trained Opticians"><div><img alt="Trained Opticians Icon" data-src="https://images.framesdirect.com/image/upload/w_160,f_auto,q_auto/v1624631847/icons/USP-ops.svg" height="80" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" width="80"/></div><div class="text-center weight-medium">Trained<br/>Opticians</div></a></div>
+<div class="usp col-4"><a href="/knowledge-center/our-value-proposition#shipping" title="Free Shipping and Easy Returns"><div><img alt="Free Shipping and Easy Returns Icon" data-src="https://images.framesdirect.com/image/upload/w_160,f_auto,q_auto/v1624631847/icons/USP-shipping.svg" height="80" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" width="80"/></div><div class="text-center weight-medium nowrap">Free Shipping<br/>&amp; Easy Returns</div></a></div>
+<div class="usp col-4"><a href="/knowledge-center/our-value-proposition#priceMatchGuarantee" title="Price Match guarantee"><div><img alt="Price Match Icon" data-src="https://images.framesdirect.com/image/upload/w_160,f_auto,q_auto/v1624631847/icons/USP-pricematch.svg" height="80" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" width="80"/></div><div class="text-center weight-medium">Price-match<br/>Guarantee</div></a></div>
+<div class="usp col-4"><a href="/knowledge-center/our-value-proposition#largestSelection" title="Largest Selection"><div><img alt="Largest Selection Icon" data-src="https://images.framesdirect.com/image/upload/w_160,f_auto,q_auto/v1624631847/icons/USP-selection.svg" height="80" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" width="80"/></div><div class="text-center weight-medium">Largest<br/>Selection</div></a></div>
+<div class="usp col-4"><a href="/knowledge-center/our-value-proposition#since1996" title="Established in 1996"><div><img alt="Established in 1996 Icon" data-src="https://images.framesdirect.com/image/upload/w_160,f_auto,q_auto/v1624631847/icons/USP-est-1996.svg" height="80" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" width="80"/></div><div class="text-center weight-medium">Established<br/>in 1996</div></a></div>
+</div>
+<div class="mt-auto text-center pt-3">
+<a aria-label="Learn more about our value proposition" class="btn-cta mt-auto mx-auto px-5 py-2" href="/knowledge-center/our-value-proposition">Our Value Proposition</a>
+</div>
+</div>
+</div>
+<div class="col-lg-6 col-12" id="rxSunBlock">
+<div class="d-flex flex-column img-flex">
+<h3 class="text-center size-20 my-2 py-4">Logging More Screen Time?</h3>
+<p class="text-center mb-3 mt-0 pt-0">BlueReflect™ Lenses reduce glare and filter the blue light from digital screens. Perfect for the whole family, and included with our Premium Lens Package.</p>
+<a aria-label="Woman Looking at Computer with Eyeglasses" class="d-block position-relative" href="/eyeglasses/" id="bluereflectBG" role="img">
+<div class="p-1" id="blueReflectBar">
+<div class="size-16 weight-medium">Save 60% On BlueReflect™ Lenses</div>
+</div>
+</a>
+<div class="mt-auto">
+<a class="btn-cta mt-auto mx-auto px-5 py-2" href="/eyeglasses/">SHOP EYEGLASSES</a>
+</div>
+</div>
+</div>
+</div>
+<div class="mb-4 mx-3" id="FSABar">
+<div class="d-flex flex-wrap">
+<div class="col-12 col-lg-7 py-3">
+<h2 class="size-20 weight-bold transform-uppercase">We Accept FSA &amp; HSA</h2>
+<p class="size-13 weight-medium">Did you know that you can use your flexible spending account (FSA) or health savings account (HSA) dollars to purchase prescription eyeglasses, prescription sunglasses, and prescription contact lenses? These funds can be used whether you have vision insurance or not. And if you use your flex spending or HSA debit card, you won't have to submit a reimbursement form to your insurance provider!</p>
+<div class="text-center text-md-left"><a class="btn-cta mt-2 mx-auto mx-lg-0 mr-lg-auto green" href="/collections/fsa-hsa-eligible-eyewear-dp">Use Your FSA/HSA Dollars</a></div>
+</div>
+<div class="d-none d-lg-flex col-lg-5 p-0 pr-4"><img alt="We accept FSA and HSA on eyeglasses, prescription sunglasses, and contact lenses" class="ml-auto" data-src="https://images.framesdirect.com/image/upload/w_390,f_auto,q_auto/v1636560573/homePage/fsa-hsa-cards-icon-fd-green.svg" height="283" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" width="390"/></div>
+</div>
+</div>
+<div class="position-relative d-flex flex-wrap py-5 px-2 mb-4 mx-3 color-white" id="TransitionsBar">
+<div class="col-12 col-md-7 col-lg-5">
+<img alt="Transitions® Light Intelligent Lenses" data-src="https://images.framesdirect.com/image/upload/w_250,f_auto,q_auto/v1615323460/transitions/transitions-logo-new-w.png" height="67" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" width="250"/>
+<h2 class="size-20 weight-medium mb-0 color-white">Transitions<sup>®</sup> Light Intelligent Lenses<sup>™</sup></h2>
+<p class="size-14 mt-0">Automatically adapting to changing light, Transitions<sup>®</sup> lenses darken when outdoors and return back to clear when indoors. <a aria-label="Learn more about Transitions Light Intelligent Lenses" class="color-white" href="/knowledge-center/transitions-lenses-dp">Learn more</a> about Transitions<sup>®</sup>.</p>
+<div class="text-center text-md-left"><a class="btn-cta green marg-top-10 mobile-100" href="/eyeglasses/">Shop For Transitions</a></div>
+</div>
+<img alt="FramesDirect.com is a Transitions Certified Provider" data-src="https://images.framesdirect.com/image/upload/w_149,f_auto,q_auto/v1623678878/transitions/Transitions-Cert-Badge.png" height="50" id="transitions-badge" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" width="149"/>
+</div>
+<div class="py-4 px-2 mb-4 mx-3" id="klarna">
+<div class="d-flex align-items-center flex-wrap justify-content-center"><h2 class="weight-bold my-3 pl-3 mr-3 mr-lg-5">Split your purchase into four interest free payments.</h2><img alt="Klarna Badge" class="mr-5 ml-3" height="67" src="https://images.framesdirect.com/image/upload/w_270,f_auto,q_auto/v1633615581/icons/klarna-logo-black.svg" width="120"><a aria-label="Learn more about Klarna" class="nowrap" href="/knowledge-center/shopping-with-Klarna">Learn More</a></img></div>
+</div>
+<div class="mb-4 mx-3 p-5" id="hpContent">
+<h2 class="size-14 weight-strong">About FramesDirect.com</h2>
+<p class="size-11">Founded in 1996 by two doctors, FramesDirect.com is now owned by the world's leading provider of eyeglass lenses, Essilor. We were the first company to sell progressive lenses, contact lenses and prescription sunglasses online. Still rooted in quality and service, we remain committed to offering a wide selection of the best designer eyewear brands online.</p>
+<h2 class="size-14 weight-strong">Buying eyeglasses, sunglasses, and prescription sunglasses online</h2>
+<p class="size-11">At FramesDirect.com, you’ll find the largest online selection of authentic designer frames from top-selling makers, including Ray-Ban, Oakley, Prada, Michael Kors, Gucci, and many others, at a fraction of the cost you’d pay elsewhere. Find frames in every conceivable color, shape, or style—we carry more than 100,000 products and 300 brands—making FramesDirect.com the best option to buy glasses online.</p>
+<h2 class="size-14 weight-strong">Eyewear Lenses From FramesDirect.com</h2>
+<p class="size-11">Whether you're looking for single vision, progressive no-line, bifocal, multifocal, non-prescription, or reading lenses, FramesDirect.com has you covered. Our superior-quality lenses are scratch-resistant and distortion-free, made with the best anti-reflective technology available.</p>
+<p class="size-11">Our certified opticians will craft the perfect pair of lenses for you, and when your frames are ready to go, we'll deliver them straight to you. If you have any issue with them, simply contact us and we'll make it right—guaranteed.</p>
+</div>
+</div>
+<div id="content-inner">
+<div id="content-main">
+<div data-nosnippet="" id="search-facet">
+<div id="ctl00_pnlLeftMenu">
+</div>
+</div>
+<div id="search-content">
+</div>
+<div id="search-mask"></div>
+</div>
+<div id="footer-review">
+<div id="footer-review-inner"></div>
+</div>
+</div>
+</div>
+<div id="footer-newsletter-wrap">
+<div id="footer-newsletter">
+<div></div>
+<div id="footer-newsletter-wrapper">
+<input aria-labelledby="footer-newsletter-submit" id="footer-newsletter-email-input" name="newsemail" placeholder="email address" type="text"/>
+<a class="btn-cta green" href="#" id="footer-newsletter-submit">Sign Up</a>
+</div>
+</div>
+</div>
+<footer id="footer">
+<div id="footer-inner">
+<div id="footer-column-links">
+<div class="row flex-row-reverse justify-content-left justify-content-lg-center" id="footer-column-links-inner">
+<div class="col-lg-8 col-md-7 col-12" id="footer-menu-holder">
+<dl>
+<div><dt class="footer-block"><div class="subtitle">Shop By Department</div></dt><dd><a href="/men/eyewear-dp" title="Men">Men</a><a href="/women/eyewear-dp" title="Women">Women</a><a href="/eyeglasses/" title="Eyeglasses">Eyeglasses</a><a href="/sunglasses/" title="Sunglasses">Sunglasses</a><a href="/prescription-sunglasses/" title="Prescription Sunglasses">Prescription Sunglasses</a><a href="/contact-lenses/" title="Contact Lenses">Contact Lenses</a><a href="/collections" title="Collections">Collections</a><a href="/shop-by-color" title="Shop by Color">Shop by Color</a><a href="/shop-by-frame-type" title="Shop by Frame Type">Shop by Frame Type</a><a href="/shop-by-shape" title="Shop by Shape">Shop by Shape</a><a href="/shop-by-sport" title="Shop by Sport">Shop by Sport</a><a href="/virtuclear/brand" title="VR Prescription Lenses">VR Prescription Lenses</a><a href="/sale/" title="Sale">Sale</a></dd></div><div><dt class="footer-block"><div class="subtitle">Discounts &amp; Promotions</div></dt><dd><a href="/promotions/frames-direct-coupons" title="Current Promotions">Current Promotions</a><a href="/sale/designer-eyewear-outlet-dp" title="Designer Eyewear Outlet">Designer Eyewear Outlet</a><div><a href="javascript:shadowboxPop(675,200,'/theme/fd-steel/popup/popup-free-shipping.html')" rel="nofollow">Free Shipping</a></div><div><a href="/promotions/afe-membership-for-military-discount-eyewear">AFEyewear Military Discount</a></div><a href="/knowledge-center/eyewear-price-match-guarantee" title="Price Match Guarantee">Price Match Guarantee</a></dd></div><div><dt class="footer-block"><div class="subtitle">Customer Service</div></dt><dd><a href="/knowledge-center/payment-methods" title="Payment Methods">Payment Methods</a><a href="/customer-service/returns-and-exchanges" title="Easy Returns and Exchanges">Easy Returns and Exchanges</a><a href="/customer-service/cancel-an-order" title="Cancel an Order">Cancel an Order</a><a href="/ssl/login/login.aspx" title="Order Tracking">Order Tracking</a><a href="/include/information/shipping_options.aspx" title="Shipping Information">Shipping Information</a><a href="/customer-service/international-customers" title="International">International</a><a href="/knowledge-center/frame-lens-guarantee" title="Frame and Lens Guarantee">Frame and Lens Guarantee</a><a href="/include/information/contactus.aspx" title="Contact Customer Service">Contact Customer Service</a></dd></div><div><dt class="footer-block"><div class="subtitle">FramesDirect.com</div></dt><dd><a href="/knowledge-center/about-us" title="About Us">About Us</a><a href="/knowledge-center/largest-selection-of-designer-frames" title="Largest Selection of Designer Frames">Largest Selection of Designer Frames</a><a href="/knowledge-center/eyeglass-lens-guide" title="High Quality Prescription Lenses">High Quality Prescription Lenses</a><a href="/knowledge-center/opticians-on-staff" title="Expert Opticians">Expert Opticians</a><a href="/knowledge-center/buy-one-give-one" title="Buy One, Give One">Buy One, Give One</a></dd></div><div><dt class="footer-block"><div class="subtitle">Helpful Information</div></dt><dd><a href="/knowledge-center" title="Knowledge Center">Knowledge Center</a><a href="/knowledge-center/frequently-asked-questions" title="FAQs">FAQs</a><a href="/knowledge-center/buying-eyeglasses-online" title="How to Order Glasses Online">How to Order Glasses Online</a><a href="/knowledge-center/how-to-clean-your-glasses" title="How to Clean Your Glasses">How to Clean Your Glasses</a><a href="/knowledge-center/do-you-need-pd
+" title="Measure Your Pupil Distance">Measure Your Pupil Distance</a><a href="/knowledge-center/face-shape-guide" title="Face Shape Guide">Face Shape Guide</a><a href="/knowledge-center/measure-your-frame-size" title="Frame Size Guide">Frame Size Guide</a><a href="/knowledge-center/need-lenses-only" title="Need Lenses Only?">Need Lenses Only?</a><a href="/knowledge-center/transitions-lenses-dp" title="Transitions Lenses">Transitions Lenses</a><div><a href="javascript:shadowboxPop(840,460,'/theme/fd-steel/popup/popup-ecp-locator.html')" rel="nofollow" title="Find an eyecare professional to get a new prescription">Need a New Prescription?</a></div><a href="/knowledge-center/vision-insurance-fsa-eligibility" title="Vision Insurance">Vision Insurance</a><a href="/knowledge-center/do-you-have-flex-spending-dollars" title="Flex &amp; HSA Spending">Flex &amp; HSA Spending</a></dd></div>
+</dl>
+</div>
+<div class="col-lg-4 col-md-5 col-12" id="contact-us-footer">
+<div class="subtitle d-none d-md-block">Contact Us</div>
+<div class="mt-2 mb-3"><a class="btn-cta green" href="/include/information/contactus.aspx">Email Us</a></div>
+<div class="mb-0" id="phone-holder"><div><a href="tel:1-800-248-9427" id="phone-number" rel="nofollow">1-800-248-9427</a></div></div>
+<div class="mt-3 mb-4" id="hours-of-operation">
+<div>Monday–Thursday: 7:00 am–7:00 pm</div>
+<div>Friday: 7:00 am–6:00 pm</div>
+<div>Saturday: 8:00 am–5:00 pm</div>
+<div class="style-italic weight-normal size-10">Times are displayed in Central Time (UTC-6)</div>
+</div>
+<div class="mb-3" id="footer-address">2801 S. IH 35, Ste #170<br/> Austin, TX   78741-5518   United States</div>
+<div id="bbb-holder"><img alt="Better Business Bureau Accredited Business" data-src="https://images.framesdirect.com/image/upload/w_130,f_auto,q_auto/v1609268921/footer/bbb-seal.png" height="50" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" width="130"/></div>
+</div>
+</div>
+</div>
+<div class="footer-links clear-content d-flex flex-wrap justify-content-between justify-content-lg-right border-top pt-4">
+<div class="col-12 col-xl-9 mb-3 px-0 order-lg-1 order-2">
+<div class="link-holder">
+<a href="/customer-service/privacy-policy">Privacy Policy</a><a href="/customer-service/HIPAA-notice-of-privacy">HIPAA - Notice of Privacy</a><a href="/web-accessibility.html">Accessibility Statement</a>
+</div>
+<div class="mt-3 mt-lg-0 py-2" id="multi-BU"><div class="d-block d-lg-inline-block text-center text-lg-left">Our Family of Brands</div><a class="mx-lg-4 m-3 d-block d-lg-inline-block text-center text-lg-left" href="/?utm_source=FD&amp;utm_medium=link&amp;utm_campaign=multibufooter&amp;utm_content=00147.0001.0001" id="lnk-fd-site"><img alt="FramesDirect.com" data-src="https://images.framesdirect.com/image/upload/h_15,q_auto,f_auto/v1515443633/fd-logo-copy.svg" height="15" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" width="214"/></a><a class="mx-lg-4 m-3 d-block d-lg-inline-block text-center text-lg-left" href="https://www.readers.com?utm_source=FD&amp;utm_medium=link&amp;utm_campaign=multibufooter&amp;utm_content=00147.0001.0001" id="lnk-readers-site" rel="nofollow noopener" target="_blank"><img alt="Readers.com" data-src="https://images.framesdirect.com/image/upload/h_20,q_auto,f_auto/v1592342903/logos/readers-logo-w.svg" height="20" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" width="143"/></a><a class="mx-lg-4 m-3 d-block d-lg-inline-block text-center text-lg-left" href="https://www.eyebuydirect.com?utm_source=FD&amp;utm_medium=link&amp;utm_campaign=multibufooter&amp;utm_content=00147.0001.0001" id="lnk-ebd-site" rel="nofollow noopener" target="_blank"><img alt="EyeBuyDirect.com" data-src="https://images.framesdirect.com/image/upload/h_15,q_auto,f_auto/v1559565783/logos/logo-eye-buy-direct.svg" height="15" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" width="167"/></a></div>
+<div class="py-2" id="footer-copyright">
+                    Copyright © 1996 - 2022 Frames For America, Inc.<br/>
+                    FramesDirect and FramesDirect.com are Service Marks of Frames For America, Inc. All Rights Reserved.<br/>
+                    Some content used with permission by Jobson Publishing, L.L.C.
+                  </div>
+</div>
+<div class="col-12 col-xl-3 mb-3 px-0 order-lg-2 order-1">
+<div class="d-flex justify-content-between ml-lg-auto mr-lg-0 mx-auto" id="social-btns">
+<link href="https://www.framesdirect.com" rel="author">
+<a href="https://www.facebook.com/framesdirect/" rel="noopener" target="_blank" title="Facebook"><i class="icon-facebook icon-white size-25"></i></a>
+<a href="https://twitter.com/framesdirect" rel="noopener" target="_blank" title="Twitter"><i class="icon-twitter icon-white size-25"></i></a>
+<a href="https://www.pinterest.com/framesdirect/_created/" rel="noopener" target="_blank" title="Pinterest"><i class="icon-pinterest icon-white size-25"></i></a>
+<a href="https://www.instagram.com/framesdirect/" rel="noopener" target="_blank" title="Instagram"><i class="icon-instagram icon-white size-25"></i></a>
+<a href="https://www.youtube.com/user/framesdirect" rel="noopener" target="_blank" title="YouTube"><i class="icon-youtube icon-white size-25"></i></a>
+</link></div>
+<div class="mt-2" id="footer-assurance">
+<div class="mb-3 mt-4 d-flex justify-content-lg-end justify-content-center">
+<div class="footer-cc card-visa"><img alt="We accept Visa" data-src="https://images.framesdirect.com/image/upload/w_40,h_27,f_auto,q_auto/v1608768278/footer/visa.png" height="27" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" width="40"/></div>
+<div class="footer-cc card-mastercard"><img alt="We accept Mastercard" data-src="https://images.framesdirect.com/image/upload/w_40,h_27,f_auto,q_auto/v1608768278/footer/mastercard.png" height="27" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" width="40"/></div>
+<div class="footer-cc card-amex"><img alt="We accept American Express" data-src="https://images.framesdirect.com/image/upload/w_40,h_27,f_auto,q_auto/v1608768278/footer/amex.png" height="27" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" width="40"/></div>
+<div class="footer-cc card-discover"><img alt="We accept Discover" data-src="https://images.framesdirect.com/image/upload/w_40,h_27,f_auto,q_auto/v1608768278/footer/discover.png" height="27" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" width="40"/></div>
+<div class="footer-cc card-paypal"><img alt="We accept PayPal" data-src="https://images.framesdirect.com/image/upload/w_40,h_27,f_auto,q_auto/v1608768278/footer/paypal.png" height="27" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" width="40"/></div>
+<div class="footer-cc card-klarna"><img alt="Pay in 4 easy payments with Klarna" data-src="https://x.klarnacdn.net/payment-method/assets/badges/generic/klarna.svg" height="27" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" width="48"/></div>
+</div>
+<a class="d-flex justify-content-center justify-content-lg-end align-items-center decoration-none" href="javascript:shadowboxPop(840,460,'/theme/fd-steel/popup/popup-over-1-mil-sold.html')" id="footer-usp"><div><i class="icon-usp-1-mil"></i></div><div>1+ Million Frames Sold Since 1996</div></a>
+</div>
+</div>
+</div>
+</div>
+</footer>
+</div>
+</div>
+</div>
+<input id="ctl00_hdnErrorPage" name="ctl00$hdnErrorPage" type="hidden" value="false"/>
+</form>
+<div class="d-none" id="flyoutLogin">
+<iframe height="475" id="frame" src="" width="450"></iframe>
+</div>
+<aside aria-label="Exclusive Savings" id="exclusiveSavings"><a class="small-x icon-black icon-x-thin" href="javascript:void(0);" title="Close"></a><div class="blue-bg" id="signIn"><div class="mobile-minimized"><div class="text-center"><a href="#">Sign in</a> or <a href="#">Create Account</a> for Exclusive Savings!</div></div><div class="maximized"><div class="text-center mb-3">Sign in or Create Account<br/> for Exclusive Savings!</div><div class="d-flex justify-content-center"><a class="btn btn-cta" href="#">Sign In</a><a class="btn btn-cta" href="#">Create Account</a></div></div></div><div id="discountBar"><div class="text-center blue-bg"><a href="#" id="exclusiveToggle">See Exclusive Savings! <i class="arrow2 up"></i></a></div><div class="savingsHolder"></div></div></aside>
+<div id="sliding-box-call-us">
+<div class="sliding-box-inner d-flex flex-wrap row px-0 pb-0">
+<div class="col-12 col-md-5">
+<div class="mb-4">
+<div class="size-14 weight-bold mt-2">Have a question? Contact us.</div>
+<div class="size-12 weight-bold mt-3">Send us an message via our<br/>
+<a class="weight-bold color-red" href="/include/information/contactus.aspx">Contact Us form</a></div>
+<div class="size-10">(A certified optician will respond within one business day.)</div>
+</div>
+<div class="mb-4">
+<div class="size-12 weight-bold">Give us a call at<br/>
+<i class="icon-666 icon-mobile mr-2"></i><a class="weight-bold cursor-default" href="tel:1-800-248-9427" rel="nofollow">1-800-248-9427</a></div>
+<span class="style-italic size-12">International Customers Call +1 512 402 8557</span>
+<div class="my-2 weight-bold">
+<div>Monday–Thursday: 7:00 am–7:00 pm</div>
+<div>Friday: 7:00 am–6:00 pm</div>
+<div>Saturday: 8:00 am–5:00 pm</div>
+<div class="style-italic weight-normal size-10">Times are displayed in Central Time (UTC-6)</div>
+</div>
+</div>
+</div>
+<div class="col-12 col-md-7">
+<div class="mb-4 size-12 mt-2" id="contact-info"></div>
+</div>
+</div>
+</div>
+<script src="/theme/js/v-637890777090261093/firstglobal.js" type="text/javascript"></script>
+<script>
+    window.___gcfg = { lang: 'en-US' };
+    
+    var customerID = "",
+        emlCust = "",
+        bRayBanRxItemInCart = "False";
+    fdFncs.vars.isUS = 'False';
+    fdFncs.svrTm = (function() {
+      return {
+        yr: "2022",
+        mn: "05",
+        dy: "31",
+        dyNum: "2",
+        hr: "07",
+        min: "27"
+      }
+    })();
+    fdFncs.deviceType = 'desktop';
+    fdFncs.isMobile = fdFncs.deviceType === 'smartphone';
+    fdFncs.vars = fdFncs.vars || {};
+    fdFncs.vars.cid = '';
+    fdFncs.vars.ciaAmt = '';
+    fdFncs.vars.afeMember = false;
+    fdFncs.vars.sheerIdVerified = false;
+    fdFncs.custType = "";
+    fdFncs.vars.promos = ['60% Off Lenses & Add-Ons: MDAY60', '20%-50% Off 80+ Top Brands', 'Free Shipping & Easy Returns', 'Designer Outlet Deals: Save up to 50%', 'We Accept FSA/HSA Dollars'];
+    fdFncs.vars.mapDisc = {"GUCCIMAP25":{"title":"25% Off Gucci with RX lens purchase","amt":"25%","desc":"Get 25% Off the purchase price of Gucci Eyeglasses. Frame purchase required. The offer may not be used on eyeglasses without lenses and is valid for Gucci purchases only. Promo code valid before any shipping costs and/or any applicable taxes are added. Cannot be used in conjunction with other offers or price match guarantee. #href='/eyeglasses/gucci' aria-label='Get 25% Off Gucci products with Prescription Lenses'#"},"GUCCIMAP15":{"title":"15% Off Gucci Eyeglasses","amt":"15%","desc":"Get 15% Off the purchase price of Gucci Eyeglasses without lenses. Frame purchase required. The offer is valid for Gucci purchases only. Promo code valid before any shipping costs and/or any applicable taxes are added. Cannot be used in conjunction with other offers or price match guarantees.  #href='/eyeglasses/gucci' aria-label='Get 15% Off Gucci Eyeglass Frames'#"},"GUCCIMAP":{"title":"25% Off Gucci Sunglasses","amt":"25%","desc":"Get 25% Off the purchase price of Gucci Sunglasses and Prescription Sunglasses. Frame purchase required. The offer is valid for Gucci purchases only. Promo code valid before any shipping costs and/or any applicable taxes are added. Cannot be used in conjunction with other offers or price match guarantees. #href='/gucci/brand' aria-label='Get 25% Off Gucci Sunglasses'#"}};
+
+    function func_login_flyout(sFlyOutUrl) {
+      $.ajax({
+        type: "POST",
+        contentType: "application/json; charset=utf-8",
+        url: "/ssl/login/login_new.aspx/ProcessFlyOutLink",
+        data: '{sFlyOutUrl: "' + sFlyOutUrl + '"}',
+        dataType: "json",
+        success: function (reponse) {
+          var sReponse = reponse.d;
+          window.location.href = sReponse;
+        }
+      });
+    }
+
+  </script>
+<script src="/theme/js/v-637889049077822512/bg.js"></script>
+<script src="/theme/js/v-637873742483196147/global.js"></script>
+<script async="" src="/theme/js/v-637853625117484740/mobile-menu.js"></script>
+<script>
+var bannerSlider = "";
+function initBannerSlider() {
+  if (bannerSlider.lightSlider && typeof bannerSlider.destroy === "function") {
+    bannerSlider.destroy();
+  }
+  bannerSlider = $("#light-slider").lightSlider({
+    item:9,
+    auto:true,
+    slideMove: 3,
+    loop:true,
+    autoWidth: false,
+    pauseOnHover:true,
+    easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
+    speed:1000,
+    pause: 3000,
+    slideMargin: 5,
+    responsive : [
+    {
+      breakpoint:1400,
+      settings: {
+        item:6
+      }
+    },
+    {
+      breakpoint:1080,
+      settings: {
+        item:4
+      }
+    },
+    {
+      breakpoint:500, 
+      settings: {
+        item:3
+      }
+    }
+    ],
+      onSliderLoad: function (el) {
+         $('#light-slider').css('opacity', 1)
+      }
+  });
+}
+$(function() {
+  if (checkDate > '220525' && checkDate < '220531') {
+  var html = '<a href="/email/memorial-day-dp"><img id="heroImg" src="https://images.framesdirect.com/image/upload/f_auto,q_auto,w_1920/v1653002073/homePage/2022.5.26-hp-main-ray-ban-RX5228-RB2132.jpg" alt="Picture of a Couple, He\'s Wearing Ray-Ban RX5228 Eyeglasses and She\'s Wearing Ray-Ban RB2132 Sunglasses" width="1920" height="550" usemap="#image-map"/></a><map name="image-map"><area target="_self" alt="Man Wearing Ray-Ban RX5228 Eyeglasses" title="Man Wearing Ray-Ban RX5228 Eyeglasses" href="/ray-ban-rx5228-eyeglasses?color=471952" coords="837,3,1252,550" shape="rect"><area target="_self" alt="Woman Wearing Ray-Ban RB2132 Sunglasses" title="Woman Wearing Ray-Ban RB2132 Sunglasses" href="/ray-ban-rb2132-new-wayfarer-prescription-sunglasses?color=868" coords="1252,548,1704,0" shape="rect"></map><div id="text-overlay" class="col-12 col-xl-3 d-flex"><div id="home-promo" class="col-12 d-flex flex-column align-items-center justify-content-center"><img src="https://images.framesdirect.com/image/upload/f_auto,q_auto,w_600/v1653002807/homePage/2022-memorial-day-logo.png" width="300" height="141" class="mb-2"/>';
+  if (checkDate < '220527') {
+    html += '<h1>30% Off<div class="hp-promo-sm weight-normal transform-none">Eyeglasses & Rx Sunglasses from<br/> Ray-Ban, Oakley, Persol &amp; more</div></h1>';
+  }
+  else {
+    html += '<h1>20%-30% Off<div class="hp-promo-sm weight-normal transform-none">Ray-Ban, Oakley, Persol &amp; more</div></h1>';
+  }
+    html += '<div id="text-overlay-amp">&</div><h2>60% Off<sup id="hp-promo-asterisk" class="size-7"></sup> <div class="hp-promo-sm weight-normal transform-none">Lenses &amp; Add-ons</div></h2><a href="/email/memorial-day-dp" class="btn-cta d-block px-3 mt-4 d-inline-block">SAVE NOW</a></div></div>';
+    $('#text-overlay').on('click', function() {
+      window.location.href = '/email/memorial-day-dp';
+    });
+
+    $('#heroBanner').html(html);
+    $('.hp-promo-sm').css('font-size', '18px');
+    $('#home-promo *').css('color', '#294462');
+    $('#text-overlay-amp').css('color','#d53822').css('font-size', '3em');
+    $('#home-promo a.btn-cta').attr('style', 'color: #fff !important');
+    $('#home-promo a.btn-cta').css('background', '#d53822').css('border-radius', 8).css('border','1px solid #fff');
+    $('#text-overlay').css('background','#f6f6f8'); 
+  }
+  else {
+    $('#text-overlay').on('click', function() {
+      window.location.href = '/promotions/top-brands-discounted-dp';
+    });
+  }
+  $('#brand-callout').on('click', function() {
+    window.location.href = '/oakley/brand?department=eyeglasses,rxsunglasses';
+  });
+  $('#heroBanner').css('opacity', 1);
+  $('#TransitionsBar').on('click', function() {
+    window.location.href = '/eyeglasses';
+  });
+  $('#FSABar').on('click', function() {
+    window.location.href = '/collections/fsa-hsa-eligible-eyewear-dp';
+  });
+  $('#klarna').on('click', function() {
+    window.location.href = '/knowledge-center/shopping-with-Klarna';
+  });
+  $('#promoBanner').show();
+  if (checkDate > '220114' && checkDate < '220118') {
+    $('#polarizedSale').removeClass('display-none');
+  }
+  if (fdFncs.custType !== undefined) {
+    if (fdFncs.custType === 'preferred' || fdFncs.custType === 'vip') {
+      $('#home-promo > h2').html($('#home-promo > h2').html().replace('60','65'));
+    }
+  }
+
+});
+function hpHero() {
+  if ($('#heroBanner > a img').length < 1) {
+     $('#heroImg').on('load', function() {
+        $('#heroBanner').css('min-height','inherit');
+       $('#heroImg').rwdImageMaps();
+     });
+  }
+  $('#text-overlay').css('opacity',1);
+}
+$(window).on('load', function() {
+
+$('#heroBanner').css('min-height','inherit');
+  $('<li class="larger-brand"><a href="/burberry/brand"><img src="https://images.framesdirect.com/image/upload/h_40/v1531417380/logos/burberry-logo.svg" width="300" height="48" alt="Burberry Eyewear"></a></li><li class="larger-brand"><a href="/dolce-gabbana/brand"><img src="https://images.framesdirect.com/image/upload/h_40,c_fit/v1531418607/logos/dolce-gabbana-logo.svg" width="300" height="29" alt="Dolce &amp; Gabbana Eyewear"></a></li><li><a href="/coach/brand"><img src="/images/customerimages/global/logos/coach-logo.svg" width="300" height="121" alt="Coach"></a></li><li class="larger-brand"><a href="/giorgio-armani/brand"><img src="https://images.framesdirect.com/image/upload/h_40,c_fit/v1626742482/logos/giorgio-armani-logo.svg" width="300" height="29" alt="Giorgio Armani"></a></li><li><a href="/wiley-x/brand"><img src="https://images.framesdirect.com/image/upload/h_40/v1531417378/logos/wiley-x-logo.svg" width="300" height="77" alt="Wiley X Eyewear"></a></li><li class="larger-brand"><a href="/michael-kors/brand"><img src="/images/customerimages/global/logos/michael-kors-logo.svg" width="300" height="28" alt="Michael Kors"></a></li><li class="larger-brand"><a href="/tory-burch/brand"><img src="/images/customerimages/global/logos/tory-burch-logo.png" width="200" height="70" alt="Tory Burch"></a></li><li><a href="/hugo-boss/brand"><img src="/images/customerimages/global/logos/hugo-boss-logo.svg" width="300" height="110" alt="Hugo Boss"></a></li><li><a href="/polo/brand"><img src="https://images.framesdirect.com/image/upload/h_33/v1542731790/logos/polo-logo.svg" width="300" height="117" alt="Polo"></a></li>  <li><a href="/titmus/brand"><img src="/images/customerimages/global/logos/titmus-logo.svg" width="300" height="51" alt="Titmus"></a></li><li><a href="/nike/brand"><img src="https://images.framesdirect.com/image/upload/h_33/v1591982175/logos/nike-logo.svg" width="300" height="105" alt="Nike"></a></li>   <li><a href="/shuron/brand"><img src="https://images.framesdirect.com/image/upload/w_103/v1630593191/logos/shuron-logo.png" width="103" height="24" alt="Shuron"></a></li><li><a href="/carrera/brand"><img src="https://images.framesdirect.com/image/upload/h_33/v1591982126/logos/carrera-logo.svg" width="300" height="60" alt="Carrera"></a></li><li><a href="/guess/brand"><img src="https://images.framesdirect.com/image/upload/h_33/v1591982146/logos/guess-logo.svg" width="300" height="53" alt="Guess"></a></li><li class="larger-brand"><a href="/ralph-lauren/brand"><img src="https://images.framesdirect.com/image/upload/h_40/v1531417371/logos/ralph-lauren-logo.svg" width="300" height="22" alt="Ralph Lauren"></a></li>').appendTo('#light-slider');
+
+  if ($(window).width() < 1300) {
+     var array = $('#brand-showcase #light-slider li:not(.clone) a')
+
+     for (var i = array.length; i >= 0; i--) {
+        if (i%2 == 0) {
+           $(array[i-1]).addClass('mb-auto').insertAfter(array[i-2])
+           $(array[i-1]).parent('li').addClass('keep');
+        } 
+     }
+     $('#brand-showcase #light-slider li:not(.keep)').remove();
+     $('#brand-showcase #light-slider').addClass('d-flex');
+  }
+  $('#light-slider .lslide').removeAttr('style').prop('style','min-height:1px;');
+  initBannerSlider();
+}).on('resize orientationchange',function() {
+
+  if ($(window).width() < 550) {
+     var array = $('#brand-showcase #light-slider li:not(.clone) a')
+
+     for (var i = array.length; i >= 0; i--) {
+        if (i%2 == 0) {
+           $(array[i-1]).addClass('mb-auto').insertAfter(array[i-2])
+           $(array[i-1]).parent('li').addClass('keep');
+        } 
+     }
+     $('#brand-showcase #light-slider li:not(.keep)').remove();
+    $('#brand-showcase #light-slider').addClass('d-flex');
+  }
+  initBannerSlider();
+});
+</script>
+<script async="" src="/theme/js/v-636958440045348465/tab.js"></script>
+<script async="" src="/theme/js/v-637268950245649064/modal.js"></script>
+<script type="text/javascript">
+    (function () {
+      fdFncs.vars.store_domain = 'framesdirect.com';
+      fdFncs.vars.session_id = 'pgth3ilula1rgtpoxt1asfxf';
+    })();
+  </script>
+</body>
+</html>

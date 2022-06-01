@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+
+<!--[if IE]><![endif]-->
+<!--[if IE 8 ]><html dir="ltr" lang="nl" class="ie8"><![endif]-->
+<!--[if IE 9 ]><html dir="ltr" lang="nl" class="ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html dir="ltr" lang="nl">
+<!--<![endif]-->
+<head>
+<!-- Basic page needs ================================================== -->
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<!-- Title and description ================================================== -->
+<title>Online Goedkoop Online Exclusief Dames Mode | Stephaniekremer</title>
+<base href="http://www.stephaniekremer.de/"/>
+<meta content="Gratis Verzending Opruimingswinkel Websites Exclusief Dames Mode Beste Prijs Dames Mode,Online Winkelen Koop Korting Waar Vindt U." name="description">
+<!-- Title and description ================================================== -->
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<script src="catalog/view/javascript/jquery/jquery-2.1.1.min.js" type="text/javascript"></script>
+<link href="catalog/view/javascript/bootstrap/css/bootstrap.min.css" media="screen" rel="stylesheet"/>
+<script src="catalog/view/javascript/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<link href="https://fonts.googleapis.com/css?family=Rubik:400,500,700&amp;display=swap" rel="stylesheet"/>
+<link href="catalog/view/theme/removing/stylesheet/stylesheet.css" rel="stylesheet"/>
+<link href="catalog/view/theme/removing/stylesheet/stylesheet2.css" rel="stylesheet"/>
+<link href="catalog/view/theme/removing/stylesheet/font-awesome.css" rel="stylesheet"/>
+<link href="catalog/view/theme/removing/stylesheet/font-awesome.min.css" rel="stylesheet"/>
+<link href="catalog/view/theme/removing/stylesheet/stylesheet-small-screens.css" rel="stylesheet"/>
+<script src="catalog/view/javascript/common.js" type="text/javascript"></script>
+<script src="catalog/view/theme/removing/js/custom-theme.js" type="text/javascript"></script>
+<link href="catalog/view/javascript/jquery/owl-carousel/owl.carousel.css" media="screen" rel="stylesheet">
+<script src="catalog/view/javascript/jquery/owl-carousel/owl.carousel.min.js" type="text/javascript"></script>
+<link href="catalog/view/theme/removing/stylesheet/cloud-zoom.css" rel="stylesheet" type="text/css">
+<script src="catalog/view/theme/removing/js/setimg.js" type="text/javascript"></script>
+<script src="catalog/view/theme/removing/js/cloud-zoom.js" type="text/javascript"></script>
+<link href="catalog/view/theme/removing/stylesheet/dcaccordion.css" property="stylesheet" rel="stylesheet" type="text/css">
+<script src="catalog/view/theme/removing/js/jquery.dcjqaccordion.js" type="text/javascript"></script>
+<style type="text/css">
+.mau_gb_CTA2{
+	margin:0%;
+	padding:0%;
+    position:relative;
+    display:inline-block;
+    color:#fff;
+    text-transform:uppercase;
+}
+.mau_gb_CTA2:after{
+	content:"";
+	margin:0% 0% 0% 0%;
+	border-bottom:1px solid;
+	position:absolute;
+	left:0;
+	right:0;
+	bottom:0;
+}
+.mau_gb_CTA2:hover:after{
+	margin:0% 0% 0% 0%;
+	border-bottom:3px solid;
+}
+.mau_gb_promo_container{
+    display:flex;
+    align-items:center;
+}
+#previous_arrow, 
+#next_arrow{
+    padding:0 1em;
+    cursor:pointer;
+    z-index:20;
+}
+#previous_arrow::before{
+    content:"\276e";
+}
+#next_arrow::before{
+    content:"\276f";
+}
+.mau_gb_promo_box{
+    width:100%;
+    overflow:hidden;
+}    
+#mau_gb_promo_slides{
+    position:relative;
+    display:flex;
+}
+.mau_gb_promo{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    position:relative;
+    text-transform:uppercase;
+    opacity: 0;
+    z-index:10;
+    -webkit-transition:opacity 0.5s ease-in-out;
+    -moz-transition:opacity 0.5s ease-in-out;
+    -ms-transition:opacity 0.5s ease-in-out;
+    -o-transition:opacity 0.5s ease-in-out;
+    transition:opacity 0.5 ease-in-out;
+}
+.mau_gb_promo.fade{
+    opacity:1;
+    z-index:20;
+}
+</style>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        console.log("DOM loaded");
+        const promos = document.getElementsByClassName("mau_gb_promo");
+        const promoBox = document.getElementById("mau_gb_promo_slides");
+        //intialize layout based on number of promos
+        promoBox.style.width = (promos.length * 100) + "%";
+        for (let i = 0; i < promos.length; i++) {  
+            promos[i].style.width = (100/promos.length) + "%";
+            promos[i].style.left = "-" + (i*100/promos.length) + "%";
+        }
+        //initialize first promo message
+        promos[0].classList.toggle('fade');
+        if (promos.length < 2) {
+            //hide arrows 
+            document.getElementById("next_arrow").style.display = "none";
+            document.getElementById("previous_arrow").style.display = "none";        
+        } else {
+            var promoInterval = setInterval(promoFade, 5000);
+            function promoFade(){
+                toggleNext();        
+            }
+        }                    
+        function toggleNext(){
+            for (let i = 0; i < promos.length; i++) {                
+                if (parseInt(window.getComputedStyle(promos[i]).getPropertyValue('opacity')) === 1) {
+                    promos[i].classList.toggle('fade');
+                    if (i+1 === promos.length) {
+                        promos[0].classList.toggle('fade');
+                    } else {
+                        promos[++i].classList.toggle('fade');    
+                    }
+                    break;  
+                };
+            };
+        }
+        function togglePrevious(){
+            for (let i = 0; i < promos.length; i++) {                
+                if (parseInt(window.getComputedStyle(promos[i]).getPropertyValue('opacity')) === 1) {
+                    promos[i].classList.toggle('fade');
+                    if (i === 0) {
+                        promos[promos.length - 1].classList.toggle('fade');
+                    } else {
+                        promos[--i].classList.toggle('fade');    
+                    }
+                    break;  
+                };
+            };
+        }
+        document.getElementById("next_arrow").addEventListener("click", function() {
+            console.log('Next promo clicked');            
+            //stop the interval
+            clearInterval(promoInterval);
+            //toggle to next message
+            toggleNext();
+            //restart the interval
+            promoInterval = setInterval(promoFade, 5000);
+        }); 
+        document.getElementById("previous_arrow").addEventListener("click", function() {
+            console.log('Previous promo clicked');
+            //stop the interval
+            clearInterval(promoInterval);
+            //toggle to next message
+            togglePrevious();
+            //restart the interval
+            promoInterval = setInterval(promoFade, 5000);
+        }); 
+    });
+</script>
+</link></link></link></meta></head>
+<body class="common-home">
+<div class="sidebar-opacity"></div>
+<div class="wrapper framed removing" id="wrapper">
+<div id="sidebar-wrapper">
+<ul class="sidebar-nav list-group removing">
+<li class="sidebar-title">
+<a href="#menu-toggle-close" id="menu-toggle-close"><span aria-hidden="true">×</span></a>Informatie      <script>
+      $("#menu-toggle-close").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+		$(".sidebar-opacity").toggleClass("toggled");
+      });
+      </script>
+</li>
+<li><a href="http://www.stephaniekremer.de/index.php?route=information/information&amp;information_id=7">FAQ</a></li>
+<li><a href="http://www.stephaniekremer.de/delivery">Verzending</a></li>
+<li><a href="http://www.stephaniekremer.de/privacy">Privacybeleid</a></li>
+<li><a href="http://www.stephaniekremer.de/terms">algemene voorwaarden</a></li>
+<li><a href="http://www.stephaniekremer.de/contact">Contact</a></li>
+</ul>
+</div>
+<nav id="top">
+<div class="container removing">
+<div class="col-xs-12 col-sm-6">
+</div>
+<div class="col-xs-12 col-sm-6">
+<div class="pull-right">
+<form action="http://www.stephaniekremer.de/index.php?route=common/currency/currency" enctype="multipart/form-data" id="currency" method="post">
+<div class="btn-group">
+<button class="btn btn-link dropdown-toggle" data-toggle="dropdown">
+<span class="hidden-xs hidden-sm hidden-md">Valuta: </span>EUR <i class="fa fa-angle-down"></i></button>
+<ul class="dropdown-menu dropdown-menu-right">
+<li><button class="currency-select btn btn-link btn-block" name="EUR" type="button">€ <strong>EUR</strong></button></li>
+<li><button class="currency-select btn btn-link btn-block" name="GBP" type="button">£ <strong>GBP</strong></button></li>
+<li><button class="currency-select btn btn-link btn-block" name="MYR" type="button">RM <strong>MYR</strong></button></li>
+<li><button class="currency-select btn btn-link btn-block" name="USD" type="button">$ <strong>USD</strong></button></li>
+</ul>
+</div>
+<input name="code" type="hidden" value=""/>
+<input name="redirect" type="hidden" value="http://www.stephaniekremer.de/"/>
+</form>
+</div>
+<div class="nav pull-right removing" id="top-links">
+<ul class="list-inline">
+<li class="register"><a href="http://www.stephaniekremer.de/create-account">Registreren</a></li>
+<li><a href="http://www.stephaniekremer.de/login">Inloggen</a></li>
+<li><a href="http://www.stephaniekremer.de/wishlist" id="wishlist-total" title="Verlanglijst (0)"><i class="fa fa-heart hidden-md hidden-lg"></i> <span class="hidden-xs hidden-sm">Verlanglijst (0)</span></a></li>
+<li><a href="http://www.stephaniekremer.de/checkout" title="Afrekenen"><i class="fa fa-share hidden-md hidden-lg"></i> <span class="hidden-xs hidden-sm">Afrekenen</span></a></li>
+</ul>
+</div>
+</div>
+</div>
+</nav>
+<header>
+<div class="container removing">
+<div class="row">
+<div class="col-xs-12 col-sm-4 logoclass">
+<div id="logo">
+<a href="http://www.stephaniekremer.de/"><img alt="Stephaniekremer.de" src="image/logo.png" title="Stephaniekremer.de"/></a>
+</div>
+</div>
+<div class="col-xs-12 col-sm-4 searchhead">
+<div class="input-group" id="search">
+<input class="form-control input-lg" name="search" type="text" value=""/>
+<span class="input-group-btn">
+<button class="btn btn-default btn-lg" type="button"><i class="fa fa-search"></i></button>
+</span>
+</div> </div>
+<div class="col-xs-12 col-sm-4">
+<a class="" href="#menu-mobile-toggle" id="menu-mobile-toggle">
+<div class="buttons-header hidden-sm hidden-md hidden-lg" id="menu-mobile-block">
+<div class="button-i"><i class="fa fa-bars"></i></div>
+<span class="button-text">Menu</span>
+</div>
+</a>
+<script>
+        $("#menu-mobile-toggle").click(function(e) {
+          e.preventDefault();
+          $("#wrapper").toggleClass("menu-toggled");
+		  $(".sidebar-opacity").toggleClass("menu-toggled");
+        });
+      </script>
+<div class="btn-group btn-block buttons-header" id="cart">
+<a class="btn dropdown-toggle" data-loading-text="Laden..." data-toggle="dropdown">
+<div class="cartinfo">
+<h6 class="cart-title"><i class="fa fa-shopping-cart"></i>0 product(en) - €0,00</h6>
+</div>
+</a>
+<ul class="dropdown-menu pull-right">
+<li>
+<p class="text-center">U heeft nog geen producten in uw winkelwagen.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</header>
+<nav class="navbar" id="menu">
+<div class="container">
+<div class="collapse navbar-collapse navbar-ex1-collapse">
+<div id="logo-menu-container">
+<div id="logo-menu">
+<a href="http://www.stephaniekremer.de/"><img alt="Stephaniekremer.de" src="image/logo.png" title="Stephaniekremer.de"/></a>
+</div>
+</div>
+<ul class="main-menu removing">
+<!-- Home Page Link -->
+<li class="homepage-icontext" id="homepage"><a href="http://www.stephaniekremer.de/"><i class="fa fa-home"></i> <span>Home</span></a></li>
+<li><a href="http://www.stephaniekremer.de/index.php?route=information/information&amp;information_id=7">FAQ</a></li>
+<li><a href="http://www.stephaniekremer.de/delivery">Verzending</a></li>
+<li><a href="http://www.stephaniekremer.de/privacy">Privacybeleid</a></li>
+<li><a href="http://www.stephaniekremer.de/terms">algemene voorwaarden</a></li>
+<li><a href="http://www.stephaniekremer.de/contact">Contact</a></li>
+</ul>
+</div>
+</div>
+</nav>
+<script type="text/javascript">
+$(document).ready(function() {
+	$('#accordion-mobile').dcAccordion({
+		disableLink: false,	
+		menuClose: false,
+		autoClose: true,
+		autoExpand: true,		
+		saveState: false
+	});
+});
+</script>
+<div class="hidden-sm hidden-md hidden-lg" id="menu-mobile">
+<ul class="accordion sidebar-nav list-group" id="accordion-mobile">
+<li class="sidebar-title">
+<a href="#menu-mobile-toggle-close" id="menu-mobile-toggle-close"><span aria-hidden="true">×</span></a>Menu      <script>
+      $("#menu-mobile-toggle-close").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("menu-toggled");
+		$(".sidebar-opacity").toggleClass("menu-toggled");
+      });
+      </script>
+</li>
+<li><a href="http://www.stephaniekremer.de/">Home</a></li>
+<li>
+<a class="list-group-item removing" href="http://www.stephaniekremer.de/beste-prijs-dames-mode">Beste Prijs Dames Mode</a>
+</li>
+<li>
+<a class="list-group-item removing" href="http://www.stephaniekremer.de/dames-mode-laagste-prijs">Dames Mode Laagste Prijs</a>
+</li>
+<li>
+<a class="list-group-item removing" href="http://www.stephaniekremer.de/dames-mode-ontwerper">Dames Mode Ontwerper</a>
+</li>
+<li>
+<a class="list-group-item removing" href="http://www.stephaniekremer.de/exclusief-dames-mode">Exclusief Dames Mode</a>
+</li>
+<li>
+<a class="list-group-item removing" href="http://www.stephaniekremer.de/genieten-dames-mode">Genieten Dames Mode</a>
+</li>
+<li>
+<a class="dropdown-toggle list-group-item" data-toggle="dropdown" href="#">Informatie</a><div class="dcjq-icon"><i class="fa fa-plus"></i></div>
+<ul class="list-unstyled">
+<li><a href="http://www.stephaniekremer.de/index.php?route=information/information&amp;information_id=7">FAQ</a></li>
+<li><a href="http://www.stephaniekremer.de/delivery">Verzending</a></li>
+<li><a href="http://www.stephaniekremer.de/privacy">Privacybeleid</a></li>
+<li><a href="http://www.stephaniekremer.de/terms">algemene voorwaarden</a></li>
+</ul>
+</li>
+<li><a href="http://www.stephaniekremer.de/contact">Neem contact met ons op</a></li>
+</ul>
+</div>
+<div style="display:none;"><script src="//js.users.51.la/21085533.js" type="text/javascript"></script><br/></div><div class="container">
+<div class="row"><column class="col-sm-3 hidden-xs" id="column-left">
+<script type="text/javascript">
+$(document).ready(function() {
+	$('#accordion-1').dcAccordion({
+		disableLink: false,	
+		menuClose: false,
+		autoClose: true,
+		autoExpand: true,		
+		saveState: false
+	});
+});
+</script>
+<div class="panel panel-default panel-category">
+<div class="panel-heading">Categorieën</div>
+<div class="list-group">
+<ul class="accordion" id="accordion-1">
+<li>
+<a class="list-group-item" href="http://www.stephaniekremer.de/beste-prijs-dames-mode">Beste Prijs Dames Mode</a>
+</li>
+<li>
+<a class="list-group-item" href="http://www.stephaniekremer.de/dames-mode-laagste-prijs">Dames Mode Laagste Prijs</a>
+</li>
+<li>
+<a class="list-group-item" href="http://www.stephaniekremer.de/dames-mode-ontwerper">Dames Mode Ontwerper</a>
+</li>
+<li>
+<a class="list-group-item" href="http://www.stephaniekremer.de/exclusief-dames-mode">Exclusief Dames Mode</a>
+</li>
+<li>
+<a class="list-group-item" href="http://www.stephaniekremer.de/genieten-dames-mode">Genieten Dames Mode</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="panel panel-default product-module">
+<div class="panel-heading module-heading"><h2>New product</h2><div class="bookends"></div></div>
+<div class="row product-items-wrapper">
+<div class="product-items product-items-featured product-items-0">
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="http://www.stephaniekremer.de/gestuz-morganagz-blazer-ao19-colberts-rooibos-tea-jaquard.html"><img alt="Gestuz - MorganaGZ blazer AO19 - colberts - rooibos tea jaquard" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/gestuz-morganagz-blazer-ao19-colberts-rooibos-tea-jaquard-8256.jpg" title="Gestuz - MorganaGZ blazer AO19 - colberts - rooibos tea jaquard"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="http://www.stephaniekremer.de/gestuz-morganagz-blazer-ao19-colberts-rooibos-tea-jaquard.html">Gestuz - MorganaGZ blazer AO19 - colberts - rooibos tea jaquard</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€42,99</span> <span class="price-old">€141,99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="http://www.stephaniekremer.de/aaiko-green-napels-sneakers-910-sneakers-groen.html"><img alt="Aaiko Green Napels Sneakers 910 Sneakers - Groen" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/aaiko-green-napels-sneakers-910-sneakers-groen-2332.jpg" title="Aaiko Green Napels Sneakers 910 Sneakers - Groen"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="http://www.stephaniekremer.de/aaiko-green-napels-sneakers-910-sneakers-groen.html">Aaiko Green Napels Sneakers 910 Sneakers - Groen</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€46,99</span> <span class="price-old">€127,99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="http://www.stephaniekremer.de/khrisjoy-white-jacket-gewatteerde-jassen-wit.html"><img alt="Khrisjoy White jacket Gewatteerde jassen - Wit" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/khrisjoy-white-jacket-gewatteerde-jassen-wit-5541.jpg" title="Khrisjoy White jacket Gewatteerde jassen - Wit"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="http://www.stephaniekremer.de/khrisjoy-white-jacket-gewatteerde-jassen-wit.html">Khrisjoy White jacket Gewatteerde jassen - Wit</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€49,99</span> <span class="price-old">€129,99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="http://www.stephaniekremer.de/barracuda-red-barracuda-flat-shoes-veterschoenen-rood.html"><img alt="Barracuda Red Barracuda Flat shoes Veterschoenen - Rood" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/barracuda-red-barracuda-flat-shoes-veterschoenen-rood-5879.jpg" title="Barracuda Red Barracuda Flat shoes Veterschoenen - Rood"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="http://www.stephaniekremer.de/barracuda-red-barracuda-flat-shoes-veterschoenen-rood.html">Barracuda Red Barracuda Flat shoes Veterschoenen - Rood</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€48,99</span> <span class="price-old">€125,99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="http://www.stephaniekremer.de/pinko-pink-love-icon-classic-bag-schoudertassen-roze.html"><img alt="PINKO Pink LOVE ICON CLASSIC BAG Schoudertassen - Roze" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/pinko-pink-love-icon-classic-bag-schoudertassen-roze-419.jpg" title="PINKO Pink LOVE ICON CLASSIC BAG Schoudertassen - Roze"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="http://www.stephaniekremer.de/pinko-pink-love-icon-classic-bag-schoudertassen-roze.html">PINKO Pink LOVE ICON CLASSIC BAG Schoudertassen - Roze</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€48,99</span> <span class="price-old">€130,99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="http://www.stephaniekremer.de/vanzetti-riem-in-grijs.html"><img alt="VANZETTI Riem in Grijs" class="img-responsive img-normal" onload="setimg(this,'80','100')" src="image/p_image/vanzetti-riem-in-grijs-8087.jpg" title="VANZETTI Riem in Grijs"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="http://www.stephaniekremer.de/vanzetti-riem-in-grijs.html">VANZETTI Riem in Grijs</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€45,99</span> <span class="price-old">€131,99</span>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</column>
+<div class="col-sm-9" id="content"><div class="banner"><img height="auto" src="image/banner.jpg" width="100%"/></div><div class="panel panel-default product-module">
+<div class="panel-heading module-heading"><h2>New product</h2><div class="bookends"></div></div>
+<div class="row product-items-wrapper">
+<div class="product-items product-items-featured product-items-0">
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="http://www.stephaniekremer.de/inuovo-sandalen-met-riem-in-beige.html"><img alt="INUOVO Sandalen met riem in Beige" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/inuovo-sandalen-met-riem-in-beige-981.jpg" title="INUOVO Sandalen met riem in Beige"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="http://www.stephaniekremer.de/inuovo-sandalen-met-riem-in-beige.html">INUOVO Sandalen met riem in Beige</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€49,99</span> <span class="price-old">€124,99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="http://www.stephaniekremer.de/bronx-black-boot-enkellaarsjes-zwart.html"><img alt="Bronx Black boot Enkellaarsjes - Zwart" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/bronx-black-boot-enkellaarsjes-zwart-1369.jpg" title="Bronx Black boot Enkellaarsjes - Zwart"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="http://www.stephaniekremer.de/bronx-black-boot-enkellaarsjes-zwart.html">Bronx Black boot Enkellaarsjes - Zwart</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€48,99</span> <span class="price-old">€127,99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="http://www.stephaniekremer.de/rieker-sandaal-in-zwart.html"><img alt="RIEKER Sandaal in Zwart" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/rieker-sandaal-in-zwart-2418.jpg" title="RIEKER Sandaal in Zwart"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="http://www.stephaniekremer.de/rieker-sandaal-in-zwart.html">RIEKER Sandaal in Zwart</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€47,99</span> <span class="price-old">€138,99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="http://www.stephaniekremer.de/beatrice-b-black-abito-zomerjurken-zwart.html"><img alt="Beatrice .b Black ABITO Zomerjurken - Zwart" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/beatrice-b-black-abito-zomerjurken-zwart-7136.jpg" title="Beatrice .b Black ABITO Zomerjurken - Zwart"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="http://www.stephaniekremer.de/beatrice-b-black-abito-zomerjurken-zwart.html">Beatrice .b Black ABITO Zomerjurken - Zwart</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€48,99</span> <span class="price-old">€129,99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="http://www.stephaniekremer.de/dorothy-perkins-tussenjas-in-beige-groen.html"><img alt="Dorothy Perkins Tussenjas in Beige / Groen" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/dorothy-perkins-tussenjas-in-beige-groen-6806.jpg" title="Dorothy Perkins Tussenjas in Beige / Groen"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="http://www.stephaniekremer.de/dorothy-perkins-tussenjas-in-beige-groen.html">Dorothy Perkins Tussenjas in Beige / Groen</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€45,99</span> <span class="price-old">€128,99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="http://www.stephaniekremer.de/wemoto-broek-x27nellix27-in-zwart.html"><img alt="Wemoto Broek 'Nelli' in Zwart" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/wemoto-broek-x27nellix27-in-zwart-4472.jpg" title="Wemoto Broek 'Nelli' in Zwart"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="http://www.stephaniekremer.de/wemoto-broek-x27nellix27-in-zwart.html">Wemoto Broek 'Nelli' in Zwart</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€49,99</span> <span class="price-old">€120,99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="http://www.stephaniekremer.de/tom-tailor-handtas-in-beige.html"><img alt="TOM TAILOR Handtas in Beige" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/tom-tailor-handtas-in-beige-6373.jpg" title="TOM TAILOR Handtas in Beige"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="http://www.stephaniekremer.de/tom-tailor-handtas-in-beige.html">TOM TAILOR Handtas in Beige</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€49,99</span> <span class="price-old">€144,99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="http://www.stephaniekremer.de/steve-madden-black-slippers-with-swarovski-slippers-zwart.html"><img alt="Steve Madden Black Slippers with swarovski Slippers - Zwart" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/steve-madden-black-slippers-with-swarovski-slippers-zwart-4961.jpg" title="Steve Madden Black Slippers with swarovski Slippers - Zwart"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="http://www.stephaniekremer.de/steve-madden-black-slippers-with-swarovski-slippers-zwart.html">Steve Madden Black Slippers with swarovski Slippers - Zwart</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€44,99</span> <span class="price-old">€126,99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="http://www.stephaniekremer.de/gap-sweatshirt-in-lichtgrijs.html"><img alt="GAP Sweatshirt in Lichtgrijs" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/gap-sweatshirt-in-lichtgrijs-1660.jpg" title="GAP Sweatshirt in Lichtgrijs"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="http://www.stephaniekremer.de/gap-sweatshirt-in-lichtgrijs.html">GAP Sweatshirt in Lichtgrijs</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€49,99</span> <span class="price-old">€122,99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="http://www.stephaniekremer.de/proenza-schouler-beige-jumpsuit-jumpsuits-amp-tuinbroeken-beige.html"><img alt="Proenza Schouler Beige jumpsuit Jumpsuits &amp; Tuinbroeken - Beige" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/proenza-schouler-beige-jumpsuit-jumpsuits-amp-tuinbroeken-beige-7417.jpg" title="Proenza Schouler Beige jumpsuit Jumpsuits &amp; Tuinbroeken - Beige"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="http://www.stephaniekremer.de/proenza-schouler-beige-jumpsuit-jumpsuits-amp-tuinbroeken-beige.html">Proenza Schouler Beige jumpsuit Jumpsuits &amp; Tuinbroeken - Beige</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€48,99</span> <span class="price-old">€126,99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="http://www.stephaniekremer.de/we-are-flowergirls-oorbellen-x27snakex27-in-goud-gemengde-kleuren.html"><img alt="We Are Flowergirls Oorbellen 'Snake' in Goud / Gemengde kleuren" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/we-are-flowergirls-oorbellen-x27snakex27-in-goud-gemengde-kleuren-6188.jpg" title="We Are Flowergirls Oorbellen 'Snake' in Goud / Gemengde kleuren"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="http://www.stephaniekremer.de/we-are-flowergirls-oorbellen-x27snakex27-in-goud-gemengde-kleuren.html">We Are Flowergirls Oorbellen 'Snake' in Goud / Gemengde kleuren</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€48,99</span> <span class="price-old">€128,99</span>
+</p>
+</div>
+</div>
+</div>
+<div class="product-layout-grid product-grid col-xs-12">
+<div class="product-thumb transition">
+<div class="image">
+<div class="img-revision revision-module-new-product">
+<a class="arevision" href="http://www.stephaniekremer.de/r13-gray-rock-amp-roll-tee-tshirts-grijs.html"><img alt="R13 Gray ROCK &amp; ROLL TEE T-shirts - Grijs" class="img-responsive img-normal" onload="setimg(this,'200','200')" src="image/p_image/r13-gray-rock-amp-roll-tee-tshirts-grijs-6785.jpg" title="R13 Gray ROCK &amp; ROLL TEE T-shirts - Grijs"/></a>
+</div>
+</div>
+<div class="caption">
+<div class="name"><h4><a href="http://www.stephaniekremer.de/r13-gray-rock-amp-roll-tee-tshirts-grijs.html">R13 Gray ROCK &amp; ROLL TEE T-shirts - Grijs</a></h4></div>
+<div class="product_box_brand"></div>
+<p class="price">
+<span class="price-new">€49,99</span> <span class="price-old">€125,99</span>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<footer class="removing footerss">
+<div id="information">
+<div class="container">
+<div class="row">
+<div class="col-sm-6 footerlists">
+<h5>Informatie</h5>
+<ul class="list-unstyled">
+<li><i aria-hidden="true" class="fa fa-star"></i><a href="http://www.stephaniekremer.de/index.php?route=information/information&amp;information_id=7">FAQ</a></li>
+<li><i aria-hidden="true" class="fa fa-star"></i><a href="http://www.stephaniekremer.de/delivery">Verzending</a></li>
+<li><i aria-hidden="true" class="fa fa-star"></i><a href="http://www.stephaniekremer.de/privacy">Privacybeleid</a></li>
+<li><i aria-hidden="true" class="fa fa-star"></i><a href="http://www.stephaniekremer.de/terms">algemene voorwaarden</a></li>
+</ul>
+</div>
+<div class="col-sm-6 footerlists">
+<h5>Klantenservice</h5>
+<ul class="list-unstyled">
+<li><i aria-hidden="true" class="fa fa-star"></i><a href="http://www.stephaniekremer.de/contact">Contact</a></li> <li><i aria-hidden="true" class="fa fa-star"></i><a href="http://www.stephaniekremer.de/my-account">Mijn account</a></li> <li><i aria-hidden="true" class="fa fa-star"></i><a href="http://www.stephaniekremer.de/order-history">Bestelhistorie</a></li> <li><i aria-hidden="true" class="fa fa-star"></i><a href="http://www.stephaniekremer.de/wishlist">Verlanglijst</a></li> </ul>
+</div>
+</div>
+</div>
+</div>
+<div class="line overlay clearfix"> </div>
+<div id="powered">
+<div class="container">
+<div class="row">
+<div class="col-sm-12 col-md-12">
+      Copyright © 2022 <a href="//www.stephaniekremer.de" target="_blank">www.stephaniekremer.de</a> All Rights Reserved  
+      </div>
+</div>
+</div>
+</div>
+</footer>
+<script src="catalog/view/theme/removing/js/jquery.visible.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+var win = $(window);
+
+var allMods = $("footer");
+
+allMods.each(function(i, el) {
+    
+  if ($(el).visible(true)) {
+    $(el).addClass("already-visible"); 
+  }
+  
+});
+
+win.scroll(function(event) {
+  
+  allMods.each(function(i, el) {
+    
+    var el = $(el);
+    
+    if (el.visible(true)) {
+      el.addClass("come-in"); 
+    } else {
+      el.removeClass("come-in already-visible");
+    }
+    
+  });
+  
+}); 
+</script>
+<script src="catalog/view/theme/removing/js/jquery.easing-1.3.min.js" type="text/javascript"></script>
+<link href="catalog/view/theme/removing/js/quickview/fancybox/jquery.fancybox.css" property="stylesheet" rel="stylesheet">
+<script src="catalog/view/theme/removing/js/quickview/fancybox/jquery.fancybox.pack.js"></script>
+<script src="catalog/view/theme/removing/js/jquery.stellar.js" type="text/javascript"></script>
+</link></div>
+</body></html>
