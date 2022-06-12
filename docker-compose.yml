@@ -1,0 +1,21 @@
+version: '2.4'
+networks:
+  sel_web:
+    driver: bridge
+
+services:
+  sel_chrome:
+    image: selenium/standalone-chrome:latest
+    ports:
+      - 4444:4444
+      - 7900:7900
+    networks:
+      - web
+    volumes:
+      - chrome_volume:/tmp/chrome_volume_content
+    privileged: true
+    shm_size: 2g
+
+volumes:
+  chrome_volume:
+    external: True
