@@ -1,28 +1,36 @@
 import json
+import logging
 import os
 import glob
 import re
 import socket
+import traceback
+
 import geocoder
+import time
 
 from bs4 import BeautifulSoup
 import requests
 
 
 def check_redirects(url):
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36'
+    }
+
     try:
-        r = requests.get(url, allow_redirects=False, timeout=10)
-        redirect = r.headers['location']
-        return redirect if 'http' in redirect else url
-    except:
-        return url
+        r = requests.get(url, headers=headers, timeout=25)
+    except Exception as e:
+        raise Exception(str(type(e)))
 
+    for redirect in r.history:
+        print(redirect.url, redirect.status_code)
 
-def get_url_html(url):
-    headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0'}
-    result = requests.get(url, headers=headers, timeout=10).content
-    onl = BeautifulSoup(result, 'html.parser')
-    return onl
+    if r.status_code != 200:
+        raise Exception(f'Errore HTML {r.status_code} su {r.url}')
+
+    doc = BeautifulSoup(r.content, 'html.parser')
+    return r.url, doc
 
 
 def get_url_html_offline(url, class_):
@@ -42,36 +50,33 @@ def get_url_array(json_):
 
 
 def save_html(classes, sites, folder='Html/'):
+    original_names = ''
     for class_ in classes:
         class_folder = f'{folder}{class_}/'
         os.makedirs(class_folder, exist_ok=True)
         for url in sites[class_]:
             print(f'---------------------------\nStarting {url}')
-            redirect = check_redirects(url)
-            print(f'Reditecting to {redirect}')
-            path = f'{class_folder}' \
-                   f'{redirect.replace("http://", "http-").replace("https://", "https-").split("/")[0]}.html'
             try:
-                with open(path, 'w', encoding='utf-8') as class_file:
-                    doc = get_url_html(redirect)
-                    if not doc.find('head'):
-                        raise Exception('<head> not found')
-                    title = doc.find('title').text
-                    if 'Error' in title:
-                        raise Exception('HTML Error')
-                    if 'Not Found' in title:
-                        raise Exception('Not Found')
-                    if 'Kaspersky Security Cloud' in title:
-                        raise Exception('Security Error')
-                    if 'Access Denied' in title:
-                        raise Exception('Access Denied')
-                    if 'Cloudflare' in title:
-                        raise Exception('Blocked by Cloudflare')
-                    class_file.write(str(doc))
-                    print(f'{redirect} Successful')
+                redirect, doc = check_redirects(url)
             except Exception as e:
-                print(f'Error on {redirect} --- {e}')
-                os.remove(path)
+                print(e.args)
+                continue
+
+            original_names += f'{url};{redirect}\n'
+
+            formatted = redirect.replace("http://", "http-") \
+                .replace("https://", "https-") \
+                .split("/")[0] \
+                .split("?")[0] \
+                .split(":")[0]
+
+            path = f'{class_folder}{formatted}.html'
+            with open(path, 'w', encoding='utf-8') as class_file:
+                class_file.write(str(doc))
+                print(f'{redirect} Successful')
+    with open('res/original_names.csv', 'w') as file:
+        file.write('original;redirect\n')
+        file.write(original_names)
 
 
 def feature_https(url):
@@ -104,7 +109,7 @@ def feature_domain(url):
     else:
         glob_domains.append(domain)
         # print(domain, len(glob_domains)-1)
-        return len(glob_domains)-1
+        return len(glob_domains) - 1
 
 
 def feature_url_numbers(url):
@@ -120,30 +125,31 @@ def feature_url_special_chars(url):
     truncated = split[1] if 'www' in url else split[0].split('//')[1]
     return 1 if regex.search(truncated) else 0
 
-# TODO
-def feature_p_iva(doc):
-    return url if 'iva' in doc.text.lower() else ''
 
-# TODO
-def feature_login_btn(doc):
-    tmp = []
-    try:
-        found = doc.find_all('a')
-        for tag in found:
-            if 'login' in tag['href'].lower() or 'sign in' in tag['href'].lower():
-                tmp.append(url)
-                break
-    finally:
-        return tmp
-
-# TODO
-def feature_payment_methods(doc):
-    tmp = 0
-    try:
-        found = doc.find_all('img')
-        tmp = 1 if any('card' in tag['class'] for tag in found) else 0
-    finally:
-        return tmp
+# # TODO
+# def feature_p_iva(doc):
+#     return url if 'iva' in doc.text.lower() else ''
+#
+# # TODO
+# def feature_login_btn(doc):
+#     tmp = []
+#     try:
+#         found = doc.find_all('a')
+#         for tag in found:
+#             if 'login' in tag['href'].lower() or 'sign in' in tag['href'].lower():
+#                 tmp.append(url)
+#                 break
+#     finally:
+#         return tmp
+#
+# # TODO
+# def feature_payment_methods(doc):
+#     tmp = 0
+#     try:
+#         found = doc.find_all('img')
+#         tmp = 1 if any('card' in tag['class'] for tag in found) else 0
+#     finally:
+#         return tmp
 
 
 def feature_ip_location(url):
@@ -190,7 +196,8 @@ glob_country_codes = ['Not found']
 glob_domains = []
 
 if __name__ == '__main__':
-    # with open('fake_ecommerce.json', 'r') as f:
+    #
+    # with open('res/bilanciato_v2.json', 'r') as f:
     #     content = f.read()
     #     sites = get_url_array(json.loads(content))
     # save_html(['authorized', 'unauthorized'], sites)
@@ -210,9 +217,8 @@ if __name__ == '__main__':
     tmp_csv = ''
     for class_ in sites:
         for url in sites[class_]:
-            ciao = check_redirects(url)
-            if ciao:
-                print(ciao)
+            # url = check_redirects(url)
+            # print(url)
             doc = get_url_html_offline(url, class_)
             tmp_csv += f'{url};{class_};' \
                        f'{feature_https(url)};' \
@@ -227,8 +233,9 @@ if __name__ == '__main__':
                        f'{feature_social_link(doc, social="instagram")};' \
                        f'{feature_social_link(doc, social="facebook")};'\
                        f'{feature_social_link(doc, social="twitter")};' \
-                       f'{feature_social_link(doc, social="pinterest")};' \
+                       f'{feature_social_link(doc, social="pinterest")}' \
                        f'\n'
+            print(f'{url} - Done')
 
     with open('Stats/total.csv', 'w+') as stats:
         # TODO ricordarsi di aggiungere i campi
@@ -244,7 +251,7 @@ if __name__ == '__main__':
                     'instagram;'
                     'facebook;'
                     'twitter;'
-                    'pinterest;'
+                    'pinterest'
                     '\n')
         stats.write(tmp_csv)
 

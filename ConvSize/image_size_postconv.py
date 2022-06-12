@@ -21,7 +21,7 @@ def resulting_tensor(imagesize, kernel1, pool1, out1,
     print(image.shape)
     print()
 
-    if kernel2 :
+    if kernel2:
         conv = torch.nn.Conv2d(out1, out2, kernel2)
         image = conv(image)
         print(image.shape)
@@ -58,15 +58,15 @@ def resulting_tensor(imagesize, kernel1, pool1, out1,
         print()
 
 
-size = (1360, 975)
-kernel1 = (10, 10)
-kernel2 = (10, 10)
-kernel3 = (10, 10)
+image_size = (1900, 2800)
+kernel1 = (50, 50)
+kernel2 = (20, 20)
+kernel3 = (20, 20)
 kernel4 = (5, 5)
-kernel5 = (5, 4)
-pool1 = (5, 4)
+kernel5 = (5, 5)
+pool1 = (5, 5)
 pool2 = (5, 5)
-pool3 = (3, 2)
+pool3 = (3, 3)
 pool4 = (2, 2)
 pool5 = (2, 2)
 out1 = 9
@@ -75,7 +75,7 @@ out3 = 40
 out4 = 80
 out5 = 100
 
-resulting_tensor(imagesize=size,
+resulting_tensor(imagesize=image_size,
                  kernel1=kernel1, kernel2=kernel2, kernel3=kernel3, kernel4=kernel4, kernel5=kernel5,
                  pool1=pool1, pool2=pool2, pool3=pool3, pool4=pool4, pool5=pool5,
                  out1=out1, out2=out2, out3=out3, out4=out4, out5=out5)
