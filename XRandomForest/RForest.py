@@ -68,7 +68,7 @@ if __name__ == '__main__':
     features = []
     targets = []
 
-    with open('Stats/total.csv', mode='r') as infile:
+    with open('../Stats/total.csv', mode='r') as infile:
         reader = csv.DictReader(infile, delimiter=';')
         for row in reader:
             tmp = []

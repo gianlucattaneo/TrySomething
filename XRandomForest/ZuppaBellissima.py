@@ -74,7 +74,7 @@ def save_html(classes, sites, folder='Html/'):
             with open(path, 'w', encoding='utf-8') as class_file:
                 class_file.write(str(doc))
                 print(f'{redirect} Successful')
-    with open('res/original_names.csv', 'w') as file:
+    with open('../res/original_names.csv', 'w') as file:
         file.write('original;redirect\n')
         file.write(original_names)
 
@@ -237,7 +237,7 @@ if __name__ == '__main__':
                        f'\n'
             print(f'{url} - Done')
 
-    with open('Stats/total.csv', 'w+') as stats:
+    with open('../Stats/total.csv', 'w+') as stats:
         # TODO ricordarsi di aggiungere i campi
         stats.write('url;class;https;'
                     'meta_count;'

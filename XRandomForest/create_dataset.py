@@ -22,7 +22,7 @@ if __name__ == '__main__':
     classes = ['authorized', 'unauthorized']
     dataset_path = "C:/Users/Gianluca/Desktop/BilanciatoV2"
 
-    with open('res/total.json', 'r') as f:
+    with open('../res/total.json', 'r') as f:
         content = f.read()
         sites = get_url_array(json.loads(content))
 
@@ -42,5 +42,5 @@ if __name__ == '__main__':
         if url in new_dataset['sites']['unauthorized']:
             print(f'{url} duplicato')
 
-    with open('res/bilanciato_v2.json', 'w') as json_file:
+    with open('../res/bilanciato_v2.json', 'w') as json_file:
         json.dump(new_dataset, fp=json_file, indent=2)
