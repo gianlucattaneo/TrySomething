@@ -49,7 +49,7 @@ def get_url_array(json_):
         raise Exception('Json non valido')
 
 
-def save_html(classes, sites, folder='Html/'):
+def save_html(classes, sites, folder='../Html/'):
     original_names = ''
     for class_ in classes:
         class_folder = f'{folder}{class_}/'
@@ -206,7 +206,7 @@ if __name__ == '__main__':
     sites = {}
     for class_ in classes:
         tmp = []
-        for pseudo_url in glob.glob(f'Html/{class_}/*.html'):
+        for pseudo_url in glob.glob(f'../Html/{class_}/*.html'):
             url = pseudo_url.replace('http-', 'http://')\
                 .replace('https-', 'https://')\
                 .replace('.html', '')\

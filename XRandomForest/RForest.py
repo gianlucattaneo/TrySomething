@@ -8,6 +8,7 @@ import numpy as np
 import json
 import csv
 import glob
+import math
 
 
 def get_true_url(image_name, class_, dataset_path='res/total.json'):
@@ -23,9 +24,9 @@ def get_true_url(image_name, class_, dataset_path='res/total.json'):
 
 def load_folds(path='Folds'):
     tmp = {
-            'authorized': [],
-            'unauthorized': []
-        }
+        'authorized': [],
+        'unauthorized': []
+    }
     template = {
         'validation': tmp,
         'train': tmp
@@ -44,6 +45,29 @@ def load_folds(path='Folds'):
                 url = get_true_url(row['url'], class_)
                 folds[fold_name][set_][class_].append(url)
     return folds
+
+
+def comparison_graph(scores1, scores2, label1, label2, n_folds, title):
+    plt.title(title)
+
+    max_v = round(max(max(scores1), max(scores2)),2)
+    min_v = round(min(min(scores1), min(scores2)),2)
+    min_v = math.floor(min_v * 10) / 10
+
+    print(min_v)
+
+    x_range = range(0, n_folds)
+    y_range = np.arange(min_v - 0.01, max_v + 0.05, 0.01)
+
+    plt.hlines(y_range, min(x_range), max(x_range), 'black', ':', linewidth=0.1)
+    plt.plot(x_range, scores1, 'g', label=label1)
+    plt.plot(x_range, scores2, 'r', label=label2)
+    plt.xlabel('folds')
+    plt.xticks(x_range)
+    plt.yticks(y_range)
+    plt.legend()
+    plt.show()
+    plt.clf()
 
 
 if __name__ == '__main__':
@@ -86,25 +110,25 @@ if __name__ == '__main__':
     kfolds = StratifiedKFold(n_splits=5, shuffle=True)
     max_depth = 2
 
+    rf_scores = []
+    st_scores = []
+
     for train_idx, val_idx in kfolds.split(features, targets):
-        rfc = RandomForestClassifier(class_weight='balanced', max_depth=max_depth)
+        rfc = RandomForestClassifier(class_weight='balanced', max_depth=max_depth, n_estimators=100)
         rfc.fit(features[train_idx], targets[train_idx])
 
         dtc = tree.DecisionTreeClassifier(class_weight='balanced', max_depth=max_depth)
         dtc.fit(features[train_idx], targets[train_idx])
 
-        plt.figure(figsize=(10, 6))
-        plot_tree(dtc, feature_names=feature_names, class_names=target_names, filled=True)
+        # plt.figure(figsize=(10, 6))
+        # plot_tree(dtc, feature_names=feature_names, class_names=target_names, filled=True)
 
-        print(f'Random Forest Score : {rfc.score(features[val_idx], targets[val_idx])}')
-        print(f'Single Tree Score : {dtc.score(features[val_idx], targets[val_idx])}')
+        rf_scores.append(rfc.score(features[val_idx], targets[val_idx]))
+        st_scores.append(dtc.score(features[val_idx], targets[val_idx]))
+
+        print(f'Random Forest Score : {rf_scores[-1]}')
+        print(f'Single Tree Score : {st_scores[-1]}')
         print()
 
-    plt.show()
-
-
-
-
-
-
-
+    comparison_graph(scores1=rf_scores,scores2=st_scores, label1='Random Forest Score',
+                     label2='Single Tree Score', n_folds=5,title='TITOLO')
