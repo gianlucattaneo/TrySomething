@@ -24,6 +24,13 @@ chrome_options.add_argument('--disable-infobars')
 chrome_options.add_argument("--disable-gpu")
 chrome_options.add_argument("enable-automation")
 chrome_options.page_load_strategy = "eager"
+#
+chrome_options.add_argument("--start-maximized")
+chrome_options.add_argument("--ignore-certificate-errors")
+chrome_options.add_argument("--allow-insecure-localhost")
+chrome_options.add_argument("--allow-running-insecure-content")
+chrome_options.add_argument("--unsafely-treat-insecure-origin-as-secure")
+chrome_options.add_argument("--disable-web-security")
 chrome_options.add_argument("--disable-browser-side-navigation")
 chrome_options.add_argument("--disable-dev-shm-usage")
 chrome_options.add_argument("--disable-features=VizDisplayCompositor")
@@ -32,12 +39,12 @@ chrome_options.add_experimental_option("excludeSwitches", ["enable-automation"])
 
 def get_html(driver, url):
     driver.get(url)
-    time.sleep(5)
+
     html = BeautifulSoup(driver.page_source, 'html.parser')
     return html, driver.current_url
 
 
-def save_html(driver, classes, sites, folder='Html/'):
+def save_html(driver, classes, sites, folder='Sel_Html/'):
     for class_ in classes:
         class_folder = f'{folder}{class_}/'
         os.makedirs(class_folder, exist_ok=True)
@@ -165,11 +172,14 @@ glob_domains = []
 
 if __name__ == '__main__':
     driver = webdriver.Remote('http://localhost:4444/wd/hub', options=chrome_options)
+    driver.set_page_load_timeout(7)
+    driver.set_script_timeout(7)
     tmp_csv = ''
-    with open('res/bilanciato_v2.json', 'r') as f:
+    with open('../res/bilanciato_v2.json', 'r') as f:
         content = f.read()
         sites = json.loads(content)['sites']
-    # save_html(driver, ['authorized', 'unauthorized'], sites)
+
+
     for class_ in sites:
         for url in sites[class_]:
             try:
@@ -197,21 +207,23 @@ if __name__ == '__main__':
                     driver.quit()
                 except Exception: pass
                 driver = webdriver.Remote('http://localhost:4444/wd/hub', options=chrome_options)
+                driver.set_page_load_timeout(7)
+                driver.set_script_timeout(7)
 
-with open('Stats/sel_total.csv', 'w+') as stats:
-    # TODO ricordarsi di aggiungere i campi
-    stats.write('url;class;https;'
-                'meta_count;'
-                'url_length;'
-                'google_verified;'
-                'domain;'
-                'url_numbers;'
-                'special_chars;'
-                'ip_location;'
-                'trustpilot_review;'
-                'instagram;'
-                'facebook;'
-                'twitter;'
-                'pinterest'
-                '\n')
-    stats.write(tmp_csv)
+    with open('../Stats/sel_total.csv', 'w') as stats:
+        # TODO ricordarsi di aggiungere i campi
+        stats.write('url;class;https;'
+                    'meta_count;'
+                    'url_length;'
+                    'google_verified;'
+                    'domain;'
+                    'url_numbers;'
+                    'special_chars;'
+                    'ip_location;'
+                    'trustpilot_review;'
+                    'instagram;'
+                    'facebook;'
+                    'twitter;'
+                    'pinterest'
+                    '\n')
+        stats.write(tmp_csv)

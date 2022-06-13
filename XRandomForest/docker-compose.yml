@@ -10,7 +10,7 @@ services:
       - 4444:4444
       - 7900:7900
     networks:
-      - web
+      - sel_web
     volumes:
       - chrome_volume:/tmp/chrome_volume_content
     privileged: true

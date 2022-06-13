@@ -87,10 +87,10 @@ if __name__ == '__main__':
     max_depth = 2
 
     for train_idx, val_idx in kfolds.split(features, targets):
-        rfc = RandomForestClassifier(class_weight='balanced', max_depth=max_depth)
+        rfc = RandomForestClassifier(class_weight='balanced')
         rfc.fit(features[train_idx], targets[train_idx])
 
-        dtc = tree.DecisionTreeClassifier(class_weight='balanced', max_depth=max_depth)
+        dtc = tree.DecisionTreeClassifier(class_weight='balanced')
         dtc.fit(features[train_idx], targets[train_idx])
 
         plt.figure(figsize=(10, 6))
