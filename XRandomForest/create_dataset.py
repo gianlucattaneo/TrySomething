@@ -18,15 +18,13 @@ if __name__ == '__main__':
             'unauthorized': []
         }
     }
-
-    classes = ['authorized', 'unauthorized']
     dataset_path = "C:/Users/Gianluca/Desktop/BilanciatoV2"
 
     with open('../res/total.json', 'r') as f:
         content = f.read()
         sites = get_url_array(json.loads(content))
 
-    for class_ in classes:
+    for class_ in new_dataset['sites']:
         tmp = []
         for image_name in glob.glob(f'{dataset_path}/{class_}/*.png'):
             url = image_name.split('\\')[1].replace('.png', '')

@@ -1,5 +1,4 @@
 import json
-import logging
 import os
 import glob
 import re
@@ -196,11 +195,10 @@ glob_country_codes = ['Not found']
 glob_domains = []
 
 if __name__ == '__main__':
-    #
-    # with open('res/bilanciato_v2.json', 'r') as f:
-    #     content = f.read()
-    #     sites = get_url_array(json.loads(content))
-    # save_html(['authorized', 'unauthorized'], sites)
+    with open('res/bilanciato_v2.json', 'r') as f:
+        content = f.read()
+        sites = get_url_array(json.loads(content))
+    save_html(['authorized', 'unauthorized'], sites)
 
     classes = ['authorized', 'unauthorized']
     sites = {}
@@ -217,8 +215,6 @@ if __name__ == '__main__':
     tmp_csv = ''
     for class_ in sites:
         for url in sites[class_]:
-            # url = check_redirects(url)
-            # print(url)
             doc = get_url_html_offline(url, class_)
             tmp_csv += f'{url};{class_};' \
                        f'{feature_https(url)};' \
